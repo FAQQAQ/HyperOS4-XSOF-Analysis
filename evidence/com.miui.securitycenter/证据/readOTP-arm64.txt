@@ -1,0 +1,142 @@
+
+apks-逆向结果-2026-11-05/com.miui.securitycenter/raw/lib/arm64-v8a/libjni_load_serinum.so:	file format elf64-littleaarch64
+
+Disassembly of section .text:
+
+0000000000004800 <Java_com_miui_securitycenter_utils_LoadSeriNum_readOTP>:
+    4800: d10183ff     	sub	sp, sp, #0x60
+    4804: a9037bfd     	stp	x29, x30, [sp, #0x30]
+    4808: a90457f6     	stp	x22, x21, [sp, #0x40]
+    480c: a9054ff4     	stp	x20, x19, [sp, #0x50]
+    4810: 9100c3fd     	add	x29, sp, #0x30
+    4814: f9400008     	ldr	x8, [x0]
+    4818: 528001e1     	mov	w1, #0xf                // =15
+    481c: aa0003f5     	mov	x21, x0
+    4820: f942c108     	ldr	x8, [x8, #0x580]
+    4824: d63f0100     	blr	x8
+    4828: aa0003f3     	mov	x19, x0
+    482c: 90ffffe0     	adrp	x0, 0x0
+    4830: 9119c800     	add	x0, x0, #0x672
+    4834: 2a1f03e1     	mov	w1, wzr
+    4838: 2a1f03e2     	mov	w2, wzr
+    483c: 9400008d     	bl	0x4a70 <open@plt>
+    4840: 3100041f     	cmn	w0, #0x1
+    4844: 54000460     	b.eq	0x48d0 <Java_com_miui_securitycenter_utils_LoadSeriNum_readOTP+0xd0>
+    4848: 528d6021     	mov	w1, #0x6b01             // =27393
+    484c: 528d6036     	mov	w22, #0x6b01            // =27393
+    4850: 910043e2     	add	x2, sp, #0x10
+    4854: 72a80081     	movk	w1, #0x4004, lsl #16
+    4858: 2a0003f4     	mov	w20, w0
+    485c: 72a80096     	movk	w22, #0x4004, lsl #16
+    4860: 94000088     	bl	0x4a80 <ioctl@plt>
+    4864: 52817700     	mov	w0, #0xbb8              // =3000
+    4868: 9400008a     	bl	0x4a90 <malloc@plt>
+    486c: 90ffffe9     	adrp	x9, 0x0
+    4870: aa1f03e8     	mov	x8, xzr
+    4874: f90013e0     	str	x0, [sp, #0x20]
+    4878: fd431120     	ldr	d0, [x9, #0x620]
+    487c: 52801fe9     	mov	w9, #0xff               // =255
+    4880: b9002bff     	str	wzr, [sp, #0x28]
+    4884: fc0143e0     	stur	d0, [sp, #0x14]
+    4888: f94013ea     	ldr	x10, [sp, #0x20]
+    488c: 38286949     	strb	w9, [x10, x8]
+    4890: 91000508     	add	x8, x8, #0x1
+    4894: f12ee11f     	cmp	x8, #0xbb8
+    4898: 54ffff81     	b.ne	0x4888 <Java_com_miui_securitycenter_utils_LoadSeriNum_readOTP+0x88>
+    489c: 110006c1     	add	w1, w22, #0x1
+    48a0: 910043e2     	add	x2, sp, #0x10
+    48a4: 2a1403e0     	mov	w0, w20
+    48a8: 94000076     	bl	0x4a80 <ioctl@plt>
+    48ac: b9402be3     	ldr	w3, [sp, #0x28]
+    48b0: 340001e3     	cbz	w3, 0x48ec <Java_com_miui_securitycenter_utils_LoadSeriNum_readOTP+0xec>
+    48b4: 90ffffe1     	adrp	x1, 0x0
+    48b8: 9119ec21     	add	x1, x1, #0x67b
+    48bc: 90ffffe2     	adrp	x2, 0x0
+    48c0: 9118a042     	add	x2, x2, #0x628
+    48c4: 528000c0     	mov	w0, #0x6                // =6
+    48c8: 94000076     	bl	0x4aa0 <__android_log_print@plt>
+    48cc: 1400004b     	b	0x49f8 <Java_com_miui_securitycenter_utils_LoadSeriNum_readOTP+0x1f8>
+    48d0: 90ffffe1     	adrp	x1, 0x0
+    48d4: 9119ec21     	add	x1, x1, #0x67b
+    48d8: 90ffffe2     	adrp	x2, 0x0
+    48dc: 91194042     	add	x2, x2, #0x650
+    48e0: 528000c0     	mov	w0, #0x6                // =6
+    48e4: 9400006f     	bl	0x4aa0 <__android_log_print@plt>
+    48e8: 14000048     	b	0x4a08 <Java_com_miui_securitycenter_utils_LoadSeriNum_readOTP+0x208>
+    48ec: f94013e9     	ldr	x9, [sp, #0x20]
+    48f0: d503201f     	nop
+    48f4: 70fdec68     	adr	x8, 0x683
+    48f8: 910003e4     	mov	x4, sp
+    48fc: aa1503e0     	mov	x0, x21
+    4900: aa1303e1     	mov	x1, x19
+    4904: 3940012a     	ldrb	w10, [x9]
+    4908: 2a1f03e2     	mov	w2, wzr
+    490c: 528001e3     	mov	w3, #0xf                // =15
+    4910: d344fd4b     	lsr	x11, x10, #4
+    4914: 92400d4a     	and	x10, x10, #0xf
+    4918: 386a690a     	ldrb	w10, [x8, x10]
+    491c: 386b690b     	ldrb	w11, [x8, x11]
+    4920: 390003ea     	strb	w10, [sp]
+    4924: 390007eb     	strb	w11, [sp, #0x1]
+    4928: 3940052b     	ldrb	w11, [x9, #0x1]
+    492c: d344fd6c     	lsr	x12, x11, #4
+    4930: 92400d6b     	and	x11, x11, #0xf
+    4934: 386b690b     	ldrb	w11, [x8, x11]
+    4938: 386c690c     	ldrb	w12, [x8, x12]
+    493c: 39000beb     	strb	w11, [sp, #0x2]
+    4940: 39000fec     	strb	w12, [sp, #0x3]
+    4944: 3940092b     	ldrb	w11, [x9, #0x2]
+    4948: d344fd6c     	lsr	x12, x11, #4
+    494c: 92400d6b     	and	x11, x11, #0xf
+    4950: 386b690b     	ldrb	w11, [x8, x11]
+    4954: 386c690c     	ldrb	w12, [x8, x12]
+    4958: 390013eb     	strb	w11, [sp, #0x4]
+    495c: 390017ec     	strb	w12, [sp, #0x5]
+    4960: 39400d2b     	ldrb	w11, [x9, #0x3]
+    4964: d344fd6c     	lsr	x12, x11, #4
+    4968: 92400d6b     	and	x11, x11, #0xf
+    496c: 386b690b     	ldrb	w11, [x8, x11]
+    4970: 386c690c     	ldrb	w12, [x8, x12]
+    4974: 39001beb     	strb	w11, [sp, #0x6]
+    4978: 39001fec     	strb	w12, [sp, #0x7]
+    497c: 3940112b     	ldrb	w11, [x9, #0x4]
+    4980: d344fd6c     	lsr	x12, x11, #4
+    4984: 92400d6b     	and	x11, x11, #0xf
+    4988: 386b690b     	ldrb	w11, [x8, x11]
+    498c: 386c690c     	ldrb	w12, [x8, x12]
+    4990: 390023eb     	strb	w11, [sp, #0x8]
+    4994: 390027ec     	strb	w12, [sp, #0x9]
+    4998: 3940152b     	ldrb	w11, [x9, #0x5]
+    499c: d344fd6c     	lsr	x12, x11, #4
+    49a0: 92400d6b     	and	x11, x11, #0xf
+    49a4: 386b690b     	ldrb	w11, [x8, x11]
+    49a8: 386c690c     	ldrb	w12, [x8, x12]
+    49ac: 39002beb     	strb	w11, [sp, #0xa]
+    49b0: 39002fec     	strb	w12, [sp, #0xb]
+    49b4: 3940192b     	ldrb	w11, [x9, #0x6]
+    49b8: d344fd6c     	lsr	x12, x11, #4
+    49bc: 92400d6b     	and	x11, x11, #0xf
+    49c0: 386b690b     	ldrb	w11, [x8, x11]
+    49c4: 386c690c     	ldrb	w12, [x8, x12]
+    49c8: 390033eb     	strb	w11, [sp, #0xc]
+    49cc: 390037ec     	strb	w12, [sp, #0xd]
+    49d0: f94002ac     	ldr	x12, [x21]
+    49d4: 39401d29     	ldrb	w9, [x9, #0x7]
+    49d8: d344fd2b     	lsr	x11, x9, #4
+    49dc: 92400d29     	and	x9, x9, #0xf
+    49e0: 38696909     	ldrb	w9, [x8, x9]
+    49e4: 386b6908     	ldrb	w8, [x8, x11]
+    49e8: 39003be9     	strb	w9, [sp, #0xe]
+    49ec: f9434189     	ldr	x9, [x12, #0x680]
+    49f0: 39003fe8     	strb	w8, [sp, #0xf]
+    49f4: d63f0120     	blr	x9
+    49f8: f94013e0     	ldr	x0, [sp, #0x20]
+    49fc: 9400002d     	bl	0x4ab0 <free@plt>
+    4a00: 2a1403e0     	mov	w0, w20
+    4a04: 9400002f     	bl	0x4ac0 <close@plt>
+    4a08: aa1303e0     	mov	x0, x19
+    4a0c: a9454ff4     	ldp	x20, x19, [sp, #0x50]
+    4a10: a94457f6     	ldp	x22, x21, [sp, #0x40]
+    4a14: a9437bfd     	ldp	x29, x30, [sp, #0x30]
+    4a18: 910183ff     	add	sp, sp, #0x60
+    4a1c: d65f03c0     	ret

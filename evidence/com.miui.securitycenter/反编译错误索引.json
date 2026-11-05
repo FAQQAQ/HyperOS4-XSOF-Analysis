@@ -1,0 +1,412 @@
+[
+  {
+    "file": "jadx/sources/aq/h0.java",
+    "line": 126,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/aq/h0.java",
+    "line": 263,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: aq.h0.collect(aq.g, bp.f):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/aq/r.java",
+    "line": 283,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/aq/r.java",
+    "line": 404,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: aq.r.d.collect(aq.g, bp.f):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/da/a.java",
+    "line": 72,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/da/a.java",
+    "line": 126,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: da.a.g(java.lang.String):boolean\");"
+  },
+  {
+    "file": "jadx/sources/ke/d.java",
+    "line": 221,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/ke/d.java",
+    "line": 314,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: ke.d.e.invokeSuspend(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/ke/d.java",
+    "line": 640,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/ke/d.java",
+    "line": 837,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: ke.d.j.invokeSuspend(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/bq/j.java",
+    "line": 224,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/bq/j.java",
+    "line": 405,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: bq.j.a.invokeSuspend(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/kk/j.java",
+    "line": 198,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/kk/j.java",
+    "line": 398,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: kk.j.e.invokeSuspend(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/kk/j.java",
+    "line": 533,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/kk/j.java",
+    "line": 705,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: kk.j.n(boolean, bp.f):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/ct/g.java",
+    "line": 824,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/ct/g.java",
+    "line": 880,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: ct.g.Q(int, java.util.List):void\");"
+  },
+  {
+    "file": "jadx/sources/rf/p.java",
+    "line": 151,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/rf/p.java",
+    "line": 252,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: rf.p.b.invokeSuspend(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/rf/p.java",
+    "line": 309,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/rf/p.java",
+    "line": 520,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: rf.p.c.invokeSuspend(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/y9/x.java",
+    "line": 378,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/y9/x.java",
+    "line": 438,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: y9.x.p():void\");"
+  },
+  {
+    "file": "jadx/sources/an/c.java",
+    "line": 2036,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/an/c.java",
+    "line": 2439,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: an.c.K(bp.f):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/an/c.java",
+    "line": 2848,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/an/c.java",
+    "line": 2978,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: an.c.p(bp.f):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/a0/g.java",
+    "line": 687,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/a0/g.java",
+    "line": 912,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: a0.g.q2(a0.e[], int, int, int, int[]):void\");"
+  },
+  {
+    "file": "jadx/sources/a1/p0.java",
+    "line": 774,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/a1/p0.java",
+    "line": 873,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: a1.p0.j.a.invokeSuspend(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/a1/p0.java",
+    "line": 1327,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/a1/p0.java",
+    "line": 1418,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: a1.p0.w(a1.q, int, bp.f):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/j2/l.java",
+    "line": 280,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/j2/l.java",
+    "line": 561,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: j2.l.d(j2.i, boolean):j2.l\");"
+  },
+  {
+    "file": "jadx/sources/on/a.java",
+    "line": 71,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/on/a.java",
+    "line": 138,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: on.a.b.invokeSuspend(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/j/i.java",
+    "line": 103,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/j/i.java",
+    "line": 242,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: j.i.b(n.o, kp.l, bp.f):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/tr/a.java",
+    "line": 595,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/tr/a.java",
+    "line": 640,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: tr.a.q(long, long):int\");"
+  },
+  {
+    "file": "jadx/sources/qd/h.java",
+    "line": 48,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/qd/h.java",
+    "line": 255,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: qd.h.i(java.util.List):org.json.JSONObject\");"
+  },
+  {
+    "file": "jadx/sources/androidx/exifinterface/media/ExifInterface.java",
+    "line": 1715,
+    "message": "/*  JADX ERROR: UnsupportedOperationException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/androidx/exifinterface/media/ExifInterface.java",
+    "line": 1987,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: androidx.exifinterface.media.ExifInterface.getJpegAttributes(androidx.exifinterface.media.ExifInterface$ByteOrderedDataInputStream, int, int):void\");"
+  },
+  {
+    "file": "jadx/sources/androidx/recyclerview/widget/GridLayoutManager.java",
+    "line": 153,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/androidx/recyclerview/widget/GridLayoutManager.java",
+    "line": 200,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: androidx.recyclerview.widget.GridLayoutManager.c.e(int, int):int\");"
+  },
+  {
+    "file": "jadx/sources/com/miui/networkassistant/service/tm/TrafficSimManager.java",
+    "line": 1531,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/com/miui/networkassistant/service/tm/TrafficSimManager.java",
+    "line": 1568,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: com.miui.networkassistant.service.tm.TrafficSimManager.getInternalLeisureUsed(long, long):long\");"
+  },
+  {
+    "file": "jadx/sources/com/miui/powercenter/batteryhistory/BatteryHistoryDataManager.java",
+    "line": 665,
+    "message": "/*  JADX ERROR: Types fix failed"
+  },
+  {
+    "file": "jadx/sources/com/miui/powercenter/batteryhistory/BatteryHistoryDataManager.java",
+    "line": 989,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: com.miui.powercenter.batteryhistory.BatteryHistoryDataManager.C(long, long, long, java.util.List):void\");"
+  },
+  {
+    "file": "jadx/sources/com/miui/permcenter/provision/o.java",
+    "line": 239,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/com/miui/permcenter/provision/o.java",
+    "line": 360,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: com.miui.permcenter.provision.o.b.invokeSuspend(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/com/miui/antivirus/activity/VirusScanViewModel.java",
+    "line": 619,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/com/miui/antivirus/activity/VirusScanViewModel.java",
+    "line": 673,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: com.miui.antivirus.activity.VirusScanViewModel.i.invokeSuspend(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/com/miui/antivirus/activity/VirusScanViewModel.java",
+    "line": 2378,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/com/miui/antivirus/activity/VirusScanViewModel.java",
+    "line": 2456,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: com.miui.antivirus.activity.VirusScanViewModel.G0(int, bp.f):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/com/miui/earthquakewarning/ui/EarthquakeWarningDemoFragment$onViewCreated$2$1.java",
+    "line": 38,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/com/miui/earthquakewarning/ui/EarthquakeWarningDemoFragment$onViewCreated$2$1.java",
+    "line": 118,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: com.miui.earthquakewarning.ui.EarthquakeWarningDemoFragment$onViewCreated$2$1.AnonymousClass1.invokeSuspend(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/com/miui/earthquakewarning/ui/EarthquakeWarningDemoFragment$onViewCreated$2$2.java",
+    "line": 39,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/com/miui/earthquakewarning/ui/EarthquakeWarningDemoFragment$onViewCreated$2$2.java",
+    "line": 119,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: com.miui.earthquakewarning.ui.EarthquakeWarningDemoFragment$onViewCreated$2$2.AnonymousClass1.invokeSuspend(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/com/miui/earthquakewarning/ui/EarthquakeWarningInfoActivity$Companion$EarthquakeWarningInfoFragment$showRevokeDialog$1.java",
+    "line": 44,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/com/miui/earthquakewarning/ui/EarthquakeWarningInfoActivity$Companion$EarthquakeWarningInfoFragment$showRevokeDialog$1.java",
+    "line": 124,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: com.miui.earthquakewarning.ui.EarthquakeWarningInfoActivity$Companion$EarthquakeWarningInfoFragment$showRevokeDialog$1.AnonymousClass1.invokeSuspend(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/com/miui/warningcenter/caraccident/service/CarAccidentDetectService.java",
+    "line": 692,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/com/miui/warningcenter/caraccident/service/CarAccidentDetectService.java",
+    "line": 978,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: com.miui.warningcenter.caraccident.service.CarAccidentDetectService.DetectorCallback.CarCrashDetector.run():void\");"
+  },
+  {
+    "file": "jadx/sources/com/google/android/exoplayer2/video/MediaCodecVideoRenderer.java",
+    "line": 189,
+    "message": "/*  JADX ERROR: UnsupportedOperationException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/com/google/android/exoplayer2/video/MediaCodecVideoRenderer.java",
+    "line": 1780,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: com.google.android.exoplayer2.video.MediaCodecVideoRenderer.evaluateDeviceNeedsSetOutputSurfaceWorkaround():boolean\");"
+  },
+  {
+    "file": "jadx/sources/com/google/android/exoplayer2/util/NalUnitUtil.java",
+    "line": 343,
+    "message": "/*  JADX ERROR: StackOverflowError in pass: IfRegionVisitor"
+  },
+  {
+    "file": "jadx/sources/com/google/android/exoplayer2/util/NalUnitUtil.java",
+    "line": 557,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: com.google.android.exoplayer2.util.NalUnitUtil.parseSpsNalUnitPayload(byte[], int, int):com.google.android.exoplayer2.util.NalUnitUtil$SpsData\");"
+  },
+  {
+    "file": "jadx/sources/com/google/android/exoplayer2/audio/DefaultAudioSink.java",
+    "line": 583,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/com/google/android/exoplayer2/audio/DefaultAudioSink.java",
+    "line": 633,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: com.google.android.exoplayer2.audio.DefaultAudioSink.drainToEndOfStream():boolean\");"
+  },
+  {
+    "file": "jadx/sources/com/google/android/exoplayer2/extractor/wav/WavExtractor.java",
+    "line": 165,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/com/google/android/exoplayer2/extractor/wav/WavExtractor.java",
+    "line": 248,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: com.google.android.exoplayer2.extractor.wav.WavExtractor.ImaAdPcmOutputWriter.sampleData(com.google.android.exoplayer2.extractor.ExtractorInput, long):boolean\");"
+  },
+  {
+    "file": "jadx/sources/com/google/android/material/shadow/ShadowDrawableWrapper.java",
+    "line": 1232,
+    "message": "/*  JADX ERROR: Types fix failed"
+  },
+  {
+    "file": "jadx/sources/com/google/android/material/shadow/ShadowDrawableWrapper.java",
+    "line": 1423,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: com.google.android.material.shadow.ShadowDrawableWrapper.drawShadow(android.graphics.Canvas):void\");"
+  },
+  {
+    "file": "jadx/sources/com/xiaomi/game/predownload/workmanager/PreDownloadJobService.java",
+    "line": 778,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/com/xiaomi/game/predownload/workmanager/PreDownloadJobService.java",
+    "line": 1020,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: com.xiaomi.game.predownload.workmanager.PreDownloadJobService.b.g.invokeSuspend(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/com/xiaomi/game/predownload/workmanager/PreDownloadJobService.java",
+    "line": 1840,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: IfRegionVisitor"
+  },
+  {
+    "file": "jadx/sources/com/xiaomi/game/predownload/workmanager/PreDownloadJobService.java",
+    "line": 2390,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: com.xiaomi.game.predownload.workmanager.PreDownloadJobService.b.p(in.h, bp.f):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/com/xiaomi/game/predownload/service/PredownloadTriggerService.java",
+    "line": 59,
+    "message": "/*  JADX ERROR: UnsupportedOperationException in pass: SwitchBreakVisitor"
+  },
+  {
+    "file": "jadx/sources/com/xiaomi/game/predownload/service/PredownloadTriggerService.java",
+    "line": 195,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: com.xiaomi.game.predownload.service.PredownloadTriggerService.onStartCommand(android.content.Intent, int, int):int\");"
+  }
+]

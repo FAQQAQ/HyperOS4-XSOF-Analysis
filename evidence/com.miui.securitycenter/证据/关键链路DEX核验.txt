@@ -1,0 +1,3111 @@
+
+CLASS classes3.dex Lcom/miui/nfcaccess/NfcAccessHttpUtil;
+FIELD a Lcom/miui/nfcaccess/NfcAccessHttpUtil; = None
+FIELD b Lcom/miui/nfcaccess/a; = None
+
+METHOD <clinit>()V flags=static constructor
+registers=2 inputs=0
+0x000000: new-instance v0, Lcom/miui/nfcaccess/NfcAccessHttpUtil;
+0x000004: invoke-direct v0, Lcom/miui/nfcaccess/NfcAccessHttpUtil;-><init>()V
+0x00000a: sput-object v0, Lcom/miui/nfcaccess/NfcAccessHttpUtil;->a Lcom/miui/nfcaccess/NfcAccessHttpUtil;
+0x00000e: new-instance v0, Lcom/miui/nfcaccess/a;
+0x000012: const-string v1, "NfcAccessHttpUtil"
+0x000016: invoke-direct v0, v1, Lcom/miui/nfcaccess/a;-><init>(Ljava/lang/String;)V
+0x00001c: sput-object v0, Lcom/miui/nfcaccess/NfcAccessHttpUtil;->b Lcom/miui/nfcaccess/a;
+0x000020: return-void 
+
+METHOD <init>()V flags=private constructor
+registers=1 inputs=1
+0x000000: invoke-direct v0, Ljava/lang/Object;-><init>()V
+0x000006: return-void 
+
+METHOD a(I)Lcom/miui/nfcaccess/Response; flags=public static final
+registers=5 inputs=1
+TRY bytes [0x8c,0xa6) -> [('Ljava/lang/Exception;', 168)]
+0x000000: const-string v0, "deviceModel"
+0x000004: sget-object v1, Landroid/os/Build;->DEVICE Ljava/lang/String;
+0x000008: invoke-static v0, v1, Lwo/t;->a(Ljava/lang/Object; Ljava/lang/Object;)Lwo/o;
+0x00000e: move-result-object v0
+0x000010: const-string v1, "appDataVersion"
+0x000014: invoke-static v4, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+0x00001a: move-result-object v4
+0x00001c: invoke-static v1, v4, Lwo/t;->a(Ljava/lang/Object; Ljava/lang/Object;)Lwo/o;
+0x000022: move-result-object v4
+0x000024: filled-new-array v0, v4, [Lwo/o;
+0x00002a: move-result-object v4
+0x00002c: invoke-static v4, Lyo/f0;->l([Lwo/o;)Ljava/util/Map;
+0x000032: move-result-object v4
+0x000034: new-instance v0, Lj7/i;
+0x000038: const-string v1, ""
+0x00003c: invoke-direct v0, v1, Lj7/i;-><init>(Ljava/lang/String;)V
+0x000042: const-string v1, "https://fraud-detection.engine.miui.com/nfc/antifraud/config"
+0x000046: invoke-static v4, v1, v0, Lgk/l;->m(Ljava/util/Map; Ljava/lang/String; Lj7/i;)Ljava/lang/String;
+0x00004c: move-result-object v4
+0x00004e: const/4 v0, 0
+0x000050: if-eqz v4, +036h
+0x000054: sget-object v1, Lcom/miui/nfcaccess/NfcAccessHttpUtil;->b Lcom/miui/nfcaccess/a;
+0x000058: new-instance v2, Ljava/lang/StringBuilder;
+0x00005c: invoke-direct v2, Ljava/lang/StringBuilder;-><init>()V
+0x000062: const-string v3, "getConfig result = "
+0x000066: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00006c: invoke-virtual v2, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000072: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000078: move-result-object v2
+0x00007a: const/4 v3, 2
+0x00007c: invoke-static v1, v2, v0, v3, v0, Lcom/miui/nfcaccess/a;->d(Lcom/miui/nfcaccess/a; Ljava/lang/String; Ljava/lang/Throwable; I Ljava/lang/Object;)V
+0x000082: new-instance v1, Lcom/google/gson/Gson;
+0x000086: invoke-direct v1, Lcom/google/gson/Gson;-><init>()V
+0x00008c: new-instance v2, Lcom/miui/nfcaccess/NfcAccessHttpUtil$getConfig$lambda$0$$inlined$fromJsonTypeToken$1;
+0x000090: invoke-direct v2, Lcom/miui/nfcaccess/NfcAccessHttpUtil$getConfig$lambda$0$$inlined$fromJsonTypeToken$1;-><init>()V
+0x000096: invoke-virtual v2, Lcom/google/gson/reflect/TypeToken;->getType()Ljava/lang/reflect/Type;
+0x00009c: move-result-object v2
+0x00009e: invoke-virtual v1, v4, v2, Lcom/google/gson/Gson;->fromJson(Ljava/lang/String; Ljava/lang/reflect/Type;)Ljava/lang/Object;
+0x0000a4: move-result-object v0
+0x0000a6: goto +9h
+0x0000a8: move-exception v4
+0x0000aa: sget-object v1, Lcom/miui/nfcaccess/NfcAccessHttpUtil;->b Lcom/miui/nfcaccess/a;
+0x0000ae: const-string v2, "fromJsonTypeToken error"
+0x0000b2: invoke-virtual v1, v2, v4, Lcom/miui/nfcaccess/a;->c(Ljava/lang/String; Ljava/lang/Throwable;)V
+0x0000b8: check-cast v0, Lcom/miui/nfcaccess/Response;
+0x0000bc: return-object v0
+
+CLASS classes3.dex Led/a;
+
+METHOD a()V flags=public static
+registers=2 inputs=0
+0x000000: invoke-static Lco/b;->a()Lco/b;
+0x000006: move-result-object v0
+0x000008: const-string v1, "https://framework.sec.miui.com"
+0x00000c: invoke-virtual v0, v1, Lco/b;->b(Ljava/lang/String;)V
+0x000012: return-void 
+
+CLASS classes3.dex Ltd/c;
+
+METHOD a()Z flags=public static
+registers=1 inputs=0
+0x000000: const/4 v0, 0
+0x000002: return v0
+
+METHOD b(Z)V flags=public static
+registers=2 inputs=1
+0x000000: const-string v0, "key_month_report_enabled"
+0x000004: invoke-static v0, v1, Ll7/e;->n(Ljava/lang/String; Z)V
+0x00000a: return-void 
+
+CLASS classes4.dex Lco/b;
+FIELD a Lco/b; = None
+
+METHOD <clinit>()V flags=static constructor
+registers=1 inputs=0
+0x000000: new-instance v0, Lco/b;
+0x000004: invoke-direct v0, Lco/b;-><init>()V
+0x00000a: sput-object v0, Lco/b;->a Lco/b;
+0x00000e: return-void 
+
+METHOD <init>()V flags=private constructor
+registers=1 inputs=1
+0x000000: invoke-direct v0, Ljava/lang/Object;-><init>()V
+0x000006: return-void 
+
+METHOD a()Lco/b; flags=public static
+registers=1 inputs=0
+0x000000: sget-object v0, Lco/b;->a Lco/b;
+0x000004: return-object v0
+
+METHOD b(Ljava/lang/String;)V flags=public
+registers=2 inputs=2
+0x000000: invoke-static v1, Lco/c;->b(Ljava/lang/String;)V
+0x000006: return-void 
+
+CLASS classes4.dex Lco/c;
+FIELD a Ljava/lang/String; = ''
+
+METHOD <clinit>()V flags=static constructor
+registers=0 inputs=0
+0x000000: return-void 
+
+METHOD a()Ljava/lang/String; flags=public static
+registers=2 inputs=0
+0x000000: sget-object v0, Lco/c;->a Ljava/lang/String;
+0x000004: invoke-static v0, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+0x00000a: move-result v0
+0x00000c: if-eqz v0, +009h
+0x000010: const-string v0, "XSOFConfiguration"
+0x000014: const-string v1, "xsof not initialized, host is null!!!"
+0x000018: invoke-static v0, v1, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+0x00001e: sget-object v0, Lco/c;->a Ljava/lang/String;
+0x000022: return-object v0
+
+METHOD b(Ljava/lang/String;)V flags=public static
+registers=1 inputs=1
+0x000000: sput-object v0, Lco/c;->a Ljava/lang/String;
+0x000004: return-void 
+
+CLASS classes4.dex Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;
+FIELD a Lcom/xiaomi/security/xsof/MiSafetyDetectService; = None
+
+METHOD <init>(Lcom/xiaomi/security/xsof/MiSafetyDetectService;)V flags=public constructor
+registers=2 inputs=2
+0x000000: iput-object v1, v0, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x000004: invoke-direct v0, Lcom/xiaomi/security/xsof/IMiSafetyDetectServer$Stub;-><init>()V
+0x00000a: return-void 
+
+METHOD o(I Ljava/lang/String;)Z flags=private
+registers=5 inputs=3
+0x000000: iget-object v0, v2, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x000004: invoke-virtual v0, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+0x00000a: move-result-object v0
+0x00000c: iget-object v1, v2, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x000010: invoke-static v1, v3, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->c(Lcom/xiaomi/security/xsof/MiSafetyDetectService; I)Ljava/lang/String;
+0x000016: move-result-object v3
+0x000018: const-string v1, "com.xiaomi.security.permission.ACCESS_XSOF"
+0x00001c: invoke-static v0, v3, v1, Lfo/d;->a(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;)Z
+0x000022: move-result v3
+0x000024: if-nez v3, +01ah
+0x000028: new-instance v3, Ljava/lang/StringBuilder;
+0x00002c: invoke-direct v3, Ljava/lang/StringBuilder;-><init>()V
+0x000032: const-string v0, "Missing Declare permission, from calling package "
+0x000036: invoke-virtual v3, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00003c: invoke-virtual v3, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000042: invoke-virtual v3, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000048: move-result-object v3
+0x00004a: const-string v4, "Mi-SDS"
+0x00004e: invoke-static v4, v3, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x000054: const/4 v3, 0
+0x000056: return v3
+0x000058: const/4 v3, 1
+0x00005a: return v3
+
+METHOD u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V flags=private
+registers=4 inputs=4
+TRY bytes [0x6,0xc) -> [('Ljava/lang/Exception;', 12)]
+0x000000: if-nez v1, +003h
+0x000004: return-void 
+0x000006: invoke-interface v1, v2, v3, Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback;->H2(Ljava/lang/String; I)V
+0x00000c: return-void 
+
+METHOD V4(Ljava/lang/String; Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback;)V flags=public
+registers=8 inputs=3
+0x000000: invoke-static Landroid/os/Binder;->getCallingPid()I
+0x000006: move-result v0
+0x000008: iget-object v1, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x00000c: invoke-static v1, v0, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->c(Lcom/xiaomi/security/xsof/MiSafetyDetectService; I)Ljava/lang/String;
+0x000012: move-result-object v1
+0x000014: const-string v2, "xsof_risk_app"
+0x000018: invoke-static v2, v1, Loo/d;->f(Ljava/lang/String; Ljava/lang/String;)V
+0x00001e: invoke-direct v5, v0, v1, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->o(I Ljava/lang/String;)Z
+0x000024: move-result v0
+0x000026: const/4 v2, 0
+0x000028: if-nez v0, +008h
+0x00002c: const/16 v6, 1017
+0x000030: invoke-direct v5, v7, v2, v6, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x000036: return-void 
+0x000038: new-instance v0, Ljava/lang/StringBuilder;
+0x00003c: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x000042: const-string v3, "Call API 002 from package : "
+0x000046: invoke-virtual v0, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00004c: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000052: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000058: move-result-object v0
+0x00005a: const-string v3, "Mi-SDS"
+0x00005e: invoke-static v3, v0, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x000064: const/16 v0, 11
+0x000068: invoke-static v6, v0, Lgo/a;->a(Ljava/lang/String; I)Lgo/a;
+0x00006e: move-result-object v6
+0x000070: instance-of v3, v6, Lgo/g;
+0x000074: const/16 v4, 1006
+0x000078: if-nez v3, +006h
+0x00007c: invoke-direct v5, v7, v2, v4, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x000082: return-void 
+0x000084: invoke-virtual v6, Lgo/a;->d()Ljava/lang/String;
+0x00008a: move-result-object v3
+0x00008c: invoke-static v1, v3, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence; Ljava/lang/CharSequence;)Z
+0x000092: move-result v1
+0x000094: if-nez v1, +006h
+0x000098: invoke-direct v5, v7, v2, v4, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x00009e: return-void 
+0x0000a0: new-instance v1, Lco/a;
+0x0000a4: invoke-direct v1, v0, v6, v7, Lco/a;-><init>(I Lgo/a; Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback;)V
+0x0000aa: iget-object v6, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x0000ae: invoke-static v6, v1, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->f(Lcom/xiaomi/security/xsof/MiSafetyDetectService; Lco/a;)V
+0x0000b4: return-void 
+
+METHOD c2(Ljava/lang/String; Ljava/lang/String; Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback;)V flags=public
+registers=9 inputs=4
+0x000000: invoke-static Landroid/os/Binder;->getCallingPid()I
+0x000006: move-result v0
+0x000008: iget-object v1, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x00000c: invoke-static v1, v0, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->c(Lcom/xiaomi/security/xsof/MiSafetyDetectService; I)Ljava/lang/String;
+0x000012: move-result-object v1
+0x000014: const-string v2, "xsof_fraud_detection_current"
+0x000018: invoke-static v2, v1, Loo/d;->f(Ljava/lang/String; Ljava/lang/String;)V
+0x00001e: invoke-direct v5, v0, v1, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->o(I Ljava/lang/String;)Z
+0x000024: move-result v0
+0x000026: const/4 v2, 0
+0x000028: if-nez v0, +008h
+0x00002c: const/16 v6, 1017
+0x000030: invoke-direct v5, v8, v2, v6, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x000036: return-void 
+0x000038: new-instance v0, Ljava/lang/StringBuilder;
+0x00003c: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x000042: const-string v3, "Call API 004_1 from package : "
+0x000046: invoke-virtual v0, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00004c: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000052: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000058: move-result-object v0
+0x00005a: const-string v3, "Mi-SDS"
+0x00005e: invoke-static v3, v0, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x000064: const/16 v0, 13
+0x000068: invoke-static v6, v0, Lgo/a;->a(Ljava/lang/String; I)Lgo/a;
+0x00006e: move-result-object v6
+0x000070: instance-of v3, v6, Lgo/c;
+0x000074: const/16 v4, 1006
+0x000078: if-eqz v3, +02dh
+0x00007c: move-object v3, v6
+0x00007e: check-cast v3, Lgo/c;
+0x000082: invoke-virtual v6, Lgo/a;->d()Ljava/lang/String;
+0x000088: move-result-object v6
+0x00008a: invoke-static v1, v6, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence; Ljava/lang/CharSequence;)Z
+0x000090: move-result v6
+0x000092: if-nez v6, +006h
+0x000096: invoke-direct v5, v8, v2, v4, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x00009c: return-void 
+0x00009e: iget-object v6, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x0000a2: invoke-static v6, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->b(Lcom/xiaomi/security/xsof/MiSafetyDetectService;)Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;
+0x0000a8: move-result-object v6
+0x0000aa: if-eqz v6, +006h
+0x0000ae: const/4 v1, 1
+0x0000b0: invoke-virtual v6, v1, Landroid/os/Handler;->sendEmptyMessage(I)Z
+0x0000b6: invoke-virtual v3, v7, Lgo/i;->f(Ljava/lang/String;)V
+0x0000bc: new-instance v6, Lco/a;
+0x0000c0: invoke-direct v6, v0, v3, v8, Lco/a;-><init>(I Lgo/a; Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback;)V
+0x0000c6: iget-object v7, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x0000ca: invoke-static v7, v6, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->f(Lcom/xiaomi/security/xsof/MiSafetyDetectService; Lco/a;)V
+0x0000d0: return-void 
+0x0000d2: invoke-direct v5, v8, v2, v4, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x0000d8: return-void 
+
+METHOD e3(Ljava/lang/String; J Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback;)V flags=public
+registers=10 inputs=5
+0x000000: invoke-static Landroid/os/Binder;->getCallingPid()I
+0x000006: move-result v0
+0x000008: iget-object v1, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x00000c: invoke-static v1, v0, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->c(Lcom/xiaomi/security/xsof/MiSafetyDetectService; I)Ljava/lang/String;
+0x000012: move-result-object v1
+0x000014: const-string v2, "xsof_simulated_touch"
+0x000018: invoke-static v2, v1, Loo/d;->f(Ljava/lang/String; Ljava/lang/String;)V
+0x00001e: invoke-direct v5, v0, v1, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->o(I Ljava/lang/String;)Z
+0x000024: move-result v0
+0x000026: const/4 v2, 0
+0x000028: if-nez v0, +008h
+0x00002c: const/16 v6, 1017
+0x000030: invoke-direct v5, v9, v2, v6, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x000036: return-void 
+0x000038: new-instance v0, Ljava/lang/StringBuilder;
+0x00003c: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x000042: const-string v3, "Call API 003 from uid = "
+0x000046: invoke-virtual v0, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00004c: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000052: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000058: move-result-object v0
+0x00005a: const-string v3, "Mi-SDS"
+0x00005e: invoke-static v3, v0, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x000064: const/16 v0, 12
+0x000068: invoke-static v6, v0, Lgo/a;->a(Ljava/lang/String; I)Lgo/a;
+0x00006e: move-result-object v6
+0x000070: instance-of v3, v6, Lgo/h;
+0x000074: const/16 v4, 1006
+0x000078: if-nez v3, +006h
+0x00007c: invoke-direct v5, v9, v2, v4, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x000082: return-void 
+0x000084: invoke-virtual v6, Lgo/a;->d()Ljava/lang/String;
+0x00008a: move-result-object v3
+0x00008c: invoke-static v1, v3, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence; Ljava/lang/CharSequence;)Z
+0x000092: move-result v1
+0x000094: if-nez v1, +006h
+0x000098: invoke-direct v5, v9, v2, v4, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x00009e: return-void 
+0x0000a0: check-cast v6, Lgo/h;
+0x0000a4: invoke-virtual v6, v7, v8, Lgo/h;->f(J)V
+0x0000aa: new-instance v7, Lco/a;
+0x0000ae: invoke-direct v7, v0, v6, v9, Lco/a;-><init>(I Lgo/a; Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback;)V
+0x0000b4: iget-object v6, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x0000b8: invoke-static v6, v7, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->f(Lcom/xiaomi/security/xsof/MiSafetyDetectService; Lco/a;)V
+0x0000be: return-void 
+
+METHOD f7(Ljava/lang/String; Ljava/lang/String; [I [I Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback;)V flags=public
+registers=11 inputs=6
+0x000000: invoke-static Landroid/os/Binder;->getCallingPid()I
+0x000006: move-result v0
+0x000008: iget-object v1, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x00000c: invoke-static v1, v0, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->c(Lcom/xiaomi/security/xsof/MiSafetyDetectService; I)Ljava/lang/String;
+0x000012: move-result-object v1
+0x000014: const-string v2, "xsof_fraud_detection_duration"
+0x000018: invoke-static v2, v1, Loo/d;->f(Ljava/lang/String; Ljava/lang/String;)V
+0x00001e: invoke-direct v5, v0, v1, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->o(I Ljava/lang/String;)Z
+0x000024: move-result v0
+0x000026: const/4 v2, 0
+0x000028: if-nez v0, +008h
+0x00002c: const/16 v6, 1017
+0x000030: invoke-direct v5, v10, v2, v6, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x000036: return-void 
+0x000038: new-instance v0, Ljava/lang/StringBuilder;
+0x00003c: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x000042: const-string v3, "Call API 004_3 from package : "
+0x000046: invoke-virtual v0, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00004c: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000052: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000058: move-result-object v0
+0x00005a: const-string v3, "Mi-SDS"
+0x00005e: invoke-static v3, v0, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x000064: const/16 v0, 15
+0x000068: invoke-static v6, v0, Lgo/a;->a(Ljava/lang/String; I)Lgo/a;
+0x00006e: move-result-object v6
+0x000070: instance-of v3, v6, Lgo/d;
+0x000074: const/16 v4, 1006
+0x000078: if-eqz v3, +033h
+0x00007c: move-object v3, v6
+0x00007e: check-cast v3, Lgo/d;
+0x000082: invoke-virtual v6, Lgo/a;->d()Ljava/lang/String;
+0x000088: move-result-object v6
+0x00008a: invoke-static v1, v6, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence; Ljava/lang/CharSequence;)Z
+0x000090: move-result v6
+0x000092: if-nez v6, +006h
+0x000096: invoke-direct v5, v10, v2, v4, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x00009c: return-void 
+0x00009e: iget-object v6, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x0000a2: invoke-static v6, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->b(Lcom/xiaomi/security/xsof/MiSafetyDetectService;)Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;
+0x0000a8: move-result-object v6
+0x0000aa: if-eqz v6, +006h
+0x0000ae: const/4 v1, 1
+0x0000b0: invoke-virtual v6, v1, Landroid/os/Handler;->sendEmptyMessage(I)Z
+0x0000b6: invoke-virtual v3, v7, Lgo/i;->f(Ljava/lang/String;)V
+0x0000bc: invoke-virtual v3, v8, Lgo/d;->k([I)V
+0x0000c2: invoke-virtual v3, v9, Lgo/d;->j([I)V
+0x0000c8: new-instance v6, Lco/a;
+0x0000cc: invoke-direct v6, v0, v3, v10, Lco/a;-><init>(I Lgo/a; Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback;)V
+0x0000d2: iget-object v7, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x0000d6: invoke-static v7, v6, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->f(Lcom/xiaomi/security/xsof/MiSafetyDetectService; Lco/a;)V
+0x0000dc: return-void 
+0x0000de: invoke-direct v5, v10, v2, v4, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x0000e4: return-void 
+
+METHOD h4(Ljava/lang/String; Ljava/lang/String; I Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback;)V flags=public
+registers=10 inputs=5
+0x000000: invoke-static Landroid/os/Binder;->getCallingPid()I
+0x000006: move-result v0
+0x000008: iget-object v1, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x00000c: invoke-static v1, v0, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->c(Lcom/xiaomi/security/xsof/MiSafetyDetectService; I)Ljava/lang/String;
+0x000012: move-result-object v1
+0x000014: const-string v2, "xsof_device_trust"
+0x000018: invoke-static v2, v1, Loo/d;->f(Ljava/lang/String; Ljava/lang/String;)V
+0x00001e: invoke-direct v5, v0, v1, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->o(I Ljava/lang/String;)Z
+0x000024: move-result v0
+0x000026: const/4 v2, 0
+0x000028: if-nez v0, +008h
+0x00002c: const/16 v6, 1017
+0x000030: invoke-direct v5, v9, v2, v6, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x000036: return-void 
+0x000038: new-instance v0, Ljava/lang/StringBuilder;
+0x00003c: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x000042: const-string v3, "Call API 001 from package : "
+0x000046: invoke-virtual v0, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00004c: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000052: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000058: move-result-object v0
+0x00005a: const-string v3, "Mi-SDS"
+0x00005e: invoke-static v3, v0, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x000064: const/16 v0, 10
+0x000068: invoke-static v6, v0, Lgo/a;->a(Ljava/lang/String; I)Lgo/a;
+0x00006e: move-result-object v6
+0x000070: instance-of v3, v6, Lgo/i;
+0x000074: const/16 v4, 1006
+0x000078: if-nez v3, +006h
+0x00007c: invoke-direct v5, v9, v2, v4, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x000082: return-void 
+0x000084: invoke-virtual v6, Lgo/a;->d()Ljava/lang/String;
+0x00008a: move-result-object v3
+0x00008c: invoke-static v1, v3, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence; Ljava/lang/CharSequence;)Z
+0x000092: move-result v1
+0x000094: if-nez v1, +006h
+0x000098: invoke-direct v5, v9, v2, v4, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x00009e: return-void 
+0x0000a0: iget-object v1, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x0000a4: invoke-static v1, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->b(Lcom/xiaomi/security/xsof/MiSafetyDetectService;)Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;
+0x0000aa: move-result-object v1
+0x0000ac: if-eqz v1, +006h
+0x0000b0: const/4 v2, 1
+0x0000b2: invoke-virtual v1, v2, Landroid/os/Handler;->sendEmptyMessage(I)Z
+0x0000b8: check-cast v6, Lgo/i;
+0x0000bc: invoke-virtual v6, v7, Lgo/i;->f(Ljava/lang/String;)V
+0x0000c2: invoke-virtual v6, v8, Lgo/i;->g(I)V
+0x0000c8: new-instance v7, Lco/a;
+0x0000cc: invoke-direct v7, v0, v6, v9, Lco/a;-><init>(I Lgo/a; Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback;)V
+0x0000d2: iget-object v6, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x0000d6: invoke-static v6, v7, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->f(Lcom/xiaomi/security/xsof/MiSafetyDetectService; Lco/a;)V
+0x0000dc: return-void 
+
+METHOD m6(Ljava/lang/String; Ljava/lang/String; Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback;)V flags=public
+registers=9 inputs=4
+0x000000: invoke-static Landroid/os/Binder;->getCallingPid()I
+0x000006: move-result v0
+0x000008: iget-object v1, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x00000c: invoke-static v1, v0, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->c(Lcom/xiaomi/security/xsof/MiSafetyDetectService; I)Ljava/lang/String;
+0x000012: move-result-object v1
+0x000014: const-string v2, "xsof_fraud_detection_score"
+0x000018: invoke-static v2, v1, Loo/d;->f(Ljava/lang/String; Ljava/lang/String;)V
+0x00001e: invoke-direct v5, v0, v1, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->o(I Ljava/lang/String;)Z
+0x000024: move-result v0
+0x000026: const/4 v2, 0
+0x000028: if-nez v0, +008h
+0x00002c: const/16 v6, 1017
+0x000030: invoke-direct v5, v8, v2, v6, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x000036: return-void 
+0x000038: new-instance v0, Ljava/lang/StringBuilder;
+0x00003c: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x000042: const-string v3, "Call API 004_4 from package : "
+0x000046: invoke-virtual v0, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00004c: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000052: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000058: move-result-object v0
+0x00005a: const-string v3, "Mi-SDS"
+0x00005e: invoke-static v3, v0, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x000064: const/16 v0, 16
+0x000068: invoke-static v6, v0, Lgo/a;->a(Ljava/lang/String; I)Lgo/a;
+0x00006e: move-result-object v6
+0x000070: instance-of v3, v6, Lgo/f;
+0x000074: const/16 v4, 1006
+0x000078: if-eqz v3, +02dh
+0x00007c: move-object v3, v6
+0x00007e: check-cast v3, Lgo/f;
+0x000082: invoke-virtual v6, Lgo/a;->d()Ljava/lang/String;
+0x000088: move-result-object v6
+0x00008a: invoke-static v1, v6, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence; Ljava/lang/CharSequence;)Z
+0x000090: move-result v6
+0x000092: if-nez v6, +006h
+0x000096: invoke-direct v5, v8, v2, v4, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x00009c: return-void 
+0x00009e: iget-object v6, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x0000a2: invoke-static v6, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->b(Lcom/xiaomi/security/xsof/MiSafetyDetectService;)Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;
+0x0000a8: move-result-object v6
+0x0000aa: if-eqz v6, +006h
+0x0000ae: const/4 v1, 1
+0x0000b0: invoke-virtual v6, v1, Landroid/os/Handler;->sendEmptyMessage(I)Z
+0x0000b6: invoke-virtual v3, v7, Lgo/i;->f(Ljava/lang/String;)V
+0x0000bc: new-instance v6, Lco/a;
+0x0000c0: invoke-direct v6, v0, v3, v8, Lco/a;-><init>(I Lgo/a; Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback;)V
+0x0000c6: iget-object v7, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x0000ca: invoke-static v7, v6, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->f(Lcom/xiaomi/security/xsof/MiSafetyDetectService; Lco/a;)V
+0x0000d0: return-void 
+0x0000d2: invoke-direct v5, v8, v2, v4, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x0000d8: return-void 
+
+METHOD p6(Ljava/lang/String; Ljava/lang/String; [I Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback;)V flags=public
+registers=10 inputs=5
+0x000000: invoke-static Landroid/os/Binder;->getCallingPid()I
+0x000006: move-result v0
+0x000008: iget-object v1, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x00000c: invoke-static v1, v0, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->c(Lcom/xiaomi/security/xsof/MiSafetyDetectService; I)Ljava/lang/String;
+0x000012: move-result-object v1
+0x000014: const-string v2, "xsof_fraud_detection_past"
+0x000018: invoke-static v2, v1, Loo/d;->f(Ljava/lang/String; Ljava/lang/String;)V
+0x00001e: invoke-direct v5, v0, v1, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->o(I Ljava/lang/String;)Z
+0x000024: move-result v0
+0x000026: const/4 v2, 0
+0x000028: if-nez v0, +008h
+0x00002c: const/16 v6, 1017
+0x000030: invoke-direct v5, v9, v2, v6, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x000036: return-void 
+0x000038: new-instance v0, Ljava/lang/StringBuilder;
+0x00003c: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x000042: const-string v3, "Call API 004_2 from package : "
+0x000046: invoke-virtual v0, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00004c: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000052: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000058: move-result-object v0
+0x00005a: const-string v3, "Mi-SDS"
+0x00005e: invoke-static v3, v0, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x000064: const/16 v0, 14
+0x000068: invoke-static v6, v0, Lgo/a;->a(Ljava/lang/String; I)Lgo/a;
+0x00006e: move-result-object v6
+0x000070: instance-of v3, v6, Lgo/e;
+0x000074: const/16 v4, 1006
+0x000078: if-eqz v3, +030h
+0x00007c: move-object v3, v6
+0x00007e: check-cast v3, Lgo/e;
+0x000082: invoke-virtual v6, Lgo/a;->d()Ljava/lang/String;
+0x000088: move-result-object v6
+0x00008a: invoke-static v1, v6, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence; Ljava/lang/CharSequence;)Z
+0x000090: move-result v6
+0x000092: if-nez v6, +006h
+0x000096: invoke-direct v5, v9, v2, v4, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x00009c: return-void 
+0x00009e: iget-object v6, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x0000a2: invoke-static v6, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->b(Lcom/xiaomi/security/xsof/MiSafetyDetectService;)Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;
+0x0000a8: move-result-object v6
+0x0000aa: if-eqz v6, +006h
+0x0000ae: const/4 v1, 1
+0x0000b0: invoke-virtual v6, v1, Landroid/os/Handler;->sendEmptyMessage(I)Z
+0x0000b6: invoke-virtual v3, v7, Lgo/i;->f(Ljava/lang/String;)V
+0x0000bc: invoke-virtual v3, v8, Lgo/e;->i([I)V
+0x0000c2: new-instance v6, Lco/a;
+0x0000c6: invoke-direct v6, v0, v3, v9, Lco/a;-><init>(I Lgo/a; Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback;)V
+0x0000cc: iget-object v7, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x0000d0: invoke-static v7, v6, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->f(Lcom/xiaomi/security/xsof/MiSafetyDetectService; Lco/a;)V
+0x0000d6: return-void 
+0x0000d8: invoke-direct v5, v9, v2, v4, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;->u(Lcom/xiaomi/security/xsof/IMiSafetyDetectCallback; Ljava/lang/String; I)V
+0x0000de: return-void 
+
+CLASS classes4.dex Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;
+FIELD a Lcom/xiaomi/security/xsof/MiSafetyDetectService; = None
+
+METHOD <init>(Lcom/xiaomi/security/xsof/MiSafetyDetectService; Landroid/os/Looper;)V flags=public constructor
+registers=3 inputs=3
+0x000000: iput-object v1, v0, Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x000004: invoke-direct v0, v2, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+0x00000a: return-void 
+
+METHOD handleMessage(Landroid/os/Message;)V flags=public
+registers=4 inputs=2
+0x000000: iget v0, v3, Landroid/os/Message;->what I
+0x000004: const/4 v1, 1
+0x000006: if-eq v0, v1, +020h
+0x00000a: const/4 v1, 2
+0x00000c: if-eq v0, v1, +013h
+0x000010: packed-switch v0, +0000026h
+0x000016: return-void 
+0x000018: iget-object v0, v2, Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x00001c: invoke-static v0, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->e(Lcom/xiaomi/security/xsof/MiSafetyDetectService;)V
+0x000022: iget-object v0, v2, Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x000026: iget-object v3, v3, Landroid/os/Message;->obj Ljava/lang/Object;
+0x00002a: invoke-static v0, v3, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->d(Lcom/xiaomi/security/xsof/MiSafetyDetectService; Ljava/lang/Object;)V
+0x000030: return-void 
+0x000032: iget-object v3, v2, Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x000036: invoke-static v3, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->a(Lcom/xiaomi/security/xsof/MiSafetyDetectService;)Lno/j;
+0x00003c: move-result-object v3
+0x00003e: invoke-virtual v3, Lno/j;->H()V
+0x000044: return-void 
+0x000046: iget-object v3, v2, Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;->a Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+0x00004a: invoke-static v3, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->a(Lcom/xiaomi/security/xsof/MiSafetyDetectService;)Lno/j;
+0x000050: move-result-object v3
+0x000052: invoke-virtual v3, Lno/j;->m()V
+0x000058: return-void 
+0x00005a: nop 
+0x00005c: packed-switch-payload a b c d e f 10
+
+CLASS classes4.dex Lcom/xiaomi/security/xsof/MiSafetyDetectService;
+FIELD g Ljava/util/Queue; = None
+FIELD a Ljava/util/Map; = None
+FIELD b Lno/j; = None
+FIELD c Leo/b; = None
+FIELD d Lmo/b; = None
+FIELD e Landroid/os/HandlerThread; = None
+FIELD f Lcom/xiaomi/security/xsof/MiSafetyDetectService$a; = None
+
+METHOD <clinit>()V flags=static constructor
+registers=1 inputs=0
+0x000000: new-instance v0, Ljava/util/LinkedList;
+0x000004: invoke-direct v0, Ljava/util/LinkedList;-><init>()V
+0x00000a: sput-object v0, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->g Ljava/util/Queue;
+0x00000e: return-void 
+
+METHOD <init>()V flags=public constructor
+registers=2 inputs=1
+0x000000: invoke-direct v1, Landroid/app/Service;-><init>()V
+0x000006: new-instance v0, Ljava/util/HashMap;
+0x00000a: invoke-direct v0, Ljava/util/HashMap;-><init>()V
+0x000010: iput-object v0, v1, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->a Ljava/util/Map;
+0x000014: return-void 
+
+METHOD a(Lcom/xiaomi/security/xsof/MiSafetyDetectService;)Lno/j; flags=static bridge synthetic
+registers=1 inputs=1
+0x000000: iget-object v0, v0, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->b Lno/j;
+0x000004: return-object v0
+
+METHOD b(Lcom/xiaomi/security/xsof/MiSafetyDetectService;)Lcom/xiaomi/security/xsof/MiSafetyDetectService$a; flags=static bridge synthetic
+registers=1 inputs=1
+0x000000: iget-object v0, v0, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->f Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;
+0x000004: return-object v0
+
+METHOD c(Lcom/xiaomi/security/xsof/MiSafetyDetectService; I)Ljava/lang/String; flags=static bridge synthetic
+registers=2 inputs=2
+0x000000: invoke-direct v0, v1, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->h(I)Ljava/lang/String;
+0x000006: move-result-object v0
+0x000008: return-object v0
+
+METHOD d(Lcom/xiaomi/security/xsof/MiSafetyDetectService; Ljava/lang/Object;)V flags=static bridge synthetic
+registers=2 inputs=2
+0x000000: invoke-direct v0, v1, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->n(Ljava/lang/Object;)V
+0x000006: return-void 
+
+METHOD e(Lcom/xiaomi/security/xsof/MiSafetyDetectService;)V flags=static bridge synthetic
+registers=1 inputs=1
+0x000000: invoke-direct v0, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->o()V
+0x000006: return-void 
+
+METHOD f(Lcom/xiaomi/security/xsof/MiSafetyDetectService; Lco/a;)V flags=static bridge synthetic
+registers=2 inputs=2
+0x000000: invoke-direct v0, v1, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->p(Lco/a;)V
+0x000006: return-void 
+
+METHOD g(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)I flags=private
+registers=5 inputs=4
+0x000000: invoke-static v1, v2, v3, v4, Lfo/a;->b(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)I
+0x000006: move-result v3
+0x000008: const/16 v4, 1010
+0x00000c: if-eq v3, v4, +025h
+0x000010: new-instance v4, Ljava/lang/StringBuilder;
+0x000014: invoke-direct v4, Ljava/lang/StringBuilder;-><init>()V
+0x00001a: const-string v0, "Authentication failed, ["
+0x00001e: invoke-virtual v4, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000024: invoke-virtual v4, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00002a: const-string v2, ","
+0x00002e: invoke-virtual v4, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000034: invoke-virtual v4, v3, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+0x00003a: const-string v2, "]"
+0x00003e: invoke-virtual v4, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000044: invoke-virtual v4, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00004a: move-result-object v2
+0x00004c: const-string v4, "Mi-SDS"
+0x000050: invoke-static v4, v2, Landroid/util/Log;->w(Ljava/lang/String; Ljava/lang/String;)I
+0x000056: return v3
+
+METHOD h(I)Ljava/lang/String; flags=private
+registers=4 inputs=2
+0x000000: invoke-virtual v2, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+0x000006: move-result-object v0
+0x000008: const-string v1, "security"
+0x00000c: invoke-virtual v0, v1, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+0x000012: move-result-object v0
+0x000014: check-cast v0, Lmiui/security/SecurityManager;
+0x000018: invoke-virtual v0, v3, Lmiui/security/SecurityManager;->getPackageNameByPid(I)Ljava/lang/String;
+0x00001e: move-result-object v3
+0x000020: return-object v3
+
+METHOD i(Ljava/lang/String; I)Z flags=private
+registers=9 inputs=3
+TRY bytes [0x2,0x60) -> [('Ljava/lang/Exception;', 62)]
+0x000000: const/4 v0, 0
+0x000002: new-instance v1, Landroid/util/Pair;
+0x000006: invoke-static v8, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x00000c: move-result-object v8
+0x00000e: invoke-direct v1, v7, v8, Landroid/util/Pair;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x000014: iget-object v7, v6, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->a Ljava/util/Map;
+0x000018: invoke-interface v7, v1, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+0x00001e: move-result v7
+0x000020: if-eqz v7, +011h
+0x000024: iget-object v7, v6, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->a Ljava/util/Map;
+0x000028: invoke-interface v7, v1, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+0x00002e: move-result-object v7
+0x000030: check-cast v7, Ljava/lang/Long;
+0x000034: invoke-virtual v7, Ljava/lang/Long;->longValue()J
+0x00003a: move-result-wide v7
+0x00003c: goto +5h
+0x00003e: move-exception v7
+0x000040: goto +1ah
+0x000042: const-wide/16 v7, 0
+0x000046: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x00004c: move-result-wide v2
+0x00004e: iget-object v4, v6, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->a Ljava/util/Map;
+0x000052: invoke-static v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+0x000058: move-result-object v5
+0x00005a: invoke-interface v4, v1, v5, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x000060: sub-long/2addr v2, v7
+0x000062: const-wide/16 v7, 1000
+0x000066: cmp-long v7, v2, v7
+0x00006a: if-gez v7, +004h
+0x00006e: const/4 v7, 1
+0x000070: return v7
+0x000072: return v0
+0x000074: new-instance v8, Ljava/lang/StringBuilder;
+0x000078: invoke-direct v8, Ljava/lang/StringBuilder;-><init>()V
+0x00007e: const-string v1, "invokeFrequently error"
+0x000082: invoke-virtual v8, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000088: invoke-virtual v7, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+0x00008e: move-result-object v7
+0x000090: invoke-virtual v8, v7, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000096: invoke-virtual v8, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00009c: move-result-object v7
+0x00009e: const-string v8, "Mi-SDS"
+0x0000a2: invoke-static v8, v7, Loo/b;->c(Ljava/lang/String; Ljava/lang/String;)V
+0x0000a8: return v0
+
+METHOD j(Ljava/lang/String; I)Z flags=private
+registers=6 inputs=3
+TRY bytes [0x2,0x54) -> [('Ljava/lang/Exception;', 68)]
+0x000000: const/4 v0, 0
+0x000002: sget-object v1, Llo/g;->a Llo/g$a;
+0x000006: invoke-virtual v1, v4, Llo/g$a;->g(Ljava/lang/String;)Z
+0x00000c: move-result v1
+0x00000e: if-eqz v1, +003h
+0x000012: return v0
+0x000014: new-instance v1, Landroid/util/Pair;
+0x000018: invoke-static v5, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x00001e: move-result-object v5
+0x000020: invoke-direct v1, v4, v5, Landroid/util/Pair;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x000026: iget-object v4, v3, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->b Lno/j;
+0x00002a: invoke-virtual v4, v1, Lno/j;->z(Landroid/util/Pair;)Z
+0x000030: move-result v4
+0x000032: if-eqz v4, +00bh
+0x000036: iget-object v4, v3, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->b Lno/j;
+0x00003a: invoke-virtual v4, v1, Lno/j;->q(Landroid/util/Pair;)J
+0x000040: move-result-wide v4
+0x000042: goto +5h
+0x000044: move-exception v4
+0x000046: goto +11h
+0x000048: const-wide/16 v4, 0
+0x00004c: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000052: move-result-wide v1
+0x000054: sub-long/2addr v1, v4
+0x000056: const-wide/16 v4, 30000
+0x00005a: cmp-long v4, v1, v4
+0x00005e: if-gez v4, +004h
+0x000062: const/4 v4, 1
+0x000064: return v4
+0x000066: return v0
+0x000068: new-instance v5, Ljava/lang/StringBuilder;
+0x00006c: invoke-direct v5, Ljava/lang/StringBuilder;-><init>()V
+0x000072: const-string v1, "invokeFrequently error"
+0x000076: invoke-virtual v5, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00007c: invoke-virtual v4, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+0x000082: move-result-object v4
+0x000084: invoke-virtual v5, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00008a: invoke-virtual v5, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000090: move-result-object v4
+0x000092: const-string v5, "Mi-SDS"
+0x000096: invoke-static v5, v4, Loo/b;->c(Ljava/lang/String; Ljava/lang/String;)V
+0x00009c: return v0
+
+METHOD k()Z flags=private
+registers=9 inputs=1
+TRY bytes [0x2,0x70) -> [('Ljava/lang/Exception;', 46)]
+0x000000: const/4 v0, 0
+0x000002: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000008: move-result-wide v1
+0x00000a: sget-object v3, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->g Ljava/util/Queue;
+0x00000e: invoke-interface v3, Ljava/util/Collection;->size()I
+0x000014: move-result v4
+0x000016: const/16 v5, 10
+0x00001a: if-ge v4, v5, +00ch
+0x00001e: invoke-static v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+0x000024: move-result-object v1
+0x000026: invoke-interface v3, v1, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
+0x00002c: return v0
+0x00002e: move-exception v1
+0x000030: goto +21h
+0x000032: invoke-interface v3, Ljava/util/Queue;->peek()Ljava/lang/Object;
+0x000038: move-result-object v4
+0x00003a: check-cast v4, Ljava/lang/Long;
+0x00003e: invoke-virtual v4, Ljava/lang/Long;->longValue()J
+0x000044: move-result-wide v4
+0x000046: sub-long v4, v1, v4
+0x00004a: const-wide/32 v6, 60000
+0x000050: cmp-long v4, v4, v6
+0x000054: if-gez v4, +004h
+0x000058: const/4 v0, 1
+0x00005a: return v0
+0x00005c: invoke-interface v3, Ljava/util/Queue;->poll()Ljava/lang/Object;
+0x000062: invoke-static v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+0x000068: move-result-object v1
+0x00006a: invoke-interface v3, v1, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
+0x000070: return v0
+0x000072: new-instance v2, Ljava/lang/StringBuilder;
+0x000076: invoke-direct v2, Ljava/lang/StringBuilder;-><init>()V
+0x00007c: const-string v3, "isBusy error"
+0x000080: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000086: invoke-virtual v1, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+0x00008c: move-result-object v1
+0x00008e: invoke-virtual v2, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000094: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00009a: move-result-object v1
+0x00009c: const-string v2, "Mi-SDS"
+0x0000a0: invoke-static v2, v1, Loo/b;->c(Ljava/lang/String; Ljava/lang/String;)V
+0x0000a6: return v0
+
+METHOD l(Ljava/lang/String; I)Z flags=private
+registers=4 inputs=3
+0x000000: iget-object v0, v1, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->b Lno/j;
+0x000004: invoke-virtual v0, v3, Lno/j;->y(I)Z
+0x00000a: move-result v0
+0x00000c: if-eqz v0, +007h
+0x000010: invoke-direct v1, v2, v3, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->j(Ljava/lang/String; I)Z
+0x000016: move-result v2
+0x000018: return v2
+0x00001a: invoke-direct v1, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->k()Z
+0x000020: move-result v2
+0x000022: return v2
+
+METHOD m(Ljava/lang/String; I)I flags=private
+registers=5 inputs=3
+0x000000: invoke-direct v2, v3, v4, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->i(Ljava/lang/String; I)Z
+0x000006: move-result v0
+0x000008: const-string v1, "Mi-SDS"
+0x00000c: if-eqz v0, +01eh
+0x000010: new-instance v4, Ljava/lang/StringBuilder;
+0x000014: invoke-direct v4, Ljava/lang/StringBuilder;-><init>()V
+0x00001a: const-string v0, "The package ["
+0x00001e: invoke-virtual v4, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000024: invoke-virtual v4, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00002a: const-string v3, "] calls the api frequently, retries late!"
+0x00002e: invoke-virtual v4, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000034: invoke-virtual v4, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00003a: move-result-object v3
+0x00003c: invoke-static v1, v3, Landroid/util/Log;->w(Ljava/lang/String; Ljava/lang/String;)I
+0x000042: const/16 v3, 1007
+0x000046: return v3
+0x000048: invoke-direct v2, v3, v4, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->l(Ljava/lang/String; I)Z
+0x00004e: move-result v3
+0x000050: if-eqz v3, +00ah
+0x000054: const-string v3, "internal error , service is busy, retries later!"
+0x000058: invoke-static v1, v3, Landroid/util/Log;->w(Ljava/lang/String; Ljava/lang/String;)I
+0x00005e: const/16 v3, 1016
+0x000062: return v3
+0x000064: const/4 v3, 0
+0x000066: return v3
+
+METHOD n(Ljava/lang/Object;)V flags=private
+registers=7 inputs=2
+0x000000: instance-of v0, v6, Lco/a;
+0x000004: const-string v1, "Mi-SDS"
+0x000008: const/4 v2, 0
+0x00000a: if-nez v0, +021h
+0x00000e: new-instance v0, Ljava/lang/StringBuilder;
+0x000012: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x000018: const-string v3, "internal error, task type : "
+0x00001c: invoke-virtual v0, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000022: if-eqz v6, +00ah
+0x000026: invoke-virtual v6, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00002c: move-result-object v6
+0x00002e: invoke-virtual v6, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
+0x000034: move-result-object v2
+0x000036: invoke-virtual v0, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00003c: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000042: move-result-object v6
+0x000044: invoke-static v1, v6, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+0x00004a: return-void 
+0x00004c: check-cast v6, Lco/a;
+0x000050: invoke-virtual v6, Lco/a;->b()Z
+0x000056: move-result v0
+0x000058: if-eqz v0, +01eh
+0x00005c: new-instance v0, Ljava/lang/StringBuilder;
+0x000060: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x000066: const-string v2, "Invalid Task , reason:  [canceled, "
+0x00006a: invoke-virtual v0, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000070: iget v6, v6, Lco/a;->a I
+0x000074: invoke-virtual v0, v6, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+0x00007a: const-string v6, "]"
+0x00007e: invoke-virtual v0, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000084: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00008a: move-result-object v6
+0x00008c: invoke-static v1, v6, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x000092: return-void 
+0x000094: iget v0, v6, Lco/a;->a I
+0x000098: invoke-virtual v6, Lco/a;->a()Lgo/a;
+0x00009e: move-result-object v1
+0x0000a0: invoke-virtual v1, Lgo/a;->d()Ljava/lang/String;
+0x0000a6: move-result-object v3
+0x0000a8: invoke-direct v5, v3, v0, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->m(Ljava/lang/String; I)I
+0x0000ae: move-result v3
+0x0000b0: if-eqz v3, +006h
+0x0000b4: invoke-virtual v6, v2, v3, Lco/a;->c(Ljava/lang/String; I)V
+0x0000ba: return-void 
+0x0000bc: invoke-virtual v1, Lgo/a;->d()Ljava/lang/String;
+0x0000c2: move-result-object v3
+0x0000c4: invoke-virtual v1, Lgo/a;->c()Ljava/lang/String;
+0x0000ca: move-result-object v4
+0x0000cc: invoke-virtual v1, Lgo/a;->b()Ljava/lang/String;
+0x0000d2: move-result-object v1
+0x0000d4: invoke-direct v5, v3, v4, v1, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->g(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)I
+0x0000da: move-result v1
+0x0000dc: const/16 v3, 1012
+0x0000e0: if-ne v1, v3, +008h
+0x0000e4: const-wide/16 v0, 200
+0x0000e8: invoke-direct v5, v6, v0, v1, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->q(Lco/a; J)V
+0x0000ee: return-void 
+0x0000f0: const/16 v3, 1010
+0x0000f4: if-eq v1, v3, +006h
+0x0000f8: invoke-virtual v6, v2, v1, Lco/a;->c(Ljava/lang/String; I)V
+0x0000fe: return-void 
+0x000100: packed-switch v0, +0000016h
+0x000106: return-void 
+0x000108: iget-object v0, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->d Lmo/b;
+0x00010c: invoke-virtual v0, v6, Lmo/b;->b(Lco/a;)V
+0x000112: return-void 
+0x000114: iget-object v0, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->c Leo/b;
+0x000118: invoke-virtual v0, v6, Leo/b;->b(Lco/a;)V
+0x00011e: return-void 
+0x000120: iget-object v0, v5, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->b Lno/j;
+0x000124: invoke-virtual v0, v6, Lno/j;->t(Lco/a;)V
+0x00012a: return-void 
+0x00012c: packed-switch-payload a b c d e f 10
+
+METHOD o()V flags=private
+registers=5 inputs=1
+0x000000: iget-object v0, v4, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->f Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;
+0x000004: if-eqz v0, +00bh
+0x000008: const/4 v1, 2
+0x00000a: invoke-virtual v0, v1, Landroid/os/Handler;->removeMessages(I)V
+0x000010: const-wide/16 v2, 15000
+0x000014: invoke-virtual v0, v1, v2, v3, Landroid/os/Handler;->sendEmptyMessageDelayed(I J)Z
+0x00001a: return-void 
+
+METHOD p(Lco/a;)V flags=private
+registers=4 inputs=2
+0x000000: const-wide/16 v0, 0
+0x000004: invoke-direct v2, v3, v0, v1, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->q(Lco/a; J)V
+0x00000a: return-void 
+
+METHOD q(Lco/a; J)V flags=private
+registers=7 inputs=4
+0x000000: iget-object v0, v3, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->f Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;
+0x000004: if-nez v0, +00ah
+0x000008: const-string v4, "Mi-SDS"
+0x00000c: const-string v5, "sendMessageDelayed: mWorkHandler is null"
+0x000010: invoke-static v4, v5, Landroid/util/Log;->w(Ljava/lang/String; Ljava/lang/String;)I
+0x000016: return-void 
+0x000018: invoke-static Landroid/os/Message;->obtain()Landroid/os/Message;
+0x00001e: move-result-object v1
+0x000020: iget v2, v4, Lco/a;->a I
+0x000024: iput v2, v1, Landroid/os/Message;->what I
+0x000028: iput-object v4, v1, Landroid/os/Message;->obj Ljava/lang/Object;
+0x00002c: invoke-virtual v0, v1, v5, v6, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message; J)Z
+0x000032: return-void 
+
+METHOD onBind(Landroid/content/Intent;)Landroid/os/IBinder; flags=public
+registers=4 inputs=2
+0x000000: new-instance v0, Ljava/lang/StringBuilder;
+0x000004: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x00000a: const-string v1, "onBind: "
+0x00000e: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000014: invoke-virtual v0, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x00001a: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000020: move-result-object v3
+0x000022: const-string v0, "Mi-SDS"
+0x000026: invoke-static v0, v3, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x00002c: new-instance v3, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;
+0x000030: invoke-direct v3, v2, Lcom/xiaomi/security/xsof/MiSafetyDetectService$MiSafetyDetectImpl;-><init>(Lcom/xiaomi/security/xsof/MiSafetyDetectService;)V
+0x000036: return-object v3
+
+METHOD onCreate()V flags=public
+registers=3 inputs=1
+0x000000: invoke-super v2, Landroid/app/Service;->onCreate()V
+0x000006: new-instance v0, Lno/j;
+0x00000a: invoke-direct v0, v2, Lno/j;-><init>(Landroid/content/Context;)V
+0x000010: iput-object v0, v2, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->b Lno/j;
+0x000014: new-instance v0, Leo/b;
+0x000018: invoke-direct v0, v2, Leo/b;-><init>(Landroid/content/Context;)V
+0x00001e: iput-object v0, v2, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->c Leo/b;
+0x000022: new-instance v0, Lmo/b;
+0x000026: invoke-direct v0, v2, Lmo/b;-><init>(Landroid/content/Context;)V
+0x00002c: iput-object v0, v2, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->d Lmo/b;
+0x000030: new-instance v0, Landroid/os/HandlerThread;
+0x000034: const-string v1, "MiSafetyDetectService"
+0x000038: invoke-direct v0, v1, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
+0x00003e: iput-object v0, v2, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->e Landroid/os/HandlerThread;
+0x000042: invoke-virtual v0, Ljava/lang/Thread;->start()V
+0x000048: new-instance v0, Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;
+0x00004c: iget-object v1, v2, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->e Landroid/os/HandlerThread;
+0x000050: invoke-virtual v1, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
+0x000056: move-result-object v1
+0x000058: invoke-direct v0, v2, v1, Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;-><init>(Lcom/xiaomi/security/xsof/MiSafetyDetectService; Landroid/os/Looper;)V
+0x00005e: iput-object v0, v2, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->f Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;
+0x000062: const-string v0, "Mi-SDS"
+0x000066: const-string v1, "create"
+0x00006a: invoke-static v0, v1, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x000070: return-void 
+
+METHOD onDestroy()V flags=public
+registers=3 inputs=1
+0x000000: invoke-super v2, Landroid/app/Service;->onDestroy()V
+0x000006: iget-object v0, v2, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->e Landroid/os/HandlerThread;
+0x00000a: if-eqz v0, +00dh
+0x00000e: invoke-virtual v0, Ljava/lang/Thread;->isAlive()Z
+0x000014: move-result v0
+0x000016: if-eqz v0, +007h
+0x00001a: iget-object v0, v2, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->e Landroid/os/HandlerThread;
+0x00001e: invoke-virtual v0, Landroid/os/HandlerThread;->quitSafely()Z
+0x000024: iget-object v0, v2, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->b Lno/j;
+0x000028: invoke-virtual v0, Lno/j;->H()V
+0x00002e: iget-object v0, v2, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->f Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;
+0x000032: if-eqz v0, +00ah
+0x000036: iget-object v0, v2, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->f Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;
+0x00003a: const/4 v1, 0
+0x00003c: invoke-virtual v0, v1, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
+0x000042: iput-object v1, v2, Lcom/xiaomi/security/xsof/MiSafetyDetectService;->f Lcom/xiaomi/security/xsof/MiSafetyDetectService$a;
+0x000046: const-string v0, "Mi-SDS"
+0x00004a: const-string v1, "destroy"
+0x00004e: invoke-static v0, v1, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x000054: return-void 
+
+METHOD onUnbind(Landroid/content/Intent;)Z flags=public
+registers=4 inputs=2
+0x000000: new-instance v0, Ljava/lang/StringBuilder;
+0x000004: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x00000a: const-string v1, "onUnbind: "
+0x00000e: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000014: invoke-virtual v0, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x00001a: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000020: move-result-object v0
+0x000022: const-string v1, "Mi-SDS"
+0x000026: invoke-static v1, v0, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x00002c: invoke-super v2, v3, Landroid/app/Service;->onUnbind(Landroid/content/Intent;)Z
+0x000032: move-result v3
+0x000034: return v3
+
+CLASS classes4.dex Lcom/xiaomi/security/xsof/frauddetection/provider/FraudDetectionProvider;
+FIELD a Lcom/xiaomi/security/xsof/frauddetection/provider/FraudDetectionProvider$a; = None
+FIELD b Landroid/content/UriMatcher; = None
+
+METHOD <clinit>()V flags=static constructor
+registers=4 inputs=0
+0x000000: new-instance v0, Lcom/xiaomi/security/xsof/frauddetection/provider/FraudDetectionProvider$a;
+0x000004: const/4 v1, 0
+0x000006: invoke-direct v0, v1, Lcom/xiaomi/security/xsof/frauddetection/provider/FraudDetectionProvider$a;-><init>(Llp/h;)V
+0x00000c: sput-object v0, Lcom/xiaomi/security/xsof/frauddetection/provider/FraudDetectionProvider;->a Lcom/xiaomi/security/xsof/frauddetection/provider/FraudDetectionProvider$a;
+0x000010: new-instance v0, Landroid/content/UriMatcher;
+0x000014: const/4 v1, -1
+0x000016: invoke-direct v0, v1, Landroid/content/UriMatcher;-><init>(I)V
+0x00001c: sput-object v0, Lcom/xiaomi/security/xsof/frauddetection/provider/FraudDetectionProvider;->b Landroid/content/UriMatcher;
+0x000020: const-string v1, "install_app"
+0x000024: const/16 v2, 101
+0x000028: const-string v3, "com.xiaomi.security.xsof.FraudDetectionProvider"
+0x00002c: invoke-virtual v0, v3, v1, v2, Landroid/content/UriMatcher;->addURI(Ljava/lang/String; Ljava/lang/String; I)V
+0x000032: const-string v1, "call_forwarding"
+0x000036: const/16 v2, 102
+0x00003a: invoke-virtual v0, v3, v1, v2, Landroid/content/UriMatcher;->addURI(Ljava/lang/String; Ljava/lang/String; I)V
+0x000040: const-string v1, "fraud_url"
+0x000044: const/16 v2, 103
+0x000048: invoke-virtual v0, v3, v1, v2, Landroid/content/UriMatcher;->addURI(Ljava/lang/String; Ljava/lang/String; I)V
+0x00004e: return-void 
+
+METHOD <init>()V flags=public constructor
+registers=1 inputs=1
+0x000000: invoke-direct v0, Landroid/content/ContentProvider;-><init>()V
+0x000006: return-void 
+
+METHOD a(Landroid/content/ContentValues;)V flags=private final
+registers=10 inputs=2
+TRY bytes [0x4,0x1aa) -> [('Ljava/lang/Exception;', 98)]
+0x000000: const-string v0, "FraudDetectionProvider"
+0x000004: const-string v1, "insert call forwarding start"
+0x000008: invoke-static v0, v1, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x00000e: const-string v1, "com.android.phone"
+0x000012: invoke-virtual v8, Landroid/content/ContentProvider;->getCallingPackage()Ljava/lang/String;
+0x000018: move-result-object v2
+0x00001a: invoke-static v1, v2, Llp/n;->b(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x000020: move-result v1
+0x000022: if-nez v1, +023h
+0x000026: invoke-virtual v8, Landroid/content/ContentProvider;->getCallingPackage()Ljava/lang/String;
+0x00002c: move-result-object v9
+0x00002e: new-instance v1, Ljava/lang/StringBuilder;
+0x000032: invoke-direct v1, Ljava/lang/StringBuilder;-><init>()V
+0x000038: const-string v2, "callingPackage is "
+0x00003c: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000042: invoke-virtual v1, v9, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000048: const-string v9, ", return"
+0x00004c: invoke-virtual v1, v9, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000052: invoke-virtual v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000058: move-result-object v9
+0x00005a: invoke-static v0, v9, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x000060: return-void 
+0x000062: move-exception v9
+0x000064: goto/16 +0a4h
+0x000068: sget-object v1, Llo/g;->a Llo/g$a;
+0x00006c: invoke-virtual v8, Landroid/content/ContentProvider;->getCallingPackage()Ljava/lang/String;
+0x000072: move-result-object v2
+0x000074: invoke-virtual v1, v2, Llo/g$a;->f(Ljava/lang/String;)Z
+0x00007a: move-result v1
+0x00007c: if-nez v1, +020h
+0x000080: invoke-virtual v8, Landroid/content/ContentProvider;->getCallingPackage()Ljava/lang/String;
+0x000086: move-result-object v9
+0x000088: new-instance v1, Ljava/lang/StringBuilder;
+0x00008c: invoke-direct v1, Ljava/lang/StringBuilder;-><init>()V
+0x000092: const-string v2, "insertCallForwardingInfo callingPackage is "
+0x000096: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00009c: invoke-virtual v1, v9, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000a2: const-string v9, ", not signed with platform key, return"
+0x0000a6: invoke-virtual v1, v9, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000ac: invoke-virtual v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0000b2: move-result-object v9
+0x0000b4: invoke-static v0, v9, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x0000ba: return-void 
+0x0000bc: const-string v1, "reason"
+0x0000c0: invoke-virtual v9, v1, Landroid/content/ContentValues;->getAsInteger(Ljava/lang/String;)Ljava/lang/Integer;
+0x0000c6: move-result-object v1
+0x0000c8: const/4 v2, -1
+0x0000ca: if-eqz v1, +007h
+0x0000ce: invoke-virtual v1, Ljava/lang/Integer;->intValue()I
+0x0000d4: move-result v1
+0x0000d6: goto +2h
+0x0000d8: move v1, v2
+0x0000da: const-string v3, "enabled"
+0x0000de: invoke-virtual v9, v3, Landroid/content/ContentValues;->getAsInteger(Ljava/lang/String;)Ljava/lang/Integer;
+0x0000e4: move-result-object v3
+0x0000e6: if-eqz v3, +006h
+0x0000ea: invoke-virtual v3, Ljava/lang/Integer;->intValue()I
+0x0000f0: move-result v2
+0x0000f2: const-string v3, "timestamp"
+0x0000f6: invoke-virtual v9, v3, Landroid/content/ContentValues;->getAsLong(Ljava/lang/String;)Ljava/lang/Long;
+0x0000fc: move-result-object v9
+0x0000fe: if-eqz v9, +007h
+0x000102: invoke-virtual v9, Ljava/lang/Long;->longValue()J
+0x000108: move-result-wide v3
+0x00010a: goto +5h
+0x00010c: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000112: move-result-wide v3
+0x000114: new-instance v9, Lio/d;
+0x000118: invoke-static v1, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x00011e: move-result-object v5
+0x000120: invoke-direct v9, v5, v2, v3, v4, Lio/d;-><init>(Ljava/lang/Integer; I J)V
+0x000126: const/4 v5, 1
+0x000128: if-ne v2, v5, +005h
+0x00012c: if-nez v1, +003h
+0x000130: goto +2h
+0x000132: const/4 v5, 0
+0x000134: sget-object v6, Llo/d;->a Llo/d$a;
+0x000138: invoke-static Lcom/miui/common/e;->c()Landroid/content/Context;
+0x00013e: move-result-object v7
+0x000140: invoke-virtual v6, v7, v5, Llo/d$a;->m(Landroid/content/Context; I)V
+0x000146: sget-object v5, Ljo/k;->c Ljo/k$a;
+0x00014a: invoke-virtual v5, Ljo/k$a;->a()Ljo/k;
+0x000150: move-result-object v5
+0x000152: invoke-virtual v5, v9, Ljo/k;->b1(Lio/d;)V
+0x000158: new-instance v9, Ljava/lang/StringBuilder;
+0x00015c: invoke-direct v9, Ljava/lang/StringBuilder;-><init>()V
+0x000162: const-string v5, "callForwarding: reason = "
+0x000166: invoke-virtual v9, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00016c: invoke-virtual v9, v1, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+0x000172: const-string v1, ", enable = "
+0x000176: invoke-virtual v9, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00017c: invoke-virtual v9, v2, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+0x000182: const-string v1, ", timeStamp = "
+0x000186: invoke-virtual v9, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00018c: invoke-virtual v9, v3, v4, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+0x000192: invoke-virtual v9, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000198: move-result-object v9
+0x00019a: invoke-static v0, v9, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x0001a0: const-string v9, "insert callForwardingInfo finish"
+0x0001a4: invoke-static v0, v9, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x0001aa: return-void 
+0x0001ac: invoke-virtual v9, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+0x0001b2: move-result-object v9
+0x0001b4: new-instance v1, Ljava/lang/StringBuilder;
+0x0001b8: invoke-direct v1, Ljava/lang/StringBuilder;-><init>()V
+0x0001be: const-string v2, "insert callForwardingInfo error: "
+0x0001c2: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0001c8: invoke-virtual v1, v9, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0001ce: invoke-virtual v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0001d4: move-result-object v9
+0x0001d6: invoke-static v0, v9, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x0001dc: return-void 
+
+METHOD b(Landroid/content/ContentValues;)V flags=private final
+registers=6 inputs=2
+TRY bytes [0x4,0x22) -> [('Ljava/lang/Exception;', 98)]
+TRY bytes [0x2a,0x11a) -> [('Ljava/lang/Exception;', 98)]
+0x000000: const-string v0, "FraudDetectionProvider"
+0x000004: const-string v1, "insert fraud url start"
+0x000008: invoke-static v0, v1, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x00000e: const-string v1, "com.android.browser"
+0x000012: invoke-virtual v4, Landroid/content/ContentProvider;->getCallingPackage()Ljava/lang/String;
+0x000018: move-result-object v2
+0x00001a: invoke-static v1, v2, Llp/n;->b(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x000020: move-result v1
+0x000022: const-string v2, "insertFraudUrl callingPackage is "
+0x000026: if-nez v1, +020h
+0x00002a: invoke-virtual v4, Landroid/content/ContentProvider;->getCallingPackage()Ljava/lang/String;
+0x000030: move-result-object v5
+0x000032: new-instance v1, Ljava/lang/StringBuilder;
+0x000036: invoke-direct v1, Ljava/lang/StringBuilder;-><init>()V
+0x00003c: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000042: invoke-virtual v1, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000048: const-string v5, ", return"
+0x00004c: invoke-virtual v1, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000052: invoke-virtual v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000058: move-result-object v5
+0x00005a: invoke-static v0, v5, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x000060: return-void 
+0x000062: move-exception v5
+0x000064: goto +5ch
+0x000066: sget-object v1, Llo/g;->a Llo/g$a;
+0x00006a: invoke-virtual v4, Landroid/content/ContentProvider;->getCallingPackage()Ljava/lang/String;
+0x000070: move-result-object v3
+0x000072: invoke-virtual v1, v3, Llo/g$a;->f(Ljava/lang/String;)Z
+0x000078: move-result v1
+0x00007a: if-nez v1, +01eh
+0x00007e: invoke-virtual v4, Landroid/content/ContentProvider;->getCallingPackage()Ljava/lang/String;
+0x000084: move-result-object v5
+0x000086: new-instance v1, Ljava/lang/StringBuilder;
+0x00008a: invoke-direct v1, Ljava/lang/StringBuilder;-><init>()V
+0x000090: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000096: invoke-virtual v1, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00009c: const-string v5, ", not signed with platform key, return"
+0x0000a0: invoke-virtual v1, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000a6: invoke-virtual v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0000ac: move-result-object v5
+0x0000ae: invoke-static v0, v5, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x0000b4: return-void 
+0x0000b6: const-string v1, "access_time"
+0x0000ba: invoke-virtual v5, v1, Landroid/content/ContentValues;->getAsLong(Ljava/lang/String;)Ljava/lang/Long;
+0x0000c0: move-result-object v1
+0x0000c2: if-eqz v1, +007h
+0x0000c6: invoke-virtual v1, Ljava/lang/Long;->longValue()J
+0x0000cc: move-result-wide v1
+0x0000ce: goto +5h
+0x0000d0: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x0000d6: move-result-wide v1
+0x0000d8: const-string v3, "url_type"
+0x0000dc: invoke-virtual v5, v3, Landroid/content/ContentValues;->getAsInteger(Ljava/lang/String;)Ljava/lang/Integer;
+0x0000e2: move-result-object v5
+0x0000e4: if-eqz v5, +007h
+0x0000e8: invoke-virtual v5, Ljava/lang/Integer;->intValue()I
+0x0000ee: move-result v5
+0x0000f0: goto +2h
+0x0000f2: const/4 v5, 0
+0x0000f4: new-instance v3, Lio/f;
+0x0000f8: invoke-direct v3, v1, v2, v5, Lio/f;-><init>(J I)V
+0x0000fe: sget-object v5, Ljo/k;->c Ljo/k$a;
+0x000102: invoke-virtual v5, Ljo/k$a;->a()Ljo/k;
+0x000108: move-result-object v5
+0x00010a: invoke-virtual v5, v3, Ljo/k;->d1(Lio/f;)V
+0x000110: const-string v5, "insert fraud url finish"
+0x000114: invoke-static v0, v5, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x00011a: return-void 
+0x00011c: invoke-virtual v5, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+0x000122: move-result-object v5
+0x000124: new-instance v1, Ljava/lang/StringBuilder;
+0x000128: invoke-direct v1, Ljava/lang/StringBuilder;-><init>()V
+0x00012e: const-string v2, "insert fraud url error: "
+0x000132: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000138: invoke-virtual v1, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00013e: invoke-virtual v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000144: move-result-object v5
+0x000146: invoke-static v0, v5, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x00014c: return-void 
+
+METHOD c(Landroid/content/ContentValues;)V flags=private final
+registers=15 inputs=2
+TRY bytes [0xe,0x22) -> [('Ljava/lang/Exception;', 122)]
+TRY bytes [0x2a,0xde) -> [('Ljava/lang/Exception;', 122)]
+TRY bytes [0xec,0x222) -> [('Ljava/lang/Exception;', 122)]
+0x000000: const-string v0, "insert app info start"
+0x000004: const-string v1, "FraudDetectionProvider"
+0x000008: invoke-static v1, v0, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x00000e: const-string v0, "com.xiaomi.market"
+0x000012: invoke-virtual v13, Landroid/content/ContentProvider;->getCallingPackage()Ljava/lang/String;
+0x000018: move-result-object v2
+0x00001a: invoke-static v0, v2, Llp/n;->b(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x000020: move-result v0
+0x000022: const-string v2, "insertInstallAppInfo callingPackage is "
+0x000026: if-nez v0, +02eh
+0x00002a: const-string v0, "com.miui.packageinstaller"
+0x00002e: invoke-virtual v13, Landroid/content/ContentProvider;->getCallingPackage()Ljava/lang/String;
+0x000034: move-result-object v3
+0x000036: invoke-static v0, v3, Llp/n;->b(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x00003c: move-result v0
+0x00003e: if-nez v0, +022h
+0x000042: invoke-virtual v13, Landroid/content/ContentProvider;->getCallingPackage()Ljava/lang/String;
+0x000048: move-result-object v14
+0x00004a: new-instance v0, Ljava/lang/StringBuilder;
+0x00004e: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x000054: invoke-virtual v0, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00005a: invoke-virtual v0, v14, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000060: const-string v14, ", return"
+0x000064: invoke-virtual v0, v14, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00006a: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000070: move-result-object v14
+0x000072: invoke-static v1, v14, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x000078: return-void 
+0x00007a: move-exception v0
+0x00007c: move-object v14, v0
+0x00007e: goto/16 +0d3h
+0x000082: sget-object v0, Llo/g;->a Llo/g$a;
+0x000086: invoke-virtual v13, Landroid/content/ContentProvider;->getCallingPackage()Ljava/lang/String;
+0x00008c: move-result-object v3
+0x00008e: invoke-virtual v0, v3, Llo/g$a;->f(Ljava/lang/String;)Z
+0x000094: move-result v0
+0x000096: if-nez v0, +01eh
+0x00009a: invoke-virtual v13, Landroid/content/ContentProvider;->getCallingPackage()Ljava/lang/String;
+0x0000a0: move-result-object v14
+0x0000a2: new-instance v0, Ljava/lang/StringBuilder;
+0x0000a6: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x0000ac: invoke-virtual v0, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000b2: invoke-virtual v0, v14, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000b8: const-string v14, ", not signed with platform key, return"
+0x0000bc: invoke-virtual v0, v14, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000c2: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0000c8: move-result-object v14
+0x0000ca: invoke-static v1, v14, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x0000d0: return-void 
+0x0000d2: const-string v0, "app_name"
+0x0000d6: invoke-virtual v14, v0, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
+0x0000dc: move-result-object v0
+0x0000de: const-string v2, ""
+0x0000e2: if-nez v0, +004h
+0x0000e6: move-object v5, v2
+0x0000e8: goto +2h
+0x0000ea: move-object v5, v0
+0x0000ec: const-string v0, "pkg_name"
+0x0000f0: invoke-virtual v14, v0, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
+0x0000f6: move-result-object v0
+0x0000f8: if-nez v0, +004h
+0x0000fc: move-object v4, v2
+0x0000fe: goto +2h
+0x000100: move-object v4, v0
+0x000102: const-string v0, "version_code"
+0x000106: invoke-virtual v14, v0, Landroid/content/ContentValues;->getAsInteger(Ljava/lang/String;)Ljava/lang/Integer;
+0x00010c: move-result-object v0
+0x00010e: const/4 v3, 0
+0x000110: if-eqz v0, +007h
+0x000114: invoke-virtual v0, Ljava/lang/Integer;->intValue()I
+0x00011a: move-result v0
+0x00011c: goto +2h
+0x00011e: move v0, v3
+0x000120: const-string v7, ""
+0x000124: const-string v6, "install_finish_time"
+0x000128: invoke-virtual v14, v6, Landroid/content/ContentValues;->getAsLong(Ljava/lang/String;)Ljava/lang/Long;
+0x00012e: move-result-object v6
+0x000130: const-string v8, "app_tag_id"
+0x000134: invoke-virtual v14, v8, Landroid/content/ContentValues;->getAsLong(Ljava/lang/String;)Ljava/lang/Long;
+0x00013a: move-result-object v14
+0x00013c: if-eqz v14, +007h
+0x000140: invoke-virtual v14, Ljava/lang/Long;->longValue()J
+0x000146: move-result-wide v8
+0x000148: goto +3h
+0x00014a: const-wide/16 v8, 0
+0x00014e: sget-object v14, Llo/b;->a Llo/b$a;
+0x000152: invoke-virtual v14, v8, v9, Llo/b$a;->a(J)I
+0x000158: move-result v14
+0x00015a: const-wide/16 v10, -1
+0x00015e: cmp-long v10, v8, v10
+0x000162: if-nez v10, +029h
+0x000166: sget-object v14, Llo/e;->a Llo/e;
+0x00016a: sget-object v10, Ljava/util/concurrent/TimeUnit;->MINUTES Ljava/util/concurrent/TimeUnit;
+0x00016e: const-wide/16 v11, 5
+0x000172: invoke-virtual v14, v11, v12, v10, Llo/e;->e(J Ljava/util/concurrent/TimeUnit;)Z
+0x000178: move-result v14
+0x00017a: new-instance v10, Ljava/lang/StringBuilder;
+0x00017e: invoke-direct v10, Ljava/lang/StringBuilder;-><init>()V
+0x000184: const-string v11, "closedByUser5minAgo: "
+0x000188: invoke-virtual v10, v11, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00018e: invoke-virtual v10, v14, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+0x000194: invoke-virtual v10, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00019a: move-result-object v10
+0x00019c: invoke-static v1, v10, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x0001a2: if-eqz v14, +008h
+0x0001a6: sget-object v14, Llo/b$b;->f Llo/b$b;
+0x0001aa: invoke-virtual v14, Llo/b$b;->b()I
+0x0001b0: move-result v3
+0x0001b2: move v14, v3
+0x0001b4: invoke-virtual v13, Landroid/content/ContentProvider;->getCallingPackage()Ljava/lang/String;
+0x0001ba: move-result-object v3
+0x0001bc: move-object v10, v3
+0x0001be: new-instance v3, Lio/b;
+0x0001c2: invoke-static v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x0001c8: move-result-object v0
+0x0001ca: invoke-static v6, Llp/n;->c(Ljava/lang/Object;)V
+0x0001d0: invoke-virtual v6, Ljava/lang/Long;->longValue()J
+0x0001d6: move-result-wide v11
+0x0001d8: invoke-static v8, v9, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+0x0001de: move-result-object v6
+0x0001e0: invoke-static v14, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x0001e6: move-result-object v14
+0x0001e8: move-wide v8, v11
+0x0001ea: if-nez v10, +007h
+0x0001ee: move-object v12, v2
+0x0001f0: move-object v10, v6
+0x0001f2: move-object v11, v14
+0x0001f4: move-object v6, v0
+0x0001f6: goto +5h
+0x0001f8: move-object v12, v10
+0x0001fa: move-object v11, v14
+0x0001fc: move-object v10, v6
+0x0001fe: goto -5h
+0x000200: invoke-direct/range v3 ... v12, Lio/b;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Integer; Ljava/lang/String; J Ljava/lang/Long; Ljava/lang/Integer; Ljava/lang/String;)V
+0x000206: sget-object v14, Ljo/k;->c Ljo/k$a;
+0x00020a: invoke-virtual v14, Ljo/k$a;->a()Ljo/k;
+0x000210: move-result-object v14
+0x000212: invoke-virtual v14, v3, Ljo/k;->Z0(Lio/b;)V
+0x000218: const-string v14, "insert app info finish"
+0x00021c: invoke-static v1, v14, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x000222: return-void 
+0x000224: invoke-virtual v14, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+0x00022a: move-result-object v14
+0x00022c: new-instance v0, Ljava/lang/StringBuilder;
+0x000230: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x000236: const-string v2, "insert app info error: "
+0x00023a: invoke-virtual v0, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000240: invoke-virtual v0, v14, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000246: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00024c: move-result-object v14
+0x00024e: invoke-static v1, v14, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x000254: return-void 
+
+METHOD delete(Landroid/net/Uri; Ljava/lang/String; [Ljava/lang/String;)I flags=public
+registers=4 inputs=4
+0x000000: const-string v2, "uri"
+0x000004: invoke-static v1, v2, Llp/n;->f(Ljava/lang/Object; Ljava/lang/String;)V
+0x00000a: const/4 v1, 0
+0x00000c: return v1
+
+METHOD getType(Landroid/net/Uri;)Ljava/lang/String; flags=public
+registers=3 inputs=2
+0x000000: const-string v0, "uri"
+0x000004: invoke-static v2, v0, Llp/n;->f(Ljava/lang/Object; Ljava/lang/String;)V
+0x00000a: const/4 v2, 0
+0x00000c: return-object v2
+
+METHOD insert(Landroid/net/Uri; Landroid/content/ContentValues;)Landroid/net/Uri; flags=public
+registers=5 inputs=3
+0x000000: const-string v0, "uri"
+0x000004: invoke-static v3, v0, Llp/n;->f(Ljava/lang/Object; Ljava/lang/String;)V
+0x00000a: new-instance v0, Ljava/lang/StringBuilder;
+0x00000e: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x000014: const-string v1, "insert "
+0x000018: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00001e: invoke-virtual v0, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x000024: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00002a: move-result-object v0
+0x00002c: const-string v1, "FraudDetectionProvider"
+0x000030: invoke-static v1, v0, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x000036: sget-object v0, Lcom/xiaomi/security/xsof/frauddetection/provider/FraudDetectionProvider;->b Landroid/content/UriMatcher;
+0x00003a: invoke-virtual v0, v3, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
+0x000040: move-result v0
+0x000042: packed-switch v0, +0000019h
+0x000048: goto +13h
+0x00004a: if-eqz v4, +012h
+0x00004e: invoke-direct v2, v4, Lcom/xiaomi/security/xsof/frauddetection/provider/FraudDetectionProvider;->b(Landroid/content/ContentValues;)V
+0x000054: return-object v3
+0x000056: if-eqz v4, +00ch
+0x00005a: invoke-direct v2, v4, Lcom/xiaomi/security/xsof/frauddetection/provider/FraudDetectionProvider;->a(Landroid/content/ContentValues;)V
+0x000060: return-object v3
+0x000062: if-eqz v4, +006h
+0x000066: invoke-direct v2, v4, Lcom/xiaomi/security/xsof/frauddetection/provider/FraudDetectionProvider;->c(Landroid/content/ContentValues;)V
+0x00006c: return-object v3
+0x00006e: const/4 v3, 0
+0x000070: return-object v3
+0x000072: nop 
+0x000074: packed-switch-payload 65 66 67
+
+METHOD onCreate()Z flags=public
+registers=2 inputs=1
+0x000000: const/4 v0, 1
+0x000002: return v0
+
+METHOD query(Landroid/net/Uri; [Ljava/lang/String; Ljava/lang/String; [Ljava/lang/String; Ljava/lang/String;)Landroid/database/Cursor; flags=public
+registers=6 inputs=6
+0x000000: const-string v2, "uri"
+0x000004: invoke-static v1, v2, Llp/n;->f(Ljava/lang/Object; Ljava/lang/String;)V
+0x00000a: const/4 v1, 0
+0x00000c: return-object v1
+
+METHOD update(Landroid/net/Uri; Landroid/content/ContentValues; Ljava/lang/String; [Ljava/lang/String;)I flags=public
+registers=5 inputs=5
+0x000000: const-string v2, "uri"
+0x000004: invoke-static v1, v2, Llp/n;->f(Ljava/lang/Object; Ljava/lang/String;)V
+0x00000a: const/4 v1, 0
+0x00000c: return v1
+
+CLASS classes4.dex Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$a;
+
+METHOD <init>()V flags=private constructor
+registers=1 inputs=1
+0x000000: invoke-direct v0, Ljava/lang/Object;-><init>()V
+0x000006: return-void 
+
+METHOD <init>(Llp/h;)V flags=public synthetic constructor
+registers=2 inputs=2
+0x000000: invoke-direct v0, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$a;-><init>()V
+0x000006: return-void 
+
+METHOD a(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$a; Ljava/lang/Integer; Ljava/lang/Boolean; J)Lio/d; flags=public static final synthetic
+registers=5 inputs=5
+0x000000: invoke-direct v0, v1, v2, v3, v4, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$a;->b(Ljava/lang/Integer; Ljava/lang/Boolean; J)Lio/d;
+0x000006: move-result-object v0
+0x000008: return-object v0
+
+METHOD b(Ljava/lang/Integer; Ljava/lang/Boolean; J)Lio/d; flags=private final
+registers=7 inputs=5
+0x000000: new-instance v0, Lio/d;
+0x000004: sget-object v1, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
+0x000008: invoke-static v4, v1, Llp/n;->b(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x00000e: move-result v4
+0x000010: invoke-direct v0, v3, v4, v5, v6, Lio/d;-><init>(Ljava/lang/Integer; I J)V
+0x000016: invoke-virtual v0, v5, v6, Lio/d;->i(J)V
+0x00001c: return-object v0
+
+CLASS classes4.dex Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$b;
+FIELD a Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService; = None
+
+METHOD <init>(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;)V flags=constructor
+registers=2 inputs=2
+0x000000: iput-object v1, v0, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$b;->a Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;
+0x000004: invoke-direct v0, Landroid/content/BroadcastReceiver;-><init>()V
+0x00000a: return-void 
+
+METHOD a(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;)V flags=public static synthetic
+registers=1 inputs=1
+0x000000: invoke-static v0, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$b;->b(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;)V
+0x000006: return-void 
+
+METHOD b(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;)V flags=private static final
+registers=4 inputs=1
+0x000000: invoke-virtual v3, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+0x000006: move-result-object v3
+0x000008: const-string v0, "airplane_mode_on"
+0x00000c: const/4 v1, 0
+0x00000e: invoke-static v3, v0, v1, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver; Ljava/lang/String; I)I
+0x000014: move-result v3
+0x000016: const/4 v0, 1
+0x000018: if-ne v3, v0, +017h
+0x00001c: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000022: move-result-wide v1
+0x000024: new-instance v3, Lio/a;
+0x000028: invoke-direct v3, v0, v1, v2, Lio/a;-><init>(Z J)V
+0x00002e: invoke-virtual v3, v1, v2, Lio/a;->g(J)V
+0x000034: sget-object v0, Ljo/k;->c Ljo/k$a;
+0x000038: invoke-virtual v0, Ljo/k$a;->a()Ljo/k;
+0x00003e: move-result-object v0
+0x000040: invoke-virtual v0, v3, Ljo/k;->X0(Lio/a;)V
+0x000046: return-void 
+
+METHOD onReceive(Landroid/content/Context; Landroid/content/Intent;)V flags=public
+registers=5 inputs=3
+TRY bytes [0xe,0x4c) -> [('Ljava/lang/Exception;', 78)]
+0x000000: const-string v3, "MiFraudDetectionService"
+0x000004: const-string v0, "intent"
+0x000008: invoke-static v4, v0, Llp/n;->f(Ljava/lang/Object; Ljava/lang/String;)V
+0x00000e: invoke-virtual v4, Landroid/content/Intent;->getAction()Ljava/lang/String;
+0x000014: move-result-object v4
+0x000016: const-string v0, "android.intent.action.AIRPLANE_MODE"
+0x00001a: invoke-static v0, v4, Llp/n;->b(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x000020: move-result v4
+0x000022: if-eqz v4, +018h
+0x000026: const-string v4, "receive AirplaneModeChange"
+0x00002a: invoke-static v3, v4, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x000030: invoke-static Laj/c0;->e()Laj/c0;
+0x000036: move-result-object v4
+0x000038: iget-object v0, v2, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$b;->a Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;
+0x00003c: new-instance v1, Lko/g;
+0x000040: invoke-direct v1, v0, Lko/g;-><init>(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;)V
+0x000046: invoke-virtual v4, v1, Laj/c0;->b(Ljava/lang/Runnable;)V
+0x00004c: return-void 
+0x00004e: move-exception v4
+0x000050: goto +2h
+0x000052: return-void 
+0x000054: new-instance v0, Ljava/lang/StringBuilder;
+0x000058: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x00005e: const-string v1, "mAirplaneModeChangeReceiver onReceive Exception: "
+0x000062: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000068: invoke-virtual v0, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x00006e: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000074: move-result-object v4
+0x000076: invoke-static v3, v4, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x00007c: return-void 
+
+CLASS classes4.dex Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$c;
+FIELD a Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService; = None
+
+METHOD <init>(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;)V flags=constructor
+registers=2 inputs=2
+0x000000: iput-object v1, v0, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$c;->a Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;
+0x000004: invoke-direct v0, Landroid/content/BroadcastReceiver;-><init>()V
+0x00000a: return-void 
+
+METHOD a(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService; Landroid/content/Intent;)V flags=public static synthetic
+registers=2 inputs=2
+0x000000: invoke-static v0, v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$c;->b(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService; Landroid/content/Intent;)V
+0x000006: return-void 
+
+METHOD b(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService; Landroid/content/Intent;)V flags=private static final
+registers=2 inputs=2
+0x000000: invoke-static v0, v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->g(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService; Landroid/content/Intent;)V
+0x000006: return-void 
+
+METHOD onReceive(Landroid/content/Context; Landroid/content/Intent;)V flags=public
+registers=6 inputs=3
+TRY bytes [0x18,0x7c) -> [('Ljava/lang/Exception;', 126)]
+0x000000: const-string v0, "MiFraudDetectionService"
+0x000004: const-string v1, "context"
+0x000008: invoke-static v4, v1, Llp/n;->f(Ljava/lang/Object; Ljava/lang/String;)V
+0x00000e: const-string v1, "intent"
+0x000012: invoke-static v5, v1, Llp/n;->f(Ljava/lang/Object; Ljava/lang/String;)V
+0x000018: const-string v1, "receive phoneStateChange"
+0x00001c: invoke-static v0, v1, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x000022: sget-boolean v1, Lmiui/os/Build;->IS_INTERNATIONAL_BUILD Z
+0x000026: if-nez v1, +02eh
+0x00002a: const-class v1, Landroid/telephony/TelephonyManager;
+0x00002e: invoke-virtual v4, v1, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+0x000034: move-result-object v4
+0x000036: check-cast v4, Landroid/telephony/TelephonyManager;
+0x00003a: invoke-virtual v4, Landroid/telephony/TelephonyManager;->isVoiceCapable()Z
+0x000040: move-result v4
+0x000042: if-nez v4, +003h
+0x000046: goto +1eh
+0x000048: invoke-virtual v5, Landroid/content/Intent;->getAction()Ljava/lang/String;
+0x00004e: move-result-object v4
+0x000050: const-string v1, "android.intent.action.PHONE_STATE"
+0x000054: invoke-static v1, v4, Llp/n;->b(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x00005a: move-result v4
+0x00005c: if-eqz v4, +013h
+0x000060: invoke-static Laj/c0;->e()Laj/c0;
+0x000066: move-result-object v4
+0x000068: iget-object v1, v3, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$c;->a Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;
+0x00006c: new-instance v2, Lko/h;
+0x000070: invoke-direct v2, v1, v5, Lko/h;-><init>(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService; Landroid/content/Intent;)V
+0x000076: invoke-virtual v4, v2, Laj/c0;->b(Ljava/lang/Runnable;)V
+0x00007c: return-void 
+0x00007e: move-exception v4
+0x000080: goto +2h
+0x000082: return-void 
+0x000084: new-instance v5, Ljava/lang/StringBuilder;
+0x000088: invoke-direct v5, Ljava/lang/StringBuilder;-><init>()V
+0x00008e: const-string v1, "mPhoneStateChangeReceiver onReceive Exception: "
+0x000092: invoke-virtual v5, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000098: invoke-virtual v5, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x00009e: invoke-virtual v5, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0000a4: move-result-object v4
+0x0000a6: invoke-static v0, v4, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x0000ac: return-void 
+
+CLASS classes4.dex Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$d;
+FIELD a Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService; = None
+
+METHOD <init>(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;)V flags=constructor
+registers=2 inputs=2
+0x000000: iput-object v1, v0, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$d;->a Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;
+0x000004: invoke-direct v0, Landroid/content/BroadcastReceiver;-><init>()V
+0x00000a: return-void 
+
+METHOD onReceive(Landroid/content/Context; Landroid/content/Intent;)V flags=public
+registers=5 inputs=3
+TRY bytes [0x18,0x64) -> [('Ljava/lang/Exception;', 102)]
+0x000000: const-string v0, "MiFraudDetectionService"
+0x000004: const-string v1, "context"
+0x000008: invoke-static v3, v1, Llp/n;->f(Ljava/lang/Object; Ljava/lang/String;)V
+0x00000e: const-string v3, "intent"
+0x000012: invoke-static v4, v3, Llp/n;->f(Ljava/lang/Object; Ljava/lang/String;)V
+0x000018: const-string v3, "extra_network_status"
+0x00001c: const/4 v1, 0
+0x00001e: invoke-virtual v4, v3, v1, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String; Z)Z
+0x000024: move-result v3
+0x000026: new-instance v4, Ljava/lang/StringBuilder;
+0x00002a: invoke-direct v4, Ljava/lang/StringBuilder;-><init>()V
+0x000030: const-string v1, "mScNetworkStatusReceiver : "
+0x000034: invoke-virtual v4, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00003a: invoke-virtual v4, v3, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+0x000040: invoke-virtual v4, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000046: move-result-object v4
+0x000048: invoke-static v0, v4, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x00004e: if-eqz v3, +00eh
+0x000052: iget-object v3, v2, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$d;->a Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;
+0x000056: invoke-static Lcom/miui/common/e;->c()Landroid/content/Context;
+0x00005c: move-result-object v4
+0x00005e: invoke-virtual v3, v4, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->i(Landroid/content/Context;)V
+0x000064: return-void 
+0x000066: move-exception v3
+0x000068: goto +2h
+0x00006a: return-void 
+0x00006c: invoke-virtual v3, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+0x000072: move-result-object v3
+0x000074: new-instance v4, Ljava/lang/StringBuilder;
+0x000078: invoke-direct v4, Ljava/lang/StringBuilder;-><init>()V
+0x00007e: const-string v1, "mScNetworkStatusReceiver error: "
+0x000082: invoke-virtual v4, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000088: invoke-virtual v4, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00008e: invoke-virtual v4, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000094: move-result-object v3
+0x000096: invoke-static v0, v3, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x00009c: return-void 
+
+CLASS classes4.dex Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$e;
+FIELD a Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService; = None
+
+METHOD <init>(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;)V flags=constructor
+registers=2 inputs=2
+0x000000: iput-object v1, v0, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$e;->a Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;
+0x000004: invoke-direct v0, Landroid/content/BroadcastReceiver;-><init>()V
+0x00000a: return-void 
+
+METHOD onReceive(Landroid/content/Context; Landroid/content/Intent;)V flags=public
+registers=4 inputs=3
+0x000000: const-string v2, "intent"
+0x000004: invoke-static v3, v2, Llp/n;->f(Ljava/lang/Object; Ljava/lang/String;)V
+0x00000a: invoke-virtual v3, Landroid/content/Intent;->getAction()Ljava/lang/String;
+0x000010: move-result-object v2
+0x000012: const-string v0, "miui.intent.TAKE_SCREENSHOT"
+0x000016: invoke-static v0, v2, Llp/n;->b(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x00001c: move-result v2
+0x00001e: if-eqz v2, +007h
+0x000022: iget-object v2, v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$e;->a Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;
+0x000026: invoke-static v2, v3, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->h(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService; Landroid/content/Intent;)V
+0x00002c: return-void 
+
+CLASS classes4.dex Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$f;
+FIELD a Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService; = None
+
+METHOD <init>(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;)V flags=constructor
+registers=2 inputs=2
+0x000000: iput-object v1, v0, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$f;->a Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;
+0x000004: invoke-direct v0, Landroid/content/BroadcastReceiver;-><init>()V
+0x00000a: return-void 
+
+METHOD onReceive(Landroid/content/Context; Landroid/content/Intent;)V flags=public
+registers=7 inputs=3
+TRY bytes [0x1c,0xae) -> [('Ljava/lang/Exception;', 50)]
+0x000000: const-string v0, "MiFraudDetectionService"
+0x000004: const-string v1, "ss"
+0x000008: const-string v2, "context"
+0x00000c: invoke-static v5, v2, Llp/n;->f(Ljava/lang/Object; Ljava/lang/String;)V
+0x000012: const-string v2, "intent"
+0x000016: invoke-static v6, v2, Llp/n;->f(Ljava/lang/Object; Ljava/lang/String;)V
+0x00001c: invoke-virtual v6, v1, Landroid/content/Intent;->hasExtra(Ljava/lang/String;)Z
+0x000022: move-result v2
+0x000024: if-eqz v2, +009h
+0x000028: invoke-virtual v6, v1, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+0x00002e: move-result-object v1
+0x000030: goto +5h
+0x000032: move-exception v5
+0x000034: goto +3eh
+0x000036: const-string v1, ""
+0x00003a: new-instance v2, Ljava/lang/StringBuilder;
+0x00003e: invoke-direct v2, Ljava/lang/StringBuilder;-><init>()V
+0x000044: const-string v3, "mSimStateReceiver : "
+0x000048: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00004e: invoke-virtual v2, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000054: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00005a: move-result-object v2
+0x00005c: invoke-static v0, v2, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x000062: const-string v2, "LOADED"
+0x000066: invoke-static v2, v1, Llp/n;->b(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x00006c: move-result v2
+0x00006e: if-eqz v2, +00ch
+0x000072: iget-object v5, v4, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$f;->a Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;
+0x000076: invoke-static Lcom/miui/common/e;->c()Landroid/content/Context;
+0x00007c: move-result-object v6
+0x00007e: invoke-virtual v5, v6, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->i(Landroid/content/Context;)V
+0x000084: return-void 
+0x000086: const-string v2, "ABSENT"
+0x00008a: invoke-static v2, v1, Llp/n;->b(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x000090: move-result v1
+0x000092: if-eqz v1, +00eh
+0x000096: invoke-virtual v6, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
+0x00009c: move-result-object v6
+0x00009e: if-eqz v6, +008h
+0x0000a2: sget-object v6, Llo/d;->a Llo/d$a;
+0x0000a6: const/4 v1, 0
+0x0000a8: invoke-virtual v6, v5, v1, Llo/d$a;->m(Landroid/content/Context; I)V
+0x0000ae: return-void 
+0x0000b0: invoke-virtual v5, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+0x0000b6: move-result-object v5
+0x0000b8: new-instance v6, Ljava/lang/StringBuilder;
+0x0000bc: invoke-direct v6, Ljava/lang/StringBuilder;-><init>()V
+0x0000c2: const-string v1, "mSimStateReceiver error: "
+0x0000c6: invoke-virtual v6, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000cc: invoke-virtual v6, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000d2: invoke-virtual v6, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0000d8: move-result-object v5
+0x0000da: invoke-static v0, v5, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x0000e0: return-void 
+
+CLASS classes4.dex Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;
+FIELD m Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$a; = None
+FIELD a Landroid/os/Handler; = None
+FIELD b Landroid/os/HandlerThread; = None
+FIELD c Z = None
+FIELD d Lwo/h; = None
+FIELD e Ljava/util/List; = None
+FIELD f Landroid/content/BroadcastReceiver; = None
+FIELD g Landroid/content/BroadcastReceiver; = None
+FIELD h Landroid/content/BroadcastReceiver; = None
+FIELD i Landroid/content/BroadcastReceiver; = None
+FIELD j Landroid/content/BroadcastReceiver; = None
+FIELD k Ljava/util/concurrent/atomic/AtomicReference; = None
+FIELD l Ljava/util/concurrent/atomic/AtomicReference; = None
+
+METHOD <clinit>()V flags=static constructor
+registers=2 inputs=0
+0x000000: new-instance v0, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$a;
+0x000004: const/4 v1, 0
+0x000006: invoke-direct v0, v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$a;-><init>(Llp/h;)V
+0x00000c: sput-object v0, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->m Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$a;
+0x000010: return-void 
+
+METHOD <init>()V flags=public constructor
+registers=6 inputs=1
+TRY bytes [0x2a,0x84) -> [('catchall', 118)]
+0x000000: invoke-direct v5, Landroid/app/Service;-><init>()V
+0x000006: new-instance v0, Lko/c;
+0x00000a: invoke-direct v0, Lko/c;-><init>()V
+0x000010: invoke-static v0, Lwo/i;->a(Lkp/a;)Lwo/h;
+0x000016: move-result-object v0
+0x000018: iput-object v0, v5, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->d Lwo/h;
+0x00001c: new-instance v0, Ljava/util/ArrayList;
+0x000020: invoke-direct v0, Ljava/util/ArrayList;-><init>()V
+0x000026: iput-object v0, v5, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->e Ljava/util/List;
+0x00002a: sget-object v0, Lwo/p;->b Lwo/p$a;
+0x00002e: invoke-static Lcom/miui/common/e;->c()Landroid/content/Context;
+0x000034: move-result-object v0
+0x000036: invoke-virtual v0, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+0x00003c: move-result-object v0
+0x00003e: sget v1, Lto/a;->a I
+0x000042: invoke-virtual v0, v1, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+0x000048: move-result-object v0
+0x00004a: const-string v1, "getStringArray(...)"
+0x00004e: invoke-static v0, v1, Llp/n;->e(Ljava/lang/Object; Ljava/lang/String;)V
+0x000054: array-length v1, v0
+0x000056: const/4 v2, 0
+0x000058: if-ge v2, v1, +011h
+0x00005c: aget-object v3, v0, v2
+0x000060: iget-object v4, v5, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->e Ljava/util/List;
+0x000064: invoke-static v3, Llp/n;->c(Ljava/lang/Object;)V
+0x00006a: invoke-interface v4, v3, Ljava/util/List;->add(Ljava/lang/Object;)Z
+0x000070: add-int/lit8 v2, v2, 1
+0x000074: goto -eh
+0x000076: move-exception v0
+0x000078: goto +7h
+0x00007a: sget-object v0, Lwo/w;->a Lwo/w;
+0x00007e: invoke-static v0, Lwo/p;->b(Ljava/lang/Object;)Ljava/lang/Object;
+0x000084: goto +ah
+0x000086: sget-object v1, Lwo/p;->b Lwo/p$a;
+0x00008a: invoke-static v0, Lwo/q;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
+0x000090: move-result-object v0
+0x000092: invoke-static v0, Lwo/p;->b(Ljava/lang/Object;)Ljava/lang/Object;
+0x000098: new-instance v0, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$e;
+0x00009c: invoke-direct v0, v5, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$e;-><init>(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;)V
+0x0000a2: iput-object v0, v5, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->f Landroid/content/BroadcastReceiver;
+0x0000a6: new-instance v0, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$f;
+0x0000aa: invoke-direct v0, v5, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$f;-><init>(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;)V
+0x0000b0: iput-object v0, v5, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->g Landroid/content/BroadcastReceiver;
+0x0000b4: new-instance v0, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$d;
+0x0000b8: invoke-direct v0, v5, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$d;-><init>(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;)V
+0x0000be: iput-object v0, v5, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->h Landroid/content/BroadcastReceiver;
+0x0000c2: new-instance v0, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$b;
+0x0000c6: invoke-direct v0, v5, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$b;-><init>(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;)V
+0x0000cc: iput-object v0, v5, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->i Landroid/content/BroadcastReceiver;
+0x0000d0: new-instance v0, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$c;
+0x0000d4: invoke-direct v0, v5, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$c;-><init>(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;)V
+0x0000da: iput-object v0, v5, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->j Landroid/content/BroadcastReceiver;
+0x0000de: new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+0x0000e2: const-string v1, ""
+0x0000e6: invoke-direct v0, v1, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
+0x0000ec: iput-object v0, v5, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->k Ljava/util/concurrent/atomic/AtomicReference;
+0x0000f0: new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+0x0000f4: invoke-direct v0, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+0x0000fa: iput-object v0, v5, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->l Ljava/util/concurrent/atomic/AtomicReference;
+0x0000fe: return-void 
+
+METHOD A(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService; Ljava/lang/String; I Ljava/lang/String; Z)V flags=private static final
+registers=15 inputs=5
+0x000000: const-string v0, "op"
+0x000004: invoke-static v11, v0, Llp/n;->f(Ljava/lang/Object; Ljava/lang/String;)V
+0x00000a: const-string v0, "packageName"
+0x00000e: invoke-static v13, v0, Llp/n;->f(Ljava/lang/Object; Ljava/lang/String;)V
+0x000014: new-instance v0, Ljava/lang/StringBuilder;
+0x000018: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x00001e: const-string v1, "startWatchingPrivacyUse op: "
+0x000022: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000028: invoke-virtual v0, v11, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00002e: const-string v1, ", uid: "
+0x000032: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000038: invoke-virtual v0, v12, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+0x00003e: const-string v1, ", packageName: "
+0x000042: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000048: invoke-virtual v0, v13, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00004e: const-string v1, ", active: "
+0x000052: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000058: invoke-virtual v0, v14, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+0x00005e: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000064: move-result-object v0
+0x000066: const-string v1, "MiFraudDetectionService"
+0x00006a: invoke-static v1, v0, Loo/b;->c(Ljava/lang/String; Ljava/lang/String;)V
+0x000070: invoke-direct v10, v12, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->q(I)Z
+0x000076: move-result v12
+0x000078: if-eqz v12, +046h
+0x00007c: invoke-direct v10, v11, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->B(Ljava/lang/String;)I
+0x000082: move-result v11
+0x000084: const/16 v12, 10042
+0x000088: if-ne v11, v12, +03eh
+0x00008c: iget-object v10, v10, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->e Ljava/util/List;
+0x000090: invoke-interface v10, v13, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+0x000096: move-result v10
+0x000098: if-nez v10, +036h
+0x00009c: if-eqz v14, +01bh
+0x0000a0: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x0000a6: move-result-wide v2
+0x0000a8: new-instance v0, Lio/j;
+0x0000ac: const-wide/16 v6, 0
+0x0000b0: const/4 v8, 1
+0x0000b2: const-wide/16 v4, 0
+0x0000b6: move-object v1, v13
+0x0000b8: invoke-direct/range v0 ... v8, Lio/j;-><init>(Ljava/lang/String; J J J Z)V
+0x0000be: sget-object v10, Ljo/k;->c Ljo/k$a;
+0x0000c2: invoke-virtual v10, Ljo/k$a;->a()Ljo/k;
+0x0000c8: move-result-object v10
+0x0000ca: invoke-virtual v10, v0, Ljo/k;->e1(Lio/j;)V
+0x0000d0: return-void 
+0x0000d2: move-object v1, v13
+0x0000d4: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x0000da: move-result-wide v5
+0x0000dc: move-object v2, v1
+0x0000de: new-instance v1, Lio/j;
+0x0000e2: const-wide/16 v7, 0
+0x0000e6: const/4 v9, 0
+0x0000e8: const-wide/16 v3, 0
+0x0000ec: invoke-direct/range v1 ... v9, Lio/j;-><init>(Ljava/lang/String; J J J Z)V
+0x0000f2: sget-object v10, Ljo/k;->c Ljo/k$a;
+0x0000f6: invoke-virtual v10, Ljo/k$a;->a()Ljo/k;
+0x0000fc: move-result-object v10
+0x0000fe: invoke-virtual v10, v1, Ljo/k;->b2(Lio/j;)V
+0x000104: return-void 
+
+METHOD B(Ljava/lang/String;)I flags=private final
+registers=5 inputs=2
+TRY bytes [0x0,0x44) -> [('catchall', 70)]
+0x000000: sget-object v0, Lwo/p;->b Lwo/p$a;
+0x000004: const-class v0, Landroid/app/AppOpsManager;
+0x000008: const-string v1, "strOpToOp"
+0x00000c: const-class v2, Ljava/lang/String;
+0x000010: filled-new-array v2, [Ljava/lang/Class;
+0x000016: move-result-object v2
+0x000018: filled-new-array v4, [Ljava/lang/Object;
+0x00001e: move-result-object v4
+0x000020: invoke-static v0, v1, v2, v4, Ldl/e;->h(Ljava/lang/Class; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+0x000026: move-result-object v4
+0x000028: const-string v0, "null cannot be cast to non-null type kotlin.Int"
+0x00002c: invoke-static v4, v0, Llp/n;->d(Ljava/lang/Object; Ljava/lang/String;)V
+0x000032: check-cast v4, Ljava/lang/Integer;
+0x000036: invoke-virtual v4, Ljava/lang/Integer;->intValue()I
+0x00003c: invoke-static v4, Lwo/p;->b(Ljava/lang/Object;)Ljava/lang/Object;
+0x000042: move-result-object v4
+0x000044: goto +ch
+0x000046: move-exception v4
+0x000048: sget-object v0, Lwo/p;->b Lwo/p$a;
+0x00004c: invoke-static v4, Lwo/q;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
+0x000052: move-result-object v4
+0x000054: invoke-static v4, Lwo/p;->b(Ljava/lang/Object;)Ljava/lang/Object;
+0x00005a: move-result-object v4
+0x00005c: const/4 v0, -1
+0x00005e: invoke-static v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x000064: move-result-object v0
+0x000066: invoke-static v4, Lwo/p;->f(Ljava/lang/Object;)Z
+0x00006c: move-result v1
+0x00006e: if-eqz v1, +003h
+0x000072: move-object v4, v0
+0x000074: check-cast v4, Ljava/lang/Number;
+0x000078: invoke-virtual v4, Ljava/lang/Number;->intValue()I
+0x00007e: move-result v4
+0x000080: return v4
+
+METHOD C()V flags=private final
+registers=4 inputs=1
+TRY bytes [0x0,0x10) -> [('Ljava/lang/Exception;', 18)]
+0x000000: iget-object v0, v3, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->h Landroid/content/BroadcastReceiver;
+0x000004: if-nez v0, +003h
+0x000008: return-void 
+0x00000a: invoke-virtual v3, v0, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+0x000010: return-void 
+0x000012: move-exception v0
+0x000014: invoke-virtual v0, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+0x00001a: move-result-object v0
+0x00001c: new-instance v1, Ljava/lang/StringBuilder;
+0x000020: invoke-direct v1, Ljava/lang/StringBuilder;-><init>()V
+0x000026: const-string v2, "unRegisterScNetworkStatusReceiver error: "
+0x00002a: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000030: invoke-virtual v1, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000036: invoke-virtual v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00003c: move-result-object v0
+0x00003e: const-string v1, "MiFraudDetectionService"
+0x000042: invoke-static v1, v0, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x000048: return-void 
+
+METHOD D()V flags=private final
+registers=4 inputs=1
+TRY bytes [0x0,0x46) -> [('Ljava/lang/Exception;', 50)]
+0x000000: iget-object v0, v3, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->f Landroid/content/BroadcastReceiver;
+0x000004: invoke-virtual v3, v0, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+0x00000a: iget-object v0, v3, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->g Landroid/content/BroadcastReceiver;
+0x00000e: invoke-virtual v3, v0, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+0x000014: iget-object v0, v3, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->i Landroid/content/BroadcastReceiver;
+0x000018: invoke-virtual v3, v0, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+0x00001e: iget-boolean v0, v3, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->c Z
+0x000022: if-eqz v0, +00ah
+0x000026: iget-object v0, v3, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->j Landroid/content/BroadcastReceiver;
+0x00002a: invoke-virtual v3, v0, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+0x000030: goto +3h
+0x000032: move-exception v0
+0x000034: goto +ah
+0x000036: sget-object v0, Llo/e;->a Llo/e;
+0x00003a: invoke-virtual v0, v3, Llo/e;->d(Landroid/content/Context;)V
+0x000040: invoke-direct v3, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->C()V
+0x000046: return-void 
+0x000048: new-instance v1, Ljava/lang/StringBuilder;
+0x00004c: invoke-direct v1, Ljava/lang/StringBuilder;-><init>()V
+0x000052: const-string v2, "unregisterReceiver error: "
+0x000056: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00005c: invoke-virtual v1, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x000062: invoke-virtual v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000068: move-result-object v0
+0x00006a: const-string v1, "MiFraudDetectionService"
+0x00006e: invoke-static v1, v0, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x000074: return-void 
+
+METHOD a(Lio/d;)V flags=public static synthetic
+registers=1 inputs=1
+0x000000: invoke-static v0, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->k(Lio/d;)V
+0x000006: return-void 
+
+METHOD b(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService; Ljava/lang/String; I Ljava/lang/String; Z)V flags=public static synthetic
+registers=5 inputs=5
+0x000000: invoke-static v0, v1, v2, v3, v4, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->A(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService; Ljava/lang/String; I Ljava/lang/String; Z)V
+0x000006: return-void 
+
+METHOD c(Ljava/lang/Runnable;)Ljava/lang/Thread; flags=public static synthetic
+registers=1 inputs=1
+0x000000: invoke-static v0, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->t(Ljava/lang/Runnable;)Ljava/lang/Thread;
+0x000006: move-result-object v0
+0x000008: return-object v0
+
+METHOD d()V flags=public static synthetic
+registers=0 inputs=0
+0x000000: invoke-static Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->o()V
+0x000006: return-void 
+
+METHOD e(Landroid/content/Context; Ljava/lang/Object; Ljava/lang/reflect/Method; [Ljava/lang/Object;)Ljava/lang/Object; flags=public static synthetic
+registers=4 inputs=4
+0x000000: invoke-static v0, v1, v2, v3, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->j(Landroid/content/Context; Ljava/lang/Object; Ljava/lang/reflect/Method; [Ljava/lang/Object;)Ljava/lang/Object;
+0x000006: move-result-object v0
+0x000008: return-object v0
+
+METHOD f()Ljava/util/concurrent/ExecutorService; flags=public static synthetic
+registers=1 inputs=0
+0x000000: invoke-static Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->s()Ljava/util/concurrent/ExecutorService;
+0x000006: move-result-object v0
+0x000008: return-object v0
+
+METHOD g(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService; Landroid/content/Intent;)V flags=public static final synthetic
+registers=2 inputs=2
+0x000000: invoke-direct v0, v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->m(Landroid/content/Intent;)V
+0x000006: return-void 
+
+METHOD h(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService; Landroid/content/Intent;)V flags=public static final synthetic
+registers=2 inputs=2
+0x000000: invoke-direct v0, v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->n(Landroid/content/Intent;)V
+0x000006: return-void 
+
+METHOD j(Landroid/content/Context; Ljava/lang/Object; Ljava/lang/reflect/Method; [Ljava/lang/Object;)Ljava/lang/Object; flags=private static final
+registers=11 inputs=4
+TRY bytes [0x7c,0x174) -> [('Ljava/lang/Exception;', 298)]
+0x000000: const/4 v8, 0
+0x000002: if-eqz v9, +007h
+0x000006: invoke-virtual v9, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
+0x00000c: move-result-object v0
+0x00000e: goto +2h
+0x000010: move-object v0, v8
+0x000012: const-string v1, "onCallForwardingInfoAvailable"
+0x000016: invoke-static v0, v1, Llp/n;->b(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x00001c: move-result v0
+0x00001e: const/4 v1, 0
+0x000020: const-string v2, "MiFraudDetectionService"
+0x000024: if-eqz v0, +0beh
+0x000028: const-string v9, "onCallForwardingInfoAvailable: "
+0x00002c: invoke-static v2, v9, Loo/b;->c(Ljava/lang/String; Ljava/lang/String;)V
+0x000032: if-eqz v10, +0b6h
+0x000036: array-length v0, v10
+0x000038: if-lez v0, +0b3h
+0x00003c: aget-object v10, v10, v1
+0x000040: invoke-virtual v10, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000046: move-result-object v0
+0x000048: new-instance v3, Ljava/lang/StringBuilder;
+0x00004c: invoke-direct v3, Ljava/lang/StringBuilder;-><init>()V
+0x000052: invoke-virtual v3, v9, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000058: invoke-virtual v3, v10, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x00005e: const-string v9, ", infoClass="
+0x000062: invoke-virtual v3, v9, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000068: invoke-virtual v3, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x00006e: invoke-virtual v3, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000074: move-result-object v9
+0x000076: invoke-static v2, v9, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x00007c: sget-object v9, Ljava/lang/Integer;->TYPE Ljava/lang/Class;
+0x000080: const-string v0, "getReason"
+0x000084: new-array v3, v1, [Ljava/lang/Object;
+0x000088: invoke-static v10, v9, v0, v8, v3, Ldl/e;->b(Ljava/lang/Object; Ljava/lang/Class; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+0x00008e: move-result-object v9
+0x000090: check-cast v9, Ljava/lang/Integer;
+0x000094: sget-object v0, Ljava/lang/Boolean;->TYPE Ljava/lang/Class;
+0x000098: const-string v3, "isEnabled"
+0x00009c: new-array v4, v1, [Ljava/lang/Object;
+0x0000a0: invoke-static v10, v0, v3, v8, v4, Ldl/e;->b(Ljava/lang/Object; Ljava/lang/Class; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+0x0000a6: move-result-object v10
+0x0000a8: check-cast v10, Ljava/lang/Boolean;
+0x0000ac: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x0000b2: move-result-wide v3
+0x0000b4: sget-object v0, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->m Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$a;
+0x0000b8: invoke-static v0, v9, v10, v3, v4, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$a;->a(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService$a; Ljava/lang/Integer; Ljava/lang/Boolean; J)Lio/d;
+0x0000be: move-result-object v0
+0x0000c0: sget-object v3, Llo/d;->a Llo/d$a;
+0x0000c4: invoke-virtual v3, Llo/d$a;->e()Lio/d;
+0x0000ca: move-result-object v4
+0x0000cc: new-instance v5, Ljava/lang/StringBuilder;
+0x0000d0: invoke-direct v5, Ljava/lang/StringBuilder;-><init>()V
+0x0000d6: const-string v6, "onReceive , info="
+0x0000da: invoke-virtual v5, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000e0: invoke-virtual v5, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x0000e6: const-string v6, ", latestCallForwardingInfo="
+0x0000ea: invoke-virtual v5, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000f0: invoke-virtual v5, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x0000f6: invoke-virtual v5, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0000fc: move-result-object v5
+0x0000fe: invoke-static v2, v5, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x000104: sget-object v5, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
+0x000108: invoke-static v10, v5, Llp/n;->b(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x00010e: move-result v10
+0x000110: if-eqz v10, +00fh
+0x000114: if-nez v9, +003h
+0x000118: goto +bh
+0x00011a: invoke-virtual v9, Ljava/lang/Integer;->intValue()I
+0x000120: move-result v9
+0x000122: if-nez v9, +006h
+0x000126: const/4 v1, 1
+0x000128: goto +3h
+0x00012a: move-exception v7
+0x00012c: goto +25h
+0x00012e: invoke-virtual v3, v7, v1, Llo/d$a;->m(Landroid/content/Context; I)V
+0x000134: if-eqz v4, +00fh
+0x000138: invoke-virtual v4, v0, Lio/d;->e(Lio/d;)Z
+0x00013e: move-result v7
+0x000140: if-nez v7, +003h
+0x000144: goto +7h
+0x000146: const-string v7, "checkCallForwarding: equals = true"
+0x00014a: invoke-static v2, v7, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x000150: goto +27h
+0x000152: const-string v7, "checkCallForwarding: equals = false"
+0x000156: invoke-static v2, v7, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x00015c: invoke-static Laj/c0;->e()Laj/c0;
+0x000162: move-result-object v7
+0x000164: new-instance v9, Lko/f;
+0x000168: invoke-direct v9, v0, Lko/f;-><init>(Lio/d;)V
+0x00016e: invoke-virtual v7, v9, Laj/c0;->b(Ljava/lang/Runnable;)V
+0x000174: goto +15h
+0x000176: new-instance v9, Ljava/lang/StringBuilder;
+0x00017a: invoke-direct v9, Ljava/lang/StringBuilder;-><init>()V
+0x000180: const-string v10, "Exception: "
+0x000184: invoke-virtual v9, v10, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00018a: invoke-virtual v9, v7, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x000190: invoke-virtual v9, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000196: move-result-object v7
+0x000198: invoke-static v2, v7, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x00019e: return-object v8
+0x0001a0: if-eqz v9, +007h
+0x0001a4: invoke-virtual v9, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
+0x0001aa: move-result-object v7
+0x0001ac: goto +2h
+0x0001ae: move-object v7, v8
+0x0001b0: const-string v9, "onError"
+0x0001b4: invoke-static v7, v9, Llp/n;->b(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x0001ba: move-result v7
+0x0001bc: if-eqz v7, +020h
+0x0001c0: const-string v7, "onError: "
+0x0001c4: invoke-static v2, v7, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x0001ca: if-eqz v10, +019h
+0x0001ce: array-length v9, v10
+0x0001d0: if-lez v9, +016h
+0x0001d4: aget-object v9, v10, v1
+0x0001d8: new-instance v10, Ljava/lang/StringBuilder;
+0x0001dc: invoke-direct v10, Ljava/lang/StringBuilder;-><init>()V
+0x0001e2: invoke-virtual v10, v7, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0001e8: invoke-virtual v10, v9, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x0001ee: invoke-virtual v10, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0001f4: move-result-object v7
+0x0001f6: invoke-static v2, v7, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x0001fc: return-object v8
+
+METHOD k(Lio/d;)V flags=private static final
+registers=2 inputs=1
+0x000000: sget-object v0, Ljo/k;->c Ljo/k$a;
+0x000004: invoke-virtual v0, Ljo/k$a;->a()Ljo/k;
+0x00000a: move-result-object v0
+0x00000c: invoke-virtual v0, v1, Ljo/k;->b1(Lio/d;)V
+0x000012: return-void 
+
+METHOD l()Ljava/util/concurrent/ExecutorService; flags=private final
+registers=2 inputs=1
+0x000000: iget-object v0, v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->d Lwo/h;
+0x000004: invoke-interface v0, Lwo/h;->getValue()Ljava/lang/Object;
+0x00000a: move-result-object v0
+0x00000c: check-cast v0, Ljava/util/concurrent/ExecutorService;
+0x000010: return-object v0
+
+METHOD m(Landroid/content/Intent;)V flags=private final
+registers=23 inputs=2
+TRY bytes [0xc,0x9a) -> [('Ljava/lang/Exception;', 80)]
+TRY bytes [0xa2,0x1b0) -> [('Ljava/lang/Exception;', 80)]
+0x000000: move-object/from16 v1, v21
+0x000004: move-object/from16 v0, v22
+0x000008: const-string v2, "MiFraudDetectionService"
+0x00000c: const-string v3, "state"
+0x000010: invoke-virtual v0, v3, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+0x000016: move-result-object v3
+0x000018: const-string v4, "incoming_number"
+0x00001c: invoke-virtual v0, v4, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+0x000022: move-result-object v0
+0x000024: iget-object v4, v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->k Ljava/util/concurrent/atomic/AtomicReference;
+0x000028: invoke-virtual v4, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+0x00002e: move-result-object v4
+0x000030: invoke-static v4, v3, Llp/n;->b(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x000036: move-result v4
+0x000038: if-eqz v4, +004h
+0x00003c: goto/16 +0bah
+0x000040: if-nez v0, +00bh
+0x000044: const-string v0, "handlePhoneStateChange number is null"
+0x000048: invoke-static v2, v0, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x00004e: return-void 
+0x000050: move-exception v0
+0x000052: goto/16 +0b0h
+0x000056: iget-object v4, v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->k Ljava/util/concurrent/atomic/AtomicReference;
+0x00005a: invoke-virtual v4, v3, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
+0x000060: sget-object v4, Landroid/telephony/TelephonyManager;->EXTRA_STATE_RINGING Ljava/lang/String;
+0x000064: invoke-static v4, v3, Llp/n;->b(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x00006a: move-result v4
+0x00006c: const/4 v5, 0
+0x00006e: if-eqz v4, +010h
+0x000072: invoke-static v0, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+0x000078: move-result v0
+0x00007a: if-eqz v0, +004h
+0x00007e: goto/16 +099h
+0x000082: iget-object v0, v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->l Ljava/util/concurrent/atomic/AtomicReference;
+0x000086: invoke-virtual v0, v5, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
+0x00008c: return-void 
+0x00008e: sget-object v4, Landroid/telephony/TelephonyManager;->EXTRA_STATE_OFFHOOK Ljava/lang/String;
+0x000092: invoke-static v4, v3, Llp/n;->b(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x000098: move-result v4
+0x00009a: const-string v6, "getMD5String(...)"
+0x00009e: if-eqz v4, +064h
+0x0000a2: iget-object v3, v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->l Ljava/util/concurrent/atomic/AtomicReference;
+0x0000a6: invoke-virtual v3, v0, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
+0x0000ac: iget-object v0, v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->l Ljava/util/concurrent/atomic/AtomicReference;
+0x0000b0: invoke-virtual v0, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+0x0000b6: move-result-object v0
+0x0000b8: check-cast v0, Ljava/lang/String;
+0x0000bc: invoke-static v0, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+0x0000c2: move-result v3
+0x0000c4: if-nez v3, +076h
+0x0000c8: sget-object v3, Llo/d;->a Llo/d$a;
+0x0000cc: invoke-static v0, Llp/n;->c(Ljava/lang/Object;)V
+0x0000d2: invoke-virtual v3, v1, v0, Llo/d$a;->k(Landroid/content/Context; Ljava/lang/String;)Z
+0x0000d8: move-result v4
+0x0000da: new-instance v5, Ljava/lang/StringBuilder;
+0x0000de: invoke-direct v5, Ljava/lang/StringBuilder;-><init>()V
+0x0000e4: const-string v7, "handlePhoneStateChange isSimCardFraudCall: "
+0x0000e8: invoke-virtual v5, v7, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000ee: invoke-virtual v5, v4, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+0x0000f4: invoke-virtual v5, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0000fa: move-result-object v5
+0x0000fc: invoke-static v2, v5, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x000102: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000108: move-result-wide v9
+0x00010a: new-instance v7, Lio/m;
+0x00010e: invoke-static v0, Loo/a;->d(Ljava/lang/String;)Ljava/lang/String;
+0x000114: move-result-object v8
+0x000116: invoke-static v8, v6, Llp/n;->e(Ljava/lang/Object; Ljava/lang/String;)V
+0x00011c: invoke-virtual v3, v1, v0, Llo/d$a;->h(Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+0x000122: move-result-object v13
+0x000124: invoke-virtual v3, v1, v0, Llo/d$a;->i(Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+0x00012a: move-result-object v14
+0x00012c: invoke-virtual v3, v0, Llo/d$a;->j(Ljava/lang/String;)Z
+0x000132: move-result v15
+0x000134: invoke-virtual v3, v1, v0, Llo/d$a;->l(Landroid/content/Context; Ljava/lang/String;)Z
+0x00013a: move-result v16
+0x00013c: const/16 v17, 1
+0x000140: const-wide/16 v18, 0
+0x000144: const-wide/16 v11, 0
+0x000148: move/from16 v20, v4
+0x00014c: invoke-direct/range v7 ... v20, Lio/m;-><init>(Ljava/lang/String; J J Ljava/lang/String; Ljava/lang/String; Z Z Z J Z)V
+0x000152: sget-object v0, Ljo/k;->c Ljo/k$a;
+0x000156: invoke-virtual v0, Ljo/k$a;->a()Ljo/k;
+0x00015c: move-result-object v0
+0x00015e: invoke-virtual v0, v7, Ljo/k;->i1(Lio/m;)V
+0x000164: return-void 
+0x000166: sget-object v0, Landroid/telephony/TelephonyManager;->EXTRA_STATE_IDLE Ljava/lang/String;
+0x00016a: invoke-static v0, v3, Llp/n;->b(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x000170: move-result v0
+0x000172: if-eqz v0, +01fh
+0x000176: sget-object v0, Ljo/k;->c Ljo/k$a;
+0x00017a: invoke-virtual v0, Ljo/k$a;->a()Ljo/k;
+0x000180: move-result-object v0
+0x000182: iget-object v3, v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->l Ljava/util/concurrent/atomic/AtomicReference;
+0x000186: invoke-virtual v3, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+0x00018c: move-result-object v3
+0x00018e: check-cast v3, Ljava/lang/String;
+0x000192: invoke-static v3, Loo/a;->d(Ljava/lang/String;)Ljava/lang/String;
+0x000198: move-result-object v3
+0x00019a: invoke-static v3, v6, Llp/n;->e(Ljava/lang/Object; Ljava/lang/String;)V
+0x0001a0: invoke-virtual v0, v3, Ljo/k;->d2(Ljava/lang/String;)V
+0x0001a6: iget-object v0, v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->l Ljava/util/concurrent/atomic/AtomicReference;
+0x0001aa: invoke-virtual v0, v5, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
+0x0001b0: return-void 
+0x0001b2: new-instance v3, Ljava/lang/StringBuilder;
+0x0001b6: invoke-direct v3, Ljava/lang/StringBuilder;-><init>()V
+0x0001bc: const-string v4, "handlePhoneStateChange error: "
+0x0001c0: invoke-virtual v3, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0001c6: invoke-virtual v3, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x0001cc: invoke-virtual v3, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0001d2: move-result-object v0
+0x0001d4: invoke-static v2, v0, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x0001da: return-void 
+
+METHOD n(Landroid/content/Intent;)V flags=private final
+registers=5 inputs=2
+TRY bytes [0xe,0x60) -> [('Ljava/lang/Exception;', 98)]
+0x000000: const-string v0, "handleScreenShot:"
+0x000004: const-string v1, "MiFraudDetectionService"
+0x000008: invoke-static v1, v0, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x00000e: const-string v0, "IsFinished"
+0x000012: const/4 v2, 0
+0x000014: invoke-virtual v4, v0, v2, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String; Z)Z
+0x00001a: move-result v4
+0x00001c: new-instance v0, Ljava/lang/StringBuilder;
+0x000020: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x000026: const-string v2, "handleScreenShot: mIsScreenShotFinish = "
+0x00002a: invoke-virtual v0, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000030: invoke-virtual v0, v4, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+0x000036: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00003c: move-result-object v0
+0x00003e: invoke-static v1, v0, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x000044: if-eqz v4, +011h
+0x000048: invoke-static Laj/c0;->e()Laj/c0;
+0x00004e: move-result-object v4
+0x000050: new-instance v0, Lko/e;
+0x000054: invoke-direct v0, Lko/e;-><init>()V
+0x00005a: invoke-virtual v4, v0, Laj/c0;->b(Ljava/lang/Runnable;)V
+0x000060: return-void 
+0x000062: move-exception v4
+0x000064: goto +2h
+0x000066: return-void 
+0x000068: new-instance v0, Ljava/lang/StringBuilder;
+0x00006c: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x000072: const-string v2, "handleScreenShot error: "
+0x000076: invoke-virtual v0, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00007c: invoke-virtual v0, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x000082: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000088: move-result-object v4
+0x00008a: invoke-static v1, v4, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x000090: return-void 
+
+METHOD o()V flags=private static final
+registers=3 inputs=0
+0x000000: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000006: move-result-wide v0
+0x000008: new-instance v2, Lio/k;
+0x00000c: invoke-direct v2, v0, v1, Lio/k;-><init>(J)V
+0x000012: invoke-virtual v2, v0, v1, Lio/k;->f(J)V
+0x000018: sget-object v0, Ljo/k;->c Ljo/k$a;
+0x00001c: invoke-virtual v0, Ljo/k$a;->a()Ljo/k;
+0x000022: move-result-object v0
+0x000024: invoke-virtual v0, v2, Ljo/k;->g1(Lio/k;)V
+0x00002a: return-void 
+
+METHOD p()V flags=private final
+registers=3 inputs=1
+0x000000: new-instance v0, Landroid/os/Handler;
+0x000004: invoke-static Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+0x00000a: move-result-object v1
+0x00000c: invoke-direct v0, v1, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+0x000012: iput-object v0, v2, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->a Landroid/os/Handler;
+0x000016: new-instance v0, Landroid/os/HandlerThread;
+0x00001a: const-string v1, "fraud_detection_handler_thread"
+0x00001e: invoke-direct v0, v1, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
+0x000024: iput-object v0, v2, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->b Landroid/os/HandlerThread;
+0x000028: invoke-virtual v0, Ljava/lang/Thread;->start()V
+0x00002e: return-void 
+
+METHOD q(I)Z flags=private final
+registers=4 inputs=2
+0x000000: invoke-static Lcom/miui/common/utils/m2;->F()I
+0x000006: move-result v0
+0x000008: invoke-static v3, Lcom/miui/common/utils/m2;->o(I)I
+0x00000e: move-result v1
+0x000010: if-eq v0, v1, +013h
+0x000014: invoke-static v3, Lcom/miui/common/utils/m2;->o(I)I
+0x00001a: move-result v3
+0x00001c: const/16 v0, 999
+0x000020: if-ne v3, v0, +009h
+0x000024: invoke-static Lcom/miui/common/utils/m2;->v()Z
+0x00002a: move-result v3
+0x00002c: if-eqz v3, +003h
+0x000030: goto +3h
+0x000032: const/4 v3, 0
+0x000034: return v3
+0x000036: const/4 v3, 1
+0x000038: return v3
+
+METHOD r()Z flags=private final
+registers=4 inputs=1
+0x000000: const-class v0, Landroid/telephony/TelephonyManager;
+0x000004: invoke-virtual v3, v0, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+0x00000a: move-result-object v0
+0x00000c: check-cast v0, Landroid/telephony/TelephonyManager;
+0x000010: const/4 v1, 0
+0x000012: if-eqz v0, +00ah
+0x000016: invoke-virtual v0, Landroid/telephony/TelephonyManager;->isVoiceCapable()Z
+0x00001c: move-result v0
+0x00001e: const/4 v2, 1
+0x000020: if-ne v0, v2, +003h
+0x000024: return v2
+0x000026: return v1
+
+METHOD s()Ljava/util/concurrent/ExecutorService; flags=private static final
+registers=1 inputs=0
+0x000000: new-instance v0, Lko/d;
+0x000004: invoke-direct v0, Lko/d;-><init>()V
+0x00000a: invoke-static v0, Ljava/util/concurrent/Executors;->newSingleThreadExecutor(Ljava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ExecutorService;
+0x000010: move-result-object v0
+0x000012: return-object v0
+
+METHOD t(Ljava/lang/Runnable;)Ljava/lang/Thread; flags=private static final
+registers=3 inputs=1
+0x000000: new-instance v0, Ljava/lang/Thread;
+0x000004: const-string v1, "fraud_detection_executor"
+0x000008: invoke-direct v0, v2, v1, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable; Ljava/lang/String;)V
+0x00000e: const/4 v2, 1
+0x000010: invoke-virtual v0, v2, Ljava/lang/Thread;->setDaemon(Z)V
+0x000016: return-object v0
+
+METHOD u()V flags=private final
+registers=4 inputs=1
+0x000000: new-instance v0, Landroid/content/IntentFilter;
+0x000004: const-string v1, "android.intent.action.AIRPLANE_MODE"
+0x000008: invoke-direct v0, v1, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
+0x00000e: iget-object v1, v3, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->i Landroid/content/BroadcastReceiver;
+0x000012: const/4 v2, 2
+0x000014: invoke-static v3, v1, v0, v2, Lcom/miui/common/utils/d0;->o(Landroid/content/Context; Landroid/content/BroadcastReceiver; Landroid/content/IntentFilter; I)Landroid/content/Intent;
+0x00001a: return-void 
+
+METHOD v()V flags=private final
+registers=4 inputs=1
+0x000000: new-instance v0, Landroid/content/IntentFilter;
+0x000004: const-string v1, "android.intent.action.PHONE_STATE"
+0x000008: invoke-direct v0, v1, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
+0x00000e: iget-object v1, v3, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->j Landroid/content/BroadcastReceiver;
+0x000012: const/4 v2, 2
+0x000014: invoke-static v3, v1, v0, v2, Lcom/miui/common/utils/d0;->o(Landroid/content/Context; Landroid/content/BroadcastReceiver; Landroid/content/IntentFilter; I)Landroid/content/Intent;
+0x00001a: return-void 
+
+METHOD w()V flags=private final
+registers=4 inputs=1
+0x000000: iget-object v0, v3, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->h Landroid/content/BroadcastReceiver;
+0x000004: if-nez v0, +003h
+0x000008: return-void 
+0x00000a: new-instance v0, Landroid/content/IntentFilter;
+0x00000e: invoke-direct v0, Landroid/content/IntentFilter;-><init>()V
+0x000014: const-string v1, "action_update_sc_network_allow"
+0x000018: invoke-virtual v0, v1, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+0x00001e: iget-object v1, v3, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->h Landroid/content/BroadcastReceiver;
+0x000022: const/4 v2, 4
+0x000024: invoke-static v3, v1, v0, v2, Lcom/miui/common/utils/d0;->o(Landroid/content/Context; Landroid/content/BroadcastReceiver; Landroid/content/IntentFilter; I)Landroid/content/Intent;
+0x00002a: return-void 
+
+METHOD x()V flags=private final
+registers=7 inputs=1
+0x000000: iget-object v1, v6, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->f Landroid/content/BroadcastReceiver;
+0x000004: new-instance v2, Landroid/content/IntentFilter;
+0x000008: const-string v0, "miui.intent.TAKE_SCREENSHOT"
+0x00000c: invoke-direct v2, v0, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
+0x000012: iget-object v4, v6, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->a Landroid/os/Handler;
+0x000016: const/4 v5, 2
+0x000018: const-string v3, "miui.permission.USE_INTERNAL_GENERAL_API"
+0x00001c: move-object v0, v6
+0x00001e: invoke-static/range v0 ... v5, Lcom/miui/common/utils/d0;->p(Landroid/content/Context; Landroid/content/BroadcastReceiver; Landroid/content/IntentFilter; Ljava/lang/String; Landroid/os/Handler; I)Landroid/content/Intent;
+0x000024: return-void 
+
+METHOD y()V flags=private final
+registers=4 inputs=1
+0x000000: new-instance v0, Landroid/content/IntentFilter;
+0x000004: const-string v1, "android.intent.action.SIM_STATE_CHANGED"
+0x000008: invoke-direct v0, v1, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
+0x00000e: iget-object v1, v3, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->g Landroid/content/BroadcastReceiver;
+0x000012: const/4 v2, 2
+0x000014: invoke-static v3, v1, v0, v2, Lcom/miui/common/utils/d0;->o(Landroid/content/Context; Landroid/content/BroadcastReceiver; Landroid/content/IntentFilter; I)Landroid/content/Intent;
+0x00001a: return-void 
+
+METHOD z()V flags=private final
+registers=5 inputs=1
+TRY bytes [0x0,0x66) -> [('catchall', 88)]
+0x000000: sget-object v0, Lwo/p;->b Lwo/p$a;
+0x000004: invoke-virtual v4, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+0x00000a: move-result-object v0
+0x00000c: const-string v1, "appops"
+0x000010: invoke-virtual v0, v1, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+0x000016: move-result-object v0
+0x000018: const-string v1, "null cannot be cast to non-null type android.app.AppOpsManager"
+0x00001c: invoke-static v0, v1, Llp/n;->d(Ljava/lang/Object; Ljava/lang/String;)V
+0x000022: check-cast v0, Landroid/app/AppOpsManager;
+0x000026: const-string v1, "MIUI:10042"
+0x00002a: filled-new-array v1, [Ljava/lang/String;
+0x000030: move-result-object v1
+0x000032: sget v2, Landroid/os/Build$VERSION;->SDK_INT I
+0x000036: const/16 v3, 30
+0x00003a: if-lt v2, v3, +011h
+0x00003e: invoke-direct v4, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->l()Ljava/util/concurrent/ExecutorService;
+0x000044: move-result-object v2
+0x000046: new-instance v3, Lko/a;
+0x00004a: invoke-direct v3, v4, Lko/a;-><init>(Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;)V
+0x000050: invoke-static v0, v1, v2, v3, Lsf/m;->a(Landroid/app/AppOpsManager; [Ljava/lang/String; Ljava/util/concurrent/Executor; Landroid/app/AppOpsManager$OnOpActiveChangedListener;)V
+0x000056: goto +3h
+0x000058: move-exception v0
+0x00005a: goto +7h
+0x00005c: sget-object v0, Lwo/w;->a Lwo/w;
+0x000060: invoke-static v0, Lwo/p;->b(Ljava/lang/Object;)Ljava/lang/Object;
+0x000066: return-void 
+0x000068: sget-object v1, Lwo/p;->b Lwo/p$a;
+0x00006c: invoke-static v0, Lwo/q;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
+0x000072: move-result-object v0
+0x000074: invoke-static v0, Lwo/p;->b(Ljava/lang/Object;)Ljava/lang/Object;
+0x00007a: return-void 
+
+METHOD i(Landroid/content/Context;)V flags=public final
+registers=8 inputs=2
+TRY bytes [0xa0,0x112) -> [('Ljava/lang/Exception;', 276)]
+0x000000: const-class v0, Landroid/telephony/TelephonyManager;
+0x000004: invoke-static Lcom/miui/common/utils/v1;->b()Z
+0x00000a: move-result v1
+0x00000c: const-string v2, "MiFraudDetectionService"
+0x000010: if-nez v1, +008h
+0x000014: const-string v7, "checkCallForwarding return, case cta is fail"
+0x000018: invoke-static v2, v7, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x00001e: return-void 
+0x000020: const-class v1, Landroid/telephony/SubscriptionManager;
+0x000024: invoke-virtual v6, v1, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+0x00002a: move-result-object v1
+0x00002c: check-cast v1, Landroid/telephony/SubscriptionManager;
+0x000030: if-eqz v1, +089h
+0x000034: invoke-virtual v1, Landroid/telephony/SubscriptionManager;->getActiveSubscriptionInfoList()Ljava/util/List;
+0x00003a: move-result-object v3
+0x00003c: if-eqz v3, +00bh
+0x000040: invoke-interface v3, Ljava/util/List;->size()I
+0x000046: move-result v3
+0x000048: invoke-static v3, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x00004e: move-result-object v3
+0x000050: goto +2h
+0x000052: const/4 v3, 0
+0x000054: new-instance v4, Ljava/lang/StringBuilder;
+0x000058: invoke-direct v4, Ljava/lang/StringBuilder;-><init>()V
+0x00005e: const-string v5, "checkCallForwarding: subscriptionManager.activeSubscriptionInfoList "
+0x000062: invoke-virtual v4, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000068: invoke-virtual v4, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x00006e: invoke-virtual v4, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000074: move-result-object v3
+0x000076: invoke-static v2, v3, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x00007c: invoke-virtual v1, Landroid/telephony/SubscriptionManager;->getActiveSubscriptionInfoList()Ljava/util/List;
+0x000082: move-result-object v1
+0x000084: if-eqz v1, +05fh
+0x000088: check-cast v1, Ljava/util/Collection;
+0x00008c: invoke-interface v1, Ljava/util/Collection;->isEmpty()Z
+0x000092: move-result v1
+0x000094: const/4 v3, 1
+0x000096: xor-int/2addr v1, v3
+0x000098: if-ne v1, v3, +055h
+0x00009c: if-eqz v7, +053h
+0x0000a0: const-string v1, "android.telephony.TelephonyManager$CallForwardingInfoCallback"
+0x0000a4: invoke-static v1, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+0x0000aa: move-result-object v1
+0x0000ac: const-string v3, "getCallForwarding"
+0x0000b0: sget-object v4, Ljava/lang/Integer;->TYPE Ljava/lang/Class;
+0x0000b4: const-class v5, Ljava/util/concurrent/Executor;
+0x0000b8: filled-new-array v4, v5, v1, [Ljava/lang/Class;
+0x0000be: move-result-object v4
+0x0000c0: invoke-virtual v0, v3, v4, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+0x0000c6: move-result-object v3
+0x0000c8: invoke-virtual v6, Landroid/content/Context;->getClassLoader()Ljava/lang/ClassLoader;
+0x0000ce: move-result-object v4
+0x0000d0: filled-new-array v1, [Ljava/lang/Class;
+0x0000d6: move-result-object v1
+0x0000d8: new-instance v5, Lko/b;
+0x0000dc: invoke-direct v5, v7, Lko/b;-><init>(Landroid/content/Context;)V
+0x0000e2: invoke-static v4, v1, v5, Ljava/lang/reflect/Proxy;->newProxyInstance(Ljava/lang/ClassLoader; [Ljava/lang/Class; Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;
+0x0000e8: move-result-object v1
+0x0000ea: invoke-virtual v7, v0, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+0x0000f0: move-result-object v7
+0x0000f2: const/4 v0, 0
+0x0000f4: invoke-static v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x0000fa: move-result-object v0
+0x0000fc: invoke-direct v6, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->l()Ljava/util/concurrent/ExecutorService;
+0x000102: move-result-object v4
+0x000104: filled-new-array v0, v4, v1, [Ljava/lang/Object;
+0x00010a: move-result-object v0
+0x00010c: invoke-virtual v3, v7, v0, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+0x000112: goto +18h
+0x000114: move-exception v7
+0x000116: new-instance v0, Ljava/lang/StringBuilder;
+0x00011a: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x000120: const-string v1, "getCallForwarding error: "
+0x000124: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00012a: invoke-virtual v0, v7, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x000130: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000136: move-result-object v7
+0x000138: invoke-static v2, v7, Loo/b;->b(Ljava/lang/String; Ljava/lang/String;)V
+0x00013e: sget-object v7, Lwo/w;->a Lwo/w;
+0x000142: return-void 
+
+METHOD onBind(Landroid/content/Intent;)Landroid/os/IBinder; flags=public
+registers=2 inputs=2
+0x000000: const/4 v1, 0
+0x000002: return-object v1
+
+METHOD onCreate()V flags=public
+registers=2 inputs=1
+0x000000: invoke-super v1, Landroid/app/Service;->onCreate()V
+0x000006: invoke-direct v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->p()V
+0x00000c: invoke-direct v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->x()V
+0x000012: invoke-direct v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->y()V
+0x000018: invoke-direct v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->u()V
+0x00001e: sget-object v0, Llo/e;->a Llo/e;
+0x000022: invoke-virtual v0, v1, Llo/e;->c(Landroid/content/Context;)V
+0x000028: invoke-direct v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->w()V
+0x00002e: invoke-static Lcom/miui/common/e;->c()Landroid/content/Context;
+0x000034: move-result-object v0
+0x000036: invoke-virtual v1, v0, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->i(Landroid/content/Context;)V
+0x00003c: sget-boolean v0, Lmiui/os/Build;->IS_INTERNATIONAL_BUILD Z
+0x000040: if-nez v0, +00eh
+0x000044: invoke-direct v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->r()Z
+0x00004a: move-result v0
+0x00004c: if-eqz v0, +008h
+0x000050: invoke-direct v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->v()V
+0x000056: const/4 v0, 1
+0x000058: iput-boolean v0, v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->c Z
+0x00005c: invoke-static Lcom/miui/common/utils/h0;->k()Z
+0x000062: move-result v0
+0x000064: if-eqz v0, +005h
+0x000068: invoke-direct v1, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->z()V
+0x00006e: return-void 
+
+METHOD onDestroy()V flags=public
+registers=3 inputs=1
+0x000000: invoke-super v2, Landroid/app/Service;->onDestroy()V
+0x000006: invoke-direct v2, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->D()V
+0x00000c: iget-object v0, v2, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->b Landroid/os/HandlerThread;
+0x000010: if-eqz v0, +010h
+0x000014: invoke-virtual v0, Ljava/lang/Thread;->isAlive()Z
+0x00001a: move-result v0
+0x00001c: const/4 v1, 1
+0x00001e: if-ne v0, v1, +009h
+0x000022: iget-object v0, v2, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->b Landroid/os/HandlerThread;
+0x000026: if-eqz v0, +005h
+0x00002a: invoke-virtual v0, Landroid/os/HandlerThread;->quitSafely()Z
+0x000030: iget-object v0, v2, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->d Lwo/h;
+0x000034: invoke-interface v0, Lwo/h;->isInitialized()Z
+0x00003a: move-result v0
+0x00003c: if-eqz v0, +009h
+0x000040: invoke-direct v2, Lcom/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService;->l()Ljava/util/concurrent/ExecutorService;
+0x000046: move-result-object v0
+0x000048: invoke-interface v0, Ljava/util/concurrent/ExecutorService;->shutdownNow()Ljava/util/List;
+0x00004e: const-string v0, "MiFraudDetectionService"
+0x000052: const-string v1, "onDestroy: ..."
+0x000056: invoke-static v0, v1, Loo/b;->c(Ljava/lang/String; Ljava/lang/String;)V
+0x00005c: return-void 
+
+CLASS classes4.dex Lfo/a;
+FIELD a Ljava/util/Map; = None
+
+METHOD <clinit>()V flags=static constructor
+registers=1 inputs=0
+0x000000: new-instance v0, Ljava/util/HashMap;
+0x000004: invoke-direct v0, Ljava/util/HashMap;-><init>()V
+0x00000a: sput-object v0, Lfo/a;->a Ljava/util/Map;
+0x00000e: return-void 
+
+METHOD a(Landroid/content/Context; Ljava/lang/String;)Z flags=private static
+registers=6 inputs=2
+0x000000: const-string v0, "xsof_authority_preferences"
+0x000004: const/4 v1, 0
+0x000006: invoke-virtual v4, v0, v1, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;
+0x00000c: move-result-object v4
+0x00000e: const-wide/16 v2, -1
+0x000012: invoke-interface v4, v5, v2, v3, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String; J)J
+0x000018: move-result-wide v4
+0x00001a: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000020: move-result-wide v2
+0x000022: cmp-long v4, v2, v4
+0x000026: if-gtz v4, +004h
+0x00002a: const/4 v4, 1
+0x00002c: return v4
+0x00002e: return v1
+
+METHOD b(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)I flags=public static
+registers=7 inputs=4
+0x000000: invoke-static v4, Lfo/a;->f(Ljava/lang/String;)Z
+0x000006: move-result v0
+0x000008: if-eqz v0, +005h
+0x00000c: const/16 v3, 1012
+0x000010: return v3
+0x000012: invoke-static v3, v4, Lfo/a;->a(Landroid/content/Context; Ljava/lang/String;)Z
+0x000018: move-result v0
+0x00001a: const/16 v1, 1010
+0x00001e: if-nez v0, +01eh
+0x000022: sget-object v0, Lfo/a;->a Ljava/util/Map;
+0x000026: sget-object v2, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
+0x00002a: invoke-interface v0, v4, v2, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x000030: invoke-static Lcom/miui/common/utils/v1;->b()Z
+0x000036: move-result v2
+0x000038: if-nez v2, +007h
+0x00003c: const-string v3, "无网络"
+0x000040: const/16 v5, 1021
+0x000044: goto +7h
+0x000046: invoke-static v3, v4, v5, v6, Lfo/a;->c(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)I
+0x00004c: move-result v5
+0x00004e: const-string v3, "联网"
+0x000052: invoke-interface v0, v4, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+0x000058: goto +4h
+0x00005a: const-string v3, "本地"
+0x00005e: move v5, v1
+0x000060: if-ne v5, v1, +005h
+0x000064: const-string v6, "成功"
+0x000068: goto +3h
+0x00006a: const-string v6, "失败"
+0x00006e: const-string v0, "xsof_app_auth"
+0x000072: invoke-static v0, v4, v3, v6, v5, Loo/d;->e(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; I)V
+0x000078: return v5
+
+METHOD c(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)I flags=private static
+registers=10 inputs=4
+0x000000: new-instance v0, Ljava/util/HashMap;
+0x000004: const/4 v1, 6
+0x000006: invoke-direct v0, v1, Ljava/util/HashMap;-><init>(I)V
+0x00000c: const-string v1, "appId"
+0x000010: invoke-interface v0, v1, v9, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x000016: const-string v9, "appKey"
+0x00001a: invoke-interface v0, v9, v8, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x000020: const-string v8, "pkgName"
+0x000024: invoke-interface v0, v8, v7, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x00002a: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000030: move-result-wide v8
+0x000032: invoke-static v8, v9, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
+0x000038: move-result-object v8
+0x00003a: const-string v9, "timestamp"
+0x00003e: invoke-interface v0, v9, v8, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x000044: const-string v8, "appSignature"
+0x000048: invoke-static v6, v7, Loo/c;->a(Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String;
+0x00004e: move-result-object v9
+0x000050: invoke-interface v0, v8, v9, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x000056: invoke-static Lfo/b;->a()Ljava/lang/String;
+0x00005c: move-result-object v1
+0x00005e: new-instance v5, Lj7/i;
+0x000062: const-string v8, "XSOF"
+0x000066: invoke-direct v5, v8, Lj7/i;-><init>(Ljava/lang/String;)V
+0x00006c: const-string v2, "13zt5239-a34f-3ty9-eb73-75456785ns5c"
+0x000070: const/4 v3, 0
+0x000072: const/4 v4, 0
+0x000074: invoke-static/range v0 ... v5, Lgk/l;->D(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String; Z Z Lj7/i;)Ljava/lang/String;
+0x00007a: move-result-object v8
+0x00007c: invoke-static v6, v7, v8, Lfo/a;->e(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;)I
+0x000082: move-result v6
+0x000084: return v6
+
+METHOD d(J)J flags=private static
+registers=7 inputs=2
+0x000000: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000006: move-result-wide v0
+0x000008: const-wide/32 v2, 86400000
+0x00000e: add-long/2addr v2, v0
+0x000010: cmp-long v4, v5, v2
+0x000014: if-gez v4, +003h
+0x000018: return-wide v2
+0x00001a: const-wide/32 v2, 604800000
+0x000020: add-long/2addr v0, v2
+0x000022: cmp-long v2, v5, v0
+0x000026: if-lez v2, +003h
+0x00002a: return-wide v0
+0x00002c: return-wide v5
+
+METHOD e(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;)I flags=private static
+registers=7 inputs=3
+TRY bytes [0x16,0x124) -> [('Ljava/lang/Exception;', 308)]
+0x000000: const-string v0, "AppAuthManager"
+0x000004: invoke-static v6, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+0x00000a: move-result v1
+0x00000c: if-eqz v1, +005h
+0x000010: const/16 v4, 1005
+0x000014: return v4
+0x000016: new-instance v1, Lorg/json/JSONObject;
+0x00001a: invoke-direct v1, v6, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+0x000020: new-instance v2, Ljava/lang/StringBuilder;
+0x000024: invoke-direct v2, Ljava/lang/StringBuilder;-><init>()V
+0x00002a: const-string v3, "Request authority response: "
+0x00002e: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000034: invoke-virtual v2, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00003a: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000040: move-result-object v6
+0x000042: invoke-static v0, v6, Loo/b;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x000048: const-string v6, "code"
+0x00004c: invoke-virtual v1, v6, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
+0x000052: move-result v6
+0x000054: const-string v2, "data"
+0x000058: invoke-virtual v1, v2, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;)Z
+0x00005e: move-result v2
+0x000060: const/16 v3, 200
+0x000064: if-ne v6, v3, +023h
+0x000068: if-eqz v2, +021h
+0x00006c: const-string v6, "timestamp"
+0x000070: invoke-virtual v1, v6, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
+0x000076: move-result-wide v1
+0x000078: invoke-static v1, v2, Lfo/a;->d(J)J
+0x00007e: move-result-wide v1
+0x000080: const-string v6, "xsof_authority_preferences"
+0x000084: const/4 v3, 0
+0x000086: invoke-virtual v4, v6, v3, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;
+0x00008c: move-result-object v4
+0x00008e: invoke-interface v4, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+0x000094: move-result-object v4
+0x000096: invoke-interface v4, v5, v1, v2, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String; J)Landroid/content/SharedPreferences$Editor;
+0x00009c: move-result-object v4
+0x00009e: invoke-interface v4, Landroid/content/SharedPreferences$Editor;->apply()V
+0x0000a4: const/16 v4, 1010
+0x0000a8: return v4
+0x0000aa: sget-object v4, Lfo/c;->b Lfo/c;
+0x0000ae: invoke-virtual v4, Lfo/c;->b()I
+0x0000b4: move-result v4
+0x0000b6: if-ne v6, v4, +005h
+0x0000ba: const/16 v4, 1027
+0x0000be: return v4
+0x0000c0: sget-object v4, Lfo/c;->c Lfo/c;
+0x0000c4: invoke-virtual v4, Lfo/c;->b()I
+0x0000ca: move-result v4
+0x0000cc: if-ne v6, v4, +005h
+0x0000d0: const/16 v4, 1022
+0x0000d4: return v4
+0x0000d6: sget-object v4, Lfo/c;->d Lfo/c;
+0x0000da: invoke-virtual v4, Lfo/c;->b()I
+0x0000e0: move-result v4
+0x0000e2: if-ne v6, v4, +005h
+0x0000e6: const/16 v4, 1023
+0x0000ea: return v4
+0x0000ec: sget-object v4, Lfo/c;->e Lfo/c;
+0x0000f0: invoke-virtual v4, Lfo/c;->b()I
+0x0000f6: move-result v4
+0x0000f8: if-ne v6, v4, +005h
+0x0000fc: const/16 v4, 1024
+0x000100: return v4
+0x000102: sget-object v4, Lfo/c;->f Lfo/c;
+0x000106: invoke-virtual v4, Lfo/c;->b()I
+0x00010c: move-result v4
+0x00010e: if-ne v6, v4, +005h
+0x000112: const/16 v4, 1025
+0x000116: return v4
+0x000118: sget-object v4, Lfo/c;->g Lfo/c;
+0x00011c: invoke-virtual v4, Lfo/c;->b()I
+0x000122: move-result v4
+0x000124: if-ne v6, v4, +005h
+0x000128: const/16 v4, 1026
+0x00012c: return v4
+0x00012e: const/16 v4, 1028
+0x000132: return v4
+0x000134: const-string v4, "Request authority data format error!"
+0x000138: invoke-static v0, v4, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+0x00013e: const/16 v4, 1011
+0x000142: return v4
+
+METHOD f(Ljava/lang/String;)Z flags=private static
+registers=3 inputs=1
+0x000000: sget-object v0, Lfo/a;->a Ljava/util/Map;
+0x000004: invoke-interface v0, v2, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+0x00000a: move-result v1
+0x00000c: if-eqz v1, +00dh
+0x000010: sget-object v1, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
+0x000014: invoke-interface v0, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+0x00001a: move-result-object v2
+0x00001c: invoke-virtual v1, v2, Ljava/lang/Boolean;->equals(Ljava/lang/Object;)Z
+0x000022: move-result v2
+0x000024: return v2
+0x000026: const/4 v2, 0
+0x000028: return v2
+
+CLASS classes4.dex Lfo/d;
+
+METHOD a(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;)Z flags=public static
+registers=5 inputs=3
+TRY bytes [0x2,0x44) -> [('Ljava/lang/Exception;', 70)]
+0x000000: const/4 v0, 0
+0x000002: invoke-static v4, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+0x000008: move-result v1
+0x00000a: if-eqz v1, +003h
+0x00000e: return v0
+0x000010: invoke-virtual v2, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+0x000016: move-result-object v2
+0x000018: const/16 v1, 4096
+0x00001c: invoke-virtual v2, v3, v1, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+0x000022: move-result-object v2
+0x000024: if-nez v2, +003h
+0x000028: return v0
+0x00002a: iget-object v2, v2, Landroid/content/pm/PackageInfo;->requestedPermissions [Ljava/lang/String;
+0x00002e: if-nez v2, +003h
+0x000032: return v0
+0x000034: invoke-static v2, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+0x00003a: move-result-object v2
+0x00003c: invoke-interface v2, v4, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+0x000042: move-result v2
+0x000044: return v2
+0x000046: return v0
+
+CLASS classes4.dex Ljo/a$a;
+FIELD a Ljo/a$a; = None
+
+METHOD <clinit>()V flags=static constructor
+registers=1 inputs=0
+0x000000: new-instance v0, Ljo/a$a;
+0x000004: invoke-direct v0, Ljo/a$a;-><init>()V
+0x00000a: sput-object v0, Ljo/a$a;->a Ljo/a$a;
+0x00000e: return-void 
+
+METHOD <init>()V flags=private constructor
+registers=1 inputs=1
+0x000000: invoke-direct v0, Ljava/lang/Object;-><init>()V
+0x000006: return-void 
+
+METHOD a()Ljava/lang/String; flags=public final
+registers=5 inputs=1
+0x000000: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000006: move-result-wide v0
+0x000008: const-wide/32 v2, 259200000
+0x00000e: sub-long/2addr v0, v2
+0x000010: new-instance v2, Ljava/lang/StringBuilder;
+0x000014: invoke-direct v2, Ljava/lang/StringBuilder;-><init>()V
+0x00001a: const-string v3, "SELECT * FROM fraud_phone WHERE call_start_time > "
+0x00001e: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000024: invoke-virtual v2, v0, v1, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+0x00002a: const-string v0, " ORDER BY call_start_time DESC"
+0x00002e: invoke-virtual v2, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000034: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00003a: move-result-object v0
+0x00003c: return-object v0
+
+METHOD b()Ljava/lang/String; flags=public final
+registers=5 inputs=1
+0x000000: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000006: move-result-wide v0
+0x000008: const-wide/32 v2, 259200000
+0x00000e: sub-long/2addr v0, v2
+0x000010: new-instance v2, Ljava/lang/StringBuilder;
+0x000014: invoke-direct v2, Ljava/lang/StringBuilder;-><init>()V
+0x00001a: const-string v3, "SELECT * FROM fraud_phone WHERE call_start_time > "
+0x00001e: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000024: invoke-virtual v2, v0, v1, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+0x00002a: const-string v0, " AND is_fraud_call = 1 ORDER BY call_start_time DESC"
+0x00002e: invoke-virtual v2, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000034: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00003a: move-result-object v0
+0x00003c: return-object v0
+
+METHOD c()Ljava/lang/String; flags=public final
+registers=5 inputs=1
+0x000000: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000006: move-result-wide v0
+0x000008: const-wide/32 v2, 259200000
+0x00000e: sub-long/2addr v0, v2
+0x000010: new-instance v2, Ljava/lang/StringBuilder;
+0x000014: invoke-direct v2, Ljava/lang/StringBuilder;-><init>()V
+0x00001a: const-string v3, "SELECT * FROM fraud_phone WHERE call_start_time > "
+0x00001e: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000024: invoke-virtual v2, v0, v1, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+0x00002a: const-string v0, " AND is_chinese_number = 0 ORDER BY call_start_time DESC"
+0x00002e: invoke-virtual v2, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000034: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00003a: move-result-object v0
+0x00003c: return-object v0
+
+METHOD d()Ljava/lang/String; flags=public final
+registers=5 inputs=1
+0x000000: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000006: move-result-wide v0
+0x000008: const-wide/32 v2, 259200000
+0x00000e: sub-long/2addr v0, v2
+0x000010: new-instance v2, Ljava/lang/StringBuilder;
+0x000014: invoke-direct v2, Ljava/lang/StringBuilder;-><init>()V
+0x00001a: const-string v3, "SELECT * FROM fraud_phone WHERE call_start_time > "
+0x00001e: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000024: invoke-virtual v2, v0, v1, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+0x00002a: const-string v0, " AND is_virtual_operator = 1 ORDER BY call_start_time DESC"
+0x00002e: invoke-virtual v2, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000034: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00003a: move-result-object v0
+0x00003c: return-object v0
+
+METHOD e()Ljava/lang/String; flags=public final
+registers=5 inputs=1
+0x000000: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000006: move-result-wide v0
+0x000008: const-wide/32 v2, 259200000
+0x00000e: sub-long/2addr v0, v2
+0x000010: new-instance v2, Ljava/lang/StringBuilder;
+0x000014: invoke-direct v2, Ljava/lang/StringBuilder;-><init>()V
+0x00001a: const-string v3, "SELECT * FROM voip_record WHERE voip_record_start_time > "
+0x00001e: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000024: invoke-virtual v2, v0, v1, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+0x00002a: const-string v0, " ORDER BY voip_record_start_time DESC"
+0x00002e: invoke-virtual v2, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000034: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00003a: move-result-object v0
+0x00003c: return-object v0
+
+METHOD f()Ljava/lang/String; flags=public final
+registers=5 inputs=1
+0x000000: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000006: move-result-wide v0
+0x000008: const-wide/32 v2, 259200000
+0x00000e: sub-long/2addr v0, v2
+0x000010: new-instance v2, Ljava/lang/StringBuilder;
+0x000014: invoke-direct v2, Ljava/lang/StringBuilder;-><init>()V
+0x00001a: const-string v3, "SELECT * FROM call_forwarding WHERE timestamp > "
+0x00001e: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000024: invoke-virtual v2, v0, v1, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+0x00002a: const-string v0, " AND reason = 0 AND enabled = 1 ORDER BY timestamp DESC"
+0x00002e: invoke-virtual v2, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000034: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00003a: move-result-object v0
+0x00003c: return-object v0
+
+METHOD g()Ljava/lang/String; flags=public final
+registers=5 inputs=1
+0x000000: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000006: move-result-wide v0
+0x000008: const-wide/32 v2, 259200000
+0x00000e: sub-long/2addr v0, v2
+0x000010: new-instance v2, Ljava/lang/StringBuilder;
+0x000014: invoke-direct v2, Ljava/lang/StringBuilder;-><init>()V
+0x00001a: const-string v3, "SELECT * FROM voip_record WHERE voip_record_start_time > "
+0x00001e: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000024: invoke-virtual v2, v0, v1, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+0x00002a: const-string v0, " AND is_fraud_call = 1 ORDER BY voip_record_start_time DESC"
+0x00002e: invoke-virtual v2, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000034: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00003a: move-result-object v0
+0x00003c: return-object v0
+
+METHOD h(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; flags=public final
+registers=7 inputs=3
+0x000000: const-string v0, "tableName"
+0x000004: invoke-static v5, v0, Llp/n;->f(Ljava/lang/Object; Ljava/lang/String;)V
+0x00000a: const-string v0, "columnName"
+0x00000e: invoke-static v6, v0, Llp/n;->f(Ljava/lang/Object; Ljava/lang/String;)V
+0x000014: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x00001a: move-result-wide v0
+0x00001c: const-wide/32 v2, 259200000
+0x000022: sub-long/2addr v0, v2
+0x000024: new-instance v2, Ljava/lang/StringBuilder;
+0x000028: invoke-direct v2, Ljava/lang/StringBuilder;-><init>()V
+0x00002e: const-string v3, "SELECT * FROM "
+0x000032: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000038: invoke-virtual v2, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00003e: const-string v5, " WHERE "
+0x000042: invoke-virtual v2, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000048: invoke-virtual v2, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00004e: const-string v5, " > "
+0x000052: invoke-virtual v2, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000058: invoke-virtual v2, v0, v1, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+0x00005e: const-string v5, " ORDER BY "
+0x000062: invoke-virtual v2, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000068: invoke-virtual v2, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00006e: const-string v5, " DESC"
+0x000072: invoke-virtual v2, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000078: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00007e: move-result-object v5
+0x000080: return-object v5

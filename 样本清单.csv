@@ -1,0 +1,8 @@
+﻿文件,包名,显示版本,版本码,Manifest共享UID声明,targetSdk,SHA256,字节数
+Analytics_6.33.0.apk,com.miui.analytics,6.33.0,2026091500,,36,a3656199f013e2f68bc20022f941122a13ce99e33c5df1cef054c9267189d73f,525597
+MiTrustService_1.2.260901.apk,com.xiaomi.trustservice,1.2.260901,12260901,android.uid.system,36,2344a2e8be65fffd3a0f2140527a075e40e865d55e5b615d2407af307305d37f,6619293
+SystemHelper_4.0.0-20260910.apk,com.mobiletools.systemhelper,4.0.0-20260910,34,com.mobiletools.systemhelper.uid,34,42fbfebedd8711b2ca22d3d969324f7ed7c757d838e143bf6cf4d2e8e1ed8556,3884625
+安全服务_13.6.5-261003.0.1.apk,com.miui.securitycenter,13.6.5-261003.0.1,40001365,android.uid.system,36,ae9896193a2159cfce0ce1076ac41d370d0c4ed573c6ca002aaa50bfeda6b9b5,66940524
+手机管家_21.0.apk,com.miui.securitymanager,21.0,21,,36,a8a84fe0cb2e6d733120a972f1a9d073798fbb70746b3824fafe47ec50253019,4993615
+系统安全组件_3.1.4-20260902.0.apk,com.miui.guardprovider,3.1.4-20260902.0,330,,37,6cdb14123ca32f36883e74d968f390e30d1c64589f500fd48f9f9b9757253928,14475074
+运营商服务_16.0.5.apk,com.xiaomi.registration,16.0.5,69,android.uid.phone,34,3dac308f0088d3bbfb342a5b9e9096fab0ddf56f737603df282fcf0b698708dd,2278524

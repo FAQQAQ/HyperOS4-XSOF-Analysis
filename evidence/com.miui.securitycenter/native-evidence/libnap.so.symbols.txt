@@ -1,0 +1,13 @@
+
+raw/lib/arm64-v8a/libnap.so:	file format elf64-littleaarch64
+
+DYNAMIC SYMBOL TABLE:
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __cxa_finalize
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __cxa_atexit
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       fopen
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       fgets
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       sscanf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       strcmp
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       fclose
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __stack_chk_fail
+00000000000007d8 g    DF .text	0000000000000240              Java_com_miui_networkassistant_traffic_statistic_NaTrafficStats_nativeGetUidIfaceStat

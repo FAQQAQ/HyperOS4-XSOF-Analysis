@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2026091500" android:versionName="@7F010000" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.miui.analytics" platformBuildVersionCode="29" platformBuildVersionName="10">
+  <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="36"/>
+  <permission android:name="com.miui.analytics.permission.REPORT_HYBRID_STATE" android:protectionLevel="0x00000002"/>
+  <permission android:name="com.miui.analytics.onetrack.TRACK_EVENT" android:protectionLevel="0x00000003"/>
+  <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+  <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+  <uses-permission android:name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.GET_TASKS"/>
+  <uses-permission android:name="android.permission.INSTALL_SELF_UPDATES"/>
+  <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+  <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+  <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+  <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+  <uses-permission android:name="com.xiaomi.permission.MICLOUD"/>
+  <uses-permission android:name="com.xiaomi.permission.CLOUD_MANAGER"/>
+  <uses-permission android:name="com.xiaomi.permission.ACCESS_SECURITY_DEVICE_CREDENTIAL"/>
+  <uses-permission android:name="com.xiaomi.xmsf.permission.USE_XMSF_UPLOAD"/>
+  <uses-permission android:name="miui.permission.USE_INTERNAL_GENERAL_API"/>
+  <uses-permission android:name="miui.cloud.finddevice.AccessFindDevice"/>
+  <uses-permission android:name="android.permission.BLUETOOTH"/>
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+  <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+  <uses-permission android:name="android.permission.READ_SETTINGS"/>
+  <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS"/>
+  <uses-permission android:name="android.permission.MODIFY_NETWORK_ACCOUNTING"/>
+  <uses-permission android:name="miui.securitycenter.permission.ANALYTICS"/>
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+  <uses-permission android:name="miui.packageinstaller.permission.ACTION_INFO"/>
+  <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+  <queries>
+    <intent>
+      <action android:name="android.intent.action.PACKAGE_ADDED"/>
+      <data android:scheme="package"/>
+    </intent>
+  </queries>
+  <uses-permission android:name="com.miui.huanji.receivebroadcast"/>
+  <uses-permission android:name="com.miui.cloudbackup.permission.RESTORE_SESSION_RECEIVER"/>
+  <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+  <uses-permission android:name="com.miui.bugreport.permission.DUMP_CACHED_LOG"/>
+  <application android:label="@7F010001" android:name="com.miui.analytics.AnalyticsApp" android:allowClearUserData="false" android:allowBackup="false" android:fullBackupContent="false" android:networkSecurityConfig="@7F020002">
+    <meta-data android:name="com.miui.bugreport.LOG_DIR" android:resource="@7F020001"/>
+    <provider android:name="com.miui.analytics.AnalyticsProvider" android:exported="true" android:authorities="com.miui.analytics.server.AnalyticsProvider"/>
+    <provider android:name="com.miui.analytics.onetrack.db.OneTrackProvider" android:exported="true" android:authorities="com.miui.analytics.OneTrackProvider"/>
+    <receiver android:name="com.miui.analytics.AnalyticsReceiver" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.provision.action.PROVISION_COMPLETE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.SIM_STATE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name="com.miui.analytics.internal.ApkReceiver" android:exported="true">
+      <intent-filter>
+        <action android:name="miui.intent.action.PACKAGE_FIRST_LAUNCH"/>
+      </intent-filter>
+    </receiver>
+    <service android:name="com.miui.analytics.AnalyticsService" android:exported="true">
+      <intent-filter>
+        <action android:name="com.miui.action.ANALYTICS_SERVICE"/>
+      </intent-filter>
+    </service>
+    <service android:name="com.miui.analytics.onetrack.OneTrackService" android:exported="true">
+      <intent-filter>
+        <action android:name="com.miui.action.ONETRACK_SERVICE"/>
+      </intent-filter>
+    </service>
+    <service android:name="com.miui.analytics.onetrack.TrackService" android:permission="com.miui.analytics.onetrack.TRACK_EVENT" android:exported="true">
+      <intent-filter>
+        <action android:name="onetrack.action.TRACK_EVENT"/>
+      </intent-filter>
+    </service>
+    <service android:name="com.miui.analytics.EventService" android:exported="true"/>
+    <service android:name="com.miui.analytics.internal.WakeupService"/>
+    <service android:name="com.miui.analytics.AppenderService" android:exported="true">
+      <intent-filter>
+        <action android:name="miui.intent.action.analytics.ANALYTICS_DOWNLOAD"/>
+        <action android:name="android.intent.action.PACKAGE_FIRST_LAUNCH"/>
+        <action android:name="miui.intent.action.analytics.APPEND_USAGE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="miui.intent.action.analytics.REPORT_HYBRID_STATE"/>
+      </intent-filter>
+    </service>
+    <service android:name="com.miui.analytics.internal.JobSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+    <meta-data android:name="com.miui.bugreport.DEFAULT_LOG_DIR" android:resource="@7F020000"/>
+    <provider android:name="com.miui.bugreport.logprovider.DumpLogProvider" android:permission="com.miui.bugreport.permission.DUMP_CACHED_LOG" android:exported="true" android:authorities="com.miui.analytics.provider.bugreport">
+      <intent-filter>
+        <action android:name="com.miui.bugreport.intent.ACTION_DUMP_CACHED_LOG"/>
+      </intent-filter>
+    </provider>
+  </application>
+</manifest>

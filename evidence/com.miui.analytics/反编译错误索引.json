@@ -1,0 +1,47 @@
+[
+  {
+    "file": "jadx/sources/b/u.java",
+    "line": 102,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/b/u.java",
+    "line": 674,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: b.u.a.c(b.u, java.lang.String):b.u$a\");"
+  },
+  {
+    "file": "jadx/sources/a/b/a/g/c/h.java",
+    "line": 927,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: SSATransform"
+  },
+  {
+    "file": "jadx/sources/a/b/a/g/c/h.java",
+    "line": 935,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: SSATransform"
+  },
+  {
+    "file": "jadx/sources/a/b/a/g/c/h.java",
+    "line": 941,
+    "message": "/*  JADX ERROR: Method generation error"
+  },
+  {
+    "file": "jadx/sources/a/b/a/g/c/h.java",
+    "line": 1394,
+    "message": "/*  JADX ERROR: Type inference failed"
+  },
+  {
+    "file": "jadx/sources/a/b/a/g/c/h.java",
+    "line": 2104,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: a.b.a.g.c.h.n(a.b.a.e.i0.j.c, a.b.a.e.i0.j.e.a$c):void\");"
+  },
+  {
+    "file": "jadx/sources/a/b/a/g/c/h.java",
+    "line": 3053,
+    "message": "/*  JADX ERROR: Method code generation error"
+  },
+  {
+    "file": "jadx/sources/a/b/a/g/c/h.java",
+    "line": 3929,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: a.b.a.g.c.h.v(a.b.a.e.i0.j.c, a.b.a.e.i0.j.e.a$c):void\");"
+  }
+]

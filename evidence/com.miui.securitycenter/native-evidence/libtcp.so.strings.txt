@@ -1,0 +1,262 @@
+0x244	Android
+0x290	12077973
+0x99d	__cxa_finalize
+0x9ac	__cxa_atexit
+0x9b9	__register_atfork
+0x9cb	__android_log_print
+0x9df	JNI_OnLoad
+0x9ea	__stack_chk_fail
+0x9fb	JNI_OnUnload
+0xa08	java_tc_plugin_getprovincesmap
+0xa27	java_tc_plugin_getcitiesmap
+0xa43	java_tc_plugin_getcarriesmap
+0xa60	java_tc_plugin_getbrandsmap
+0xa7c	java_tc_plugin_init
+0xa90	java_tc_plugin_setimsi
+0xaa7	java_tc_plugin_update
+0xabd	java_tc_plugin_update_by_tc_type
+0xade	java_tc_plugin_get_directions
+0xafc	java_tc_plugin_get_result
+0xb16	java_tc_plugin_get_result_by_tc_type
+0xb3b	java_tc_plugin_get_province_code_by_city_code
+0xb69	java_tc_plugin_get_tc_pref_value
+0xb8a	java_tc_plugin_get_aes3
+0xba2	java_tc_plugin_get_aes3_iv_key
+0xbc1	strcmp
+0xbc8	strncpy
+0xbd0	strlen
+0xbd7	strcat
+0xbde	calloc
+0xbea	__strncat_chk
+0xbf8	__vsprintf_chk
+0xc0c	__strcat_chk
+0xc19	strdup
+0xc25	strcasecmp
+0xc30	__vsnprintf_chk
+0xc40	malloc
+0xc47	memset
+0xc4e	memcpy
+0xc55	realloc
+0xc5d	memmove
+0xc65	memcmp
+0xc6c	strchr
+0xc73	__memcpy_chk
+0xc80	vprintf
+0xc8d	sscanf
+0xc94	strncasecmp
+0xca0	vsnprintf
+0xcaa	vasprintf
+0xcb4	__strchr_chk
+0xcc6	fopen
+0xccc	fread
+0xcd2	fclose
+0xcd9	fwrite
+0xce0	printf
+0xce7	mkdir
+0xced	libc.so
+0xcfa	liblog.so
+0xd04	libm.so
+0xd0c	libdl.so
+0xd15	libtcp.so
+0x45e0	TELECOM_MI
+0x4659	false
+0x465f	jni registered
+0x466e	com/miui/sdk/tc/TcDirection
+0x46d0	tpl name:%s, in index:%d
+0x46e9	REMAIN_SMS:%s
+0x46fb	([B)[B
+0x4702	getTcPrefValue
+0x4711	(Ljava/lang/String;I)Ljava/lang/String;
+0x4739	()Ljava/lang/String;
+0x474e	CITYID
+0x47a3	var_name_char=%s,var_value_char=%s
+0x47c6	llegal split char:%s in index:%d
+0x4805	TELECOM
+0x4870	try to find string before key:
+0x488f	TplName
+0x48a3	java/util/LinkedHashMap
+0x48c1	2G/3G
+0x48c7	90000
+0x4949	com/miui/networkassistant/utils/NotificationUtil
+0x497a	(Landroid/content/Context;ILjava/lang/Class;Ljava/lang/CharSequence;Ljava/lang/CharSequence;IZZLcom/miui/networkassistant/utils/NotificationUtil$IExtraBuider;)V
+0x4a1b	Registering %s natives
+0x4a33	com/miui/sdk/tc/TcPlugin
+0x4a4c	0102030405060708
+0x4a5d	TplList
+0x4ab8	jump over NULL var
+0x4ad5	javax/crypto/Cipher
+0x4ae9	([B)V
+0x4aef	setImsi
+0x4b49	(Z)Ljava/util/TreeMap;
+0x4b61	UseCommands
+0x4b6d	ReleaseDate
+0x4b79	java/util/ArrayList
+0x4be9	(Ljava/lang/String;I)I
+0x4c00	java/lang/Integer
+0x4c3a	Sms correction offline, show notification :%d
+0x4c68	MIMOBILE
+0x4cd8	now tpl:
+0x4cf9	(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
+0x4d3c	(Ljava/lang/Object;)Z
+0x4d52	CmdType
+0x4df6	no tpl id in index:%d
+0x4e0c	tpl string:%s in index:%d
+0x4e29	javax/crypto/spec/SecretKeySpec
+0x4e49	(Ljava/lang/String;Z)Ljava/util/LinkedHashMap;
+0x4e78	(Ljava/lang/String;Ljava/lang/String;Ljava/util/HashMap;I)I
+0x4eb4	RequestContent
+0x4ec3	parsed_maps_str
+0x4ee2	UNICOM_MI
+0x4f75	find real value string:
+0x4f8d	full matched: %s in index:%d
+0x4faa	XIAOMI_TC_PLUGIN
+0x4fbb	PhoneNumberPrefix
+0x4fcd	KeyValues
+0x502b	end flag string:
+0x503c	dp=%s
+0x5043	getProvincesMap
+0x5053	/data/data/
+0x50bf	loop start ----------
+0x50d8	TplContent
+0x50e3	\u00%c%c
+0x50ec	AES/CBC/PKCS5Padding
+0x5101	(Ljava/lang/String;Ljava/lang/String;Ljava/util/HashMap;II)I
+0x513e	OHZoOG1zeTJo
+0x51a8	gbyte
+0x51b1	javax/crypto/spec/IvParameterSpec
+0x51d3	(Z)Ljava/util/LinkedHashMap;
+0x51f0	new config:province_char:%s,city_char:%s,carrier_char:%s
+0x5229	PreValueSmsCorrectionOffineChecked
+0x5280	20000
+0x5286	80000
+0x528c	RENWOXING
+0x5307	match json array index:%d
+0x5321	split char:%s in index:%d
+0x5346	doFinal
+0x534e	getInstructions
+0x535e	getAesIVKey
+0x536a	DAILY_CARD
+0x53ed	try to find key:
+0x53fe	no tpl name in index:%d
+0x541c	CommandList
+0x5465	tpl id:%s, in index:%d
+0x547c	TplId
+0x5482	SplitChar
+0x548c	com/miui/networkassistant/R$drawable
+0x54b1	getCarriesMap
+0x54c4	getProvinceCodeByCityCode
+0x5527	invalid value ustr, jump over
+0x5545	no sms string remained, break
+0x5565	notify_icon
+0x5571	ZXc5d3FkeA
+0x557c	10000
+0x5620	 ------------------ parse tpl begin ------------------
+0x5657	meet NULL var jump over it
+0x5672	([BLjava/lang/String;)V
+0x568a	getInstance
+0x5696	com/miui/networkassistant/ui/NetworkAssistantActivity
+0x56cc	update
+0x56d3	getAes3
+0x56db	OPERATOR_FORBIDDEN
+0x574c	kbyte
+0x5752	%s not exists
+0x5763	/files/tc/sim_
+0x5772	virtual carrier not updated
+0x578e	SmsManageNum
+0x579b	30000
+0x57a1	70000
+0x57b0	UNICOM
+0x584e	match value string failed, but still keeps remain string, try again with this TPL-------------
+0x58ad	(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)I
+0x590c	updateByTcType
+0x591b	<init>
+0x5922	carrier or location is changed
+0x599b	TplType
+0x59a3	lh_table_new: calloc failed
+0x59c0	(I)Ljava/util/TreeMap;
+0x59d7	(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)I
+0x5a41	SuccIds
+0x5a49	zdGF0LnNlY3JldA
+0x5a8a	meet SMS end
+0x5a97	JNI_OnLoad
+0x5aa2	getBrandsMap
+0x5ab3	MatchedTplIds
+0x5b30	mbyte
+0x5b38	mathing unit string:
+0x5b4d	showNotification
+0x5b5e	RegisterNatives successed for '%s' of '%s'
+0x5b8a	no method matched for '%s' of '%s'
+0x5bae	getPackageName
+0x5bbd	SmsSendNum
+0x5c26	java/util/TreeMap
+0x5c41	100000
+0x5ca8	(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)I
+0x5ce9	getResultByTcType
+0x5cfb	old config:province_saved:%s,city_saved:%s,carrier_saved:%s
+0x5d37	CHIDAOBAO
+0x5d8f	find value string:
+0x5da2	getResult
+0x5e1f	match success
+0x5e2d	 ------------------ parse tpl end ------------------
+0x5e62	0123456789abcdef
+0x5e76	RegisterNatives failed for '%s' of '%s'
+0x5e9f	(I)Ljava/util/ArrayList;
+0x5eb8	(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+0x5ef1	Carrier
+0x5ef9	PreKeySmsCorrectionOffineChecked
+0x5f5b	var_number_char=%s
+0x5f6e	######################################################
+0x5fa7	(Ljava/lang/String;)Ljavax/crypto/Cipher;
+0x5fd3	class found
+0x5fdf	getCitiesMap
+0x5fec	SmsFilterNum
+0x606c	no tpl type in index:%d
+0x6084	0123456789.+-eE
+0x609a	Native registration unable to find class '%s'
+0x614a	(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+0x6197	matched_tpl_ids_str
+0x8d9f	Rhj x
+0xa7eb	Q"9B:
+0xb211	jk8_5
+0xb519	jk8_5
+0xc641	s@9_u
+0xc6b9	s@9*i(8h
+0xc6d4	_i)8m
+0xc745	s@9*i(8h
+0xc760	_i)8f
+0xcc25	s@9*i(8h
+0xceb5	s@9*i(8h
+0xced0	_i)8`
+0xcfbd	s@9*i(8h
+0xd0dd	(A))}@
+0xd225	C@y*i(xh
+0xd2ef	R*i(8h
+0xd308	_i)8J
+0xdebf	Th&A)`
+0xdf28	?i(8+
+0xdf57	Th&A)
+0x138d8	ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+0x1391a	Android (12027248, based on r522817) clang version 18.0.1 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
+0x139b7	Android (12027248, +pgo, +bolt, +lto, +mlgo, based on r522817) clang version 18.0.1 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
+0x13a6e	Linker: LLD 18.0.1
+0x13a82	.fini_array
+0x13a8e	.text
+0x13a99	.comment
+0x13aa2	.note.android.ident
+0x13ab6	.got.plt
+0x13abf	.rela.plt
+0x13ace	.dynstr
+0x13ad6	.eh_frame_hdr
+0x13ae4	.gnu.version_r
+0x13af3	.data.rel.ro
+0x13b00	.rela.dyn
+0x13b0a	.gnu.version
+0x13b17	.dynsym
+0x13b1f	.gnu.hash
+0x13b29	.relro_padding
+0x13b38	.eh_frame
+0x13b42	.note.gnu.build-id
+0x13b55	.dynamic
+0x13b5e	.shstrtab
+0x13b68	.rodata
+0x13b70	.data

@@ -1,0 +1,4 @@
+
+raw/lib/arm64-v8a/libshadowhook_nothing.so:	file format elf64-littleaarch64
+
+DYNAMIC SYMBOL TABLE:

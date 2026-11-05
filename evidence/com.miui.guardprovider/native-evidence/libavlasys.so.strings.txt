@@ -1,0 +1,329 @@
+0xc71	__cxa_finalize
+0xc80	__cxa_atexit
+0xc8d	__errno
+0xc95	__stack_chk_fail
+0xca6	__stack_chk_guard
+0xcb8	memcpy
+0xcbf	calloc
+0xcc6	fclose
+0xccd	fopen
+0xcd3	fstat
+0xcd9	fwrite
+0xce0	inflate
+0xce8	inflateEnd
+0xcf3	inflateInit2_
+0xd01	malloc
+0xd08	memset
+0xd0f	mkdir
+0xd1a	munmap
+0xd21	realloc
+0xd29	regcomp
+0xd31	regexec
+0xd39	regfree
+0xd41	snprintf
+0xd4a	strcat
+0xd51	strchr
+0xd58	strcmp
+0xd5f	strcpy
+0xd66	strdup
+0xd6d	strlen
+0xd74	strncmp
+0xd7c	strstr
+0xd83	unlink
+0xd8a	islower
+0xd92	toupper
+0xd9a	__android_log_print
+0xdae	closedir
+0xdb7	opendir
+0xdbf	readdir
+0xdc7	strcasecmp
+0xdd2	strrchr
+0xdda	strtok
+0xde1	memcmp
+0xdf2	fgets
+0xdf8	fprintf
+0xe00	fread
+0xe06	sprintf
+0xe0e	strnlen
+0xe16	ioctl
+0xe1c	socket
+0xe23	strncpy
+0xe2b	pread
+0xe31	access
+0xe38	memmem
+0xe3f	dlsym
+0xe45	AVL_SetScanLimitEx
+0xe58	dlerror
+0xe60	dlopen
+0xe67	pthread_mutex_init
+0xe7a	pthread_mutex_lock
+0xe8d	pthread_mutex_unlock
+0xea2	AAssetManager_fromJava
+0xeb9	AAssetManager_open
+0xecc	AAsset_close
+0xed9	AAsset_getLength
+0xeea	AAsset_read
+0xef6	JNI_OnLoad
+0xf01	perror
+0xf08	liblog.so
+0xf12	libz.so
+0xf1a	libandroid.so
+0xf28	libc.so
+0xf30	libm.so
+0xf38	libstdc++.so
+0xf45	libdl.so
+0xf4e	_edata
+0xf55	__bss_start
+0xf61	__bss_start__
+0xf6f	__bss_end__
+0xf7b	__end__
+0xf88	libavlasys.so
+0x33d9	)@9JA
+0x3825	 @9!0
+0x3849	$@9J!
+0x3861	(@9JA
+0x3b55	 @9!0
+0x3b79	$@9)A
+0x3b91	(@9)!
+0x3ed0	I!IJA
+0x5880	h&A)j.B)hb
+0x592d	$A)2(@)
+0x5ac8	#@E)B
+0x6484	hjw8h
+0x64a3	*`jw8
+0x874d	sA9`"
+0x875d	wA9`*
+0x876d	{A9`2
+0x89c1	sA9`"
+0x89d1	wA9`*
+0x89e1	{A9`2
+0x8bec	-hl8n
+0x8bff	9.h,8_
+0x9ab1	C@yJC7
+0xb211	$A)2(@)M
+0xb358	/8D)B
+0xb39f	R#@E)B
+0x11440	1.2.3
+0x1144d	engine.conf
+0x1145e	%s/%s
+0x11464	avl/android/
+0x11471	^V([0-9]+) \(Build ([0-9]+)\)$
+0x11490	assets/
+0x114b0	@AVLSDK Error
+0x114be	class %s  not found!
+0x114d3	java/util/List
+0x114ef	(I)Ljava/lang/Object;
+0x11505	java/lang/String
+0x11516	onSearch
+0x1151f	(Ljava/lang/String;)V
+0x11535	includeSuffix
+0x11543	()Ljava/lang/String;
+0x11558	isStop
+0x11563	jFileSearcher GetObjectClass == NULL
+0x11588	jFileSearcher == NULL
+0x115a0	(%d) path:%s, is not REG or DIR
+0x115c0	The number of traversal layers has reached the upper limit
+0x115fb	opendir fail ,dirPath:%s
+0x11617	%s, %s
+0x1161e	jobject searcher == NULL
+0x11637	jobjectArray jpaths is NULL
+0x11653	jobject searcher is NULL
+0x1166f	fopen %s failed
+0x11680	malloc failed.
+0x11695	0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ
+0x116bf	wlan0
+0x116c5	%02x%02x%02x%02x%02x%02x
+0x116de	/sys/class/net/wlan0/address
+0x116fb	file %s stat fail(%d).
+0x11712	pread EOCD error
+0x11723	endBuf_relative_offset(%ld) < 0
+0x11743	pread cend error.offset=%d, 
+0x11760	%X != ZIP_CEND_MAGIC.
+0x11776	META-INF/
+0x11780	META-INF/MANIFEST.MF
+0x117a8	Apk_GetZipInfo Zip_MetaInfo_Build fail
+0x117d0	Apk_GetZipInfo meta error
+0x117eb	Apk_GetSignBlockBuff centralDirOff invalid
+0x11817	APK Sig Block 42
+0x11828	Apk_GetSignBlockBuff read headSignSize error. headSignSize:%llu,tailSignSize:%llu
+0x1187f	Apk_ParseCert callback null
+0x1189c	?sign?
+0x118a3	Apk_ParseCert no sign magic
+0x118c0	%08x%08x
+0x118e0	com/avl/engine/security/AVLA
+0x11901	([BI)Ljava/lang/String;
+0x11919	AVLM_GetSIDInfo
+0x11929	AVLM_FreeSIDInfo
+0x1193f	avl so name is NULL
+0x11953	dlopen error: %s
+0x11964	/conf/liscense.conf
+0x11978	key is overdue!
+0x11988	62BAFD662A63A99A7C96DA027AFDF739
+0x119a9	@AVLSDK WARN
+0x119b6	%s is test key
+0x119c5	%s is error
+0x119d1	key is test key!
+0x119e2	key is error!
+0x119f0	AVLM_CheckAPPToken
+0x11a03	AVLM_CheckAPPKey
+0x11a14	AVL SDK licence is overdue!
+0x11a30	AVLM_Init
+0x11a3a	AVLM_Release
+0x11a47	AVLM_InstallPackage
+0x11a5b	AVLM_SetScanOpt
+0x11a6b	AVLM_SetOutputOpt
+0x11a7d	AVLM_SetScanCategoryOpt
+0x11a95	AVLM_SetLogPathForSDK
+0x11aab	AVLM_Scan
+0x11ab5	AVLM_GetVirnameEx
+0x11ac7	AVLM_GetWhitenameEx
+0x11adb	AVLM_Result_Free
+0x11aec	AVLM_GetEngineVersion
+0x11b02	AVLM_GetSigLibVersion
+0x11b18	AVLM_SetModulePath
+0x11b2b	AVLM_SetLogOpt
+0x11b3a	AVLM_ComputeAPPToken
+0x11b4f	AVLM_ScanWithScanOpt
+0x11b64	AVLM_ScanWithScanOptEx
+0x11b7b	AVLM_ScanExWithFile
+0x11b8f	AVLM_ScanExWithName
+0x11ba3	AVLM_SetScanLimit
+0x11bb5	AVLM_SetDEXScanLimit
+0x11bca	AVLM_SetOpcDEXScanLimit
+0x11be2	AVLM_SetMapleScanLimit
+0x11bf9	AVLM_SetScanLimitEx
+0x11c0d	AVLM_SetAppInfoExtractSwitch
+0x11c2a	AVLM_SetAppInfoExtractRate
+0x11c45	AVLM_GetELogInfo
+0x11c56	AVLM_ScanWithArgs
+0x11c68	AVLM_GetDetectLogInfo
+0x11c7e	INIT_FAIL
+0x11c88	%s/avl/conf/avllib.conf
+0x11ca0	%savl/conf/avllib.conf
+0x11cb7	AVLM_GetEngineVersionEx
+0x11ccf	AVLM_GetCertHash
+0x11ce0	AVLM_GetCertFullHash
+0x11cf5	AVLM_GetAPKInfo
+0x11d05	AVLM_GetConfigInfo
+0x11d18	AVLM_ConfigInfo_Free
+0x11d2d	AVLM_VirNamesChoice
+0x11d41	AVLM_GetVirusDesc
+0x11d58	(IILjava/lang/String;)V
+0x11d70	AVLM_ScanExWithId
+0x11d96	AVLM_GetPubkeyContent
+0x11dac	AVLM_FreePubkeyContent
+0x11dc3	check key error: token is empty
+0x11de3	check key error: appkey is empty
+0x11e04	check key error: %s is not found
+0x11e25	check key error: sopath is empty
+0x11e7c	AVLM_ScanEx
+0x11e88	AVLM_ScanExWithKey
+0x11e9b	AVLM_ScanExWithPath
+0x11eaf	AVLM_ScanExWithType
+0x11ec3	arm64-v8a
+0x11ecd	assets/avllib
+0x11edb	Incoming arguments are incorrect !
+0x11efe	get AssetManager error!
+0x11f16	read  file error:ret = %d !
+0x11f32	malloc iBuf
+0x11f3e	get avllib object error!
+0x11f57	read file error:ret = %d !
+0x11f72	checkFuncEnable
+0x11f82	(Ljava/lang/String;I)Z
+0x11f99	JniFuncProcess GetObjectClass == NULL
+0x11fbf	JniFuncProcess == NULL
+0x11fd6	com/avl/engine/security/ScanParams
+0x11ff9	Failed to find ScanParams class
+0x12019	Failed to create global reference for ScanParams
+0x1204c	Failed to get field mFirstInstallTime
+0x12072	Failed to get field mScanArgs
+0x12090	Failed to get field mPkgName
+0x120ad	Failed to get field mAppName
+0x120ca	com/avl/engine/security/NativeUtils
+0x120ee	getLocalUID
+0x120fa	getCpuPlatform
+0x12109	unzipAvllib
+0x12115	(Ljava/lang/String;Ljava/lang/String;)I
+0x1213d	getFileMD5
+0x12148	(Ljava/lang/String;I)Ljava/lang/String;
+0x12170	getStringMD5
+0x1217d	unzipFile
+0x12187	(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)I
+0x121bf	unzipAssetsFile
+0x121cf	(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)I
+0x12219	unzipAssetsFileEfficient
+0x12232	(Landroid/content/res/AssetManager;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)I
+0x1228c	readAssetsFile
+0x1229b	(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+0x122e6	readAssetsFileEfficient
+0x122fe	(Landroid/content/res/AssetManager;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+0x12359	searchFile
+0x12364	(Ljava/lang/String;Lcom/avl/engine/security/FileSearcher;)I
+0x123a0	([Ljava/lang/String;Lcom/avl/engine/security/FileSearcher;)I
+0x123dd	getMetaInfEntryNames
+0x123f2	(Ljava/lang/String;)[[B
+0x1240a	checkKey
+0x12413	setAVLSdkPath
+0x12421	(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)I
+0x1246f	installPackage
+0x1247e	(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)I
+0x124b9	scanEx
+0x124c0	(Ljava/lang/String;Lcom/avl/engine/security/ScanParams;)[Ljava/lang/String;
+0x12511	(Ljava/lang/String;[I)Ljava/lang/String;
+0x1253a	arbitrateVirusName
+0x1254d	(Ljava/lang/String;)I
+0x12563	getVirusDescription
+0x12577	getEngineVersion
+0x12588	getSigLibVersion
+0x12599	getEngConfVersion
+0x125ab	(Ljava/lang/String;)Ljava/lang/String;
+0x125d2	getCertHash
+0x125de	getCertFullHash
+0x125ee	getAPKInfo
+0x125f9	computeToken
+0x12606	(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+0x12640	initEngine
+0x1264b	releaseEngine
+0x12659	gpubkc
+0x12660	(Ljava/lang/String;)[B
+0x12677	setScanLimit
+0x12684	(III)I
+0x1268b	setDEXScanLimit
+0x1269b	(IIII)I
+0x126a3	setOpcDEXScanLimit
+0x126b6	(II)I
+0x126bc	setScanLimitEx
+0x126cb	setAIES
+0x126d3	setAIER
+0x126db	(DDD)I
+0x126ea	(Ljava/lang/String;I)I
+0x1270e	signBlockHash
+0x1271c	keySetHash
+0x12727	signBlockAndKeySetHash
+0x1273e	checkCertificates
+0x12750	(Ljava/lang/String;)[I
+0x12767	gufbyud
+0x1276f	(Ljava/lang/String;III)I
+0x12788	suhms
+0x127b3	(Lcom/avl/engine/security/JniFuncProcess;)V
+0x18540	GCC: (GNU) 4.9.x 20150123 (prerelease)
+0x18567	Android clang version 3.8.256229  (based on LLVM 3.8.256229)
+0x185a5	.init_array
+0x185b1	.fini_array
+0x185bd	.text
+0x185c8	.comment
+0x185d1	.rela.plt
+0x185e0	.dynstr
+0x185e8	.eh_frame_hdr
+0x185f6	.gnu.version_r
+0x18605	.data.rel.ro
+0x18612	.rela.dyn
+0x1861c	.gnu.version
+0x18629	.dynsym
+0x18631	.hash
+0x18637	.eh_frame
+0x18641	.note.gnu.build-id
+0x18654	.dynamic
+0x1865d	.shstrtab
+0x18667	.rodata
+0x1866f	.data

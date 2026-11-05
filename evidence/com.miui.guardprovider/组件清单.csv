@@ -1,0 +1,27 @@
+﻿type,name,exported,permission,readPermission,writePermission,process,authorities,intent_actions
+activity,com.miui.guardprovider.action.impl.AlertActivity,false,,,,,,
+activity,com.miui.guardprovider.action.impl.AppListAlertActivity,false,,,,,,
+provider,com.miui.guardprovider.GuardProvider,true,com.miui.guardprovider.permission.Guard_Provider,,,,guard,
+service,com.miui.guardprovider.manager.SecurityService,true,com.miui.guardprovider.permission.Guard_Provider,,,,,com.miui.guardprovider.action.antivirusservice | com.miui.guardprovider.action.urlscan
+activity,com.miui.guardprovider.aiguard.AlertActivity,false,,,,:ai,,
+service,com.miui.guardprovider.aiguard.AiGuardService,true,com.miui.guardprovider.permission.Guard_Provider,,,:ai,,
+activity,com.miui.guardprovider.aiguard.PermissionRequestActivity,true,com.miui.guardprovider.permission.Guard_Provider,,,:ai,,
+provider,androidx.startup.InitializationProvider,false,,,,,com.miui.guardprovider.androidx-startup,
+service,androidx.work.impl.background.systemjob.SystemJobService,true,android.permission.BIND_JOB_SERVICE,,,,,
+service,androidx.work.impl.foreground.SystemForegroundService,false,,,,,,
+receiver,androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver,false,,,,,,
+receiver,androidx.work.impl.background.systemalarm.RescheduleReceiver,false,,,,,,android.intent.action.BOOT_COMPLETED
+receiver,androidx.work.impl.diagnostics.DiagnosticsReceiver,true,android.permission.DUMP,,,,,androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+service,com.miui.guardprovider.server.VirusScanService,true,com.miui.guardprovider.permission.VirusScanNG,,,,,com.miui.guardprovider.action.antivirusservice_NG
+provider,com.miui.guardprovider.server.db.VirusScanContentProvider,true,com.miui.guardprovider.permission.VirusScanNG,,,,com.miui.guardprovider.virusscan,
+receiver,com.miui.guardprovider.push.GuardPushMessageReceiver,true,com.xiaomi.xmsf.permission.MIPUSH_RECEIVE,,,,,com.xiaomi.mipush.RECEIVE_MESSAGE | com.xiaomi.mipush.MESSAGE_ARRIVED | com.xiaomi.mipush.ERROR
+service,androidx.room.MultiInstanceInvalidationService,false,,,,,,
+receiver,androidx.profileinstaller.ProfileInstallReceiver,true,android.permission.DUMP,,,,,androidx.profileinstaller.action.INSTALL_PROFILE | androidx.profileinstaller.action.SKIP_FILE | androidx.profileinstaller.action.SAVE_PROFILE | androidx.profileinstaller.action.BENCHMARK_OPERATION
+service,com.xiaomi.push.service.XMPushService,,,,,:pushservice,,
+service,com.xiaomi.push.service.XMJobService,false,android.permission.BIND_JOB_SERVICE,,,:pushservice,,
+service,com.xiaomi.mipush.sdk.PushMessageHandler,true,com.xiaomi.xmsf.permission.MIPUSH_RECEIVE,,,,,
+service,com.xiaomi.mipush.sdk.MessageHandleService,,,,,,,
+service,com.xiaomi.push.service.UploadLogSDKService,true,miui.permission.USE_INTERNAL_GENERAL_API,,,:uploadLogProcess,,com.xiaomi.push.UPLOAD_LOG_SDK_SERVICE
+provider,com.xiaomi.push.service.logupload.LogUploadFileProvider,false,,,,,com.miui.guardprovider.push.fileprovider,
+receiver,com.xiaomi.push.service.receivers.PingReceiver,false,,,,:pushservice,,com.xiaomi.push.PING_TIMER
+activity,com.xiaomi.mipush.sdk.NotificationClickedActivity,true,com.xiaomi.xmsf.permission.MIPUSH_RECEIVE,,,,,

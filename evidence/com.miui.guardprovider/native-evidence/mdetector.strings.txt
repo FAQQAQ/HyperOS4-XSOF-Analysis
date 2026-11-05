@@ -1,0 +1,997 @@
+0x134	/system/bin/linker
+0xb45	liblog.so
+0xb4f	__android_log_print
+0xb63	libstdc++.so
+0xb70	libm.so
+0xb78	libc.so
+0xb80	__cxa_atexit
+0xb8d	__errno
+0xb95	__gnu_Unwind_Find_exidx
+0xbad	__libc_init
+0xbb9	__stack_chk_fail
+0xbca	abort
+0xbda	calloc
+0xbe1	connect
+0xbe9	fclose
+0xbf0	fcntl
+0xbfa	fgets
+0xc00	fopen
+0xc06	fprintf
+0xc0e	fread
+0xc19	freeaddrinfo
+0xc26	fwrite
+0xc2d	getaddrinfo
+0xc3e	getnetbyname
+0xc4b	getpid
+0xc52	getprotobyname
+0xc61	getservbyname
+0xc6f	getsockopt
+0xc7a	if_indextoname
+0xc89	inet_aton
+0xc93	inet_ntoa
+0xc9d	inet_ntop
+0xca7	ioctl
+0xcad	isatty
+0xcb4	longjmp
+0xcbc	malloc
+0xcc3	memcmp
+0xcca	memcpy
+0xcd1	memset
+0xcd8	pthread_create
+0xce7	raise
+0xced	realloc
+0xcfa	recvfrom
+0xd03	rewind
+0xd0f	setjmp
+0xd16	setsockopt
+0xd21	sleep
+0xd27	socket
+0xd2e	sscanf
+0xd35	strchr
+0xd3c	strcmp
+0xd43	strcpy
+0xd4a	strdup
+0xd51	strerror
+0xd5a	strlen
+0xd61	strncmp
+0xd69	strncpy
+0xd71	strstr
+0xd78	uname
+0xd7e	vsnprintf
+0xd8d	__stack_chk_guard
+0xd9f	_ctype_
+0xda7	libdl.so
+0xdb0	_edata
+0xdb7	__bss_start
+0xdc3	__bss_start__
+0xdd1	__bss_end__
+0xddd	__end__
+0xdea	edges
+0xdf0	pcap_in
+0xdf8	__aeabi_unwind_cpp_pr0
+0xe0f	__cxa_begin_cleanup
+0xe23	levels
+0xe2a	__cxa_call_unexpected
+0xe40	__FINI_ARRAY__
+0xe4f	n_errors
+0xe58	__aeabi_unwind_cpp_pr2
+0xe6f	pcap_text
+0xe79	blocks
+0xe80	pcap_lval
+0xe8a	eproto_db
+0xe94	__CTOR_LIST__
+0xea2	no_optimize
+0xeae	__INIT_ARRAY__
+0xebd	space
+0xec3	__cxa_type_match
+0xed9	pcap_out
+0xee2	pcap_setnonblock_fd
+0xefb	pcap_char
+0xf05	pcap_leng
+0xf0f	vnode_base
+0xf1a	__PREINIT_ARRAY__
+0xf2c	pcap_nerrs
+0xf37	__aeabi_unwind_cpp_pr1
+0xf4e	next_vnode
+0xf59	pcap_getnonblock_fd
+0x1782	VFMFDF_F
+0x1795	h-K-J.L{D
+0x179f	h-N.M
+0x17a5	hyDzD
+0x17ab	F,K|D
+0x17bb	F)K}D
+0x1808	BFQ\C
+0x18ab	 yDzD#
+0x18e7	 yDzDZ
+0x1a18	cKjF8
+0x1a37	 yDzDk
+0x1ade	8J~D1
+0x1b10	.K{D.I/J
+0x1b19	 yDzD
+0x1b38	(K{D(I)J
+0x1b41	 yDzD
+0x1b50	%K{DL
+0x1bec	iK{DiNjJ,
+0x1c04	bz#z1
+0x1c62	b~#~1
+0x1cbd	 yDzD
+0x1cc6	=KjF8
+0x1d42	jz+z1
+0x1d64	bx#x1
+0x1e8e	8O8L9J
+0x1e9c	;h|D!
+0x1fa3	J}D|D)
+0x2013	 yDzD+
+0x207f	h/I0J
+0x20ba	oh$H9
+0x216d	 yDzD
+0x2189	 yDzD
+0x21bb	 yDzD
+0x21d9	 yDzD
+0x21ed	 yDzD
+0x22f6	bz#z9
+0x2318	b~#~9
+0x23b1	DtLiD
+0x23d5	 yDzD
+0x2419	 yDzD
+0x2449	 yDzD
+0x2469	 yDzD
+0x2477	 yDzD
+0x24ab	 yDzD
+0x25c6	_FVFMFDF
+0x26a3	7QF:h
+0x2700	XFxI2
+0x2738	XFkIBF
+0x2782	XFYI+
+0x27a2	SHSIxDyD
+0x299e	XFOI#
+0x2b03	"{D}D,
+0x2be9	`kBkA
+0x2c8f	M}D,hc
+0x2ca7	M}D,hc
+0x2dc7	`5JzD
+0x2dcd	`5K{D
+0x2dd3	`4HxD
+0x2e1d	`&K&H{D
+0x2e25	`&KxD{D
+0x2e2d	`%K{D
+0x2e39	`#HxD
+0x2e3f	`"HxD
+0x2e45	`"HxD
+0x2e4b	`!HxD
+0x2e51	`!HxD
+0x2e57	` HxD
+0x2e5d	` HxD
+0x30b9	M}D+h
+0x3149	"RB{D
+0x31af	"RB{D
+0x31c9	"RB{D
+0x3219	J,#zD
+0x322f	`~K "{D
+0x3245	"RB{D
+0x3253	`yJzD
+0x326b	`vJzD
+0x3283	`sJzD
+0x328f	"RB{D
+0x329d	`pJzD
+0x32b5	`mK "{D
+0x32e9	`fJzD
+0x3303	"RB{D
+0x3311	`aJzD
+0x3331	`]K "{D
+0x3353	`XJzD
+0x3363	`VJzD
+0x336d	"RB{D
+0x34d3	#[BzD
+0x34f5	"RB{D
+0x3521	#[BzD
+0x3589	#[BzD
+0x35c7	#[BzD
+0x35df	#[BzD
+0x35f7	#[BzD
+0x360c	~K@"{D
+0x361b	`|K "{D
+0x3635	`yJzD
+0x363f	"RB{D
+0x3675	"RB{D
+0x3681	#[BzD
+0x3687	`mJzD
+0x368d	`mJzD
+0x3699	"RB{D
+0x36bd	#[BzD
+0x36c3	`eJzD
+0x36cf	#[BzD
+0x36d5	`cJzD
+0x36db	`bJzD
+0x36e7	#[BzD
+0x36ed	``JzD
+0x36f3	`_JzD
+0x36fc	^M}D(
+0x3735	fFa(`
+0x38c0	\mZe#
+0x38d5	jcBcA
+0x38f3	jcBcA
+0x3959	jKBKA
+0x39eb	 KBKA
+0x3a14	\mXe#
+0x3a1e	WK,n{D
+0x3a2e	TN~D2h
+0x3adc	)N~D1h
+0x3ca7	h)K{D
+0x3ce6	 fE`Ca
+0x3fe6	MFDF_FVF
+0x4020	"xcx9
+0x408e	#xbx9
+0x4363	%|D$h#h
+0x4477	'~D1h
+0x44d5	#[B1h
+0x4687	fCaD`
+0x46b0	 fE`Ca
+0x48b9	!0fCaE`
+0x48e7	`0fCaKFC`
+0x4921	#CaF`
+0x4947	`0fCaKFC`
+0x4985	` fCaF` 
+0x49bf	!8fCaE`
+0x49ed	`8fCaKFC`
+0x4a27	#CaG`
+0x4a4d	`8fCaKFC`
+0x4a89	FKFC`
+0x4aad	`8fCaKFC`
+0x4aeb	` fCaG`K
+0x4c1a	WFNFEF
+0x4c5f	`$fQF
+0x4cdb	`IF f@F
+0x4e83	` fE`Fa
+0x4edf	` fE`
+0x4fd0	$H%K%MxD
+0x4fd9	h{D$O
+0x4fdf	`$K}D-h{D
+0x4ffb	`}D(h
+0x5455	$!#~D
+0x55b1	#1h[B
+0x5613	&}D)h
+0x590b	#1h[B
+0x60dd	`IF@F
+0x60e6	[KAF{D
+0x60ed	hZK{D
+0x6189	h5K{D
+0x641e	_FVFMFDF
+0x64dd	"[BIF
+0x64f1	FIFXF
+0x6519	"[BAF
+0x652d	FAFHF
+0x6610	zIyD(*
+0x6913	HIFBFxD
+0x6b46	_FVFMFDF
+0x6bf9	K``{D
+0x6d61	`BFSF
+0x6d6b	iRF eZ`
+0x6d75	 Z`#jZ`
+0x6d89	#[BJF
+0x6f06	(f{DD`Fa)
+0x6f57	`2K``{D
+0x6f5f	h1K{D
+0x6fc9	#[BBF
+0x748d	`(fGaD`
+0x74b9	`(fC`Ga
+0x74ef	`GaE`!
+0x7511	`(fC`Ga
+0x7549	`(fCaG`
+0x7583	h*K{D
+0x7589	`*K{D
+0x767d	h{D|D
+0x76c2	_FMFVFDF
+0x7a92	DFVFMF_F
+0x7b1e	KFQF0
+0x7bd2	MFDF_FVF
+0x7cb3	!IB[h
+0x7e32	WF\F(
+0x7e40	.JzD.HIFxD
+0x8004	7HIFxD
+0x800e	6HIFxD
+0x801e	4HIFxD
+0x8028	2HIFxD
+0x804c	+HIFxD
+0x8056	*HIFxD
+0x8060	(HIFxD
+0x806a	'HIFxD
+0x8080	"HIFxD
+0x808a	!HIFxD
+0x8095	HIFxD
+0x809f	HIFxD
+0x80a9	HIFxD
+0x80b7	HIFxD
+0x80c9	HIFxD
+0x80d3	HIFxD
+0x8263	`#K$J{D
+0x8421	J=HxD
+0x85af	#M!6 
+0x85c1	#Z!6 
+0x8635	#M!6 
+0x8647	#Z!6 
+0x86fa	_FVFMFDF
+0x870b	DWL|D
+0x8719	#3`TKr
+0x8729	#_F[B;`
+0x87c1	>EDCDND
+0x8a3b	Jw;zD[
+0x8a6f	5{D_^a
+0x8a91	#[B\F#`4
+0x8bdf	FiK{D
+0x8ca7	hp 2h
+0x8cb9	h` 2h
+0x8ccb	h@ 2h
+0x8cdd	hP 2h
+0x8cef	h0 2h
+0x8d01	h  2h
+0x8fcb	FDK{D
+0x901a	6K1h{D
+0x90a3	h)!iD*"0h
+0x90bf	h)!iD*"
+0x9109	h)!iD*"
+0x9125	h)!iD*"0h
+0x9141	h)!iD
+0x9147	p3h*"jD
+0x915d	h)!iD
+0x9169	h*"0hjD
+0x944b	KxDyD
+0x9465	XxDyD
+0x94fa	NFEFWF
+0x9912	VFDFMF_F
+0x993f	#IFBF
+0x9994	XFAI*
+0x99a2	kiAFXF
+0x9a30	PFzD3
+0x9b7f	#[B;`
+0x9bfd	#[B+`
+0x9c56	|D$h h
+0x9ce1	x0<.+
+0x9d90	:;YBKA
+0x9de7	L|D h
+0x9e2f	IxDyD
+0x9e9b	kcmRj[j
+0x9eab	Kbb{D
+0x9f79	N~D6h3h
+0x9f8f	`zDTX
+0xa05f	D?h~D
+0xa0ee	MF_FVFDF
+0xa171	`wKJF
+0xa1b3	hq`#hYF
+0xa23d	%cFk@
+0xa246	CHCIxDyD
+0xa255	!KFZm
+0xa295	hAFMF
+0xa29c	JFRiJ`
+0xa319	IbFxDyD
+0xa327	IbFxDyD
+0xa335	IxDyD
+0xa397	@XBXA
+0xa4dd	#{d;d%h
+0xa525	#0`zD+`
+0xa586	_FVFMFDF
+0xa605	!^FzD
+0xa63f	;ZBZA
+0xa675	1:@SBSA
+0xa6a1	idFLDNF hdF
+0xa6ad	YTDVF$h
+0xa766	_FMFDFVF
+0xa7bb	!IB{D
+0xa805	FOF?h
+0xa88f	FgF?h
+0xa994	UFog@FOF
+0xa9a3	gjPkn
+0xaa01	h2K{D
+0xaa07	h1K{D
+0xab06	dj$5(
+0xab7c	HFAF0XqXth
+0xadbd	J,h+izD
+0xadf2	TF"hMFuY
+0xaeb5	Psc[B
+0xaf78	HFCmOFT7
+0xaf99	$ @\F
+0xafed	F\mEF
+0xb011	FTFdD$h
+0xb03b	n9Y)B
+0xb082	LFcmT"JD
+0xb0ac	TY<BU
+0xb11f	nbY:B
+0xb145	nAY9B
+0xb198	EFsY!
+0xb1ba	HF1X:h
+0xb20e	YF!`=h
+0xb24b	""`=hi
+0xb25b	`IFqX
+0xb296	IFpPp
+0xb2b5	"RB"``
+0xb2ce	RX(@ 
+0xb32b	"*@`*8
+0xb339	"*@P*
+0xb348	HF0X9h
+0xb3a5	!IB!`
+0xb503	##`AFJFsX
+0xb514	MFsQ1
+0xb51a	HFBF1X
+0xb565	 @B `
+0xb5ed	"r`yD
+0xb5fc	umWF:h
+0xb621	##`3X=h
+0xb659	  "(@
+0xb65f	C `9h
+0xb687	%mB%`
+0xb6ef	C"`CF
+0xb729	"*@ *
+0xb731	"*@P*
+0xb7cd	#RB*`
+0xb7d3	`bK{D
+0xb7ea	sa]K(`{D
+0xb829	#[B+`ti
+0xb834	saLK{D
+0xb843	#[B#`
+0xb84e	aFT2\m@F
+0xb857	`=h]e
+0xb8a1	keFGF
+0xb8f1	 @B{Dwa(`qm
+0xb99f	@XBXA
+0xb9b2	_FVFMFDF
+0xb9c1	M|D'h
+0xba47	KJF{D
+0xbaa5	D`FzD
+0xbabb	JaFQDzDXF
+0xbae6	EF>h+h
+0xbba2	]K]J{D
+0xbba9	h]KzD`
+0xbcbd	 YmIn
+0xbd27	"+h\hZ`*h
+0xbd6b	"+h\`+h
+0xbe13	KVF_F{DMFDF
+0xbe38	7h@F{
+0xc0e9	#[B+a
+0xc26a	DF_FVFMF
+0xc2b1	XCFYF
+0xc2eb	amBQF
+0xc396	 h2I:
+0xc473	L|D h
+0xc4d5	`+aka
+0xc4e2	 h%I*
+0xc5ab	0:"yD
+0xc5f4	"d+`"lj`dl
+0xc749	hxD'"
+0xc792	`BDAdB
+0xc8e5	`#aca
+0xc961	`#aca
+0xc9be	VFMFDF_F
+0xc9cd	F}D-hz
+0xcbe0	KFZFZ`
+0xcc3a	c`-K{D
+0xccc5	##gq##a
+0xcccd	#[Bcg
+0xcd4b	`;a{a
+0xcd89	I@F3"yD
+0xce5b	"@FyDR
+0xceef	!KF@FI
+0xcf1e	 hdIZF
+0xcf51	#ZF;`
+0xcf5c	;CZF hWI
+0xcf73	fSK{D
+0xd116	zD@FI
+0xd129	"@FyDR
+0xd14f	"{DyD
+0xd1a5	ppGxE
+0xd1f5	pBhSp
+0xd1fd	KBh{D
+0xd243	K%`{D
+0xd2db	N~D5h
+0xd2e7	J|D#hzD
+0xd31f	"0`{D
+0xd329	pEp{D
+0xd37e	~D3h}D
+0xd3e9	IzDyD
+0xd582	VF_FMFDF
+0xd5a1	`rK{D
+0xd5af	`oKVF
+0xd5ec	dKRFdL
+0xd5f3	XdNeO
+0xd5f9	FeK|D~D
+0xd61e	1p&h\L
+0xd64f	ZULxD
+0xd657	DTMUH|D
+0xd663	FTL}DxD
+0xd67a	_Fy\PF
+0xd6ed	`7J7L8NzD
+0xd6f7	`7J|D7OzD
+0xd71a	FF6h'h
+0xd731	`+K:x+N{D
+0xd744	(K)L)N{D|D~D
+0xdaf5	#S`^F
+0xdb9a	$KVF$ 
+0xdd78	xK "$ 
+0xde04	WH_F9hxD
+0xde55	x;pDK{D
+0xde5d	hDK{D
+0xdedf	h'M\h}D*h&
+0xdef2	^F5hNF
+0xdf15	K\F{D
+0xdfbf	J}DzD
+0xe01b	D{DHF
+0xe0a7	X`hci-
+0xe107	hRhRD
+0xe185	hXFIh
+0xe1ae	\K\J{D
+0xe20e	IKIJ{D
+0xe215	hIKzD
+0xe235	XCHCNyDxD~D+h
+0xe261	`+h`!
+0xe2ab	hNF3h
+0xe351	H1hxD
+0xe35d	#|D#`
+0xe3e2	WFNFEF
+0xe649	hjFHF
+0xe728	KFKC,
+0xe77a	VF_FMFDF
+0xe7a1	@|D$h!h
+0xe858	AKJFAF{D
+0xe91b	KJFAF{DZTW
+0xe94b	#AFKp
+0xeb45	K}D{D
+0xec1b	 pGpGp
+0xf032	,3cbF
+0xf0ed	bcc(h
+0xf359	h`FCP
+0xf5c7	:ZrZh
+0xfa18	mdetect
+0xfa20	send_remote_request to java: %s
+0xfa41	create socket fail
+0xfa55	tms_socket_server_path
+0xfa6c	connect to java
+0xfa7d	connect socket fail
+0xfa92	[Beg]send to java msg:[%s]
+0xfaae	send msg fail
+0xfabd	[End]send msg to java: %s
+0xfad8	close socket
+0xfae6	sleep %ds...
+0xfaf4	%ds passed, exit...
+0xfb09	auto exit...
+0xfb16	Ethernet
+0xfb1f	Unknown
+0xfb2c	ARP Request
+0xfb38	ARP Reply
+0xfb43	main--argc[%d]
+0xfb53	interface not found: %s
+0xfb6d	default device: %s
+0xfb81	net hardware read error
+0xfb99	self ip  address:%s
+0xfbae	self mac address:%02x:%02x:%02x:%02x:%02x:%02x
+0xfbde	get gatway ip failed
+0xfbf4	gateway:[%s]
+0xfc03	pcap_lookupnet: %s
+0xfc17	pcap_open_live: %s
+0xfc2f	pcap_compile: %s
+0xfc41	pcap_setfilter: %s
+0xfc55	failed to asking for gateway
+0xfc73	pcap_next: %s
+0xfc84	[%.4d]
+0xfc8c	Received Packet Size: %d bytes
+0xfcac	Hardware type: %s
+0xfcbf	Protocol type: %s
+0xfcd2	Operation: %s
+0xfce1	Sender MAC: %02X:%02X:%02X:%02X:%02X:%02X
+0xfd0c	Sender IP: %d.%d.%d.%d
+0xfd24	Target MAC: %02X:%02X:%02X:%02X:%02X:%02X
+0xfd4f	Target IP: %d.%d.%d.%d
+0xfd67	--------------- arp packet size should be 42 bytes or more!
+0xfda4	gateway reply
+0xfdb3	!!This Device is being Hijacked!!
+0xfdd6	mac 1: %02X:%02X:%02X:%02X:%02X:%02X
+0xfdfc	mac 2: %02X:%02X:%02X:%02X:%02X:%02X
+0xfe22	found danger
+0xfe2f	pcap_lookupdev: %s
+0xfe43	pcap_lookupdev defaultdev: %s
+0xfe62	pcap_findalldevs
+0xfe74	pcap_findalldevs: %s
+0xfe8a	127.0.0.1
+0xfe94	[%d]--name:[%s]description:[%s]
+0xfeb5	ip: %s
+0xfebd	wlan0
+0xfec3	error argument
+0xfed3	error argument size
+0xfee8	error open socket
+0xfefb	error ioctl
+0xff08	error hwaddr family
+0xff1d	send arp request:
+0xff30	source  ip: %d.%d.%d.%d
+0xff49	source mac: %02X:%02X:%02X:%02X:%02X:%02X
+0xff74	dest    ip: %d.%d.%d.%d
+0xff8d	dest   mac: %02X:%02X:%02X:%02X:%02X:%02X
+0xffb8	pcap_inject error
+0xffcb	Socket Creation: %d
+0xffe0	Write To Socket Failed...
+0xfffb	SOCK READ: 
+0x10007	Error in recieved packet
+0x10020	rtMsg->rtm_family = %d,rtMsg->rtm_table=%d
+0x1004c	Read From Socket Failed...
+0x10068	0.0.0.0
+0x10070	socket: %s
+0x1007c	malloc: %s
+0x10088	SIOCGIFCONF: %s
+0x10098	dummy
+0x100a0	SIOCGIFFLAGS: %.*s: %s
+0x100b8	SIOCGIFNETMASK: %.*s: %s
+0x100d4	SIOCGIFBRDADDR: %.*s: %s
+0x100f0	SIOCGIFDSTADDR: %.*s: %s
+0x1010c	Error reading /proc/net/dev: %s
+0x1012c	/proc/net/dev
+0x10140	out of memory
+0x10150	too many registers needed to evaluate expression
+0x10184	unknown ip proto '%s'
+0x1019c	unknown ether proto '%s'
+0x101d0	unknown osi proto '%s'
+0x101e8	snaplen of 0 rejects all packets
+0x1020c	unknown data link type %d
+0x10228	syntax error in filter expression
+0x1024c	expression rejects all packets
+0x1026c	ethernet addresses supported only on ethernet/FDDI/token ring/802.11/ATM LANE/Fibre Channel
+0x102c8	ethernet address used in non-ether expression
+0x102f8	libpcap was compiled without pf support
+0x10320	libpcap was compiled on a machine without pf support
+0x10358	ARCnet address used in non-arc expression
+0x10384	no VLAN match after MPLS
+0x103a0	no VLAN support for data link type %d
+0x103c8	'vpi' supported only on raw ATM
+0x103e8	'vci' supported only on raw ATM
+0x10408	'callref' supported only on raw ATM
+0x1042c	unsupported protocol over mpls
+0x1044c	IrDA link-layer type filtering not implemented
+0x1047c	DOCSIS link-layer type filtering not implemented
+0x104b0	LAPD link-layer type filtering not implemented
+0x104e0	direction applied to 'proto'
+0x10500	arp does not encapsulate another protocol
+0x1052c	rarp does not encapsulate another protocol
+0x10558	atalk encapsulation is not specifiable
+0x10580	decnet encapsulation is not specifiable
+0x105a8	sca does not encapsulate another protocol
+0x105d4	lat does not encapsulate another protocol
+0x10600	moprc does not encapsulate another protocol
+0x1062c	mopdl does not encapsulate another protocol
+0x10658	'udp proto' is bogus
+0x10670	'tcp proto' is bogus
+0x10688	'sctp proto' is bogus
+0x106a0	'icmp proto' is bogus
+0x106b8	'igmp proto' is bogus
+0x106d0	'igrp proto' is bogus
+0x106e8	'pim proto' is bogus
+0x10700	'vrrp proto' is bogus
+0x10718	'icmp6 proto' is bogus
+0x10730	'ah proto' is bogus
+0x10744	'stp proto' is bogus
+0x1075c	'ipx proto' is bogus
+0x10774	'netbeui proto' is bogus
+0x10790	'radio proto' is bogus
+0x107a8	link layer applied in wrong context
+0x107cc	'radio' is not a valid protocol type
+0x107f4	data size must be 1, 2, or 4
+0x10814	unsupported index operation
+0x10830	radio information not present in capture
+0x1085c	IPv6 upper-layer protocol is not supported by proto[x]
+0x10894	inbound/outbound not supported on linktype %d
+0x108c4	ISO host filtering not implemented
+0x108f4	'tcp' modifier applied to %s
+0x10914	'sctp' modifier applied to %s
+0x10934	'udp' modifier applied to %s
+0x10954	'icmp' modifier applied to %s
+0x10974	'igmp' modifier applied to %s
+0x10994	'igrp' modifier applied to %s
+0x109b4	'pim' modifier applied to %s
+0x109d4	'vrrp' modifier applied to %s
+0x109f4	ATALK host filtering not implemented
+0x10a1c	AARP host filtering not implemented
+0x10a40	SCA host filtering not implemented
+0x10a64	LAT host filtering not implemented
+0x10a88	MOPDL host filtering not implemented
+0x10ab0	MOPRC host filtering not implemented
+0x10ad8	'ip6' modifier applied to ip host
+0x10afc	'icmp6' modifier applied to %s
+0x10b1c	'ah' modifier applied to %s
+0x10b38	'esp' modifier applied to %s
+0x10b58	'esis' modifier applied to %s
+0x10b78	'isis' modifier applied to %s
+0x10b98	'clnp' modifier applied to %s
+0x10bb8	'stp' modifier applied to %s
+0x10bd8	IPX host filtering not implemented
+0x10bfc	'netbeui' modifier applied to %s
+0x10c20	'radio' modifier applied to %s
+0x10c40	non-network bits set in "%s mask %s"
+0x10c68	mask length must be <= 32
+0x10c84	non-network bits set in "%s/%d"
+0x10ca4	Mask syntax for networks only
+0x10cc4	bad protocol applied for 'protochain'
+0x10cec	'protochain' not supported with radiotap headers
+0x10d20	'protochain' not supported with PPI headers
+0x10d4c	unsupported proto to gen_protochain
+0x10d70	illegal link layer address
+0x10d8c	illegal qualifier of 'port'
+0x10da8	illegal qualifier of 'portrange'
+0x10dcc	'gateway' requires a name
+0x10de8	not a broadcast link
+0x10e00	only link-layer/IP broadcast filters supported
+0x10e30	link-layer multicast filters supported only on ethernet/FDDI/token ring/ARCNET/802.11/ATM LANE/Fibre Channel
+0x10ea0	no MPLS support for data link type %d
+0x10ec8	'ip' modifier applied to ip6 %s
+0x10ee8	'rarp' modifier applied to ip6 %s
+0x10f0c	'arp' modifier applied to ip6 %s
+0x10f30	'decnet' modifier applied to ip6 %s
+0x10f54	no mask %s supported
+0x10f6c	invalid ip6 address %s
+0x10f84	%s resolved to multiple address
+0x10fa4	mask length must be <= %u
+0x10fc0	invalid qualifier against IPv6 address
+0x10fe8	 for specified address family
+0x11008	unknown network '%s'
+0x11020	unknown ether host '%s'
+0x11038	unknown FDDI host '%s'
+0x11050	unknown token ring host '%s'
+0x11070	unknown 802.11 host '%s'
+0x1108c	unknown Fibre Channel host '%s'
+0x110ac	only ethernet/FDDI/token ring/802.11/ATM LANE/Fibre Channel supports link-level host name
+0x11108	unknown host '%s'
+0x1111c	unknown host '%s'%s
+0x11130	unknown port '%s'
+0x11144	port '%s' is tcp
+0x11158	port '%s' is sctp
+0x1116c	port '%s' is udp
+0x11180	unknown port in range '%s'
+0x1119c	port in range '%s' is tcp
+0x111b8	port in range '%s' is sctp
+0x111d4	port in range '%s' is udp
+0x111f0	'gateway' not supported in this configuration
+0x11220	unknown protocol: %s
+0x11238	'metac' supported only on raw ATM
+0x1125c	'bcc' supported only on raw ATM
+0x1127c	'oam4sc' supported only on raw ATM
+0x112a0	'oam4ec' supported only on raw ATM
+0x112c4	'sc' supported only on raw ATM
+0x112e4	'ilmic' supported only on raw ATM
+0x11308	'lane' supported only on raw ATM
+0x1132c	'llc' supported only on raw ATM
+0x1134c	'fisu' supported only on MTP2
+0x1136c	'lssu' supported only on MTP2
+0x1138c	'msu' supported only on MTP2
+0x113ac	'sio' supported only on SS7
+0x113c8	sio value %u too big; max value = 255
+0x113f0	'opc' supported only on SS7
+0x1140c	opc value %u too big; max value = 16383
+0x11434	'dpc' supported only on SS7
+0x11450	dpc value %u too big; max value = 16383
+0x11478	'sls' supported only on SS7
+0x11494	sls value %u too big; max value = 15
+0x114bc	'oam' supported only on raw ATM
+0x114dc	'oamf4' supported only on raw ATM
+0x11500	'connectmsg' supported only on raw ATM
+0x11528	'metaconnect' supported only on raw ATM
+0x12228	syntax error
+0x12238	memory exhausted
+0x1224d	wxxyzzzzz{|}}}~~~~~~~~~
+0x1230f	AB@CDEFGHIJKLMNOQP
+0x1232c	RSTUmopqVW`XYZ[\]_^abc
+0x12370	stuvyzw{x
+0x12391	54:>;<=$%ef"#&
+0x1252b	 !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefn
+0x12578	no suitable device found
+0x12594	%s: no IPv4 address assigned
+0x125b4	SIOCGIFADDR: %s: %s
+0x125c8	SIOCGIFNETMASK: %s: %s
+0x125e0	inet class for 0x%x unknown
+0x12604	%d-%d
+0x1260c	%d.%d
+0x12614	malformed decnet address '%s'
+0x12634	/etc/ethers
+0x12640	decnet name support not included, '%s' cannot be translated
+0x1268c	netbeui
+0x126b0	sprite
+0x126b8	mopdl
+0x126c0	moprc
+0x126c8	decnet
+0x126d8	lanbridge
+0x126ec	vprod
+0x126f4	atalk
+0x126fc	atalkarp
+0x12708	decdts
+0x12710	decdns
+0x12718	not enough core
+0x12728	%s for block-local relative jump: off=%d
+0x12754	no destination found
+0x1276c	no jmp destination
+0x12780	multiple matches
+0x12794	division by zero
+0x127a8	malloc
+0x127b0	Statistics aren't available from a pcap_open_dead pcap_t
+0x127ec	DLT_NULL
+0x127f8	%s is not one of the DLTs supported by this device
+0x1282c	DLT %d is not one of the DLTs supported by this device
+0x12864	%s: %s
+0x1286c	F_GETFL: %s
+0x12878	F_SETFL: %s
+0x12884	Setting direction is not implemented on this platform
+0x128bc	DLT_EN10MB
+0x128c8	DLT_IEEE802
+0x128d4	Token ring
+0x128e0	DLT_ARCNET
+0x128ec	DLT_SLIP
+0x128f8	DLT_PPP
+0x12900	DLT_FDDI
+0x1290c	DLT_ATM_RFC1483
+0x1291c	RFC 1483 LLC-encapsulated ATM
+0x1293c	DLT_RAW
+0x12944	Raw IP
+0x1294c	DLT_SLIP_BSDOS
+0x1295c	BSD/OS SLIP
+0x12968	DLT_PPP_BSDOS
+0x12978	BSD/OS PPP
+0x12984	DLT_ATM_CLIP
+0x12994	Linux Classical IP-over-ATM
+0x129b0	DLT_PPP_SERIAL
+0x129c0	PPP over serial
+0x129d0	DLT_PPP_ETHER
+0x129e0	DLT_C_HDLC
+0x129ec	Cisco HDLC
+0x129f8	DLT_IEEE802_11
+0x12a08	802.11
+0x12a10	DLT_FRELAY
+0x12a1c	DLT_LOOP
+0x12a28	OpenBSD loopback
+0x12a3c	DLT_ENC
+0x12a44	OpenBSD encapsulated IP
+0x12a5c	DLT_LINUX_SLL
+0x12a6c	Linux cooked
+0x12a7c	DLT_LTALK
+0x12a88	Localtalk
+0x12a94	DLT_PFLOG
+0x12aa0	OpenBSD pflog file
+0x12ab4	DLT_PRISM_HEADER
+0x12ac8	802.11 plus Prism header
+0x12ae4	DLT_IP_OVER_FC
+0x12af4	RFC 2625 IP-over-Fibre Channel
+0x12b14	DLT_SUNATM
+0x12b20	Sun raw ATM
+0x12b2c	DLT_IEEE802_11_RADIO
+0x12b44	802.11 plus BSD radio information header
+0x12b70	DLT_APPLE_IP_OVER_IEEE1394
+0x12b8c	Apple IP-over-IEEE 1394
+0x12ba4	DLT_ARCNET_LINUX
+0x12bb8	Linux ARCNET
+0x12bc8	DLT_DOCSIS
+0x12bd4	DLT_LINUX_IRDA
+0x12be4	Linux IrDA
+0x12bf0	DLT_LINUX_LAPD
+0x12c00	Linux vISDN LAPD
+0x12c14	DLT_IEEE802_11_RADIO_AVS
+0x12c30	802.11 plus AVS radio information header
+0x12c5c	DLT_SYMANTEC_FIREWALL
+0x12c74	Symantec Firewall
+0x12c88	DLT_JUNIPER_ATM1
+0x12c9c	Juniper ATM1 PIC
+0x12cb0	DLT_JUNIPER_ATM2
+0x12cc4	Juniper ATM2 PIC
+0x12cd8	DLT_JUNIPER_MLPPP
+0x12cec	Juniper Multi-Link PPP
+0x12d04	DLT_PPP_PPPD
+0x12d14	PPP for pppd, with direction flag
+0x12d38	DLT_JUNIPER_PPPOE
+0x12d4c	Juniper PPPoE
+0x12d5c	DLT_JUNIPER_PPPOE_ATM
+0x12d74	Juniper PPPoE/ATM
+0x12d88	DLT_GPRS_LLC
+0x12d98	GPRS LLC
+0x12da4	DLT_GPF_T
+0x12db0	GPF-T
+0x12db8	DLT_GPF_F
+0x12dc4	GPF-F
+0x12dcc	DLT_JUNIPER_PIC_PEER
+0x12de4	Juniper PIC Peer
+0x12df8	DLT_JUNIPER_MLFR
+0x12e0c	Juniper Multi-Link Frame Relay
+0x12e2c	DLT_ERF_ETH
+0x12e38	Ethernet with Endace ERF header
+0x12e58	DLT_ERF_POS
+0x12e64	Packet-over-SONET with Endace ERF header
+0x12e90	DLT_JUNIPER_GGSN
+0x12ea4	Juniper GGSN PIC
+0x12eb8	DLT_JUNIPER_ES
+0x12ec8	Juniper Encryption Services PIC
+0x12ee8	DLT_JUNIPER_MONITOR
+0x12efc	Juniper Passive Monitor PIC
+0x12f18	DLT_JUNIPER_SERVICES
+0x12f30	Juniper Advanced Services PIC
+0x12f50	DLT_JUNIPER_MFR
+0x12f60	Juniper FRF.16 Frame Relay
+0x12f7c	DLT_JUNIPER_ETHER
+0x12f90	Juniper Ethernet
+0x12fa4	DLT_JUNIPER_PPP
+0x12fb4	Juniper PPP
+0x12fc0	DLT_JUNIPER_FRELAY
+0x12fd4	Juniper Frame Relay
+0x12fe8	DLT_JUNIPER_CHDLC
+0x12ffc	Juniper C-HDLC
+0x1300c	DLT_MFR
+0x13014	DLT_JUNIPER_VP
+0x13024	Juniper Voice PIC
+0x13038	DLT_MTP2
+0x13044	SS7 MTP2
+0x13050	DLT_A429
+0x1305c	Arinc 429
+0x13068	DLT_A653_ICM
+0x13078	Arinc 653 Interpartition Communication
+0x130a0	DLT_USB
+0x130a8	DLT_BLUETOOTH_HCI_H4
+0x130c0	Bluetooth HCI UART transport layer
+0x130e4	DLT_CAN20B
+0x130f0	Controller Area Network (CAN) v. 2.0B
+0x13118	DLT_MTP2_WITH_PHDR
+0x1312c	SS7 MTP2 with Pseudo-header
+0x13148	Pseudo-device that captures on all interfaces
+0x13178	Sending packets isn't supported on the "any" device
+0x131ac	Sending packets isn't supported in cooked mode
+0x131dc	send: %s
+0x131e8	recvfrom: %s
+0x131f8	SIOCGSTAMP: %s
+0x13208	Can't restore interface flags (SIOCGIFFLAGS failed: %s).
+0x13241	Please adjust manually.
+0x13259	Hint: This can't happen with Linux >= 2.2.0.
+0x13288	Can't restore interface flags (SIOCSIFFLAGS failed: %s).
+0x132c1	Please adjust manually.
+0x132d9	Hint: This can't happen with Linux >= 2.2.0.
+0x13308	Setting direction is not supported on SOCK_PACKET sockets
+0x13344	pcap_stats: %s
+0x13354	setfilter: No filter specified
+0x13374	Warning: Filter too complex for kernel
+0x1339c	recv: %s
+0x133a8	Warning: Kernel filter failed: %s
+0x133cc	SIOCGIFHWADDR: %s
+0x133e0	SIOCGIFINDEX: %s
+0x133f4	Promiscuous mode not supported on the "any" device
+0x13428	strdup: %s
+0x13448	close: %s
+0x13454	arptype %d not supported by libpcap - falling back to cooked socket
+0x13498	bind: %s
+0x134a4	getsockopt: %s
+0x134b4	setsockopt: %s
+0x134c4	pcap_open_live: The "any" device isn't supported on 2.0[.x]-kernel systems
+0x13510	unknown arptype %d
+0x13524	SIOCGIFFLAGS: %s
+0x13538	atexit failed
+0x13548	SIOCSIFFLAGS: %s
+0x13560	SIOCGIFMTU: %s
+0x151f8	out of dynamic memory in pcap__create_buffer()
+0x15228	out of dynamic memory in pcap__scan_buffer()
+0x15258	out of dynamic memory in pcap__scan_bytes()
+0x15284	bad buffer in pcap__scan_bytes()
+0x152a8	bogus IPv6 address %s
+0x152c0	bogus ethernet address %s
+0x152dc	illegal token: %s
+0x152f0	illegal char '%c'
+0x15304	fatal flex scanner internal error--end of buffer missed
+0x1533c	fatal error - scanner input buffer overflow
+0x15368	input in flex scanner failed
+0x15388	fatal flex scanner internal error--no action found
+0x21104	GCC: (GNU) 4.6 20120106 (prerelease)
+0x21129	GCC: (GNU) 4.8
+0x2113d	aeabi
+0x21166	.shstrtab
+0x21170	.interp
+0x21178	.hash
+0x2117e	.dynsym
+0x21186	.dynstr
+0x2118e	.rel.dyn
+0x21197	.rel.plt
+0x211a0	.text
+0x211a6	.rodata
+0x211ae	.ARM.extab
+0x211b9	.ARM.exidx
+0x211c4	.preinit_array
+0x211d3	.init_array
+0x211df	.fini_array
+0x211eb	.ctors
+0x211f2	.dynamic
+0x21200	.data
+0x2120b	.comment
+0x21214	.ARM.attributes

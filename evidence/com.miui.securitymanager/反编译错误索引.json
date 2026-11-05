@@ -1,0 +1,22 @@
+[
+  {
+    "file": "jadx/sources/z2/a.java",
+    "line": 538,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/z2/a.java",
+    "line": 621,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: z2.a.g(long, long):void\");"
+  },
+  {
+    "file": "jadx/sources/androidx/emoji2/text/j.java",
+    "line": 164,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/androidx/emoji2/text/j.java",
+    "line": 449,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: androidx.emoji2.text.j.e(java.lang.CharSequence, int, int):java.lang.CharSequence\");"
+  }
+]

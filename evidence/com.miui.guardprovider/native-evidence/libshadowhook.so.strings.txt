@@ -1,0 +1,319 @@
+0x244	Android
+0x290	8568313
+0x1199	__cxa_atexit
+0x11a6	__cxa_finalize
+0x11b5	__android_log_print
+0x11c9	__stack_chk_fail
+0x11da	gettid
+0x11e1	memcmp
+0x11e8	memcpy
+0x11ef	sigsetjmp
+0x11f9	syscall
+0x1201	calloc
+0x1208	dlclose
+0x1210	dlopen
+0x1217	dlsym
+0x1222	pthread_mutex_lock
+0x1235	pthread_mutex_unlock
+0x124a	sigaddset
+0x1254	sigaddset64
+0x1260	sigemptyset
+0x126c	sigemptyset64
+0x127a	sigfillset
+0x1285	sigfillset64
+0x1292	sigismember
+0x129e	sigismember64
+0x12ac	siglongjmp
+0x12b7	pthread_getspecific
+0x12cb	pthread_key_create
+0x12de	pthread_setspecific
+0x12f2	abort
+0x12f8	gettimeofday
+0x1305	memset
+0x1311	munmap
+0x1318	prctl
+0x131e	pthread_mutex_init
+0x1331	__errno
+0x1339	__system_property_get
+0x1354	fclose
+0x135b	fgets
+0x1361	fopen
+0x1367	getpagesize
+0x1373	mprotect
+0x137c	strcmp
+0x1383	strlen
+0x138a	write
+0x1390	getauxval
+0x139a	malloc
+0x13a1	pthread_mutex_destroy
+0x13b7	JNI_OnLoad
+0x13c2	shadowhook_get_debuggable
+0x13dc	shadowhook_get_mode
+0x13f0	shadowhook_get_recordable
+0x140a	shadowhook_get_records
+0x1421	shadowhook_get_version
+0x1438	shadowhook_init
+0x1448	shadowhook_set_debuggable
+0x1462	shadowhook_set_recordable
+0x147c	shadowhook_to_errmsg
+0x1491	pthread_rwlock_rdlock
+0x14a7	pthread_rwlock_unlock
+0x14bd	pthread_rwlock_wrlock
+0x14d3	shadowhook_get_prev_func
+0x14ec	shadowhook_pop_stack
+0x1501	strlcpy
+0x1509	__strlen_chk
+0x1516	realloc
+0x151e	strrchr
+0x1526	memalign
+0x152f	__strlcpy_chk
+0x153d	strdup
+0x1544	shadowhook_allow_reentrant
+0x155f	shadowhook_disallow_reentrant
+0x157d	shadowhook_dlclose
+0x1590	shadowhook_dlopen
+0x15a2	shadowhook_dlsym
+0x15b3	shadowhook_dlsym_dynsym
+0x15cb	shadowhook_dlsym_symtab
+0x15e3	shadowhook_dump_records
+0x15fb	shadowhook_get_errno
+0x1610	shadowhook_get_return_address
+0x162e	shadowhook_hook_func_addr
+0x1648	shadowhook_hook_sym_addr
+0x1661	shadowhook_hook_sym_name
+0x167a	shadowhook_hook_sym_name_callback
+0x169c	shadowhook_register_dl_fini_callback
+0x16c1	shadowhook_register_dl_init_callback
+0x16e6	shadowhook_unhook
+0x16f8	shadowhook_unregister_dl_fini_callback
+0x171f	shadowhook_unregister_dl_init_callback
+0x1746	__open_2
+0x174f	__read_chk
+0x175a	close
+0x1760	fstat
+0x1766	lseek
+0x176c	vsnprintf
+0x1776	__strchr_chk
+0x1783	dl_iterate_phdr
+0x1793	rewind
+0x179a	sscanf
+0x17a1	libdl.so
+0x17af	libc.so
+0x17b7	liblog.so
+0x17c1	libm.so
+0x17c9	libshadowhook.so
+0x29f1	shadowhook_tag
+0x2a00	a64: free_after_dlclose OK. target %lx
+0x2a27	Symbol size too small
+0x2a3d	/system/build.prop
+0x2a50	hook_sym_addr
+0x2a5e	pthread_getspecific
+0x2a72	pthread_setspecific
+0x2a86	shadowhook: hook_%s_addr(%p, %p) ...
+0x2aab	__loader_dlopen
+0x2abb	/vendor/lib64/egl/
+0x2ace	Init safe mod failed
+0x2ae3	Monitor dlopen failed
+0x2af9	hub: del func %lx
+0x2b0b	switch: unhook in %s mode OK: target_addr %lx, new_addr %lx
+0x2b47	shadowhook: dlopen crashed - %s
+0x2b67	app_process64
+0x2b75	__dl__ZL10dlopen_extPKciPK17android_dlextinfoPv
+0x2ba5	Init bytesig SIGSEGV mod failed
+0x2bc5	Find dlinfo failed
+0x2bd8	Unregister not-existed callback
+0x2bf8	nativeGetArch
+0x2c06	/system/bin/linker64
+0x2c1b	__dl__Z8__dlopenPKciPKv
+0x2c33	/odm/lib64/
+0x2c3f	ro.build.version.sdk=
+0x2c59	shadowhook-hub-stack
+0x2c6e	error,
+0x2c75	exit: alloc %s library, exit %lx, pc %lx, distance %lx, range [-%zx, %zx]
+0x2cbf	__dl__ZN6soinfo15CallDestructorsEv
+0x2ce2	linker: hook soinfo::call_constructors
+0x2d09	switch: hook in %s mode OK: target_addr %lx, new_addr %lx
+0x2d47	CrcGenerateTable
+0x2d58	XzUnpacker_Construct
+0x2d6d	sigprocmask64
+0x2d7f	%s: shadowhook init(mode: %s, debuggable: %s), return: %d, real-init: %s
+0x2dc8	Exit instruction mismatch
+0x2de2	shadowhook: hook_sym_name(%s, %s, %p) OK. return: %p. %d - %s
+0x2e20	[vdso]
+0x2e27	%lx-%lx r
+0x2e31	/vendor/lib64/hw/
+0x2e43	Duplicate hook
+0x2e52	exit: gap, %lx - %lx (load_bias %lx, %lx - %lx), NFZ %d, READABLE %d
+0x2e97	()Ljava/lang/String;
+0x2eac	nativeSetRecordable
+0x2ec0	linker: call_ctors post, load_bias %lx, name %s
+0x2ef0	linker: memory_scan_pre, UINTPTR_MAX == l_ld
+0x2f1d	false
+0x2f23	XzUnpacker_Free
+0x2f33	Not initialized
+0x2f43	exit: gap fill zero, %lx - %lx (load_bias %lx, %lx - %lx), READABLE %d
+0x2f8a	nativeGetVersion
+0x2fa0	nativeGetRecordable
+0x2fb4	linker: memory_scan_post, check val != 0 FAILED
+0x2fe4	hook_sym_name
+0x2ff2	shadowhook: hook_%s_addr(%p, %p) FAILED. %d - %s
+0x3023	Init bytesig SIGBUS mod failed
+0x3042	Register callback not supported
+0x3062	UNIQUE
+0x3069	shadowhook: unhook(%p) OK
+0x3083	a64 rewrite: type %d, inst %x
+0x30a1	a64: hook (WITHOUT EXIT) OK. target %lx -> new %lx -> enter %lx -> remaining %lx
+0x30f2	Write to arbitrary address crashed
+0x3115	TaskManager init Failed
+0x312d	shadowhook: hook_sym_name(%s, %s, %p) ...
+0x3157	a64 rewrite: fix addr %lx -> %lx
+0x3178	sigaction64
+0x3184	Init linker mod failed
+0x319b	Create hub failed
+0x31ad	Instruction rewrite failed
+0x31c8	Duplicate register callback
+0x31e4	__dl__ZN6soinfo16call_destructorsEv
+0x3208	linker: memory_scan_pre, check offsets FAILED, %zu, %zu, %zu, %zu, %zu
+0x324f	linker: soinfo memory scan post OK
+0x3272	Unhook on an error status task
+0x3291	ELF with an unsupported architecture
+0x32b6	nativeToErrmsg
+0x32c5	shadowhook: hook_sym_name(%s, %s, %p) FAILED. %d - %s
+0x32fb	Find symbol in ELF crashed
+0x3319	XzUnpacker_IsStreamWasFinished
+0x3338	libc.so
+0x3340	ro.build.version.sdk
+0x3355	shadowhook-hub-trampo
+0x336b	linker: get dlinfo by target addr: target_addr %p, sym_name %s, sym_sz %zu, load_bias %lx, pathname %s
+0x33d2	unknown
+0x33da	%04d-%02d-%02dT%02d:%02d:%02d.%03ld%c%02ld:%02ld,
+0x340c	MProtect failed
+0x341c	__dl__ZN6soinfo17call_constructorsEv
+0x3441	9999-99-99T00:00:00.000+00:00,
+0x3460	task: reset finished flag for: lib_name %s, sym_name %s
+0x349d	/system/lib64
+0x34ab	/odm/lib64/vndk-sp/
+0x34bf	Crc64GenerateTable
+0x34d2	Pending task
+0x34df	com/bytedance/shadowhook/ShadowHook
+0x3503	linker: soinfo memory scan pre OK. load_bias %zu, name %zu, phdr %zu, phnum %zu, called %zu
+0x3563	shadowhook: hook_%s_addr(%p, %p) OK. return: %p
+0x3593	/vendor/lib64/vndk-sp/
+0x35aa	Out of memory
+0x35b8	nativeGetMode
+0x35c6	(I)Ljava/lang/String;
+0x35dc	FAILED
+0x35e3	task: start monitor ...
+0x35fb	a64: hook (WITH EXIT) OK. target %lx -> exit %lx -> new %lx -> enter %lx -> remaining %lx
+0x3658	Find symbol in ELF failed
+0x3672	Switch not found
+0x3683	Verify original instruction crashed
+0x36a7	hub: add(new) func %lx
+0x36be	nativeSetDebuggable
+0x36d2	task: call_dtors() post callback. load_bias %lx, name %s
+0x370b	shadowhook: unhook(%p) FAILED. %d - %s
+0x3732	__dl__ZL10g_dl_mutex
+0x3749	shadowhook-exit
+0x3759	hub: add(re-enable) func %lx
+0x377a	abort
+0x3780	XzUnpacker_Code
+0x3790	sigprocmask
+0x379c	Create monitor thread failed
+0x37b9	exit: gap resize, %lx - %lx (load_bias %lx, %lx - %lx)
+0x37f0	nativeGetInitErrno
+0x3803	switch: hook(invisible) in %s mode OK: target_addr %lx, new_addr %lx
+0x3848	%s/%s
+0x384e	Instruction rewrite crashed
+0x386a	nativeGetRecords
+0x387b	linker: memory_scan_pre, read val_0...val_6 crashed
+0x38af	unhook
+0x38b6	shadowhook version 1.1.1
+0x38cf	.symtab
+0x38d7	.gnu_debugdata
+0x38e6	/proc/self/maps
+0x38f6	/system/lib64/liblzma.so
+0x390f	Init errno mod failed
+0x3925	Free exit crashed
+0x3937	hub: create trampo at %lx, size %zu + %zu = %zu
+0x3967	/vendor/lib64/
+0x3976	Open ELF crashed
+0x3987	hub: fill in code crashed
+0x39a1	libshadowhook_nothing.so
+0x39ba	linker: dlopen nothing.so FAILED
+0x39db	Init enter mod failed
+0x39f1	(null)
+0x39f8	nativeInit
+0x3a03	arm64
+0x3a09	(NULL)
+0x3a10	shadowhook: dlsym_dynsym crashed - %p, %s
+0x3a3a	/libart.so
+0x3a45	/apex/com.android.vndk.v
+0x3a5e	Linker with an unsupported architecture
+0x3a86	shadowhook-enter
+0x3a97	exit: free crashed
+0x3aaa	linker: call_dtors pre, load_bias %lx, name %s
+0x3add	Init hub mod failed
+0x3af1	Alloc enter failed
+0x3b04	/system/bin/app_process64
+0x3b21	exit: alloc crashed
+0x3b35	linker: hook soinfo::call_destructors
+0x3b5b	linker: check soinfo_offset_scan_ok FAILED
+0x3b86	linker: call_dtors post, load_bias %lx, name %s
+0x3bb7	error
+0x3bbd	a64: unhook OK. target %lx
+0x3bd8	Dladdr crashed
+0x3be7	Unhook on an unfinished task
+0x3c04	nativeGetDebuggable
+0x3c18	__dl__ZN6soinfo16CallConstructorsEv
+0x3c3c	linker: memory_scan_pre, NULL == handle
+0x3c69	(IZ)I
+0x3c73	linker64
+0x3c81	task: call_ctors() pre callback. load_bias %lx, name %s
+0x3cb9	__dl__Z9do_dlopenPKciPK17android_dlextinfoPv
+0x3ce6	Invalid argument
+0x3cf7	exit: in-library alloc, at %lx (load_bias %lx, %lx), len %zu
+0x3d34	linker: hook ctors and dtors %s
+0x3d54	linker: call_ctors pre, load_bias %lx, name %s
+0x3d83	switch: free_after_dlclose OK. target_addr %lx
+0x3db2	shadowhook: dlsym_symtab crashed - %p, %s
+0x3ddc	sigaction
+0x3de6	Verify original instruction failed
+0x3e09	Unknown error number
+0x3e1e	SHARED
+0x3e25	shadowhook: unhook(%p) ...
+0x3e40	/libc.so
+0x3e9a	unknown
+0x409a	unknown
+0x964f	RKyix)
+0x974f	*cji8;
+0x9858	cj{8(
+0x9878	cj{8{
+0xab8c	*ih8_
+0xae7c	*!@9j
+0xb3cf	6j!@9j
+0xbf97	Th&@y
+0xd6fd	0@yIL@
+0x110c8	b2@yr
+0x12dcc	Linker: LLD 12.0.9 (/Volumes/Android/buildbot/src/android/llvm-r416183/out/llvm-project/lld c935d99d7cf2016289302412d708641d52d2f7ee)
+0x12e52	Android (8481493, based on r416183c2) clang version 12.0.9 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee)
+0x12ef2	.init_array
+0x12efe	.fini_array
+0x12f0a	.text
+0x12f15	.comment
+0x12f1e	.note.android.ident
+0x12f32	.got.plt
+0x12f3b	.rela.plt
+0x12f4a	.dynstr
+0x12f52	.eh_frame_hdr
+0x12f60	.gnu.version_r
+0x12f6f	.data.rel.ro
+0x12f7c	.rela.dyn
+0x12f86	.gnu.version
+0x12f93	.dynsym
+0x12f9b	.gnu.hash
+0x12fa5	.eh_frame
+0x12faf	.note.gnu.build-id
+0x12fc2	.dynamic
+0x12fcb	.shstrtab
+0x12fd5	.rodata
+0x12fdd	.data

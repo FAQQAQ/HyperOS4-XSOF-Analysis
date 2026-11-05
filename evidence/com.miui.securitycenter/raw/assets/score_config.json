@@ -1,0 +1,138 @@
+{
+  "timeWindows": [
+    {
+      "timeWindow": 1,
+      "wight": 0.7
+    },
+    {
+      "timeWindow": 2,
+      "wight": 0.3
+    }
+  ],
+  "eventList": [
+    {
+      "eventName": "screenShare",
+      "eventScore": 10
+    },
+    {
+      "eventName": "callForwarding",
+      "eventScore": 6
+    },
+    {
+      "eventName": "airplaneMode",
+      "eventScore": 1
+    },
+    {
+      "eventName": "simFraudCall",
+      "eventScore": 8
+    },
+    {
+      "eventName": "voipFraudCall",
+      "eventScore": 7
+    },
+    {
+      "eventName": "fraudUrl",
+      "eventScore": 7
+    },
+    {
+      "eventName": "financialApp",
+      "eventScore": 3
+    },
+    {
+      "eventName": "conferenceApp",
+      "eventScore": 6
+    },
+    {
+      "eventName": "loanApp",
+      "eventScore": 6
+    },
+    {
+      "eventName": "riskApp",
+      "eventScore": 15
+    },
+    {
+      "eventName": "suspiciousApp",
+      "eventScore": 1
+    }
+  ],
+  "eventTimeList": [
+    {
+      "eventName": "screenShare",
+      "eventTimeScore": [
+        {
+          "time": 0,
+          "score": 4
+        },
+        {
+          "time": 1,
+          "score": 6
+        }
+      ]
+    },
+    {
+      "eventName": "voipFraudCall",
+      "eventTimeScore": [
+        {
+          "time": 1,
+          "score": 2
+        },
+        {
+          "time": 2,
+          "score": 5
+        }
+      ]
+    },
+    {
+      "eventName": "simCall",
+      "eventTimeScore": [
+        {
+          "time": 2,
+          "score": 2
+        },
+        {
+          "time": 3,
+          "score": 4
+        }
+      ]
+    },
+    {
+      "eventName": "overseasCall",
+      "eventTimeScore": [
+        {
+          "time": 2,
+          "score": 2
+        },
+        {
+          "time": 3,
+          "score": 5
+        }
+      ]
+    },
+    {
+      "eventName": "simFraudCall",
+      "eventTimeScore": [
+        {
+          "time": 2,
+          "score": 2
+        },
+        {
+          "time": 3,
+          "score": 5
+        }
+      ]
+    },
+    {
+      "eventName": "virtualOperatorCall",
+      "eventTimeScore": [
+        {
+          "time": 2,
+          "score": 2
+        },
+        {
+          "time": 3,
+          "score": 5
+        }
+      ]
+    }
+  ]
+}

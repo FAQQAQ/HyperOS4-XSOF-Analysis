@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="330" android:versionName="3.1.4-20260902.0" android:compileSdkVersion="37" android:compileSdkVersionCodename="17" package="com.miui.guardprovider" platformBuildVersionCode="37" platformBuildVersionName="17">
+  <uses-sdk android:minSdkVersion="33" android:targetSdkVersion="37"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.PEERS_MAC_ADDRESS"/>
+  <uses-permission android:name="com.miui.securitycenter.permission.ACCESS_SECURITY_CENTER_PROVIDER"/>
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission android:name="com.android.settings.permission.CLOUD_SETTINGS_PROVIDER"/>
+  <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+  <uses-permission android:name="android.permission.ACCESS_MTP"/>
+  <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+  <uses-permission android:name="miui.permission.READ_AND_WIRTE_PERMISSION_MANAGER"/>
+  <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+  <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+  <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+  <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+  <uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+  <permission android:name="com.miui.guardprovider.permission.Guard_Provider" android:protectionLevel="0x00000012"/>
+  <uses-permission android:name="com.miui.guardprovider.permission.Guard_Provider"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+  <uses-permission android:name="com.miui.guardprovider.permission.TMF_SHARK"/>
+  <permission android:name="com.miui.guardprovider.permission.TMF_SHARK" android:protectionLevel="0x00000002"/>
+  <uses-permission android:name="freemme.permission.msa"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE"/>
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+  <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+  <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+  <uses-permission android:name="android.permission.CAPTURE_VOICE_COMMUNICATION_OUTPUT"/>
+  <uses-permission android:name="android.permission.MODIFY_AUDIO_ROUTING"/>
+  <uses-permission android:name="android.permission.MANAGE_MEDIA_PROJECTION"/>
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION"/>
+  <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <permission android:name="com.miui.guardprovider.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="0x00000002"/>
+  <uses-permission android:name="com.miui.guardprovider.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+  <uses-permission android:name="xiaomi.permission.aivision.MI_AI_TRANSLATE"/>
+  <permission android:name="com.miui.guardprovider.permission.VirusScanNG" android:protectionLevel="0x00000012"/>
+  <uses-permission android:name="com.miui.guardprovider.permission.VirusScanNG"/>
+  <permission android:name="com.miui.guardprovider.permission.MIPUSH_RECEIVE" android:protectionLevel="0x00000002"/>
+  <uses-permission android:name="com.miui.guardprovider.permission.MIPUSH_RECEIVE"/>
+  <application android:theme="@7F11019E" android:label="@7F100049" android:icon="@7F080090" android:name="com.miui.guardprovider.GuardApplication" android:allowBackup="false" android:largeHeap="true" android:extractNativeLibs="false" android:networkSecurityConfig="@7F130000" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:requestLegacyExternalStorage="true">
+    <activity android:theme="@7F110006" android:name="com.miui.guardprovider.action.impl.AlertActivity" android:exported="false" android:excludeFromRecents="true"/>
+    <activity android:theme="@7F110006" android:name="com.miui.guardprovider.action.impl.AppListAlertActivity" android:exported="false" android:excludeFromRecents="true"/>
+    <provider android:name="com.miui.guardprovider.GuardProvider" android:permission="com.miui.guardprovider.permission.Guard_Provider" android:exported="true" android:authorities="guard"/>
+    <meta-data android:name="AVL_OPENSDK_APPKEY" android:value="D5DFB878335A3EF4E76F60ED470B8EC8"/>
+    <meta-data android:name="guardprovider.support.mix.scan" android:value="true"/>
+    <meta-data android:name="guardprovider.scan_properties" android:value="2"/>
+    <meta-data android:name="global_cloud_scan" android:value="true"/>
+    <meta-data android:name="use_new_privacy" android:value="true"/>
+    <service android:name="com.miui.guardprovider.manager.SecurityService" android:permission="com.miui.guardprovider.permission.Guard_Provider" android:exported="true">
+      <intent-filter>
+        <action android:name="com.miui.guardprovider.action.antivirusservice"/>
+        <action android:name="com.miui.guardprovider.action.urlscan"/>
+      </intent-filter>
+    </service>
+    <meta-data android:name="com.xiaomi.xms.APP_ID" android:value="2882303761517522561"/>
+    <meta-data android:name="com.xiaomi.xms.BUILD_TYPE_DEBUG" android:value="false"/>
+    <activity android:theme="@7F110006" android:name="com.miui.guardprovider.aiguard.AlertActivity" android:exported="false" android:process=":ai" android:excludeFromRecents="true">
+      <meta-data android:name="miui.supportFlipFullScreen" android:value="0"/>
+      <property android:name="miui.continuity.policy" android:value="5"/>
+    </activity>
+    <service android:name="com.miui.guardprovider.aiguard.AiGuardService" android:permission="com.miui.guardprovider.permission.Guard_Provider" android:exported="true" android:process=":ai" android:foregroundServiceType="0x000000A0"/>
+    <meta-data android:name="required_permissions" android:value="@7F10015C"/>
+    <meta-data android:name="miui.focusNotificationVersion" android:value="1"/>
+    <meta-data android:name="miui.aiGuardVersion" android:value="2"/>
+    <activity android:theme="@7F1101A6" android:name="com.miui.guardprovider.aiguard.PermissionRequestActivity" android:permission="com.miui.guardprovider.permission.Guard_Provider" android:exported="true" android:process=":ai" android:excludeFromRecents="true"/>
+    <meta-data android:name="appcompat" android:value="3.100000"/>
+    <meta-data android:name="os_private_label" android:value="PRIVATE_OS020"/>
+    <meta-data android:name="miuixbasewidget" android:value="1.000000"/>
+    <meta-data android:name="popupwidget" android:value="1.000000"/>
+    <meta-data android:name="androidbasewidget" android:value="1.000000"/>
+    <meta-data android:name="miuixstretchablewidget" android:value="1.000000"/>
+    <meta-data android:name="slidingwidget" android:value="1.000000"/>
+    <meta-data android:name="pickerwidget" android:value="1.000000"/>
+    <meta-data android:name="viewpager" android:value="2.000000"/>
+    <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.miui.guardprovider.androidx-startup">
+      <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+      <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+      <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+      <meta-data android:name="okhttp3.internal.platform.PlatformInitializer" android:value="androidx.startup"/>
+      <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+    </provider>
+    <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@7F05000A" android:exported="true" android:directBootAware="false"/>
+    <service android:name="androidx.work.impl.foreground.SystemForegroundService" android:enabled="@7F050009" android:exported="false" android:directBootAware="false"/>
+    <receiver android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:enabled="true" android:exported="false" android:directBootAware="false"/>
+    <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+      </intent-filter>
+    </receiver>
+    <meta-data android:name="textutilities" android:value="2.000000"/>
+    <meta-data android:name="graphics" android:value="2.000000"/>
+    <meta-data android:name="springback" android:value="3.100000"/>
+    <meta-data android:name="nest" android:value="2.000000"/>
+    <meta-data android:name="haptic" android:value="1.000000"/>
+    <meta-data android:name="smooth" android:value="1.000000"/>
+    <meta-data android:name="core" android:value="2.000000"/>
+    <meta-data android:name="dynamicoverscroller" android:value="2.000000"/>
+    <meta-data android:name="folme" android:value="2.000000"/>
+    <service android:name="com.miui.guardprovider.server.VirusScanService" android:permission="com.miui.guardprovider.permission.VirusScanNG" android:enabled="true" android:exported="true">
+      <intent-filter>
+        <action android:name="com.miui.guardprovider.action.antivirusservice_NG"/>
+      </intent-filter>
+    </service>
+    <provider android:name="com.miui.guardprovider.server.db.VirusScanContentProvider" android:permission="com.miui.guardprovider.permission.VirusScanNG" android:exported="true" android:authorities="com.miui.guardprovider.virusscan"/>
+    <receiver android:name="com.miui.guardprovider.push.GuardPushMessageReceiver" android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE" android:exported="true">
+      <intent-filter>
+        <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.xiaomi.mipush.ERROR"/>
+      </intent-filter>
+    </receiver>
+    <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"/>
+    <receiver android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+      </intent-filter>
+    </receiver>
+    <meta-data android:name="animation" android:value="1.000000"/>
+    <meta-data android:name="devicebaseinfo" android:value="1.000000"/>
+    <meta-data android:name="MIPUSH_SDK_ONE_PUSH" android:value="true"/>
+    <meta-data android:name="OP_CHANNEL_GROUP" android:value="true"/>
+    <meta-data android:name="MIPUSH_SDK_VERSION_CODE" android:value="70124"/>
+    <meta-data android:name="MIPUSH_SDK_VERSION_NAME" android:value="7_12_4-C"/>
+    <service android:name="com.xiaomi.push.service.XMPushService" android:enabled="true" android:process=":pushservice"/>
+    <service android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false" android:process=":pushservice"/>
+    <service android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE" android:enabled="true" android:exported="true"/>
+    <service android:name="com.xiaomi.mipush.sdk.MessageHandleService" android:enabled="true"/>
+    <service android:name="com.xiaomi.push.service.UploadLogSDKService" android:permission="miui.permission.USE_INTERNAL_GENERAL_API" android:exported="true" android:process=":uploadLogProcess">
+      <intent-filter>
+        <action android:name="com.xiaomi.push.UPLOAD_LOG_SDK_SERVICE"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </service>
+    <provider android:name="com.xiaomi.push.service.logupload.LogUploadFileProvider" android:exported="false" android:authorities="com.miui.guardprovider.push.fileprovider" android:grantUriPermissions="true"/>
+    <receiver android:name="com.xiaomi.push.service.receivers.PingReceiver" android:exported="false" android:process=":pushservice">
+      <intent-filter>
+        <action android:name="com.xiaomi.push.PING_TIMER"/>
+      </intent-filter>
+    </receiver>
+    <activity android:theme="@android:01030010" android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity" android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE" android:enabled="true" android:exported="true" android:excludeFromRecents="true" android:launchMode="3">
+      <meta-data android:name="supportStyle" android:value="scene|voip"/>
+    </activity>
+    <meta-data android:name="theme" android:value="1.000000"/>
+  </application>
+</manifest>

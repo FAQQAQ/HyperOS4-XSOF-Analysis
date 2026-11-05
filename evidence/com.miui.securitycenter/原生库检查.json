@@ -1,0 +1,185 @@
+[
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/libbytehook.so",
+    "elf_size": 59080,
+    "symbol_tool_rc": 0,
+    "network_candidates": [
+      "0xdeb2\tAndroid (8481493, based on r416183c2) clang version 12.0.9 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee)"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/libfastplayer.so",
+    "elf_size": 461696,
+    "symbol_tool_rc": 0,
+    "network_candidates": []
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/libfca_detect.so",
+    "elf_size": 247488,
+    "symbol_tool_rc": 0,
+    "network_candidates": [
+      "0x3bbe8\tAndroid (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349)",
+      "0x3bd3b\tAndroid (13989888, +pgo, -bolt, +lto, -mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349)"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/libfca_detect_jni.so",
+    "elf_size": 136808,
+    "symbol_tool_rc": 0,
+    "network_candidates": [
+      "0x20be0\tAndroid (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349)",
+      "0x20d33\tAndroid (13989888, +pgo, -bolt, +lto, -mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349)"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/libjni_load_serinum.so",
+    "elf_size": 5280,
+    "symbol_tool_rc": 0,
+    "network_candidates": [
+      "0xcc9\tAndroid (13624864, +pgo, +bolt, +lto, +mlgo, based on r530567e) clang version 19.0.1 (https://android.googlesource.com/toolchain/llvm-project 97a699bf4812a18fb657c2779f5296a4ab2694d2)",
+      "0xd94\tAndroid (13624864, based on r530567e) clang version 19.0.1 (https://android.googlesource.com/toolchain/llvm-project 97a699bf4812a18fb657c2779f5296a4ab2694d2)"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/libjni_sound_effect.so",
+    "elf_size": 270160,
+    "symbol_tool_rc": 0,
+    "network_candidates": [
+      "0x416f0\tAndroid (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/libjni_sound_effect_2_0.so",
+    "elf_size": 405736,
+    "symbol_tool_rc": 0,
+    "network_candidates": [
+      "0x6276c\tAndroid (12896553, +pgo, +bolt, +lto, +mlgo, based on r530567c) clang version 19.0.0 (https://android.googlesource.com/toolchain/llvm-project 97a699bf4812a18fb657c2779f5296a4ab2694d2)"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/liblib-riskcontrol.so",
+    "elf_size": 370744,
+    "symbol_tool_rc": 0,
+    "network_candidates": [
+      "0x59e44\tAndroid (12896553, +pgo, +bolt, +lto, +mlgo, based on r530567c) clang version 19.0.0 (https://android.googlesource.com/toolchain/llvm-project 97a699bf4812a18fb657c2779f5296a4ab2694d2)",
+      "0x59efc\tAndroid (12896553, +pgo, -bolt, +lto, -mlgo, based on r530567c) clang version 19.0.0 (https://android.googlesource.com/toolchain/llvm-project 97a699bf4812a18fb657c2779f5296a4ab2694d2)"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/libmicontinuity_sdk.so",
+    "elf_size": 1666664,
+    "symbol_tool_rc": 0,
+    "network_candidates": [
+      "0x196574\tAndroid (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)",
+      "0x19662c\tAndroid (7019983 based on r365631c3) clang version 9.0.9 (https://android.googlesource.com/toolchain/llvm-project a2a1e703c0edb03ba29944e529ccbf457742737b) (based on LLVM 9.0.9svn)"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/libmievent.so",
+    "elf_size": 4440,
+    "symbol_tool_rc": 0,
+    "network_candidates": [
+      "0x9e8\tAndroid (7714059, based on r416183c1) clang version 12.0.8 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee)"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/libmiffmpeg.so",
+    "elf_size": 2417104,
+    "symbol_tool_rc": 0,
+    "network_candidates": [
+      "0x1ec183\tIf you want to help, upload a sample of this file to https://streams.videolan.org/upload/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/libmotion.so",
+    "elf_size": 936064,
+    "symbol_tool_rc": 0,
+    "network_candidates": [
+      "0xe3fe1\tAndroid (12027248, +pgo, +bolt, +lto, +mlgo, based on r522817) clang version 18.0.1 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/libnap.so",
+    "elf_size": 5344,
+    "symbol_tool_rc": 0,
+    "network_candidates": [
+      "0xcd1\tAndroid (12027248, based on r522817) clang version 18.0.1 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)",
+      "0xd6e\tAndroid (12027248, +pgo, +bolt, +lto, +mlgo, based on r522817) clang version 18.0.1 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/libsec-common-utils.so",
+    "elf_size": 331496,
+    "symbol_tool_rc": 0,
+    "network_candidates": []
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/libshadowhook.so",
+    "elf_size": 79464,
+    "symbol_tool_rc": 0,
+    "network_candidates": [
+      "0x12e52\tAndroid (8481493, based on r416183c2) clang version 12.0.9 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee)"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/libshadowhook_nothing.so",
+    "elf_size": 1112,
+    "symbol_tool_rc": 0,
+    "network_candidates": []
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/libtcp.so",
+    "elf_size": 82360,
+    "symbol_tool_rc": 0,
+    "network_candidates": [
+      "0x1391a\tAndroid (12027248, based on r522817) clang version 18.0.1 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)",
+      "0x139b7\tAndroid (12027248, +pgo, +bolt, +lto, +mlgo, based on r522817) clang version 18.0.1 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/libtensorflowlite_jni.so",
+    "elf_size": 4034552,
+    "symbol_tool_rc": 0,
+    "network_candidates": [
+      "0x231eb\tSelect TensorFlow op(s), included in the given model, is(are) not supported by this interpreter. Make sure you apply/link the Flex delegate before inference. For the Android, it can be resolved by adding \"org.tensorflow:tensorflow-lite-select-tf-ops\" dependency. See instructions: https://www.tensorflow.org/lite/guide/ops_select",
+      "0x36c39\tSee instructions: https://www.tensorflow.org/lite/guide/ops_custom ",
+      "0x3d8730\tAndroid (8490178, based on r450784d) clang version 14.0.6 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/libxcrash.so",
+    "elf_size": 90776,
+    "symbol_tool_rc": 0,
+    "network_candidates": [
+      "0x15ab4\tAndroid (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "container": "lib/arm64-v8a/libxcrash_dumper.so",
+    "elf_size": 118376,
+    "symbol_tool_rc": 0,
+    "network_candidates": [
+      "0x1c5a4\tAndroid (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)"
+    ]
+  }
+]

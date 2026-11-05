@@ -1,0 +1,21 @@
+﻿type,name,exported,permission,readPermission,writePermission,process,authorities,intent_actions
+activity,com.xiaomi.trustservice.remoteservice.locksettings.AuthUIActivity,true,,,,,,
+activity,com.xiaomi.trustservice.remoteservice.locksettings.InternalAuthUIActivity,false,,,,,,
+activity,com.xiaomi.trustservice.remoteservice.locksettings.LockScreenUIActivity,false,,,,,,
+service,com.xiaomi.trustservice.MiTrustService,true,,,,,,com.xiaomi.trustservice.IMiTrustService
+service,com.xiaomi.trustservice.remoteauthservice.remoteAuthService,true,,,,,,com.xiaomi.trustservice.remoteauthservice.IMiRemoteAuthService | com.xiaomi.trustservice.remoteauthservice.IMiRemoteAuthUnlockUI
+service,com.xiaomi.trustservice.remoteservice.remoteService,true,,,,,,com.xiaomi.trustservice.IMiRemoteAuth | com.xiaomi.trustservice.IMiDeviceStatusService
+service,com.xiaomi.trustservice.common.CommService,false,,,,,,
+service,com.xiaomi.trustservice.common.ContinuityService,true,com.xiaomi.permission.BIND_CONTINUITY_LISTENER_SERVICE,,,,,com.xiaomi.continuity.action.STATIC_CONFIG_ACTION
+service,com.xiaomi.trustservice.rootpub.PubCertRevise,true,,,,,,com.xiaomi.trustservice.rootpub.PubCertRevise | com.xiaomi.trustservice.rootpub.RotateKeyRevise
+service,com.xiaomi.trustservice.face.FaceManagerProxyImpl,true,,,,,,com.xiaomi.trustservice.face.FaceManagerProxy
+service,com.xiaomi.trustservice.ota.SocidProvision,true,,,,,,com.xiaomi.trustservice.ota.SocidProvision
+service,com.ifaa.seccam.IFAASecCamService,true,,,,,,com.ifaa.seccam.IFAASecCamService
+service,com.xiaomi.trustservice.secmedia.MiSecCamService,true,,,,,,com.xiaomi.trustservice.secmedia.MiSecCamService
+service,com.xiaomi.trustservice.signature.MiTrueDeviceSignatureService,true,com.xiaomi.trustservice.permission.BIND_MITRUE_DEVICE_SERVICE,,,,,com.xiaomi.trustservice.signature.MiTrueDeviceSignatureService
+service,com.xiaomi.trustservice.unifiedencryptservice.unifiedEncryptService,true,,,,,,com.xiaomi.trustservice.unifiedencryptservice.IMiUnifiedEncryptService
+receiver,com.xiaomi.trustservice.remoteauthservice.AccountChangedReceiver,true,,,,,,android.accounts.LOGIN_ACCOUNTS_POST_CHANGED
+service,com.xiaomi.secret.service.SEProtectorManagerService,true,com.xiaomi.trustservice.permission.BIND_MITRUE_DEVICE_SERVICE,,,,,aidl.com.xiaomi.secret.ISEProtectorManager
+provider,androidx.startup.InitializationProvider,false,,,,,com.xiaomi.trustservice.androidx-startup,
+provider,com.xiaomi.continuity.InitializationProvider,false,,,,,com.xiaomi.trustservice.continuity-startup,
+activity,com.xiaomi.xms.base.TemporaryInvisibleActivity,false,,,,,,

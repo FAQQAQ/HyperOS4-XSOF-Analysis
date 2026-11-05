@@ -1,0 +1,26 @@
+[
+  {
+    "dex": "classes.dex",
+    "classes": 9285,
+    "methods": 57988,
+    "strings": 59223
+  },
+  {
+    "dex": "classes2.dex",
+    "classes": 8263,
+    "methods": 57350,
+    "strings": 56536
+  },
+  {
+    "dex": "classes3.dex",
+    "classes": 9378,
+    "methods": 56546,
+    "strings": 60960
+  },
+  {
+    "dex": "classes4.dex",
+    "classes": 6049,
+    "methods": 37359,
+    "strings": 42824
+  }
+]

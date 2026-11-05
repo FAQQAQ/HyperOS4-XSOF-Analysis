@@ -1,0 +1,16 @@
+
+raw/lib/arm64-v8a/libthread-affinity.so:	file format elf64-littleaarch64
+
+DYNAMIC SYMBOL TABLE:
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __cxa_finalize
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __cxa_atexit
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __register_atfork
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       sched_setaffinity
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __errno
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       strerror
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __stack_chk_fail
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       sched_getaffinity
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       sched_getcpu
+0000000000004960 g    DF .text	000000000000017c              Java_com_miui_guardprovider_affinity_internal_AbsAffinityWrapper_setAffinity
+0000000000004adc g    DF .text	0000000000000158              Java_com_miui_guardprovider_affinity_internal_AbsAffinityWrapper_currentAffinity
+0000000000004c34 g    DF .text	0000000000000004              Java_com_miui_guardprovider_affinity_internal_AbsAffinityWrapper_whereAmIRunning

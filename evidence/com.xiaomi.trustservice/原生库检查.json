@@ -1,0 +1,21 @@
+[
+  {
+    "package": "com.xiaomi.trustservice",
+    "container": "lib/arm64-v8a/libmicontinuity_sdk.so",
+    "elf_size": 1666952,
+    "symbol_tool_rc": 0,
+    "network_candidates": [
+      "0x196694\tAndroid (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)",
+      "0x19674c\tAndroid (7019983 based on r365631c3) clang version 9.0.9 (https://android.googlesource.com/toolchain/llvm-project a2a1e703c0edb03ba29944e529ccbf457742737b) (based on LLVM 9.0.9svn)"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "container": "lib/arm64-v8a/libmievent.so",
+    "elf_size": 4440,
+    "symbol_tool_rc": 0,
+    "network_candidates": [
+      "0x9e8\tAndroid (7714059, based on r416183c1) clang version 12.0.8 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee)"
+    ]
+  }
+]

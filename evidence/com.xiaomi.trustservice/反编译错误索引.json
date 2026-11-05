@@ -1,0 +1,22 @@
+[
+  {
+    "file": "jadx/sources/p032r/d.java",
+    "line": 687,
+    "message": "/*  JADX ERROR: Type inference failed"
+  },
+  {
+    "file": "jadx/sources/p032r/d.java",
+    "line": 1806,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: p032r.d.b(p.c, boolean):void\");"
+  },
+  {
+    "file": "jadx/sources/androidx/coordinatorlayout/widget/CoordinatorLayout.java",
+    "line": 1485,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/androidx/coordinatorlayout/widget/CoordinatorLayout.java",
+    "line": 1738,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: androidx.coordinatorlayout.widget.CoordinatorLayout.s():void\");"
+  }
+]

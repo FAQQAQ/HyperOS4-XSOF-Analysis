@@ -1,0 +1,234 @@
+0x244	Android
+0x290	8568313
+0x1095	__cxa_atexit
+0x10a2	__cxa_finalize
+0x10b6	malloc
+0x10bd	realloc
+0x10c5	__stack_chk_fail
+0x10d6	dlclose
+0x10de	dlopen
+0x10e5	dlsym
+0x10eb	gettid
+0x10f2	sigsetjmp
+0x10fc	syscall
+0x1104	__errno
+0x110c	__open_2
+0x1115	__read_chk
+0x1120	calloc
+0x1127	close
+0x112d	fstat
+0x1133	getauxval
+0x113d	lseek
+0x1143	strcmp
+0x114a	strncmp
+0x1152	__android_log_print
+0x1166	dl_iterate_phdr
+0x1176	__vsnprintf_chk
+0x1186	bytehook_get_mode
+0x1198	bytehook_get_prev_func
+0x11af	bytehook_get_return_address
+0x11cb	bytehook_pop_stack
+0x11de	pthread_getspecific
+0x11f2	pthread_key_create
+0x1205	pthread_mutex_lock
+0x1218	pthread_mutex_unlock
+0x122d	pthread_rwlock_rdlock
+0x1243	pthread_rwlock_unlock
+0x1259	pthread_rwlock_wrlock
+0x126f	pthread_setspecific
+0x1283	abort
+0x1289	pthread_cond_destroy
+0x129e	pthread_cond_init
+0x12b0	pthread_cond_signal
+0x12c4	pthread_mutex_destroy
+0x12da	pthread_mutex_init
+0x12ed	strdup
+0x12f4	gettimeofday
+0x1301	pthread_cond_wait
+0x1313	memcpy
+0x131a	JNI_OnLoad
+0x1325	bytehook_add_ignore
+0x1339	bytehook_get_debug
+0x134c	bytehook_get_recordable
+0x1364	bytehook_get_records
+0x1379	bytehook_get_version
+0x138e	bytehook_init
+0x139c	bytehook_set_debug
+0x13af	bytehook_set_recordable
+0x13c7	__strlen_chk
+0x13d4	dladdr
+0x13db	memcmp
+0x13e2	strlcpy
+0x13ea	strlen
+0x13f1	strrchr
+0x13f9	pthread_rwlock_destroy
+0x1410	pthread_rwlock_init
+0x1424	vsnprintf
+0x142e	shadowhook_register_dl_fini_callback
+0x1453	shadowhook_register_dl_init_callback
+0x1478	memset
+0x1484	munmap
+0x148b	prctl
+0x1491	__system_property_get
+0x14ac	fclose
+0x14b3	fgets
+0x14b9	fopen
+0x14bf	getpagesize
+0x14cb	mprotect
+0x14d4	write
+0x14da	bytehook_add_dlopen_callback
+0x14f7	bytehook_del_dlopen_callback
+0x1514	bytehook_dump_records
+0x152a	bytehook_hook_all
+0x153c	bytehook_hook_partial
+0x1552	bytehook_hook_single
+0x1567	bytehook_unhook
+0x1577	sigaddset
+0x1581	sigaddset64
+0x158d	sigemptyset
+0x1599	sigemptyset64
+0x15a7	sigfillset
+0x15b2	sigfillset64
+0x15bf	sigismember
+0x15cb	sigismember64
+0x15d9	siglongjmp
+0x15e4	libdl.so
+0x15f2	libc.so
+0x15fa	liblog.so
+0x1604	libshadowhook.so
+0x1615	libm.so
+0x161d	libbytehook.so
+0x2350	libdl.so
+0x2359	__loader_dlopen
+0x2369	pthread_getspecific
+0x237d	pthread_setspecific
+0x2391	/system/build.prop
+0x23a4	ELF: decrement_ref_count send cond signal
+0x23ce	bytehook-plt-trampolines
+0x23e7	hub: del func %lx
+0x23f9	__dl__ZL10dlopen_extPKciPK17android_dlextinfoPv
+0x2429	__cfi_slowpath_diag
+0x243d	/system/bin/linker64
+0x2452	nativeGetArch
+0x2460	__dl__Z23linker_get_error_bufferv
+0x2482	android_dlopen_ext
+0x2495	DL monitor: post __loader_android_dlopen_ext(), filename: %s
+0x24d2	error,
+0x24d9	ro.build.version.sdk=
+0x24ef	ELF manager: del, wait cond signal, ref_count: %d
+0x2521	libshadowhook.so
+0x2532	bytehook-stack
+0x2549	task manager: reset finished flag for: caller_path_name %s, sym_name %s
+0x2595	sigprocmask64
+0x25a3	reloc: CFI hook_single(%s, %s) OK.
+0x25c6	__cfi_slowpath
+0x25d5	ELF manager: destroy %016lx %s
+0x25f4	reloc: CFI hook_single(%s, %s) FAILED. errno: %d.
+0x2626	()Ljava/lang/String;
+0x263b	nativeSetRecordable
+0x264f	__dl__ZL23__bionic_format_dlerrorPKcS0_
+0x2677	MANUAL
+0x267e	false
+0x2684	DL monitor: post android_dlopen_ext(), filename: %s
+0x26b8	nativeGetVersion
+0x26ce	nativeGetRecordable
+0x26e7	%s: %s
+0x26ee	(Ljava/lang/String;)I
+0x2704	DL monitor: post dlopen(), filename: %s
+0x272c	AUTOMATIC
+0x2736	%s: bytehook init(mode: %s, debuggable: %s), return: %d, real-init: %s
+0x2781	sigaction64
+0x2795	unknown
+0x279d	%04d-%02d-%02dT%02d:%02d:%02d.%03ld%c%02ld:%02ld,
+0x27cf	libc.so
+0x27d7	ro.build.version.sdk
+0x27ec	DL iterate: iterate by dl_iterate_phdr
+0x2813	9999-99-99T00:00:00.000+00:00,
+0x2832	switch: hook in %s mode OK: sym %lx, new_addr %lx, orig_addr %lx
+0x2873	NOSYM.
+0x2883	task manager: dl_fini, load_bias %lx, %s
+0x28ac	nativeGetMode
+0x28ba	(I)Ljava/lang/String;
+0x28d0	reloc: CFI hook_single(%s, %s) NOSYM.
+0x28f6	hub: add(new) func %lx
+0x290d	__dl__ZL10g_dl_mutex
+0x2926	task manager: try hook in new ELF: %s
+0x294c	bytehook_tag
+0x2959	libbytehook.so
+0x2968	hub: add(re-enable) func %lx
+0x2985	com/bytedance/android/bytehook/ByteHook
+0x29b1	abort
+0x29b7	partial
+0x29c1	DL monitor: pre init
+0x29d6	__loader_android_dlopen_ext
+0x29f6	FAILED. errno: %d.
+0x2a09	sigprocmask
+0x2a15	.symtab
+0x2a1d	dlopen
+0x2a24	nativeGetRecords
+0x2a35	unhook
+0x2a3c	hub: create trampo at %lx, size %zu + %zu = %zu
+0x2a6c	DL monitor: post init, OK
+0x2a86	libshadowhook_nothing.so
+0x2a9f	hub: fill in code crashed
+0x2ab9	nativeInit
+0x2ac4	arm64
+0x2aca	(null)
+0x2ad1	DL monitor: post init, FAILED
+0x2aef	bytehook version 1.1.1
+0x2b06	/system/bin/app_process64
+0x2b20	nativeAddIgnore
+0x2b31	nativeGetDebug
+0x2b40	error
+0x2b46	switch: unhook in %s mode OK: sym %lx, new_addr %lx, orig_addr %lx
+0x2b89	ELF manager: del %016lx %s
+0x2ba4	ELF manager: add %016lx %s
+0x2bbf	switch: hook(invisible) in %s mode OK: sym %lx, new_addr %lx, orig_addr %lx
+0x2c0b	single
+0x2c12	dlopen failed
+0x2c20	(IZ)I
+0x2c2a	nativeSetDebug
+0x2c39	__dl__Z9do_dlopenPKciPK17android_dlextinfoPv
+0x2c6b	PARTIAL
+0x2c73	DL monitor: post __loader_dlopen(), filename: %s
+0x2ca4	bytehook: %s_%s(%s, %s, %s, %p) %s
+0x2cc7	task manager: dl_init, load_bias %lx, %s
+0x2cf0	sigaction
+0x2cfa	UPEP2IM
+0x2d03	PPPPPPPP
+0x2d0d	PPPPA
+0x5e7d	q@y+A
+0x81d8	h2@9e&@
+0x8864	*ih8_
+0x8b38	*!@9j
+0x901b	6j!@9
+0x9d13	6 #@y
+0x9d7b	T '@y
+0x9d97	T +@y
+0xbe47	RKyix)
+0xbf47	*cji8;
+0xc050	cj{8(
+0xc070	cj{8{
+0xde2c	Linker: LLD 12.0.9 (/Volumes/Android/buildbot/src/android/llvm-r416183/out/llvm-project/lld c935d99d7cf2016289302412d708641d52d2f7ee)
+0xdeb2	Android (8481493, based on r416183c2) clang version 12.0.9 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee)
+0xdf52	.init_array
+0xdf5e	.fini_array
+0xdf6a	.text
+0xdf75	.comment
+0xdf7e	.note.android.ident
+0xdf92	.got.plt
+0xdf9b	.rela.plt
+0xdfaa	.dynstr
+0xdfb2	.eh_frame_hdr
+0xdfc0	.gnu.version_r
+0xdfcf	.data.rel.ro
+0xdfdc	.rela.dyn
+0xdfe6	.gnu.version
+0xdff3	.dynsym
+0xdffb	.gnu.hash
+0xe005	.eh_frame
+0xe00f	.note.gnu.build-id
+0xe022	.dynamic
+0xe02b	.shstrtab
+0xe035	.rodata
+0xe03d	.data

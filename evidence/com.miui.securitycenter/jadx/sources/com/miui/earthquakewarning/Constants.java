@@ -1,0 +1,98 @@
+package com.miui.earthquakewarning;
+
+import miui.os.Build;
+
+/* JADX INFO: loaded from: classes2.dex */
+public class Constants {
+    public static final String BASE_URL = "https://api.sec.miui.com";
+    private static final String EARTHQUAKE_PATH = "/earthquake-early-warning-tw";
+    public static final String EARTHQUAKE_PUBKEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlUpEjMQOi0gXDO769bGW/Dnr1CcXTY3Hg9C8DmPJKuUC4JBxoAFCAkmdJc6oGFqHQFNw3Pl6vqpAa6D6NYCkqwUhgrnx1x37SsneTZo0+FezL7FlCrHFkG+eN0uHRYbUt7cwHq4fyyF4CvitXkMlXAjsgPFryjRSbED0s4IdBpZD6fmsbQcNb0Y+aViRB9vp0xm2Qit0NRFjgHEav/R5ksxD1iEHF0Gmrhoy+Ts1pVSQQhIbJz73AcgSn2NFQ0YcMs3zm4EEUl0TGOLwGeVmLFr9zl4BR6wcX9Ik4BEM/jees47vopM4vTcaUPN/KsXtj1GDsF6fwyyW9IX8Uo14JQIDAQAB";
+    public static final int EARTHQUAKE_WARNING_CLOSE_IN_SETTING = 0;
+    public static final int EARTHQUAKE_WARNING_OPEN_IN_SETTING = 1;
+    public static final int EQM_SENSOR_ID = 33171100;
+    public static final String INTENT_KEY_EARTHQUAKE_WARNING_GUIDE_POSITION = "key_earthquake_warning_guide_position";
+    public static final boolean IS_DEBUG_MODE = false;
+    public static final String IS_FIRST_TIME_TO_CHECK_SLEEP_MODE = "is_first_time_to_check_sleep_mode";
+    public static final float LEVEL_1 = 2.0f;
+    public static final float LEVEL_2 = 3.0f;
+    public static final float LEVEL_3 = 4.0f;
+    public static final float LEVEL_4 = 5.0f;
+    public static final int MMI_LEVEL_1 = 1;
+    public static final int MMI_LEVEL_10_ABOVE = -1;
+    public static final int MMI_LEVEL_2 = 2;
+    public static final int MMI_LEVEL_3 = 3;
+    public static final int MMI_LEVEL_4 = 4;
+    public static final int MMI_LEVEL_5 = 5;
+    public static final int MMI_LEVEL_6 = 6;
+    public static final int MMI_LEVEL_7 = 7;
+    public static final int MMI_LEVEL_8 = 8;
+    public static final int MMI_LEVEL_9 = 9;
+    public static final String PREFERENCE_KEY_AREA_DB_UPDATE = "key_area_need_update";
+    public static final String PREFERENCE_KEY_EARTHQUAKE_WARNING_CONTACT = "key_earthquake_warning_contact";
+    public static final String PREFERENCE_KEY_EARTHQUAKE_WARNING_CONTACT_NAME = "key_earthquake_warning_contact_name";
+    public static final String PREFERENCE_KEY_EARTHQUAKE_WARNING_FIRST_GUIDE = "key_earthquake_warning_first_guide";
+    public static final String PREFERENCE_KEY_EARTHQUAKE_WARNING_MONITOR_LOCATION_LAT = "key_earthquake_warning_monitor_location_lat";
+    public static final String PREFERENCE_KEY_EARTHQUAKE_WARNING_MONITOR_LOCATION_LNG = "key_earthquake_warning_monitor_location_lng";
+    public static final String PREFERENCE_KEY_EARTHQUAKE_WARNING_MONITOR_ORDER = "key_earthquake_warning_monitor_order";
+    public static final String PREFERENCE_KEY_EARTHQUAKE_WARNING_MONITOR_TOKEN = "key_earthquake_warning_monitor_token";
+    public static final String PREFERENCE_KEY_EARTHQUAKE_WARNING_NEED_RESTORE = "key_earthquake_warning_need_restore";
+    public static final String PREFERENCE_KEY_EARTHQUAKE_WARNING_OPEN_MONITOR = "key_earthquake_warning_open_monitor";
+    public static final String PREFERENCE_KEY_OPEN_EARTHQUAKE_WARNING = "key_open_earthquake_warning";
+    public static final String PREFERENCE_KEY_OPEN_LOW_EARTHQUAKE_WARNING = "key_open_low_earthquake_warning";
+    public static final String PREFERENCE_KEY_PREVIOUS_AREA_CITY_NAME = "key_earthquake_warning_previous_area_city_name";
+    public static final String PREFERENCE_KEY_PREVIOUS_AREA_CODE = "key_earthquake_warning_previous_area_code";
+    public static final String PREFERENCE_KEY_PREVIOUS_AREA_DISTRICT_CODE = "key_earthquake_warning_previous_area_district_code";
+    public static final String PREFERENCE_KEY_PREVIOUS_BRIGHTNESS = "key_earthquake_warning_previous_brightness";
+    public static final String PREFERENCE_KEY_PREVIOUS_BRIGHTNESS_MODE = "key_earthquake_warning_previous_brightness_mode";
+    public static final String PREFERENCE_KEY_PREVIOUS_DISTRICT = "key_earthquake_warning_previous_district";
+    public static final String PREFERENCE_KEY_PREVIOUS_GEO_HASH_CODE = "key_earthquake_warning_previous_geo_hash_code";
+    public static final String PREFERENCE_KEY_PREVIOUS_GPS = "key_earthquake_warning_previous_gps";
+    public static final String PREFERENCE_KEY_PREVIOUS_VOLUME = "key_earthquake_warning_previous_volume";
+    public static final String PREFERENCE_KEY_SELECT_PUSH_INTENSITY = "key_select_push_intensity";
+    public static final String PREFERENCE_KEY_SET_TOPIC_TIME = "key_earthquake_warning_set_topic_time";
+    public static final String PREF_KEY_ADDRESS = "preference_key_medical_card_address";
+    public static final String PREF_KEY_ALLERGY = "preference_key_earthquake_warning_emergency_allergy";
+    public static final String PREF_KEY_ALL_INFO_DELETE = "preference_key_earthquake_warning_emergency_all_info_delete";
+    public static final String PREF_KEY_BIRTHDAY = "preference_key_earthquake_warning_emergency_birthday";
+    public static final String PREF_KEY_BLOOD_TYPE = "preference_key_earthquake_warning_emergency_blood_type";
+    public static final String PREF_KEY_DELETE = "preference_key_earthquake_warning_emergency_delete";
+    public static final String PREF_KEY_EXPECTEDDATE = "preference_key_medical_card_expected_date";
+    public static final String PREF_KEY_GENDER = "preference_key_medical_card_gender";
+    public static final String PREF_KEY_HEIGHT = "preference_key_medical_card_height";
+    public static final String PREF_KEY_IDCARD = "preference_key_earthquake_warning_emergency_idcard";
+    public static final String PREF_KEY_IS_PREGNENT = "preference_key_medical_card_is_pregnent";
+    public static final String PREF_KEY_MEDICAL = "preference_key_earthquake_warning_emergency_medical";
+    public static final String PREF_KEY_MEDICINE = "preference_key_earthquake_warning_emergency_medicine";
+    public static final String PREF_KEY_NAME = "preference_key_earthquake_warning_emergency_name";
+    public static final String PREF_KEY_ORGAN_DONATION = "preference_key_earthquake_warning_emergency_organ_donation";
+    public static final String PREF_KEY_WEIGHT = "preference_key_medical_card_weight";
+    public static final String REQUEST_AREA_CODE_URL = "https://api.sec.miui.com/LBS/geoconv/admin";
+    public static final String REQUEST_MONITOR_DATA_UPLOAD_URL = "https://api.sec.miui.com/earthquake/volunteer/sensor/upload";
+    public static final String REQUEST_MONITOR_VOLUNTEERS_CANCEL_REGISTER_URL = "https://api.sec.miui.com/earthquake/volunteer/cancelRegister";
+    public static final String REQUEST_MONITOR_VOLUNTEERS_COUNT_URL = "https://api.sec.miui.com/earthquake/volunteer/countVolunteers";
+    public static final String REQUEST_MONITOR_VOLUNTEERS_REGISTER_URL = "https://api.sec.miui.com/earthquake/volunteer/register";
+    public static final String REQUEST_SIGNATURE_URL = "https://srv.sec.miui.com/earthquake/warning/signature";
+    public static final String REQUEST_SUPPORT_CITY_URL = "https://srv.sec.miui.com/earthquake/warning/supportCityCode";
+    public static final String REQUEST_WARNLIST_URL = "https://srv.sec.miui.com/earthquake/warning/records";
+    public static final String REQUEST_WHITELIST_URL = "https://api.sec.miui.com/universalWhitelist/checkUserId";
+    public static final String SECURITY_ADD_PACKAGE = "com.miui.securityadd";
+    public static final int SECURITY_ADD_VERSION = 91032;
+    public static final String URL_EARTHQUAKE_MONITOR_PRIVACY = "https://privacy.mi.com/earthquake_monitor/";
+    public static final String URL_EARTHQUAKE_WARNING_AGREEMENT = "https://embed.sec.miui.com/earthquake-early-warning-tw/dsclaimer";
+    public static final String URL_EARTHQUAKE_WARNING_DESC = "https://embed.sec.miui.com/earthquake-early-warning-tw";
+    public static final String URL_EARTHQUAKE_WARNING_PRIVACY;
+    private static final String URL_SERVER_ROOT = "https://api.sec.miui.com";
+    public static final String UUID_CITY_CODE = "7bhr4579-a8we-3k79-ec73-45678324bh5c";
+    public static final String UUID_MONITOR_DATA_UPLOAD = "5cggc678-cddf-4269-ab73-780174cvfba3";
+    public static final String UUID_NEW_CITY_CODE = "7c5b85e3-1bb6-4712-a7e9-c0494e2feb41";
+    public static final String UUID_UPLOAD_CONFIG = "7htr5238-a8cf-3k79-ec73-75382145ns5c";
+    public static final String UUID_WARNLIST_CODE = "7htr5238-a8cf-3k79-ec73-75382145ns5c";
+    public static final String UUID_WHITELIST_CONFIG = "f31feb6a-a0a2-4b43-b724-c8edc6d65b49";
+
+    static {
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append("https://privacy.mi.com");
+        sb2.append(Build.IS_INTERNATIONAL_BUILD ? "/earthquake-global" : "/earthquake");
+        URL_EARTHQUAKE_WARNING_PRIVACY = sb2.toString();
+    }
+}

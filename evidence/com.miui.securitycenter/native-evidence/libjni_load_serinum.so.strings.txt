@@ -1,0 +1,42 @@
+0x244	Android
+0x290	13676358
+0x2dc	Android
+0x449	__cxa_finalize
+0x458	__cxa_atexit
+0x465	__register_atfork
+0x477	Java_com_miui_securitycenter_utils_LoadSeriNum_readOTP
+0x4b3	ioctl
+0x4b9	malloc
+0x4c0	__android_log_print
+0x4d9	close
+0x4df	libc.so
+0x4ec	liblog.so
+0x4f6	libdl.so
+0x628	OTP: OTP operation error ! status = %d
+0x650	Error: Cannot open the /dev/otp 
+0x672	/dev/otp
+0x67b	SeriNum
+0x683	0123456789abcdef
+0xcc9	Android (13624864, +pgo, +bolt, +lto, +mlgo, based on r530567e) clang version 19.0.1 (https://android.googlesource.com/toolchain/llvm-project 97a699bf4812a18fb657c2779f5296a4ab2694d2)
+0xd81	Linker: LLD 19.0.1
+0xd94	Android (13624864, based on r530567e) clang version 19.0.1 (https://android.googlesource.com/toolchain/llvm-project 97a699bf4812a18fb657c2779f5296a4ab2694d2)
+0xe33	.fini_array
+0xe3f	.text
+0xe45	.comment
+0xe4e	.note.android.pad_segment
+0xe68	.note.android.ident
+0xe7c	.got.plt
+0xe85	.rela.plt
+0xe8f	.dynstr
+0xe97	.eh_frame_hdr
+0xea5	.gnu.version_r
+0xeb4	.data.rel.ro
+0xec1	.rela.dyn
+0xecb	.gnu.version
+0xed8	.dynsym
+0xee0	.gnu.hash
+0xeea	.relro_padding
+0xef9	.eh_frame
+0xf03	.dynamic
+0xf0c	.shstrtab
+0xf16	.rodata

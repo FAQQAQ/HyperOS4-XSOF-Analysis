@@ -1,0 +1,32 @@
+[
+  {
+    "file": "jadx/sources/u/b.java",
+    "line": 496,
+    "message": "/*  JADX ERROR: ConcurrentModificationException in pass: ConstructorVisitor"
+  },
+  {
+    "file": "jadx/sources/u/b.java",
+    "line": 622,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: u.b.z():java.lang.String\");"
+  },
+  {
+    "file": "jadx/sources/j/k.java",
+    "line": 77,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: LoopRegionVisitor"
+  },
+  {
+    "file": "jadx/sources/j/k.java",
+    "line": 137,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: j.k.f():void\");"
+  },
+  {
+    "file": "jadx/sources/v/e.java",
+    "line": 1906,
+    "message": "/*  JADX ERROR: Type inference failed"
+  },
+  {
+    "file": "jadx/sources/v/e.java",
+    "line": 2758,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: v.e.g(u.d, boolean):void\");"
+  }
+]

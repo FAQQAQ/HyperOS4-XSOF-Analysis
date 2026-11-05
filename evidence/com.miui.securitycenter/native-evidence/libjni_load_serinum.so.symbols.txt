@@ -1,0 +1,14 @@
+
+raw/lib/arm64-v8a/libjni_load_serinum.so:	file format elf64-littleaarch64
+
+DYNAMIC SYMBOL TABLE:
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __cxa_finalize
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __cxa_atexit
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __register_atfork
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       open
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       ioctl
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       malloc
+0000000000000000      DF *UND*	0000000000000000              __android_log_print
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       free
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       close
+0000000000004800 g    DF .text	0000000000000220              Java_com_miui_securitycenter_utils_LoadSeriNum_readOTP

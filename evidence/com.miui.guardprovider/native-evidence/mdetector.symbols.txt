@@ -1,0 +1,111 @@
+
+raw/assets/mdetector:	file format elf32-littlearm
+
+DYNAMIC SYMBOL TABLE:
+00000134 l    D  .interp	00000000 .interp
+00020d5c l    D  .ctors	00000000 .ctors
+000217d0 l    D  .bss	00000000 _bss_end__
+00021104 l    D  .bss	00000000 __bss_start__
+000217d0 l    D  .bss	00000000 __bss_end__
+00021104 l    D  .bss	00000000 __bss_start
+000217d0 l    D  .bss	00000000 __end__
+00021104 l    D  .data	00000000 _edata
+000217d0 l    D  .bss	00000000 _end
+00000000      DF *UND*	00000000 longjmp
+00000000      DF *UND*	00000000 strcpy
+00000000      DF *UND*	00000000 setjmp
+00000000      DF *UND*	00000000 ioctl
+00000000      DF *UND*	00000000 if_indextoname
+000217ac g    DO .bss	00000004 edges
+00000000      DF *UND*	00000000 recv
+00000000      DF *UND*	00000000 connect
+000216e0 g    DO .bss	00000004 pcap_in
+00000000      DF *UND*	00000000 pthread_create
+00000000      DF *UND*	00000000 strerror
+00000000      DF *UND*	00000000 snprintf
+00000000      DO *UND*	00000000 __stack_chk_guard
+0000f8e4 g    DF .text	0000000a __aeabi_unwind_cpp_pr0
+00000000      DF *UND*	00000000 __errno
+00000000  w   D  *UND*	00000000 __cxa_begin_cleanup
+000217b0 g    DO .bss	00000004 levels
+00000000      DF *UND*	00000000 getprotobyname
+00000000      DF *UND*	00000000 getpid
+00000000  w   D  *UND*	00000000 __cxa_call_unexpected
+00000000      DF *UND*	00000000 fgets
+00000000      DF *UND*	00000000 getc
+00000000      DF *UND*	00000000 memcpy
+00000000      DF *UND*	00000000 malloc
+00020d54 g    DO .fini_array	00000004 __FINI_ARRAY__
+00000000      DF *UND*	00000000 isatty
+00000000      DF *UND*	00000000 sleep
+0002132c g    DO .bss	00000004 n_errors
+00000000      DF *UND*	00000000 vsnprintf
+00000000      DF *UND*	00000000 recvfrom
+00000000      DF *UND*	00000000 socket
+00000000      DF *UND*	00000000 __android_log_print
+0000f8f4  w   DF .text	0000000a __aeabi_unwind_cpp_pr2
+00000000      DF *UND*	00000000 send
+00000000      DF *UND*	00000000 freeaddrinfo
+00000000      DF *UND*	00000000 abort
+000217c8 g    DO .bss	00000004 pcap_text
+00000000      DF *UND*	00000000 __stack_chk_fail
+00000000      DF *UND*	00000000 uname
+00000000      DF *UND*	00000000 __libc_init
+000217b4 g    DO .bss	00000004 blocks
+00000000      DF *UND*	00000000 calloc
+00021794 g    DO .bss	00000010 pcap_lval
+00021020 g    DO .data	000000a8 eproto_db
+00000000      DF *UND*	00000000 fprintf
+0000f904 g    DF .text	0000003e ffs
+00000000      DF *UND*	00000000 bind
+00000000      DF *UND*	00000000 setsockopt
+00020d5c g    DO .ctors	00000004 __CTOR_LIST__
+00000000      DF *UND*	00000000 strstr
+00021790 g    DO .bss	00000004 no_optimize
+00020d4c g    DO .init_array	00000004 __INIT_ARRAY__
+00000000      DF *UND*	00000000 strncmp
+000217b8 g    DO .bss	00000004 space
+00000000      DF *UND*	00000000 strncpy
+00000000  w   D  *UND*	00000000 __cxa_type_match
+00000000      DF *UND*	00000000 realloc
+00000000      DF *UND*	00000000 __cxa_atexit
+000217bc g    DO .bss	00000004 vmap
+000216dc g    DO .bss	00000004 pcap_out
+00000000      DF *UND*	00000000 memcmp
+00000000      DO *UND*	00000000 __sF
+00000000      DF *UND*	00000000 sscanf
+00000000      DF *UND*	00000000 fread
+00000000      DF *UND*	00000000 strdup
+0000f914 g    DF .text	00000084 pcap_setnonblock_fd
+00000000      DF *UND*	00000000 inet_aton
+00000000      DF *UND*	00000000 fopen
+00000000      DF *UND*	00000000 memset
+0000f924 g    DF .text	0000055c main
+00000000      DF *UND*	00000000 fclose
+000217a4 g    DO .bss	00000004 pcap_char
+00000000      DF *UND*	00000000 inet_ntoa
+000217cc g    DO .bss	00000004 pcap_leng
+000217c0 g    DO .bss	00000004 vnode_base
+00000000      DF *UND*	00000000 strcmp
+00000000  w   DF *UND*	00000000 __gnu_Unwind_Find_exidx
+00000000      DF *UND*	00000000 getservbyname
+00000000      DF *UND*	00000000 getsockopt
+00000000      DF *UND*	00000000 getaddrinfo
+00020d44 g    DO .preinit_array	00000004 __PREINIT_ARRAY__
+00000000      DF *UND*	00000000 fwrite
+00000000      DF *UND*	00000000 rewind
+00000000      DF *UND*	00000000 getnetbyname
+00000000      DF *UND*	00000000 exit
+00000000      DF *UND*	00000000 inet_ntop
+00000000      DF *UND*	00000000 atoi
+00000000      DO *UND*	00000000 _ctype_
+000217a8 g    DO .bss	00000004 pcap_nerrs
+00000000      DF *UND*	00000000 strlen
+0000f934  w   DF .text	0000000a __aeabi_unwind_cpp_pr1
+00000000      DF *UND*	00000000 strchr
+000217c4 g    DO .bss	00000004 next_vnode
+0000f944 g    DF .text	00000040 pcap_getnonblock_fd
+00000000      DF *UND*	00000000 fcntl
+00000000      DF *UND*	00000000 close
+00000000      DF *UND*	00000000 raise
+00000000      DF *UND*	00000000 free

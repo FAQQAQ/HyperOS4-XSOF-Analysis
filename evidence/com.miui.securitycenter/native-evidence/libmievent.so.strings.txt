@@ -1,0 +1,35 @@
+0x20c	Android
+0x258	7779620
+0x3f9	__cxa_atexit
+0x406	__cxa_finalize
+0x415	Java_com_miui_misight_mievent_MiSight_nativeSendEvent
+0x44b	__open_2
+0x454	close
+0x45a	write
+0x460	libc.so
+0x46d	liblog.so
+0x477	libm.so
+0x47f	libdl.so
+0x488	libmievent.so
+0x558	/dev/miev
+0x9e8	Android (7714059, based on r416183c1) clang version 12.0.8 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee)
+0xa87	Linker: LLD 12.0.8 (/buildbot/src/android/llvm-r416183/out/llvm-project/lld c935d99d7cf2016289302412d708641d52d2f7ee)
+0xafe	.fini_array
+0xb0a	.text
+0xb10	.comment
+0xb19	.note.android.ident
+0xb2d	.got.plt
+0xb36	.rela.plt
+0xb40	.dynstr
+0xb48	.eh_frame_hdr
+0xb56	.gnu.version_r
+0xb65	.data.rel.ro
+0xb72	.rela.dyn
+0xb7c	.gnu.version
+0xb89	.dynsym
+0xb91	.gnu.hash
+0xb9b	.eh_frame
+0xba5	.note.gnu.build-id
+0xbb8	.dynamic
+0xbc1	.shstrtab
+0xbcb	.rodata

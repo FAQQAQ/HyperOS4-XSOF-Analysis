@@ -1,0 +1,16 @@
+android.permission.WAKE_LOCK
+android.permission.CHANGE_WIFI_STATE
+android.permission.READ_PHONE_STATE
+android.permission.SEND_SMS
+android.permission.READ_PRIVILEGED_PHONE_STATE
+android.permission.WRITE_SETTINGS
+android.permission.ACCESS_NETWORK_STATE
+android.permission.LOCAL_MAC_ADDRESS
+android.permission.ACCESS_WIFI_STATE
+android.permission.INTERNET
+android.permission.ACCESS_BACKGROUND_LOCATION
+android.permission.READ_PRECISE_PHONE_STATE
+android.permission.CHANGE_NETWORK_STATE
+android.permission.ACCESS_FINE_LOCATION
+android.permission.RECEIVE_BOOT_COMPLETED
+android.permission.ACCESS_COARSE_LOCATION

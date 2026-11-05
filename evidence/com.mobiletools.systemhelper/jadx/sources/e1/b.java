@@ -1,0 +1,527 @@
+package e1;
+
+import android.content.Context;
+import f1.p;
+import g1.h;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+/* JADX INFO: loaded from: classes.dex */
+public class b {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public String f2443a = null;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public String f2445b = null;
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    public String f2447c = null;
+
+    /* JADX INFO: renamed from: d, reason: collision with root package name */
+    public String f2449d = null;
+
+    /* JADX INFO: renamed from: e, reason: collision with root package name */
+    public String f2450e = null;
+
+    /* JADX INFO: renamed from: f, reason: collision with root package name */
+    public String f2451f = null;
+
+    /* JADX INFO: renamed from: g, reason: collision with root package name */
+    public String f2452g = null;
+
+    /* JADX INFO: renamed from: h, reason: collision with root package name */
+    public String f2453h = null;
+
+    /* JADX INFO: renamed from: i, reason: collision with root package name */
+    public String f2454i = null;
+
+    /* JADX INFO: renamed from: j, reason: collision with root package name */
+    public String f2455j = null;
+
+    /* JADX INFO: renamed from: k, reason: collision with root package name */
+    public String f2456k = null;
+
+    /* JADX INFO: renamed from: l, reason: collision with root package name */
+    public String f2457l = null;
+
+    /* JADX INFO: renamed from: m, reason: collision with root package name */
+    public String f2458m = null;
+
+    /* JADX INFO: renamed from: n, reason: collision with root package name */
+    public String f2459n = null;
+
+    /* JADX INFO: renamed from: o, reason: collision with root package name */
+    public String f2460o = null;
+
+    /* JADX INFO: renamed from: p, reason: collision with root package name */
+    public String f2461p = null;
+
+    /* JADX INFO: renamed from: q, reason: collision with root package name */
+    public String f2462q = null;
+
+    /* JADX INFO: renamed from: r, reason: collision with root package name */
+    public String f2463r = null;
+
+    /* JADX INFO: renamed from: s, reason: collision with root package name */
+    public String f2464s = null;
+
+    /* JADX INFO: renamed from: t, reason: collision with root package name */
+    public String f2465t = null;
+
+    /* JADX INFO: renamed from: u, reason: collision with root package name */
+    public String f2466u = null;
+
+    /* JADX INFO: renamed from: v, reason: collision with root package name */
+    public String f2467v = null;
+
+    /* JADX INFO: renamed from: w, reason: collision with root package name */
+    public String f2468w = null;
+
+    /* JADX INFO: renamed from: x, reason: collision with root package name */
+    public String f2469x = null;
+
+    /* JADX INFO: renamed from: y, reason: collision with root package name */
+    public String f2470y = null;
+
+    /* JADX INFO: renamed from: z, reason: collision with root package name */
+    public String f2471z = null;
+    public String A = null;
+    public String B = null;
+    public String C = null;
+    public String D = null;
+    public String E = null;
+    public String F = null;
+    public String G = "0";
+    public String H = null;
+    public String I = null;
+    public String J = null;
+    public String K = null;
+    public String L = "";
+    public String M = "";
+    public String N = null;
+    public String O = null;
+    public String P = null;
+    public String Q = null;
+    public String R = null;
+    public String S = null;
+    public String T = null;
+    public JSONObject U = null;
+    public String V = null;
+    public String W = null;
+    public String X = null;
+    public String Y = null;
+    public String Z = null;
+
+    /* JADX INFO: renamed from: a0, reason: collision with root package name */
+    public JSONArray f2444a0 = null;
+
+    /* JADX INFO: renamed from: b0, reason: collision with root package name */
+    public JSONArray f2446b0 = null;
+
+    /* JADX INFO: renamed from: c0, reason: collision with root package name */
+    private String f2448c0 = null;
+
+    public static synchronized b a(Context context, String str) {
+        g1.d.f2648d = context.getApplicationContext();
+        return p.d(context, str);
+    }
+
+    /* JADX WARN: Code duplicated, block: B:106:0x01eb A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:109:0x01fa A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:112:0x0209 A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:115:0x0218 A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:118:0x0227 A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:121:0x0236 A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:124:0x0245 A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:127:0x0254 A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:130:0x0263 A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:133:0x0272 A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:136:0x0281 A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:139:0x0290 A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:142:0x0298 A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:145:0x02a7 A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:146:0x02af A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:151:0x02be A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:154:0x02c6 A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:157:0x02cf A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:160:0x02e7 A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:163:0x02ef A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:166:0x02f8 A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:171:0x0317 A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:173:0x031b A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:175:0x0326  */
+    /* JADX WARN: Code duplicated, block: B:180:0x033d A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:182:0x0341 A[Catch: all -> 0x0356, JSONException -> 0x0358, TryCatch #1 {JSONException -> 0x0358, blocks: (B:3:0x0001, B:5:0x000a, B:6:0x000e, B:8:0x0019, B:9:0x001d, B:11:0x0028, B:12:0x002c, B:14:0x0037, B:15:0x003b, B:17:0x0046, B:18:0x004a, B:20:0x0055, B:21:0x0059, B:23:0x0064, B:24:0x0068, B:26:0x0073, B:27:0x0077, B:29:0x0082, B:30:0x0086, B:32:0x0091, B:33:0x0095, B:35:0x00a0, B:36:0x00a4, B:38:0x00a8, B:39:0x00ac, B:41:0x00b7, B:42:0x00bb, B:44:0x00c6, B:45:0x00ca, B:47:0x00d5, B:48:0x00d9, B:50:0x00e4, B:51:0x00e8, B:53:0x00f3, B:54:0x00f7, B:56:0x0102, B:57:0x0106, B:59:0x0111, B:60:0x0115, B:62:0x0120, B:63:0x0124, B:65:0x012f, B:66:0x0133, B:68:0x013e, B:69:0x0142, B:71:0x014d, B:72:0x0151, B:74:0x0155, B:75:0x0159, B:77:0x0164, B:78:0x0168, B:80:0x0173, B:81:0x0177, B:83:0x0182, B:84:0x0186, B:86:0x0191, B:87:0x0195, B:89:0x01a0, B:90:0x01a4, B:92:0x01af, B:93:0x01b3, B:96:0x01c0, B:104:0x01e0, B:106:0x01eb, B:107:0x01ef, B:109:0x01fa, B:110:0x01fe, B:112:0x0209, B:113:0x020d, B:115:0x0218, B:116:0x021c, B:118:0x0227, B:119:0x022b, B:121:0x0236, B:122:0x023a, B:124:0x0245, B:125:0x0249, B:127:0x0254, B:128:0x0258, B:130:0x0263, B:131:0x0267, B:133:0x0272, B:134:0x0276, B:136:0x0281, B:137:0x0285, B:139:0x0290, B:140:0x0294, B:142:0x0298, B:143:0x029c, B:145:0x02a7, B:147:0x02b4, B:149:0x02b8, B:152:0x02c2, B:154:0x02c6, B:155:0x02cb, B:157:0x02cf, B:158:0x02d3, B:160:0x02e7, B:161:0x02eb, B:163:0x02ef, B:164:0x02f4, B:166:0x02f8, B:167:0x02fc, B:169:0x030d, B:176:0x0329, B:178:0x0333, B:185:0x034f, B:180:0x033d, B:182:0x0341, B:183:0x0348, B:171:0x0317, B:173:0x031b, B:174:0x0322, B:151:0x02be, B:146:0x02af, B:97:0x01c3, B:99:0x01c9, B:101:0x01d3), top: B:196:0x0001, outer: #0 }] */
+    /* JADX WARN: Code duplicated, block: B:184:0x034c  */
+    public synchronized String b() {
+        JSONObject jSONObject;
+        String str;
+        String str2;
+        String str3;
+        JSONArray jSONArray;
+        String str4;
+        JSONArray jSONArray2;
+        String str5;
+        try {
+            JSONObject jSONObject2 = new JSONObject();
+            if (this.f2443a == null) {
+                this.f2443a = "Unknown";
+            }
+            jSONObject2.put("Manuf", this.f2443a);
+            if (this.f2445b == null) {
+                this.f2445b = "Unknown";
+            }
+            jSONObject2.put("Model", this.f2445b);
+            if (this.f2447c == null) {
+                this.f2447c = "Unknown";
+            }
+            jSONObject2.put("HWVersion", this.f2447c);
+            if (this.f2449d == null) {
+                this.f2449d = "Unknown";
+            }
+            jSONObject2.put("SWVersion", this.f2449d);
+            if (this.f2450e == null) {
+                this.f2450e = "Unknown";
+            }
+            jSONObject2.put("OS", this.f2450e);
+            if (this.f2451f == null) {
+                this.f2451f = "Unknown";
+            }
+            jSONObject2.put("OSVersion", this.f2451f);
+            if (this.f2452g == null) {
+                this.f2452g = "Unknown";
+            }
+            jSONObject2.put("IMEI1", this.f2452g);
+            if (this.f2453h == null) {
+                this.f2453h = "";
+            }
+            jSONObject2.put("ICCID1", this.f2453h);
+            if (this.f2454i == null) {
+                this.f2454i = "";
+            }
+            jSONObject2.put("IMSI1", this.f2454i);
+            if (this.f2456k == null) {
+                this.f2456k = "";
+            }
+            jSONObject2.put("MNC1", this.f2456k);
+            if (this.f2457l == null) {
+                this.f2457l = "";
+            }
+            if (this.f2458m == null) {
+                this.f2458m = "";
+            }
+            jSONObject2.put("NetworkType1", this.f2458m);
+            if (this.f2459n == null) {
+                this.f2459n = "";
+            }
+            jSONObject2.put("TAC1", this.f2459n);
+            if (this.f2460o == null) {
+                this.f2460o = "";
+            }
+            jSONObject2.put("CID1", this.f2460o);
+            if (this.f2461p == null) {
+                this.f2461p = "";
+            }
+            jSONObject2.put("PCI1", this.f2461p);
+            if (this.f2462q == null) {
+                this.f2462q = "";
+            }
+            jSONObject2.put("VolteEnabled1", this.f2462q);
+            if (this.f2463r == null) {
+                this.f2463r = "";
+            }
+            jSONObject2.put("5GEnabled1", this.f2463r);
+            if (this.f2464s == null) {
+                this.f2464s = "";
+            }
+            jSONObject2.put("VoNREnable1", this.f2464s);
+            if (this.f2465t == null) {
+                this.f2465t = "";
+            }
+            jSONObject2.put("IMEI2", this.f2465t);
+            if (this.f2466u == null) {
+                this.f2466u = "";
+            }
+            jSONObject2.put("ICCID2", this.f2466u);
+            if (this.f2467v == null) {
+                this.f2467v = "";
+            }
+            jSONObject2.put("IMSI2", this.f2467v);
+            if (this.f2469x == null) {
+                this.f2469x = "";
+            }
+            jSONObject2.put("MNC2", this.f2469x);
+            if (this.f2470y == null) {
+                this.f2470y = "";
+            }
+            if (this.f2471z == null) {
+                this.f2471z = "";
+            }
+            jSONObject2.put("NetworkType2", this.f2471z);
+            if (this.A == null) {
+                this.A = "";
+            }
+            jSONObject2.put("TAC2", this.A);
+            if (this.B == null) {
+                this.B = "";
+            }
+            jSONObject2.put("CID2", this.B);
+            if (this.C == null) {
+                this.C = "";
+            }
+            jSONObject2.put("PCI2", this.C);
+            if (this.D == null) {
+                this.D = "";
+            }
+            jSONObject2.put("VolteEnabled2", this.D);
+            if (this.E == null) {
+                this.E = "";
+            }
+            jSONObject2.put("5GEnabled2", this.E);
+            if (this.F == null) {
+                this.F = "";
+            }
+            jSONObject2.put("VoNREnable2", this.F);
+            String str6 = this.G;
+            if (str6 == null || str6.isEmpty() || (!this.G.equals("1") && !this.G.equals("2"))) {
+                String str7 = "0";
+                this.G = str7;
+                jSONObject2.put("DataSlot", this.G);
+                if (this.H == null) {
+                    this.H = "";
+                }
+                jSONObject2.put("BSSID", this.H);
+                if (this.I == null) {
+                    this.I = "";
+                }
+                jSONObject2.put("LinkSpeed", this.I);
+                if (this.J == null) {
+                    this.J = "";
+                }
+                jSONObject2.put("RSSI", this.J);
+                if (this.K == null) {
+                    this.K = "";
+                }
+                jSONObject2.put("Frequency", this.K);
+                if (this.L == null) {
+                    this.L = "";
+                }
+                jSONObject2.put("Esim", this.L);
+                if (this.M == null) {
+                    this.M = "";
+                }
+                jSONObject2.put("InactiveEsimMNC", this.M);
+                if (this.N == null) {
+                    this.N = "";
+                }
+                jSONObject2.put("PairedDevice", this.N);
+                if (this.O == null) {
+                    this.O = "";
+                }
+                jSONObject2.put("PairedMacAddress", this.O);
+                if (this.P == null) {
+                    this.P = "";
+                }
+                jSONObject2.put("SatelliteSupport", this.P);
+                if (this.Q == null) {
+                    this.Q = "";
+                }
+                jSONObject2.put("SatelliteEnabled", this.Q);
+                if (this.R == null) {
+                    this.R = "Unknown";
+                }
+                jSONObject2.put("AccType", this.R);
+                if (this.S == null) {
+                    this.S = "";
+                }
+                if (this.T == null) {
+                    this.T = "";
+                }
+                jSONObject2.put("IPv6", this.T);
+                jSONObject = this.U;
+                if (jSONObject == null) {
+                    jSONObject2.put("SubType", "");
+                } else {
+                    jSONObject2.put("SubType", jSONObject);
+                }
+                str = this.V;
+                if (str != null) {
+                    this.V = "000";
+                } else {
+                    this.V = "000";
+                }
+                str2 = this.V;
+                if (str2 != null) {
+                    jSONObject2.put("DeviceType", str2);
+                }
+                if (this.W == null) {
+                    this.W = "";
+                }
+                jSONObject2.put("RegType", this.W);
+                this.X = "6.0";
+                jSONObject2.put("SpecVersion", "6.0");
+                if (this.Y == null) {
+                    this.Y = "4.0.0";
+                }
+                str3 = this.Y;
+                if (str3 != null) {
+                    jSONObject2.put("ClientVersion", str3);
+                }
+                if (this.Z == null) {
+                    this.Z = "";
+                }
+                jSONObject2.put("Time", this.Z);
+                if (this.W.equals("R")) {
+                    jSONArray = this.f2446b0;
+                    if (jSONArray == null) {
+                        jSONArray = new JSONArray();
+                        str4 = "SigInfo";
+                    } else {
+                        str4 = "SigInfo";
+                    }
+                    jSONObject2.put(str4, jSONArray);
+                } else {
+                    jSONArray = this.f2446b0;
+                    if (jSONArray == null) {
+                        jSONArray = new JSONArray();
+                        str4 = "SigInfo";
+                    } else {
+                        str4 = "SigInfo";
+                    }
+                    jSONObject2.put(str4, jSONArray);
+                }
+                if (this.W.equals("A")) {
+                    jSONArray2 = this.f2444a0;
+                    if (jSONArray2 == null) {
+                        jSONArray2 = new JSONArray();
+                        str5 = "AppInfo";
+                    } else {
+                        str5 = "AppInfo";
+                    }
+                    jSONObject2.put(str5, jSONArray2);
+                } else {
+                    jSONArray2 = this.f2444a0;
+                    if (jSONArray2 == null) {
+                        jSONArray2 = new JSONArray();
+                        str5 = "AppInfo";
+                    } else {
+                        str5 = "AppInfo";
+                    }
+                    jSONObject2.put(str5, jSONArray2);
+                }
+                this.f2448c0 = jSONObject2.toString();
+            } else {
+                jSONObject2.put("DataSlot", this.G);
+                if (this.H == null) {
+                    this.H = "";
+                }
+                jSONObject2.put("BSSID", this.H);
+                if (this.I == null) {
+                    this.I = "";
+                }
+                jSONObject2.put("LinkSpeed", this.I);
+                if (this.J == null) {
+                    this.J = "";
+                }
+                jSONObject2.put("RSSI", this.J);
+                if (this.K == null) {
+                    this.K = "";
+                }
+                jSONObject2.put("Frequency", this.K);
+                if (this.L == null) {
+                    this.L = "";
+                }
+                jSONObject2.put("Esim", this.L);
+                if (this.M == null) {
+                    this.M = "";
+                }
+                jSONObject2.put("InactiveEsimMNC", this.M);
+                if (this.N == null) {
+                    this.N = "";
+                }
+                jSONObject2.put("PairedDevice", this.N);
+                if (this.O == null) {
+                    this.O = "";
+                }
+                jSONObject2.put("PairedMacAddress", this.O);
+                if (this.P == null) {
+                    this.P = "";
+                }
+                jSONObject2.put("SatelliteSupport", this.P);
+                if (this.Q == null) {
+                    this.Q = "";
+                }
+                jSONObject2.put("SatelliteEnabled", this.Q);
+                if (this.R == null) {
+                    this.R = "Unknown";
+                }
+                jSONObject2.put("AccType", this.R);
+                if (this.S == null) {
+                    this.S = "";
+                }
+                if (this.T == null) {
+                    this.T = "";
+                }
+                jSONObject2.put("IPv6", this.T);
+                jSONObject = this.U;
+                if (jSONObject == null) {
+                    jSONObject2.put("SubType", "");
+                } else {
+                    jSONObject2.put("SubType", jSONObject);
+                }
+                str = this.V;
+                if (str != null || str.isEmpty()) {
+                    this.V = "000";
+                }
+                str2 = this.V;
+                if (str2 != null) {
+                    jSONObject2.put("DeviceType", str2);
+                }
+                if (this.W == null) {
+                    this.W = "";
+                }
+                jSONObject2.put("RegType", this.W);
+                this.X = "6.0";
+                jSONObject2.put("SpecVersion", "6.0");
+                if (this.Y == null) {
+                    this.Y = "4.0.0";
+                }
+                str3 = this.Y;
+                if (str3 != null) {
+                    jSONObject2.put("ClientVersion", str3);
+                }
+                if (this.Z == null) {
+                    this.Z = "";
+                }
+                jSONObject2.put("Time", this.Z);
+                if (this.W.equals("R") || this.W.equals("")) {
+                    jSONArray = this.f2446b0;
+                    if (jSONArray == null) {
+                        jSONArray = new JSONArray();
+                        str4 = "SigInfo";
+                    } else {
+                        str4 = "SigInfo";
+                    }
+                    jSONObject2.put(str4, jSONArray);
+                }
+                if (this.W.equals("A") || this.W.equals("")) {
+                    jSONArray2 = this.f2444a0;
+                    if (jSONArray2 == null) {
+                        jSONArray2 = new JSONArray();
+                        str5 = "AppInfo";
+                    } else {
+                        str5 = "AppInfo";
+                    }
+                    jSONObject2.put(str5, jSONArray2);
+                }
+                this.f2448c0 = jSONObject2.toString();
+            }
+        } catch (JSONException e2) {
+            h.b("DeviceInfo", "JSONException->" + e2.getMessage());
+        }
+        throw th;
+        return this.f2448c0;
+    }
+}

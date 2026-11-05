@@ -1,0 +1,262 @@
+[
+  {
+    "file": "jadx/sources/defpackage/v32.java",
+    "line": 287,
+    "message": "/*  JADX ERROR: Types fix failed"
+  },
+  {
+    "file": "jadx/sources/defpackage/v32.java",
+    "line": 857,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.v32.f(nx, vi0):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/defpackage/f42.java",
+    "line": 58,
+    "message": "/*  JADX ERROR: Types fix failed"
+  },
+  {
+    "file": "jadx/sources/defpackage/f42.java",
+    "line": 848,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.f42.<init>(nx, vi0):void\");"
+  },
+  {
+    "file": "jadx/sources/defpackage/tx0.java",
+    "line": 134,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/defpackage/tx0.java",
+    "line": 1141,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.tx0.b(k20):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/defpackage/tv2.java",
+    "line": 280,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/defpackage/tv2.java",
+    "line": 372,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.tv2.d(tv2, qz1, int, k20):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/defpackage/ti3.java",
+    "line": 159,
+    "message": "/*  JADX ERROR: Types fix failed"
+  },
+  {
+    "file": "jadx/sources/defpackage/ti3.java",
+    "line": 527,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.ti3.run():void\");"
+  },
+  {
+    "file": "jadx/sources/defpackage/cs0.java",
+    "line": 97,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/defpackage/cs0.java",
+    "line": 439,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.cs0.b(k20):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/defpackage/ex.java",
+    "line": 102,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/defpackage/ex.java",
+    "line": 652,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.ex.o(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/defpackage/x7.java",
+    "line": 66,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/defpackage/x7.java",
+    "line": 217,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.x7.o(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/defpackage/ix1.java",
+    "line": 12,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: BlockProcessor"
+  },
+  {
+    "file": "jadx/sources/defpackage/ix1.java",
+    "line": 43,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.ix1.<clinit>():void\");"
+  },
+  {
+    "file": "jadx/sources/defpackage/vy.java",
+    "line": 120,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/defpackage/vy.java",
+    "line": 419,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.vy.o(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/defpackage/sv2.java",
+    "line": 38,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/defpackage/sv2.java",
+    "line": 126,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.sv2.o(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/defpackage/jl0.java",
+    "line": 48,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/defpackage/jl0.java",
+    "line": 252,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.jl0.o(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/defpackage/py.java",
+    "line": 48,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/defpackage/py.java",
+    "line": 199,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.py.o(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/defpackage/yn2.java",
+    "line": 32,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/defpackage/yn2.java",
+    "line": 256,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.yn2.a(dm0, j20):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/defpackage/c91.java",
+    "line": 44,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: IfRegionVisitor"
+  },
+  {
+    "file": "jadx/sources/defpackage/c91.java",
+    "line": 118,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.c91.b(d52, hr1, j3, boolean):b81\");"
+  },
+  {
+    "file": "jadx/sources/defpackage/dn.java",
+    "line": 170,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/defpackage/dn.java",
+    "line": 1173,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.dn.b(k20):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/defpackage/ua0.java",
+    "line": 17,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: IfRegionVisitor"
+  },
+  {
+    "file": "jadx/sources/defpackage/ua0.java",
+    "line": 321,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.ua0.e():java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/defpackage/d82.java",
+    "line": 422,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: InitCodeVariables"
+  },
+  {
+    "file": "jadx/sources/defpackage/d82.java",
+    "line": 432,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: InitCodeVariables"
+  },
+  {
+    "file": "jadx/sources/defpackage/d82.java",
+    "line": 440,
+    "message": "/*  JADX ERROR: Method generation error"
+  },
+  {
+    "file": "jadx/sources/defpackage/d82.java",
+    "line": 928,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: InitCodeVariables"
+  },
+  {
+    "file": "jadx/sources/defpackage/d82.java",
+    "line": 938,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: InitCodeVariables"
+  },
+  {
+    "file": "jadx/sources/defpackage/d82.java",
+    "line": 946,
+    "message": "/*  JADX ERROR: Method generation error"
+  },
+  {
+    "file": "jadx/sources/defpackage/s91.java",
+    "line": 31,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: IfRegionVisitor"
+  },
+  {
+    "file": "jadx/sources/defpackage/s91.java",
+    "line": 816,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.s91.e():java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/defpackage/b9.java",
+    "line": 25,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/defpackage/b9.java",
+    "line": 319,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.b9.a(dm0, j20):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/defpackage/cq.java",
+    "line": 50,
+    "message": "/*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/defpackage/cq.java",
+    "line": 338,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: defpackage.cq.o(java.lang.Object):java.lang.Object\");"
+  },
+  {
+    "file": "jadx/sources/tmsdkobf/e0.java",
+    "line": 124,
+    "message": "/*  JADX ERROR: Types fix failed"
+  },
+  {
+    "file": "jadx/sources/tmsdkobf/e0.java",
+    "line": 1187,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: tmsdkobf.e0.a(android.content.Context, java.util.Map, tmsdkobf.t, boolean):byte[]\");"
+  },
+  {
+    "file": "jadx/sources/tmsdkobf/ih.java",
+    "line": 154,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/tmsdkobf/ih.java",
+    "line": 206,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: tmsdkobf.ih.a():void\");"
+  },
+  {
+    "file": "jadx/sources/tmsdkobf/z4.java",
+    "line": 49,
+    "message": "/*  JADX ERROR: Type inference failed"
+  },
+  {
+    "file": "jadx/sources/tmsdkobf/z4.java",
+    "line": 666,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: tmsdkobf.z4.a(java.lang.String, java.lang.String, boolean, tmsdkobf.z4$a):int\");"
+  }
+]

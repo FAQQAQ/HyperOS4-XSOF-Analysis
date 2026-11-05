@@ -1,0 +1,72 @@
+[
+  {
+    "package": "com.miui.analytics",
+    "returncode": 3,
+    "started_at_utc": "2026-11-05T09:09:35.570929+00:00",
+    "finished_at_utc": "2026-11-05T09:09:39.714290+00:00",
+    "sources": 507,
+    "resources": 28,
+    "reported_error_count": 8,
+    "error_markers": 9
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "returncode": 3,
+    "started_at_utc": "2026-11-05T09:09:23.932005+00:00",
+    "finished_at_utc": "2026-11-05T09:09:30.421198+00:00",
+    "sources": 1600,
+    "resources": 1205,
+    "reported_error_count": 4,
+    "error_markers": 4
+  },
+  {
+    "package": "com.mobiletools.systemhelper",
+    "returncode": 3,
+    "started_at_utc": "2026-11-05T09:09:30.453547+00:00",
+    "finished_at_utc": "2026-11-05T09:09:35.559567+00:00",
+    "sources": 550,
+    "resources": 788,
+    "reported_error_count": 6,
+    "error_markers": 6
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "returncode": 3,
+    "started_at_utc": "2026-11-05T09:09:23.931665+00:00",
+    "finished_at_utc": "2026-11-05T09:09:51.537777+00:00",
+    "sources": 13282,
+    "resources": 8341,
+    "reported_error_count": 69,
+    "error_markers": 82
+  },
+  {
+    "package": "com.miui.securitymanager",
+    "returncode": 3,
+    "started_at_utc": "2026-11-05T09:09:23.932030+00:00",
+    "finished_at_utc": "2026-11-05T09:09:31.101401+00:00",
+    "sources": 1428,
+    "resources": 1923,
+    "reported_error_count": 4,
+    "error_markers": 4
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "returncode": 3,
+    "started_at_utc": "2026-11-05T09:09:23.931960+00:00",
+    "finished_at_utc": "2026-11-05T09:09:38.308934+00:00",
+    "sources": 6208,
+    "resources": 1257,
+    "reported_error_count": 44,
+    "error_markers": 52
+  },
+  {
+    "package": "com.xiaomi.registration",
+    "returncode": 3,
+    "started_at_utc": "2026-11-05T09:09:31.125960+00:00",
+    "finished_at_utc": "2026-11-05T09:09:37.104093+00:00",
+    "sources": 1057,
+    "resources": 951,
+    "reported_error_count": 2,
+    "error_markers": 2
+  }
+]

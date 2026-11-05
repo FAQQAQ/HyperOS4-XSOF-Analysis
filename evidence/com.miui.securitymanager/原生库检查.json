@@ -1,0 +1,9 @@
+[
+  {
+    "package": "com.miui.securitymanager",
+    "container": "lib/arm64-v8a/libsec-common-utils.so",
+    "elf_size": 331496,
+    "symbol_tool_rc": 0,
+    "network_candidates": []
+  }
+]

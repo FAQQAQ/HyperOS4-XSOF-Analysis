@@ -1,0 +1,8 @@
+﻿type,name,exported,permission,readPermission,writePermission,process,authorities,intent_actions
+activity,com.miui.securitymain.SCMainEntryActivity,true,,,,,,android.intent.action.MAIN
+activity,com.miui.securitymanager.ShortcutManageActivity,true,com.miui.security.manager.SHORTCUT,,,,,com.miui.securitymanager.SHORTCUT_SETTINGS
+receiver,com.miui.securitymanager.ShortcutReceiver,true,com.miui.security.manager.SHORTCUT,,,,,security.manager.SHORTCUT_MANAGER
+provider,com.miui.securitymanager.ShortcutProvider,true,com.miui.security.manager.SHORTCUT,,,,com.miui.securitymanager,
+receiver,com.miui.securitymanager.PlaceholderAppWidgetProvider,true,,,,,,android.appwidget.action.APPWIDGET_UPDATE
+provider,androidx.startup.InitializationProvider,false,,,,,com.miui.securitymanager.androidx-startup,
+receiver,androidx.profileinstaller.ProfileInstallReceiver,true,android.permission.DUMP,,,,,androidx.profileinstaller.action.INSTALL_PROFILE | androidx.profileinstaller.action.SKIP_FILE | androidx.profileinstaller.action.SAVE_PROFILE | androidx.profileinstaller.action.BENCHMARK_OPERATION

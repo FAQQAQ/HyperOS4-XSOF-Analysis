@@ -1,0 +1,82 @@
+[
+  {
+    "file": "Analytics_6.33.0.apk",
+    "package": "com.miui.analytics",
+    "sha256": "a3656199f013e2f68bc20022f941122a13ce99e33c5df1cef054c9267189d73f",
+    "unchanged": true,
+    "zip_crc_ok": true,
+    "raw_dex_matches_input": true,
+    "dex_files": [
+      "classes.dex"
+    ]
+  },
+  {
+    "file": "MiTrustService_1.2.260901.apk",
+    "package": "com.xiaomi.trustservice",
+    "sha256": "2344a2e8be65fffd3a0f2140527a075e40e865d55e5b615d2407af307305d37f",
+    "unchanged": true,
+    "zip_crc_ok": true,
+    "raw_dex_matches_input": true,
+    "dex_files": [
+      "classes.dex"
+    ]
+  },
+  {
+    "file": "SystemHelper_4.0.0-20260910.apk",
+    "package": "com.mobiletools.systemhelper",
+    "sha256": "42fbfebedd8711b2ca22d3d969324f7ed7c757d838e143bf6cf4d2e8e1ed8556",
+    "unchanged": true,
+    "zip_crc_ok": true,
+    "raw_dex_matches_input": true,
+    "dex_files": [
+      "classes.dex"
+    ]
+  },
+  {
+    "file": "安全服务_13.6.5-261003.0.1.apk",
+    "package": "com.miui.securitycenter",
+    "sha256": "ae9896193a2159cfce0ce1076ac41d370d0c4ed573c6ca002aaa50bfeda6b9b5",
+    "unchanged": true,
+    "zip_crc_ok": true,
+    "raw_dex_matches_input": true,
+    "dex_files": [
+      "classes.dex",
+      "classes2.dex",
+      "classes3.dex",
+      "classes4.dex"
+    ]
+  },
+  {
+    "file": "手机管家_21.0.apk",
+    "package": "com.miui.securitymanager",
+    "sha256": "a8a84fe0cb2e6d733120a972f1a9d073798fbb70746b3824fafe47ec50253019",
+    "unchanged": true,
+    "zip_crc_ok": true,
+    "raw_dex_matches_input": true,
+    "dex_files": [
+      "classes.dex"
+    ]
+  },
+  {
+    "file": "系统安全组件_3.1.4-20260902.0.apk",
+    "package": "com.miui.guardprovider",
+    "sha256": "6cdb14123ca32f36883e74d968f390e30d1c64589f500fd48f9f9b9757253928",
+    "unchanged": true,
+    "zip_crc_ok": true,
+    "raw_dex_matches_input": true,
+    "dex_files": [
+      "classes.dex"
+    ]
+  },
+  {
+    "file": "运营商服务_16.0.5.apk",
+    "package": "com.xiaomi.registration",
+    "sha256": "3dac308f0088d3bbfb342a5b9e9096fab0ddf56f737603df282fcf0b698708dd",
+    "unchanged": true,
+    "zip_crc_ok": true,
+    "raw_dex_matches_input": true,
+    "dex_files": [
+      "classes.dex"
+    ]
+  }
+]

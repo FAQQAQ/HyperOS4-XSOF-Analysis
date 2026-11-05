@@ -1,0 +1,40 @@
+0x20c	Android
+0x258	12077973
+0x461	__cxa_finalize
+0x470	__cxa_atexit
+0x47d	Java_com_miui_networkassistant_traffic_statistic_NaTrafficStats_nativeGetUidIfaceStat
+0x4d3	fopen
+0x4d9	fgets
+0x4df	sscanf
+0x4e6	strcmp
+0x4ed	fclose
+0x4f4	__stack_chk_fail
+0x505	libc.so
+0x512	libm.so
+0x51a	libdl.so
+0x523	libnap.so
+0x63a	%d %31s 0x%llx %u %u %llu %llu %llu %llu
+0x663	/proc/net/xt_qtaguid/stats
+0xcd1	Android (12027248, based on r522817) clang version 18.0.1 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
+0xd6e	Android (12027248, +pgo, +bolt, +lto, +mlgo, based on r522817) clang version 18.0.1 (https://android.googlesource.com/toolchain/llvm-project d8003a456d14a3deb8054cdaa529ffbf02d9b262)
+0xe25	Linker: LLD 18.0.1
+0xe39	.fini_array
+0xe45	.text
+0xe4b	.comment
+0xe54	.note.android.ident
+0xe68	.got.plt
+0xe71	.rela.plt
+0xe7b	.dynstr
+0xe83	.eh_frame_hdr
+0xe91	.gnu.version_r
+0xea0	.data.rel.ro
+0xead	.rela.dyn
+0xeb7	.gnu.version
+0xec4	.dynsym
+0xecc	.gnu.hash
+0xed6	.relro_padding
+0xee5	.eh_frame
+0xeef	.note.gnu.build-id
+0xf02	.dynamic
+0xf0b	.shstrtab
+0xf15	.rodata

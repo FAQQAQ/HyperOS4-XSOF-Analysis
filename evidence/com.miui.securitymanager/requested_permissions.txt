@@ -1,0 +1,10 @@
+android.permission.FOREGROUND_SERVICE
+com.miui.security.manager.SHORTCUT
+com.android.launcher.permission.INSTALL_SHORTCUT
+com.android.launcher.permission.UNINSTALL_SHORTCUT
+android.permission.POST_NOTIFICATIONS
+com.miui.securitymanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+com.miui.securityadd.permission.GAMEBOOSTER_PROVIDER
+com.android.launcher.permission.READ_SETTINGS
+com.miui.home.launcher.permission.UNINSTALL_SHORTCUT
+com.android.launcher.permission.WRITE_SETTINGS

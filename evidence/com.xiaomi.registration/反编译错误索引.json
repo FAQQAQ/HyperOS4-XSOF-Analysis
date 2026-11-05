@@ -1,0 +1,12 @@
+[
+  {
+    "file": "jadx/sources/androidx/coordinatorlayout/widget/CoordinatorLayout.java",
+    "line": 1416,
+    "message": "/*  JADX ERROR: JadxRuntimeException in pass: RegionMakerVisitor"
+  },
+  {
+    "file": "jadx/sources/androidx/coordinatorlayout/widget/CoordinatorLayout.java",
+    "line": 1687,
+    "message": "throw new UnsupportedOperationException(\"Method not decompiled: androidx.coordinatorlayout.widget.CoordinatorLayout.s():void\");"
+  }
+]

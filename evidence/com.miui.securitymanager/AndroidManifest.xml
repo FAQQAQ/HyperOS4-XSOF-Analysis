@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="21" android:versionName="21.0" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" package="com.miui.securitymanager" platformBuildVersionCode="36" platformBuildVersionName="16">
+  <uses-sdk android:minSdkVersion="28" android:targetSdkVersion="36"/>
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+  <uses-permission android:name="com.miui.security.manager.SHORTCUT"/>
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+  <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+  <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+  <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+  <uses-permission android:name="com.miui.home.launcher.permission.UNINSTALL_SHORTCUT"/>
+  <uses-permission android:name="com.miui.securityadd.permission.GAMEBOOSTER_PROVIDER"/>
+  <queries>
+    <package android:name="com.miui.cleanmaster"/>
+    <package android:name="com.tencent.mm"/>
+  </queries>
+  <permission android:name="com.miui.securitymanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="0x00000002"/>
+  <uses-permission android:name="com.miui.securitymanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+  <application android:label="@7F100029" android:icon="@7F08006F" android:name="com.miui.securitymanager.Application" android:allowBackup="false" android:supportsRtl="true" android:extractNativeLibs="false" android:resizeableActivity="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+    <property android:name="miui.continuity.policy" android:value="4"/>
+    <uses-library android:name="miui-uninstall-empty.jar" android:required="true"/>
+    <meta-data android:name="app_description_title" android:resource="@7F1001D9"/>
+    <meta-data android:name="app_description_content" android:resource="@7F1001D8"/>
+    <meta-data android:name="app_uninstall_description_title" android:resource="@7F1001D9"/>
+    <meta-data android:name="app_uninstall_description_content" android:resource="@7F1001D8"/>
+    <meta-data android:name="required_permissions" android:value="@7F100156"/>
+    <meta-data android:name="miui.supportAppContinuity" android:value="true"/>
+    <activity android:theme="@7F110024" android:name="com.miui.securitymain.SCMainEntryActivity" android:exported="true" android:excludeFromRecents="true" android:configChanges="0x00000D80">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity android:theme="@7F1101FC" android:name="com.miui.securitymanager.ShortcutManageActivity" android:permission="com.miui.security.manager.SHORTCUT" android:exported="true">
+      <intent-filter>
+        <action android:name="com.miui.securitymanager.SHORTCUT_SETTINGS"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <receiver android:name="com.miui.securitymanager.ShortcutReceiver" android:permission="com.miui.security.manager.SHORTCUT" android:exported="true">
+      <intent-filter>
+        <action android:name="security.manager.SHORTCUT_MANAGER"/>
+      </intent-filter>
+    </receiver>
+    <provider android:name="com.miui.securitymanager.ShortcutProvider" android:permission="com.miui.security.manager.SHORTCUT" android:exported="true" android:authorities="com.miui.securitymanager"/>
+    <receiver android:name="com.miui.securitymanager.PlaceholderAppWidgetProvider" android:exported="true">
+      <meta-data android:name="android.appwidget.provider" android:resource="@7F130000"/>
+      <meta-data android:name="miuiWidget" android:value="true"/>
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+      </intent-filter>
+    </receiver>
+    <meta-data android:name="appcompat" android:value="3.100000"/>
+    <meta-data android:name="miuixbasewidget" android:value="1.000000"/>
+    <meta-data android:name="flexible" android:value="1.000000"/>
+    <meta-data android:name="popupwidget" android:value="1.000000"/>
+    <meta-data android:name="androidbasewidget" android:value="1.000000"/>
+    <meta-data android:name="miuixstretchablewidget" android:value="1.000000"/>
+    <meta-data android:name="slidingwidget" android:value="1.000000"/>
+    <meta-data android:name="pickerwidget" android:value="1.000000"/>
+    <meta-data android:name="viewpager" android:value="2.000000"/>
+    <meta-data android:name="transition" android:value="1.000000"/>
+    <meta-data android:name="viewpager2" android:value="2.000000"/>
+    <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.miui.securitymanager.androidx-startup">
+      <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+      <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+      <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+    </provider>
+    <meta-data android:name="recyclerview" android:value="2.000000"/>
+    <meta-data android:name="recyclerview_animator" android:value="2.000000"/>
+    <meta-data android:name="textutilities" android:value="2.000000"/>
+    <meta-data android:name="graphics" android:value="2.000000"/>
+    <meta-data android:name="springback" android:value="3.100000"/>
+    <meta-data android:name="nest" android:value="2.000000"/>
+    <meta-data android:name="haptic" android:value="1.000000"/>
+    <meta-data android:name="smooth" android:value="1.000000"/>
+    <meta-data android:name="core" android:value="2.000000"/>
+    <meta-data android:name="theme" android:value="1.000000"/>
+    <meta-data android:name="spring" android:value="1.000000"/>
+    <meta-data android:name="dynamicoverscroller" android:value="2.000000"/>
+    <meta-data android:name="folme" android:value="2.000000"/>
+    <receiver android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+      </intent-filter>
+    </receiver>
+    <meta-data android:name="animation" android:value="1.000000"/>
+    <meta-data android:name="devicebaseinfo" android:value="1.000000"/>
+  </application>
+</manifest>

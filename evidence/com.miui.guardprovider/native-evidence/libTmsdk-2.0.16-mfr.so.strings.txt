@@ -1,0 +1,844 @@
+0xa69	__cxa_finalize
+0xa78	__cxa_atexit
+0xa85	__stack_chk_guard
+0xa97	strlen
+0xa9e	malloc
+0xaa5	strcpy
+0xab1	__stack_chk_fail
+0xac2	_Znwm
+0xac8	_ZdaPv
+0xacf	memset
+0xad6	snprintf
+0xadf	strcmp
+0xaeb	_ZdlPv
+0xaf2	strstr
+0xaf9	localtime
+0xb08	_Znam
+0xb0e	memcmp
+0xb15	memcpy
+0xb1c	__cxa_pure_virtual
+0xb2f	bsearch
+0xb37	strrchr
+0xb3f	fopen
+0xb45	fread
+0xb4b	fclose
+0xb57	fseek
+0xb5d	ftell
+0xb63	fwrite
+0xb6a	abort
+0xb70	JNI_OnLoad
+0xb80	pthread_mutex_lock
+0xb93	pthread_mutex_unlock
+0xba8	pthread_mutex_destroy
+0xbbe	pthread_mutex_init
+0xbd1	pthread_setspecific
+0xbe5	pthread_getspecific
+0xbf9	pthread_key_create
+0xc0c	realloc
+0xc19	fprintf
+0xc21	ferror
+0xc28	fflush
+0xc2f	isdigit
+0xc37	strcat
+0xc3e	fdopen
+0xc45	fgetc
+0xc4b	ungetc
+0xc52	mkdir
+0xc58	unlink
+0xc5f	access
+0xc66	rename
+0xc6d	memmove
+0xc75	localtime_r
+0xc81	mktime
+0xc88	gmtime
+0xc8f	gettimeofday
+0xca1	libz.so
+0xca9	liblog.so
+0xcb3	libstdc++.so
+0xcc0	libm.so
+0xcc8	libc.so
+0xcd0	libdl.so
+0xcd9	_edata
+0xce0	_bss_end__
+0xcf0	libTmsdk-2.0.16-mfr.so
+0xd07	VERSION
+0x30d8	Ghg8Fhf8
+0x30fb	*Jhh8Ihg8_
+0x310b	Thxhxgxgx
+0x3124	Jhh8Ihg8_
+0x3133	Thxhxgxgx
+0x314c	Jhh8Ihg8_
+0x315b	Thxhxgxgx
+0x3174	Jhh8Ihg8_
+0x3183	Thxhxgxgx
+0x319c	Jhh8Ihg8_
+0x31ab	Thxhxgxgx
+0x31c4	Jhh8Ihg8_
+0x31d3	Thxhxgxgx
+0x31ec	Jhh8Ihg8_
+0x31fb	Thxhxgxgx
+0x3214	Jhh8Ihg8_
+0x3223	Thxhxgxgx
+0x74ab	k@hcx`j#xJ
+0x74c3	kAh`xaj x
+0x74db	kAh`xaj x
+0x74f3	kAh`xaj x
+0x750b	kAh`xaj xM
+0x7523	kAh`xaj x
+0x7534	@hcx`j#xb
+0x7568	@xcx`z#xc
+0x90f6	d8jib
+0x93a2	dxCib
+0x97fa	@9v^A
+0x9b61	SE9c 
+0x9bc9	{E9c 
+0xa59b	k9hbxK
+0xa9cc	"hvx@x
+0xa9e8	#hvxL
+0xaa8b	k"hvx@x
+0xac04	Vhyx6
+0xac30	3hyxH
+0xad63	kUhxxShaxK
+0xb213	kbh`x
+0xb2b3	kshaxbhxxK
+0xb363	kbh`x
+0xbd42	@yah x
+0xbeaf	5@_A9
+0xbeb7	RBgA9
+0xbebf	rAcA9@ 
+0xbec7	*BSA9
+0xbecf	*A[A9N
+0xc01f	*AoA9
+0xc02b	*AsA9DkA9
+0xe6bb	5|3@y
+0xea2f	5a3@y
+0xed9d	<@yDx#x
+0x101af	4`b@9 
+0x101ff	5`b@9
+0x10d59	<@ye>
+0x11438	b @9B
+0x117a8	H @ybf
+0x122fa	_8cj"8
+0x12316	_8cj 8 
+0x12332	_8cj"8@
+0x1234e	_8cj 8`
+0x1236a	_8cj"8
+0x12386	_8cj 8
+0x123a2	_8cj"8
+0x123be	_8cj 8
+0x123da	_8cj"8
+0x123f6	_8cj 8 
+0x12412	_8cj"8@
+0x1242e	_8cj 8`
+0x1244a	_8cj"8
+0x12466	_8bj 8
+0x1247a	_8`j!8
+0x1262e	_8cj"8
+0x1264a	_8cj 8 
+0x12666	_8cj"8@
+0x12682	_8cj 8`
+0x1269e	_8cj"8
+0x126ba	_8cj 8
+0x126d6	_8cj"8
+0x126f2	_8cj 8
+0x1270e	_8cj"8
+0x1272a	_8cj 8 
+0x12746	_8cj"8@
+0x12762	_8cj 8`
+0x1277e	_8cj"8
+0x1279a	_8bj 8
+0x127ae	_8`j!8
+0x128ef	yD#@y
+0x12bfc	#if8h
+0x1353b	Qaja8?
+0x13af0	fJc8c
+0x14385	}_80 
+0x14399	m_80$
+0x143ad	]_80(
+0x143c1	M_80,
+0x143d5	=_800
+0x143e9	-_804
+0x14420	'hg8!
+0x147cc	e|_8E 
+0x147e0	el_8E$
+0x147f4	e\_8E(
+0x14808	eL_8E,
+0x1481c	e<_8E0
+0x14830	e,_8E4
+0x148e2	@y!\I
+0x14a9c	C|_8# 
+0x14ab0	Cl_8#$
+0x14ac4	C\_8#(
+0x14ad8	CL_8#,
+0x14aec	C<_8#0
+0x14b00	C,_8#4
+0x14ccc	F|_8& 
+0x14ce0	Fl_8&$
+0x14cf4	F\_8&(
+0x14d08	FL_8&,
+0x14d1c	F<_8&0
+0x14d30	F,_8&4
+0x14de0	aif8A
+0x14f00	C|_8# 
+0x14f14	Cl_8#$
+0x14f28	C\_8#(
+0x14f3c	CL_8#,
+0x14f50	C<_8#0
+0x14f64	C,_8#4
+0x15114	aif8A
+0x1523c	f|_8& 
+0x15250	fl_8&$
+0x15264	f\_8&(
+0x15278	fL_8&,
+0x1528c	f<_8&0
+0x152a0	f,_8&4
+0x1586f	*&hd8
+0x1599b	y@ @9
+0x159b7	TC$@9`
+0x159cf	TE(@9
+0x159ef	T@,@9!
+0x15a0f	TB0@9!
+0x15ce9	0@y!0@y@
+0x15d83	Tb0@y!0@y@
+0x15e6e	@9%(@9
+0x15e8f	S'$@9
+0x15f5c	&(@9B
+0x16113	4b"@9c
+0x16161	4@9B\I
+0x16191	0@9#0@9b
+0x1619f	9#0@9c
+0x161af	9"4@9D
+0x1621f	T!0@9
+0x16e77	Tav@9
+0x16e87	Taz@9
+0x16e97	Ta~@9
+0x1711b	T!'@y
+0x1712f	T!+@y
+0x1777a	@9!hc8
+0x17bee	_8ej"8
+0x17c0a	_8ej 8 
+0x17c26	_8ej"8@
+0x17c42	_8ej 8`
+0x17c5e	_8ej"8
+0x17c7a	_8ej 8
+0x17c96	_8ej"8
+0x17cb2	_8ej 8
+0x17cce	_8ej"8
+0x17cea	_8ej 8 
+0x17d06	_8ej"8@
+0x17d22	_8ej 8`
+0x17d3e	_8ej"8
+0x17d5a	_8bj 8
+0x17d6e	_8`j!8`
+0x17eb2	_8ej!8
+0x17ece	_8ej 8 
+0x17eea	_8ej!8@
+0x17f06	_8ej 8`
+0x17f22	_8ej!8
+0x17f3e	_8ej 8
+0x17f5a	_8ej!8
+0x17f76	_8ej 8
+0x17f92	_8ej!8
+0x17fae	_8ej 8 
+0x17fca	_8ej!8@
+0x17fe6	_8ej 8`
+0x18002	_8ej!8
+0x1801e	_8aj 8
+0x18032	_8`j"8
+0x1833b	Tcjd8f
+0x18689	|_8a 
+0x1869d	l_8a$
+0x186b1	\_8a(
+0x186c5	L_8a,
+0x186d9	<_8a0
+0x186ed	,_8a4
+0x18dcf	Ta:@9!
+0x18dfb	Ta*@y`
+0x18e34	`*@yab
+0x19007	T`:@9
+0x19013	5`*@y
+0x19104	`:@9`
+0x19123	Ta:@9 
+0x1912f	5b*@y
+0x19207	T`:@9
+0x19213	5`*@y
+0x19307	T`*@y
+0x1939b	T`:@9"
+0x193bb	T`:@9" @
+0x19407	T`:@9"P@
+0x1953b	ya:@9`
+0x19739	:@9#<@
+0x19aeb	4`:@9
+0x19c24	@8@9!
+0x1a177	T@8@9
+0x1a4bb	T`:@9
+0x1a5a7	T`:@9
+0x1a5e7	T`*@y@
+0x1ba90	c0@9B0@9c
+0x1bad4	c0@9B0@9c
+0x1c14c	bk`8ch`8b
+0x1c51e	#NB4%n
+0x1de88	?k48d
+0x1f62e	@9`^@
+0x200c7	81bBJ!
+0x201cb	4`R@9g>@
+0x2020c	b2@9$
+0x20214	B`AJ`
+0x20309	Ydx!$
+0x2038d	iaxa$
+0x20409	iaxB$
+0x20438	`R@9 
+0x20484	B`AJ`
+0x20768	c2@9`
+0x207b7	8f`BJ!
+0x20824	b2@9$
+0x2082c	B`AJ`
+0x2091d	Zdx!$
+0x20ab1	jcxB$
+0x20b61	jcx!$
+0x20bed	jdxa$
+0x20d11	ibxc$
+0x20d7d	icx`F
+0x229a4	e1M9j9Q9`AU9
+0x229b8	eIY9gQ]9
+0x22c1c	e1M9j9Q9
+0x22c50	e1M9j9Q9`AU9
+0x22c90	e1M9j9Q9
+0x22c9c	`AU9eIY9
+0x22cdc	e1M9j9Q9
+0x22cf0	eIY9gQ]9
+0x23338	  @yC
+0x23500	(0@y'4@y
+0x2352c	%<@yk
+0x23568	&8@yg
+0x2359c	,@@y1
+0x237b0	'X@y&\@yh
+0x23b9a	@y12@
+0x2440c	!0M9_
+0x2443c	c0M9_
+0x24464	c0M9_
+0x2448c	c0M9_
+0x244b4	!0M9_
+0x244d8	@0M9_
+0x2455b	4bh 8$
+0x24567	4bh 8$
+0x24573	4bh 8$
+0x2457f	4bh 8$
+0x2458b	4bh 8$
+0x24597	4bh 8$
+0x245a3	4bh 8$
+0x245af	4bh 8$ @9D
+0x245bb	4bh 8$$@9D
+0x245c7	4bh 8$(@9D
+0x245d3	4bh 8$,@9D
+0x245df	4bh 8$0@9D
+0x245eb	4bh 8$4@9D
+0x245f7	4bh 8$8@9D
+0x24603	4bh 8$<@9D
+0x2460f	4bh 8
+0x246af	R`hd8
+0x24bf0	D0M9cXY
+0x24e40	"$T9#
+0x24e9d	h`8hha
+0x24f8d	hg8hhj
+0x25001	hg8hhj
+0x25075	hg8hhi
+0x250e9	hg8hhj
+0x2515d	hg8hhj
+0x251d1	hg8hhi
+0x25245	hg8hhj
+0x252b9	hg8hhj
+0x2532d	hg8hhi
+0x253a1	hg8hhj
+0x25415	hg8hhj
+0x25489	hg8hhi
+0x254fd	hg8hhj
+0x25571	hg8hhj
+0x255e5	hg8hhi
+0x25659	hg8hhj
+0x256cd	hg8hhj
+0x25741	hg8hhi
+0x257b5	hg8hhj
+0x25829	hg8hhj
+0x2589d	hg8hhi
+0x25911	hg8hhj
+0x25985	hg8hhj
+0x259f9	hg8hhi
+0x25a6d	hg8hhj
+0x25ae1	hg8hhj
+0x25b55	hg8hhi
+0x25bc9	hg8hhj
+0x25c3d	hg8hhj
+0x25cb1	hg8hhi
+0x25d25	hg8hhj
+0x25d99	hg8hhj
+0x25e0d	hg8hhi
+0x25e81	hg8hhj
+0x25ef5	hg8hhj
+0x25f69	hg8hhi
+0x25fdd	hg8hhj
+0x26051	hg8hhj
+0x260c5	hg8hhi
+0x26139	hg8hhj
+0x261ad	hg8hhj
+0x26221	hg8hhi
+0x26295	hg8hhj
+0x26309	hg8hhj
+0x2637d	hg8hhi
+0x263f1	hg8hhj
+0x26465	hg8hhi
+0x264d9	he8chf
+0x26ce6	 8en@
+0x27390	 !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+0x27638	 X`xa
+0x2892f	KP069!
+0x2955c	B0z=)
+0x29574	Q0:91
+0x29583	Q&2z9b
+0x295a3	q&2:9
+0x295ac	!0z9A0:9I
+0x295cc	F0z9&2:9"
+0x295fb	Q!2z=?
+0x29605	0:=B0z9"2:9i
+0x2963c	!2z=!
+0x2964c	F0z9&2:9!0z9A0:9
+0x29687	k"0:9!
+0x29cc0	!0z9a
+0x29cc8	"0v9f
+0x29e84	Qhf8f
+0x29e9e	a8Ah&8`
+0x2a043	k 0:=
+0x2a073	k 0:=*
+0x2a0a3	k 0:=
+0x2a0d3	k 0:=*
+0x2a103	k 0:=
+0x2a13b	k 0:=
+0x2a153	k 2:=*
+0x2a183	k 0:=
+0x2a195	0z9 2:9`
+0x2a1b9	0z9 0:9`
+0x2a454	!0z9`
+0x2a480	!0z9`
+0x2a574	"0z9!6
+0x2a581	(:9"2
+0x2a58c	00z9!.
+0x2a5a4	A0z9p
+0x2a5ad	 :9!"
+0x2a5c8	 0z=!
+0x2a600	A0z9p
+0x2a62c	10z=a
+0x2a64e	:='0z=
+0x2a65a	:= 0z=
+0x2a66e	:9B0z9
+0x2a676	99!0z9
+0x2a67e	99!2z9
+0x2a7c4	$hb8d
+0x2a7d0	1h"x@
+0x2a7ef	*Qh!8
+0x2a875	jd8Bl
+0x2a8ef	kqR@9&
+0x2a98c	Qha80
+0x2a997	*Ph!8
+0x2abad	XbxaFD
+0x2ac70	pqrstuvwxyz{|}~
+0x2ac80	`abcdefghijklmnoPQRSTUVWXYZ[\]^_@ABCDEFGHIJKLMNO0123456789:;<=>? !"#$%&'()*+,-./
+0x2b11f	N!T(O!
+0x2b2c3	T&he8
+0x2b327	Thhg8
+0x2b393	Tbhg8
+0x2c299	x#xcjc8c\
+0x2c2c9	x"xbjb8B\
+0x2c2f1	x!xaja8!\
+0x2c3d6	@9`j"8
+0x2c4b7	SB @*D<~
+0x2c4d9	 B*D<~
+0x2c510	cjb8#h"8
+0x2c55e	d8B\H
+0x2c58a	`8!\H
+0x2cbec	ijb8v
+0x2cc04	aja8`j`8?
+0x2cc58	aja8!
+0x2ce0c	bJ`8_
+0x2ce7c	bJ`8_
+0x2ceec	bJ`8_
+0x2d1ef	R h48
+0x2d320	bjr8aja8?
+0x2d334	bjq8aja8?
+0x2d34c	aja8bjb8?
+0x2d364	bjb8aja8_
+0x2d37c	bjb8aja8_
+0x2d394	bjb8aja8_
+0x2d3ac	bjb8aja8_
+0x2d3c4	bjb8aja8_
+0x2d3dc	bjb8aja8_
+0x2d3f4	bjb8aja8_
+0x2d498	bjr8aja8?
+0x2d4ac	bjq8aja8?
+0x2d4c4	aja8bjb8?
+0x2d4dc	bjb8aja8_
+0x2d4f4	bjb8aja8_
+0x2d50c	bjb8aja8_
+0x2d524	bjb8aja8_
+0x2d53c	bjb8aja8_
+0x2d554	bjb8aja8_
+0x2d56c	bjb8aja8_
+0x2d610	bjn8aja8?
+0x2d624	bjo8aja8?
+0x2d63c	aja8bjb8?
+0x2d654	bjb8aja8_
+0x2d66c	bjb8aja8_
+0x2d684	bjb8aja8_
+0x2d69c	bjb8aja8_
+0x2d6b4	bjb8aja8_
+0x2d6cc	bjb8aja8_
+0x2d6e4	bjb8aja8_
+0x2e9a0	Hih8H
+0x2e9bc	Hih8H
+0x2e9cc	Hih8H
+0x2ea5b	8dje8eja8
+0x2ea7b	Raja8D
+0x2eaef	8aja8E
+0x30e8f	/pT0O
+0x30ebd	T8OcT0O
+0x30ec9	T8O!T0O
+0x30f0d	V(OeV(O
+0x31310	e EJ,
+0x32937	Jfj%8-
+0x32953	Jfj!8M
+0x3296f	Jfj%8m
+0x3298b	Jfj!8
+0x329a7	Jfj%8
+0x329c3	Jfj!8
+0x329df	Jfj%8
+0x329fb	Jfj!8
+0x32a17	Jfj%8-
+0x32a33	J`j!8M
+0x32a53	Jfj%8M
+0x32a6f	Jfj!8m
+0x32a8b	Jfj%8
+0x32aa7	Jej!8
+0x32abb	J`j"8
+0x3337f	/pT0O
+0x333ad	T8OcT0O
+0x333b9	T8O!T0O
+0x333fd	V(OeV(O
+0x33a6c	#h"8B
+0x33c67	Jfj%8-
+0x33c83	Jfj"8M
+0x33c9f	Jfj%8m
+0x33cbb	Jfj"8
+0x33cd7	Jfj%8
+0x33cf3	Jfj"8
+0x33d0f	Jfj%8
+0x33d2b	Jfj"8
+0x33d47	Jfj%8-
+0x33d63	Jaj"8M
+0x33d83	Jfj%8M
+0x33d9f	Jfj"8m
+0x33dbb	Jfj%8
+0x33dd7	Jej"8
+0x33deb	Jaj 8
+0x34804	#h"8B
+0x34c07	Jfj%8-
+0x34c23	Jfj"8M
+0x34c3f	Jfj%8m
+0x34c5b	Jfj"8
+0x34c77	Jfj%8
+0x34c93	Jfj"8
+0x34caf	Jfj%8
+0x34ccb	Jfj"8
+0x34ce7	Jfj%8-
+0x34d03	Jaj"8M
+0x34d23	Jfj%8M
+0x34d3f	Jfj"8m
+0x34d5b	Jfj%8
+0x34d77	Jej"8
+0x34d8b	Jaj 8
+0x36424	`H`8c
+0x36c5c	a&@xA
+0x36e7d	hb8%hb8B
+0x37025	hd8#hd8
+0x37089	hd8%hd8
+0x3721c	#$@xC,
+0x37239	hbx$hbxB
+0x37349	hdx#hdx
+0x373ad	xdx%xdx
+0x3b155	$@xE$@x
+0x3b259	$@x$$@x
+0x3b2d7	5$$@x@$@x
+0x3b361	$@x%$@x
+0x3b3f7	5%$@x@$@x
+0x3b53f	4d$@x $@x
+0x3e240	?@@1B 
+0x3e77c	_@@1b
+0x3eb44	?@@1a
+0x3fdf7	T$ @9#$
+0x3fe0b	T$$@9#(
+0x3fe1f	T$(@9#,
+0x3fe33	T$,@9#0
+0x3fe47	T$0@9#4
+0x3fe5b	T$4@9#8
+0x3fe6f	T!8@9A8
+0x40827	kbjb8b
+0x40840	aja8a
+0x40858	bjb8b
+0x40870	aja8a
+0x40888	bjb8b
+0x408a0	aja8a
+0x408b8	bjb8b
+0x408d0	aja8a
+0x408e8	bjb8b
+0x40900	aja8a
+0x40918	bjb8b
+0x40930	aja8a
+0x40948	bjb8b
+0x40960	aja8A
+0x40974	`j`8 
+0x4125a	@yB|@
+0x41963	T [`xa
+0x41efd	$06r)
+0x4221e	@yB|@
+0x43036	@yB|@
+0x4370b	T [`xa
+0x43803	1HC(7
+0x43c9d	!062&
+0x43fae	@yB|@
+0x44874	!k`8 $
+0x44a70	`I`8a
+0x44cdc	"ke8@|
+0x44d43	T"k`8
+0x44ede	@8!|@
+0x44f25	6 7cC
+0x44f47	T"k`8
+0x44f84	"ke8@
+0x44fb0	"ke8_
+0x45353	kBka8
+0x4535b	*Bk!8
+0x4539b	*Bka8
+0x453a3	*Bk!8
+0x45ab0	!k`x $
+0x45cb4	`I`8a
+0x45dc0	 kdx$
+0x45eb8	"kgx'
+0x45f17	T${ax
+0x460b1	6(7c6 7
+0x460db	T${`x
+0x46110	!kbx 
+0x46154	A,@x?
+0x46307	k$,@x
+0x463f7	R$kbx
+0x4642f	R$kbx
+0x464cd	jgx #
+0x46547	kBka8
+0x4654f	*Bk!8c
+0x46597	*Bka8
+0x4659f	*Bk!8
+0x465d1	,@xE$
+0x46c20	DFG#$%^#%$RGHR(&*M<><
+0x46c38	java/lang/OutOfMemoryError
+0x46c58	data too large
+0x46c68	java/lang/RuntimeException
+0x46c88	Bad encrypted data
+0x46ca0	tmsdk/common/tcc/TccCryptor
+0x46cc0	makePassword
+0x46cd0	([B)[B
+0x46cd8	encrypt
+0x46ce0	([B[B)[B
+0x46cf0	decrypt
+0x46d00	(Ljava/lang/Object;)Z
+0x46d18	length
+0x46d28	replace
+0x46d30	(IILjava/lang/String;)Ljava/lang/StringBuffer;
+0x46d60	tmsdk/bg/tcc/TelNumberLocator
+0x46d80	newObject
+0x46da0	(JLjava/lang/String;Ljava/lang/String;)I
+0x46dd0	patch
+0x46dd8	(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+0x46e18	getLocation
+0x46e28	(JLjava/lang/StringBuffer;Ljava/lang/StringBuffer;Ljava/lang/StringBuffer;Ljava/lang/String;Z)I
+0x46e88	getMobileNumLocation
+0x46ea0	(JILjava/lang/StringBuffer;)I
+0x46ec0	getAreaCodeLocation
+0x46ed8	getCountryCodeLocation
+0x46ef0	getAreaCode
+0x46f00	(J)[I
+0x46f08	getCountryCode
+0x46f18	deleteObject
+0x46f30	getYellowPages
+0x46f40	(JLjava/util/ArrayList;Ljava/util/ArrayList;)I
+0x46f70	getDetailYellowPages
+0x46f88	(JLjava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)I
+0x46fe8	getProvinceNameList
+0x47000	(JLjava/util/ArrayList;)I
+0x47020	getCityNameList
+0x47030	(JLjava/lang/String;Ljava/util/ArrayList;)I
+0x47068	tmsdk/bg/tcc/NumMarker
+0x47080	nNewInstance
+0x47098	nDestroyInstance
+0x470b0	nSetPath
+0x470c0	(JLjava/lang/String;)Z
+0x470d8	nGetHeaderInfo
+0x470e8	(JLjava/util/concurrent/atomic/AtomicInteger;Ljava/util/concurrent/atomic/AtomicInteger;Ljava/util/concurrent/atomic/AtomicInteger;Ljava/util/concurrent/atomic/AtomicReference;)Z
+0x471a0	nGetTypeNameMapping
+0x471b8	(JLjava/util/List;Ljava/util/List;)Z
+0x471e0	nGetMarkInfoByPhoneNumber
+0x47200	(JLjava/lang/String;Ljava/util/concurrent/atomic/AtomicInteger;Ljava/util/concurrent/atomic/AtomicInteger;)Z
+0x47270	nUpdate
+0x47278	nRepack
+0x47288	nGetDataMd5
+0x47298	(JLjava/lang/String;)Ljava/lang/String;
+0x472c0	nGetTagList
+0x472e0	prefix
+0x472e8	Ljava/lang/String;
+0x47300	postfix
+0x47308	tmsdk/common/tcc/TrafficSmsParser
+0x47330	nativeGetNumberEntrance
+0x47348	(Ljava/lang/String;Ljava/lang/String;Ltmsdk/common/tcc/TrafficSmsParser$MatchRule;Ljava/util/concurrent/atomic/AtomicInteger;)I
+0x473c8	nativeGetWrongSmsType
+0x473e0	(Ljava/lang/String;Ljava/lang/String;)I
+0x47408	com/tencent/diffupdate/TccDiff
+0x47428	bsPatch
+0x47430	(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)I
+0x47470	fileMd5
+0x47478	(Ljava/lang/String;)Ljava/lang/String;
+0x474a0	getByteMd5
+0x474b0	([B)Ljava/lang/String;
+0x474c8	tmsdk/common/YellowPages
+0x474e8	nQueryDataByNumberJNI
+0x47500	(Ljava/lang/String;Ljava/lang/String;Ljava/util/concurrent/atomic/AtomicInteger;Ljava/util/concurrent/atomic/AtomicReference;)I
+0x477ed	00:00
+0x47910	ptrP1 == NULL
+0x47920	NULL == ptrP2
+0x47930	ptrP2 >= (ptrstsmsinfo
+0x47948	ptrP1!=NULL,but NULL == ptrP2
+0x47968	find prefix but not find postfix
+0x47990	GetNumber ret:%d
+0x479a8	ERROR:strlen(ptrPrefix) <= 0
+0x47b55	u*09r~f,s
+0x47b68	nmdtmp.tmp
+0x47b78	nmtmp1.tmp
+0x47b88	nmtmp2.tmp
+0x47dc8	0123456789abcdef
+0x47e00	ypltmp1.tmp
+0x47e10	ypltmp2.tmp
+0x47e20	ypltmp3.tmp
+0x47e38	chars                  : 
+0x47e58	child offset           : %d
+0x47e78	child count in memory  : %d
+0x47e98	child count            : %d
+0x47eb8	is phone num           : %d
+0x47ed8	data length            : %d
+0x47ef8	data                   : 
+0x47f20	java/lang/Integer
+0x47f38	<init>
+0x47f48	java/util/concurrent/atomic/AtomicReference
+0x47f88	()Ljava/lang/Object;
+0x47fa0	java/util/concurrent/atomic/AtomicInteger
+0x47fe0	(Ljava/lang/Object;)V
+0x47ff8	clear
+0x48000	(I)Ljava/lang/Object;
+0x48020	basic_string
+0x48030	java/lang/String
+0x48048	getBytes
+0x48058	(Ljava/lang/String;)[B
+0x48070	([BLjava/lang/String;)V
+0x480a0	tmsdk/common/TMSDKContext
+0x480c0	checkLisence
+0x480d8	doRegisterNatives
+0x480f0	(ILjava/lang/Class;)I
+0x48108	getProcBitStatus
+0x48128	class exception
+0x48138	class bad_exception
+0x48150	out of memory
+0x48182	bzip2/libbzip2: internal error number %d.
+0x481ac	This is a bug in bzip2/libbzip2, %s.
+0x481d1	Please report it to: bzip2-devel@sourceware.org.  If this happened
+0x48214	when you were using some program which uses libbzip2 as a
+0x4824e	component, you should also report this bug to the author(s)
+0x4828a	of that program.  Please make an effort to report this bug;
+0x482c6	timely and accurate bug reports eventually lead to higher
+0x48300	quality software.  Thanks.
+0x48320	2.0.8, 16-Jul-2024
+0x48339	*** A special note about internal error number 1007 ***
+0x48372	Experience suggests that a common cause of i.e. 1007
+0x483a7	is unreliable memory or other hardware.  The 1007 assertion
+0x483e3	just happens to cross-check the results of huge numbers of
+0x4841e	memory reads/writes, and so acts (unintendedly) as a stress
+0x4845a	test of your memory system.
+0x48477	I suggest the following: try compressing the file again,
+0x484b0	possibly monitoring progress in detail with the -vv flag.
+0x484eb	* If the error cannot be reproduced, and/or happens at different
+0x4852c	  points in compression, you may have a flaky memory system.
+0x48569	  Try a memory-test program.  I have used Memtest86
+0x4859d	  (www.memtest86.com).  At the time of writing it is free (GPLd).
+0x485df	  Memtest86 tests memory much more thorougly than your BIOSs
+0x4861c	  power-on test, and may find failures that the BIOS doesn't.
+0x4865b	* If the error can be repeatably reproduced, this is a bug in
+0x48699	  bzip2, and I would very much like to hear about it.  Please
+0x486d7	  let me know, and, ideally, save a copy of the file causing the
+0x48718	  problem -- without which I will be unable to investigate it.
+0x48760	 {0x%08x, 0x%08x}
+0x48781	    combined CRCs: stored = 0x%08x, computed = 0x%08x
+0x487d0	SEQUENCE_ERROR
+0x487e0	PARAM_ERROR
+0x487f0	MEM_ERROR
+0x48800	DATA_ERROR
+0x48810	DATA_ERROR_MAGIC
+0x48828	IO_ERROR
+0x48838	UNEXPECTED_EOF
+0x48848	OUTBUFF_FULL
+0x48858	CONFIG_ERROR
+0x48870	      %d in block, %d after MTF & 1-2 coding, %d+2 syms in use
+0x488b0	      initial group %d, [%d .. %d], has %d syms (%4.1f%%)
+0x488f0	      pass %d: size is %d, grp uses are 
+0x48928	      bytes: mapping %d, 
+0x48948	selectors %d, 
+0x48958	code lengths %d, 
+0x48970	codes %d
+0x48980	    block %d: crc = 0x%08x, combined CRC = 0x%08x, size = %d
+0x489c0	    final combined CRC = 0x%08x
+0x48a39	    [%d: huff+mtf 
+0x48a50	rt+rld
+0x48aa0	        bucket sorting ...
+0x48ac0	        depth %6d has 
+0x48ad8	%6d unresolved strings
+0x48af0	        reconstructing block ...
+0x48b18	        main sort initialise ...
+0x48b40	        qsort [0x%x, 0x%x]   done %d   this %d
+0x48b70	        %d pointers, %d sorted, %d scanned
+0x48ba0	    too repetitive; using fallback sorting algorithm
+0x48bd8	      %d work, %d block, ratio %5.2f
+0x48c00	ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+0x48db0	^-!"#$%&'()*+,./:;<=>?@[\]_`{|}~
+0x48dd8	dDfnrsStvwW
+0x48de8	()[]{}|
+0x48df8	^$?*+
+0x48e68	%04u%02u%02u%02u%02u%02u
+0x48e91	("IE=2
+0x48f2d	LF>:2' 
+0x48fc9	)#JF>3
+0x49065	LF>:2' 
+0x49125	('8PW
+0x4912e	700PP
+0x49140	```hhh
+0x49149	xppwpp
+0x5857b	US]CQ
+0x58f40	GCC: (GNU) 4.9 20140827 (prerelease)
+0x58f66	.init_array
+0x58f72	.fini_array
+0x58f7e	.text
+0x58f89	.comment
+0x58f92	.rela.plt
+0x58fa1	.dynstr
+0x58fa9	.eh_frame_hdr
+0x58fb7	.data.rel.ro
+0x58fc4	.rela.dyn
+0x58fce	.gnu.version
+0x58fdb	.dynsym
+0x58fe3	.hash
+0x58fe9	.eh_frame
+0x58ff3	.gnu.version_d
+0x59002	.dynamic
+0x5900b	.shstrtab
+0x59015	.rodata
+0x5901d	.data

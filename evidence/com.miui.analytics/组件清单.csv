@@ -1,0 +1,13 @@
+﻿type,name,exported,permission,readPermission,writePermission,process,authorities,intent_actions
+provider,com.miui.analytics.AnalyticsProvider,true,,,,,com.miui.analytics.server.AnalyticsProvider,
+provider,com.miui.analytics.onetrack.db.OneTrackProvider,true,,,,,com.miui.analytics.OneTrackProvider,
+receiver,com.miui.analytics.AnalyticsReceiver,true,,,,,,android.intent.action.BOOT_COMPLETED | android.intent.action.ACTION_SHUTDOWN | android.provision.action.PROVISION_COMPLETE | android.intent.action.SIM_STATE_CHANGED
+receiver,com.miui.analytics.internal.ApkReceiver,true,,,,,,miui.intent.action.PACKAGE_FIRST_LAUNCH
+service,com.miui.analytics.AnalyticsService,true,,,,,,com.miui.action.ANALYTICS_SERVICE
+service,com.miui.analytics.onetrack.OneTrackService,true,,,,,,com.miui.action.ONETRACK_SERVICE
+service,com.miui.analytics.onetrack.TrackService,true,com.miui.analytics.onetrack.TRACK_EVENT,,,,,onetrack.action.TRACK_EVENT
+service,com.miui.analytics.EventService,true,,,,,,
+service,com.miui.analytics.internal.WakeupService,,,,,,,
+service,com.miui.analytics.AppenderService,true,,,,,,miui.intent.action.analytics.ANALYTICS_DOWNLOAD | android.intent.action.PACKAGE_FIRST_LAUNCH | miui.intent.action.analytics.APPEND_USAGE | miui.intent.action.analytics.REPORT_HYBRID_STATE
+service,com.miui.analytics.internal.JobSchedulerService,,android.permission.BIND_JOB_SERVICE,,,,,
+provider,com.miui.bugreport.logprovider.DumpLogProvider,true,com.miui.bugreport.permission.DUMP_CACHED_LOG,,,,com.miui.analytics.provider.bugreport,com.miui.bugreport.intent.ACTION_DUMP_CACHED_LOG

@@ -1,0 +1,415 @@
+
+raw/lib/arm64-v8a/libtensorflowlite_jni.so:	file format elf64-littleaarch64
+
+DYNAMIC SYMBOL TABLE:
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __cxa_finalize
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __cxa_atexit
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __stack_chk_fail
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       memcpy
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       abort
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       vsnprintf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       strlen
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       memcmp
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       snprintf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       strcmp
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       strncmp
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __system_property_get
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       strtol
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       dlsym
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       malloc
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       free
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       memmove
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       mmap
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       munmap
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       close
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       memset
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       time
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       open
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       write
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       fsync
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       rename
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __errno
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       strerror
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       flock
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       fstat
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       read
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       dlopen
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       dlerror
+0000000000000000      DO *UND*	0000000000000000 (LIBC)       __sF
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       fprintf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       getuid
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       fwrite
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       nanf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       bsearch
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       getpagesize
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       mremap
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       access
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       dup
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       lseek
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       syscall
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_once
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       qsort
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       clock_gettime
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       exp
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       expf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       realloc
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       memalign
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       sysconf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       mprotect
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_mutex_init
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_mutex_lock
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_mutex_unlock
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_mutex_destroy
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       calloc
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       fflush
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       fmodf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       atan2f
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       powf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       expm1f
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       erf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       logf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       tanhf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       cbrtf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       cosf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       sinf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       erfcf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       frexp
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_cond_broadcast
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_cond_init
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_create
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_cond_wait
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       atan2
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       strtoll_l
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       strtoull_l
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       posix_memalign
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       nextafterf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       hypotf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       hypot
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_self
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_equal
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       strtod
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       madvise
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pow
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       ldexp
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       sincosf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       log
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       cos
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       log1p
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_setspecific
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       getauxval
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_join
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_cond_destroy
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       getenv
+0000000000000000      DF *UND*	0000000000000000              __android_log_vprint
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       strnlen
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       strncpy
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       prctl
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       sincos
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       exit
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       memchr
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_key_create
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_getspecific
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       newlocale
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       freelocale
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       fopen
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       fclose
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       fread
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       fileno
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       vfprintf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       fputc
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       dlclose
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_cond_signal
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __vsnprintf_chk
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       vasprintf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __open_2
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __read_chk
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __strlen_chk
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       strerror_r
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       nanosleep
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       android_set_abort_message
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       openlog
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       syslog
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       closelog
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __memmove_chk
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       dl_iterate_phdr
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_rwlock_unlock
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_rwlock_rdlock
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_key_delete
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_rwlock_wrlock
+00000000000935a0 g    DF .text	000000000000003c  VERS_1.0    TfLiteInterpreterGetVariableTensor
+000000000009411c g    DF .text	0000000000000218  VERS_1.0    TfLiteInterpreterOptionsSetOpResolverExternalWithFallback
+0000000000094d1c g    DF .text	0000000000000034  VERS_1.0    TfLiteSignatureRunnerGetOutputName
+00000000003a96e8 g    DF .text	0000000000000024  VERS_1.0    TfLiteTensorGetBufferAddressStability
+00000000003a908c g    DF .text	0000000000000004  VERS_1.0    TfLiteIntArrayFree
+0000000000097a00 g    DF .text	000000000000020c  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_getSignatureKeys
+00000000000a5190 g    DF .text	0000000000000110  VERS_1.0    TfLiteInterpreterOptionsAddOperator
+0000000000094334 g    DF .text	0000000000000158  VERS_1.0    TfLiteInterpreterOptionsSetOpResolver
+00000000000948b8 g    DF .text	0000000000000018  VERS_1.0    TfLiteInterpreterGetInputTensorIndex
+00000000000948e8 g    DF .text	0000000000000044  VERS_1.0    TfLiteInterpreterGetSignatureCount
+0000000000094d04 g    DF .text	0000000000000018  VERS_1.0    TfLiteSignatureRunnerGetOutputCount
+00000000000954e0 g    DF .text	000000000000000c  VERS_1.0    TfLiteOpaqueTensorGetStringCount
+000000000009568c g    DF .text	0000000000000008  VERS_1.0    TfLiteOpaqueTensorBuilderSetAllocationType
+00000000000a4890 g    DF .text	000000000000000c  VERS_1.0    TfLiteVersion
+00000000000a3c2c g    DF .text	0000000000000048  VERS_1.0    Java_org_tensorflow_lite_TensorImpl_numBytes
+00000000000a3c74 g    DF .text	0000000000000058  VERS_1.0    Java_org_tensorflow_lite_TensorImpl_hasDelegateBufferHandle
+00000000000ba444 g    DF .text	000000000000013c  VERS_1.0    TfLiteNnapiDelegateCreate
+00000000000ba580 g    DF .text	00000000000000a0  VERS_1.0    TfLiteNnapiDelegateOptionsDefault
+00000000000975e4 g    DF .text	0000000000000070  VERS_1.0    Java_org_tensorflow_lite_InterpreterFactoryImpl_nativeSchemaVersion
+000000000039108c g    DF .text	0000000000000008  VERS_1.0    TfLiteSynchronizationSetPtr
+00000000000a39d0 g    DF .text	0000000000000048  VERS_1.0    Java_org_tensorflow_lite_TensorImpl_dtype
+00000000000a586c g    DF .text	000000000000001c  VERS_1.0    TfLiteInterpreterGetOutputTensorCount
+00000000003a9688 g    DF .text	0000000000000028  VERS_1.0    TfLiteTypeGetName
+00000000003a9134 g    DF .text	0000000000000004  VERS_1.0    TfLiteFloatArrayFree
+00000000000954c0 g    DF .text	0000000000000004  VERS_1.0    TfLiteOpaqueTensorName
+00000000000a5964 g    DF .text	0000000000000008  VERS_1.0    TfLiteTensorName
+00000000000954dc g    DF .text	0000000000000004  VERS_1.0    TfLiteOpaqueTensorCopyToBuffer
+00000000003a8fa0 g    DF .text	0000000000000054  VERS_1.0    TfLiteIntArrayEqualsArray
+0000000000399188 g    DF .text	0000000000000020  VERS_1.0    TfLiteTelemetryInterpreterSettingsGetNumSubgraphInfo
+0000000000094cc4 g    DF .text	0000000000000018  VERS_1.0    TfLiteSignatureRunnerAllocateTensors
+0000000000095a90 g    DF .text	000000000000003c  VERS_1.0    TfLiteOpaqueContextAcquireSubgraphContext
+0000000000095acc g    DF .text	0000000000000014  VERS_1.0    TfLiteOpaqueContextReleaseSubgraphContext
+000000000039104c g    DF .text	000000000000000c  VERS_1.0    TfLiteBackendBufferDelete
+0000000000095498 g    DF .text	000000000000000c  VERS_1.0    TfLiteOpaqueTensorData
+00000000000a595c g    DF .text	0000000000000008  VERS_1.0    TfLiteTensorData
+00000000000954b8 g    DF .text	0000000000000004  VERS_1.0    TfLiteOpaqueTensorGetDataKnownStep
+00000000000c14d8 g    DF .text	0000000000000010  VERS_1.0    TfLiteXNNPackDelegateGetThreadPool
+0000000000095a7c g    DF .text	0000000000000014  VERS_1.0    TfLiteOpaqueContextResizeTensor
+00000000000a8274 g    DF .text	000000000000005c  VERS_1.0    TfLiteOperatorCreate
+00000000000a1c04 g    DF .text	000000000000004c  VERS_1.0    Java_org_tensorflow_lite_NativeSignatureRunnerWrapper_nativeOutputNames
+00000000000a5680 g    DF .text	0000000000000098  VERS_1.0    TfLiteInterpreterDelete
+00000000000a4e28 g    DF .text	00000000000000b8  VERS_1.0    TfLiteInterpreterOptionsCreate
+00000000000a5748 g    DF .text	000000000000003c  VERS_1.0    TfLiteInterpreterGetInputTensor
+00000000000a5784 g    DF .text	00000000000000ac  VERS_1.0    TfLiteInterpreterResizeInputTensor
+00000000000a836c g    DF .text	0000000000000014  VERS_1.0    TfLiteOperatorGetVersion
+00000000003991c8 g    DF .text	000000000000000c  VERS_1.0    TfLiteTelemetrySubgraphInfoGetQuantizations
+00000000003a9730 g    DF .text	0000000000000024  VERS_1.0    TfLiteTensorGetDataKnownStep
+0000000000097e08 g    DF .text	00000000000001f0  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_getOutputNames
+00000000000a1d3c g    DF .text	00000000000000ec  VERS_1.0    Java_org_tensorflow_lite_NativeSignatureRunnerWrapper_nativeGetOutputIndex
+00000000000a506c g    DF .text	0000000000000008  VERS_1.0    TfLiteInterpreterOptionsSetNumThreads
+00000000000ba620 g    DF .text	0000000000000024  VERS_1.0    TfLiteNnapiDelegateDelete
+0000000000095650 g    DF .text	0000000000000020  VERS_1.0    TfLiteOpaqueTensorBuilderCreate
+0000000000097c78 g    DF .text	000000000000006c  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_getOutputTensorIndex
+00000000000983bc g    DF .text	00000000000005d4  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_createInterpreter
+00000000000a206c g    DF .text	00000000000000ac  VERS_1.0    Java_org_tensorflow_lite_NativeSignatureRunnerWrapper_nativeInvoke
+00000000000a5184 g    DF .text	000000000000000c  VERS_1.0    TfLiteInterpreterOptionsSetErrorReporter
+00000000000a58d4 g    DF .text	000000000000003c  VERS_1.0    TfLiteInterpreterGetOutputTensor
+00000000000a833c g    DF .text	0000000000000008  VERS_1.0    TfLiteOperatorSetAsyncKernel
+000000000039915c g    DF .text	000000000000000c  VERS_1.0    TfLiteTelemetryInterpreterSettingsGetConversionMetadata
+00000000000c1034 g    DF .text	0000000000000014  VERS_1.0    TfLiteXNNPackDelegateCanUseInMemoryWeightCacheProvider
+0000000000094bb0 g    DF .text	0000000000000028  VERS_1.0    TfLiteInterpreterGetSignatureRunner
+00000000000959e4 g    DF .text	0000000000000024  VERS_1.0    TfLiteOpaqueContextGetVariables
+0000000000095b08 g    DF .text	0000000000000130  VERS_1.0    TfLiteOpaqueContextAddTensor
+00000000000a3d0c g    DF .text	0000000000000048  VERS_1.0    Java_org_tensorflow_lite_TensorImpl_quantizationScale
+00000000000a8354 g    DF .text	0000000000000008  VERS_1.0    TfLiteOperatorSetInplaceOperator
+00000000003a957c g    DF .text	000000000000008c  VERS_1.0    TfLiteTensorResizeMaybeCopy
+00000000000935dc g    DF .text	0000000000000008  VERS_1.0    TfLiteInterpreterOptionsAddBuiltinOp
+0000000000094bf0 g    DF .text	0000000000000034  VERS_1.0    TfLiteSignatureRunnerGetInputName
+00000000000a5974 g    DF .text	0000000000000030  VERS_1.0    TfLiteTensorCopyFromBuffer
+00000000000a489c g    DF .text	0000000000000008  VERS_1.0    TfLiteSchemaVersion
+00000000000c1048 g    DF .text	000000000000000c  VERS_1.0    TfLiteXNNPackDelegateInMemoryFilePath
+00000000000a59a4 g    DF .text	0000000000000038  VERS_1.0    TfLiteTensorCopyToBuffer
+00000000000956a4 g    DF .text	0000000000000028  VERS_1.0    TfLiteOpaqueTensorSetAllocationTypeToDynamic
+000000000009598c g    DF .text	0000000000000010  VERS_1.0    TfLiteOpaqueContextGetOpaqueTensor
+00000000000948d0 g    DF .text	0000000000000018  VERS_1.0    TfLiteInterpreterGetOutputTensorIndex
+000000000009541c g    DF .text	0000000000000004  VERS_1.0    TfLiteOpaqueTensorType
+00000000000a5924 g    DF .text	0000000000000008  VERS_1.0    TfLiteTensorType
+0000000000095424 g    DF .text	0000000000000004  VERS_1.0    TfLiteOpaqueTensorDim
+0000000000095d44 g    DF .text	00000000000000a4  VERS_1.0    TfLiteOpaqueContextReportErrorVa
+00000000000a3a18 g    DF .text	00000000000000a0  VERS_1.0    Java_org_tensorflow_lite_TensorImpl_name
+00000000000a835c g    DF .text	0000000000000008  VERS_1.0    TfLiteOperatorGetBuiltInCode
+00000000003991a8 g    DF .text	000000000000000c  VERS_1.0    TfLiteTelemetryInterpreterSettingsGetSubgraphInfo
+0000000000097ce4 g    DF .text	000000000000004c  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_getExecutionPlanLength
+00000000000a1b78 g    DF .text	0000000000000040  VERS_1.0    Java_org_tensorflow_lite_NativeSignatureRunnerWrapper_nativeGetSubgraphIndex
+00000000000a82d0 g    DF .text	000000000000000c  VERS_1.0    TfLiteOperatorDelete
+00000000003991d4 g    DF .text	000000000000000c  VERS_1.0    TfLiteTelemetryGpuDelegateSettingsGetNumNodesDelegated
+00000000003a970c g    DF .text	0000000000000024  VERS_1.0    TfLiteTensorGetDataStability
+00000000000a3ab8 g    DF .text	00000000000000b4  VERS_1.0    Java_org_tensorflow_lite_TensorImpl_shape
+00000000000a5020 g    DF .text	000000000000004c  VERS_1.0    TfLiteInterpreterOptionsDelete
+0000000000391060 g    DF .text	0000000000000008  VERS_1.0    TfLiteBackendBufferGetPtr
+0000000000095880 g    DF .text	0000000000000028  VERS_1.0    TfLiteOpaqueContextGetExternalContext
+00000000000a8314 g    DF .text	0000000000000010  VERS_1.0    TfLiteOperatorSetPrepareWithData
+00000000000948a4 g    DF .text	0000000000000014  VERS_1.0    TfLiteInterpreterModifyGraphWithDelegate
+0000000000094b00 g    DF .text	000000000000001c  VERS_1.0    TfLiteInterpreterEnsureTensorDataIsReadable
+000000000009581c g    DF .text	0000000000000028  VERS_1.0    TfLiteOpaqueNodeGetInputTensorIndex
+00000000000a35b8 g    DF .text	0000000000000418  VERS_1.0    Java_org_tensorflow_lite_TensorImpl_writeScalar
+00000000000a5844 g    DF .text	0000000000000028  VERS_1.0    TfLiteInterpreterInvoke
+00000000003991b4 g    DF .text	0000000000000014  VERS_1.0    TfLiteTelemetrySubgraphInfoGetNumQuantizations
+0000000000095684 g    DF .text	0000000000000008  VERS_1.0    TfLiteOpaqueTensorBuilderSetData
+00000000000a2c4c g    DF .text	00000000000000cc  VERS_1.0    Java_org_tensorflow_lite_TensorImpl_writeDirectBuffer
+00000000000a82e4 g    DF .text	0000000000000010  VERS_1.0    TfLiteOperatorSetInitWithData
+0000000000096d34 g    DF .text	00000000000002a4  VERS_1.0    Java_org_tensorflow_lite_nnapi_NnApiDelegateImpl_createDelegate
+0000000000096fd8 g    DF .text	0000000000000014  VERS_1.0    Java_org_tensorflow_lite_nnapi_NnApiDelegateImpl_getNnapiErrno
+00000000000a2d18 g    DF .text	00000000000000c8  VERS_1.0    Java_org_tensorflow_lite_TensorImpl_readMultiDimensionalArray
+00000000000a5734 g    DF .text	0000000000000014  VERS_1.0    TfLiteInterpreterInputTensorIndices
+00000000003a91e8 g    DF .text	00000000000000b8  VERS_1.0    TfLiteSparsityFree
+00000000000935e4 g    DF .text	0000000000000074  VERS_1.0    TfLiteInterpreterCreateWithSelectedOps
+000000000009448c g    DF .text	0000000000000158  VERS_1.0    TfLiteInterpreterOptionsSetOpResolverV1
+00000000000954a4 g    DF .text	0000000000000008  VERS_1.0    TfLiteOpaqueTensorGetAllocationType
+0000000000095518 g    DF .text	00000000000000ac  VERS_1.0    TfLiteOpaqueTensorWriteStrings
+00000000000956cc g    DF .text	0000000000000010  VERS_1.0    TfLiteOpaqueNodeGetInput
+00000000000a4ee0 g    DF .text	0000000000000140  VERS_1.0    TfLiteInterpreterOptionsCopy
+0000000000093584 g    DF .text	000000000000001c  VERS_1.0    TfLiteInterpreterGetVariableTensorCount
+000000000009473c g    DF .text	0000000000000158  VERS_1.0    TfLiteInterpreterOptionsSetOpResolverV2
+00000000000956f8 g    DF .text	000000000000000c  VERS_1.0    TfLiteOpaqueNodeNumberOfOutputs
+00000000000c100c g    DF .text	000000000000001c  VERS_1.0    TfLiteXNNPackDelegateWeightsCacheFinalizeHard
+00000000000945e4 g    DF .text	0000000000000158  VERS_1.0    TfLiteInterpreterOptionsSetOpResolverV3
+00000000000a82f4 g    DF .text	0000000000000008  VERS_1.0    TfLiteOperatorSetFree
+00000000000a830c g    DF .text	0000000000000008  VERS_1.0    TfLiteOperatorSetPrepare
+00000000003a9608 g    DF .text	0000000000000080  VERS_1.0    TfLiteTensorRealloc
+0000000000093570 g    DF .text	0000000000000014  VERS_1.0    TfLiteInterpreterResetVariableTensors
+00000000000a5944 g    DF .text	0000000000000010  VERS_1.0    TfLiteTensorDim
+00000000000954b4 g    DF .text	0000000000000004  VERS_1.0    TfLiteOpaqueTensorGetDataStability
+00000000000954c4 g    DF .text	000000000000000c  VERS_1.0    TfLiteOpaqueTensorGetQuantization
+00000000000956dc g    DF .text	0000000000000010  VERS_1.0    TfLiteOpaqueNodeGetOutput
+0000000000095958 g    DF .text	0000000000000034  VERS_1.0    TfLiteOpaqueContextReplaceNodeSubsetsWithDelegateKernels
+0000000000095de8 g    DF .text	0000000000000068  VERS_1.0    TfLiteOpaqueDelegateCreate
+00000000000958a8 g    DF .text	00000000000000b0  VERS_1.0    TfLiteOpaqueContextGetNodeAndRegistration
+000000000009599c g    DF .text	0000000000000024  VERS_1.0    TfLiteOpaqueContextGetInputs
+00000000000975a8 g    DF .text	000000000000003c  VERS_1.0    Java_org_tensorflow_lite_InterpreterFactoryImpl_nativeRuntimeVersion
+00000000003a8f3c g    DF .text	0000000000000064  VERS_1.0    TfLiteIntArrayEqual
+00000000000955c4 g    DF .text	000000000000008c  VERS_1.0    TfLiteOpaqueTensorWriteString
+00000000000a1e28 g    DF .text	0000000000000198  VERS_1.0    Java_org_tensorflow_lite_NativeSignatureRunnerWrapper_nativeResizeInput
+00000000000a4888 g    DF .text	0000000000000008  VERS_1.0    TfLiteCheckInitializedOrThrow
+0000000000391068 g    DF .text	0000000000000018  VERS_1.0    TfLiteSynchronizationCreate
+0000000000399168 g    DF .text	000000000000000c  VERS_1.0    TfLiteTelemetryConversionMetadataGetModelOptimizationModes
+0000000000097d9c g    DF .text	000000000000006c  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_getOutputCount
+00000000000a8380 g    DF .text	000000000000000c  VERS_1.0    TfLiteOperatorGetUserData
+000000000009489c g    DF .text	0000000000000008  VERS_1.0    TfLiteInterpreterOptionsSetEnableDelegateFallback
+0000000000095420 g    DF .text	0000000000000004  VERS_1.0    TfLiteOpaqueTensorNumDims
+00000000003a909c g    DF .text	0000000000000028  VERS_1.0    TfLiteFloatArrayCreate
+00000000003a9364 g    DF .text	0000000000000088  VERS_1.0    TfLiteTensorReset
+0000000000094ac0 g    DF .text	0000000000000014  VERS_1.0    TfLiteInterpreterGetBufferHandle
+0000000000095670 g    DF .text	000000000000000c  VERS_1.0    TfLiteOpaqueTensorBuilderDelete
+000000000009567c g    DF .text	0000000000000008  VERS_1.0    TfLiteOpaqueTensorBuilderSetType
+0000000000095704 g    DF .text	0000000000000008  VERS_1.0    TfLiteOpaqueNodeGetUserData
+00000000000956ec g    DF .text	000000000000000c  VERS_1.0    TfLiteOpaqueNodeNumberOfInputs
+0000000000095428 g    DF .text	0000000000000028  VERS_1.0    TfLiteOpaqueTensorGetNumDimsSignature
+0000000000098b00 g    DF .text	0000000000000098  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_run
+00000000000a5910 g    DF .text	0000000000000014  VERS_1.0    TfLiteInterpreterCancel
+00000000003a96b0 g    DF .text	0000000000000014  VERS_1.0    TfLiteDelegateCreate
+0000000000095a58 g    DF .text	0000000000000024  VERS_1.0    TfLiteOpaqueContextGetName
+00000000000a8344 g    DF .text	0000000000000010  VERS_1.0    TfLiteOperatorSetAsyncKernelWithData
+0000000000095450 g    DF .text	000000000000003c  VERS_1.0    TfLiteOpaqueTensorGetDimSignature
+0000000000095e50 g    DF .text	0000000000000028  VERS_1.0    TfLiteOpaqueDelegateDelete
+00000000000a4c80 g    DF .text	0000000000000144  VERS_1.0    TfLiteModelCreateFromFileWithErrorReporter
+00000000003a8f30 g    DF .text	000000000000000c  VERS_1.0    TfLiteIntArrayGetSizeInBytes
+0000000000094aac g    DF .text	0000000000000014  VERS_1.0    TfLiteInterpreterSetBufferHandle
+0000000000094d7c g    DF .text	000000000000000c  VERS_1.0    TfLiteSignatureRunnerDelete
+0000000000098dd4 g    DF .text	0000000000000014  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_setCancelled
+00000000000a1fc0 g    DF .text	00000000000000ac  VERS_1.0    Java_org_tensorflow_lite_NativeSignatureRunnerWrapper_nativeAllocateTensors
+00000000003a96c4 g    DF .text	0000000000000024  VERS_1.0    TfLiteTensorGetAllocationStrategy
+0000000000095c38 g    DF .text	00000000000000e8  VERS_1.0    TfLiteOpaqueContextReportError
+00000000000a832c g    DF .text	0000000000000010  VERS_1.0    TfLiteOperatorSetInvokeWithData
+00000000000c0f5c g    DF .text	0000000000000040  VERS_1.0    TfLiteXNNPackDelegateWeightsCacheCreate
+0000000000391080 g    DF .text	000000000000000c  VERS_1.0    TfLiteSynchronizationDelete
+0000000000399174 g    DF .text	0000000000000014  VERS_1.0    TfLiteTelemetryConversionMetadataGetNumModelOptimizationModes
+0000000000094ad4 g    DF .text	000000000000000c  VERS_1.0    TfLiteSetAllowBufferHandleOutput
+0000000000098b98 g    DF .text	000000000000019c  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_resizeInput
+00000000000a2bc0 g    DF .text	000000000000008c  VERS_1.0    Java_org_tensorflow_lite_TensorImpl_buffer
+00000000000c1070 g    DF .text	0000000000000468  VERS_1.0    TfLiteXNNPackDelegateCreateWithThreadpool
+00000000000c14e8 g    DF .text	0000000000000010  VERS_1.0    TfLiteXNNPackDelegateGetOptions
+00000000003a9754 g    DF .text	0000000000000024  VERS_1.0    TfLiteTensorGetShapeKnownStep
+0000000000095a30 g    DF .text	0000000000000028  VERS_1.0    TfLiteOpaqueContextGetNumTensors
+00000000000980ac g    DF .text	0000000000000194  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_createModel
+00000000000a4b54 g    DF .text	000000000000012c  VERS_1.0    TfLiteModelCreateFromFile
+00000000000bf224 g    DF .text	000000000000000c  VERS_1.0    TfLiteXnnpackDelegatePluginCApi
+0000000000391058 g    DF .text	0000000000000008  VERS_1.0    TfLiteBackendBufferSetPtr
+0000000000095af4 g    DF .text	0000000000000014  VERS_1.0    TfLiteOpaqueContextGetNodeInitDataMmapInfo
+0000000000097654 g    DF .text	00000000000001f0  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_getInputNames
+0000000000098058 g    DF .text	0000000000000054  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_createErrorReporter
+00000000000a3d54 g    DF .text	0000000000000048  VERS_1.0    Java_org_tensorflow_lite_TensorImpl_quantizationZeroPoint
+0000000000094894 g    DF .text	0000000000000008  VERS_1.0    TfLiteInterpreterOptionsSetUseNNAPI
+0000000000094d50 g    DF .text	0000000000000014  VERS_1.0    TfLiteSignatureRunnerGetOutputTensor
+00000000000a2a20 g    DF .text	000000000000016c  VERS_1.0    Java_org_tensorflow_lite_TensorImpl_createSignatureOutputTensor
+0000000000094d88 g    DF .text	0000000000000008  VERS_1.0    TfLiteInterpreterOptionsSetTelemetryProfiler
+00000000000a592c g    DF .text	0000000000000018  VERS_1.0    TfLiteTensorNumDims
+0000000000095494 g    DF .text	0000000000000004  VERS_1.0    TfLiteOpaqueTensorByteSize
+000000000009576c g    DF .text	0000000000000020  VERS_1.0    TfLiteOpaqueNodeTemporaries
+0000000000095e78 g    DF .text	0000000000000018  VERS_1.0    TfLiteOpaqueDelegateGetData
+0000000000094b1c g    DF .text	0000000000000094  VERS_1.0    TfLiteInterpreterGetSignatureKey
+000000000009569c g    DF .text	0000000000000008  VERS_1.0    TfLiteOpaqueTensorBuilderSetQuantization
+00000000000a285c g    DF .text	0000000000000050  VERS_1.0    Java_org_tensorflow_lite_TensorImpl_create
+00000000000a48b0 g    DF .text	000000000000014c  VERS_1.0    TfLiteModelCreate
+00000000000a49fc g    DF .text	0000000000000158  VERS_1.0    TfLiteModelCreateWithErrorReporter
+00000000000a5074 g    DF .text	0000000000000110  VERS_1.0    TfLiteInterpreterOptionsAddDelegate
+00000000000c1068 g    DF .text	0000000000000008  VERS_1.0    TfLiteXNNPackDelegateCreate
+0000000000096fec g    DF .text	0000000000000024  VERS_1.0    Java_org_tensorflow_lite_nnapi_NnApiDelegateImpl_deleteDelegate
+0000000000097510 g    DF .text	0000000000000098  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapperExperimental_resetVariableTensors
+0000000000097ff8 g    DF .text	0000000000000030  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_allowFp16PrecisionForFp32
+00000000000a4290 g    DF .text	0000000000000004  VERS_1.0    Java_org_tensorflow_lite_TensorFlowLite_nativeDoNothing
+00000000003a9138 g    DF .text	0000000000000058  VERS_1.0    TfLiteTensorDataFree
+00000000000a3b6c g    DF .text	00000000000000c0  VERS_1.0    Java_org_tensorflow_lite_TensorImpl_shapeSignature
+00000000003a93ec g    DF .text	0000000000000190  VERS_1.0    TfLiteTensorCopy
+000000000009572c g    DF .text	0000000000000020  VERS_1.0    TfLiteOpaqueNodeInputs
+0000000000097844 g    DF .text	0000000000000098  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_allocateTensors
+00000000000a8324 g    DF .text	0000000000000008  VERS_1.0    TfLiteOperatorSetInvoke
+00000000000c1028 g    DF .text	000000000000000c  VERS_1.0    TfLiteXNNPackDelegateWeightsCacheDelete
+0000000000095d20 g    DF .text	0000000000000010  VERS_1.0    TfLiteOpaqueContextGetSizeOfType
+00000000000a48a4 g    DF .text	000000000000000c  VERS_1.0    TfLiteExtensionApisVersion
+0000000000094ae0 g    DF .text	0000000000000020  VERS_1.0    TfLiteInterpreterSetCustomAllocationForTensor
+00000000000954d0 g    DF .text	0000000000000008  VERS_1.0    TfLiteOpaqueTensorGetQuantizationParams
+00000000000954d8 g    DF .text	0000000000000004  VERS_1.0    TfLiteOpaqueTensorCopyFromBuffer
+000000000009578c g    DF .text	0000000000000090  VERS_1.0    TfLiteOpaqueNodeSetTemporaries
+0000000000093808 g    DF .text	0000000000000158  VERS_1.0    TfLiteInterpreterOptionsSetOpResolverExternal
+00000000000a5954 g    DF .text	0000000000000008  VERS_1.0    TfLiteTensorByteSize
+000000000009570c g    DF .text	0000000000000008  VERS_1.0    TfLiteOpaqueNodeGetBuiltinData
+0000000000098d34 g    DF .text	0000000000000090  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_createCancellationFlag
+0000000000095694 g    DF .text	0000000000000008  VERS_1.0    TfLiteOpaqueTensorBuilderSetQuantizationParams
+00000000000978dc g    DF .text	0000000000000124  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_hasUnresolvedFlexOp
+0000000000098dc4 g    DF .text	0000000000000010  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_deleteCancellationFlag
+0000000000098de8 g    DF .text	0000000000000108  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_delete
+00000000000a28ac g    DF .text	0000000000000174  VERS_1.0    Java_org_tensorflow_lite_TensorImpl_createSignatureInputTensor
+00000000003a901c g    DF .text	0000000000000070  VERS_1.0    TfLiteIntArrayCopy
+0000000000391094 g    DF .text	0000000000000008  VERS_1.0    TfLiteSynchronizationGetPtr
+0000000000094cdc g    DF .text	0000000000000014  VERS_1.0    TfLiteSignatureRunnerGetInputTensor
+0000000000095714 g    DF .text	0000000000000018  VERS_1.0    TfLiteOpaqueNodeGetCustomInitialData
+00000000000a2b8c g    DF .text	0000000000000034  VERS_1.0    Java_org_tensorflow_lite_TensorImpl_delete
+00000000000a4dc4 g    DF .text	0000000000000064  VERS_1.0    TfLiteModelDelete
+00000000000c1508 g    DF .text	0000000000000228  VERS_1.0    TfLiteXNNPackDelegateDelete
+00000000003991e0 g    DF .text	000000000000000c  VERS_1.0    TfLiteTelemetryGpuDelegateSettingsGetBackend
+00000000000954bc g    DF .text	0000000000000004  VERS_1.0    TfLiteOpaqueTensorGetShapeKnownStep
+000000000009586c g    DF .text	0000000000000014  VERS_1.0    TfLiteOpaqueContextGetExecutionPlan
+00000000003a90c4 g    DF .text	0000000000000070  VERS_1.0    TfLiteFloatArrayCopy
+00000000003a9190 g    DF .text	0000000000000058  VERS_1.0    TfLiteQuantizationFree
+0000000000094bd8 g    DF .text	0000000000000018  VERS_1.0    TfLiteSignatureRunnerGetInputCount
+00000000000a1c50 g    DF .text	00000000000000ec  VERS_1.0    Java_org_tensorflow_lite_NativeSignatureRunnerWrapper_nativeGetInputIndex
+00000000000a5830 g    DF .text	0000000000000014  VERS_1.0    TfLiteInterpreterAllocateTensors
+00000000000a82fc g    DF .text	0000000000000010  VERS_1.0    TfLiteOperatorSetFreeWithData
+00000000000a5718 g    DF .text	000000000000001c  VERS_1.0    TfLiteInterpreterGetInputTensorCount
+00000000000a1bb8 g    DF .text	000000000000004c  VERS_1.0    Java_org_tensorflow_lite_NativeSignatureRunnerWrapper_nativeInputNames
+00000000000a52a0 g    DF .text	0000000000000010  VERS_1.0    TfLiteInterpreterOptionsEnableCancellation
+00000000000a596c g    DF .text	0000000000000008  VERS_1.0    TfLiteTensorQuantizationParams
+00000000000a82dc g    DF .text	0000000000000008  VERS_1.0    TfLiteOperatorSetInit
+00000000000c0f9c g    DF .text	0000000000000054  VERS_1.0    TfLiteXNNPackDelegateWeightsCacheCreateWithSize
+00000000003a9090 g    DF .text	000000000000000c  VERS_1.0    TfLiteFloatArrayGetSizeInBytes
+0000000000094cf0 g    DF .text	0000000000000014  VERS_1.0    TfLiteSignatureRunnerInvoke
+0000000000097d30 g    DF .text	000000000000006c  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_getInputCount
+00000000000a3218 g    DF .text	0000000000000180  VERS_1.0    Java_org_tensorflow_lite_TensorImpl_writeMultiDimensionalArray
+00000000000a5888 g    DF .text	0000000000000038  VERS_1.0    TfLiteInterpreterGetTensor
+00000000000954ac g    DF .text	0000000000000004  VERS_1.0    TfLiteOpaqueTensorGetAllocationStrategy
+0000000000095844 g    DF .text	0000000000000028  VERS_1.0    TfLiteOpaqueNodeGetOutputTensorIndex
+0000000000095ae0 g    DF .text	0000000000000014  VERS_1.0    TfLiteOpaqueContextMarkSubgraphAsDelegationSkippable
+0000000000097c0c g    DF .text	000000000000006c  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_getInputTensorIndex
+00000000000a1acc g    DF .text	00000000000000ac  VERS_1.0    Java_org_tensorflow_lite_NativeSignatureRunnerWrapper_nativeGetSignatureRunner
+00000000000c1054 g    DF .text	0000000000000014  VERS_1.0    TfLiteXNNPackDelegateOptionsDefault
+00000000000c14f8 g    DF .text	0000000000000010  VERS_1.0    TfLiteXNNPackDelegateGetFlags
+0000000000094d64 g    DF .text	0000000000000018  VERS_1.0    TfLiteSignatureRunnerCancel
+000000000009574c g    DF .text	0000000000000020  VERS_1.0    TfLiteOpaqueNodeOutputs
+00000000000959c0 g    DF .text	0000000000000024  VERS_1.0    TfLiteOpaqueContextGetOutputs
+00000000000c0ff0 g    DF .text	000000000000001c  VERS_1.0    TfLiteXNNPackDelegateWeightsCacheFinalizeSoft
+00000000003a8ff4 g    DF .text	0000000000000028  VERS_1.0    TfLiteIntArrayCreate
+0000000000098028 g    DF .text	0000000000000030  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_allowBufferHandleOutput
+0000000000098240 g    DF .text	000000000000017c  VERS_1.0    Java_org_tensorflow_lite_NativeInterpreterWrapper_createModelWithBuffer
+00000000003a92a0 g    DF .text	00000000000000c4  VERS_1.0    TfLiteTensorFree
+00000000000954ec g    DF .text	000000000000002c  VERS_1.0    TfLiteOpaqueTensorGetString
+0000000000095a08 g    DF .text	0000000000000028  VERS_1.0    TfLiteOpaqueContextGetNumNodes
+0000000000391034 g    DF .text	0000000000000018  VERS_1.0    TfLiteBackendBufferCreate
+00000000000a8364 g    DF .text	0000000000000008  VERS_1.0    TfLiteOperatorGetCustomName
+000000000009548c g    DF .text	0000000000000008  VERS_1.0    TfLiteOpaqueTensorIsVariable
+00000000000a3ccc g    DF .text	0000000000000040  VERS_1.0    Java_org_tensorflow_lite_TensorImpl_index
+0000000000093800 g    DF .text	0000000000000008  VERS_1.0    TfLiteInterpreterOptionsAddCustomOp
+0000000000094c24 g    DF .text	00000000000000a0  VERS_1.0    TfLiteSignatureRunnerResizeInputTensor
+00000000000954b0 g    DF .text	0000000000000004  VERS_1.0    TfLiteOpaqueTensorGetBufferAddressStability
+0000000000095d30 g    DF .text	0000000000000014  VERS_1.0    TfLiteOpaqueContextGetMetadata
+00000000000a52b0 g    DF .text	0000000000000058  VERS_1.0    TfLiteInterpreterCreate
+00000000000a58c0 g    DF .text	0000000000000014  VERS_1.0    TfLiteInterpreterOutputTensorIndices

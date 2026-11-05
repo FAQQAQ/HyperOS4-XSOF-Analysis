@@ -1,0 +1,62 @@
+﻿package,endpoint,role,payload,condition,source,status
+com.mobiletools.systemhelper,https://dm.wo.com.cn:18081/register,设备/应用使用/信号注册,设备/SIM标识、应用使用及流量、位置等，正文AES-GCM,向导完成、厂商适配、运营商/网络/调度等门槛,jadx/sources/e1/g.java:41; g1/d.java; f1/p.java,确认发送实现
+com.mobiletools.systemhelper,http://dm.wo.com.cn:18080/register,TLS异常降级,同一应用层加密正文,HTTPS发生SSLException，原始DEX异常表已核验,jadx/sources/e1/g.java:55; 证据/关键链路DEX核验.txt,确认发送实现
+com.xiaomi.registration,https://zzhc.vnet.cn,设备注册,IMEI/IMSI/ICCID/型号/版本/网络等，JSON仅Base64,手机分支；SIM、网络、设备型号、状态门槛,jadx/sources/i1/j.java:100; res/xml/post_params.xml,确认发送实现
+com.xiaomi.registration,https://zzhc.vnet.cn/pi,平板注册,参数XML的平板变体，Base64 JSON,平板分支及注册门槛,jadx/sources/i1/j.java:100,确认发送实现
+com.xiaomi.registration,http://typdm.tydevice.com?jsonstr=,CTEI注册,CTEI/可能IMEI、MAC、BSSID、IPv4、版本、时间；URL编码无加密,无radio+CTEI或特定设备等条件，要求连接网络,jadx/sources/i1/j.java:259,确认发送实现
+com.xiaomi.registration,sms:10659401,二进制短信注册,型号、IMEI/IMSI、软件及SIM标志；二进制头不是加密,普通SIM或卫星注册状态机,jadx/sources/g/p.java:317; i1/m.java:65,确认发送实现
+com.miui.securitycenter,https://framework.sec.miui.com/framework/app/verification,XSOF合作方鉴权,appId/appKey/pkgName/timestamp/appSignature及公共字段,调用XSOF、无有效缓存、允许联网,jadx/sources/fo/a.java:55; fo/b.java; ed/a.java,确认发送实现
+com.miui.securitycenter,https://virus-engine.sec.miui.com/risk/scan,风险应用云查,非系统应用包名/名称/版本/签名/manifest摘要+OAID/设备等；压缩加密,支持机型及允许联网，列表或单应用任务,jadx/sources/mi/b.java:255; qi/a.java:40; qi/c.java:280,确认发送实现
+com.miui.securitycenter,https://virus-engine.sec.miui.com/risk/issueGrade,风险配置,配置版本、OAID、ROM、设备等,支持机型及请求风险说明任务,jadx/sources/qi/c.java:300,确认发送实现
+com.miui.securitycenter,https://flash.sec.miui.com/user/cat,防窥应用分类,非系统应用包名数组或单个包名、设备/系统/时间；加密,云分类缺失/本地过期刷新，防窥选择界面等,jadx/sources/z3/k.java:121; z3/k.java:239,确认发送实现
+com.miui.securitycenter,https://api.sec.miui.com/LBS/geoconv/admin,地震地区反查,原始经纬度及公共标识；随后还有加噪比较请求,地震后台更新开关或手动选城；允许联网,jadx/sources/com/miui/earthquakewarning/service/RequestAreaCodeTask.java:108,确认发送实现
+com.miui.securitycenter,https://srv.sec.miui.com/earthquake/warning/signature,地震签名信息,channel及公共字段,对应地震任务、允许联网,jadx/sources/com/miui/earthquakewarning/Constants.java:74; service/*Task.java,确认发送实现
+com.miui.securitycenter,https://srv.sec.miui.com/earthquake/warning/supportCityCode,地震支持城市,version=2及公共字段,对应地震任务、允许联网,jadx/sources/com/miui/earthquakewarning/Constants.java:74; service/*Task.java,确认发送实现
+com.miui.securitycenter,https://srv.sec.miui.com/earthquake/warning/records,地震记录列表,version=2及公共字段,对应地震任务、允许联网,jadx/sources/com/miui/earthquakewarning/Constants.java:74; service/*Task.java,确认发送实现
+com.miui.securitycenter,https://api.sec.miui.com/universalWhitelist/checkUserId,地震白名单,userId/group/biz/sign及公共字段,白名单查询任务、允许联网,jadx/sources/com/miui/earthquakewarning/service/RequestWhiteListTask.java,确认发送实现
+com.miui.securitycenter,https://api.sec.miui.com/earthquake/volunteer/register,志愿者登记,相应功能参数及公共字段,对应志愿者任务、允许联网,jadx/sources/com/miui/earthquakewarning/Constants.java:71,确认功能端点，详见逐包报告
+com.miui.securitycenter,https://api.sec.miui.com/earthquake/volunteer/cancelRegister,退出志愿者,相应功能参数及公共字段,对应志愿者任务、允许联网,jadx/sources/com/miui/earthquakewarning/Constants.java:71,确认功能端点，详见逐包报告
+com.miui.securitycenter,https://api.sec.miui.com/earthquake/volunteer/countVolunteers,志愿者数量,相应功能参数及公共字段,对应志愿者任务、允许联网,jadx/sources/com/miui/earthquakewarning/Constants.java:71,确认功能端点，详见逐包报告
+com.miui.securitycenter,https://api.sec.miui.com/earthquake/volunteer/sensor/upload,志愿者传感器,OAID/经纬度/时间/机型/ROM/token/传感器数组,加入志愿者、monitor开关、中国网络等,jadx/sources/com/miui/earthquakewarning/service/EarthquakeMonitorDataManager.java:54,确认发送实现
+com.miui.securitycenter,https://gateway-papa.cloud.weizhi.com/papa/upload,报警快速定位,OAID/主被叫/地址/经纬度/定位与呼叫时间，AES-CBC,国内紧急呼叫、SIM/非漫游；已启用或点击提示,jadx/sources/com/miui/warningcenter/policeassist/PaUtils.java:106; PaUtils.java:413,确认发送实现
+com.miui.securitycenter,sms:106903590009,报警定位短信兜底,位置/呼叫信息等，RSA公钥加密后编码,网络响应空或取不到本机号码等,jadx/sources/com/miui/warningcenter/policeassist/PaUtils.java:434,确认发送实现
+com.miui.securitycenter,https://eps.caict.ac.cn/eps/collect,EPS紧急定位,主叫SM3/被叫/机型/位置精度/海拔/地址/呼叫时间,EPS开关或PA迁移条件；国际版/12122排除,jadx/sources/com/miui/policeassist/EPSManager.java:108,确认发送实现
+com.miui.securitycenter,https://srv.sec.miui.com/data/adb,ADB授权设置验证,小米账号/AndroidID/条件设备标识和IMSI/公共信息，RSA加密,ADB授权设置Activity和联网/帐号条件,jadx/sources/com/miui/permcenter/install/AdbInstallVerifyActivity.java:98,确认发送实现
+com.miui.securitycenter,https://fraud-detection.engine.miui.com/nfc/antifraud/config,NFC反诈配置,deviceModel/appDataVersion及公共字段,NFC配置更新任务,jadx/sources/com/miui/nfcaccess/NfcAccessHttpUtil.java:22,确认发送实现
+com.miui.securitycenter,https://api.sec.miui.com/data/check,月报上传前检查,module及公共参数,td.c.a()在本构建恒false,jadx/sources/com/miui/monthreport/c.java:147; td/c.java:7,保留实现，上传gate硬关闭
+com.miui.securitycenter,https://data.sec.miui.com/data/upload,月报上传,本地事件、设备/ROM/标识等，传输与正文处理见报告,同上；不能称当前构建已启用,jadx/sources/com/miui/monthreport/c.java:195; td/c.java:7,保留实现，上传gate硬关闭
+com.miui.analytics,https://tracking.miui.com/track/v4,OneTrack事件,加密事件与设备/应用公共字段,事件队列、配置与联网/地区/设置门槛,jadx/sources/a/b/a/e/y.java:117; a/b/a/e/f0/z.java:116,确认发送实现
+com.miui.analytics,https://tracking.miui.com/track/v1,旧统计,旧事件队列载荷，upload_url还可配置,旧统计配置与调度,jadx/sources/a/b/a/c/u/g.java:33; a/b/a/c/t/e.java:88,确认发送实现
+com.miui.analytics,https://om.tracking.miui.com/track/mt,国内监控统计,EventMonitor事件，加密上传,国内及监控任务/配置,jadx/sources/a/b/a/a/a/c/a.java:1590,确认发送实现
+com.miui.analytics,https://tracking.india.miui.com/track/v4,区域事件路由,同OneTrack，按配置,对应国际区域/配置,jadx/sources/a/b/a/e/y.java:33; a/b/a/e/y.java:117,确认路由实现，非本机触发证明
+com.miui.analytics,https://tracking.rus.miui.com/track/v4,区域事件路由,同OneTrack，按配置,对应国际区域/配置,jadx/sources/a/b/a/e/y.java:33; a/b/a/e/y.java:117,确认路由实现，非本机触发证明
+com.miui.analytics,https://tracking.eu.miui.com/track/v4,区域事件路由,同OneTrack，按配置,对应国际区域/配置,jadx/sources/a/b/a/e/y.java:33; a/b/a/e/y.java:117,确认路由实现，非本机触发证明
+com.miui.analytics,https://tracking.intl.miui.com/track/v4,区域事件路由,同OneTrack，按配置,对应国际区域/配置,jadx/sources/a/b/a/e/y.java:33; a/b/a/e/y.java:117,确认路由实现，非本机触发证明
+com.miui.analytics,https://pn-tracking-bak.onetrack.mi.com,印度备份统计路由,随配置的事件通道,IN备份域映射,jadx/sources/a/b/a/e/y.java:55,确认路由实现
+com.miui.analytics,https://sdkconfig.xiaomi.com/api/v4/detail/config,配置,应用/版本/地区等参数；配置可更新域名,配置拉取与缓存/地区条件,jadx/sources/a/b/a/e/y.java:92; a/b/a/e/e0/d.java,确认发送实现
+com.miui.analytics,https://sdkconfig.india.xiaomi.com,区域/备份配置路由,配置请求参数,区域或备份策略,jadx/sources/a/b/a/e/y.java:84,确认路由实现
+com.miui.analytics,https://sdkconfig.rus.xiaomi.com,区域/备份配置路由,配置请求参数,区域或备份策略,jadx/sources/a/b/a/e/y.java:84,确认路由实现
+com.miui.analytics,https://sdkconfig.eu.xiaomi.com,区域/备份配置路由,配置请求参数,区域或备份策略,jadx/sources/a/b/a/e/y.java:84,确认路由实现
+com.miui.analytics,https://sdkconfig.intl.xiaomi.com,区域/备份配置路由,配置请求参数,区域或备份策略,jadx/sources/a/b/a/e/y.java:84,确认路由实现
+com.miui.analytics,https://pn-sdkconfig-bak.onetrack.mi.com,区域/备份配置路由,配置请求参数,区域或备份策略,jadx/sources/a/b/a/e/y.java:84,确认路由实现
+com.miui.analytics,https://{tracking路由主机}/track/key_get,密钥请求,协议参数,对应密钥任务,jadx/sources/a/b/a/e/g0/e.java:104,确认发送实现
+com.miui.analytics,https://{tracking路由主机}/track/getNonce,nonce请求,协议参数,对应事件上传准备,jadx/sources/a/b/a/e/f0/o.java:177,确认发送实现
+com.miui.analytics,https://{tracking路由主机}/track/upload,日志文件上传,客户端准备的日志文件,云端任务/project配置等门槛,jadx/sources/a/b/a/g/b.java:209,确认发送实现
+com.miui.analytics,https://dns.google/dns-query,DoH解析,DNS查询；bootstrap 8.8.4.4/8.8.8.8,国际版且策略tip匹配及网络/解析错误重试,jadx/sources/a/b/a/e/i0/c.java:94; a/b/a/e/i0/j/b.java:751,确认发送实现
+com.miui.analytics,https://pubsub.googleapis.com/v1/projects/{project}/topics/{topic}:publish,海外PubSub,事件及token等协议参数,project/topic/token配置,jadx/sources/a/b/a/g/e/c.java:165,确认发送实现
+com.miui.analytics,http://api.ad.xiaomi.com/video/uploadLog?appKey=PHONE_VIDEO,旧广告日志目标,ReporterService的目标，未确认当前业务触发,旧Reporter逻辑；实际平台是否允许需验证,jadx/sources/a/b/a/c/s/b.java:58,保留目标方法，触发未闭环
+com.miui.analytics,binder:com.xiaomi.xmsf/XMSFUploadReceiver,跨进程材料代发,材料JSON、aaid、iced(IMEI MD5),XMSF版本>=108及调用方校验等,jadx/sources/com/miui/analytics/internal/collection/AppenderManager.java:194,确认交接；最终网络需XMSF样本
+com.miui.guardprovider,https://flash.sec.miui.com/detect/app,非系统应用检测,pkg/version/签名MD5/appname列表、持久随机uuid/ROM/时间,受保护服务任务、用户解锁、允许联网,jadx/sources/defpackage/ie2.java:23; defpackage/ls1.java:213,确认发送实现
+com.miui.guardprovider,https://virus-engine.sec.miui.com/risk/scan,Flamingo云扫描,CloudScanApkInfo列表+query,云查引擎和实际调用配置,jadx/sources/defpackage/rs1.java:25; defpackage/bx.java:14; defpackage/kl0.java:358,确认发送实现
+com.miui.guardprovider,https://detection-aigc.engine.miui.com/pcc/attestation/token,PCC会话证明,会话/证明参数,打开PCC会话；独立HTTP客户端,jadx/sources/defpackage/ro.java:245,确认发送实现
+com.miui.guardprovider,https://detection-aigc.engine.miui.com/aiVideo/pcc/detection,3秒屏幕视频云检,整段MP4的Base64 JSON再PCC应用层加密,正常上游AI开关/协议/权限、QQ微信视频+摄像头场景、HTTP联网gate,jadx/sources/com/miui/guardprovider/aiguard/AiGuardService.java:289; defpackage/k43.java:12,确认发送实现
+com.miui.guardprovider,https://detection-aigc.engine.miui.com/ai/audio/text/pcc/detection,通话文本云检,requestId+ASR识别文字，再PCC加密,语音场景及正常上游授权、HTTP联网gate,jadx/sources/com/miui/guardprovider/aiguard/AiGuardService.java:223; defpackage/j02.java:12,确认发送实现
+com.miui.guardprovider,https://detection-aigc.engine.miui.com/aiVideo/pcc/rbi,视频误报反馈,MP4/requestId，PCC加密,用户点击标记误报,jadx/sources/com/miui/guardprovider/aiguard/AlertActivity.java:211; defpackage/oj0.java:7,确认发送实现
+com.miui.guardprovider,https://detection-aigc.engine.miui.com/ai/audio/text/pcc/rbi,语音误报反馈,audioPCM+audioText，PCC加密,用户点击标记误报,jadx/sources/com/miui/guardprovider/aiguard/AlertActivity.java:161; defpackage/oj0.java:7,确认发送实现
+com.miui.guardprovider,binder:com.xiaomi.aiasst.vision/ACTION_TRANSLATE_SDK_SERVICE,ASR外部服务,PCM16/16kHz/单声道,语音识别场景，mode0,jadx/sources/com/xiaomi/ai/vision/sdk/AiCore.java:51; defpackage/pi.java:18,确认PCM交接；外部包在线离线与目的地未包含
+com.miui.guardprovider,https://api.sec.miui.com/antivirus/viruses,病毒配置更新,版本等配置参数,允许联网、更新任务,jadx/sources/defpackage/g.java:229,确认发送实现
+com.miui.guardprovider,https://api.sec.miui.com/antivirus/whitelist,杀毒白名单,白名单查询参数,允许联网及相应请求,jadx/sources/defpackage/sb.java:91,确认发送实现
+com.miui.guardprovider,https://push-service.sec.miui.com,推送服务基础路由,推送协议/配置，未逐条核验全部payload,相应推送SDK配置,jadx/sources/defpackage/q62.java:246; defpackage/ac0.java:14,确认Retrofit基础路由，非全部端点闭环
+com.xiaomi.trustservice,https://find.api.micloud.xiaomi.net/mic/find/v4/anonymous/device/externalkey,设备证书/密钥配置,keyType=cert或misec、fid、HAL clientData,PubCertRevise/RotateKeyRevise action、HAL可用,jadx/sources/com/xiaomi/trustservice/rootpub/PubCertRevise.java:31,确认发送实现
+com.xiaomi.trustservice,https://deviceapi.micloud.xiaomi.net/mic/binding/v1/anonymous/device/security/socid,FID/SOCID绑定,cloudsp_fid/cloudsp_socid/cloudp_sign,SOCID非空、服务action与后端签名等,jadx/sources/com/xiaomi/trustservice/ota/SocidProvision.java:24,确认发送实现
+com.xiaomi.trustservice,binder:vendor.xiaomi.hardware.mrm.IMrm/default.getStatusByAuth,可信状态HAL交接,XSOF行为JSON或应用状态JSON、参数字节、类型,真实调用包白名单+JSON合法+HAL,jadx/sources/com/xiaomi/trustservice/j.java:23,确认HAL交接；不等于直接互联网上传

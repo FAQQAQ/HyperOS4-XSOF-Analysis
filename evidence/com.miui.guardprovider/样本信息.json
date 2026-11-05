@@ -1,0 +1,33 @@
+{
+  "file": "系统安全组件_3.1.4-20260902.0.apk",
+  "package": "com.miui.guardprovider",
+  "size": 14475074,
+  "sha256": "6cdb14123ca32f36883e74d968f390e30d1c64589f500fd48f9f9b9757253928",
+  "version_name": "3.1.4-20260902.0",
+  "version_code": "330",
+  "min_sdk": "33",
+  "target_sdk": "37",
+  "shared_user_id": null,
+  "signature_schemes": {
+    "v1": true,
+    "v2": true,
+    "v3": true
+  },
+  "label": "系统安全组件／GuardProvider",
+  "signing_certificates": [
+    {
+      "sha256": "c9009d01ebf9f5d0302bc71b2fe9aa9a47a432bba17308a3111b75d7b2149025",
+      "subject": {
+        "country_name": "CN",
+        "state_or_province_name": "Beijing",
+        "locality_name": "Beijing",
+        "organization_name": "Xiaomi",
+        "organizational_unit_name": "MIUI",
+        "common_name": "MIUI",
+        "email_address": "miui@xiaomi.com"
+      }
+    }
+  ],
+  "report": "reports/com.miui.guardprovider.md",
+  "evidence": "evidence/com.miui.guardprovider"
+}

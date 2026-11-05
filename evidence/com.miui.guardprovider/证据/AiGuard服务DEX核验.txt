@@ -1,0 +1,2162 @@
+
+CLASS classes.dex Lcom/miui/guardprovider/aiguard/AiGuardService;
+FIELD o I = None
+FIELD b Lf20; = None
+FIELD c Lf20; = None
+FIELD d Lmr2; = None
+FIELD e Lsi; = None
+FIELD f Ljava/lang/Integer; = None
+FIELD g Lkn2; = None
+FIELD h Z = None
+FIELD i Lmr2; = None
+FIELD j Lmr2; = None
+FIELD k Lmr2; = None
+FIELD l Lro; = None
+FIELD m Lg7; = None
+FIELD n I = None
+
+METHOD <init>()V flags=public constructor
+registers=4 inputs=1
+0x000000: invoke-direct v3, Landroid/app/Service;-><init>()V
+0x000006: sget-object v0, Lxc0;->a Lw60;
+0x00000a: invoke-static Lcb3;->c()Lqq2;
+0x000010: move-result-object v1
+0x000012: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000018: invoke-static v0, v1, Lw10;->B(Lv20; Lx20;)Lx20;
+0x00001e: move-result-object v0
+0x000020: invoke-static v0, Laz0;->a(Lx20;)Lf20;
+0x000026: move-result-object v0
+0x000028: iput-object v0, v3, Lcom/miui/guardprovider/aiguard/AiGuardService;->b Lf20;
+0x00002c: sget-object v0, Lo60;->d Lo60;
+0x000030: invoke-static Lcb3;->c()Lqq2;
+0x000036: move-result-object v1
+0x000038: invoke-static v0, v1, Lw10;->B(Lv20; Lx20;)Lx20;
+0x00003e: move-result-object v0
+0x000040: invoke-static v0, Laz0;->a(Lx20;)Lf20;
+0x000046: move-result-object v0
+0x000048: iput-object v0, v3, Lcom/miui/guardprovider/aiguard/AiGuardService;->c Lf20;
+0x00004c: new-instance v0, Ly6;
+0x000050: const/4 v1, 0
+0x000052: invoke-direct v0, v1, Ly6;-><init>(I)V
+0x000058: new-instance v2, Lmr2;
+0x00005c: invoke-direct v2, v0, Lmr2;-><init>(Lnp0;)V
+0x000062: iput-object v2, v3, Lcom/miui/guardprovider/aiguard/AiGuardService;->d Lmr2;
+0x000066: new-instance v0, Lz6;
+0x00006a: invoke-direct v0, v1, Lz6;-><init>(I)V
+0x000070: iput-object v3, v0, Lz6;->c Lcom/miui/guardprovider/aiguard/AiGuardService;
+0x000074: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x00007a: new-instance v1, Lmr2;
+0x00007e: invoke-direct v1, v0, Lmr2;-><init>(Lnp0;)V
+0x000084: iput-object v1, v3, Lcom/miui/guardprovider/aiguard/AiGuardService;->i Lmr2;
+0x000088: new-instance v0, Li6;
+0x00008c: const/4 v1, 1
+0x00008e: invoke-direct v0, v1, Li6;-><init>(I)V
+0x000094: iput-object v3, v0, Li6;->c Ljava/lang/Object;
+0x000098: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x00009e: new-instance v2, Lmr2;
+0x0000a2: invoke-direct v2, v0, Lmr2;-><init>(Lnp0;)V
+0x0000a8: iput-object v2, v3, Lcom/miui/guardprovider/aiguard/AiGuardService;->j Lmr2;
+0x0000ac: new-instance v0, Lz6;
+0x0000b0: invoke-direct v0, v1, Lz6;-><init>(I)V
+0x0000b6: iput-object v3, v0, Lz6;->c Lcom/miui/guardprovider/aiguard/AiGuardService;
+0x0000ba: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x0000c0: new-instance v1, Lmr2;
+0x0000c4: invoke-direct v1, v0, Lmr2;-><init>(Lnp0;)V
+0x0000ca: iput-object v1, v3, Lcom/miui/guardprovider/aiguard/AiGuardService;->k Lmr2;
+0x0000ce: new-instance v0, Lg7;
+0x0000d2: invoke-direct v0, Ljava/lang/Object;-><init>()V
+0x0000d8: iput-object v0, v3, Lcom/miui/guardprovider/aiguard/AiGuardService;->m Lg7;
+0x0000dc: return-void 
+
+METHOD a(Lcom/miui/guardprovider/aiguard/AiGuardService; I)V flags=public static final
+registers=5 inputs=2
+0x000000: invoke-virtual v3, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000006: new-instance v0, Landroid/content/Intent;
+0x00000a: invoke-virtual v3, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+0x000010: move-result-object v1
+0x000012: const-class v2, Lcom/miui/guardprovider/aiguard/AlertActivity;
+0x000016: invoke-direct v0, v1, v2, Landroid/content/Intent;-><init>(Landroid/content/Context; Ljava/lang/Class;)V
+0x00001c: const/high16 v1, 268435456
+0x000020: invoke-virtual v0, v1, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+0x000026: move-result-object v0
+0x000028: const-string v1, "alert_cause"
+0x00002c: invoke-virtual v0, v1, v4, Landroid/content/Intent;->putExtra(Ljava/lang/String; I)Landroid/content/Intent;
+0x000032: move-result-object v4
+0x000034: invoke-virtual v3, v4, Landroid/app/Service;->startActivity(Landroid/content/Intent;)V
+0x00003a: const/4 v4, 1
+0x00003c: iput-boolean v4, v3, Lcom/miui/guardprovider/aiguard/AiGuardService;->h Z
+0x000040: return-void 
+
+METHOD b(Lcom/miui/guardprovider/aiguard/AiGuardService; I)I flags=public static final
+registers=4 inputs=2
+0x000000: iget-object v2, v2, Lcom/miui/guardprovider/aiguard/AiGuardService;->m Lg7;
+0x000004: const/4 v0, 1
+0x000006: if-eq v3, v0, +024h
+0x00000a: const/4 v1, 2
+0x00000c: if-eq v3, v1, +018h
+0x000010: new-instance v2, Ljava/lang/StringBuilder;
+0x000014: const-string v0, "Video capture scene missing:"
+0x000018: invoke-direct v2, v0, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x00001e: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+0x000024: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00002a: move-result-object v2
+0x00002c: const-string v3, "AiGuardService"
+0x000030: invoke-static v3, v2, Landroid/util/Log;->w(Ljava/lang/String; Ljava/lang/String;)I
+0x000036: const/high16 v2, 268435456
+0x00003a: return v2
+0x00003c: iget v3, v2, Lg7;->c I
+0x000040: add-int/2addr v3, v0
+0x000042: iput v3, v2, Lg7;->c I
+0x000046: const v2, 268435458
+0x00004c: return v2
+0x00004e: iget v3, v2, Lg7;->a I
+0x000052: add-int/2addr v3, v0
+0x000054: iput v3, v2, Lg7;->a I
+0x000058: const v2, 268435457
+0x00005e: return v2
+
+METHOD c(Lcom/miui/guardprovider/aiguard/AiGuardService; I Lk20;)Ljava/lang/Object; flags=public static final
+registers=8 inputs=3
+0x000000: instance-of v0, v7, Lv7;
+0x000004: if-eqz v0, +011h
+0x000008: move-object v0, v7
+0x00000a: check-cast v0, Lv7;
+0x00000e: iget v1, v0, Lv7;->g I
+0x000012: const/high16 v2, -2147483648
+0x000016: and-int v3, v1, v2
+0x00001a: if-eqz v3, +006h
+0x00001e: sub-int/2addr v1, v2
+0x000020: iput v1, v0, Lv7;->g I
+0x000024: goto +6h
+0x000026: new-instance v0, Lv7;
+0x00002a: invoke-direct v0, v5, v7, Lv7;-><init>(Lcom/miui/guardprovider/aiguard/AiGuardService; Lk20;)V
+0x000030: iget-object v7, v0, Lv7;->e Ljava/lang/Object;
+0x000034: sget-object v1, Lh30;->b Lh30;
+0x000038: iget v2, v0, Lv7;->g I
+0x00003c: const/4 v3, 0
+0x00003e: const/4 v4, 1
+0x000040: if-eqz v2, +00eh
+0x000044: if-ne v2, v4, +006h
+0x000048: invoke-static v7, Lkk3;->y(Ljava/lang/Object;)V
+0x00004e: goto +1ch
+0x000050: const-string v5, "call to 'resume' before 'invoke' with coroutine"
+0x000054: invoke-static v5, Lik;->j(Ljava/lang/String;)V
+0x00005a: return-object v3
+0x00005c: invoke-static v7, Lkk3;->y(Ljava/lang/Object;)V
+0x000062: sget-object v7, Lxc0;->a Lw60;
+0x000066: sget-object v7, Lrk1;->a Lgs0;
+0x00006a: new-instance v2, Lx7;
+0x00006e: invoke-direct v2, v6, v3, v5, Lx7;-><init>(I Lj20; Lcom/miui/guardprovider/aiguard/AiGuardService;)V
+0x000074: iput v4, v0, Lv7;->g I
+0x000078: invoke-static v7, v2, v0, Luk3;->E(Lx20; Lpp0; Lj20;)Ljava/lang/Object;
+0x00007e: move-result-object v5
+0x000080: if-ne v5, v1, +003h
+0x000084: return-object v1
+0x000086: sget-object v5, Lc13;->a Lc13;
+0x00008a: return-object v5
+
+METHOD d(Ljava/lang/String; Lk20;)Ljava/lang/Object; flags=public final
+registers=19 inputs=3
+TRY bytes [0x54,0x5a) -> [('catchall', 92)]
+TRY bytes [0xa8,0x12e) -> [('catchall', 344)]
+TRY bytes [0x138,0x150) -> [('catchall', 92)]
+TRY bytes [0x15e,0x160) -> [('catchall', 352)]
+0x000000: move-object/from16 v0, v16
+0x000004: move-object/from16 v1, v18
+0x000008: instance-of v2, v1, Li7;
+0x00000c: if-eqz v2, +011h
+0x000010: move-object v2, v1
+0x000012: check-cast v2, Li7;
+0x000016: iget v3, v2, Li7;->h I
+0x00001a: const/high16 v4, -2147483648
+0x00001e: and-int v5, v3, v4
+0x000022: if-eqz v5, +006h
+0x000026: sub-int/2addr v3, v4
+0x000028: iput v3, v2, Li7;->h I
+0x00002c: goto +6h
+0x00002e: new-instance v2, Li7;
+0x000032: invoke-direct v2, v0, v1, Li7;-><init>(Lcom/miui/guardprovider/aiguard/AiGuardService; Lk20;)V
+0x000038: iget-object v1, v2, Li7;->f Ljava/lang/Object;
+0x00003c: sget-object v3, Lh30;->b Lh30;
+0x000040: iget v4, v2, Li7;->h I
+0x000044: const/4 v5, 1
+0x000046: const/4 v6, 0
+0x000048: if-eqz v4, +014h
+0x00004c: if-ne v4, v5, +00ch
+0x000050: iget-object v2, v2, Li7;->e Ll00;
+0x000054: invoke-static v1, Lkk3;->y(Ljava/lang/Object;)V
+0x00005a: goto +6fh
+0x00005c: move-exception v0
+0x00005e: move-object v1, v0
+0x000060: goto/16 +07fh
+0x000064: const-string v0, "call to 'resume' before 'invoke' with coroutine"
+0x000068: invoke-static v0, Lik;->j(Ljava/lang/String;)V
+0x00006e: return-object v6
+0x000070: invoke-static v1, Lkk3;->y(Ljava/lang/Object;)V
+0x000076: iget-object v1, v0, Lcom/miui/guardprovider/aiguard/AiGuardService;->d Lmr2;
+0x00007a: invoke-virtual v1, Lmr2;->getValue()Ljava/lang/Object;
+0x000080: move-result-object v1
+0x000082: check-cast v1, Lg40;
+0x000086: iget-object v1, v1, Lg40;->b Lj62;
+0x00008a: invoke-interface v1, Lj62;->get()Ljava/lang/Object;
+0x000090: move-result-object v1
+0x000092: move-object v9, v1
+0x000094: check-cast v9, Lj02;
+0x000098: iget-object v0, v0, Lcom/miui/guardprovider/aiguard/AiGuardService;->l Lro;
+0x00009c: if-eqz v0, +067h
+0x0000a0: invoke-static Lro;->J()Ll00;
+0x0000a6: move-result-object v1
+0x0000a8: new-instance v0, Lorg/json/JSONObject;
+0x0000ac: invoke-direct v0, Lorg/json/JSONObject;-><init>()V
+0x0000b2: const-string v4, "requestId"
+0x0000b6: invoke-static Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
+0x0000bc: move-result-object v7
+0x0000be: invoke-virtual v7, Ljava/util/UUID;->toString()Ljava/lang/String;
+0x0000c4: move-result-object v7
+0x0000c6: invoke-virtual v7, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x0000cc: invoke-virtual v0, v4, v7, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+0x0000d2: const-string v4, "text"
+0x0000d6: move-object/from16 v7, v17
+0x0000da: invoke-virtual v0, v4, v7, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+0x0000e0: invoke-virtual v0, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+0x0000e6: move-result-object v0
+0x0000e8: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x0000ee: sget-object v4, Lmu;->a Ljava/nio/charset/Charset;
+0x0000f2: invoke-virtual v0, v4, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+0x0000f8: move-result-object v0
+0x0000fa: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000100: new-instance v7, Lj7;
+0x000104: const-class v10, Lj02;
+0x000108: const-string v11, "detectV2"
+0x00010c: const-string v12, "detectV2(Lcom/miui/securitycenter/confidentialcomputing/EncryptedData;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"
+0x000110: const/4 v14, 0
+0x000112: const/4 v15, 0
+0x000114: const/4 v8, 2
+0x000116: const/4 v13, 0
+0x000118: invoke-direct/range v7 ... v15, Lj7;-><init>(I Ljava/lang/Object; Ljava/lang/Class; Ljava/lang/String; Ljava/lang/String; I I I)V
+0x00011e: iput-object v1, v2, Li7;->e Ll00;
+0x000122: iput v5, v2, Li7;->h I
+0x000126: invoke-static v0, v1, v7, v2, Lkk3;->o([B Ll00; Lpp0; Lk20;)Ljava/lang/Object;
+0x00012c: move-result-object v0
+0x00012e: if-ne v0, v3, +003h
+0x000132: return-object v3
+0x000134: move-object v2, v1
+0x000136: move-object v1, v0
+0x000138: check-cast v1, Lorg/json/JSONObject;
+0x00013c: const-string v0, "checkRes"
+0x000140: invoke-virtual v1, v0, Lorg/json/JSONObject;->getBoolean(Ljava/lang/String;)Z
+0x000146: move-result v0
+0x000148: invoke-static v0, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+0x00014e: move-result-object v0
+0x000150: invoke-static v2, v6, Lu83;->l(Ljava/lang/AutoCloseable; Ljava/lang/Throwable;)V
+0x000156: return-object v0
+0x000158: move-exception v0
+0x00015a: move-object v2, v1
+0x00015c: goto -7fh
+0x00015e: throw v1
+0x000160: move-exception v0
+0x000162: invoke-static v2, v1, Lu83;->l(Ljava/lang/AutoCloseable; Ljava/lang/Throwable;)V
+0x000168: throw v0
+0x00016a: const-string v0, "Required value was null."
+0x00016e: invoke-static v0, Lik;->j(Ljava/lang/String;)V
+0x000174: return-object v6
+
+METHOD e(Ljava/nio/file/Path; Lk20;)Ljava/lang/Object; flags=public final
+registers=19 inputs=3
+TRY bytes [0x54,0x5a) -> [('catchall', 94)]
+TRY bytes [0xaa,0x15e) -> [('catchall', 392)]
+TRY bytes [0x168,0x180) -> [('catchall', 94)]
+TRY bytes [0x190,0x192) -> [('catchall', 402)]
+0x000000: move-object/from16 v0, v16
+0x000004: move-object/from16 v1, v18
+0x000008: instance-of v2, v1, Lk7;
+0x00000c: if-eqz v2, +011h
+0x000010: move-object v2, v1
+0x000012: check-cast v2, Lk7;
+0x000016: iget v3, v2, Lk7;->h I
+0x00001a: const/high16 v4, -2147483648
+0x00001e: and-int v5, v3, v4
+0x000022: if-eqz v5, +006h
+0x000026: sub-int/2addr v3, v4
+0x000028: iput v3, v2, Lk7;->h I
+0x00002c: goto +6h
+0x00002e: new-instance v2, Lk7;
+0x000032: invoke-direct v2, v0, v1, Lk7;-><init>(Lcom/miui/guardprovider/aiguard/AiGuardService; Lk20;)V
+0x000038: iget-object v1, v2, Lk7;->f Ljava/lang/Object;
+0x00003c: sget-object v3, Lh30;->b Lh30;
+0x000040: iget v4, v2, Lk7;->h I
+0x000044: const/4 v5, 1
+0x000046: const/4 v6, 0
+0x000048: if-eqz v4, +015h
+0x00004c: if-ne v4, v5, +00dh
+0x000050: iget-object v2, v2, Lk7;->e Ll00;
+0x000054: invoke-static v1, Lkk3;->y(Ljava/lang/Object;)V
+0x00005a: goto/16 +087h
+0x00005e: move-exception v0
+0x000060: move-object v1, v0
+0x000062: goto/16 +097h
+0x000066: const-string v0, "call to 'resume' before 'invoke' with coroutine"
+0x00006a: invoke-static v0, Lik;->j(Ljava/lang/String;)V
+0x000070: return-object v6
+0x000072: invoke-static v1, Lkk3;->y(Ljava/lang/Object;)V
+0x000078: iget-object v1, v0, Lcom/miui/guardprovider/aiguard/AiGuardService;->d Lmr2;
+0x00007c: invoke-virtual v1, Lmr2;->getValue()Ljava/lang/Object;
+0x000082: move-result-object v1
+0x000084: check-cast v1, Lg40;
+0x000088: iget-object v1, v1, Lg40;->c Lj62;
+0x00008c: invoke-interface v1, Lj62;->get()Ljava/lang/Object;
+0x000092: move-result-object v1
+0x000094: move-object v9, v1
+0x000096: check-cast v9, Lk43;
+0x00009a: iget-object v0, v0, Lcom/miui/guardprovider/aiguard/AiGuardService;->l Lro;
+0x00009e: if-eqz v0, +07fh
+0x0000a2: invoke-static Lro;->J()Ll00;
+0x0000a8: move-result-object v1
+0x0000aa: new-instance v0, Lorg/json/JSONObject;
+0x0000ae: invoke-direct v0, Lorg/json/JSONObject;-><init>()V
+0x0000b4: const-string v4, "streamName"
+0x0000b8: const-string v7, "clip.mp4"
+0x0000bc: invoke-virtual v0, v4, v7, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+0x0000c2: const-string v4, "fileBase64"
+0x0000c6: invoke-static Ljava/util/Base64;->getEncoder()Ljava/util/Base64$Encoder;
+0x0000cc: move-result-object v7
+0x0000ce: invoke-static/range v17, Ljava/nio/file/Files;->readAllBytes(Ljava/nio/file/Path;)[B
+0x0000d4: move-result-object v8
+0x0000d6: invoke-virtual v8, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x0000dc: invoke-virtual v7, v8, Ljava/util/Base64$Encoder;->encodeToString([B)Ljava/lang/String;
+0x0000e2: move-result-object v7
+0x0000e4: invoke-virtual v7, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x0000ea: invoke-virtual v0, v4, v7, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+0x0000f0: const-string v4, "requestId"
+0x0000f4: invoke-static Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
+0x0000fa: move-result-object v7
+0x0000fc: invoke-virtual v7, Ljava/util/UUID;->toString()Ljava/lang/String;
+0x000102: move-result-object v7
+0x000104: invoke-virtual v7, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00010a: invoke-virtual v0, v4, v7, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+0x000110: invoke-virtual v0, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+0x000116: move-result-object v0
+0x000118: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00011e: sget-object v4, Lmu;->a Ljava/nio/charset/Charset;
+0x000122: invoke-virtual v0, v4, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+0x000128: move-result-object v0
+0x00012a: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000130: new-instance v7, Ll7;
+0x000134: const-class v10, Lk43;
+0x000138: const-string v11, "detectV2"
+0x00013c: const-string v12, "detectV2(Lcom/miui/securitycenter/confidentialcomputing/EncryptedData;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"
+0x000140: const/4 v14, 0
+0x000142: const/4 v15, 0
+0x000144: const/4 v8, 2
+0x000146: const/4 v13, 0
+0x000148: invoke-direct/range v7 ... v15, Ll7;-><init>(I Ljava/lang/Object; Ljava/lang/Class; Ljava/lang/String; Ljava/lang/String; I I I)V
+0x00014e: iput-object v1, v2, Lk7;->e Ll00;
+0x000152: iput v5, v2, Lk7;->h I
+0x000156: invoke-static v0, v1, v7, v2, Lkk3;->o([B Ll00; Lpp0; Lk20;)Ljava/lang/Object;
+0x00015c: move-result-object v0
+0x00015e: if-ne v0, v3, +003h
+0x000162: return-object v3
+0x000164: move-object v2, v1
+0x000166: move-object v1, v0
+0x000168: check-cast v1, Lorg/json/JSONObject;
+0x00016c: const-string v0, "checkRes"
+0x000170: invoke-virtual v1, v0, Lorg/json/JSONObject;->getBoolean(Ljava/lang/String;)Z
+0x000176: move-result v0
+0x000178: invoke-static v0, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+0x00017e: move-result-object v0
+0x000180: invoke-static v2, v6, Lu83;->l(Ljava/lang/AutoCloseable; Ljava/lang/Throwable;)V
+0x000186: return-object v0
+0x000188: move-exception v0
+0x00018a: move-object v2, v1
+0x00018c: goto/16 -096h
+0x000190: throw v1
+0x000192: move-exception v0
+0x000194: invoke-static v2, v1, Lu83;->l(Ljava/lang/AutoCloseable; Ljava/lang/Throwable;)V
+0x00019a: throw v0
+0x00019c: const-string v0, "Required value was null."
+0x0001a0: invoke-static v0, Lik;->j(Ljava/lang/String;)V
+0x0001a6: return-object v6
+
+METHOD f()Lpj0; flags=public final
+registers=1 inputs=1
+0x000000: iget-object v0, v0, Lcom/miui/guardprovider/aiguard/AiGuardService;->i Lmr2;
+0x000004: invoke-virtual v0, Lmr2;->getValue()Ljava/lang/Object;
+0x00000a: move-result-object v0
+0x00000c: check-cast v0, Lpj0;
+0x000010: return-object v0
+
+METHOD g()V flags=public final synchronized
+registers=5 inputs=1
+TRY bytes [0x2,0x20) -> [('catchall', 20)]
+TRY bytes [0x28,0x4c) -> [('catchall', 20)]
+TRY bytes [0x50,0x52) -> [('catchall', 20)]
+0x000000: monitor-enter v4
+0x000002: iget-object v0, v4, Lcom/miui/guardprovider/aiguard/AiGuardService;->g Lkn2;
+0x000006: const/4 v1, 0
+0x000008: if-eqz v0, +008h
+0x00000c: invoke-virtual v0, v1, Ly21;->b(Ljava/util/concurrent/CancellationException;)V
+0x000012: goto +3h
+0x000014: move-exception v0
+0x000016: goto +1dh
+0x000018: iput-object v1, v4, Lcom/miui/guardprovider/aiguard/AiGuardService;->g Lkn2;
+0x00001c: iget-object v0, v4, Lcom/miui/guardprovider/aiguard/AiGuardService;->e Lsi;
+0x000020: if-nez v0, +004h
+0x000024: monitor-exit v4
+0x000026: return-void 
+0x000028: iput-object v1, v4, Lcom/miui/guardprovider/aiguard/AiGuardService;->e Lsi;
+0x00002c: iput-object v1, v4, Lcom/miui/guardprovider/aiguard/AiGuardService;->f Ljava/lang/Integer;
+0x000030: invoke-virtual v0, Lsi;->b()V
+0x000036: iget-object v2, v4, Lcom/miui/guardprovider/aiguard/AiGuardService;->c Lf20;
+0x00003a: new-instance v3, Ly7;
+0x00003e: invoke-direct v3, v0, v1, Ly7;-><init>(Lsi; Lj20;)V
+0x000044: const/4 v0, 3
+0x000046: invoke-static v2, v1, v1, v3, v0, Luk3;->z(Lg30; Lc30; Lj30; Lpp0; I)Lkn2;
+0x00004c: monitor-exit v4
+0x00004e: return-void 
+0x000050: monitor-exit v4
+0x000052: throw v0
+
+METHOD onBind(Landroid/content/Intent;)Landroid/os/IBinder; flags=public final
+registers=2 inputs=2
+0x000000: const/4 v0, 0
+0x000002: return-object v0
+
+METHOD onCreate()V flags=public final
+registers=4 inputs=1
+0x000000: invoke-super v3, Landroid/app/Service;->onCreate()V
+0x000006: new-instance v0, Ln7;
+0x00000a: const/4 v1, 1
+0x00000c: const/4 v2, 0
+0x00000e: invoke-direct v0, v1, v2, v3, Ln7;-><init>(I Lj20; Lcom/miui/guardprovider/aiguard/AiGuardService;)V
+0x000014: const/4 v1, 3
+0x000016: iget-object v3, v3, Lcom/miui/guardprovider/aiguard/AiGuardService;->b Lf20;
+0x00001a: invoke-static v3, v2, v2, v0, v1, Luk3;->z(Lg30; Lc30; Lj30; Lpp0; I)Lkn2;
+0x000020: return-void 
+
+METHOD onDestroy()V flags=public final
+registers=11 inputs=1
+0x000000: invoke-super v10, Landroid/app/Service;->onDestroy()V
+0x000006: const/4 v0, 0
+0x000008: iput-object v0, v10, Lcom/miui/guardprovider/aiguard/AiGuardService;->l Lro;
+0x00000c: invoke-virtual v10, Lcom/miui/guardprovider/aiguard/AiGuardService;->g()V
+0x000012: iget-boolean v1, v10, Lcom/miui/guardprovider/aiguard/AiGuardService;->h Z
+0x000016: if-nez v1, +00dh
+0x00001a: new-instance v1, Lp7;
+0x00001e: invoke-direct v1, v10, v0, Lp7;-><init>(Lcom/miui/guardprovider/aiguard/AiGuardService; Lj20;)V
+0x000024: const/4 v2, 3
+0x000026: iget-object v3, v10, Lcom/miui/guardprovider/aiguard/AiGuardService;->c Lf20;
+0x00002a: invoke-static v3, v0, v0, v1, v2, Luk3;->z(Lg30; Lc30; Lj30; Lpp0; I)Lkn2;
+0x000030: iget-object v0, v10, Lcom/miui/guardprovider/aiguard/AiGuardService;->m Lg7;
+0x000034: iget v1, v0, Lg7;->a I
+0x000038: iget v2, v0, Lg7;->b I
+0x00003c: iget v3, v0, Lg7;->c I
+0x000040: iget v4, v0, Lg7;->d I
+0x000044: iget v0, v0, Lg7;->e I
+0x000048: const-string v5, "ai_guard_daily_report"
+0x00004c: const/4 v6, 0
+0x00004e: invoke-virtual v10, v5, v6, Landroid/app/Service;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;
+0x000054: move-result-object v5
+0x000056: invoke-virtual v5, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00005c: invoke-interface v5, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+0x000062: move-result-object v7
+0x000064: invoke-virtual v7, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00006a: const-string v8, "qqVideoDetectionTimes"
+0x00006e: invoke-interface v5, v8, v6, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String; I)I
+0x000074: move-result v9
+0x000076: add-int/2addr v9, v1
+0x000078: invoke-interface v7, v8, v9, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String; I)Landroid/content/SharedPreferences$Editor;
+0x00007e: const-string v1, "qqVoiceDetectionTimes"
+0x000082: invoke-interface v5, v1, v6, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String; I)I
+0x000088: move-result v8
+0x00008a: add-int/2addr v8, v2
+0x00008c: invoke-interface v7, v1, v8, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String; I)Landroid/content/SharedPreferences$Editor;
+0x000092: const-string v1, "wechatVideoDetectionTimes"
+0x000096: invoke-interface v5, v1, v6, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String; I)I
+0x00009c: move-result v2
+0x00009e: add-int/2addr v2, v3
+0x0000a0: invoke-interface v7, v1, v2, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String; I)Landroid/content/SharedPreferences$Editor;
+0x0000a6: const-string v1, "wechatVoiceDetectionTimes"
+0x0000aa: invoke-interface v5, v1, v6, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String; I)I
+0x0000b0: move-result v2
+0x0000b2: add-int/2addr v2, v4
+0x0000b4: invoke-interface v7, v1, v2, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String; I)Landroid/content/SharedPreferences$Editor;
+0x0000ba: const-string v1, "phoneVoiceDetectionTimes"
+0x0000be: invoke-interface v5, v1, v6, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String; I)I
+0x0000c4: move-result v2
+0x0000c6: add-int/2addr v2, v0
+0x0000c8: invoke-interface v7, v1, v2, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String; I)Landroid/content/SharedPreferences$Editor;
+0x0000ce: invoke-interface v7, Landroid/content/SharedPreferences$Editor;->apply()V
+0x0000d4: iget-object v10, v10, Lcom/miui/guardprovider/aiguard/AiGuardService;->b Lf20;
+0x0000d8: invoke-static v10, Laz0;->o(Lg30;)V
+0x0000de: const-string v10, "AiGuardService"
+0x0000e2: const-string v0, "Destroyed."
+0x0000e6: invoke-static v10, v0, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x0000ec: return-void 
+
+METHOD onStartCommand(Landroid/content/Intent; I I)I flags=public final
+registers=27 inputs=4
+TRY bytes [0x5b6,0x5c4) -> [('Ljava/lang/Exception;', 1484)]
+TRY bytes [0x684,0x6ce) -> [('catchall', 1748)]
+TRY bytes [0x6da,0x854) -> [('catchall', 1748)]
+TRY bytes [0x854,0x85a) -> [('catchall', 2142)]
+TRY bytes [0x860,0x8c0) -> [('catchall', 1748)]
+TRY bytes [0x8ea,0x8ec) -> [('catchall', 1748)]
+0x000000: move-object/from16 v1, v23
+0x000004: move-object/from16 v2, v24
+0x000008: invoke-virtual v2, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00000e: const-string v0, "COMMAND"
+0x000012: const/4 v3, 0
+0x000014: invoke-virtual v2, v0, v3, Landroid/content/Intent;->getIntExtra(Ljava/lang/String; I)I
+0x00001a: move-result v4
+0x00001c: const-string v0, "CAPABILITIES"
+0x000020: invoke-virtual v2, v0, v3, Landroid/content/Intent;->getIntExtra(Ljava/lang/String; I)I
+0x000026: move-result v0
+0x000028: iput v0, v1, Lcom/miui/guardprovider/aiguard/AiGuardService;->n I
+0x00002c: const/4 v5, 0
+0x00002e: const/4 v6, 3
+0x000030: if-ne v4, v6, +017h
+0x000034: const-string v0, "ai_guard_function_switch"
+0x000038: invoke-virtual v2, v0, v3, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String; Z)Z
+0x00003e: move-result v0
+0x000040: iget-object v3, v1, Lcom/miui/guardprovider/aiguard/AiGuardService;->b Lf20;
+0x000044: new-instance v4, Lq7;
+0x000048: invoke-direct v4, v1, v0, v5, Lq7;-><init>(Lcom/miui/guardprovider/aiguard/AiGuardService; Z Lj20;)V
+0x00004e: invoke-static v3, v5, v5, v4, v6, Luk3;->z(Lg30; Lc30; Lj30; Lpp0; I)Lkn2;
+0x000054: invoke-super/range v23 ... v26, Landroid/app/Service;->onStartCommand(Landroid/content/Intent; I I)I
+0x00005a: move-result v0
+0x00005c: return v0
+0x00005e: const-string v0, "AiGuardService"
+0x000062: sget-object v7, Landroid/provider/Settings$System;->DEFAULT_NOTIFICATION_URI Landroid/net/Uri;
+0x000066: sget-object v8, Landroid/app/Notification;->AUDIO_ATTRIBUTES_DEFAULT Landroid/media/AudioAttributes;
+0x00006a: const v9, 2131755078
+0x000070: invoke-virtual v1, v9, Landroid/app/Service;->getString(I)Ljava/lang/String;
+0x000076: move-result-object v9
+0x000078: new-instance v10, Lst1;
+0x00007c: const-string v10, "notification"
+0x000080: invoke-virtual v1, v10, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+0x000086: move-result-object v10
+0x000088: check-cast v10, Landroid/app/NotificationManager;
+0x00008c: new-instance v11, Landroid/app/NotificationChannel;
+0x000090: invoke-direct v11, v0, v9, v6, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String; Ljava/lang/CharSequence; I)V
+0x000096: invoke-virtual v11, v5, Landroid/app/NotificationChannel;->setDescription(Ljava/lang/String;)V
+0x00009c: invoke-virtual v11, v5, Landroid/app/NotificationChannel;->setGroup(Ljava/lang/String;)V
+0x0000a2: const/4 v9, 1
+0x0000a4: invoke-virtual v11, v9, Landroid/app/NotificationChannel;->setShowBadge(Z)V
+0x0000aa: invoke-virtual v11, v7, v8, Landroid/app/NotificationChannel;->setSound(Landroid/net/Uri; Landroid/media/AudioAttributes;)V
+0x0000b0: invoke-virtual v11, v3, Landroid/app/NotificationChannel;->enableLights(Z)V
+0x0000b6: invoke-virtual v11, v3, Landroid/app/NotificationChannel;->setLightColor(I)V
+0x0000bc: invoke-virtual v11, v5, Landroid/app/NotificationChannel;->setVibrationPattern([J)V
+0x0000c2: invoke-virtual v11, v3, Landroid/app/NotificationChannel;->enableVibration(Z)V
+0x0000c8: invoke-virtual v10, v11, Landroid/app/NotificationManager;->createNotificationChannel(Landroid/app/NotificationChannel;)V
+0x0000ce: new-instance v7, Landroid/content/Intent;
+0x0000d2: invoke-direct v7, Landroid/content/Intent;-><init>()V
+0x0000d8: const-string v8, "com.miui.securitycenter/com.miui.electricrisk.ElectricProtectPhoneActivity"
+0x0000dc: invoke-static v8, Landroid/content/ComponentName;->unflattenFromString(Ljava/lang/String;)Landroid/content/ComponentName;
+0x0000e2: move-result-object v8
+0x0000e4: invoke-virtual v7, v8, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
+0x0000ea: move-result-object v7
+0x0000ec: const/high16 v8, 268435456
+0x0000f0: invoke-virtual v7, v8, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+0x0000f6: move-result-object v7
+0x0000f8: const/high16 v8, 201326592
+0x0000fc: invoke-static v1, v3, v7, v8, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context; I Landroid/content/Intent; I)Landroid/app/PendingIntent;
+0x000102: move-result-object v7
+0x000104: new-instance v8, Landroid/os/Bundle;
+0x000108: invoke-direct v8, Landroid/os/Bundle;-><init>()V
+0x00010e: const v10, 2131755064
+0x000114: invoke-virtual v1, v10, Landroid/app/Service;->getString(I)Ljava/lang/String;
+0x00011a: move-result-object v11
+0x00011c: invoke-virtual v11, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000122: iget v12, v1, Lcom/miui/guardprovider/aiguard/AiGuardService;->n I
+0x000126: const/4 v13, 2
+0x000128: and-int/2addr v12, v13
+0x00012a: if-nez v12, +00ah
+0x00012e: const v12, 2131755063
+0x000134: invoke-virtual v1, v12, Landroid/app/Service;->getString(I)Ljava/lang/String;
+0x00013a: move-result-object v12
+0x00013c: goto +8h
+0x00013e: const v12, 2131755062
+0x000144: invoke-virtual v1, v12, Landroid/app/Service;->getString(I)Ljava/lang/String;
+0x00014a: move-result-object v12
+0x00014c: invoke-virtual v12, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000152: new-instance v14, Ljava/lang/StringBuilder;
+0x000156: const-string v15, "
+            {
+              "scene": "templateRevertProgressScene",
+              "param_v2": {
+                "protocol": 1,
+                "business": "AI Fraud Prevention",
+                "ticker": ""
+0x00015a: invoke-direct v14, v15, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000160: invoke-virtual v14, v11, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000166: const-string v15, "", 
+                "tickerPic": "miui.focus.pic_landPic",
+                "tickerPicDark": "miui.focus.pic_landPic",
+                "updatable": true,
+                "showSmallIcon": true,
+                "picInfo": {
+                  "type": 2,
+                  "pic": "miui.focus.pic_landPic"
+                },
+                "baseInfo": {
+                  "title": ""
+0x00016a: invoke-virtual v14, v15, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000170: invoke-virtual v14, v11, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000176: const-string v15, "", 
+                  "content": ""
+0x00017a: move/from16 v16, v13
+0x00017e: const-string v13, "", 
+                  "type": 2
+                },
+                "aodPic": "miui.focus.pic_landPic",
+                "islandFirstFloat": false,
+                "param_island": {
+                  "islandProperty": 1,
+                  "islandPriority": 1,
+                  "islandOrder": true,
+                  "dismissIsland": false,
+                  "bigIslandArea": {
+                    "textInfo": {
+                      "title": ""
+0x000182: invoke-static v14, v15, v12, v13, v11, Ld61;->B(Ljava/lang/StringBuilder; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V
+0x000188: const-string v11, ""
+                    },
+                    "imageTextInfoLeft": {
+                      "type": 1,
+                      "picInfo": {
+                        "type": 1,
+                        "pic": "miui.focus.pic_landPic"
+                      }
+                    }
+                  },
+                  "smallIslandArea": {
+                    "picInfo": {
+                      "type": 1,
+                      "pic": "miui.focus.pic_landPic"
+                    }
+                  }
+                }
+              }
+            }
+        "
+0x00018c: invoke-virtual v14, v11, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000192: invoke-virtual v14, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000198: move-result-object v11
+0x00019a: invoke-static v11, Lyp2;->D(Ljava/lang/String;)Ljava/lang/String;
+0x0001a0: move-result-object v11
+0x0001a2: const v13, 2131230845
+0x0001a8: invoke-static v1, v13, Landroid/graphics/drawable/Icon;->createWithResource(Landroid/content/Context; I)Landroid/graphics/drawable/Icon;
+0x0001ae: move-result-object v14
+0x0001b0: invoke-virtual v14, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x0001b6: const-string v15, "miui.appIcon"
+0x0001ba: new-instance v6, Lqy1;
+0x0001be: invoke-direct v6, v15, v14, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x0001c4: const-string v15, "miui.focus.pic_landPic"
+0x0001c8: new-instance v9, Lqy1;
+0x0001cc: invoke-direct v9, v15, v14, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x0001d2: filled-new-array v6, v9, [Lqy1;
+0x0001d8: move-result-object v6
+0x0001da: invoke-static v6, Lhn;->c([Lqy1;)Landroid/os/Bundle;
+0x0001e0: move-result-object v6
+0x0001e2: const-string v9, "miui.focus.pics"
+0x0001e6: invoke-virtual v8, v9, v6, Landroid/os/Bundle;->putParcelable(Ljava/lang/String; Landroid/os/Parcelable;)V
+0x0001ec: const-string v6, "miui.focus.param"
+0x0001f0: invoke-virtual v8, v6, v11, Landroid/os/Bundle;->putString(Ljava/lang/String; Ljava/lang/String;)V
+0x0001f6: new-instance v6, Ljava/util/ArrayList;
+0x0001fa: invoke-direct v6, Ljava/util/ArrayList;-><init>()V
+0x000200: new-instance v9, Ljava/util/ArrayList;
+0x000204: invoke-direct v9, Ljava/util/ArrayList;-><init>()V
+0x00020a: new-instance v11, Ljava/util/ArrayList;
+0x00020e: invoke-direct v11, Ljava/util/ArrayList;-><init>()V
+0x000214: new-instance v14, Landroid/app/Notification;
+0x000218: invoke-direct v14, Landroid/app/Notification;-><init>()V
+0x00021e: move-object/from16 v17, v6
+0x000222: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000228: move-result-wide v5
+0x00022a: iput-wide v5, v14, Landroid/app/Notification;->when J
+0x00022e: const/4 v5, -1
+0x000230: iput v5, v14, Landroid/app/Notification;->audioStreamType I
+0x000234: new-instance v5, Ljava/util/ArrayList;
+0x000238: invoke-direct v5, Ljava/util/ArrayList;-><init>()V
+0x00023e: invoke-virtual v1, v10, Landroid/app/Service;->getString(I)Ljava/lang/String;
+0x000244: move-result-object v6
+0x000246: const/16 v10, 5120
+0x00024a: if-nez v6, +003h
+0x00024e: goto +bh
+0x000250: invoke-virtual v6, Ljava/lang/String;->length()I
+0x000256: move-result v15
+0x000258: if-le v15, v10, +006h
+0x00025c: invoke-virtual v6, v3, v10, Ljava/lang/String;->subSequence(I I)Ljava/lang/CharSequence;
+0x000262: move-result-object v6
+0x000264: invoke-virtual v12, Ljava/lang/String;->length()I
+0x00026a: move-result v15
+0x00026c: if-le v15, v10, +006h
+0x000270: invoke-virtual v12, v3, v10, Ljava/lang/String;->subSequence(I I)Ljava/lang/CharSequence;
+0x000276: move-result-object v12
+0x000278: iput v13, v14, Landroid/app/Notification;->icon I
+0x00027c: new-instance v10, Landroid/os/Bundle;
+0x000280: invoke-direct v10, v8, Landroid/os/Bundle;-><init>(Landroid/os/Bundle;)V
+0x000286: const-string v8, "invisible_actions"
+0x00028a: const-string v13, "android.car.EXTENSIONS"
+0x00028e: new-instance v15, Landroid/os/Bundle;
+0x000292: invoke-direct v15, Landroid/os/Bundle;-><init>()V
+0x000298: new-instance v3, Landroid/app/Notification$Builder;
+0x00029c: invoke-direct v3, v1, v0, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context; Ljava/lang/String;)V
+0x0002a2: move/from16 v19, v4
+0x0002a6: move-object/from16 v20, v5
+0x0002aa: iget-wide v4, v14, Landroid/app/Notification;->when J
+0x0002ae: invoke-virtual v3, v4, v5, Landroid/app/Notification$Builder;->setWhen(J)Landroid/app/Notification$Builder;
+0x0002b4: move-result-object v4
+0x0002b6: iget v5, v14, Landroid/app/Notification;->icon I
+0x0002ba: move-object/from16 v21, v0
+0x0002be: iget v0, v14, Landroid/app/Notification;->iconLevel I
+0x0002c2: invoke-virtual v4, v5, v0, Landroid/app/Notification$Builder;->setSmallIcon(I I)Landroid/app/Notification$Builder;
+0x0002c8: move-result-object v0
+0x0002ca: iget-object v4, v14, Landroid/app/Notification;->contentView Landroid/widget/RemoteViews;
+0x0002ce: invoke-virtual v0, v4, Landroid/app/Notification$Builder;->setContent(Landroid/widget/RemoteViews;)Landroid/app/Notification$Builder;
+0x0002d4: move-result-object v0
+0x0002d6: iget-object v4, v14, Landroid/app/Notification;->tickerText Ljava/lang/CharSequence;
+0x0002da: const/4 v5, 0
+0x0002dc: invoke-virtual v0, v4, v5, Landroid/app/Notification$Builder;->setTicker(Ljava/lang/CharSequence; Landroid/widget/RemoteViews;)Landroid/app/Notification$Builder;
+0x0002e2: move-result-object v0
+0x0002e4: move-object v4, v15
+0x0002e6: iget-object v5, v14, Landroid/app/Notification;->vibrate [J
+0x0002ea: invoke-virtual v0, v5, Landroid/app/Notification$Builder;->setVibrate([J)Landroid/app/Notification$Builder;
+0x0002f0: move-result-object v0
+0x0002f2: iget v5, v14, Landroid/app/Notification;->ledARGB I
+0x0002f6: iget v15, v14, Landroid/app/Notification;->ledOnMS I
+0x0002fa: move-object/from16 v22, v9
+0x0002fe: iget v9, v14, Landroid/app/Notification;->ledOffMS I
+0x000302: invoke-virtual v0, v5, v15, v9, Landroid/app/Notification$Builder;->setLights(I I I)Landroid/app/Notification$Builder;
+0x000308: move-result-object v0
+0x00030a: iget v5, v14, Landroid/app/Notification;->flags I
+0x00030e: and-int/lit8 v5, v5, 2
+0x000312: if-eqz v5, +004h
+0x000316: const/4 v5, 1
+0x000318: goto +2h
+0x00031a: const/4 v5, 0
+0x00031c: invoke-virtual v0, v5, Landroid/app/Notification$Builder;->setOngoing(Z)Landroid/app/Notification$Builder;
+0x000322: move-result-object v0
+0x000324: iget v5, v14, Landroid/app/Notification;->flags I
+0x000328: and-int/lit8 v5, v5, 8
+0x00032c: if-eqz v5, +004h
+0x000330: const/4 v5, 1
+0x000332: goto +2h
+0x000334: const/4 v5, 0
+0x000336: invoke-virtual v0, v5, Landroid/app/Notification$Builder;->setOnlyAlertOnce(Z)Landroid/app/Notification$Builder;
+0x00033c: move-result-object v0
+0x00033e: iget v5, v14, Landroid/app/Notification;->flags I
+0x000342: const/16 v9, 16
+0x000346: and-int/2addr v5, v9
+0x000348: if-eqz v5, +004h
+0x00034c: const/4 v5, 1
+0x00034e: goto +2h
+0x000350: const/4 v5, 0
+0x000352: invoke-virtual v0, v5, Landroid/app/Notification$Builder;->setAutoCancel(Z)Landroid/app/Notification$Builder;
+0x000358: move-result-object v0
+0x00035a: iget v5, v14, Landroid/app/Notification;->defaults I
+0x00035e: invoke-virtual v0, v5, Landroid/app/Notification$Builder;->setDefaults(I)Landroid/app/Notification$Builder;
+0x000364: move-result-object v0
+0x000366: invoke-virtual v0, v6, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+0x00036c: move-result-object v0
+0x00036e: invoke-virtual v0, v12, Landroid/app/Notification$Builder;->setContentText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+0x000374: move-result-object v0
+0x000376: const/4 v15, 0
+0x000378: invoke-virtual v0, v15, Landroid/app/Notification$Builder;->setContentInfo(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+0x00037e: move-result-object v0
+0x000380: invoke-virtual v0, v7, Landroid/app/Notification$Builder;->setContentIntent(Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
+0x000386: move-result-object v0
+0x000388: iget-object v5, v14, Landroid/app/Notification;->deleteIntent Landroid/app/PendingIntent;
+0x00038c: invoke-virtual v0, v5, Landroid/app/Notification$Builder;->setDeleteIntent(Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
+0x000392: move-result-object v0
+0x000394: iget v5, v14, Landroid/app/Notification;->flags I
+0x000398: and-int/lit16 v5, v5, 128
+0x00039c: if-eqz v5, +004h
+0x0003a0: const/4 v5, 1
+0x0003a2: goto +2h
+0x0003a4: const/4 v5, 0
+0x0003a6: invoke-virtual v0, v15, v5, Landroid/app/Notification$Builder;->setFullScreenIntent(Landroid/app/PendingIntent; Z)Landroid/app/Notification$Builder;
+0x0003ac: move-result-object v0
+0x0003ae: const/4 v5, 0
+0x0003b0: invoke-virtual v0, v5, Landroid/app/Notification$Builder;->setNumber(I)Landroid/app/Notification$Builder;
+0x0003b6: move-result-object v0
+0x0003b8: invoke-virtual v0, v5, v5, v5, Landroid/app/Notification$Builder;->setProgress(I I Z)Landroid/app/Notification$Builder;
+0x0003be: invoke-virtual v3, v15, Landroid/app/Notification$Builder;->setLargeIcon(Landroid/graphics/drawable/Icon;)Landroid/app/Notification$Builder;
+0x0003c4: invoke-virtual v3, v15, Landroid/app/Notification$Builder;->setSubText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+0x0003ca: move-result-object v0
+0x0003cc: invoke-virtual v0, v5, Landroid/app/Notification$Builder;->setUsesChronometer(Z)Landroid/app/Notification$Builder;
+0x0003d2: move-result-object v0
+0x0003d4: invoke-virtual v0, v5, Landroid/app/Notification$Builder;->setPriority(I)Landroid/app/Notification$Builder;
+0x0003da: invoke-virtual/range v17, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+0x0003e0: move-result-object v0
+0x0003e2: invoke-interface v0, Ljava/util/Iterator;->hasNext()Z
+0x0003e8: move-result v6
+0x0003ea: if-nez v6, +29bh
+0x0003ee: invoke-virtual v4, v10, Landroid/os/Bundle;->putAll(Landroid/os/Bundle;)V
+0x0003f4: const/4 v6, 1
+0x0003f6: invoke-virtual v3, v6, Landroid/app/Notification$Builder;->setShowWhen(Z)Landroid/app/Notification$Builder;
+0x0003fc: invoke-virtual v3, v5, Landroid/app/Notification$Builder;->setLocalOnly(Z)Landroid/app/Notification$Builder;
+0x000402: invoke-virtual v3, v15, Landroid/app/Notification$Builder;->setGroup(Ljava/lang/String;)Landroid/app/Notification$Builder;
+0x000408: invoke-virtual v3, v15, Landroid/app/Notification$Builder;->setSortKey(Ljava/lang/String;)Landroid/app/Notification$Builder;
+0x00040e: invoke-virtual v3, v5, Landroid/app/Notification$Builder;->setGroupSummary(Z)Landroid/app/Notification$Builder;
+0x000414: invoke-virtual v3, v15, Landroid/app/Notification$Builder;->setCategory(Ljava/lang/String;)Landroid/app/Notification$Builder;
+0x00041a: invoke-virtual v3, v5, Landroid/app/Notification$Builder;->setColor(I)Landroid/app/Notification$Builder;
+0x000420: invoke-virtual v3, v5, Landroid/app/Notification$Builder;->setVisibility(I)Landroid/app/Notification$Builder;
+0x000426: invoke-virtual v3, v15, Landroid/app/Notification$Builder;->setPublicVersion(Landroid/app/Notification;)Landroid/app/Notification$Builder;
+0x00042c: iget-object v0, v14, Landroid/app/Notification;->sound Landroid/net/Uri;
+0x000430: iget-object v5, v14, Landroid/app/Notification;->audioAttributes Landroid/media/AudioAttributes;
+0x000434: invoke-virtual v3, v0, v5, Landroid/app/Notification$Builder;->setSound(Landroid/net/Uri; Landroid/media/AudioAttributes;)Landroid/app/Notification$Builder;
+0x00043a: invoke-virtual/range v20, Ljava/util/ArrayList;->isEmpty()Z
+0x000440: move-result v0
+0x000442: if-nez v0, +016h
+0x000446: invoke-virtual/range v20, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+0x00044c: move-result-object v0
+0x00044e: invoke-interface v0, Ljava/util/Iterator;->hasNext()Z
+0x000454: move-result v5
+0x000456: if-eqz v5, +00ch
+0x00045a: invoke-interface v0, Ljava/util/Iterator;->next()Ljava/lang/Object;
+0x000460: move-result-object v5
+0x000462: check-cast v5, Ljava/lang/String;
+0x000466: invoke-virtual v3, v5, Landroid/app/Notification$Builder;->addPerson(Ljava/lang/String;)Landroid/app/Notification$Builder;
+0x00046c: goto -fh
+0x00046e: invoke-virtual v11, Ljava/util/ArrayList;->size()I
+0x000474: move-result v0
+0x000476: if-lez v0, +029h
+0x00047a: invoke-virtual v10, v13, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
+0x000480: move-result-object v0
+0x000482: if-nez v0, +007h
+0x000486: new-instance v0, Landroid/os/Bundle;
+0x00048a: invoke-direct v0, Landroid/os/Bundle;-><init>()V
+0x000490: new-instance v5, Landroid/os/Bundle;
+0x000494: invoke-direct v5, v0, Landroid/os/Bundle;-><init>(Landroid/os/Bundle;)V
+0x00049a: new-instance v6, Landroid/os/Bundle;
+0x00049e: invoke-direct v6, Landroid/os/Bundle;-><init>()V
+0x0004a4: invoke-virtual v11, Ljava/util/ArrayList;->size()I
+0x0004aa: move-result v7
+0x0004ac: if-gtz v7, +011h
+0x0004b0: invoke-virtual v0, v8, v6, Landroid/os/Bundle;->putBundle(Ljava/lang/String; Landroid/os/Bundle;)V
+0x0004b6: invoke-virtual v5, v8, v6, Landroid/os/Bundle;->putBundle(Ljava/lang/String; Landroid/os/Bundle;)V
+0x0004bc: invoke-virtual v10, v13, v0, Landroid/os/Bundle;->putBundle(Ljava/lang/String; Landroid/os/Bundle;)V
+0x0004c2: invoke-virtual v4, v13, v5, Landroid/os/Bundle;->putBundle(Ljava/lang/String; Landroid/os/Bundle;)V
+0x0004c8: const/4 v5, 0
+0x0004ca: const/4 v15, 0
+0x0004cc: goto +16h
+0x0004ce: const/4 v5, 0
+0x0004d0: invoke-static v5, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+0x0004d6: invoke-virtual v11, v5, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+0x0004dc: move-result-object v0
+0x0004de: if-eqz v0, +006h
+0x0004e2: invoke-static Lik;->b()V
+0x0004e8: return v5
+0x0004ea: new-instance v0, Landroid/os/Bundle;
+0x0004ee: invoke-direct v0, Landroid/os/Bundle;-><init>()V
+0x0004f4: const/4 v15, 0
+0x0004f6: throw v15
+0x0004f8: invoke-virtual v3, v10, Landroid/app/Notification$Builder;->setExtras(Landroid/os/Bundle;)Landroid/app/Notification$Builder;
+0x0004fe: invoke-virtual v3, v15, Landroid/app/Notification$Builder;->setRemoteInputHistory([Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+0x000504: invoke-virtual v3, v5, Landroid/app/Notification$Builder;->setBadgeIconType(I)Landroid/app/Notification$Builder;
+0x00050a: invoke-virtual v3, v15, Landroid/app/Notification$Builder;->setSettingsText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
+0x000510: invoke-virtual v3, v15, Landroid/app/Notification$Builder;->setShortcutId(Ljava/lang/String;)Landroid/app/Notification$Builder;
+0x000516: const-wide/16 v6, 0
+0x00051a: invoke-virtual v3, v6, v7, Landroid/app/Notification$Builder;->setTimeoutAfter(J)Landroid/app/Notification$Builder;
+0x000520: invoke-virtual v3, v5, Landroid/app/Notification$Builder;->setGroupAlertBehavior(I)Landroid/app/Notification$Builder;
+0x000526: invoke-static/range v21, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+0x00052c: move-result v0
+0x00052e: if-nez v0, +011h
+0x000532: invoke-virtual v3, v15, Landroid/app/Notification$Builder;->setSound(Landroid/net/Uri;)Landroid/app/Notification$Builder;
+0x000538: move-result-object v0
+0x00053a: invoke-virtual v0, v5, Landroid/app/Notification$Builder;->setDefaults(I)Landroid/app/Notification$Builder;
+0x000540: move-result-object v0
+0x000542: invoke-virtual v0, v5, v5, v5, Landroid/app/Notification$Builder;->setLights(I I I)Landroid/app/Notification$Builder;
+0x000548: move-result-object v0
+0x00054a: invoke-virtual v0, v15, Landroid/app/Notification$Builder;->setVibrate([J)Landroid/app/Notification$Builder;
+0x000550: invoke-virtual/range v22, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+0x000556: move-result-object v0
+0x000558: invoke-interface v0, Ljava/util/Iterator;->hasNext()Z
+0x00055e: move-result v4
+0x000560: if-nez v4, +1d3h
+0x000564: const/4 v6, 1
+0x000566: invoke-virtual v3, v6, Landroid/app/Notification$Builder;->setAllowSystemGeneratedContextualActions(Z)Landroid/app/Notification$Builder;
+0x00056c: invoke-virtual v3, v15, Landroid/app/Notification$Builder;->setBubbleMetadata(Landroid/app/Notification$BubbleMetadata;)Landroid/app/Notification$Builder;
+0x000572: sget v0, Landroid/os/Build$VERSION;->SDK_INT I
+0x000576: const/16 v4, 36
+0x00057a: if-lt v0, v4, +005h
+0x00057e: invoke-static v3, Lja2;->h0(Landroid/app/Notification$Builder;)V
+0x000584: invoke-virtual v3, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
+0x00058a: move-result-object v0
+0x00058c: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000592: const/16 v3, 160
+0x000596: invoke-virtual v1, v6, v0, v3, Landroid/app/Service;->startForeground(I Landroid/app/Notification; I)V
+0x00059c: iget-object v0, v1, Lcom/miui/guardprovider/aiguard/AiGuardService;->b Lf20;
+0x0005a0: new-instance v3, Lo7;
+0x0005a4: const/4 v5, 0
+0x0005a6: const/4 v15, 0
+0x0005a8: invoke-direct v3, v1, v15, v5, Lo7;-><init>(Ljava/lang/Object; Lj20; I)V
+0x0005ae: const/4 v4, 3
+0x0005b0: invoke-static v0, v15, v15, v3, v4, Luk3;->z(Lg30; Lc30; Lj30; Lpp0; I)Lkn2;
+0x0005b6: new-instance v0, Lro;
+0x0005ba: invoke-direct v0, v1, Lro;-><init>(Landroid/content/ContextWrapper;)V
+0x0005c0: iput-object v0, v1, Lcom/miui/guardprovider/aiguard/AiGuardService;->l Lro;
+0x0005c4: move/from16 v3, v19
+0x0005c8: const/4 v6, 1
+0x0005ca: goto +ah
+0x0005cc: move-exception v0
+0x0005ce: const-string v3, "AiGuardService"
+0x0005d2: const-string v4, "Failed to init pcc:"
+0x0005d6: invoke-static v3, v4, v0, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I
+0x0005dc: goto -ch
+0x0005de: if-eq v3, v6, +03fh
+0x0005e2: move/from16 v4, v16
+0x0005e6: if-eq v3, v4, +01fh
+0x0005ea: invoke-virtual v1, Landroid/app/Service;->stopSelf()V
+0x0005f0: const-string v0, "AiGuardService"
+0x0005f4: new-instance v4, Ljava/lang/StringBuilder;
+0x0005f8: const-string v5, "Unknown command:"
+0x0005fc: invoke-direct v4, v5, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000602: invoke-virtual v4, v3, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+0x000608: const-string v3, "."
+0x00060c: invoke-virtual v4, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000612: invoke-virtual v4, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000618: move-result-object v3
+0x00061a: invoke-static v0, v3, Landroid/util/Log;->w(Ljava/lang/String; Ljava/lang/String;)I
+0x000620: goto/16 +16eh
+0x000624: const-string v0, "VIDEO_SCAM_SCENE"
+0x000628: const/4 v5, 0
+0x00062a: invoke-virtual v2, v0, v5, Landroid/content/Intent;->getIntExtra(Ljava/lang/String; I)I
+0x000630: move-result v0
+0x000632: iget-object v3, v1, Lcom/miui/guardprovider/aiguard/AiGuardService;->b Lf20;
+0x000636: new-instance v4, Lr7;
+0x00063a: const/4 v15, 0
+0x00063c: invoke-direct v4, v0, v15, v1, Lr7;-><init>(I Lj20; Lcom/miui/guardprovider/aiguard/AiGuardService;)V
+0x000642: const/4 v5, 3
+0x000644: invoke-static v3, v15, v15, v4, v5, Luk3;->z(Lg30; Lc30; Lj30; Lpp0; I)Lkn2;
+0x00064a: const-string v0, "AiGuardService"
+0x00064e: const-string v3, "Video scam detection started."
+0x000652: invoke-static v0, v3, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x000658: goto/16 +152h
+0x00065c: const/4 v5, 0
+0x00065e: const-string v0, "PHONE_SCAM_SCENE"
+0x000662: invoke-virtual v2, v0, v5, Landroid/content/Intent;->getIntExtra(Ljava/lang/String; I)I
+0x000668: move-result v3
+0x00066a: const-string v0, "android.permission.RECORD_AUDIO"
+0x00066e: invoke-virtual v1, v0, Landroid/app/Service;->checkSelfPermission(Ljava/lang/String;)I
+0x000674: move-result v0
+0x000676: if-nez v0, +13ch
+0x00067a: const-string v0, "Audio recording scene changed:"
+0x00067e: const-string v4, "Audio recording is already running for scene:"
+0x000682: monitor-enter v23
+0x000684: iget-object v5, v1, Lcom/miui/guardprovider/aiguard/AiGuardService;->e Lsi;
+0x000688: if-eqz v5, +04ch
+0x00068c: iget-object v5, v1, Lcom/miui/guardprovider/aiguard/AiGuardService;->f Ljava/lang/Integer;
+0x000690: if-nez v5, +003h
+0x000694: goto +23h
+0x000696: invoke-virtual v5, Ljava/lang/Integer;->intValue()I
+0x00069c: move-result v5
+0x00069e: if-ne v5, v3, +01eh
+0x0006a2: const-string v0, "AiGuardService"
+0x0006a6: new-instance v5, Ljava/lang/StringBuilder;
+0x0006aa: invoke-direct v5, v4, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x0006b0: invoke-virtual v5, v3, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+0x0006b6: const-string v4, ", skip."
+0x0006ba: invoke-virtual v5, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0006c0: invoke-virtual v5, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0006c6: move-result-object v4
+0x0006c8: invoke-static v0, v4, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x0006ce: monitor-exit v23
+0x0006d0: goto/16 +0f9h
+0x0006d4: move-exception v0
+0x0006d6: goto/16 +10ah
+0x0006da: const-string v4, "AiGuardService"
+0x0006de: iget-object v5, v1, Lcom/miui/guardprovider/aiguard/AiGuardService;->f Ljava/lang/Integer;
+0x0006e2: new-instance v6, Ljava/lang/StringBuilder;
+0x0006e6: invoke-direct v6, v0, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x0006ec: invoke-virtual v6, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x0006f2: const-string v0, " -> "
+0x0006f6: invoke-virtual v6, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0006fc: invoke-virtual v6, v3, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+0x000702: const-string v0, ", restart it."
+0x000706: invoke-virtual v6, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00070c: invoke-virtual v6, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000712: move-result-object v0
+0x000714: invoke-static v4, v0, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x00071a: invoke-virtual v1, Lcom/miui/guardprovider/aiguard/AiGuardService;->g()V
+0x000720: new-instance v4, Lqq;
+0x000724: iget-object v0, v1, Lcom/miui/guardprovider/aiguard/AiGuardService;->k Lmr2;
+0x000728: invoke-virtual v0, Lmr2;->getValue()Ljava/lang/Object;
+0x00072e: move-result-object v0
+0x000730: check-cast v0, Lhx;
+0x000734: iget v0, v0, Lhx;->c I
+0x000738: int-to-long v5, v0
+0x00073a: const-wide/16 v7, 1000
+0x00073e: mul-long/2addr v5, v7
+0x000740: new-instance v0, La7;
+0x000744: const/4 v7, 0
+0x000746: invoke-direct v0, v7, La7;-><init>(I)V
+0x00074c: iput-object v1, v0, La7;->d Ljava/lang/Object;
+0x000750: iput v3, v0, La7;->c I
+0x000754: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x00075a: invoke-direct v4, Ljava/lang/Object;-><init>()V
+0x000760: iput-wide v5, v4, Lqq;->a J
+0x000764: iput-object v0, v4, Lqq;->b La7;
+0x000768: new-instance v0, Ljava/util/ArrayList;
+0x00076c: invoke-direct v0, v9, Ljava/util/ArrayList;-><init>(I)V
+0x000772: iput-object v0, v4, Lqq;->c Ljava/util/ArrayList;
+0x000776: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x00077c: move-result-wide v5
+0x00077e: iput-wide v5, v4, Lqq;->d J
+0x000782: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x000788: sget-object v0, Luj;->a Landroid/media/AudioFormat;
+0x00078c: const/4 v5, 2
+0x00078e: if-eq v3, v5, +023h
+0x000792: const/4 v5, 3
+0x000794: if-eq v3, v5, +01ah
+0x000798: const/4 v0, 4
+0x00079a: if-ne v3, v0, +003h
+0x00079e: goto +15h
+0x0007a0: new-instance v0, Ljava/lang/IllegalArgumentException;
+0x0007a4: new-instance v2, Ljava/lang/StringBuilder;
+0x0007a8: const-string v4, "Unexpected value: "
+0x0007ac: invoke-direct v2, v4, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x0007b2: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+0x0007b8: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0007be: move-result-object v2
+0x0007c0: invoke-direct v0, v2, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+0x0007c6: throw v0
+0x0007c8: new-instance v0, Lk63;
+0x0007cc: invoke-direct v0, Ljava/lang/Object;-><init>()V
+0x0007d2: goto +9h
+0x0007d4: new-instance v0, Les;
+0x0007d8: invoke-direct v0, Ljava/lang/Object;-><init>()V
+0x0007de: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x0007e4: new-instance v5, Lsi;
+0x0007e8: invoke-virtual v1, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+0x0007ee: move-result-object v7
+0x0007f0: invoke-virtual v7, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x0007f6: invoke-direct v5, Ljava/lang/Object;-><init>()V
+0x0007fc: iput-object v0, v5, Lsi;->c Ljava/lang/Object;
+0x000800: new-instance v6, Lcom/xiaomi/ai/vision/sdk/AiCapability;
+0x000804: const/4 v10, 6
+0x000806: const/4 v11, 0
+0x000808: const/4 v8, 0
+0x00080a: const/4 v9, 0
+0x00080c: invoke-direct/range v6 ... v11, Lcom/xiaomi/ai/vision/sdk/AiCapability;-><init>(Landroid/content/Context; Lpp0; Lpp0; I Lc60;)V
+0x000812: iput-object v6, v5, Lsi;->d Ljava/lang/Object;
+0x000816: new-instance v0, Lqi;
+0x00081a: invoke-direct v0, Ljava/lang/Object;-><init>()V
+0x000820: iput-object v5, v0, Lqi;->b Lsi;
+0x000824: new-instance v7, Lri3;
+0x000828: const/4 v8, 1
+0x00082a: invoke-direct v7, v8, Lri3;-><init>(I)V
+0x000830: iput-object v7, v0, Lqi;->a Lri3;
+0x000834: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x00083a: iput-object v0, v5, Lsi;->g Ljava/lang/Object;
+0x00083e: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x000844: iput-object v5, v1, Lcom/miui/guardprovider/aiguard/AiGuardService;->e Lsi;
+0x000848: invoke-static v3, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x00084e: move-result-object v0
+0x000850: iput-object v0, v1, Lcom/miui/guardprovider/aiguard/AiGuardService;->f Ljava/lang/Integer;
+0x000854: invoke-virtual v6, Lcom/xiaomi/ai/vision/sdk/AiCapability;->start()V
+0x00085a: const/4 v6, 2
+0x00085c: goto +6h
+0x00085e: move-exception v0
+0x000860: invoke-static v0, Lkk3;->m(Ljava/lang/Throwable;)Lpd2;
+0x000866: goto -6h
+0x000868: if-ne v3, v6, +012h
+0x00086c: iget-object v0, v1, Lcom/miui/guardprovider/aiguard/AiGuardService;->b Lf20;
+0x000870: new-instance v6, Lt7;
+0x000874: const/4 v15, 0
+0x000876: invoke-direct v6, v1, v5, v4, v15, Lt7;-><init>(Lcom/miui/guardprovider/aiguard/AiGuardService; Lsi; Lqq; Lj20;)V
+0x00087c: const/4 v5, 3
+0x00087e: invoke-static v0, v15, v15, v6, v5, Luk3;->z(Lg30; Lc30; Lj30; Lpp0; I)Lkn2;
+0x000884: move-result-object v0
+0x000886: iput-object v0, v1, Lcom/miui/guardprovider/aiguard/AiGuardService;->g Lkn2;
+0x00088a: goto +1bh
+0x00088c: new-instance v0, Lb7;
+0x000890: const/4 v7, 0
+0x000892: invoke-direct v0, v7, Lb7;-><init>(I)V
+0x000898: iput-object v4, v0, Lb7;->c Lqq;
+0x00089c: iput-object v1, v0, Lb7;->d Lcom/miui/guardprovider/aiguard/AiGuardService;
+0x0008a0: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x0008a6: new-instance v4, Lc7;
+0x0008aa: invoke-direct v4, v7, Lc7;-><init>(I)V
+0x0008b0: iput-object v1, v4, Lc7;->b Lcom/miui/guardprovider/aiguard/AiGuardService;
+0x0008b4: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x0008ba: invoke-virtual v5, v0, v4, Lsi;->d(Lop0; Ljava/util/function/Consumer;)V
+0x0008c0: monitor-exit v23
+0x0008c2: const-string v0, "AiGuardService"
+0x0008c6: new-instance v4, Ljava/lang/StringBuilder;
+0x0008ca: const-string v5, "Phone scam detection started,scene:"
+0x0008ce: invoke-direct v4, v5, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x0008d4: invoke-virtual v4, v3, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+0x0008da: invoke-virtual v4, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0008e0: move-result-object v3
+0x0008e2: invoke-static v0, v3, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x0008e8: goto +ah
+0x0008ea: monitor-exit v23
+0x0008ec: throw v0
+0x0008ee: const-string v0, "AiGuardService"
+0x0008f2: const-string v3, "Required permissions have been revoked,phone scam detection is unavailable."
+0x0008f6: invoke-static v0, v3, Landroid/util/Log;->w(Ljava/lang/String; Ljava/lang/String;)I
+0x0008fc: invoke-super/range v23 ... v26, Landroid/app/Service;->onStartCommand(Landroid/content/Intent; I I)I
+0x000902: move-result v0
+0x000904: return v0
+0x000906: invoke-interface v0, Ljava/util/Iterator;->next()Ljava/lang/Object;
+0x00090c: move-result-object v0
+0x00090e: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000914: invoke-static Lik;->b()V
+0x00091a: const/16 v18, 0
+0x00091e: return v18
+0x000920: move/from16 v18, v5
+0x000924: invoke-interface v0, Ljava/util/Iterator;->next()Ljava/lang/Object;
+0x00092a: move-result-object v0
+0x00092c: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000932: invoke-static Lik;->b()V
+0x000938: return v18
+
+CLASS classes.dex Lcom/miui/guardprovider/aiguard/AlertActivity$a;
+FIELD j0 Landroid/os/HapticPlayer; = None
+FIELD k0 Lyu2; = None
+
+METHOD <init>()V flags=public constructor
+registers=1 inputs=1
+0x000000: invoke-direct v0, Ljc0;-><init>()V
+0x000006: return-void 
+
+METHOD onDismiss(Landroid/content/DialogInterface;)V flags=public final
+registers=2 inputs=2
+0x000000: iget-object v1, v0, Lcom/miui/guardprovider/aiguard/AlertActivity$a;->j0 Landroid/os/HapticPlayer;
+0x000004: if-eqz v1, +008h
+0x000008: invoke-virtual v1, Landroid/os/HapticPlayer;->stop()V
+0x00000e: const/4 v1, 0
+0x000010: iput-object v1, v0, Lcom/miui/guardprovider/aiguard/AlertActivity$a;->j0 Landroid/os/HapticPlayer;
+0x000014: return-void 
+
+METHOD w(Landroid/os/Bundle;)Landroid/app/Dialog; flags=public final
+registers=8 inputs=2
+0x000000: invoke-virtual v6, Lao0;->q()Lod;
+0x000006: move-result-object v0
+0x000008: check-cast v0, Lcom/miui/guardprovider/aiguard/AlertActivity;
+0x00000c: iget v1, v0, Lcom/miui/guardprovider/aiguard/AlertActivity;->E I
+0x000010: iget-object v2, v0, Lcom/miui/guardprovider/aiguard/AlertActivity;->G Lwu2;
+0x000014: iput-object v2, v6, Lcom/miui/guardprovider/aiguard/AlertActivity$a;->k0 Lyu2;
+0x000018: if-nez v7, +037h
+0x00001c: new-instance v7, Landroid/os/HapticPlayer;
+0x000020: const-string v2, "{
+  "Metadata": {
+    "Version": 1,
+    "Created": "2024-09-10",
+    "Description": "alert haptic"
+  },
+  "Pattern": [
+    {
+      "Event": {
+        "Type": "continuous",
+        "RelativeTime": 0,
+        "Duration": 3000,
+        "Parameters": {
+          "Intensity": 100,
+          "Frequency": 50,
+          "Curve": [
+            {
+              "Time": 0,
+              "Intensity": 0,
+              "Frequency": 0
+            },
+            {
+              "Time": 1,
+              "Intensity": 1.0,
+              "Frequency": 0
+            },
+            {
+              "Time": 2999,
+              "Intensity": 1.0,
+              "Frequency": 0
+            },
+            {
+              "Time": 3000,
+              "Intensity": 0,
+              "Frequency": 0
+            }
+          ]
+        }
+      }
+    }
+  ]
+}"
+0x000024: invoke-static v2, Landroid/os/DynamicEffect;->create(Ljava/lang/String;)Landroid/os/DynamicEffect;
+0x00002a: move-result-object v2
+0x00002c: invoke-direct v7, v2, Landroid/os/HapticPlayer;-><init>(Landroid/os/DynamicEffect;)V
+0x000032: iput-object v7, v6, Lcom/miui/guardprovider/aiguard/AlertActivity$a;->j0 Landroid/os/HapticPlayer;
+0x000036: invoke-virtual v7, Landroid/os/HapticPlayer;->start()V
+0x00003c: iget-object v7, v6, Lcom/miui/guardprovider/aiguard/AlertActivity$a;->k0 Lyu2;
+0x000040: new-instance v2, Lqy1;
+0x000044: const-string v3, "tip"
+0x000048: const-string v4, "1127.1.0.1.37701"
+0x00004c: invoke-direct v2, v3, v4, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x000052: new-instance v3, Lqy1;
+0x000056: const-string v4, "trigger_scenario"
+0x00005a: iget-object v5, v0, Lcom/miui/guardprovider/aiguard/AlertActivity;->F Ljava/lang/String;
+0x00005e: invoke-direct v3, v4, v5, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x000064: filled-new-array v2, v3, [Lqy1;
+0x00006a: move-result-object v2
+0x00006c: check-cast v7, Lwu2;
+0x000070: iget-object v7, v7, Lwu2;->a Lcom/xiaomi/onetrack/OneTrack;
+0x000074: invoke-static v2, Lxl1;->G([Lqy1;)Ljava/util/Map;
+0x00007a: move-result-object v2
+0x00007c: const-string v3, "expose"
+0x000080: invoke-virtual v7, v3, v2, Lcom/xiaomi/onetrack/OneTrack;->track(Ljava/lang/String; Ljava/util/Map;)V
+0x000086: const/4 v7, 0
+0x000088: iput-boolean v7, v6, Ljc0;->Z Z
+0x00008c: iget-object v2, v6, Ljc0;->e0 Landroid/app/Dialog;
+0x000090: if-eqz v2, +005h
+0x000094: invoke-virtual v2, v7, Landroid/app/Dialog;->setCancelable(Z)V
+0x00009a: new-instance v2, Lmiuix/appcompat/app/d;
+0x00009e: const v3, 2131820550
+0x0000a4: invoke-direct v2, v0, v3, Lmiuix/appcompat/app/d;-><init>(Landroid/content/Context; I)V
+0x0000aa: new-instance v3, Lc8;
+0x0000ae: invoke-direct v3, v7, Lc8;-><init>(I)V
+0x0000b4: iput-object v6, v3, Lc8;->c Ljava/lang/Object;
+0x0000b8: iput-object v0, v3, Lc8;->d Lod;
+0x0000bc: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x0000c2: const v4, 2131755053
+0x0000c8: invoke-virtual v2, v4, v3, Lmiuix/appcompat/app/d;->k(I Landroid/content/DialogInterface$OnClickListener;)V
+0x0000ce: const/high16 v3, 1073741824
+0x0000d2: if-ne v1, v3, +015h
+0x0000d6: new-instance v3, Lc8;
+0x0000da: const/4 v4, 1
+0x0000dc: invoke-direct v3, v4, Lc8;-><init>(I)V
+0x0000e2: iput-object v6, v3, Lc8;->c Ljava/lang/Object;
+0x0000e6: iput-object v0, v3, Lc8;->d Lod;
+0x0000ea: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x0000f0: const v4, 2131755055
+0x0000f6: invoke-virtual v2, v4, v3, Lmiuix/appcompat/app/d;->n(I Landroid/content/DialogInterface$OnClickListener;)V
+0x0000fc: iget-object v3, v6, Lao0;->J Landroid/view/LayoutInflater;
+0x000100: const/4 v4, 0
+0x000102: if-nez v3, +006h
+0x000106: invoke-virtual v6, v4, Lao0;->p(Landroid/os/Bundle;)Landroid/view/LayoutInflater;
+0x00010c: move-result-object v3
+0x00010e: const v5, 2131558536
+0x000114: invoke-virtual v3, v5, v4, v7, Landroid/view/LayoutInflater;->inflate(I Landroid/view/ViewGroup; Z)Landroid/view/View;
+0x00011a: move-result-object v7
+0x00011c: const v3, 2131362183
+0x000122: invoke-virtual v7, v3, Landroid/view/View;->findViewById(I)Landroid/view/View;
+0x000128: move-result-object v3
+0x00012a: check-cast v3, Landroid/widget/TextView;
+0x00012e: const v4, 2131362060
+0x000134: invoke-virtual v7, v4, Landroid/view/View;->findViewById(I)Landroid/view/View;
+0x00013a: move-result-object v4
+0x00013c: check-cast v4, Landroid/widget/TextView;
+0x000140: const/high16 v5, 268435456
+0x000144: and-int/2addr v1, v5
+0x000146: if-eqz v1, +01bh
+0x00014a: const v1, 2131755052
+0x000150: invoke-virtual v4, v1, Landroid/widget/TextView;->setText(I)V
+0x000156: new-instance v1, Lc8;
+0x00015a: const/4 v4, 2
+0x00015c: invoke-direct v1, v4, Lc8;-><init>(I)V
+0x000162: iput-object v6, v1, Lc8;->c Ljava/lang/Object;
+0x000166: iput-object v0, v1, Lc8;->d Lod;
+0x00016a: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x000170: const v0, 2131755054
+0x000176: invoke-virtual v2, v0, v1, Lmiuix/appcompat/app/d;->k(I Landroid/content/DialogInterface$OnClickListener;)V
+0x00017c: invoke-virtual v6, Lao0;->s()Landroid/content/Context;
+0x000182: move-result-object v6
+0x000184: invoke-virtual v6, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+0x00018a: move-result-object v6
+0x00018c: const v0, 2131755049
+0x000192: invoke-virtual v6, v0, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+0x000198: move-result-object v6
+0x00019a: const/16 v0, 63
+0x00019e: invoke-static v6, v0, Landroid/text/Html;->fromHtml(Ljava/lang/String; I)Landroid/text/Spanned;
+0x0001a4: move-result-object v6
+0x0001a6: invoke-virtual v3, v6, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+0x0001ac: invoke-virtual v2, v7, Lmiuix/appcompat/app/d;->q(Landroid/view/View;)V
+0x0001b2: invoke-virtual v2, Lmiuix/appcompat/app/d;->a()Lmiuix/appcompat/app/e;
+0x0001b8: move-result-object v6
+0x0001ba: return-object v6
+
+METHOD y(Z)V flags=public final
+registers=4 inputs=2
+0x000000: const/4 v0, 0
+0x000002: invoke-virtual v2, v0, v0, Ljc0;->v(Z Z)V
+0x000008: new-instance v0, Landroid/os/Bundle;
+0x00000c: invoke-direct v0, Landroid/os/Bundle;-><init>()V
+0x000012: const-string v1, "AlertActivity_Feedback_voiceCall"
+0x000016: invoke-virtual v0, v1, v3, Landroid/os/Bundle;->putBoolean(Ljava/lang/String; Z)V
+0x00001c: new-instance v3, Lcom/miui/guardprovider/aiguard/AlertActivity$b;
+0x000020: invoke-direct v3, Lcom/miui/guardprovider/aiguard/AlertActivity$b;-><init>()V
+0x000026: invoke-virtual v3, v0, Lao0;->u(Landroid/os/Bundle;)V
+0x00002c: invoke-virtual v2, Lao0;->f()Landroidx/fragment/app/FragmentManager;
+0x000032: move-result-object v2
+0x000034: const-string v0, "AlertActivity_Feedback"
+0x000038: invoke-virtual v3, v2, v0, Ljc0;->x(Landroidx/fragment/app/FragmentManager; Ljava/lang/String;)V
+0x00003e: return-void 
+
+CLASS classes.dex Lcom/miui/guardprovider/aiguard/AlertActivity$b;
+FIELD j0 Lyu2; = None
+FIELD k0 Lro; = None
+FIELD l0 Z = None
+FIELD m0 Ld8; = None
+
+METHOD <init>()V flags=public constructor
+registers=3 inputs=1
+0x000000: invoke-direct v2, Ljc0;-><init>()V
+0x000006: new-instance v0, Ld8;
+0x00000a: const/4 v1, 2
+0x00000c: invoke-direct v0, v1, Ld8;-><init>(I)V
+0x000012: iput-object v2, v0, Ld8;->c Ljc0;
+0x000016: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x00001c: iput-object v0, v2, Lcom/miui/guardprovider/aiguard/AlertActivity$b;->m0 Ld8;
+0x000020: return-void 
+
+METHOD onCancel(Landroid/content/DialogInterface;)V flags=public final
+registers=3 inputs=2
+0x000000: iget-object v1, v1, Lcom/miui/guardprovider/aiguard/AlertActivity$b;->m0 Ld8;
+0x000004: const/4 v0, -2
+0x000006: invoke-virtual v1, v2, v0, Ld8;->onClick(Landroid/content/DialogInterface; I)V
+0x00000c: return-void 
+
+METHOD w(Landroid/os/Bundle;)Landroid/app/Dialog; flags=public final
+registers=7 inputs=2
+0x000000: invoke-virtual v5, Lao0;->q()Lod;
+0x000006: move-result-object v0
+0x000008: check-cast v0, Lcom/miui/guardprovider/aiguard/AlertActivity;
+0x00000c: invoke-virtual v5, Lao0;->r()Landroid/os/Bundle;
+0x000012: move-result-object v1
+0x000014: const-string v2, "AlertActivity_Feedback_voiceCall"
+0x000018: const/4 v3, 1
+0x00001a: invoke-virtual v1, v2, v3, Landroid/os/Bundle;->getBoolean(Ljava/lang/String; Z)Z
+0x000020: move-result v1
+0x000022: iput-boolean v1, v5, Lcom/miui/guardprovider/aiguard/AlertActivity$b;->l0 Z
+0x000026: iget-object v1, v0, Lcom/miui/guardprovider/aiguard/AlertActivity;->G Lwu2;
+0x00002a: iput-object v1, v5, Lcom/miui/guardprovider/aiguard/AlertActivity$b;->j0 Lyu2;
+0x00002e: if-nez v6, +023h
+0x000032: new-instance v6, Lqy1;
+0x000036: const-string v2, "tip"
+0x00003a: const-string v3, "1127.1.0.1.45357"
+0x00003e: invoke-direct v6, v2, v3, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x000044: new-instance v2, Lqy1;
+0x000048: const-string v3, "trigger_scenario"
+0x00004c: iget-object v4, v0, Lcom/miui/guardprovider/aiguard/AlertActivity;->F Ljava/lang/String;
+0x000050: invoke-direct v2, v3, v4, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x000056: filled-new-array v6, v2, [Lqy1;
+0x00005c: move-result-object v6
+0x00005e: iget-object v1, v1, Lwu2;->a Lcom/xiaomi/onetrack/OneTrack;
+0x000062: invoke-static v6, Lxl1;->G([Lqy1;)Ljava/util/Map;
+0x000068: move-result-object v6
+0x00006a: const-string v2, "expose"
+0x00006e: invoke-virtual v1, v2, v6, Lcom/xiaomi/onetrack/OneTrack;->track(Ljava/lang/String; Ljava/util/Map;)V
+0x000074: iget-boolean v6, v5, Lcom/miui/guardprovider/aiguard/AlertActivity$b;->l0 Z
+0x000078: if-eqz v6, +006h
+0x00007c: const v6, 2131755058
+0x000082: goto +4h
+0x000084: const v6, 2131755059
+0x00008a: new-instance v1, Lmiuix/appcompat/app/d;
+0x00008e: const v2, 2131820550
+0x000094: invoke-direct v1, v0, v2, Lmiuix/appcompat/app/d;-><init>(Landroid/content/Context; I)V
+0x00009a: const v0, 2131755061
+0x0000a0: invoke-virtual v1, v0, Lmiuix/appcompat/app/d;->o(I)V
+0x0000a6: invoke-virtual v1, v6, Lmiuix/appcompat/app/d;->i(I)V
+0x0000ac: const/high16 v6, 17039360
+0x0000b0: iget-object v5, v5, Lcom/miui/guardprovider/aiguard/AlertActivity$b;->m0 Ld8;
+0x0000b4: invoke-virtual v1, v6, v5, Lmiuix/appcompat/app/d;->k(I Landroid/content/DialogInterface$OnClickListener;)V
+0x0000ba: const v6, 2131755060
+0x0000c0: invoke-virtual v1, v6, v5, Lmiuix/appcompat/app/d;->n(I Landroid/content/DialogInterface$OnClickListener;)V
+0x0000c6: invoke-virtual v1, Lmiuix/appcompat/app/d;->a()Lmiuix/appcompat/app/e;
+0x0000cc: move-result-object v5
+0x0000ce: return-object v5
+
+METHOD y(Ljava/nio/file/Path; Ljava/lang/String;)Ljava/lang/String; flags=public final
+registers=7 inputs=3
+TRY bytes [0x12,0x82) -> [('catchall', 258)]
+TRY bytes [0xc4,0xd4) -> [('Ljava/lang/InterruptedException;', 214)]
+TRY bytes [0x104,0x10a) -> [('catchall', 268)]
+0x000000: iget-object v4, v4, Lcom/miui/guardprovider/aiguard/AlertActivity$b;->k0 Lro;
+0x000004: invoke-virtual v4, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00000a: invoke-static Lro;->J()Ll00;
+0x000010: move-result-object v4
+0x000012: invoke-static Ljava/util/Base64;->getEncoder()Ljava/util/Base64$Encoder;
+0x000018: move-result-object v0
+0x00001a: invoke-static v5, Ljava/nio/file/Files;->readAllBytes(Ljava/nio/file/Path;)[B
+0x000020: move-result-object v5
+0x000022: invoke-virtual v0, v5, Ljava/util/Base64$Encoder;->encodeToString([B)Ljava/lang/String;
+0x000028: move-result-object v5
+0x00002a: new-instance v0, Lorg/json/JSONObject;
+0x00002e: invoke-direct v0, Lorg/json/JSONObject;-><init>()V
+0x000034: const-string v1, "requestId"
+0x000038: invoke-static Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
+0x00003e: move-result-object v2
+0x000040: invoke-virtual v2, Ljava/util/UUID;->toString()Ljava/lang/String;
+0x000046: move-result-object v2
+0x000048: invoke-virtual v0, v1, v2, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+0x00004e: const-string v1, "audioPCM"
+0x000052: invoke-virtual v0, v1, v5, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+0x000058: const-string v5, "audioText"
+0x00005c: invoke-virtual v0, v5, v6, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+0x000062: invoke-virtual v0, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+0x000068: move-result-object v5
+0x00006a: invoke-virtual v5, Ljava/lang/String;->getBytes()[B
+0x000070: move-result-object v5
+0x000072: invoke-virtual v4, v5, Ll00;->b([B)Lcom/miui/securitycenter/confidentialcomputing/EncryptedData;
+0x000078: move-result-object v5
+0x00007a: invoke-virtual v5, Lcom/miui/securitycenter/confidentialcomputing/EncryptedData;->toJson()Ljava/lang/String;
+0x000080: move-result-object v5
+0x000082: instance-of v6, v4, Ljava/lang/AutoCloseable;
+0x000086: if-eqz v6, +006h
+0x00008a: invoke-virtual v4, Ll00;->close()V
+0x000090: return-object v5
+0x000092: instance-of v6, v4, Ljava/util/concurrent/ExecutorService;
+0x000096: if-eqz v6, +031h
+0x00009a: check-cast v4, Ljava/util/concurrent/ExecutorService;
+0x00009e: invoke-static Ljava/util/concurrent/ForkJoinPool;->commonPool()Ljava/util/concurrent/ForkJoinPool;
+0x0000a4: move-result-object v6
+0x0000a6: if-ne v4, v6, +003h
+0x0000aa: goto +26h
+0x0000ac: invoke-interface v4, Ljava/util/concurrent/ExecutorService;->isTerminated()Z
+0x0000b2: move-result v6
+0x0000b4: if-nez v6, +021h
+0x0000b8: invoke-interface v4, Ljava/util/concurrent/ExecutorService;->shutdown()V
+0x0000be: const/4 v0, 0
+0x0000c0: if-nez v6, +012h
+0x0000c4: sget-object v1, Ljava/util/concurrent/TimeUnit;->DAYS Ljava/util/concurrent/TimeUnit;
+0x0000c8: const-wide/16 v2, 1
+0x0000cc: invoke-interface v4, v2, v3, v1, Ljava/util/concurrent/ExecutorService;->awaitTermination(J Ljava/util/concurrent/TimeUnit;)Z
+0x0000d2: move-result v6
+0x0000d4: goto -ah
+0x0000d6: if-nez v0, -00bh
+0x0000da: invoke-interface v4, Ljava/util/concurrent/ExecutorService;->shutdownNow()Ljava/util/List;
+0x0000e0: const/4 v0, 1
+0x0000e2: goto -11h
+0x0000e4: if-eqz v0, +009h
+0x0000e8: invoke-static Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+0x0000ee: move-result-object v4
+0x0000f0: invoke-virtual v4, Ljava/lang/Thread;->interrupt()V
+0x0000f6: return-object v5
+0x0000f8: invoke-static Lcw1;->a()V
+0x0000fe: const/4 v4, 0
+0x000100: return-object v4
+0x000102: move-exception v5
+0x000104: invoke-static v4, Lim2;->w(Ll00;)V
+0x00010a: goto +5h
+0x00010c: move-exception v4
+0x00010e: invoke-virtual v5, v4, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+0x000114: throw v5
+
+METHOD z(Ljava/nio/file/Path;)Ljava/lang/String; flags=public final
+registers=7 inputs=2
+TRY bytes [0x12,0x86) -> [('catchall', 262)]
+TRY bytes [0xc8,0xd8) -> [('Ljava/lang/InterruptedException;', 218)]
+TRY bytes [0x108,0x10e) -> [('catchall', 272)]
+0x000000: iget-object v5, v5, Lcom/miui/guardprovider/aiguard/AlertActivity$b;->k0 Lro;
+0x000004: invoke-virtual v5, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00000a: invoke-static Lro;->J()Ll00;
+0x000010: move-result-object v5
+0x000012: invoke-static Ljava/util/Base64;->getEncoder()Ljava/util/Base64$Encoder;
+0x000018: move-result-object v0
+0x00001a: invoke-static v6, Ljava/nio/file/Files;->readAllBytes(Ljava/nio/file/Path;)[B
+0x000020: move-result-object v6
+0x000022: invoke-virtual v0, v6, Ljava/util/Base64$Encoder;->encodeToString([B)Ljava/lang/String;
+0x000028: move-result-object v6
+0x00002a: new-instance v0, Lorg/json/JSONObject;
+0x00002e: invoke-direct v0, Lorg/json/JSONObject;-><init>()V
+0x000034: const-string v1, "fileType"
+0x000038: const-string v2, "MP4"
+0x00003c: invoke-virtual v0, v1, v2, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+0x000042: const-string v1, "requestId"
+0x000046: invoke-static Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
+0x00004c: move-result-object v2
+0x00004e: invoke-virtual v2, Ljava/util/UUID;->toString()Ljava/lang/String;
+0x000054: move-result-object v2
+0x000056: invoke-virtual v0, v1, v2, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+0x00005c: const-string v1, "fileBase64"
+0x000060: invoke-virtual v0, v1, v6, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+0x000066: invoke-virtual v0, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+0x00006c: move-result-object v6
+0x00006e: invoke-virtual v6, Ljava/lang/String;->getBytes()[B
+0x000074: move-result-object v6
+0x000076: invoke-virtual v5, v6, Ll00;->b([B)Lcom/miui/securitycenter/confidentialcomputing/EncryptedData;
+0x00007c: move-result-object v6
+0x00007e: invoke-virtual v6, Lcom/miui/securitycenter/confidentialcomputing/EncryptedData;->toJson()Ljava/lang/String;
+0x000084: move-result-object v6
+0x000086: instance-of v0, v5, Ljava/lang/AutoCloseable;
+0x00008a: if-eqz v0, +006h
+0x00008e: invoke-virtual v5, Ll00;->close()V
+0x000094: return-object v6
+0x000096: instance-of v0, v5, Ljava/util/concurrent/ExecutorService;
+0x00009a: if-eqz v0, +031h
+0x00009e: check-cast v5, Ljava/util/concurrent/ExecutorService;
+0x0000a2: invoke-static Ljava/util/concurrent/ForkJoinPool;->commonPool()Ljava/util/concurrent/ForkJoinPool;
+0x0000a8: move-result-object v0
+0x0000aa: if-ne v5, v0, +003h
+0x0000ae: goto +26h
+0x0000b0: invoke-interface v5, Ljava/util/concurrent/ExecutorService;->isTerminated()Z
+0x0000b6: move-result v0
+0x0000b8: if-nez v0, +021h
+0x0000bc: invoke-interface v5, Ljava/util/concurrent/ExecutorService;->shutdown()V
+0x0000c2: const/4 v1, 0
+0x0000c4: if-nez v0, +012h
+0x0000c8: sget-object v2, Ljava/util/concurrent/TimeUnit;->DAYS Ljava/util/concurrent/TimeUnit;
+0x0000cc: const-wide/16 v3, 1
+0x0000d0: invoke-interface v5, v3, v4, v2, Ljava/util/concurrent/ExecutorService;->awaitTermination(J Ljava/util/concurrent/TimeUnit;)Z
+0x0000d6: move-result v0
+0x0000d8: goto -ah
+0x0000da: if-nez v1, -00bh
+0x0000de: invoke-interface v5, Ljava/util/concurrent/ExecutorService;->shutdownNow()Ljava/util/List;
+0x0000e4: const/4 v1, 1
+0x0000e6: goto -11h
+0x0000e8: if-eqz v1, +009h
+0x0000ec: invoke-static Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+0x0000f2: move-result-object v5
+0x0000f4: invoke-virtual v5, Ljava/lang/Thread;->interrupt()V
+0x0000fa: return-object v6
+0x0000fc: invoke-static Lcw1;->a()V
+0x000102: const/4 v5, 0
+0x000104: return-object v5
+0x000106: move-exception v6
+0x000108: invoke-static v5, Lim2;->w(Ll00;)V
+0x00010e: goto +5h
+0x000110: move-exception v5
+0x000112: invoke-virtual v6, v5, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+0x000118: throw v6
+
+CLASS classes.dex Lcom/miui/guardprovider/aiguard/AlertActivity;
+FIELD E I = None
+FIELD F Ljava/lang/String; = None
+FIELD G Lwu2; = None
+
+METHOD <init>()V flags=public constructor
+registers=1 inputs=1
+0x000000: invoke-direct v0, Lod;-><init>()V
+0x000006: return-void 
+
+METHOD onCreate(Landroid/os/Bundle;)V flags=public final
+registers=5 inputs=2
+0x000000: invoke-super v3, v4, Lod;->onCreate(Landroid/os/Bundle;)V
+0x000006: invoke-virtual v3, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+0x00000c: move-result-object v0
+0x00000e: const/16 v1, 1024
+0x000012: invoke-virtual v0, v1, Landroid/view/Window;->clearFlags(I)V
+0x000018: invoke-virtual v0, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
+0x00001e: move-result-object v1
+0x000020: const/4 v2, 1
+0x000022: iput v2, v1, Landroid/view/WindowManager$LayoutParams;->layoutInDisplayCutoutMode I
+0x000026: invoke-virtual v0, v1, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
+0x00002c: invoke-static v3, Lro;->I(Landroid/content/Context;)Lwu2;
+0x000032: move-result-object v0
+0x000034: iput-object v0, v3, Lcom/miui/guardprovider/aiguard/AlertActivity;->G Lwu2;
+0x000038: invoke-virtual v3, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+0x00003e: move-result-object v0
+0x000040: const-string v1, "alert_cause"
+0x000044: const/high16 v2, 268435456
+0x000048: invoke-virtual v0, v1, v2, Landroid/content/Intent;->getIntExtra(Ljava/lang/String; I)I
+0x00004e: move-result v0
+0x000050: iput v0, v3, Lcom/miui/guardprovider/aiguard/AlertActivity;->E I
+0x000054: const v1, 536870913
+0x00005a: if-ne v0, v1, +005h
+0x00005e: const-string v0, "QQ语音通话"
+0x000062: goto +1bh
+0x000064: const v1, 268435457
+0x00006a: if-ne v0, v1, +005h
+0x00006e: const-string v0, "QQ视频通话"
+0x000072: goto +13h
+0x000074: const v1, 536870914
+0x00007a: if-ne v0, v1, +005h
+0x00007e: const-string v0, "微信语音通话"
+0x000082: goto +bh
+0x000084: const v1, 268435458
+0x00008a: if-ne v0, v1, +005h
+0x00008e: const-string v0, "微信视频通话"
+0x000092: goto +3h
+0x000094: const-string v0, "电话"
+0x000098: iput-object v0, v3, Lcom/miui/guardprovider/aiguard/AlertActivity;->F Ljava/lang/String;
+0x00009c: new-instance v0, Ljava/lang/StringBuilder;
+0x0000a0: const-string v1, "alert cause: "
+0x0000a4: invoke-direct v0, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x0000aa: iget v1, v3, Lcom/miui/guardprovider/aiguard/AlertActivity;->E I
+0x0000ae: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+0x0000b4: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0000ba: move-result-object v0
+0x0000bc: const-string v1, "AlertActivity"
+0x0000c0: invoke-static v1, v0, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x0000c6: if-nez v4, +010h
+0x0000ca: new-instance v4, Lcom/miui/guardprovider/aiguard/AlertActivity$a;
+0x0000ce: invoke-direct v4, Lcom/miui/guardprovider/aiguard/AlertActivity$a;-><init>()V
+0x0000d4: invoke-virtual v3, Lod;->w()Lpo0;
+0x0000da: move-result-object v3
+0x0000dc: const-string v0, "AlertActivity_Alert"
+0x0000e0: invoke-virtual v4, v3, v0, Ljc0;->x(Landroidx/fragment/app/FragmentManager; Ljava/lang/String;)V
+0x0000e6: return-void 
+
+CLASS classes.dex Lcom/miui/guardprovider/aiguard/PermissionRequestActivity;
+FIELD F I = None
+FIELD E Lc6; = None
+
+METHOD <init>()V flags=public constructor
+registers=9 inputs=1
+0x000000: invoke-direct v8, Lod;-><init>()V
+0x000006: new-instance v0, Lx5;
+0x00000a: invoke-direct v0, Ljava/lang/Object;-><init>()V
+0x000010: new-instance v1, Lw2;
+0x000014: const/4 v2, 5
+0x000016: invoke-direct v1, v2, Lw2;-><init>(I)V
+0x00001c: iput-object v8, v1, Lw2;->c Ljava/lang/Object;
+0x000020: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x000026: iget-object v2, v8, Luz;->j Ltz;
+0x00002a: invoke-virtual v2, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000030: new-instance v3, Ljava/lang/StringBuilder;
+0x000034: const-string v4, "activity_rq#"
+0x000038: invoke-direct v3, v4, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x00003e: iget-object v4, v8, Luz;->i Ljava/util/concurrent/atomic/AtomicInteger;
+0x000042: invoke-virtual v4, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
+0x000048: move-result v4
+0x00004a: invoke-virtual v3, v4, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+0x000050: invoke-virtual v3, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000056: move-result-object v3
+0x000058: iget-object v4, v2, Ltz;->c Ljava/util/LinkedHashMap;
+0x00005c: iget-object v5, v8, Luz;->b Landroidx/lifecycle/a;
+0x000060: iget-object v6, v5, Landroidx/lifecycle/a;->c Lnh1;
+0x000064: sget-object v7, Lnh1;->e Lnh1;
+0x000068: invoke-virtual v6, v7, Ljava/lang/Enum;->compareTo(Ljava/lang/Enum;)I
+0x00006e: move-result v6
+0x000070: if-gez v6, +04ch
+0x000074: invoke-virtual v2, v3, Ltz;->d(Ljava/lang/String;)V
+0x00007a: invoke-virtual v4, v3, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+0x000080: move-result-object v6
+0x000082: check-cast v6, Lb6;
+0x000086: if-nez v6, +013h
+0x00008a: new-instance v6, Lb6;
+0x00008e: invoke-direct v6, Ljava/lang/Object;-><init>()V
+0x000094: iput-object v5, v6, Lb6;->a Landroidx/lifecycle/a;
+0x000098: new-instance v5, Ljava/util/ArrayList;
+0x00009c: invoke-direct v5, Ljava/util/ArrayList;-><init>()V
+0x0000a2: iput-object v5, v6, Lb6;->b Ljava/util/ArrayList;
+0x0000a6: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x0000ac: new-instance v5, Lz5;
+0x0000b0: invoke-direct v5, Ljava/lang/Object;-><init>()V
+0x0000b6: iput-object v2, v5, Lz5;->b Ltz;
+0x0000ba: iput-object v3, v5, Lz5;->c Ljava/lang/String;
+0x0000be: iput-object v1, v5, Lz5;->d Lw2;
+0x0000c2: iput-object v0, v5, Lz5;->e Lx5;
+0x0000c6: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x0000cc: iget-object v1, v6, Lb6;->a Landroidx/lifecycle/a;
+0x0000d0: invoke-virtual v1, v5, Landroidx/lifecycle/a;->a(Lrh1;)V
+0x0000d6: iget-object v1, v6, Lb6;->b Ljava/util/ArrayList;
+0x0000da: invoke-virtual v1, v5, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+0x0000e0: invoke-interface v4, v3, v6, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x0000e6: new-instance v1, Lc6;
+0x0000ea: invoke-direct v1, Ljava/lang/Object;-><init>()V
+0x0000f0: iput-object v2, v1, Lc6;->c Ltz;
+0x0000f4: iput-object v3, v1, Lc6;->d Ljava/lang/String;
+0x0000f8: iput-object v0, v1, Lc6;->e Lx5;
+0x0000fc: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x000102: iput-object v1, v8, Lcom/miui/guardprovider/aiguard/PermissionRequestActivity;->E Lc6;
+0x000106: return-void 
+0x000108: new-instance v0, Ljava/lang/StringBuilder;
+0x00010c: const-string v1, "LifecycleOwner "
+0x000110: invoke-direct v0, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000116: invoke-virtual v0, v8, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x00011c: iget-object v8, v5, Landroidx/lifecycle/a;->c Lnh1;
+0x000120: const-string v1, " is attempting to register while current state is "
+0x000124: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00012a: invoke-virtual v0, v8, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x000130: const-string v8, ". LifecycleOwners must call register before they are STARTED."
+0x000134: invoke-virtual v0, v8, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00013a: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000140: move-result-object v8
+0x000142: new-instance v0, Ljava/lang/IllegalStateException;
+0x000146: invoke-virtual v8, Ljava/lang/Object;->toString()Ljava/lang/String;
+0x00014c: move-result-object v8
+0x00014e: invoke-direct v0, v8, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+0x000154: throw v0
+
+METHOD E()V flags=public final
+registers=9 inputs=1
+0x000000: new-instance v0, Lc0;
+0x000004: const/4 v1, 5
+0x000006: invoke-direct v0, v1, Lc0;-><init>(I)V
+0x00000c: iput-object v8, v0, Lc0;->c Ljava/lang/Object;
+0x000010: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x000016: new-instance v2, Lcom/xiaomi/ai/vision/sdk/AiCapability;
+0x00001a: const/4 v6, 6
+0x00001c: const/4 v7, 0
+0x00001e: const/4 v4, 0
+0x000020: const/4 v5, 0
+0x000022: move-object v3, v8
+0x000024: invoke-direct/range v2 ... v7, Lcom/xiaomi/ai/vision/sdk/AiCapability;-><init>(Landroid/content/Context; Lpp0; Lpp0; I Lc60;)V
+0x00002a: new-instance v8, Lmi;
+0x00002e: const/4 v1, 0
+0x000030: invoke-direct v8, v1, Lmi;-><init>(I)V
+0x000036: iput-object v2, v8, Lmi;->c Ljava/lang/Object;
+0x00003a: iput-object v0, v8, Lmi;->d Ljava/lang/Object;
+0x00003e: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x000044: invoke-virtual v2, v8, Lcom/xiaomi/ai/vision/sdk/AiCapability;->checkIfCtaAllowed(Lop0;)V
+0x00004a: return-void 
+
+METHOD F()V flags=public final
+registers=7 inputs=1
+0x000000: const-string v0, "debug.config.media.video.voip.detect"
+0x000004: const/4 v1, 0
+0x000006: invoke-static v0, v1, Lmiuix/core/util/SystemProperties;->getBoolean(Ljava/lang/String; Z)Z
+0x00000c: move-result v0
+0x00000e: invoke-virtual v6, v1, Landroid/app/Activity;->getPreferences(I)Landroid/content/SharedPreferences;
+0x000014: move-result-object v2
+0x000016: const-string v3, "ai_guard_projection_permission"
+0x00001a: invoke-interface v2, v3, v1, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String; Z)Z
+0x000020: move-result v1
+0x000022: if-nez v0, +095h
+0x000026: if-nez v1, +093h
+0x00002a: invoke-virtual v6, Landroid/app/Activity;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+0x000030: move-result-object v0
+0x000032: invoke-virtual v6, Landroid/app/Activity;->getPackageManager()Landroid/content/pm/PackageManager;
+0x000038: move-result-object v1
+0x00003a: invoke-virtual v0, v1, Landroid/content/pm/ApplicationInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
+0x000040: move-result-object v0
+0x000042: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000048: new-instance v1, Lmiuix/appcompat/app/d;
+0x00004c: const v3, 2131820738
+0x000052: invoke-direct v1, v6, v3, Lmiuix/appcompat/app/d;-><init>(Landroid/content/Context; I)V
+0x000058: const v3, 2131755070
+0x00005e: filled-new-array v0, [Ljava/lang/Object;
+0x000064: move-result-object v0
+0x000066: invoke-virtual v6, v3, v0, Landroid/app/Activity;->getString(I [Ljava/lang/Object;)Ljava/lang/String;
+0x00006c: move-result-object v0
+0x00006e: invoke-virtual v1, v0, Lmiuix/appcompat/app/d;->p(Ljava/lang/CharSequence;)V
+0x000074: const v0, 2131755067
+0x00007a: invoke-virtual v1, v0, Lmiuix/appcompat/app/d;->i(I)V
+0x000080: new-instance v0, La02;
+0x000084: const/4 v3, 1
+0x000086: invoke-direct v0, v3, La02;-><init>(I)V
+0x00008c: iput-object v6, v0, La02;->c Lcom/miui/guardprovider/aiguard/PermissionRequestActivity;
+0x000090: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x000096: invoke-virtual v1, v0, Lmiuix/appcompat/app/d;->l(Landroid/content/DialogInterface$OnCancelListener;)V
+0x00009c: invoke-virtual v1, Lmiuix/appcompat/app/d;->d()V
+0x0000a2: invoke-virtual v1, Lmiuix/appcompat/app/d;->f()V
+0x0000a8: invoke-virtual v1, Lmiuix/appcompat/app/d;->b()Landroid/content/Context;
+0x0000ae: move-result-object v0
+0x0000b0: invoke-virtual v0, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+0x0000b6: move-result-object v0
+0x0000b8: invoke-virtual v0, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+0x0000be: move-result-object v0
+0x0000c0: const/high16 v4, 1107296256
+0x0000c4: invoke-static v3, v4, v0, Landroid/util/TypedValue;->applyDimension(I F Landroid/util/DisplayMetrics;)F
+0x0000ca: move-result v0
+0x0000cc: float-to-int v0, v0
+0x0000ce: invoke-virtual v1, v0, v0, Lmiuix/appcompat/app/d;->h(I I)V
+0x0000d4: new-instance v0, Lzz1;
+0x0000d8: const/4 v4, 3
+0x0000da: invoke-direct v0, v4, Lzz1;-><init>(I)V
+0x0000e0: iput-object v6, v0, Lzz1;->c Lcom/miui/guardprovider/aiguard/PermissionRequestActivity;
+0x0000e4: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x0000ea: const v5, 2131755068
+0x0000f0: invoke-virtual v1, v5, v0, Lmiuix/appcompat/app/d;->k(I Landroid/content/DialogInterface$OnClickListener;)V
+0x0000f6: new-instance v0, Lc8;
+0x0000fa: invoke-direct v0, v4, Lc8;-><init>(I)V
+0x000100: iput-object v2, v0, Lc8;->c Ljava/lang/Object;
+0x000104: iput-object v6, v0, Lc8;->d Lod;
+0x000108: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x00010e: const v6, 2131755069
+0x000114: invoke-virtual v1, v6, v0, Lmiuix/appcompat/app/d;->n(I Landroid/content/DialogInterface$OnClickListener;)V
+0x00011a: invoke-virtual v1, Lmiuix/appcompat/app/d;->a()Lmiuix/appcompat/app/e;
+0x000120: move-result-object v6
+0x000122: invoke-virtual v6, Lmiuix/appcompat/app/e;->show()V
+0x000128: iget-object v0, v6, Lmiuix/appcompat/app/e;->h Lmiuix/appcompat/app/c;
+0x00012c: iget-object v0, v0, Lmiuix/appcompat/app/c;->T Landroid/widget/TextView;
+0x000130: new-instance v1, Lo8;
+0x000134: invoke-direct v1, v3, Lo8;-><init>(I)V
+0x00013a: iput-object v6, v1, Lo8;->c Lmiuix/appcompat/app/e;
+0x00013e: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x000144: invoke-virtual v0, v1, Landroid/widget/TextView;->post(Ljava/lang/Runnable;)Z
+0x00014a: return-void 
+0x00014c: invoke-virtual v6, Lcom/miui/guardprovider/aiguard/PermissionRequestActivity;->E()V
+0x000152: return-void 
+
+METHOD G()V flags=public final
+registers=5 inputs=1
+0x000000: new-instance v0, Lmiuix/appcompat/app/d;
+0x000004: const v1, 2131820738
+0x00000a: invoke-direct v0, v4, v1, Lmiuix/appcompat/app/d;-><init>(Landroid/content/Context; I)V
+0x000010: const v1, 2131755071
+0x000016: invoke-virtual v0, v1, Lmiuix/appcompat/app/d;->o(I)V
+0x00001c: const v1, 2131755065
+0x000022: invoke-virtual v0, v1, Lmiuix/appcompat/app/d;->i(I)V
+0x000028: new-instance v1, Lxz1;
+0x00002c: const/4 v2, 0
+0x00002e: invoke-direct v1, v2, Lxz1;-><init>(I)V
+0x000034: iput-object v4, v1, Lxz1;->c Lcom/miui/guardprovider/aiguard/PermissionRequestActivity;
+0x000038: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x00003e: invoke-virtual v0, v1, Lmiuix/appcompat/app/d;->l(Landroid/content/DialogInterface$OnCancelListener;)V
+0x000044: new-instance v1, Lzz1;
+0x000048: const/4 v2, 1
+0x00004a: invoke-direct v1, v2, Lzz1;-><init>(I)V
+0x000050: iput-object v4, v1, Lzz1;->c Lcom/miui/guardprovider/aiguard/PermissionRequestActivity;
+0x000054: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x00005a: const v3, 2131755066
+0x000060: invoke-virtual v0, v3, v1, Lmiuix/appcompat/app/d;->n(I Landroid/content/DialogInterface$OnClickListener;)V
+0x000066: new-instance v1, Lyz1;
+0x00006a: invoke-direct v1, v2, Lyz1;-><init>(I)V
+0x000070: iput-object v4, v1, Lyz1;->c Ljava/lang/Object;
+0x000074: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x00007a: const/high16 v4, 17039360
+0x00007e: invoke-virtual v0, v4, v1, Lmiuix/appcompat/app/d;->k(I Landroid/content/DialogInterface$OnClickListener;)V
+0x000084: invoke-virtual v0, Lmiuix/appcompat/app/d;->a()Lmiuix/appcompat/app/e;
+0x00008a: move-result-object v4
+0x00008c: invoke-virtual v4, Lmiuix/appcompat/app/e;->show()V
+0x000092: return-void 
+
+METHOD onCreate(Landroid/os/Bundle;)V flags=public final
+registers=7 inputs=2
+0x000000: invoke-super v5, v6, Lod;->onCreate(Landroid/os/Bundle;)V
+0x000006: invoke-virtual v5, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+0x00000c: move-result-object v6
+0x00000e: const/16 v0, 1024
+0x000012: invoke-virtual v6, v0, Landroid/view/Window;->clearFlags(I)V
+0x000018: invoke-virtual v5, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+0x00001e: move-result-object v6
+0x000020: invoke-virtual v5, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+0x000026: move-result-object v0
+0x000028: invoke-virtual v0, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
+0x00002e: move-result-object v0
+0x000030: const/4 v1, 1
+0x000032: iput v1, v0, Landroid/view/WindowManager$LayoutParams;->layoutInDisplayCutoutMode I
+0x000036: invoke-virtual v6, v0, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
+0x00003c: const/4 v6, 0
+0x00003e: invoke-virtual v5, v6, Landroid/app/Activity;->getPreferences(I)Landroid/content/SharedPreferences;
+0x000044: move-result-object v0
+0x000046: const-string v2, "ai_guard_first_open_guiding"
+0x00004a: invoke-interface v0, v2, v1, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String; Z)Z
+0x000050: move-result v0
+0x000052: invoke-virtual v5, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
+0x000058: move-result-object v2
+0x00005a: const-string v3, "com.miui.guardprovider.AI_GUARD_PRIVACY_AGREEMENT"
+0x00005e: invoke-static v2, v3, v6, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver; Ljava/lang/String; I)I
+0x000064: move-result v6
+0x000066: if-nez v0, +015h
+0x00006a: if-nez v6, +003h
+0x00006e: goto +11h
+0x000070: const-string v6, "android.permission.RECORD_AUDIO"
+0x000074: invoke-virtual v5, v6, Landroid/app/Activity;->checkSelfPermission(Ljava/lang/String;)I
+0x00007a: move-result v6
+0x00007c: if-nez v6, +006h
+0x000080: invoke-virtual v5, Lcom/miui/guardprovider/aiguard/PermissionRequestActivity;->F()V
+0x000086: return-void 
+0x000088: invoke-virtual v5, Lcom/miui/guardprovider/aiguard/PermissionRequestActivity;->G()V
+0x00008e: return-void 
+0x000090: new-instance v6, Lmiuix/appcompat/app/d;
+0x000094: const v0, 2131820738
+0x00009a: invoke-direct v6, v5, v0, Lmiuix/appcompat/app/d;-><init>(Landroid/content/Context; I)V
+0x0000a0: const v0, 2131755077
+0x0000a6: invoke-virtual v6, v0, Lmiuix/appcompat/app/d;->o(I)V
+0x0000ac: invoke-static Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+0x0000b2: move-result-object v0
+0x0000b4: invoke-virtual v0, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
+0x0000ba: move-result-object v2
+0x0000bc: invoke-virtual v0, Ljava/util/Locale;->getCountry()Ljava/lang/String;
+0x0000c2: move-result-object v0
+0x0000c4: new-instance v3, Ljava/lang/StringBuilder;
+0x0000c8: const-string v4, "https://privacy.mi.com/AIalert/"
+0x0000cc: invoke-direct v3, v4, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x0000d2: invoke-virtual v3, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000d8: const-string v2, "_"
+0x0000dc: invoke-virtual v3, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000e2: invoke-virtual v3, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000e8: invoke-virtual v3, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0000ee: move-result-object v0
+0x0000f0: invoke-virtual v5, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+0x0000f6: move-result-object v2
+0x0000f8: const-string v3, "capabilities"
+0x0000fc: invoke-virtual v2, v3, v1, Landroid/content/Intent;->getIntExtra(Ljava/lang/String; I)I
+0x000102: move-result v2
+0x000104: const/4 v3, 2
+0x000106: and-int/2addr v2, v3
+0x000108: if-nez v2, +006h
+0x00010c: const v2, 2131755076
+0x000112: goto +4h
+0x000114: const v2, 2131755075
+0x00011a: filled-new-array v0, v0, [Ljava/lang/Object;
+0x000120: move-result-object v0
+0x000122: invoke-virtual v5, v2, v0, Landroid/app/Activity;->getString(I [Ljava/lang/Object;)Ljava/lang/String;
+0x000128: move-result-object v0
+0x00012a: const/16 v2, 63
+0x00012e: invoke-static v0, v2, Landroid/text/Html;->fromHtml(Ljava/lang/String; I)Landroid/text/Spanned;
+0x000134: move-result-object v0
+0x000136: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00013c: new-instance v2, Lxz1;
+0x000140: invoke-direct v2, v1, Lxz1;-><init>(I)V
+0x000146: iput-object v5, v2, Lxz1;->c Lcom/miui/guardprovider/aiguard/PermissionRequestActivity;
+0x00014a: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x000150: invoke-virtual v6, v2, Lmiuix/appcompat/app/d;->l(Landroid/content/DialogInterface$OnCancelListener;)V
+0x000156: invoke-virtual v6, v0, Lmiuix/appcompat/app/d;->j(Ljava/lang/CharSequence;)V
+0x00015c: new-instance v0, Lyz1;
+0x000160: invoke-direct v0, v3, Lyz1;-><init>(I)V
+0x000166: iput-object v5, v0, Lyz1;->c Ljava/lang/Object;
+0x00016a: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x000170: const v1, 2131755074
+0x000176: invoke-virtual v6, v1, v0, Lmiuix/appcompat/app/d;->n(I Landroid/content/DialogInterface$OnClickListener;)V
+0x00017c: new-instance v0, Lzz1;
+0x000180: invoke-direct v0, v3, Lzz1;-><init>(I)V
+0x000186: iput-object v5, v0, Lzz1;->c Lcom/miui/guardprovider/aiguard/PermissionRequestActivity;
+0x00018a: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x000190: const/high16 v5, 17039360
+0x000194: invoke-virtual v6, v5, v0, Lmiuix/appcompat/app/d;->k(I Landroid/content/DialogInterface$OnClickListener;)V
+0x00019a: invoke-virtual v6, Lmiuix/appcompat/app/d;->a()Lmiuix/appcompat/app/e;
+0x0001a0: move-result-object v5
+0x0001a2: invoke-virtual v5, Lmiuix/appcompat/app/e;->show()V
+0x0001a8: iget-object v5, v5, Lmiuix/appcompat/app/e;->h Lmiuix/appcompat/app/c;
+0x0001ac: iget-object v5, v5, Lmiuix/appcompat/app/c;->T Landroid/widget/TextView;
+0x0001b0: if-eqz v5, +012h
+0x0001b4: sget-object v6, Lai1;->a Lai1;
+0x0001b8: if-nez v6, +009h
+0x0001bc: new-instance v6, Lai1;
+0x0001c0: invoke-direct v6, Landroid/text/method/LinkMovementMethod;-><init>()V
+0x0001c6: sput-object v6, Lai1;->a Lai1;
+0x0001ca: sget-object v6, Lai1;->a Lai1;
+0x0001ce: invoke-virtual v5, v6, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
+0x0001d4: return-void 
+
+CLASS classes.dex Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;
+FIELD code I = None
+FIELD data Ljava/lang/String; = None
+FIELD message Ljava/lang/String; = None
+FIELD traceId Ljava/lang/String; = None
+
+METHOD <init>(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V flags=public constructor
+registers=5 inputs=5
+0x000000: invoke-direct v0, Ljava/lang/Object;-><init>()V
+0x000006: iput v1, v0, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->code I
+0x00000a: iput-object v2, v0, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->message Ljava/lang/String;
+0x00000e: iput-object v3, v0, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->data Ljava/lang/String;
+0x000012: iput-object v4, v0, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->traceId Ljava/lang/String;
+0x000016: return-void 
+
+METHOD code()I flags=public
+registers=1 inputs=1
+0x000000: iget v0, v0, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->code I
+0x000004: return v0
+
+METHOD data()Ljava/lang/String; flags=public
+registers=1 inputs=1
+0x000000: iget-object v0, v0, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->data Ljava/lang/String;
+0x000004: return-object v0
+
+METHOD equals(Ljava/lang/Object;)Z flags=public final
+registers=4 inputs=2
+0x000000: instance-of v0, v3, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;
+0x000004: if-eqz v0, +02ah
+0x000008: check-cast v3, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;
+0x00000c: iget v0, v2, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->code I
+0x000010: iget v1, v3, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->code I
+0x000014: if-ne v0, v1, +022h
+0x000018: iget-object v0, v2, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->message Ljava/lang/String;
+0x00001c: iget-object v1, v3, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->message Ljava/lang/String;
+0x000020: invoke-static v0, v1, Ljava/util/Objects;->equals(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x000026: move-result v0
+0x000028: if-eqz v0, +018h
+0x00002c: iget-object v0, v2, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->data Ljava/lang/String;
+0x000030: iget-object v1, v3, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->data Ljava/lang/String;
+0x000034: invoke-static v0, v1, Ljava/util/Objects;->equals(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x00003a: move-result v0
+0x00003c: if-eqz v0, +00eh
+0x000040: iget-object v2, v2, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->traceId Ljava/lang/String;
+0x000044: iget-object v3, v3, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->traceId Ljava/lang/String;
+0x000048: invoke-static v2, v3, Ljava/util/Objects;->equals(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x00004e: move-result v2
+0x000050: if-eqz v2, +004h
+0x000054: const/4 v2, 1
+0x000056: return v2
+0x000058: const/4 v2, 0
+0x00005a: return v2
+
+METHOD hashCode()I flags=public final
+registers=4 inputs=1
+0x000000: iget v0, v3, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->code I
+0x000004: iget-object v1, v3, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->message Ljava/lang/String;
+0x000008: iget-object v2, v3, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->data Ljava/lang/String;
+0x00000c: iget-object v3, v3, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->traceId Ljava/lang/String;
+0x000010: mul-int/lit8 v0, v0, 31
+0x000014: invoke-static v1, Ljava/util/Objects;->hashCode(Ljava/lang/Object;)I
+0x00001a: move-result v1
+0x00001c: add-int/2addr v1, v0
+0x00001e: mul-int/lit8 v1, v1, 31
+0x000022: invoke-static v2, Ljava/util/Objects;->hashCode(Ljava/lang/Object;)I
+0x000028: move-result v0
+0x00002a: add-int/2addr v0, v1
+0x00002c: mul-int/lit8 v0, v0, 31
+0x000030: invoke-static v3, Ljava/util/Objects;->hashCode(Ljava/lang/Object;)I
+0x000036: move-result v3
+0x000038: add-int/2addr v3, v0
+0x00003a: return v3
+
+METHOD message()Ljava/lang/String; flags=public
+registers=1 inputs=1
+0x000000: iget-object v0, v0, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->message Ljava/lang/String;
+0x000004: return-object v0
+
+METHOD toString()Ljava/lang/String; flags=public final
+registers=6 inputs=1
+0x000000: iget v0, v5, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->code I
+0x000004: invoke-static v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x00000a: move-result-object v0
+0x00000c: iget-object v1, v5, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->message Ljava/lang/String;
+0x000010: iget-object v2, v5, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->data Ljava/lang/String;
+0x000014: iget-object v5, v5, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->traceId Ljava/lang/String;
+0x000018: const/4 v3, 4
+0x00001a: new-array v3, v3, [Ljava/lang/Object;
+0x00001e: const/4 v4, 0
+0x000020: aput-object v0, v3, v4
+0x000024: const/4 v0, 1
+0x000026: aput-object v1, v3, v0
+0x00002a: const/4 v1, 2
+0x00002c: aput-object v2, v3, v1
+0x000030: const/4 v1, 3
+0x000032: aput-object v5, v3, v1
+0x000036: const-string v5, "code;message;data;traceId"
+0x00003a: invoke-virtual v5, Ljava/lang/String;->length()I
+0x000040: move-result v1
+0x000042: if-nez v1, +005h
+0x000046: new-array v5, v4, [Ljava/lang/String;
+0x00004a: goto +7h
+0x00004c: const-string v1, ";"
+0x000050: invoke-virtual v5, v1, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+0x000056: move-result-object v5
+0x000058: new-instance v1, Ljava/lang/StringBuilder;
+0x00005c: const-string v2, "EncryptedResponse["
+0x000060: invoke-direct v1, v2, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000066: array-length v2, v5
+0x000068: if-ge v4, v2, +01dh
+0x00006c: aget-object v2, v5, v4
+0x000070: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000076: const-string v2, "="
+0x00007a: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000080: aget-object v2, v3, v4
+0x000084: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x00008a: array-length v2, v5
+0x00008c: sub-int/2addr v2, v0
+0x00008e: if-eq v4, v2, +007h
+0x000092: const-string v2, ", "
+0x000096: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00009c: add-int/lit8 v4, v4, 1
+0x0000a0: goto -1dh
+0x0000a2: const-string v5, "]"
+0x0000a6: invoke-virtual v1, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000ac: invoke-virtual v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0000b2: move-result-object v5
+0x0000b4: return-object v5
+
+METHOD traceId()Ljava/lang/String; flags=public
+registers=1 inputs=1
+0x000000: iget-object v0, v0, Lcom/miui/guardprovider/aiguard/service/EncryptedResponse;->traceId Ljava/lang/String;
+0x000004: return-object v0
+
+CLASS classes.dex Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;
+FIELD code I = None
+FIELD data Z = None
+FIELD message Ljava/lang/String; = None
+
+METHOD <init>(I Ljava/lang/String; Z)V flags=public constructor
+registers=4 inputs=4
+0x000000: invoke-direct v0, Ljava/lang/Object;-><init>()V
+0x000006: iput v1, v0, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;->code I
+0x00000a: iput-object v2, v0, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;->message Ljava/lang/String;
+0x00000e: iput-boolean v3, v0, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;->data Z
+0x000012: return-void 
+
+METHOD code()I flags=public
+registers=1 inputs=1
+0x000000: iget v0, v0, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;->code I
+0x000004: return v0
+
+METHOD data()Z flags=public
+registers=1 inputs=1
+0x000000: iget-boolean v0, v0, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;->data Z
+0x000004: return v0
+
+METHOD equals(Ljava/lang/Object;)Z flags=public final
+registers=4 inputs=2
+0x000000: instance-of v0, v3, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;
+0x000004: if-eqz v0, +01ch
+0x000008: check-cast v3, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;
+0x00000c: iget-boolean v0, v2, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;->data Z
+0x000010: iget-boolean v1, v3, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;->data Z
+0x000014: if-ne v0, v1, +014h
+0x000018: iget v0, v2, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;->code I
+0x00001c: iget v1, v3, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;->code I
+0x000020: if-ne v0, v1, +00eh
+0x000024: iget-object v2, v2, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;->message Ljava/lang/String;
+0x000028: iget-object v3, v3, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;->message Ljava/lang/String;
+0x00002c: invoke-static v2, v3, Ljava/util/Objects;->equals(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x000032: move-result v2
+0x000034: if-eqz v2, +004h
+0x000038: const/4 v2, 1
+0x00003a: return v2
+0x00003c: const/4 v2, 0
+0x00003e: return v2
+
+METHOD hashCode()I flags=public final
+registers=3 inputs=1
+0x000000: iget-boolean v0, v2, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;->data Z
+0x000004: iget v1, v2, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;->code I
+0x000008: iget-object v2, v2, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;->message Ljava/lang/String;
+0x00000c: invoke-static v0, Ljava/lang/Boolean;->hashCode(Z)I
+0x000012: move-result v0
+0x000014: mul-int/lit8 v0, v0, 31
+0x000018: add-int/2addr v0, v1
+0x00001a: mul-int/lit8 v0, v0, 31
+0x00001e: invoke-static v2, Ljava/util/Objects;->hashCode(Ljava/lang/Object;)I
+0x000024: move-result v2
+0x000026: add-int/2addr v2, v0
+0x000028: return v2
+
+METHOD message()Ljava/lang/String; flags=public
+registers=1 inputs=1
+0x000000: iget-object v0, v0, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;->message Ljava/lang/String;
+0x000004: return-object v0
+
+METHOD toString()Ljava/lang/String; flags=public final
+registers=6 inputs=1
+0x000000: iget v0, v5, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;->code I
+0x000004: invoke-static v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x00000a: move-result-object v0
+0x00000c: iget-object v1, v5, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;->message Ljava/lang/String;
+0x000010: iget-boolean v5, v5, Lcom/miui/guardprovider/aiguard/service/FeedbackResponse;->data Z
+0x000014: invoke-static v5, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+0x00001a: move-result-object v5
+0x00001c: const/4 v2, 3
+0x00001e: new-array v2, v2, [Ljava/lang/Object;
+0x000022: const/4 v3, 0
+0x000024: aput-object v0, v2, v3
+0x000028: const/4 v0, 1
+0x00002a: aput-object v1, v2, v0
+0x00002e: const/4 v1, 2
+0x000030: aput-object v5, v2, v1
+0x000034: const-string v5, "code;message;data"
+0x000038: invoke-virtual v5, Ljava/lang/String;->length()I
+0x00003e: move-result v1
+0x000040: if-nez v1, +005h
+0x000044: new-array v5, v3, [Ljava/lang/String;
+0x000048: goto +7h
+0x00004a: const-string v1, ";"
+0x00004e: invoke-virtual v5, v1, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+0x000054: move-result-object v5
+0x000056: new-instance v1, Ljava/lang/StringBuilder;
+0x00005a: const-string v4, "FeedbackResponse["
+0x00005e: invoke-direct v1, v4, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000064: array-length v4, v5
+0x000066: if-ge v3, v4, +01dh
+0x00006a: aget-object v4, v5, v3
+0x00006e: invoke-virtual v1, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000074: const-string v4, "="
+0x000078: invoke-virtual v1, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00007e: aget-object v4, v2, v3
+0x000082: invoke-virtual v1, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x000088: array-length v4, v5
+0x00008a: sub-int/2addr v4, v0
+0x00008c: if-eq v3, v4, +007h
+0x000090: const-string v4, ", "
+0x000094: invoke-virtual v1, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00009a: add-int/lit8 v3, v3, 1
+0x00009e: goto -1dh
+0x0000a0: const-string v5, "]"
+0x0000a4: invoke-virtual v1, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000aa: invoke-virtual v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0000b0: move-result-object v5
+0x0000b2: return-object v5

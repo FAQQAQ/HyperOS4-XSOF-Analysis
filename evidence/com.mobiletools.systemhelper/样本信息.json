@@ -1,0 +1,32 @@
+{
+  "file": "SystemHelper_4.0.0-20260910.apk",
+  "package": "com.mobiletools.systemhelper",
+  "size": 3884625,
+  "sha256": "42fbfebedd8711b2ca22d3d969324f7ed7c757d838e143bf6cf4d2e8e1ed8556",
+  "version_name": "4.0.0-20260910",
+  "version_code": "34",
+  "min_sdk": "31",
+  "target_sdk": "34",
+  "shared_user_id": "com.mobiletools.systemhelper.uid",
+  "signature_schemes": {
+    "v1": false,
+    "v2": true,
+    "v3": false
+  },
+  "label": "SystemHelper",
+  "signing_certificates": [
+    {
+      "sha256": "874b8ca2297f53a373b1b935c134cb0eb1ff7381e54491b88c643a6b9c46db77",
+      "subject": {
+        "country_name": "86",
+        "state_or_province_name": "BJ",
+        "locality_name": "BJ",
+        "organization_name": "CU",
+        "organizational_unit_name": "RI",
+        "common_name": "NewDM"
+      }
+    }
+  ],
+  "report": "reports/com.mobiletools.systemhelper.md",
+  "evidence": "evidence/com.mobiletools.systemhelper"
+}

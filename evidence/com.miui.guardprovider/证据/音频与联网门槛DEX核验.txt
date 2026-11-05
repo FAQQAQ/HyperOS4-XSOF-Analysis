@@ -1,0 +1,3723 @@
+
+CLASS classes.dex Lc7;
+FIELD a I = None
+FIELD b Lcom/miui/guardprovider/aiguard/AiGuardService; = None
+
+METHOD <init>(I)V flags=public synthetic constructor
+registers=2 inputs=2
+0x000000: iput v1, v0, Lc7;->a I
+0x000004: invoke-direct v0, Ljava/lang/Object;-><init>()V
+0x00000a: return-void 
+
+METHOD accept(Ljava/lang/Object;)V flags=public final
+registers=7 inputs=2
+0x000000: iget v0, v5, Lc7;->a I
+0x000004: const/4 v1, 1
+0x000006: const/4 v2, 0
+0x000008: const/4 v3, 2
+0x00000a: iget-object v5, v5, Lc7;->b Lcom/miui/guardprovider/aiguard/AiGuardService;
+0x00000e: check-cast v6, [B
+0x000012: packed-switch v0, +0000047h
+0x000018: sget v0, Lcom/miui/guardprovider/aiguard/AiGuardService;->o I
+0x00001c: invoke-virtual v5, Lcom/miui/guardprovider/aiguard/AiGuardService;->f()Lpj0;
+0x000022: move-result-object v5
+0x000024: invoke-virtual v6, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00002a: invoke-virtual v5, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000030: iget-object v5, v5, Lpj0;->a Ljava/nio/file/Path;
+0x000034: new-array v0, v3, [Ljava/nio/file/OpenOption;
+0x000038: sget-object v4, Ljava/nio/file/StandardOpenOption;->WRITE Ljava/nio/file/StandardOpenOption;
+0x00003c: aput-object v4, v0, v2
+0x000040: sget-object v2, Ljava/nio/file/StandardOpenOption;->CREATE Ljava/nio/file/StandardOpenOption;
+0x000044: aput-object v2, v0, v1
+0x000048: invoke-static v0, v3, Ljava/util/Arrays;->copyOf([Ljava/lang/Object; I)[Ljava/lang/Object;
+0x00004e: move-result-object v0
+0x000050: check-cast v0, [Ljava/nio/file/OpenOption;
+0x000054: invoke-static v5, v6, v0, Ljava/nio/file/Files;->write(Ljava/nio/file/Path; [B [Ljava/nio/file/OpenOption;)Ljava/nio/file/Path;
+0x00005a: return-void 
+0x00005c: sget v0, Lcom/miui/guardprovider/aiguard/AiGuardService;->o I
+0x000060: invoke-virtual v6, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000066: invoke-virtual v5, Lcom/miui/guardprovider/aiguard/AiGuardService;->f()Lpj0;
+0x00006c: move-result-object v5
+0x00006e: invoke-virtual v5, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000074: iget-object v5, v5, Lpj0;->a Ljava/nio/file/Path;
+0x000078: new-array v0, v3, [Ljava/nio/file/OpenOption;
+0x00007c: sget-object v4, Ljava/nio/file/StandardOpenOption;->WRITE Ljava/nio/file/StandardOpenOption;
+0x000080: aput-object v4, v0, v2
+0x000084: sget-object v2, Ljava/nio/file/StandardOpenOption;->CREATE Ljava/nio/file/StandardOpenOption;
+0x000088: aput-object v2, v0, v1
+0x00008c: invoke-static v0, v3, Ljava/util/Arrays;->copyOf([Ljava/lang/Object; I)[Ljava/lang/Object;
+0x000092: move-result-object v0
+0x000094: check-cast v0, [Ljava/nio/file/OpenOption;
+0x000098: invoke-static v5, v6, v0, Ljava/nio/file/Files;->write(Ljava/nio/file/Path; [B [Ljava/nio/file/OpenOption;)Ljava/nio/file/Path;
+0x00009e: return-void 
+0x0000a0: packed-switch-payload 0
+
+CLASS classes.dex Lcom/xiaomi/ai/vision/sdk/AiCore;
+FIELD ACTION_TRANSLATE_SDK_SERVICE Ljava/lang/String; = 'com.xiaomi.aiasst.vision.ACTION_TRANSLATE_SDK_SERVICE'
+FIELD Companion Lcom/xiaomi/ai/vision/sdk/AiCore$Companion; = None
+FIELD MAX_CONNECT_RETRY_COUNT I = 3
+FIELD PKG_AI_ASST_VISION Ljava/lang/String; = 'com.xiaomi.aiasst.vision'
+FIELD TAG Ljava/lang/String; = 'AiCore'
+FIELD context Landroid/content/Context; = None
+FIELD coreCallback Lcom/xiaomi/ai/vision/sdk/callback/CoreCallback; = None
+FIELD deathRecipient Landroid/os/IBinder$DeathRecipient; = None
+FIELD gson Lir0; = None
+FIELD mCtaCallback Lcom/xiaomi/ai/vision/sdk/callback/CtaCallback; = None
+FIELD mDownloadModelCallbackMap Ljava/util/Map; = None
+FIELD mErrorCallbackMap Ljava/util/Map; = None
+FIELD mRecognizeCallbackMap Ljava/util/Map; = None
+FIELD mTextTranslateCallbackMap Ljava/util/Map; = None
+FIELD mTtsCallbackMap Ljava/util/Map; = None
+FIELD sdkCallback Lcom/xiaomi/ai/vision/sdk/AiCore$sdkCallback$1; = None
+FIELD service Lhw0; = None
+FIELD serviceConnection Lcom/xiaomi/ai/vision/sdk/AiCore$serviceConnection$1; = None
+FIELD uiHandler Landroid/os/Handler; = None
+
+METHOD <clinit>()V flags=static constructor
+registers=2 inputs=0
+0x000000: new-instance v0, Lcom/xiaomi/ai/vision/sdk/AiCore$Companion;
+0x000004: const/4 v1, 0
+0x000006: invoke-direct v0, v1, Lcom/xiaomi/ai/vision/sdk/AiCore$Companion;-><init>(Lc60;)V
+0x00000c: sput-object v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->Companion Lcom/xiaomi/ai/vision/sdk/AiCore$Companion;
+0x000010: return-void 
+
+METHOD <init>(Landroid/content/Context; Lcom/xiaomi/ai/vision/sdk/callback/CoreCallback;)V flags=public constructor
+registers=3 inputs=3
+0x000000: invoke-virtual v1, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000006: invoke-direct v0, Ljava/lang/Object;-><init>()V
+0x00000c: iput-object v1, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->context Landroid/content/Context;
+0x000010: iput-object v2, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->coreCallback Lcom/xiaomi/ai/vision/sdk/callback/CoreCallback;
+0x000014: new-instance v1, Landroid/os/Handler;
+0x000018: invoke-static Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+0x00001e: move-result-object v2
+0x000020: invoke-direct v1, v2, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+0x000026: iput-object v1, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->uiHandler Landroid/os/Handler;
+0x00002a: new-instance v1, Lir0;
+0x00002e: invoke-direct v1, Lir0;-><init>()V
+0x000034: iput-object v1, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->gson Lir0;
+0x000038: new-instance v1, Ljava/util/LinkedHashMap;
+0x00003c: invoke-direct v1, Ljava/util/LinkedHashMap;-><init>()V
+0x000042: iput-object v1, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->mRecognizeCallbackMap Ljava/util/Map;
+0x000046: new-instance v1, Ljava/util/LinkedHashMap;
+0x00004a: invoke-direct v1, Ljava/util/LinkedHashMap;-><init>()V
+0x000050: iput-object v1, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->mTtsCallbackMap Ljava/util/Map;
+0x000054: new-instance v1, Ljava/util/LinkedHashMap;
+0x000058: invoke-direct v1, Ljava/util/LinkedHashMap;-><init>()V
+0x00005e: iput-object v1, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->mTextTranslateCallbackMap Ljava/util/Map;
+0x000062: new-instance v1, Ljava/util/LinkedHashMap;
+0x000066: invoke-direct v1, Ljava/util/LinkedHashMap;-><init>()V
+0x00006c: iput-object v1, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->mDownloadModelCallbackMap Ljava/util/Map;
+0x000070: new-instance v1, Ljava/util/LinkedHashMap;
+0x000074: invoke-direct v1, Ljava/util/LinkedHashMap;-><init>()V
+0x00007a: iput-object v1, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->mErrorCallbackMap Ljava/util/Map;
+0x00007e: new-instance v1, Lcom/xiaomi/ai/vision/sdk/AiCore$sdkCallback$1;
+0x000082: invoke-direct v1, v0, Lcom/xiaomi/ai/vision/sdk/AiCore$sdkCallback$1;-><init>(Lcom/xiaomi/ai/vision/sdk/AiCore;)V
+0x000088: iput-object v1, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->sdkCallback Lcom/xiaomi/ai/vision/sdk/AiCore$sdkCallback$1;
+0x00008c: new-instance v1, Lw6;
+0x000090: invoke-direct v1, Ljava/lang/Object;-><init>()V
+0x000096: iput-object v1, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->deathRecipient Landroid/os/IBinder$DeathRecipient;
+0x00009a: new-instance v1, Lcom/xiaomi/ai/vision/sdk/AiCore$serviceConnection$1;
+0x00009e: invoke-direct v1, v0, Lcom/xiaomi/ai/vision/sdk/AiCore$serviceConnection$1;-><init>(Lcom/xiaomi/ai/vision/sdk/AiCore;)V
+0x0000a4: iput-object v1, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->serviceConnection Lcom/xiaomi/ai/vision/sdk/AiCore$serviceConnection$1;
+0x0000a8: return-void 
+
+METHOD <init>(Landroid/content/Context; Lcom/xiaomi/ai/vision/sdk/callback/CoreCallback; I Lc60;)V flags=public synthetic constructor
+registers=5 inputs=5
+0x000000: and-int/lit8 v3, v3, 2
+0x000004: if-eqz v3, +003h
+0x000008: const/4 v2, 0
+0x00000a: invoke-direct v0, v1, v2, Lcom/xiaomi/ai/vision/sdk/AiCore;-><init>(Landroid/content/Context; Lcom/xiaomi/ai/vision/sdk/callback/CoreCallback;)V
+0x000010: return-void 
+
+METHOD a()V flags=public static synthetic
+registers=0 inputs=0
+0x000000: invoke-static Lcom/xiaomi/ai/vision/sdk/AiCore;->deathRecipient$lambda$0()V
+0x000006: return-void 
+
+METHOD access$getGson$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Lir0; flags=public static final synthetic
+registers=1 inputs=1
+0x000000: iget-object v0, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->gson Lir0;
+0x000004: return-object v0
+
+METHOD access$getMCtaCallback$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Lcom/xiaomi/ai/vision/sdk/callback/CtaCallback; flags=public static final synthetic
+registers=1 inputs=1
+0x000000: iget-object v0, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->mCtaCallback Lcom/xiaomi/ai/vision/sdk/callback/CtaCallback;
+0x000004: return-object v0
+
+METHOD access$getMErrorCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map; flags=public static final synthetic
+registers=1 inputs=1
+0x000000: iget-object v0, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->mErrorCallbackMap Ljava/util/Map;
+0x000004: return-object v0
+
+METHOD access$getMRecognizeCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map; flags=public static final synthetic
+registers=1 inputs=1
+0x000000: iget-object v0, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->mRecognizeCallbackMap Ljava/util/Map;
+0x000004: return-object v0
+
+METHOD access$getMTextTranslateCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map; flags=public static final synthetic
+registers=1 inputs=1
+0x000000: iget-object v0, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->mTextTranslateCallbackMap Ljava/util/Map;
+0x000004: return-object v0
+
+METHOD access$getMTtsCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map; flags=public static final synthetic
+registers=1 inputs=1
+0x000000: iget-object v0, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->mTtsCallbackMap Ljava/util/Map;
+0x000004: return-object v0
+
+METHOD access$getSdkCallback$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Lcom/xiaomi/ai/vision/sdk/AiCore$sdkCallback$1; flags=public static final synthetic
+registers=1 inputs=1
+0x000000: iget-object v0, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->sdkCallback Lcom/xiaomi/ai/vision/sdk/AiCore$sdkCallback$1;
+0x000004: return-object v0
+
+METHOD access$getService$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Lhw0; flags=public static final synthetic
+registers=1 inputs=1
+0x000000: iget-object v0, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->service Lhw0;
+0x000004: return-object v0
+
+METHOD access$onError(Lcom/xiaomi/ai/vision/sdk/AiCore; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/String;)V flags=public static final synthetic
+registers=4 inputs=4
+0x000000: invoke-direct v0, v1, v2, v3, Lcom/xiaomi/ai/vision/sdk/AiCore;->onError(Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/String;)V
+0x000006: return-void 
+
+METHOD access$setMCtaCallback$p(Lcom/xiaomi/ai/vision/sdk/AiCore; Lcom/xiaomi/ai/vision/sdk/callback/CtaCallback;)V flags=public static final synthetic
+registers=2 inputs=2
+0x000000: iput-object v1, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->mCtaCallback Lcom/xiaomi/ai/vision/sdk/callback/CtaCallback;
+0x000004: return-void 
+
+METHOD access$setService$p(Lcom/xiaomi/ai/vision/sdk/AiCore; Lhw0;)V flags=public static final synthetic
+registers=2 inputs=2
+0x000000: iput-object v1, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->service Lhw0;
+0x000004: return-void 
+
+METHOD b(Lcom/xiaomi/ai/vision/sdk/AiCore; I)V flags=public static synthetic
+registers=2 inputs=2
+0x000000: invoke-static v0, v1, Lcom/xiaomi/ai/vision/sdk/AiCore;->connect$lambda$2(Lcom/xiaomi/ai/vision/sdk/AiCore; I)V
+0x000006: return-void 
+
+METHOD cancelDownloadModel$default(Lcom/xiaomi/ai/vision/sdk/AiCore; Ljava/lang/String; Ljava/lang/String; I Ljava/lang/Object;)Z flags=public static synthetic
+registers=5 inputs=5
+0x000000: and-int/lit8 v3, v3, 2
+0x000004: if-eqz v3, +003h
+0x000008: const/4 v2, 0
+0x00000a: invoke-virtual v0, v1, v2, Lcom/xiaomi/ai/vision/sdk/AiCore;->cancelDownloadModel(Ljava/lang/String; Ljava/lang/String;)Z
+0x000010: move-result v0
+0x000012: return v0
+
+METHOD checkModelExist$default(Lcom/xiaomi/ai/vision/sdk/AiCore; Ljava/lang/String; Ljava/lang/String; I Ljava/lang/Object;)Z flags=public static synthetic
+registers=5 inputs=5
+0x000000: and-int/lit8 v3, v3, 2
+0x000004: if-eqz v3, +003h
+0x000008: const/4 v2, 0
+0x00000a: invoke-virtual v0, v1, v2, Lcom/xiaomi/ai/vision/sdk/AiCore;->checkModelExist(Ljava/lang/String; Ljava/lang/String;)Z
+0x000010: move-result v0
+0x000012: return v0
+
+METHOD connect$default(Lcom/xiaomi/ai/vision/sdk/AiCore; I I Ljava/lang/Object;)V flags=public static synthetic
+registers=4 inputs=4
+0x000000: const/4 v3, 1
+0x000002: and-int/2addr v2, v3
+0x000004: if-eqz v2, +003h
+0x000008: move v1, v3
+0x00000a: invoke-virtual v0, v1, Lcom/xiaomi/ai/vision/sdk/AiCore;->connect(I)V
+0x000010: return-void 
+
+METHOD connect$lambda$2(Lcom/xiaomi/ai/vision/sdk/AiCore; I)V flags=private static final
+registers=2 inputs=2
+0x000000: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000006: add-int/lit8 v1, v1, 1
+0x00000a: invoke-virtual v0, v1, Lcom/xiaomi/ai/vision/sdk/AiCore;->connect(I)V
+0x000010: return-void 
+
+METHOD deathRecipient$lambda$0()V flags=private static final
+registers=2 inputs=0
+0x000000: const-string v0, "AiCore"
+0x000004: const-string v1, "server died"
+0x000008: invoke-static v0, v1, Landroid/util/Log;->w(Ljava/lang/String; Ljava/lang/String;)I
+0x00000e: return-void 
+
+METHOD disconnect(Ljava/lang/String;)V flags=private final
+registers=4 inputs=2
+0x000000: new-instance v0, Ljava/lang/StringBuilder;
+0x000004: const-string v1, "unbindService, reason: "
+0x000008: invoke-direct v0, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x00000e: invoke-virtual v0, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000014: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00001a: move-result-object v3
+0x00001c: const-string v0, "AiCore"
+0x000020: invoke-static v0, v3, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x000026: iget-object v3, v2, Lcom/xiaomi/ai/vision/sdk/AiCore;->service Lhw0;
+0x00002a: if-nez v3, +003h
+0x00002e: goto +13h
+0x000030: iget-object v3, v2, Lcom/xiaomi/ai/vision/sdk/AiCore;->context Landroid/content/Context;
+0x000034: iget-object v0, v2, Lcom/xiaomi/ai/vision/sdk/AiCore;->serviceConnection Lcom/xiaomi/ai/vision/sdk/AiCore$serviceConnection$1;
+0x000038: invoke-virtual v3, v0, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
+0x00003e: const/4 v3, 0
+0x000040: iput-object v3, v2, Lcom/xiaomi/ai/vision/sdk/AiCore;->service Lhw0;
+0x000044: iget-object v2, v2, Lcom/xiaomi/ai/vision/sdk/AiCore;->coreCallback Lcom/xiaomi/ai/vision/sdk/callback/CoreCallback;
+0x000048: if-eqz v2, +006h
+0x00004c: const/4 v3, 0
+0x00004e: invoke-interface v2, v3, Lcom/xiaomi/ai/vision/sdk/callback/CoreCallback;->onAvailableChanged(Z)V
+0x000054: return-void 
+
+METHOD disconnect$default(Lcom/xiaomi/ai/vision/sdk/AiCore; Ljava/lang/String; I Ljava/lang/Object;)V flags=public static synthetic
+registers=4 inputs=4
+0x000000: and-int/lit8 v2, v2, 1
+0x000004: if-eqz v2, +004h
+0x000008: const-string v1, ""
+0x00000c: invoke-direct v0, v1, Lcom/xiaomi/ai/vision/sdk/AiCore;->disconnect(Ljava/lang/String;)V
+0x000012: return-void 
+
+METHOD doFunc(I Ljava/lang/String; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback;)Ljava/lang/Object; flags=private final
+registers=13 inputs=4
+TRY bytes [0x6,0x26) -> [('Ljava/lang/Exception;', 100)]
+TRY bytes [0x32,0xfa) -> [('Ljava/lang/Exception;', 100)]
+0x000000: const-string v0, "doFunc: "
+0x000004: const/4 v1, 0
+0x000006: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x00000c: move-result-wide v2
+0x00000e: invoke-static v9, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getService$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Lhw0;
+0x000014: move-result-object v4
+0x000016: if-eqz v4, +009h
+0x00001a: check-cast v4, Lfw0;
+0x00001e: invoke-virtual v4, v10, Lfw0;->r(I)Z
+0x000024: move-result v4
+0x000026: goto +2h
+0x000028: const/4 v4, 0
+0x00002a: const-string v5, "AiCore"
+0x00002e: if-nez v4, +01dh
+0x000032: new-instance v11, Ljava/lang/StringBuilder;
+0x000036: invoke-direct v11, v0, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x00003c: invoke-static v10, Lhn;->j(I)Ljava/lang/String;
+0x000042: move-result-object v2
+0x000044: invoke-virtual v11, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00004a: const-string v2, ", func disabled !"
+0x00004e: invoke-virtual v11, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000054: invoke-virtual v11, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00005a: move-result-object v11
+0x00005c: invoke-static v5, v11, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x000062: return-object v1
+0x000064: move-exception v11
+0x000066: goto +4ah
+0x000068: invoke-static v9, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getService$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Lhw0;
+0x00006e: move-result-object v4
+0x000070: if-eqz v4, +009h
+0x000074: check-cast v4, Lfw0;
+0x000078: invoke-virtual v4, v10, v11, Lfw0;->q(I Ljava/lang/String;)Ljava/lang/String;
+0x00007e: move-result-object v4
+0x000080: goto +2h
+0x000082: move-object v4, v1
+0x000084: new-instance v6, Ljava/lang/StringBuilder;
+0x000088: invoke-direct v6, v0, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x00008e: invoke-static v10, Lhn;->j(I)Ljava/lang/String;
+0x000094: move-result-object v7
+0x000096: invoke-virtual v6, v7, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00009c: const-string v7, ", params: "
+0x0000a0: invoke-virtual v6, v7, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000a6: invoke-virtual v6, v11, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000ac: const-string v11, ", result: "
+0x0000b0: invoke-virtual v6, v11, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000b6: invoke-virtual v6, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000bc: const-string v11, ", span: "
+0x0000c0: invoke-virtual v6, v11, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000c6: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x0000cc: move-result-wide v7
+0x0000ce: sub-long/2addr v7, v2
+0x0000d0: invoke-virtual v6, v7, v8, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+0x0000d6: invoke-virtual v6, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0000dc: move-result-object v11
+0x0000de: invoke-static v5, v11, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x0000e4: if-nez v4, +003h
+0x0000e8: return-object v1
+0x0000ea: const-string v11, "This function has a reified type parameter and thus can only be inlined at compilation time, not called directly."
+0x0000ee: new-instance v2, Ljava/lang/UnsupportedOperationException;
+0x0000f2: invoke-direct v2, v11, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+0x0000f8: throw v2
+0x0000fa: new-instance v2, Ljava/lang/StringBuilder;
+0x0000fe: invoke-direct v2, v0, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000104: invoke-static v10, Lhn;->j(I)Ljava/lang/String;
+0x00010a: move-result-object v10
+0x00010c: invoke-virtual v2, v10, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000112: const-string v10, " exception: "
+0x000116: invoke-virtual v2, v10, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00011c: invoke-virtual v2, v11, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x000122: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000128: move-result-object v10
+0x00012a: const/16 v11, 2002
+0x00012e: invoke-static v9, v12, v11, v10, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$onError(Lcom/xiaomi/ai/vision/sdk/AiCore; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/String;)V
+0x000134: return-object v1
+
+METHOD doFunc$default(Lcom/xiaomi/ai/vision/sdk/AiCore; I Ljava/lang/String; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/Object;)Ljava/lang/Object; flags=public static
+registers=13 inputs=6
+TRY bytes [0x10,0x30) -> [('Ljava/lang/Exception;', 110)]
+TRY bytes [0x3c,0x104) -> [('Ljava/lang/Exception;', 110)]
+0x000000: const-string v12, "doFunc: "
+0x000004: and-int/lit8 v11, v11, 4
+0x000008: const/4 v0, 0
+0x00000a: if-eqz v11, +003h
+0x00000e: move-object v10, v0
+0x000010: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000016: move-result-wide v1
+0x000018: invoke-static v7, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getService$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Lhw0;
+0x00001e: move-result-object v11
+0x000020: if-eqz v11, +009h
+0x000024: check-cast v11, Lfw0;
+0x000028: invoke-virtual v11, v8, Lfw0;->r(I)Z
+0x00002e: move-result v11
+0x000030: goto +2h
+0x000032: const/4 v11, 0
+0x000034: const-string v3, "AiCore"
+0x000038: if-nez v11, +01dh
+0x00003c: new-instance v9, Ljava/lang/StringBuilder;
+0x000040: invoke-direct v9, v12, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000046: invoke-static v8, Lhn;->j(I)Ljava/lang/String;
+0x00004c: move-result-object v11
+0x00004e: invoke-virtual v9, v11, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000054: const-string v11, ", func disabled !"
+0x000058: invoke-virtual v9, v11, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00005e: invoke-virtual v9, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000064: move-result-object v9
+0x000066: invoke-static v3, v9, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x00006c: return-object v0
+0x00006e: move-exception v9
+0x000070: goto +4ah
+0x000072: invoke-static v7, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getService$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Lhw0;
+0x000078: move-result-object v11
+0x00007a: if-eqz v11, +009h
+0x00007e: check-cast v11, Lfw0;
+0x000082: invoke-virtual v11, v8, v9, Lfw0;->q(I Ljava/lang/String;)Ljava/lang/String;
+0x000088: move-result-object v11
+0x00008a: goto +2h
+0x00008c: move-object v11, v0
+0x00008e: new-instance v4, Ljava/lang/StringBuilder;
+0x000092: invoke-direct v4, v12, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000098: invoke-static v8, Lhn;->j(I)Ljava/lang/String;
+0x00009e: move-result-object v5
+0x0000a0: invoke-virtual v4, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000a6: const-string v5, ", params: "
+0x0000aa: invoke-virtual v4, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000b0: invoke-virtual v4, v9, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000b6: const-string v9, ", result: "
+0x0000ba: invoke-virtual v4, v9, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000c0: invoke-virtual v4, v11, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000c6: const-string v9, ", span: "
+0x0000ca: invoke-virtual v4, v9, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000d0: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x0000d6: move-result-wide v5
+0x0000d8: sub-long/2addr v5, v1
+0x0000da: invoke-virtual v4, v5, v6, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+0x0000e0: invoke-virtual v4, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0000e6: move-result-object v9
+0x0000e8: invoke-static v3, v9, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x0000ee: if-nez v11, +003h
+0x0000f2: return-object v0
+0x0000f4: const-string v9, "This function has a reified type parameter and thus can only be inlined at compilation time, not called directly."
+0x0000f8: new-instance v11, Ljava/lang/UnsupportedOperationException;
+0x0000fc: invoke-direct v11, v9, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+0x000102: throw v11
+0x000104: new-instance v11, Ljava/lang/StringBuilder;
+0x000108: invoke-direct v11, v12, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x00010e: invoke-static v8, Lhn;->j(I)Ljava/lang/String;
+0x000114: move-result-object v8
+0x000116: invoke-virtual v11, v8, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00011c: const-string v8, " exception: "
+0x000120: invoke-virtual v11, v8, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000126: invoke-virtual v11, v9, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x00012c: invoke-virtual v11, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000132: move-result-object v8
+0x000134: const/16 v9, 2002
+0x000138: invoke-static v7, v10, v9, v8, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$onError(Lcom/xiaomi/ai/vision/sdk/AiCore; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/String;)V
+0x00013e: return-object v0
+
+METHOD getCallback(Ljava/lang/String;)Ljava/lang/Object; flags=private final
+registers=2 inputs=2
+0x000000: invoke-virtual v1, Ljava/lang/String;->length()I
+0x000006: move-result v0
+0x000008: if-nez v0, +00bh
+0x00000c: const-string v0, "AiCore"
+0x000010: const-string v1, "getCallback, key is empty"
+0x000014: invoke-static v0, v1, Landroid/util/Log;->w(Ljava/lang/String; Ljava/lang/String;)I
+0x00001a: const/4 v0, 0
+0x00001c: return-object v0
+0x00001e: new-instance v0, Ljava/lang/UnsupportedOperationException;
+0x000022: const-string v1, "This function has a reified type parameter and thus can only be inlined at compilation time, not called directly."
+0x000026: invoke-direct v0, v1, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+0x00002c: throw v0
+
+METHOD onError(Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/String;)V flags=private final
+registers=4 inputs=4
+0x000000: if-eqz v1, +006h
+0x000004: invoke-interface v1, v2, v3, Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback;->onError(I Ljava/lang/String;)V
+0x00000a: return-void 
+0x00000c: iget-object v0, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->coreCallback Lcom/xiaomi/ai/vision/sdk/callback/CoreCallback;
+0x000010: if-eqz v0, +005h
+0x000014: invoke-interface v0, v2, v3, Lcom/xiaomi/ai/vision/sdk/callback/CoreCallback;->onError(I Ljava/lang/String;)V
+0x00001a: return-void 
+
+METHOD setCallback(Ljava/lang/String; Ljava/lang/Object;)V flags=private final
+registers=3 inputs=3
+0x000000: new-instance v0, Ljava/lang/UnsupportedOperationException;
+0x000004: const-string v1, "This function has a reified type parameter and thus can only be inlined at compilation time, not called directly."
+0x000008: invoke-direct v0, v1, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+0x00000e: throw v0
+
+METHOD startRecognize$default(Lcom/xiaomi/ai/vision/sdk/AiCore; I I I I Ljava/lang/String; Ljava/lang/String; Z Z Lcom/xiaomi/ai/vision/sdk/callback/SpeechRecognizeCallback; Lcom/xiaomi/ai/vision/sdk/callback/TtsCallback; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/Object;)V flags=public static synthetic
+registers=15 inputs=14
+0x000000: and-int/lit8 v14, v13, 4
+0x000004: const/4 v0, 0
+0x000006: if-eqz v14, +003h
+0x00000a: move v4, v0
+0x00000c: and-int/lit8 v14, v13, 8
+0x000010: if-eqz v14, +003h
+0x000014: move v5, v0
+0x000016: and-int/lit8 v13, v13, 32
+0x00001a: if-eqz v13, +003h
+0x00001e: const/4 v7, 0
+0x000020: invoke-virtual/range v1 ... v12, Lcom/xiaomi/ai/vision/sdk/AiCore;->startRecognize(I I I I Ljava/lang/String; Ljava/lang/String; Z Z Lcom/xiaomi/ai/vision/sdk/callback/SpeechRecognizeCallback; Lcom/xiaomi/ai/vision/sdk/callback/TtsCallback; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback;)V
+0x000026: return-void 
+
+METHOD startTextTranslate$default(Lcom/xiaomi/ai/vision/sdk/AiCore; I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Lcom/xiaomi/ai/vision/sdk/callback/TextTranslateCallback; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/Object;)V flags=public static synthetic
+registers=9 inputs=9
+0x000000: and-int/lit8 v7, v7, 1
+0x000004: if-eqz v7, +003h
+0x000008: const/4 v1, 0
+0x00000a: move-object v7, v5
+0x00000c: move-object v8, v6
+0x00000e: move-object v5, v3
+0x000010: move-object v6, v4
+0x000012: move v3, v1
+0x000014: move-object v4, v2
+0x000016: move-object v2, v0
+0x000018: invoke-virtual/range v2 ... v8, Lcom/xiaomi/ai/vision/sdk/AiCore;->startTextTranslate(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Lcom/xiaomi/ai/vision/sdk/callback/TextTranslateCallback; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback;)V
+0x00001e: return-void 
+
+METHOD startTts$default(Lcom/xiaomi/ai/vision/sdk/AiCore; I Ljava/lang/String; Ljava/lang/String; Lcom/xiaomi/ai/vision/sdk/callback/TtsCallback; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/Object;)V flags=public static synthetic
+registers=8 inputs=8
+0x000000: and-int/lit8 v6, v6, 1
+0x000004: if-eqz v6, +003h
+0x000008: const/4 v1, 0
+0x00000a: move-object v6, v4
+0x00000c: move-object v7, v5
+0x00000e: move-object v4, v2
+0x000010: move-object v5, v3
+0x000012: move-object v2, v0
+0x000014: move v3, v1
+0x000016: invoke-virtual/range v2 ... v7, Lcom/xiaomi/ai/vision/sdk/AiCore;->startTts(I Ljava/lang/String; Ljava/lang/String; Lcom/xiaomi/ai/vision/sdk/callback/TtsCallback; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback;)V
+0x00001c: return-void 
+
+METHOD attachToServer()V flags=public final
+registers=13 inputs=1
+TRY bytes [0x1e,0x3e) -> [('Ljava/lang/Exception;', 124)]
+TRY bytes [0x4a,0x1aa) -> [('Ljava/lang/Exception;', 124)]
+0x000000: const-class v0, Ljava/lang/Boolean;
+0x000004: const-string v1, "doFunc: "
+0x000008: iget-object v2, v12, Lcom/xiaomi/ai/vision/sdk/AiCore;->context Landroid/content/Context;
+0x00000c: invoke-virtual v2, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+0x000012: move-result-object v2
+0x000014: invoke-virtual v2, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00001a: const/4 v3, 0
+0x00001c: const/4 v4, 0
+0x00001e: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000024: move-result-wide v5
+0x000026: invoke-static v12, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getService$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Lhw0;
+0x00002c: move-result-object v7
+0x00002e: if-eqz v7, +009h
+0x000032: check-cast v7, Lfw0;
+0x000036: invoke-virtual v7, v3, Lfw0;->r(I)Z
+0x00003c: move-result v7
+0x00003e: goto +2h
+0x000040: move v7, v3
+0x000042: const-string v8, "AiCore"
+0x000046: if-nez v7, +01eh
+0x00004a: new-instance v0, Ljava/lang/StringBuilder;
+0x00004e: invoke-direct v0, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000054: invoke-static v3, Lhn;->j(I)Ljava/lang/String;
+0x00005a: move-result-object v2
+0x00005c: invoke-virtual v0, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000062: const-string v2, ", func disabled !"
+0x000066: invoke-virtual v0, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00006c: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000072: move-result-object v0
+0x000074: invoke-static v8, v0, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x00007a: return-void 
+0x00007c: move-exception v0
+0x00007e: goto/16 +097h
+0x000082: invoke-static v12, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getService$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Lhw0;
+0x000088: move-result-object v7
+0x00008a: if-eqz v7, +009h
+0x00008e: check-cast v7, Lfw0;
+0x000092: invoke-virtual v7, v3, v2, Lfw0;->q(I Ljava/lang/String;)Ljava/lang/String;
+0x000098: move-result-object v7
+0x00009a: goto +2h
+0x00009c: move-object v7, v4
+0x00009e: new-instance v9, Ljava/lang/StringBuilder;
+0x0000a2: invoke-direct v9, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x0000a8: invoke-static v3, Lhn;->j(I)Ljava/lang/String;
+0x0000ae: move-result-object v10
+0x0000b0: invoke-virtual v9, v10, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000b6: const-string v10, ", params: "
+0x0000ba: invoke-virtual v9, v10, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000c0: invoke-virtual v9, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000c6: const-string v2, ", result: "
+0x0000ca: invoke-virtual v9, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000d0: invoke-virtual v9, v7, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000d6: const-string v2, ", span: "
+0x0000da: invoke-virtual v9, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000e0: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x0000e6: move-result-wide v10
+0x0000e8: sub-long/2addr v10, v5
+0x0000ea: invoke-virtual v9, v10, v11, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+0x0000f0: invoke-virtual v9, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0000f6: move-result-object v2
+0x0000f8: invoke-static v8, v2, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x0000fe: if-eqz v7, +074h
+0x000102: invoke-virtual v0, v0, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000108: move-result v2
+0x00010a: if-eqz v2, +00bh
+0x00010e: invoke-static v7, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+0x000114: move-result v0
+0x000116: invoke-static v0, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+0x00011c: move-result-object v7
+0x00011e: goto +44h
+0x000120: const-class v2, Ljava/lang/Integer;
+0x000124: invoke-virtual v0, v2, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x00012a: move-result v2
+0x00012c: if-eqz v2, +00bh
+0x000130: invoke-static v7, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+0x000136: move-result v0
+0x000138: invoke-static v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x00013e: move-result-object v7
+0x000140: goto +33h
+0x000142: const-class v2, Ljava/lang/Long;
+0x000146: invoke-virtual v0, v2, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x00014c: move-result v2
+0x00014e: if-eqz v2, +00bh
+0x000152: invoke-static v7, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+0x000158: move-result-wide v5
+0x00015a: invoke-static v5, v6, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+0x000160: move-result-object v7
+0x000162: goto +22h
+0x000164: const-class v2, Ljava/lang/Float;
+0x000168: invoke-virtual v0, v2, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x00016e: move-result v2
+0x000170: if-eqz v2, +00bh
+0x000174: invoke-static v7, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
+0x00017a: move-result v0
+0x00017c: invoke-static v0, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+0x000182: move-result-object v7
+0x000184: goto +11h
+0x000186: const-class v2, Ljava/lang/Double;
+0x00018a: invoke-virtual v0, v2, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000190: move-result v0
+0x000192: if-eqz v0, +00ah
+0x000196: invoke-static v7, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
+0x00019c: move-result-wide v5
+0x00019e: invoke-static v5, v6, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+0x0001a4: move-result-object v7
+0x0001a6: check-cast v7, Ljava/lang/Boolean;
+0x0001aa: goto +1eh
+0x0001ac: new-instance v2, Ljava/lang/StringBuilder;
+0x0001b0: invoke-direct v2, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x0001b6: invoke-static v3, Lhn;->j(I)Ljava/lang/String;
+0x0001bc: move-result-object v1
+0x0001be: invoke-virtual v2, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0001c4: const-string v1, " exception: "
+0x0001c8: invoke-virtual v2, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0001ce: invoke-virtual v2, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x0001d4: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0001da: move-result-object v0
+0x0001dc: const/16 v1, 2002
+0x0001e0: invoke-static v12, v4, v1, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$onError(Lcom/xiaomi/ai/vision/sdk/AiCore; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/String;)V
+0x0001e6: return-void 
+
+METHOD cancelDownloadModel(Ljava/lang/String; Ljava/lang/String;)Z flags=public final
+registers=14 inputs=3
+TRY bytes [0x22,0x32) -> [('Ljava/lang/Exception;', 52)]
+TRY bytes [0x6a,0x8a) -> [('Ljava/lang/Exception;', 202)]
+TRY bytes [0x96,0x1f8) -> [('Ljava/lang/Exception;', 202)]
+0x000000: const-class v0, Ljava/lang/Boolean;
+0x000004: const-string v1, "doFunc: "
+0x000008: invoke-virtual v12, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00000e: const/4 v2, 1
+0x000010: and-int/2addr v2, v2
+0x000012: const/4 v3, 0
+0x000014: const-string v4, ""
+0x000018: if-eqz v2, +004h
+0x00001c: move-object v2, v4
+0x00001e: goto +2h
+0x000020: move-object v2, v3
+0x000022: new-instance v5, Lorg/json/JSONObject;
+0x000026: if-nez v2, +003h
+0x00002a: move-object v2, v4
+0x00002c: invoke-direct v5, v2, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+0x000032: goto +6h
+0x000034: new-instance v5, Lorg/json/JSONObject;
+0x000038: invoke-direct v5, Lorg/json/JSONObject;-><init>()V
+0x00003e: const-string v2, "srcLang"
+0x000042: invoke-virtual v5, v2, v12, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+0x000048: if-nez v13, +003h
+0x00004c: move-object v13, v4
+0x00004e: const-string v12, "destLang"
+0x000052: invoke-virtual v5, v12, v13, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+0x000058: invoke-virtual v5, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+0x00005e: move-result-object v12
+0x000060: invoke-virtual v12, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000066: const/4 v13, 0
+0x000068: const/4 v2, 4
+0x00006a: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000070: move-result-wide v4
+0x000072: invoke-static v11, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getService$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Lhw0;
+0x000078: move-result-object v6
+0x00007a: if-eqz v6, +009h
+0x00007e: check-cast v6, Lfw0;
+0x000082: invoke-virtual v6, v2, Lfw0;->r(I)Z
+0x000088: move-result v6
+0x00008a: goto +2h
+0x00008c: move v6, v13
+0x00008e: const-string v7, "AiCore"
+0x000092: if-nez v6, +01fh
+0x000096: new-instance v12, Ljava/lang/StringBuilder;
+0x00009a: invoke-direct v12, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x0000a0: invoke-static v2, Lhn;->j(I)Ljava/lang/String;
+0x0000a6: move-result-object v0
+0x0000a8: invoke-virtual v12, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000ae: const-string v0, ", func disabled !"
+0x0000b2: invoke-virtual v12, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000b8: invoke-virtual v12, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0000be: move-result-object v12
+0x0000c0: invoke-static v7, v12, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x0000c6: goto/16 +0b8h
+0x0000ca: move-exception v12
+0x0000cc: goto/16 +098h
+0x0000d0: invoke-static v11, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getService$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Lhw0;
+0x0000d6: move-result-object v6
+0x0000d8: if-eqz v6, +009h
+0x0000dc: check-cast v6, Lfw0;
+0x0000e0: invoke-virtual v6, v2, v12, Lfw0;->q(I Ljava/lang/String;)Ljava/lang/String;
+0x0000e6: move-result-object v6
+0x0000e8: goto +2h
+0x0000ea: move-object v6, v3
+0x0000ec: new-instance v8, Ljava/lang/StringBuilder;
+0x0000f0: invoke-direct v8, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x0000f6: invoke-static v2, Lhn;->j(I)Ljava/lang/String;
+0x0000fc: move-result-object v9
+0x0000fe: invoke-virtual v8, v9, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000104: const-string v9, ", params: "
+0x000108: invoke-virtual v8, v9, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00010e: invoke-virtual v8, v12, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000114: const-string v12, ", result: "
+0x000118: invoke-virtual v8, v12, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00011e: invoke-virtual v8, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000124: const-string v12, ", span: "
+0x000128: invoke-virtual v8, v12, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00012e: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000134: move-result-wide v9
+0x000136: sub-long/2addr v9, v4
+0x000138: invoke-virtual v8, v9, v10, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+0x00013e: invoke-virtual v8, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000144: move-result-object v12
+0x000146: invoke-static v7, v12, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x00014c: if-eqz v6, +075h
+0x000150: invoke-virtual v0, v0, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000156: move-result v12
+0x000158: if-eqz v12, +00bh
+0x00015c: invoke-static v6, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+0x000162: move-result v12
+0x000164: invoke-static v12, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+0x00016a: move-result-object v6
+0x00016c: goto +44h
+0x00016e: const-class v12, Ljava/lang/Integer;
+0x000172: invoke-virtual v0, v12, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000178: move-result v12
+0x00017a: if-eqz v12, +00bh
+0x00017e: invoke-static v6, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+0x000184: move-result v12
+0x000186: invoke-static v12, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x00018c: move-result-object v6
+0x00018e: goto +33h
+0x000190: const-class v12, Ljava/lang/Long;
+0x000194: invoke-virtual v0, v12, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x00019a: move-result v12
+0x00019c: if-eqz v12, +00bh
+0x0001a0: invoke-static v6, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+0x0001a6: move-result-wide v4
+0x0001a8: invoke-static v4, v5, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+0x0001ae: move-result-object v6
+0x0001b0: goto +22h
+0x0001b2: const-class v12, Ljava/lang/Float;
+0x0001b6: invoke-virtual v0, v12, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x0001bc: move-result v12
+0x0001be: if-eqz v12, +00bh
+0x0001c2: invoke-static v6, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
+0x0001c8: move-result v12
+0x0001ca: invoke-static v12, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+0x0001d0: move-result-object v6
+0x0001d2: goto +11h
+0x0001d4: const-class v12, Ljava/lang/Double;
+0x0001d8: invoke-virtual v0, v12, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x0001de: move-result v12
+0x0001e0: if-eqz v12, +00ah
+0x0001e4: invoke-static v6, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
+0x0001ea: move-result-wide v4
+0x0001ec: invoke-static v4, v5, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+0x0001f2: move-result-object v6
+0x0001f4: check-cast v6, Ljava/lang/Boolean;
+0x0001f8: move-object v3, v6
+0x0001fa: goto +1eh
+0x0001fc: new-instance v0, Ljava/lang/StringBuilder;
+0x000200: invoke-direct v0, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000206: invoke-static v2, Lhn;->j(I)Ljava/lang/String;
+0x00020c: move-result-object v1
+0x00020e: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000214: const-string v1, " exception: "
+0x000218: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00021e: invoke-virtual v0, v12, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x000224: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00022a: move-result-object v12
+0x00022c: const/16 v0, 2002
+0x000230: invoke-static v11, v3, v0, v12, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$onError(Lcom/xiaomi/ai/vision/sdk/AiCore; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/String;)V
+0x000236: if-eqz v3, +006h
+0x00023a: invoke-virtual v3, Ljava/lang/Boolean;->booleanValue()Z
+0x000240: move-result v13
+0x000242: return v13
+
+METHOD checkIfCtaAllowed()Z flags=public final
+registers=5 inputs=1
+TRY bytes [0x1e,0x42) -> [('catchall', 86)]
+0x000000: iget-object v4, v4, Lcom/xiaomi/ai/vision/sdk/AiCore;->service Lhw0;
+0x000004: const/4 v0, 0
+0x000006: if-eqz v4, +030h
+0x00000a: check-cast v4, Lfw0;
+0x00000e: invoke-static Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+0x000014: move-result-object v1
+0x000016: invoke-static Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+0x00001c: move-result-object v2
+0x00001e: const-string v3, "com.xiaomi.aiasst.vision.sdk.ITranslateSdkInterface"
+0x000022: invoke-virtual v1, v3, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+0x000028: iget-object v4, v4, Lfw0;->a Landroid/os/IBinder;
+0x00002c: const/4 v3, 6
+0x00002e: invoke-interface v4, v3, v1, v2, v0, Landroid/os/IBinder;->transact(I Landroid/os/Parcel; Landroid/os/Parcel; I)Z
+0x000034: invoke-virtual v2, Landroid/os/Parcel;->readException()V
+0x00003a: invoke-virtual v2, Landroid/os/Parcel;->readInt()I
+0x000040: move-result v4
+0x000042: if-eqz v4, +003h
+0x000046: const/4 v0, 1
+0x000048: invoke-virtual v2, Landroid/os/Parcel;->recycle()V
+0x00004e: invoke-virtual v1, Landroid/os/Parcel;->recycle()V
+0x000054: goto +9h
+0x000056: move-exception v4
+0x000058: invoke-virtual v2, Landroid/os/Parcel;->recycle()V
+0x00005e: invoke-virtual v1, Landroid/os/Parcel;->recycle()V
+0x000064: throw v4
+0x000066: new-instance v4, Ljava/lang/StringBuilder;
+0x00006a: const-string v1, "checkIfCtaAllowed: "
+0x00006e: invoke-direct v4, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000074: invoke-virtual v4, v0, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+0x00007a: invoke-virtual v4, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000080: move-result-object v4
+0x000082: const-string v1, "AiCore"
+0x000086: invoke-static v1, v4, Landroid/util/Log;->d(Ljava/lang/String; Ljava/lang/String;)I
+0x00008c: return v0
+
+METHOD checkModelExist(Ljava/lang/String; Ljava/lang/String;)Z flags=public final
+registers=14 inputs=3
+TRY bytes [0x22,0x32) -> [('Ljava/lang/Exception;', 52)]
+TRY bytes [0x6a,0x8a) -> [('Ljava/lang/Exception;', 202)]
+TRY bytes [0x96,0x1f8) -> [('Ljava/lang/Exception;', 202)]
+0x000000: const-class v0, Ljava/lang/Boolean;
+0x000004: const-string v1, "doFunc: "
+0x000008: invoke-virtual v12, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00000e: const/4 v2, 1
+0x000010: and-int/2addr v2, v2
+0x000012: const/4 v3, 0
+0x000014: const-string v4, ""
+0x000018: if-eqz v2, +004h
+0x00001c: move-object v2, v4
+0x00001e: goto +2h
+0x000020: move-object v2, v3
+0x000022: new-instance v5, Lorg/json/JSONObject;
+0x000026: if-nez v2, +003h
+0x00002a: move-object v2, v4
+0x00002c: invoke-direct v5, v2, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+0x000032: goto +6h
+0x000034: new-instance v5, Lorg/json/JSONObject;
+0x000038: invoke-direct v5, Lorg/json/JSONObject;-><init>()V
+0x00003e: const-string v2, "srcLang"
+0x000042: invoke-virtual v5, v2, v12, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+0x000048: if-nez v13, +003h
+0x00004c: move-object v13, v4
+0x00004e: const-string v12, "destLang"
+0x000052: invoke-virtual v5, v12, v13, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+0x000058: invoke-virtual v5, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+0x00005e: move-result-object v12
+0x000060: invoke-virtual v12, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000066: const/4 v13, 0
+0x000068: const/4 v2, 2
+0x00006a: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000070: move-result-wide v4
+0x000072: invoke-static v11, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getService$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Lhw0;
+0x000078: move-result-object v6
+0x00007a: if-eqz v6, +009h
+0x00007e: check-cast v6, Lfw0;
+0x000082: invoke-virtual v6, v2, Lfw0;->r(I)Z
+0x000088: move-result v6
+0x00008a: goto +2h
+0x00008c: move v6, v13
+0x00008e: const-string v7, "AiCore"
+0x000092: if-nez v6, +01fh
+0x000096: new-instance v12, Ljava/lang/StringBuilder;
+0x00009a: invoke-direct v12, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x0000a0: invoke-static v2, Lhn;->j(I)Ljava/lang/String;
+0x0000a6: move-result-object v0
+0x0000a8: invoke-virtual v12, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000ae: const-string v0, ", func disabled !"
+0x0000b2: invoke-virtual v12, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000b8: invoke-virtual v12, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0000be: move-result-object v12
+0x0000c0: invoke-static v7, v12, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x0000c6: goto/16 +0b8h
+0x0000ca: move-exception v12
+0x0000cc: goto/16 +098h
+0x0000d0: invoke-static v11, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getService$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Lhw0;
+0x0000d6: move-result-object v6
+0x0000d8: if-eqz v6, +009h
+0x0000dc: check-cast v6, Lfw0;
+0x0000e0: invoke-virtual v6, v2, v12, Lfw0;->q(I Ljava/lang/String;)Ljava/lang/String;
+0x0000e6: move-result-object v6
+0x0000e8: goto +2h
+0x0000ea: move-object v6, v3
+0x0000ec: new-instance v8, Ljava/lang/StringBuilder;
+0x0000f0: invoke-direct v8, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x0000f6: invoke-static v2, Lhn;->j(I)Ljava/lang/String;
+0x0000fc: move-result-object v9
+0x0000fe: invoke-virtual v8, v9, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000104: const-string v9, ", params: "
+0x000108: invoke-virtual v8, v9, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00010e: invoke-virtual v8, v12, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000114: const-string v12, ", result: "
+0x000118: invoke-virtual v8, v12, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00011e: invoke-virtual v8, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000124: const-string v12, ", span: "
+0x000128: invoke-virtual v8, v12, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00012e: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000134: move-result-wide v9
+0x000136: sub-long/2addr v9, v4
+0x000138: invoke-virtual v8, v9, v10, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+0x00013e: invoke-virtual v8, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000144: move-result-object v12
+0x000146: invoke-static v7, v12, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x00014c: if-eqz v6, +075h
+0x000150: invoke-virtual v0, v0, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000156: move-result v12
+0x000158: if-eqz v12, +00bh
+0x00015c: invoke-static v6, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+0x000162: move-result v12
+0x000164: invoke-static v12, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+0x00016a: move-result-object v6
+0x00016c: goto +44h
+0x00016e: const-class v12, Ljava/lang/Integer;
+0x000172: invoke-virtual v0, v12, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000178: move-result v12
+0x00017a: if-eqz v12, +00bh
+0x00017e: invoke-static v6, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+0x000184: move-result v12
+0x000186: invoke-static v12, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x00018c: move-result-object v6
+0x00018e: goto +33h
+0x000190: const-class v12, Ljava/lang/Long;
+0x000194: invoke-virtual v0, v12, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x00019a: move-result v12
+0x00019c: if-eqz v12, +00bh
+0x0001a0: invoke-static v6, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+0x0001a6: move-result-wide v4
+0x0001a8: invoke-static v4, v5, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+0x0001ae: move-result-object v6
+0x0001b0: goto +22h
+0x0001b2: const-class v12, Ljava/lang/Float;
+0x0001b6: invoke-virtual v0, v12, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x0001bc: move-result v12
+0x0001be: if-eqz v12, +00bh
+0x0001c2: invoke-static v6, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
+0x0001c8: move-result v12
+0x0001ca: invoke-static v12, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+0x0001d0: move-result-object v6
+0x0001d2: goto +11h
+0x0001d4: const-class v12, Ljava/lang/Double;
+0x0001d8: invoke-virtual v0, v12, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x0001de: move-result v12
+0x0001e0: if-eqz v12, +00ah
+0x0001e4: invoke-static v6, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
+0x0001ea: move-result-wide v4
+0x0001ec: invoke-static v4, v5, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+0x0001f2: move-result-object v6
+0x0001f4: check-cast v6, Ljava/lang/Boolean;
+0x0001f8: move-object v3, v6
+0x0001fa: goto +1eh
+0x0001fc: new-instance v0, Ljava/lang/StringBuilder;
+0x000200: invoke-direct v0, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000206: invoke-static v2, Lhn;->j(I)Ljava/lang/String;
+0x00020c: move-result-object v1
+0x00020e: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000214: const-string v1, " exception: "
+0x000218: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00021e: invoke-virtual v0, v12, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x000224: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00022a: move-result-object v12
+0x00022c: const/16 v0, 2002
+0x000230: invoke-static v11, v3, v0, v12, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$onError(Lcom/xiaomi/ai/vision/sdk/AiCore; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/String;)V
+0x000236: if-eqz v3, +006h
+0x00023a: invoke-virtual v3, Ljava/lang/Boolean;->booleanValue()Z
+0x000240: move-result v13
+0x000242: return v13
+
+METHOD connect(I)V flags=public final
+registers=9 inputs=2
+TRY bytes [0x4,0x44) -> [('Ljava/lang/Exception;', 226)]
+0x000000: const/16 v0, 1000
+0x000004: iget-object v1, v7, Lcom/xiaomi/ai/vision/sdk/AiCore;->context Landroid/content/Context;
+0x000008: new-instance v2, Landroid/content/Intent;
+0x00000c: const-string v3, "com.xiaomi.aiasst.vision.ACTION_TRANSLATE_SDK_SERVICE"
+0x000010: invoke-direct v2, v3, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+0x000016: const-string v3, "com.xiaomi.aiasst.vision"
+0x00001a: invoke-virtual v2, v3, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+0x000020: const-string v3, "from"
+0x000024: iget-object v4, v7, Lcom/xiaomi/ai/vision/sdk/AiCore;->context Landroid/content/Context;
+0x000028: invoke-virtual v4, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+0x00002e: move-result-object v4
+0x000030: invoke-virtual v2, v3, v4, Landroid/content/Intent;->putExtra(Ljava/lang/String; Ljava/lang/String;)Landroid/content/Intent;
+0x000036: iget-object v3, v7, Lcom/xiaomi/ai/vision/sdk/AiCore;->serviceConnection Lcom/xiaomi/ai/vision/sdk/AiCore$serviceConnection$1;
+0x00003a: const/4 v4, 1
+0x00003c: invoke-virtual v1, v2, v3, v4, Landroid/content/Context;->bindService(Landroid/content/Intent; Landroid/content/ServiceConnection; I)Z
+0x000042: move-result v1
+0x000044: if-nez v1, +02ch
+0x000048: const/4 v2, 3
+0x00004a: if-lt v8, v2, +00ch
+0x00004e: iget-object v7, v7, Lcom/xiaomi/ai/vision/sdk/AiCore;->coreCallback Lcom/xiaomi/ai/vision/sdk/callback/CoreCallback;
+0x000052: if-eqz v7, +025h
+0x000056: const-string v2, "connect ai asst vision service fail！"
+0x00005a: invoke-interface v7, v0, v2, Lcom/xiaomi/ai/vision/sdk/callback/CoreCallback;->onError(I Ljava/lang/String;)V
+0x000060: goto +1eh
+0x000062: iget-object v0, v7, Lcom/xiaomi/ai/vision/sdk/AiCore;->uiHandler Landroid/os/Handler;
+0x000066: new-instance v2, Lx6;
+0x00006a: const/4 v3, 0
+0x00006c: invoke-direct v2, v3, Lx6;-><init>(I)V
+0x000072: iput-object v7, v2, Lx6;->d Ljava/lang/Object;
+0x000076: iput v8, v2, Lx6;->c I
+0x00007a: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x000080: int-to-long v3, v8
+0x000082: const-wide/16 v5, 1000
+0x000086: mul-long/2addr v3, v5
+0x000088: const-wide/16 v5, 3000
+0x00008c: cmp-long v7, v3, v5
+0x000090: if-lez v7, +003h
+0x000094: move-wide v3, v5
+0x000096: invoke-virtual v0, v2, v3, v4, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable; J)Z
+0x00009c: new-instance v7, Ljava/lang/StringBuilder;
+0x0000a0: const-string v0, "bindService "
+0x0000a4: invoke-direct v7, v0, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x0000aa: if-eqz v1, +005h
+0x0000ae: const-string v0, "success"
+0x0000b2: goto +3h
+0x0000b4: const-string v0, "fail"
+0x0000b8: invoke-virtual v7, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000be: const-string v0, "!, retryCount: "
+0x0000c2: invoke-virtual v7, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000c8: invoke-virtual v7, v8, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+0x0000ce: invoke-virtual v7, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0000d4: move-result-object v7
+0x0000d6: const-string v8, "AiCore"
+0x0000da: invoke-static v8, v7, Landroid/util/Log;->d(Ljava/lang/String; Ljava/lang/String;)I
+0x0000e0: return-void 
+0x0000e2: move-exception v8
+0x0000e4: iget-object v7, v7, Lcom/xiaomi/ai/vision/sdk/AiCore;->coreCallback Lcom/xiaomi/ai/vision/sdk/callback/CoreCallback;
+0x0000e8: if-eqz v7, +018h
+0x0000ec: new-instance v1, Ljava/lang/StringBuilder;
+0x0000f0: const-string v2, "connect ai asst vision service exception: "
+0x0000f4: invoke-direct v1, v2, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x0000fa: invoke-virtual v1, v8, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x000100: const-string v8, " !"
+0x000104: invoke-virtual v1, v8, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00010a: invoke-virtual v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000110: move-result-object v8
+0x000112: invoke-interface v7, v0, v8, Lcom/xiaomi/ai/vision/sdk/callback/CoreCallback;->onError(I Ljava/lang/String;)V
+0x000118: return-void 
+
+METHOD getCoreCallback()Lcom/xiaomi/ai/vision/sdk/callback/CoreCallback; flags=public final
+registers=1 inputs=1
+0x000000: iget-object v0, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->coreCallback Lcom/xiaomi/ai/vision/sdk/callback/CoreCallback;
+0x000004: return-object v0
+
+METHOD isSupportOfflineRecognize()Z flags=public final
+registers=14 inputs=1
+TRY bytes [0x16,0x36) -> [('Ljava/lang/Exception;', 118)]
+TRY bytes [0x42,0x190) -> [('Ljava/lang/Exception;', 118)]
+0x000000: const-class v0, Ljava/lang/Boolean;
+0x000004: const-string v1, ", params: , result: "
+0x000008: const-string v2, "doFunc: "
+0x00000c: const-string v3, ""
+0x000010: const/4 v4, 0
+0x000012: const/4 v5, 1
+0x000014: const/4 v6, 0
+0x000016: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x00001c: move-result-wide v7
+0x00001e: invoke-static v13, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getService$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Lhw0;
+0x000024: move-result-object v9
+0x000026: if-eqz v9, +009h
+0x00002a: check-cast v9, Lfw0;
+0x00002e: invoke-virtual v9, v5, Lfw0;->r(I)Z
+0x000034: move-result v9
+0x000036: goto +2h
+0x000038: move v9, v4
+0x00003a: const-string v10, "AiCore"
+0x00003e: if-nez v9, +01fh
+0x000042: new-instance v0, Ljava/lang/StringBuilder;
+0x000046: invoke-direct v0, v2, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x00004c: invoke-static v5, Lhn;->j(I)Ljava/lang/String;
+0x000052: move-result-object v1
+0x000054: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00005a: const-string v1, ", func disabled !"
+0x00005e: invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000064: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00006a: move-result-object v0
+0x00006c: invoke-static v10, v0, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x000072: goto/16 +0aeh
+0x000076: move-exception v0
+0x000078: goto/16 +08eh
+0x00007c: invoke-static v13, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getService$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Lhw0;
+0x000082: move-result-object v9
+0x000084: if-eqz v9, +009h
+0x000088: check-cast v9, Lfw0;
+0x00008c: invoke-virtual v9, v5, v3, Lfw0;->q(I Ljava/lang/String;)Ljava/lang/String;
+0x000092: move-result-object v3
+0x000094: goto +2h
+0x000096: move-object v3, v6
+0x000098: new-instance v9, Ljava/lang/StringBuilder;
+0x00009c: invoke-direct v9, v2, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x0000a2: invoke-static v5, Lhn;->j(I)Ljava/lang/String;
+0x0000a8: move-result-object v11
+0x0000aa: invoke-virtual v9, v11, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000b0: invoke-virtual v9, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000b6: invoke-virtual v9, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000bc: const-string v1, ", span: "
+0x0000c0: invoke-virtual v9, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000c6: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x0000cc: move-result-wide v11
+0x0000ce: sub-long/2addr v11, v7
+0x0000d0: invoke-virtual v9, v11, v12, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+0x0000d6: invoke-virtual v9, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0000dc: move-result-object v1
+0x0000de: invoke-static v10, v1, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x0000e4: if-eqz v3, +075h
+0x0000e8: invoke-virtual v0, v0, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x0000ee: move-result v1
+0x0000f0: if-eqz v1, +00bh
+0x0000f4: invoke-static v3, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+0x0000fa: move-result v0
+0x0000fc: invoke-static v0, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+0x000102: move-result-object v3
+0x000104: goto +44h
+0x000106: const-class v1, Ljava/lang/Integer;
+0x00010a: invoke-virtual v0, v1, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000110: move-result v1
+0x000112: if-eqz v1, +00bh
+0x000116: invoke-static v3, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+0x00011c: move-result v0
+0x00011e: invoke-static v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x000124: move-result-object v3
+0x000126: goto +33h
+0x000128: const-class v1, Ljava/lang/Long;
+0x00012c: invoke-virtual v0, v1, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000132: move-result v1
+0x000134: if-eqz v1, +00bh
+0x000138: invoke-static v3, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+0x00013e: move-result-wide v0
+0x000140: invoke-static v0, v1, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+0x000146: move-result-object v3
+0x000148: goto +22h
+0x00014a: const-class v1, Ljava/lang/Float;
+0x00014e: invoke-virtual v0, v1, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000154: move-result v1
+0x000156: if-eqz v1, +00bh
+0x00015a: invoke-static v3, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
+0x000160: move-result v0
+0x000162: invoke-static v0, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+0x000168: move-result-object v3
+0x00016a: goto +11h
+0x00016c: const-class v1, Ljava/lang/Double;
+0x000170: invoke-virtual v0, v1, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000176: move-result v0
+0x000178: if-eqz v0, +00ah
+0x00017c: invoke-static v3, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
+0x000182: move-result-wide v0
+0x000184: invoke-static v0, v1, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+0x00018a: move-result-object v3
+0x00018c: check-cast v3, Ljava/lang/Boolean;
+0x000190: move-object v6, v3
+0x000192: goto +1eh
+0x000194: new-instance v1, Ljava/lang/StringBuilder;
+0x000198: invoke-direct v1, v2, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x00019e: invoke-static v5, Lhn;->j(I)Ljava/lang/String;
+0x0001a4: move-result-object v2
+0x0001a6: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0001ac: const-string v2, " exception: "
+0x0001b0: invoke-virtual v1, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0001b6: invoke-virtual v1, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x0001bc: invoke-virtual v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0001c2: move-result-object v0
+0x0001c4: const/16 v1, 2002
+0x0001c8: invoke-static v13, v6, v1, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$onError(Lcom/xiaomi/ai/vision/sdk/AiCore; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/String;)V
+0x0001ce: if-eqz v6, +006h
+0x0001d2: invoke-virtual v6, Ljava/lang/Boolean;->booleanValue()Z
+0x0001d8: move-result v4
+0x0001da: return v4
+
+METHOD monitorServerState(Landroid/os/IInterface; Z)V flags=public final
+registers=4 inputs=3
+TRY bytes [0x6,0x32) -> [('Ljava/lang/Exception;', 52)]
+0x000000: if-nez v2, +003h
+0x000004: goto +17h
+0x000006: invoke-interface v2, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
+0x00000c: move-result-object v2
+0x00000e: const/4 v0, 0
+0x000010: if-eqz v3, +00ah
+0x000014: if-eqz v2, +00fh
+0x000018: iget-object v1, v1, Lcom/xiaomi/ai/vision/sdk/AiCore;->deathRecipient Landroid/os/IBinder$DeathRecipient;
+0x00001c: invoke-interface v2, v1, v0, Landroid/os/IBinder;->linkToDeath(Landroid/os/IBinder$DeathRecipient; I)V
+0x000022: return-void 
+0x000024: if-eqz v2, +007h
+0x000028: iget-object v1, v1, Lcom/xiaomi/ai/vision/sdk/AiCore;->deathRecipient Landroid/os/IBinder$DeathRecipient;
+0x00002c: invoke-interface v2, v1, v0, Landroid/os/IBinder;->unlinkToDeath(Landroid/os/IBinder$DeathRecipient; I)Z
+0x000032: return-void 
+0x000034: move-exception v1
+0x000036: new-instance v2, Ljava/lang/StringBuilder;
+0x00003a: const-string v3, "monitorServerState, e: "
+0x00003e: invoke-direct v2, v3, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000044: invoke-virtual v2, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x00004a: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000050: move-result-object v1
+0x000052: const-string v2, "AiCore"
+0x000056: invoke-static v2, v1, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+0x00005c: return-void 
+
+METHOD postData([B Z Ljava/lang/String;)Z flags=public final
+registers=8 inputs=4
+TRY bytes [0x2a,0x62) -> [('catchall', 118)]
+0x000000: invoke-virtual v5, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000006: invoke-virtual v7, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00000c: iget-object v4, v4, Lcom/xiaomi/ai/vision/sdk/AiCore;->service Lhw0;
+0x000010: const/4 v0, 0
+0x000012: if-eqz v4, +03ah
+0x000016: check-cast v4, Lfw0;
+0x00001a: invoke-static Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+0x000020: move-result-object v1
+0x000022: invoke-static Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+0x000028: move-result-object v2
+0x00002a: const-string v3, "com.xiaomi.aiasst.vision.sdk.ITranslateSdkInterface"
+0x00002e: invoke-virtual v1, v3, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+0x000034: invoke-virtual v1, v5, Landroid/os/Parcel;->writeByteArray([B)V
+0x00003a: invoke-virtual v1, v6, Landroid/os/Parcel;->writeInt(I)V
+0x000040: invoke-virtual v1, v7, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+0x000046: iget-object v4, v4, Lfw0;->a Landroid/os/IBinder;
+0x00004a: const/16 v5, 11
+0x00004e: invoke-interface v4, v5, v1, v2, v0, Landroid/os/IBinder;->transact(I Landroid/os/Parcel; Landroid/os/Parcel; I)Z
+0x000054: invoke-virtual v2, Landroid/os/Parcel;->readException()V
+0x00005a: invoke-virtual v2, Landroid/os/Parcel;->readInt()I
+0x000060: move-result v4
+0x000062: if-eqz v4, +003h
+0x000066: const/4 v0, 1
+0x000068: invoke-virtual v2, Landroid/os/Parcel;->recycle()V
+0x00006e: invoke-virtual v1, Landroid/os/Parcel;->recycle()V
+0x000074: return v0
+0x000076: move-exception v4
+0x000078: invoke-virtual v2, Landroid/os/Parcel;->recycle()V
+0x00007e: invoke-virtual v1, Landroid/os/Parcel;->recycle()V
+0x000084: throw v4
+0x000086: return v0
+
+METHOD release(Ljava/lang/String;)V flags=public final
+registers=8 inputs=2
+TRY bytes [0x2e,0x4e) -> [('catchall', 92)]
+0x000000: invoke-virtual v7, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000006: iget-object v0, v6, Lcom/xiaomi/ai/vision/sdk/AiCore;->uiHandler Landroid/os/Handler;
+0x00000a: const/4 v1, 0
+0x00000c: invoke-virtual v0, v1, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
+0x000012: iget-object v0, v6, Lcom/xiaomi/ai/vision/sdk/AiCore;->service Lhw0;
+0x000016: if-eqz v0, +02bh
+0x00001a: check-cast v0, Lfw0;
+0x00001e: invoke-static Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+0x000024: move-result-object v2
+0x000026: invoke-static Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+0x00002c: move-result-object v3
+0x00002e: const-string v4, "com.xiaomi.aiasst.vision.sdk.ITranslateSdkInterface"
+0x000032: invoke-virtual v2, v4, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+0x000038: iget-object v0, v0, Lfw0;->a Landroid/os/IBinder;
+0x00003c: const/16 v4, 13
+0x000040: const/4 v5, 0
+0x000042: invoke-interface v0, v4, v2, v3, v5, Landroid/os/IBinder;->transact(I Landroid/os/Parcel; Landroid/os/Parcel; I)Z
+0x000048: invoke-virtual v3, Landroid/os/Parcel;->readException()V
+0x00004e: invoke-virtual v3, Landroid/os/Parcel;->recycle()V
+0x000054: invoke-virtual v2, Landroid/os/Parcel;->recycle()V
+0x00005a: goto +9h
+0x00005c: move-exception v6
+0x00005e: invoke-virtual v3, Landroid/os/Parcel;->recycle()V
+0x000064: invoke-virtual v2, Landroid/os/Parcel;->recycle()V
+0x00006a: throw v6
+0x00006c: iget-object v0, v6, Lcom/xiaomi/ai/vision/sdk/AiCore;->service Lhw0;
+0x000070: if-eqz v0, +007h
+0x000074: check-cast v0, Lfw0;
+0x000078: invoke-virtual v0, v1, Lfw0;->s(Lcom/xiaomi/ai/vision/sdk/AiCore$sdkCallback$1;)V
+0x00007e: invoke-direct v6, v7, Lcom/xiaomi/ai/vision/sdk/AiCore;->disconnect(Ljava/lang/String;)V
+0x000084: iput-object v1, v6, Lcom/xiaomi/ai/vision/sdk/AiCore;->mCtaCallback Lcom/xiaomi/ai/vision/sdk/callback/CtaCallback;
+0x000088: iget-object v7, v6, Lcom/xiaomi/ai/vision/sdk/AiCore;->mRecognizeCallbackMap Ljava/util/Map;
+0x00008c: invoke-interface v7, Ljava/util/Map;->clear()V
+0x000092: iget-object v7, v6, Lcom/xiaomi/ai/vision/sdk/AiCore;->mTtsCallbackMap Ljava/util/Map;
+0x000096: invoke-interface v7, Ljava/util/Map;->clear()V
+0x00009c: iget-object v7, v6, Lcom/xiaomi/ai/vision/sdk/AiCore;->mTextTranslateCallbackMap Ljava/util/Map;
+0x0000a0: invoke-interface v7, Ljava/util/Map;->clear()V
+0x0000a6: iget-object v7, v6, Lcom/xiaomi/ai/vision/sdk/AiCore;->mErrorCallbackMap Ljava/util/Map;
+0x0000aa: invoke-interface v7, Ljava/util/Map;->clear()V
+0x0000b0: iput-object v1, v6, Lcom/xiaomi/ai/vision/sdk/AiCore;->service Lhw0;
+0x0000b4: return-void 
+
+METHOD requestCtaAccredit(Lcom/xiaomi/ai/vision/sdk/callback/CtaCallback;)V flags=public final
+registers=7 inputs=2
+TRY bytes [0x22,0x46) -> [('catchall', 84)]
+0x000000: invoke-virtual v6, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000006: iget-object v0, v5, Lcom/xiaomi/ai/vision/sdk/AiCore;->service Lhw0;
+0x00000a: if-eqz v0, +02dh
+0x00000e: check-cast v0, Lfw0;
+0x000012: invoke-static Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+0x000018: move-result-object v1
+0x00001a: invoke-static Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+0x000020: move-result-object v2
+0x000022: const-string v3, "com.xiaomi.aiasst.vision.sdk.ITranslateSdkInterface"
+0x000026: invoke-virtual v1, v3, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+0x00002c: iget-object v0, v0, Lfw0;->a Landroid/os/IBinder;
+0x000030: const/4 v3, 7
+0x000032: const/4 v4, 0
+0x000034: invoke-interface v0, v3, v1, v2, v4, Landroid/os/IBinder;->transact(I Landroid/os/Parcel; Landroid/os/Parcel; I)Z
+0x00003a: invoke-virtual v2, Landroid/os/Parcel;->readException()V
+0x000040: invoke-virtual v2, Landroid/os/Parcel;->readInt()I
+0x000046: invoke-virtual v2, Landroid/os/Parcel;->recycle()V
+0x00004c: invoke-virtual v1, Landroid/os/Parcel;->recycle()V
+0x000052: goto +9h
+0x000054: move-exception v5
+0x000056: invoke-virtual v2, Landroid/os/Parcel;->recycle()V
+0x00005c: invoke-virtual v1, Landroid/os/Parcel;->recycle()V
+0x000062: throw v5
+0x000064: iput-object v6, v5, Lcom/xiaomi/ai/vision/sdk/AiCore;->mCtaCallback Lcom/xiaomi/ai/vision/sdk/callback/CtaCallback;
+0x000068: return-void 
+
+METHOD startDownloadModel(Z Ljava/lang/String; Ljava/lang/String; Lcom/xiaomi/ai/vision/sdk/callback/DownloadModelCallback; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback;)V flags=public final
+registers=22 inputs=6
+TRY bytes [0x36,0x46) -> [('Ljava/lang/Exception;', 72)]
+TRY bytes [0x96,0xb6) -> [('Ljava/lang/Exception;', 248)]
+TRY bytes [0xc2,0x226) -> [('Ljava/lang/Exception;', 248)]
+0x000000: move-object/from16 v1, v16
+0x000004: move-object/from16 v2, v18
+0x000008: move-object/from16 v3, v19
+0x00000c: move-object/from16 v4, v21
+0x000010: const-class v0, Ljava/lang/Boolean;
+0x000014: const-string v5, "doFunc: "
+0x000018: invoke-virtual v2, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00001e: invoke-virtual/range v20, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000024: const/4 v6, 1
+0x000026: and-int/2addr v6, v6
+0x000028: const-string v8, ""
+0x00002c: if-eqz v6, +004h
+0x000030: move-object v6, v8
+0x000032: goto +2h
+0x000034: const/4 v6, 0
+0x000036: new-instance v9, Lorg/json/JSONObject;
+0x00003a: if-nez v6, +003h
+0x00003e: move-object v6, v8
+0x000040: invoke-direct v9, v6, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+0x000046: goto +6h
+0x000048: new-instance v9, Lorg/json/JSONObject;
+0x00004c: invoke-direct v9, Lorg/json/JSONObject;-><init>()V
+0x000052: const-string v6, "srcLang"
+0x000056: invoke-virtual v9, v6, v2, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+0x00005c: if-nez v3, +003h
+0x000060: goto +2h
+0x000062: move-object v8, v3
+0x000064: const-string v6, "destLang"
+0x000068: invoke-virtual v9, v6, v8, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+0x00006e: const-string v6, "silentUpdate"
+0x000072: invoke-static/range v17, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+0x000078: move-result-object v8
+0x00007a: invoke-virtual v9, v6, v8, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
+0x000080: invoke-virtual v9, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+0x000086: move-result-object v6
+0x000088: invoke-virtual v6, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00008e: const/16 v8, 2002
+0x000092: const/4 v9, 0
+0x000094: const/4 v10, 3
+0x000096: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x00009c: move-result-wide v11
+0x00009e: invoke-static v1, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getService$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Lhw0;
+0x0000a4: move-result-object v13
+0x0000a6: if-eqz v13, +009h
+0x0000aa: check-cast v13, Lfw0;
+0x0000ae: invoke-virtual v13, v10, Lfw0;->r(I)Z
+0x0000b4: move-result v13
+0x0000b6: goto +2h
+0x0000b8: move v13, v9
+0x0000ba: const-string v14, "AiCore"
+0x0000be: if-nez v13, +020h
+0x0000c2: new-instance v0, Ljava/lang/StringBuilder;
+0x0000c6: invoke-direct v0, v5, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x0000cc: invoke-static v10, Lhn;->j(I)Ljava/lang/String;
+0x0000d2: move-result-object v6
+0x0000d4: invoke-virtual v0, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000da: const-string v6, ", func disabled !"
+0x0000de: invoke-virtual v0, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000e4: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0000ea: move-result-object v0
+0x0000ec: invoke-static v14, v0, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x0000f2: const/4 v7, 0
+0x0000f4: goto/16 +0b8h
+0x0000f8: move-exception v0
+0x0000fa: goto/16 +098h
+0x0000fe: invoke-static v1, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getService$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Lhw0;
+0x000104: move-result-object v13
+0x000106: if-eqz v13, +009h
+0x00010a: check-cast v13, Lfw0;
+0x00010e: invoke-virtual v13, v10, v6, Lfw0;->q(I Ljava/lang/String;)Ljava/lang/String;
+0x000114: move-result-object v13
+0x000116: goto +2h
+0x000118: const/4 v13, 0
+0x00011a: new-instance v15, Ljava/lang/StringBuilder;
+0x00011e: invoke-direct v15, v5, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000124: invoke-static v10, Lhn;->j(I)Ljava/lang/String;
+0x00012a: move-result-object v7
+0x00012c: invoke-virtual v15, v7, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000132: const-string v7, ", params: "
+0x000136: invoke-virtual v15, v7, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00013c: invoke-virtual v15, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000142: const-string v6, ", result: "
+0x000146: invoke-virtual v15, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00014c: invoke-virtual v15, v13, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000152: const-string v6, ", span: "
+0x000156: invoke-virtual v15, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00015c: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000162: move-result-wide v6
+0x000164: sub-long/2addr v6, v11
+0x000166: invoke-virtual v15, v6, v7, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+0x00016c: invoke-virtual v15, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000172: move-result-object v6
+0x000174: invoke-static v14, v6, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x00017a: if-eqz v13, -044h
+0x00017e: invoke-virtual v0, v0, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000184: move-result v6
+0x000186: if-eqz v6, +00bh
+0x00018a: invoke-static v13, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+0x000190: move-result v0
+0x000192: invoke-static v0, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+0x000198: move-result-object v13
+0x00019a: goto +44h
+0x00019c: const-class v6, Ljava/lang/Integer;
+0x0001a0: invoke-virtual v0, v6, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x0001a6: move-result v6
+0x0001a8: if-eqz v6, +00bh
+0x0001ac: invoke-static v13, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+0x0001b2: move-result v0
+0x0001b4: invoke-static v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x0001ba: move-result-object v13
+0x0001bc: goto +33h
+0x0001be: const-class v6, Ljava/lang/Long;
+0x0001c2: invoke-virtual v0, v6, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x0001c8: move-result v6
+0x0001ca: if-eqz v6, +00bh
+0x0001ce: invoke-static v13, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+0x0001d4: move-result-wide v6
+0x0001d6: invoke-static v6, v7, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+0x0001dc: move-result-object v13
+0x0001de: goto +22h
+0x0001e0: const-class v6, Ljava/lang/Float;
+0x0001e4: invoke-virtual v0, v6, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x0001ea: move-result v6
+0x0001ec: if-eqz v6, +00bh
+0x0001f0: invoke-static v13, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
+0x0001f6: move-result v0
+0x0001f8: invoke-static v0, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+0x0001fe: move-result-object v13
+0x000200: goto +11h
+0x000202: const-class v6, Ljava/lang/Double;
+0x000206: invoke-virtual v0, v6, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x00020c: move-result v0
+0x00020e: if-eqz v0, +00ah
+0x000212: invoke-static v13, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
+0x000218: move-result-wide v6
+0x00021a: invoke-static v6, v7, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+0x000220: move-result-object v13
+0x000222: check-cast v13, Ljava/lang/Boolean;
+0x000226: move-object v7, v13
+0x000228: goto +1eh
+0x00022a: new-instance v6, Ljava/lang/StringBuilder;
+0x00022e: invoke-direct v6, v5, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000234: invoke-static v10, Lhn;->j(I)Ljava/lang/String;
+0x00023a: move-result-object v5
+0x00023c: invoke-virtual v6, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000242: const-string v5, " exception: "
+0x000246: invoke-virtual v6, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00024c: invoke-virtual v6, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x000252: invoke-virtual v6, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000258: move-result-object v0
+0x00025a: invoke-static v1, v4, v8, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$onError(Lcom/xiaomi/ai/vision/sdk/AiCore; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/String;)V
+0x000260: goto/16 -0b7h
+0x000264: if-eqz v7, +006h
+0x000268: invoke-virtual v7, Ljava/lang/Boolean;->booleanValue()Z
+0x00026e: move-result v9
+0x000270: if-nez v9, +026h
+0x000274: new-instance v0, Ljava/lang/StringBuilder;
+0x000278: const-string v5, "startDownloadModel fail, silentUpdate: "
+0x00027c: invoke-direct v0, v5, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000282: move/from16 v5, v17
+0x000286: invoke-virtual v0, v5, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+0x00028c: const-string v5, ", srcLang: "
+0x000290: invoke-virtual v0, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000296: invoke-virtual v0, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00029c: const-string v2, ", destLang: "
+0x0002a0: invoke-virtual v0, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0002a6: invoke-virtual v0, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0002ac: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0002b2: move-result-object v0
+0x0002b4: invoke-direct v1, v4, v8, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->onError(Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/String;)V
+0x0002ba: return-void 
+0x0002bc: if-eqz v3, +01eh
+0x0002c0: invoke-virtual v3, Ljava/lang/String;->length()I
+0x0002c6: move-result v0
+0x0002c8: if-nez v0, +003h
+0x0002cc: goto +16h
+0x0002ce: new-instance v0, Ljava/lang/StringBuilder;
+0x0002d2: invoke-direct v0, Ljava/lang/StringBuilder;-><init>()V
+0x0002d8: invoke-virtual v0, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0002de: const/16 v2, 44
+0x0002e2: invoke-virtual v0, v2, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+0x0002e8: invoke-virtual v0, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0002ee: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0002f4: move-result-object v0
+0x0002f6: goto +2h
+0x0002f8: move-object v0, v2
+0x0002fa: iget-object v2, v1, Lcom/xiaomi/ai/vision/sdk/AiCore;->mDownloadModelCallbackMap Ljava/util/Map;
+0x0002fe: invoke-interface v2, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+0x000304: move-result-object v2
+0x000306: check-cast v2, Ljava/util/List;
+0x00030a: if-nez v2, +00ch
+0x00030e: new-instance v2, Ljava/util/ArrayList;
+0x000312: invoke-direct v2, Ljava/util/ArrayList;-><init>()V
+0x000318: iget-object v3, v1, Lcom/xiaomi/ai/vision/sdk/AiCore;->mDownloadModelCallbackMap Ljava/util/Map;
+0x00031c: invoke-interface v3, v0, v2, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x000322: move-object/from16 v3, v20
+0x000326: invoke-interface v2, v3, Ljava/util/List;->add(Ljava/lang/Object;)Z
+0x00032c: if-eqz v4, +04ah
+0x000330: const-class v2, Lcom/xiaomi/ai/vision/sdk/callback/TtsCallback;
+0x000334: const-class v3, Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback;
+0x000338: invoke-virtual v3, v2, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x00033e: move-result v2
+0x000340: if-eqz v2, +00dh
+0x000344: invoke-static v1, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMTtsCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x00034a: move-result-object v1
+0x00034c: move-object v2, v4
+0x00034e: check-cast v2, Lcom/xiaomi/ai/vision/sdk/callback/TtsCallback;
+0x000352: invoke-interface v1, v0, v2, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x000358: goto +34h
+0x00035a: const-class v2, Lcom/xiaomi/ai/vision/sdk/callback/SpeechRecognizeCallback;
+0x00035e: invoke-virtual v3, v2, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000364: move-result v2
+0x000366: if-eqz v2, +00dh
+0x00036a: invoke-static v1, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMRecognizeCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x000370: move-result-object v1
+0x000372: move-object v2, v4
+0x000374: check-cast v2, Lcom/xiaomi/ai/vision/sdk/callback/SpeechRecognizeCallback;
+0x000378: invoke-interface v1, v0, v2, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x00037e: goto +21h
+0x000380: const-class v2, Lcom/xiaomi/ai/vision/sdk/callback/TextTranslateCallback;
+0x000384: invoke-virtual v3, v2, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x00038a: move-result v2
+0x00038c: if-eqz v2, +00dh
+0x000390: invoke-static v1, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMTextTranslateCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x000396: move-result-object v1
+0x000398: move-object v2, v4
+0x00039a: check-cast v2, Lcom/xiaomi/ai/vision/sdk/callback/TextTranslateCallback;
+0x00039e: invoke-interface v1, v0, v2, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x0003a4: goto +eh
+0x0003a6: invoke-virtual v3, v3, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x0003ac: move-result v2
+0x0003ae: if-eqz v2, +009h
+0x0003b2: invoke-static v1, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMErrorCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x0003b8: move-result-object v1
+0x0003ba: invoke-interface v1, v0, v4, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x0003c0: return-void 
+
+METHOD startRecognize(I I I I Ljava/lang/String; Ljava/lang/String; Z Z Lcom/xiaomi/ai/vision/sdk/callback/SpeechRecognizeCallback; Lcom/xiaomi/ai/vision/sdk/callback/TtsCallback; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback;)V flags=public final
+registers=26 inputs=12
+TRY bytes [0x4a,0x78) -> [('Ljava/lang/Exception;', 652)]
+0x000000: move/from16 v4, v18
+0x000004: move-object/from16 v10, v23
+0x000008: move-object/from16 v11, v24
+0x00000c: move-object/from16 v12, v25
+0x000010: invoke-virtual/range v19, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000016: invoke-virtual v10, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00001c: if-nez v16, +00eh
+0x000020: if-ltz v4, +006h
+0x000024: const/4 v0, 2
+0x000026: if-ge v4, v0, +003h
+0x00002a: goto +7h
+0x00002c: const-string v14, "channel must be 0 or 1."
+0x000030: invoke-static v14, Lcw1;->f(Ljava/lang/String;)V
+0x000036: return-void 
+0x000038: if-eqz v11, +005h
+0x00003c: const/4 v0, 1
+0x00003e: move v7, v0
+0x000040: goto +3h
+0x000042: const/4 v0, 0
+0x000044: goto -3h
+0x000046: const/16 v13, 2002
+0x00004a: iget-object v0, v14, Lcom/xiaomi/ai/vision/sdk/AiCore;->service Lhw0;
+0x00004e: if-eqz v0, +016h
+0x000052: check-cast v0, Lfw0;
+0x000056: move v1, v15
+0x000058: move/from16 v2, v16
+0x00005c: move/from16 v3, v17
+0x000060: move-object/from16 v5, v19
+0x000064: move-object/from16 v6, v20
+0x000068: move/from16 v8, v21
+0x00006c: move/from16 v9, v22
+0x000070: invoke-virtual/range v0 ... v9, Lfw0;->t(I I I I Ljava/lang/String; Ljava/lang/String; Z Z Z)Ljava/lang/String;
+0x000076: move-result-object v0
+0x000078: goto +2h
+0x00007a: const/4 v0, 0
+0x00007c: if-eqz v0, +102h
+0x000080: invoke-virtual v0, Ljava/lang/String;->length()I
+0x000086: move-result v1
+0x000088: if-nez v1, +004h
+0x00008c: goto/16 +0fah
+0x000090: const-class v1, Lcom/xiaomi/ai/vision/sdk/callback/SpeechRecognizeCallback;
+0x000094: const-class v2, Lcom/xiaomi/ai/vision/sdk/callback/TtsCallback;
+0x000098: invoke-virtual v1, v2, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x00009e: move-result v3
+0x0000a0: const-class v4, Lcom/xiaomi/ai/vision/sdk/callback/TextTranslateCallback;
+0x0000a4: const-class v5, Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback;
+0x0000a8: if-eqz v3, +00dh
+0x0000ac: invoke-static v14, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMTtsCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x0000b2: move-result-object v3
+0x0000b4: move-object v6, v10
+0x0000b6: check-cast v6, Lcom/xiaomi/ai/vision/sdk/callback/TtsCallback;
+0x0000ba: invoke-interface v3, v0, v6, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x0000c0: goto +30h
+0x0000c2: invoke-virtual v1, v1, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x0000c8: move-result v3
+0x0000ca: if-eqz v3, +00ah
+0x0000ce: invoke-static v14, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMRecognizeCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x0000d4: move-result-object v3
+0x0000d6: invoke-interface v3, v0, v10, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x0000dc: goto +22h
+0x0000de: invoke-virtual v1, v4, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x0000e4: move-result v3
+0x0000e6: if-eqz v3, +00dh
+0x0000ea: invoke-static v14, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMTextTranslateCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x0000f0: move-result-object v3
+0x0000f2: move-object v6, v10
+0x0000f4: check-cast v6, Lcom/xiaomi/ai/vision/sdk/callback/TextTranslateCallback;
+0x0000f8: invoke-interface v3, v0, v6, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x0000fe: goto +11h
+0x000100: invoke-virtual v1, v5, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000106: move-result v3
+0x000108: if-eqz v3, +00ch
+0x00010c: invoke-static v14, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMErrorCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x000112: move-result-object v3
+0x000114: move-object v6, v10
+0x000116: check-cast v6, Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback;
+0x00011a: invoke-interface v3, v0, v6, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x000120: if-eqz v7, +06ah
+0x000124: invoke-virtual v2, v2, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x00012a: move-result v3
+0x00012c: if-eqz v3, +014h
+0x000130: if-eqz v11, +00ah
+0x000134: invoke-static v14, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMTtsCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x00013a: move-result-object v3
+0x00013c: invoke-interface v3, v0, v11, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x000142: goto +59h
+0x000144: invoke-static v14, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMTtsCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x00014a: move-result-object v3
+0x00014c: invoke-interface v3, v0, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+0x000152: goto +51h
+0x000154: invoke-virtual v2, v1, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x00015a: move-result v3
+0x00015c: if-eqz v3, +017h
+0x000160: if-eqz v11, +00dh
+0x000164: invoke-static v14, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMRecognizeCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x00016a: move-result-object v3
+0x00016c: move-object v6, v11
+0x00016e: check-cast v6, Lcom/xiaomi/ai/vision/sdk/callback/SpeechRecognizeCallback;
+0x000172: invoke-interface v3, v0, v6, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x000178: goto +3eh
+0x00017a: invoke-static v14, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMRecognizeCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x000180: move-result-object v3
+0x000182: invoke-interface v3, v0, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+0x000188: goto +36h
+0x00018a: invoke-virtual v2, v4, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000190: move-result v3
+0x000192: if-eqz v3, +017h
+0x000196: if-eqz v11, +00dh
+0x00019a: invoke-static v14, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMTextTranslateCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x0001a0: move-result-object v3
+0x0001a2: move-object v6, v11
+0x0001a4: check-cast v6, Lcom/xiaomi/ai/vision/sdk/callback/TextTranslateCallback;
+0x0001a8: invoke-interface v3, v0, v6, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x0001ae: goto +23h
+0x0001b0: invoke-static v14, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMTextTranslateCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x0001b6: move-result-object v3
+0x0001b8: invoke-interface v3, v0, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+0x0001be: goto +1bh
+0x0001c0: invoke-virtual v2, v5, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x0001c6: move-result v3
+0x0001c8: if-eqz v3, +016h
+0x0001cc: if-eqz v11, +00dh
+0x0001d0: invoke-static v14, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMErrorCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x0001d6: move-result-object v3
+0x0001d8: move-object v6, v11
+0x0001da: check-cast v6, Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback;
+0x0001de: invoke-interface v3, v0, v6, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x0001e4: goto +8h
+0x0001e6: invoke-static v14, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMErrorCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x0001ec: move-result-object v3
+0x0001ee: invoke-interface v3, v0, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+0x0001f4: if-eqz v12, +042h
+0x0001f8: invoke-virtual v5, v2, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x0001fe: move-result v2
+0x000200: if-eqz v2, +00dh
+0x000204: invoke-static v14, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMTtsCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x00020a: move-result-object v14
+0x00020c: move-object v1, v12
+0x00020e: check-cast v1, Lcom/xiaomi/ai/vision/sdk/callback/TtsCallback;
+0x000212: invoke-interface v14, v0, v1, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x000218: goto +30h
+0x00021a: invoke-virtual v5, v1, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000220: move-result v1
+0x000222: if-eqz v1, +00dh
+0x000226: invoke-static v14, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMRecognizeCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x00022c: move-result-object v14
+0x00022e: move-object v1, v12
+0x000230: check-cast v1, Lcom/xiaomi/ai/vision/sdk/callback/SpeechRecognizeCallback;
+0x000234: invoke-interface v14, v0, v1, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x00023a: goto +1fh
+0x00023c: invoke-virtual v5, v4, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000242: move-result v1
+0x000244: if-eqz v1, +00dh
+0x000248: invoke-static v14, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMTextTranslateCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x00024e: move-result-object v14
+0x000250: move-object v1, v12
+0x000252: check-cast v1, Lcom/xiaomi/ai/vision/sdk/callback/TextTranslateCallback;
+0x000256: invoke-interface v14, v0, v1, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x00025c: goto +eh
+0x00025e: invoke-virtual v5, v5, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000264: move-result v1
+0x000266: if-eqz v1, +009h
+0x00026a: invoke-static v14, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMErrorCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x000270: move-result-object v14
+0x000272: invoke-interface v14, v0, v12, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x000278: invoke-interface v10, v0, Lcom/xiaomi/ai/vision/sdk/callback/SpeechRecognizeCallback;->onRecognizeStart(Ljava/lang/String;)V
+0x00027e: return-void 
+0x000280: const-string v0, "start recognize fail, dialogId is empty"
+0x000284: invoke-direct v14, v12, v13, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->onError(Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/String;)V
+0x00028a: return-void 
+0x00028c: move-exception v0
+0x00028e: new-instance v1, Ljava/lang/StringBuilder;
+0x000292: const-string v2, "start recognize exception: "
+0x000296: invoke-direct v1, v2, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x00029c: invoke-virtual v1, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x0002a2: invoke-virtual v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x0002a8: move-result-object v0
+0x0002aa: invoke-direct v14, v12, v13, v0, Lcom/xiaomi/ai/vision/sdk/AiCore;->onError(Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/String;)V
+0x0002b0: return-void 
+
+METHOD startTextTranslate(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Lcom/xiaomi/ai/vision/sdk/callback/TextTranslateCallback; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback;)V flags=public final
+registers=9 inputs=7
+TRY bytes [0x1c,0x30) -> [('Ljava/lang/Exception;', 350)]
+0x000000: invoke-virtual v4, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000006: invoke-virtual v5, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00000c: invoke-virtual v6, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000012: invoke-virtual v7, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000018: const/16 v0, 2002
+0x00001c: iget-object v1, v2, Lcom/xiaomi/ai/vision/sdk/AiCore;->service Lhw0;
+0x000020: if-eqz v1, +009h
+0x000024: check-cast v1, Lfw0;
+0x000028: invoke-virtual v1, v3, v4, v5, v6, Lfw0;->u(I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+0x00002e: move-result-object v3
+0x000030: goto +2h
+0x000032: const/4 v3, 0
+0x000034: if-eqz v3, +08fh
+0x000038: invoke-virtual v3, Ljava/lang/String;->length()I
+0x00003e: move-result v4
+0x000040: if-nez v4, +004h
+0x000044: goto/16 +087h
+0x000048: const-class v4, Lcom/xiaomi/ai/vision/sdk/callback/TextTranslateCallback;
+0x00004c: const-class v5, Lcom/xiaomi/ai/vision/sdk/callback/TtsCallback;
+0x000050: invoke-virtual v4, v5, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000056: move-result v6
+0x000058: const-class v0, Lcom/xiaomi/ai/vision/sdk/callback/SpeechRecognizeCallback;
+0x00005c: const-class v1, Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback;
+0x000060: if-eqz v6, +00ch
+0x000064: invoke-static v2, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMTtsCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x00006a: move-result-object v6
+0x00006c: check-cast v7, Lcom/xiaomi/ai/vision/sdk/callback/TtsCallback;
+0x000070: invoke-interface v6, v3, v7, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x000076: goto +2eh
+0x000078: invoke-virtual v4, v0, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x00007e: move-result v6
+0x000080: if-eqz v6, +00ch
+0x000084: invoke-static v2, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMRecognizeCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x00008a: move-result-object v6
+0x00008c: check-cast v7, Lcom/xiaomi/ai/vision/sdk/callback/SpeechRecognizeCallback;
+0x000090: invoke-interface v6, v3, v7, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x000096: goto +1eh
+0x000098: invoke-virtual v4, v4, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x00009e: move-result v6
+0x0000a0: if-eqz v6, +00ah
+0x0000a4: invoke-static v2, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMTextTranslateCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x0000aa: move-result-object v6
+0x0000ac: invoke-interface v6, v3, v7, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x0000b2: goto +10h
+0x0000b4: invoke-virtual v4, v1, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x0000ba: move-result v6
+0x0000bc: if-eqz v6, +00bh
+0x0000c0: invoke-static v2, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMErrorCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x0000c6: move-result-object v6
+0x0000c8: check-cast v7, Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback;
+0x0000cc: invoke-interface v6, v3, v7, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x0000d2: if-eqz v8, +03fh
+0x0000d6: invoke-virtual v1, v5, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x0000dc: move-result v5
+0x0000de: if-eqz v5, +00ch
+0x0000e2: invoke-static v2, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMTtsCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x0000e8: move-result-object v2
+0x0000ea: check-cast v8, Lcom/xiaomi/ai/vision/sdk/callback/TtsCallback;
+0x0000ee: invoke-interface v2, v3, v8, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x0000f4: return-void 
+0x0000f6: invoke-virtual v1, v0, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x0000fc: move-result v5
+0x0000fe: if-eqz v5, +00ch
+0x000102: invoke-static v2, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMRecognizeCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x000108: move-result-object v2
+0x00010a: check-cast v8, Lcom/xiaomi/ai/vision/sdk/callback/SpeechRecognizeCallback;
+0x00010e: invoke-interface v2, v3, v8, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x000114: return-void 
+0x000116: invoke-virtual v1, v4, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x00011c: move-result v4
+0x00011e: if-eqz v4, +00ch
+0x000122: invoke-static v2, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMTextTranslateCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x000128: move-result-object v2
+0x00012a: check-cast v8, Lcom/xiaomi/ai/vision/sdk/callback/TextTranslateCallback;
+0x00012e: invoke-interface v2, v3, v8, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x000134: return-void 
+0x000136: invoke-virtual v1, v1, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x00013c: move-result v4
+0x00013e: if-eqz v4, +009h
+0x000142: invoke-static v2, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMErrorCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x000148: move-result-object v2
+0x00014a: invoke-interface v2, v3, v8, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x000150: return-void 
+0x000152: const-string v3, "start text translate fail, dialogId is empty"
+0x000156: invoke-direct v2, v8, v0, v3, Lcom/xiaomi/ai/vision/sdk/AiCore;->onError(Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/String;)V
+0x00015c: return-void 
+0x00015e: move-exception v3
+0x000160: new-instance v4, Ljava/lang/StringBuilder;
+0x000164: const-string v5, "start text translate exception: "
+0x000168: invoke-direct v4, v5, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x00016e: invoke-virtual v4, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x000174: invoke-virtual v4, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00017a: move-result-object v3
+0x00017c: invoke-direct v2, v8, v0, v3, Lcom/xiaomi/ai/vision/sdk/AiCore;->onError(Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/String;)V
+0x000182: return-void 
+
+METHOD startTts(I Ljava/lang/String; Ljava/lang/String; Lcom/xiaomi/ai/vision/sdk/callback/TtsCallback; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback;)V flags=public final
+registers=9 inputs=6
+TRY bytes [0x16,0x2a) -> [('Ljava/lang/Exception;', 344)]
+0x000000: invoke-virtual v5, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000006: invoke-virtual v6, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00000c: invoke-virtual v7, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000012: const/16 v0, 2002
+0x000016: iget-object v1, v3, Lcom/xiaomi/ai/vision/sdk/AiCore;->service Lhw0;
+0x00001a: if-eqz v1, +009h
+0x00001e: check-cast v1, Lfw0;
+0x000022: invoke-virtual v1, v4, v5, v6, Lfw0;->v(I Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+0x000028: move-result-object v4
+0x00002a: goto +2h
+0x00002c: const/4 v4, 0
+0x00002e: if-eqz v4, +08fh
+0x000032: invoke-virtual v4, Ljava/lang/String;->length()I
+0x000038: move-result v5
+0x00003a: if-nez v5, +004h
+0x00003e: goto/16 +087h
+0x000042: const-class v5, Lcom/xiaomi/ai/vision/sdk/callback/TtsCallback;
+0x000046: invoke-virtual v5, v5, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x00004c: move-result v6
+0x00004e: const-class v0, Lcom/xiaomi/ai/vision/sdk/callback/TextTranslateCallback;
+0x000052: const-class v1, Lcom/xiaomi/ai/vision/sdk/callback/SpeechRecognizeCallback;
+0x000056: const-class v2, Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback;
+0x00005a: if-eqz v6, +00ah
+0x00005e: invoke-static v3, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMTtsCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x000064: move-result-object v6
+0x000066: invoke-interface v6, v4, v7, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x00006c: goto +30h
+0x00006e: invoke-virtual v5, v1, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000074: move-result v6
+0x000076: if-eqz v6, +00ch
+0x00007a: invoke-static v3, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMRecognizeCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x000080: move-result-object v6
+0x000082: check-cast v7, Lcom/xiaomi/ai/vision/sdk/callback/SpeechRecognizeCallback;
+0x000086: invoke-interface v6, v4, v7, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x00008c: goto +20h
+0x00008e: invoke-virtual v5, v0, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000094: move-result v6
+0x000096: if-eqz v6, +00ch
+0x00009a: invoke-static v3, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMTextTranslateCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x0000a0: move-result-object v6
+0x0000a2: check-cast v7, Lcom/xiaomi/ai/vision/sdk/callback/TextTranslateCallback;
+0x0000a6: invoke-interface v6, v4, v7, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x0000ac: goto +10h
+0x0000ae: invoke-virtual v5, v2, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x0000b4: move-result v6
+0x0000b6: if-eqz v6, +00bh
+0x0000ba: invoke-static v3, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMErrorCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x0000c0: move-result-object v6
+0x0000c2: check-cast v7, Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback;
+0x0000c6: invoke-interface v6, v4, v7, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x0000cc: if-eqz v8, +03fh
+0x0000d0: invoke-virtual v2, v5, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x0000d6: move-result v5
+0x0000d8: if-eqz v5, +00ch
+0x0000dc: invoke-static v3, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMTtsCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x0000e2: move-result-object v3
+0x0000e4: check-cast v8, Lcom/xiaomi/ai/vision/sdk/callback/TtsCallback;
+0x0000e8: invoke-interface v3, v4, v8, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x0000ee: return-void 
+0x0000f0: invoke-virtual v2, v1, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x0000f6: move-result v5
+0x0000f8: if-eqz v5, +00ch
+0x0000fc: invoke-static v3, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMRecognizeCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x000102: move-result-object v3
+0x000104: check-cast v8, Lcom/xiaomi/ai/vision/sdk/callback/SpeechRecognizeCallback;
+0x000108: invoke-interface v3, v4, v8, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x00010e: return-void 
+0x000110: invoke-virtual v2, v0, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000116: move-result v5
+0x000118: if-eqz v5, +00ch
+0x00011c: invoke-static v3, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMTextTranslateCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x000122: move-result-object v3
+0x000124: check-cast v8, Lcom/xiaomi/ai/vision/sdk/callback/TextTranslateCallback;
+0x000128: invoke-interface v3, v4, v8, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x00012e: return-void 
+0x000130: invoke-virtual v2, v2, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000136: move-result v5
+0x000138: if-eqz v5, +009h
+0x00013c: invoke-static v3, Lcom/xiaomi/ai/vision/sdk/AiCore;->access$getMErrorCallbackMap$p(Lcom/xiaomi/ai/vision/sdk/AiCore;)Ljava/util/Map;
+0x000142: move-result-object v3
+0x000144: invoke-interface v3, v4, v8, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x00014a: return-void 
+0x00014c: const-string v4, "start tts fail, dialogId is empty"
+0x000150: invoke-direct v3, v8, v0, v4, Lcom/xiaomi/ai/vision/sdk/AiCore;->onError(Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/String;)V
+0x000156: return-void 
+0x000158: move-exception v4
+0x00015a: new-instance v5, Ljava/lang/StringBuilder;
+0x00015e: const-string v6, "start tts exception: "
+0x000162: invoke-direct v5, v6, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000168: invoke-virtual v5, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x00016e: invoke-virtual v5, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000174: move-result-object v4
+0x000176: invoke-direct v3, v8, v0, v4, Lcom/xiaomi/ai/vision/sdk/AiCore;->onError(Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/String;)V
+0x00017c: return-void 
+
+METHOD stopRecognize(Ljava/lang/String;)V flags=public final
+registers=5 inputs=2
+TRY bytes [0x22,0x48) -> [('catchall', 86)]
+0x000000: invoke-virtual v4, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000006: iget-object v3, v3, Lcom/xiaomi/ai/vision/sdk/AiCore;->service Lhw0;
+0x00000a: if-eqz v3, +02eh
+0x00000e: check-cast v3, Lfw0;
+0x000012: invoke-static Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+0x000018: move-result-object v0
+0x00001a: invoke-static Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+0x000020: move-result-object v1
+0x000022: const-string v2, "com.xiaomi.aiasst.vision.sdk.ITranslateSdkInterface"
+0x000026: invoke-virtual v0, v2, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+0x00002c: invoke-virtual v0, v4, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+0x000032: iget-object v3, v3, Lfw0;->a Landroid/os/IBinder;
+0x000036: const/16 v4, 12
+0x00003a: const/4 v2, 0
+0x00003c: invoke-interface v3, v4, v0, v1, v2, Landroid/os/IBinder;->transact(I Landroid/os/Parcel; Landroid/os/Parcel; I)Z
+0x000042: invoke-virtual v1, Landroid/os/Parcel;->readException()V
+0x000048: invoke-virtual v1, Landroid/os/Parcel;->recycle()V
+0x00004e: invoke-virtual v0, Landroid/os/Parcel;->recycle()V
+0x000054: return-void 
+0x000056: move-exception v3
+0x000058: invoke-virtual v1, Landroid/os/Parcel;->recycle()V
+0x00005e: invoke-virtual v0, Landroid/os/Parcel;->recycle()V
+0x000064: throw v3
+0x000066: return-void 
+
+CLASS classes.dex Luj;
+FIELD a Landroid/media/AudioFormat; = None
+FIELD b I = None
+
+METHOD <clinit>()V flags=static constructor
+registers=4 inputs=0
+0x000000: new-instance v0, Landroid/media/AudioFormat$Builder;
+0x000004: invoke-direct v0, Landroid/media/AudioFormat$Builder;-><init>()V
+0x00000a: const/16 v1, 16000
+0x00000e: invoke-virtual v0, v1, Landroid/media/AudioFormat$Builder;->setSampleRate(I)Landroid/media/AudioFormat$Builder;
+0x000014: move-result-object v0
+0x000016: const/4 v2, 2
+0x000018: invoke-virtual v0, v2, Landroid/media/AudioFormat$Builder;->setEncoding(I)Landroid/media/AudioFormat$Builder;
+0x00001e: move-result-object v0
+0x000020: const/16 v3, 16
+0x000024: invoke-virtual v0, v3, Landroid/media/AudioFormat$Builder;->setChannelMask(I)Landroid/media/AudioFormat$Builder;
+0x00002a: move-result-object v0
+0x00002c: invoke-virtual v0, Landroid/media/AudioFormat$Builder;->build()Landroid/media/AudioFormat;
+0x000032: move-result-object v0
+0x000034: sput-object v0, Luj;->a Landroid/media/AudioFormat;
+0x000038: invoke-static v1, v3, v2, Landroid/media/AudioRecord;->getMinBufferSize(I I I)I
+0x00003e: move-result v0
+0x000040: sput v0, Luj;->b I
+0x000044: return-void 
+
+METHOD a(Lpi;)V flags=public abstract
+
+METHOD stop()V flags=public abstract
+
+CLASS classes.dex Les;
+FIELD c Landroid/media/AudioRecord; = None
+
+METHOD b()Landroid/media/AudioRecord; flags=public static
+registers=12 inputs=0
+0x000000: const-string v0, "android.media.audiopolicy.AudioMixingRule$Builder"
+0x000004: invoke-static v0, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+0x00000a: move-result-object v0
+0x00000c: invoke-virtual v0, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
+0x000012: move-result-object v1
+0x000014: const-class v2, Ljava/lang/Object;
+0x000018: sget-object v3, Ljava/lang/Integer;->TYPE Ljava/lang/Class;
+0x00001c: filled-new-array v3, v2, [Ljava/lang/Class;
+0x000022: move-result-object v2
+0x000024: const-string v4, "addMixRule"
+0x000028: invoke-virtual v0, v4, v2, Ljava/lang/Class;->getMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+0x00002e: move-result-object v2
+0x000030: const-string v4, "setTargetMixRole"
+0x000034: filled-new-array v3, [Ljava/lang/Class;
+0x00003a: move-result-object v5
+0x00003c: invoke-virtual v0, v4, v5, Ljava/lang/Class;->getMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+0x000042: move-result-object v4
+0x000044: const-string v5, "build"
+0x000048: const/4 v6, 0
+0x00004a: invoke-virtual v0, v5, v6, Ljava/lang/Class;->getMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+0x000050: move-result-object v0
+0x000052: const/4 v7, 1
+0x000054: invoke-static v7, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x00005a: move-result-object v8
+0x00005c: new-instance v9, Landroid/media/AudioAttributes$Builder;
+0x000060: invoke-direct v9, Landroid/media/AudioAttributes$Builder;-><init>()V
+0x000066: const/4 v10, 2
+0x000068: invoke-virtual v9, v10, Landroid/media/AudioAttributes$Builder;->setUsage(I)Landroid/media/AudioAttributes$Builder;
+0x00006e: move-result-object v9
+0x000070: const/high16 v10, 65536
+0x000074: invoke-virtual v9, v10, Landroid/media/AudioAttributes$Builder;->setFlags(I)Landroid/media/AudioAttributes$Builder;
+0x00007a: move-result-object v9
+0x00007c: invoke-virtual v9, Landroid/media/AudioAttributes$Builder;->build()Landroid/media/AudioAttributes;
+0x000082: move-result-object v9
+0x000084: filled-new-array v8, v9, [Ljava/lang/Object;
+0x00008a: move-result-object v9
+0x00008c: invoke-virtual v2, v1, v9, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+0x000092: new-instance v9, Landroid/media/AudioAttributes$Builder;
+0x000096: invoke-direct v9, Landroid/media/AudioAttributes$Builder;-><init>()V
+0x00009c: const/4 v11, 3
+0x00009e: invoke-virtual v9, v11, Landroid/media/AudioAttributes$Builder;->setUsage(I)Landroid/media/AudioAttributes$Builder;
+0x0000a4: move-result-object v9
+0x0000a6: invoke-virtual v9, v10, Landroid/media/AudioAttributes$Builder;->setFlags(I)Landroid/media/AudioAttributes$Builder;
+0x0000ac: move-result-object v9
+0x0000ae: invoke-virtual v9, Landroid/media/AudioAttributes$Builder;->build()Landroid/media/AudioAttributes;
+0x0000b4: move-result-object v9
+0x0000b6: filled-new-array v8, v9, [Ljava/lang/Object;
+0x0000bc: move-result-object v8
+0x0000be: invoke-virtual v2, v1, v8, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+0x0000c4: const/4 v2, 0
+0x0000c6: invoke-static v2, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x0000cc: move-result-object v2
+0x0000ce: filled-new-array v2, [Ljava/lang/Object;
+0x0000d4: move-result-object v8
+0x0000d6: invoke-virtual v4, v1, v8, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+0x0000dc: invoke-virtual v0, v1, v6, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+0x0000e2: move-result-object v0
+0x0000e4: const-string v1, "android.media.audiopolicy.AudioMix$Builder"
+0x0000e8: invoke-static v1, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+0x0000ee: move-result-object v1
+0x0000f0: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x0000f6: move-result-object v4
+0x0000f8: filled-new-array v4, [Ljava/lang/Class;
+0x0000fe: move-result-object v4
+0x000100: invoke-virtual v1, v4, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+0x000106: move-result-object v4
+0x000108: filled-new-array v0, [Ljava/lang/Object;
+0x00010e: move-result-object v0
+0x000110: invoke-virtual v4, v0, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+0x000116: move-result-object v0
+0x000118: const-class v4, Landroid/media/AudioFormat;
+0x00011c: filled-new-array v4, [Ljava/lang/Class;
+0x000122: move-result-object v4
+0x000124: const-string v8, "setFormat"
+0x000128: invoke-virtual v1, v8, v4, Ljava/lang/Class;->getMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+0x00012e: move-result-object v4
+0x000130: const-string v8, "setRouteFlags"
+0x000134: filled-new-array v3, [Ljava/lang/Class;
+0x00013a: move-result-object v3
+0x00013c: invoke-virtual v1, v8, v3, Ljava/lang/Class;->getMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+0x000142: move-result-object v3
+0x000144: invoke-virtual v1, v5, v6, Ljava/lang/Class;->getMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+0x00014a: move-result-object v1
+0x00014c: sget-object v8, Luj;->a Landroid/media/AudioFormat;
+0x000150: filled-new-array v8, [Ljava/lang/Object;
+0x000156: move-result-object v8
+0x000158: invoke-virtual v4, v0, v8, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+0x00015e: invoke-static v11, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x000164: move-result-object v4
+0x000166: filled-new-array v4, [Ljava/lang/Object;
+0x00016c: move-result-object v4
+0x00016e: invoke-virtual v3, v0, v4, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+0x000174: invoke-virtual v1, v0, v6, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+0x00017a: move-result-object v0
+0x00017c: const-string v1, "android.media.audiopolicy.AudioPolicy$Builder"
+0x000180: invoke-static v1, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+0x000186: move-result-object v1
+0x000188: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00018e: move-result-object v3
+0x000190: filled-new-array v3, [Ljava/lang/Class;
+0x000196: move-result-object v3
+0x000198: const-string v4, "addMix"
+0x00019c: invoke-virtual v1, v4, v3, Ljava/lang/Class;->getMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+0x0001a2: move-result-object v3
+0x0001a4: invoke-virtual v1, v5, v6, Ljava/lang/Class;->getMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+0x0001aa: move-result-object v4
+0x0001ac: const-class v5, Landroid/content/Context;
+0x0001b0: filled-new-array v5, [Ljava/lang/Class;
+0x0001b6: move-result-object v5
+0x0001b8: invoke-virtual v1, v5, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+0x0001be: move-result-object v1
+0x0001c0: filled-new-array v6, [Ljava/lang/Object;
+0x0001c6: move-result-object v5
+0x0001c8: invoke-virtual v1, v5, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+0x0001ce: move-result-object v1
+0x0001d0: filled-new-array v0, [Ljava/lang/Object;
+0x0001d6: move-result-object v5
+0x0001d8: invoke-virtual v3, v1, v5, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+0x0001de: invoke-virtual v4, v1, v6, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+0x0001e4: move-result-object v1
+0x0001e6: invoke-virtual v1, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x0001ec: move-result-object v3
+0x0001ee: filled-new-array v3, [Ljava/lang/Class;
+0x0001f4: move-result-object v3
+0x0001f6: const-class v4, Landroid/media/AudioManager;
+0x0001fa: const-string v5, "registerAudioPolicyStatic"
+0x0001fe: invoke-virtual v4, v5, v3, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+0x000204: move-result-object v3
+0x000206: invoke-virtual v3, v7, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+0x00020c: filled-new-array v1, [Ljava/lang/Object;
+0x000212: move-result-object v4
+0x000214: invoke-virtual v3, v6, v4, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+0x00021a: move-result-object v3
+0x00021c: invoke-virtual v3, v2, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+0x000222: move-result v2
+0x000224: if-eqz v2, +039h
+0x000228: invoke-virtual v1, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00022e: move-result-object v2
+0x000230: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000236: move-result-object v3
+0x000238: filled-new-array v3, [Ljava/lang/Class;
+0x00023e: move-result-object v3
+0x000240: const-string v4, "createAudioRecordSink"
+0x000244: invoke-virtual v2, v4, v3, Ljava/lang/Class;->getMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+0x00024a: move-result-object v2
+0x00024c: filled-new-array v0, [Ljava/lang/Object;
+0x000252: move-result-object v0
+0x000254: invoke-virtual v2, v1, v0, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+0x00025a: move-result-object v0
+0x00025c: check-cast v0, Landroid/media/AudioRecord;
+0x000260: invoke-virtual v1, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000266: move-result-object v2
+0x000268: filled-new-array v2, [Ljava/lang/Class;
+0x00026e: move-result-object v2
+0x000270: const-class v3, Landroid/media/AudioRecord;
+0x000274: const-string v4, "unregisterAudioPolicyOnRelease"
+0x000278: invoke-virtual v3, v4, v2, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+0x00027e: move-result-object v2
+0x000280: invoke-virtual v2, v7, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+0x000286: filled-new-array v1, [Ljava/lang/Object;
+0x00028c: move-result-object v1
+0x00028e: invoke-virtual v2, v0, v1, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+0x000294: return-object v0
+0x000296: new-instance v0, Ljava/lang/UnsupportedOperationException;
+0x00029a: const-string v1, "Error: could not register audio policy"
+0x00029e: invoke-direct v0, v1, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+0x0002a4: throw v0
+
+METHOD a(Lpi;)V flags=public final
+registers=6 inputs=2
+0x000000: sget v0, Luj;->b I
+0x000004: mul-int/lit8 v0, v0, 25
+0x000008: new-instance v1, Landroid/media/AudioRecord$Builder;
+0x00000c: invoke-direct v1, Landroid/media/AudioRecord$Builder;-><init>()V
+0x000012: sget-object v2, Luj;->a Landroid/media/AudioFormat;
+0x000016: invoke-virtual v1, v2, Landroid/media/AudioRecord$Builder;->setAudioFormat(Landroid/media/AudioFormat;)Landroid/media/AudioRecord$Builder;
+0x00001c: move-result-object v1
+0x00001e: invoke-virtual v1, v0, Landroid/media/AudioRecord$Builder;->setBufferSizeInBytes(I)Landroid/media/AudioRecord$Builder;
+0x000024: move-result-object v1
+0x000026: const/4 v2, 4
+0x000028: invoke-virtual v1, v2, Landroid/media/AudioRecord$Builder;->setAudioSource(I)Landroid/media/AudioRecord$Builder;
+0x00002e: move-result-object v1
+0x000030: invoke-virtual v1, Landroid/media/AudioRecord$Builder;->build()Landroid/media/AudioRecord;
+0x000036: move-result-object v1
+0x000038: iput-object v1, v4, Les;->c Landroid/media/AudioRecord;
+0x00003c: new-instance v1, Ljava/lang/Thread;
+0x000040: new-instance v2, Lds;
+0x000044: const/4 v3, 0
+0x000046: invoke-direct v2, v3, Lds;-><init>(I)V
+0x00004c: iput-object v4, v2, Lds;->d Ljava/lang/Object;
+0x000050: iput v0, v2, Lds;->c I
+0x000054: iput-object v5, v2, Lds;->e Ljava/lang/Object;
+0x000058: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x00005e: invoke-direct v1, v2, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+0x000064: invoke-virtual v1, Ljava/lang/Thread;->start()V
+0x00006a: return-void 
+
+METHOD stop()V flags=public final
+registers=2 inputs=1
+TRY bytes [0xa,0x26) -> [('catchall', 54)]
+TRY bytes [0x38,0x3a) -> [('catchall', 54)]
+0x000000: iget-object v0, v1, Les;->c Landroid/media/AudioRecord;
+0x000004: if-eqz v0, +01ch
+0x000008: monitor-enter v1
+0x00000a: iget-object v0, v1, Les;->c Landroid/media/AudioRecord;
+0x00000e: invoke-virtual v0, Landroid/media/AudioRecord;->stop()V
+0x000014: iget-object v0, v1, Les;->c Landroid/media/AudioRecord;
+0x000018: invoke-virtual v0, Landroid/media/AudioRecord;->release()V
+0x00001e: const/4 v0, 0
+0x000020: iput-object v0, v1, Les;->c Landroid/media/AudioRecord;
+0x000024: monitor-exit v1
+0x000026: const-string v1, "AudioCapture"
+0x00002a: const-string v0, "Recording stopped."
+0x00002e: invoke-static v1, v0, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x000034: return-void 
+0x000036: move-exception v0
+0x000038: monitor-exit v1
+0x00003a: throw v0
+0x00003c: return-void 
+
+CLASS classes.dex Lh7;
+FIELD f I = None
+FIELD g Z = None
+FIELD h Landroid/content/Context; = None
+
+METHOD <init>(Landroid/content/Context; Lj20;)V flags=public constructor
+registers=4 inputs=3
+0x000000: const/4 v0, 1
+0x000002: iput v0, v1, Lh7;->f I
+0x000006: iput-object v2, v1, Lh7;->h Landroid/content/Context;
+0x00000a: const/4 v2, 2
+0x00000c: invoke-direct v1, v2, v3, Llr2;-><init>(I Lj20;)V
+0x000012: return-void 
+
+METHOD <init>(Lcom/miui/guardprovider/aiguard/AiGuardService; Z Lj20;)V flags=public constructor
+registers=5 inputs=4
+0x000000: const/4 v0, 0
+0x000002: iput v0, v1, Lh7;->f I
+0x000006: iput-object v2, v1, Lh7;->h Landroid/content/Context;
+0x00000a: iput-boolean v3, v1, Lh7;->g Z
+0x00000e: const/4 v2, 2
+0x000010: invoke-direct v1, v2, v4, Llr2;-><init>(I Lj20;)V
+0x000016: return-void 
+
+METHOD H(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object; flags=public final
+registers=5 inputs=3
+0x000000: iget v0, v2, Lh7;->f I
+0x000004: sget-object v1, Lc13;->a Lc13;
+0x000008: packed-switch v0, +0000022h
+0x00000e: check-cast v3, Ljava/lang/Boolean;
+0x000012: invoke-virtual v3, Ljava/lang/Boolean;->booleanValue()Z
+0x000018: check-cast v4, Lj20;
+0x00001c: invoke-virtual v2, v4, v3, Lh7;->k(Lj20; Ljava/lang/Object;)Lj20;
+0x000022: move-result-object v2
+0x000024: check-cast v2, Lh7;
+0x000028: invoke-virtual v2, v1, Lh7;->o(Ljava/lang/Object;)Ljava/lang/Object;
+0x00002e: return-object v1
+0x000030: check-cast v3, Lg30;
+0x000034: check-cast v4, Lj20;
+0x000038: invoke-virtual v2, v4, v3, Lh7;->k(Lj20; Ljava/lang/Object;)Lj20;
+0x00003e: move-result-object v2
+0x000040: check-cast v2, Lh7;
+0x000044: invoke-virtual v2, v1, Lh7;->o(Ljava/lang/Object;)Ljava/lang/Object;
+0x00004a: return-object v1
+0x00004c: packed-switch-payload 0
+
+METHOD k(Lj20; Ljava/lang/Object;)Lj20; flags=public final
+registers=5 inputs=3
+0x000000: iget v0, v2, Lh7;->f I
+0x000004: iget-object v1, v2, Lh7;->h Landroid/content/Context;
+0x000008: packed-switch v0, +000001ch
+0x00000e: new-instance v2, Lh7;
+0x000012: invoke-direct v2, v1, v3, Lh7;-><init>(Landroid/content/Context; Lj20;)V
+0x000018: check-cast v4, Ljava/lang/Boolean;
+0x00001c: invoke-virtual v4, Ljava/lang/Boolean;->booleanValue()Z
+0x000022: move-result v3
+0x000024: iput-boolean v3, v2, Lh7;->g Z
+0x000028: return-object v2
+0x00002a: new-instance v4, Lh7;
+0x00002e: check-cast v1, Lcom/miui/guardprovider/aiguard/AiGuardService;
+0x000032: iget-boolean v2, v2, Lh7;->g Z
+0x000036: invoke-direct v4, v1, v2, v3, Lh7;-><init>(Lcom/miui/guardprovider/aiguard/AiGuardService; Z Lj20;)V
+0x00003c: return-object v4
+0x00003e: nop 
+0x000040: packed-switch-payload 0
+
+METHOD o(Ljava/lang/Object;)Ljava/lang/Object; flags=public final
+registers=12 inputs=2
+0x000000: iget v0, v10, Lh7;->f I
+0x000004: sget-object v1, Lc13;->a Lc13;
+0x000008: iget-object v2, v10, Lh7;->h Landroid/content/Context;
+0x00000c: packed-switch v0, +0000140h
+0x000012: sget-object v0, Lh30;->b Lh30;
+0x000016: invoke-static v11, Lkk3;->y(Ljava/lang/Object;)V
+0x00001c: iget-boolean v10, v10, Lh7;->g Z
+0x000020: const-class v11, Landroidx/work/impl/background/systemalarm/RescheduleReceiver;
+0x000024: invoke-static v2, v11, v10, Lhy1;->a(Landroid/content/Context; Ljava/lang/Class; Z)V
+0x00002a: return-object v1
+0x00002c: sget-object v0, Lh30;->b Lh30;
+0x000030: invoke-static v11, Lkk3;->y(Ljava/lang/Object;)V
+0x000036: const-string v11, "AiGuardService"
+0x00003a: const-string v0, "Reporting daily statistics..."
+0x00003e: invoke-static v11, v0, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x000044: check-cast v2, Lcom/miui/guardprovider/aiguard/AiGuardService;
+0x000048: invoke-virtual v2, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+0x00004e: move-result-object v11
+0x000050: invoke-virtual v11, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000056: invoke-static v11, Lro;->I(Landroid/content/Context;)Lwu2;
+0x00005c: move-result-object v11
+0x00005e: new-instance v0, Lqy1;
+0x000062: const-string v3, "tip"
+0x000066: const-string v4, "1127.0.0.0.37700"
+0x00006a: invoke-direct v0, v3, v4, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x000070: iget-boolean v10, v10, Lh7;->g Z
+0x000074: invoke-static v10, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+0x00007a: move-result-object v10
+0x00007c: new-instance v4, Lqy1;
+0x000080: const-string v5, "enable_status"
+0x000084: invoke-direct v4, v5, v10, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x00008a: filled-new-array v0, v4, [Lqy1;
+0x000090: move-result-object v10
+0x000092: iget-object v11, v11, Lwu2;->a Lcom/xiaomi/onetrack/OneTrack;
+0x000096: invoke-static v10, Lxl1;->G([Lqy1;)Ljava/util/Map;
+0x00009c: move-result-object v10
+0x00009e: const-string v0, "daily_report"
+0x0000a2: invoke-virtual v11, v0, v10, Lcom/xiaomi/onetrack/OneTrack;->track(Ljava/lang/String; Ljava/util/Map;)V
+0x0000a8: const-string v10, "ai_guard_daily_report"
+0x0000ac: const/4 v11, 0
+0x0000ae: invoke-virtual v2, v10, v11, Landroid/app/Service;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;
+0x0000b4: move-result-object v10
+0x0000b6: invoke-static Lkk3;->n()Lii1;
+0x0000bc: move-result-object v4
+0x0000be: new-instance v5, Lqy1;
+0x0000c2: const-string v6, "trigger_scenario"
+0x0000c6: const-string v7, "电话"
+0x0000ca: invoke-direct v5, v6, v7, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x0000d0: const-string v7, "phoneVoiceDetectionTimes"
+0x0000d4: invoke-interface v10, v7, v11, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String; I)I
+0x0000da: move-result v7
+0x0000dc: new-instance v8, Ljava/lang/Integer;
+0x0000e0: invoke-direct v8, v7, Ljava/lang/Integer;-><init>(I)V
+0x0000e6: new-instance v7, Lqy1;
+0x0000ea: const-string v9, "detect_number"
+0x0000ee: invoke-direct v7, v9, v8, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x0000f4: filled-new-array v5, v7, [Lqy1;
+0x0000fa: move-result-object v5
+0x0000fc: invoke-static v5, Lxl1;->C([Lqy1;)Ljava/util/Map;
+0x000102: move-result-object v5
+0x000104: invoke-virtual v4, v5, Lii1;->add(Ljava/lang/Object;)Z
+0x00010a: new-instance v5, Lqy1;
+0x00010e: const-string v7, "QQ语音通话"
+0x000112: invoke-direct v5, v6, v7, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x000118: const-string v7, "qqVoiceDetectionTimes"
+0x00011c: invoke-interface v10, v7, v11, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String; I)I
+0x000122: move-result v7
+0x000124: new-instance v8, Ljava/lang/Integer;
+0x000128: invoke-direct v8, v7, Ljava/lang/Integer;-><init>(I)V
+0x00012e: new-instance v7, Lqy1;
+0x000132: invoke-direct v7, v9, v8, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x000138: filled-new-array v5, v7, [Lqy1;
+0x00013e: move-result-object v5
+0x000140: invoke-static v5, Lxl1;->C([Lqy1;)Ljava/util/Map;
+0x000146: move-result-object v5
+0x000148: invoke-virtual v4, v5, Lii1;->add(Ljava/lang/Object;)Z
+0x00014e: new-instance v5, Lqy1;
+0x000152: const-string v7, "QQ视频通话"
+0x000156: invoke-direct v5, v6, v7, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x00015c: const-string v7, "qqVideoDetectionTimes"
+0x000160: invoke-interface v10, v7, v11, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String; I)I
+0x000166: move-result v7
+0x000168: new-instance v8, Ljava/lang/Integer;
+0x00016c: invoke-direct v8, v7, Ljava/lang/Integer;-><init>(I)V
+0x000172: new-instance v7, Lqy1;
+0x000176: invoke-direct v7, v9, v8, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x00017c: filled-new-array v5, v7, [Lqy1;
+0x000182: move-result-object v5
+0x000184: invoke-static v5, Lxl1;->C([Lqy1;)Ljava/util/Map;
+0x00018a: move-result-object v5
+0x00018c: invoke-virtual v4, v5, Lii1;->add(Ljava/lang/Object;)Z
+0x000192: new-instance v5, Lqy1;
+0x000196: const-string v7, "微信语音通话"
+0x00019a: invoke-direct v5, v6, v7, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x0001a0: const-string v7, "wechatVoiceDetectionTimes"
+0x0001a4: invoke-interface v10, v7, v11, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String; I)I
+0x0001aa: move-result v7
+0x0001ac: new-instance v8, Ljava/lang/Integer;
+0x0001b0: invoke-direct v8, v7, Ljava/lang/Integer;-><init>(I)V
+0x0001b6: new-instance v7, Lqy1;
+0x0001ba: invoke-direct v7, v9, v8, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x0001c0: filled-new-array v5, v7, [Lqy1;
+0x0001c6: move-result-object v5
+0x0001c8: invoke-static v5, Lxl1;->C([Lqy1;)Ljava/util/Map;
+0x0001ce: move-result-object v5
+0x0001d0: invoke-virtual v4, v5, Lii1;->add(Ljava/lang/Object;)Z
+0x0001d6: new-instance v5, Lqy1;
+0x0001da: const-string v7, "微信视频通话"
+0x0001de: invoke-direct v5, v6, v7, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x0001e4: const-string v6, "wechatVideoDetectionTimes"
+0x0001e8: invoke-interface v10, v6, v11, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String; I)I
+0x0001ee: move-result v11
+0x0001f0: new-instance v6, Ljava/lang/Integer;
+0x0001f4: invoke-direct v6, v11, Ljava/lang/Integer;-><init>(I)V
+0x0001fa: new-instance v11, Lqy1;
+0x0001fe: invoke-direct v11, v9, v6, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x000204: filled-new-array v5, v11, [Lqy1;
+0x00020a: move-result-object v11
+0x00020c: invoke-static v11, Lxl1;->C([Lqy1;)Ljava/util/Map;
+0x000212: move-result-object v11
+0x000214: invoke-virtual v4, v11, Lii1;->add(Ljava/lang/Object;)Z
+0x00021a: invoke-static v4, Lkk3;->j(Lii1;)Lii1;
+0x000220: move-result-object v11
+0x000222: invoke-virtual v2, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+0x000228: move-result-object v2
+0x00022a: invoke-virtual v2, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000230: invoke-static v2, Lro;->I(Landroid/content/Context;)Lwu2;
+0x000236: move-result-object v2
+0x000238: new-instance v4, Lqy1;
+0x00023c: const-string v5, "1127.0.0.0.37704"
+0x000240: invoke-direct v4, v3, v5, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x000246: new-instance v3, Lqy1;
+0x00024a: const-string v5, "detect_status"
+0x00024e: invoke-direct v3, v5, v11, Lqy1;-><init>(Ljava/lang/Object; Ljava/lang/Object;)V
+0x000254: filled-new-array v4, v3, [Lqy1;
+0x00025a: move-result-object v11
+0x00025c: iget-object v2, v2, Lwu2;->a Lcom/xiaomi/onetrack/OneTrack;
+0x000260: invoke-static v11, Lxl1;->G([Lqy1;)Ljava/util/Map;
+0x000266: move-result-object v11
+0x000268: invoke-virtual v2, v0, v11, Lcom/xiaomi/onetrack/OneTrack;->track(Ljava/lang/String; Ljava/util/Map;)V
+0x00026e: invoke-interface v10, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+0x000274: move-result-object v10
+0x000276: invoke-virtual v10, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00027c: invoke-interface v10, Landroid/content/SharedPreferences$Editor;->clear()Landroid/content/SharedPreferences$Editor;
+0x000282: invoke-interface v10, Landroid/content/SharedPreferences$Editor;->apply()V
+0x000288: return-object v1
+0x00028a: nop 
+0x00028c: packed-switch-payload 0
+
+CLASS classes.dex Lk63;
+FIELD c Landroid/media/AudioRecord; = None
+FIELD d Landroid/media/AudioRecord; = None
+
+METHOD b(Landroid/media/AudioRecord; Ljava/lang/String;)V flags=public static
+registers=7 inputs=2
+TRY bytes [0xe,0x14) -> [('Ljava/lang/Exception;', 22)]
+TRY bytes [0x40,0x46) -> [('Ljava/lang/Exception;', 72)]
+0x000000: const-string v0, " AudioRecord failed: "
+0x000004: const-string v1, "AudioCapture"
+0x000008: if-nez v5, +003h
+0x00000c: goto +33h
+0x00000e: invoke-virtual v5, Landroid/media/AudioRecord;->stop()V
+0x000014: goto +16h
+0x000016: move-exception v2
+0x000018: new-instance v3, Ljava/lang/StringBuilder;
+0x00001c: const-string v4, "Stop "
+0x000020: invoke-direct v3, v4, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000026: invoke-virtual v3, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00002c: invoke-virtual v3, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000032: invoke-virtual v3, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000038: move-result-object v3
+0x00003a: invoke-static v1, v3, v2, Landroid/util/Log;->w(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I
+0x000040: invoke-virtual v5, Landroid/media/AudioRecord;->release()V
+0x000046: goto +16h
+0x000048: move-exception v5
+0x00004a: new-instance v2, Ljava/lang/StringBuilder;
+0x00004e: const-string v3, "Release "
+0x000052: invoke-direct v2, v3, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000058: invoke-virtual v2, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x00005e: invoke-virtual v2, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000064: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x00006a: move-result-object v6
+0x00006c: invoke-static v1, v6, v5, Landroid/util/Log;->w(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I
+0x000072: return-void 
+
+METHOD a(Lpi;)V flags=public final
+registers=6 inputs=2
+TRY bytes [0x3c,0x48) -> [('Ljava/lang/Exception;', 120)]
+0x000000: sget v0, Luj;->b I
+0x000004: mul-int/lit8 v0, v0, 25
+0x000008: new-instance v1, Landroid/media/AudioRecord$Builder;
+0x00000c: invoke-direct v1, Landroid/media/AudioRecord$Builder;-><init>()V
+0x000012: const/4 v2, 7
+0x000014: invoke-virtual v1, v2, Landroid/media/AudioRecord$Builder;->setAudioSource(I)Landroid/media/AudioRecord$Builder;
+0x00001a: move-result-object v1
+0x00001c: sget-object v2, Luj;->a Landroid/media/AudioFormat;
+0x000020: invoke-virtual v1, v2, Landroid/media/AudioRecord$Builder;->setAudioFormat(Landroid/media/AudioFormat;)Landroid/media/AudioRecord$Builder;
+0x000026: move-result-object v1
+0x000028: invoke-virtual v1, v0, Landroid/media/AudioRecord$Builder;->setBufferSizeInBytes(I)Landroid/media/AudioRecord$Builder;
+0x00002e: move-result-object v1
+0x000030: invoke-virtual v1, Landroid/media/AudioRecord$Builder;->build()Landroid/media/AudioRecord;
+0x000036: move-result-object v1
+0x000038: iput-object v1, v4, Lk63;->c Landroid/media/AudioRecord;
+0x00003c: invoke-static Les;->b()Landroid/media/AudioRecord;
+0x000042: move-result-object v1
+0x000044: iput-object v1, v4, Lk63;->d Landroid/media/AudioRecord;
+0x000048: new-instance v1, Ljava/lang/Thread;
+0x00004c: new-instance v2, Lsz;
+0x000050: const/4 v3, 4
+0x000052: invoke-direct v2, v3, Lsz;-><init>(I)V
+0x000058: iput-object v4, v2, Lsz;->d Ljava/lang/Object;
+0x00005c: iput v0, v2, Lsz;->c I
+0x000060: iput-object v5, v2, Lsz;->e Ljava/lang/Object;
+0x000064: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x00006a: invoke-direct v1, v2, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+0x000070: invoke-virtual v1, Ljava/lang/Thread;->start()V
+0x000076: return-void 
+0x000078: move-exception v5
+0x00007a: const-string v0, "AudioCapture"
+0x00007e: const-string v1, "Create voip downlink AudioRecord failed: "
+0x000082: invoke-static v0, v1, v5, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I
+0x000088: invoke-virtual v4, Lk63;->stop()V
+0x00008e: return-void 
+
+METHOD stop()V flags=public final
+registers=5 inputs=1
+TRY bytes [0x2,0x3a) -> [('catchall', 78)]
+TRY bytes [0x50,0x52) -> [('catchall', 78)]
+0x000000: monitor-enter v4
+0x000002: iget-object v0, v4, Lk63;->c Landroid/media/AudioRecord;
+0x000006: iget-object v1, v4, Lk63;->d Landroid/media/AudioRecord;
+0x00000a: if-nez v0, +007h
+0x00000e: if-eqz v1, +003h
+0x000012: goto +3h
+0x000014: const/4 v2, 0
+0x000016: goto +2h
+0x000018: const/4 v2, 1
+0x00001a: const/4 v3, 0
+0x00001c: iput-object v3, v4, Lk63;->c Landroid/media/AudioRecord;
+0x000020: iput-object v3, v4, Lk63;->d Landroid/media/AudioRecord;
+0x000024: const-string v3, "uplink"
+0x000028: invoke-static v0, v3, Lk63;->b(Landroid/media/AudioRecord; Ljava/lang/String;)V
+0x00002e: const-string v0, "downlink"
+0x000032: invoke-static v1, v0, Lk63;->b(Landroid/media/AudioRecord; Ljava/lang/String;)V
+0x000038: monitor-exit v4
+0x00003a: if-eqz v2, +009h
+0x00003e: const-string v4, "AudioCapture"
+0x000042: const-string v0, "Recording stopped."
+0x000046: invoke-static v4, v0, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x00004c: return-void 
+0x00004e: move-exception v0
+0x000050: monitor-exit v4
+0x000052: throw v0
+
+CLASS classes.dex Lpi;
+FIELD a Lsi; = None
+FIELD b Ljava/lang/String; = None
+
+METHOD accept(Ljava/lang/Object;)V flags=public final
+registers=4 inputs=2
+TRY bytes [0x30,0x4a) -> [('catchall', 76)]
+0x000000: iget-object v0, v2, Lpi;->a Lsi;
+0x000004: iget-object v2, v2, Lpi;->b Ljava/lang/String;
+0x000008: check-cast v3, Ljava/nio/ByteBuffer;
+0x00000c: invoke-virtual v3, Ljava/nio/Buffer;->remaining()I
+0x000012: move-result v1
+0x000014: new-array v1, v1, [B
+0x000018: invoke-virtual v3, v1, Ljava/nio/ByteBuffer;->get([B)Ljava/nio/ByteBuffer;
+0x00001e: iget-object v3, v0, Lsi;->f Ljava/lang/Object;
+0x000022: check-cast v3, Ljava/util/function/Consumer;
+0x000026: if-eqz v3, +005h
+0x00002a: invoke-interface v3, v1, Ljava/util/function/Consumer;->accept(Ljava/lang/Object;)V
+0x000030: iget-object v3, v0, Lsi;->d Ljava/lang/Object;
+0x000034: check-cast v3, Lcom/xiaomi/ai/vision/sdk/AiCapability;
+0x000038: const/4 v0, 0
+0x00003a: invoke-virtual v3, v1, v0, v2, Lcom/xiaomi/ai/vision/sdk/AiCapability;->postData([B Z Ljava/lang/String;)Z
+0x000040: move-result v2
+0x000042: invoke-static v2, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+0x000048: move-result-object v2
+0x00004a: goto +6h
+0x00004c: move-exception v2
+0x00004e: invoke-static v2, Lkk3;->m(Ljava/lang/Throwable;)Lpd2;
+0x000054: move-result-object v2
+0x000056: invoke-static v2, Lqd2;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
+0x00005c: move-result-object v2
+0x00005e: if-eqz v2, +009h
+0x000062: const-string v3, "Asr"
+0x000066: const-string v0, "Asr service might be dead"
+0x00006a: invoke-static v3, v0, v2, Landroid/util/Log;->w(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I
+0x000070: return-void 
+
+CLASS classes.dex Lpq;
+FIELD b Lpq; = None
+FIELD c Lpq; = None
+FIELD a I = None
+
+METHOD <clinit>()V flags=static synthetic constructor
+registers=2 inputs=0
+0x000000: new-instance v0, Lpq;
+0x000004: const/4 v1, 0
+0x000006: invoke-direct v0, v1, Lpq;-><init>(I)V
+0x00000c: sput-object v0, Lpq;->b Lpq;
+0x000010: new-instance v0, Lpq;
+0x000014: const/4 v1, 1
+0x000016: invoke-direct v0, v1, Lpq;-><init>(I)V
+0x00001c: sput-object v0, Lpq;->c Lpq;
+0x000020: return-void 
+
+METHOD <init>(I)V flags=public synthetic constructor
+registers=2 inputs=2
+0x000000: iput v1, v0, Lpq;->a I
+0x000004: invoke-direct v0, Ljava/lang/Object;-><init>()V
+0x00000a: return-void 
+
+METHOD a(Lp82;)Lcd2; flags=public final
+registers=23 inputs=2
+TRY bytes [0x444,0x468) -> [('catchall', 1434)]
+TRY bytes [0x554,0x55c) -> [('catchall', 1428)]
+TRY bytes [0x59e,0x5be) -> [('catchall', 1434)]
+TRY bytes [0x622,0x654) -> [('Ljava/io/IOException;', 2120)]
+TRY bytes [0x658,0x678) -> [('Ljava/io/IOException;', 2014)]
+TRY bytes [0x67c,0x68a) -> [('Ljava/io/IOException;', 1732)]
+TRY bytes [0x68c,0x694) -> [('Ljava/io/IOException;', 1726)]
+TRY bytes [0x694,0x6a6) -> [('Ljava/io/IOException;', 1712)]
+TRY bytes [0x6c8,0x6e2) -> [('Ljava/io/IOException;', 1726)]
+TRY bytes [0x6f0,0x768) -> [('Ljava/io/IOException;', 1902)]
+TRY bytes [0x77c,0x786) -> [('Ljava/io/IOException;', 2010)]
+TRY bytes [0x798,0x7d0) -> [('Ljava/io/IOException;', 2006)]
+TRY bytes [0x7f0,0x80a) -> [('Ljava/io/IOException;', 2116)]
+TRY bytes [0x810,0x81e) -> [('Ljava/io/IOException;', 2084)]
+TRY bytes [0x826,0x840) -> [('Ljava/io/IOException;', 2112)]
+TRY bytes [0x84e,0x868) -> [('Ljava/io/IOException;', 2116)]
+TRY bytes [0x888,0xb20) -> [('Ljava/io/IOException;', 2226)]
+0x000000: move-object/from16 v0, v21
+0x000004: move-object/from16 v1, v22
+0x000008: iget v0, v0, Lpq;->a I
+0x00000c: const/4 v3, 1
+0x00000e: const/4 v4, 0
+0x000010: packed-switch v0, +0000592h
+0x000016: const-string v0, "sign"
+0x00001a: iget-object v2, v1, Lp82;->e Lti;
+0x00001e: new-instance v5, Ljava/util/TreeMap;
+0x000022: invoke-direct v5, Ljava/util/TreeMap;-><init>()V
+0x000028: iget-object v6, v2, Lti;->c Ljava/lang/Object;
+0x00002c: check-cast v6, Lbu0;
+0x000030: invoke-virtual v6, Lbu0;->h()Ljava/util/Set;
+0x000036: move-result-object v7
+0x000038: invoke-interface v7, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+0x00003e: move-result-object v7
+0x000040: invoke-interface v7, Ljava/util/Iterator;->hasNext()Z
+0x000046: move-result v8
+0x000048: if-eqz v8, +01fh
+0x00004c: invoke-interface v7, Ljava/util/Iterator;->next()Ljava/lang/Object;
+0x000052: move-result-object v8
+0x000054: check-cast v8, Ljava/lang/String;
+0x000058: invoke-static v8, v0, Laz0;->j(Ljava/lang/Object; Ljava/lang/Object;)Z
+0x00005e: move-result v9
+0x000060: if-nez v9, +00dh
+0x000064: invoke-virtual v6, v8, Lbu0;->g(Ljava/lang/String;)Ljava/lang/String;
+0x00006a: move-result-object v9
+0x00006c: if-nez v9, +003h
+0x000070: goto -18h
+0x000072: invoke-virtual v5, v8, v9, Ljava/util/TreeMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+0x000078: goto -1ch
+0x00007a: const-string v0, "You shouldn't pass sign parameter because it is auto generated."
+0x00007e: invoke-static v0, Lcw1;->f(Ljava/lang/String;)V
+0x000084: goto +77h
+0x000086: invoke-virtual v6, Lbu0;->f()Lau0;
+0x00008c: move-result-object v4
+0x00008e: new-instance v6, Ljava/util/StringJoiner;
+0x000092: const-string v7, "&"
+0x000096: const-string v8, ""
+0x00009a: invoke-direct v6, v7, v8, v8, Ljava/util/StringJoiner;-><init>(Ljava/lang/CharSequence; Ljava/lang/CharSequence; Ljava/lang/CharSequence;)V
+0x0000a0: invoke-virtual v5, Ljava/util/TreeMap;->entrySet()Ljava/util/Set;
+0x0000a6: move-result-object v5
+0x0000a8: invoke-interface v5, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+0x0000ae: move-result-object v5
+0x0000b0: invoke-interface v5, Ljava/util/Iterator;->hasNext()Z
+0x0000b6: move-result v7
+0x0000b8: if-eqz v7, +02ah
+0x0000bc: invoke-interface v5, Ljava/util/Iterator;->next()Ljava/lang/Object;
+0x0000c2: move-result-object v7
+0x0000c4: check-cast v7, Ljava/util/Map$Entry;
+0x0000c8: invoke-interface v7, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+0x0000ce: move-result-object v8
+0x0000d0: check-cast v8, Ljava/lang/String;
+0x0000d4: invoke-interface v7, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+0x0000da: move-result-object v7
+0x0000dc: new-instance v9, Ljava/lang/StringBuilder;
+0x0000e0: invoke-direct v9, Ljava/lang/StringBuilder;-><init>()V
+0x0000e6: invoke-virtual v9, v8, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000ec: const-string v8, "="
+0x0000f0: invoke-virtual v9, v8, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x0000f6: invoke-virtual v9, v7, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+0x0000fc: invoke-virtual v9, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000102: move-result-object v7
+0x000104: invoke-virtual v6, v7, Ljava/util/StringJoiner;->add(Ljava/lang/CharSequence;)Ljava/util/StringJoiner;
+0x00010a: goto -2dh
+0x00010c: const-string v5, "62b36629-ecb4-4725-9f33-ccb0fd158191"
+0x000110: invoke-virtual v6, v5, Ljava/util/StringJoiner;->add(Ljava/lang/CharSequence;)Ljava/util/StringJoiner;
+0x000116: invoke-virtual v6, Ljava/util/StringJoiner;->toString()Ljava/lang/String;
+0x00011c: move-result-object v5
+0x00011e: invoke-virtual v5, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000124: sget-object v6, Ljava/nio/charset/StandardCharsets;->UTF_8 Ljava/nio/charset/Charset;
+0x000128: invoke-virtual v6, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00012e: invoke-virtual v5, v6, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+0x000134: move-result-object v5
+0x000136: invoke-virtual v5, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00013c: const-string v6, "MD5"
+0x000140: invoke-static v6, v5, v3, Lvh3;->u(Ljava/lang/String; [B Z)Ljava/lang/String;
+0x000146: move-result-object v3
+0x000148: invoke-virtual v4, v0, v3, Lau0;->a(Ljava/lang/String; Ljava/lang/String;)V
+0x00014e: invoke-virtual v4, Lau0;->b()Lbu0;
+0x000154: move-result-object v0
+0x000156: invoke-virtual v2, Lti;->B()Lre3;
+0x00015c: move-result-object v2
+0x00015e: iput-object v0, v2, Lre3;->a Ljava/lang/Object;
+0x000162: invoke-virtual v2, Lre3;->k()Lti;
+0x000168: move-result-object v0
+0x00016a: invoke-virtual v1, v0, Lp82;->b(Lti;)Lcd2;
+0x000170: move-result-object v4
+0x000172: return-object v4
+0x000174: const-class v0, Lcom/miui/guardprovider/GuardApplication;
+0x000178: sget-object v2, Lcom/miui/guardprovider/GuardApplication;->application Lcom/miui/guardprovider/GuardApplication;
+0x00017c: const-string v2, "isAllowConnectNetwork"
+0x000180: const-class v3, Landroid/content/Context;
+0x000184: filled-new-array v3, [Ljava/lang/Class;
+0x00018a: move-result-object v3
+0x00018c: invoke-virtual v0, v2, v3, Ljava/lang/Class;->getMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+0x000192: move-result-object v2
+0x000194: const-string v3, "application"
+0x000198: invoke-virtual v0, v3, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+0x00019e: move-result-object v0
+0x0001a0: invoke-virtual v0, v4, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+0x0001a6: move-result-object v0
+0x0001a8: filled-new-array v0, [Ljava/lang/Object;
+0x0001ae: move-result-object v0
+0x0001b0: invoke-virtual v2, v4, v0, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+0x0001b6: move-result-object v0
+0x0001b8: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x0001be: check-cast v0, Ljava/lang/Boolean;
+0x0001c2: invoke-virtual v0, Ljava/lang/Boolean;->booleanValue()Z
+0x0001c8: move-result v0
+0x0001ca: if-eqz v0, +009h
+0x0001ce: iget-object v0, v1, Lp82;->e Lti;
+0x0001d2: invoke-virtual v1, v0, Lp82;->b(Lti;)Lcd2;
+0x0001d8: move-result-object v4
+0x0001da: goto +6h
+0x0001dc: const-string v0, "Network access disabled."
+0x0001e0: invoke-static v0, Lik;->u(Ljava/lang/String;)V
+0x0001e6: return-object v4
+0x0001e8: const-string v0, "Content-Encoding"
+0x0001ec: const-string v5, "User-Agent"
+0x0001f0: const-string v6, "gzip"
+0x0001f4: const-string v7, "Accept-Encoding"
+0x0001f8: const-string v8, "Connection"
+0x0001fc: const-string v9, "Host"
+0x000200: const-string v10, "Transfer-Encoding"
+0x000204: const-string v11, "Content-Type"
+0x000208: const-string v12, "Content-Length"
+0x00020c: iget-object v13, v1, Lp82;->l Lwp1;
+0x000210: iget-object v14, v1, Lp82;->e Lti;
+0x000214: invoke-virtual v14, Lti;->B()Lre3;
+0x00021a: move-result-object v15
+0x00021c: iget-object v4, v14, Lti;->c Ljava/lang/Object;
+0x000220: check-cast v4, Lbu0;
+0x000224: iget-object v3, v14, Lti;->d Ljava/lang/Object;
+0x000228: check-cast v3, Lss0;
+0x00022c: iget-object v14, v14, Lti;->e Ljava/lang/Object;
+0x000230: check-cast v14, Lic2;
+0x000234: move-object/from16 v17, v3
+0x000238: const-wide/16 v18, -1
+0x00023c: if-eqz v14, +030h
+0x000240: invoke-virtual v14, Lic2;->b()Lim1;
+0x000246: move-result-object v2
+0x000248: if-eqz v2, +007h
+0x00024c: iget-object v2, v2, Lim1;->a Ljava/lang/String;
+0x000250: invoke-virtual v15, v11, v2, Lre3;->s(Ljava/lang/String; Ljava/lang/String;)V
+0x000256: invoke-virtual v14, Lic2;->a()J
+0x00025c: move-result-wide v2
+0x00025e: cmp-long v14, v2, v18
+0x000262: if-eqz v14, +011h
+0x000266: invoke-static v2, v3, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
+0x00026c: move-result-object v2
+0x00026e: invoke-virtual v15, v12, v2, Lre3;->s(Ljava/lang/String; Ljava/lang/String;)V
+0x000274: iget-object v2, v15, Lre3;->b Ljava/lang/Object;
+0x000278: check-cast v2, Lvb2;
+0x00027c: invoke-virtual v2, v10, Lvb2;->i(Ljava/lang/String;)V
+0x000282: goto +dh
+0x000284: const-string v2, "chunked"
+0x000288: invoke-virtual v15, v10, v2, Lre3;->s(Ljava/lang/String; Ljava/lang/String;)V
+0x00028e: iget-object v2, v15, Lre3;->b Ljava/lang/Object;
+0x000292: check-cast v2, Lvb2;
+0x000296: invoke-virtual v2, v12, Lvb2;->i(Ljava/lang/String;)V
+0x00029c: move-object/from16 v3, v17
+0x0002a0: invoke-virtual v3, v9, Lss0;->b(Ljava/lang/String;)Ljava/lang/String;
+0x0002a6: move-result-object v2
+0x0002a8: if-nez v2, +00ah
+0x0002ac: const/4 v2, 0
+0x0002ae: invoke-static v4, v2, Lhb3;->h(Lbu0; Z)Ljava/lang/String;
+0x0002b4: move-result-object v10
+0x0002b6: invoke-virtual v15, v9, v10, Lre3;->s(Ljava/lang/String; Ljava/lang/String;)V
+0x0002bc: invoke-virtual v3, v8, Lss0;->b(Ljava/lang/String;)Ljava/lang/String;
+0x0002c2: move-result-object v2
+0x0002c4: if-nez v2, +007h
+0x0002c8: const-string v2, "Keep-Alive"
+0x0002cc: invoke-virtual v15, v8, v2, Lre3;->s(Ljava/lang/String; Ljava/lang/String;)V
+0x0002d2: invoke-virtual v3, v7, Lss0;->b(Ljava/lang/String;)Ljava/lang/String;
+0x0002d8: move-result-object v2
+0x0002da: if-nez v2, +00fh
+0x0002de: const-string v2, "Range"
+0x0002e2: invoke-virtual v3, v2, Lss0;->b(Ljava/lang/String;)Ljava/lang/String;
+0x0002e8: move-result-object v2
+0x0002ea: if-nez v2, +007h
+0x0002ee: invoke-virtual v15, v7, v6, Lre3;->s(Ljava/lang/String; Ljava/lang/String;)V
+0x0002f4: const/4 v2, 1
+0x0002f6: goto +2h
+0x0002f8: const/4 v2, 0
+0x0002fa: invoke-virtual v13, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000300: invoke-virtual v4, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000306: invoke-virtual v3, v5, Lss0;->b(Ljava/lang/String;)Ljava/lang/String;
+0x00030c: move-result-object v3
+0x00030e: if-nez v3, +007h
+0x000312: const-string v3, "okhttp/5.4.0"
+0x000316: invoke-virtual v15, v5, v3, Lre3;->s(Ljava/lang/String; Ljava/lang/String;)V
+0x00031c: invoke-virtual v15, Lre3;->k()Lti;
+0x000322: move-result-object v3
+0x000324: invoke-virtual v1, v3, Lp82;->b(Lti;)Lcd2;
+0x00032a: move-result-object v1
+0x00032c: iget-object v4, v1, Lcd2;->g Lss0;
+0x000330: iget-object v5, v3, Lti;->c Ljava/lang/Object;
+0x000334: check-cast v5, Lbu0;
+0x000338: invoke-static v13, v5, v4, Lwt0;->b(Lwp1; Lbu0; Lss0;)V
+0x00033e: invoke-virtual v1, Lcd2;->a()Lad2;
+0x000344: move-result-object v5
+0x000346: iput-object v3, v5, Lad2;->a Lti;
+0x00034a: if-eqz v2, +075h
+0x00034e: invoke-virtual v4, v0, Lss0;->b(Ljava/lang/String;)Ljava/lang/String;
+0x000354: move-result-object v2
+0x000356: if-nez v2, +003h
+0x00035a: const/4 v2, 0
+0x00035c: invoke-virtual v6, v2, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+0x000362: move-result v2
+0x000364: if-eqz v2, +068h
+0x000368: invoke-static v1, Lwt0;->a(Lcd2;)Z
+0x00036e: move-result v2
+0x000370: if-eqz v2, +062h
+0x000374: iget-object v1, v1, Lcd2;->h Lhd2;
+0x000378: new-instance v2, Lds0;
+0x00037c: invoke-virtual v1, Lhd2;->k()Lmo;
+0x000382: move-result-object v1
+0x000384: invoke-virtual v1, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00038a: invoke-direct v2, Ljava/lang/Object;-><init>()V
+0x000390: new-instance v3, Lh82;
+0x000394: invoke-direct v3, v1, Lh82;-><init>(Lcm2;)V
+0x00039a: iput-object v3, v2, Lds0;->c Lh82;
+0x00039e: new-instance v1, Ljava/util/zip/Inflater;
+0x0003a2: const/4 v6, 1
+0x0003a4: invoke-direct v1, v6, Ljava/util/zip/Inflater;-><init>(Z)V
+0x0003aa: iput-object v1, v2, Lds0;->d Ljava/util/zip/Inflater;
+0x0003ae: new-instance v6, Ljx0;
+0x0003b2: invoke-direct v6, Ljava/lang/Object;-><init>()V
+0x0003b8: iput-object v3, v6, Ljx0;->b Lh82;
+0x0003bc: iput-object v1, v6, Ljx0;->c Ljava/util/zip/Inflater;
+0x0003c0: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x0003c6: iput-object v6, v2, Lds0;->e Ljx0;
+0x0003ca: new-instance v1, Ljava/util/zip/CRC32;
+0x0003ce: invoke-direct v1, Ljava/util/zip/CRC32;-><init>()V
+0x0003d4: iput-object v1, v2, Lds0;->f Ljava/util/zip/CRC32;
+0x0003d8: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x0003de: invoke-virtual v4, Lss0;->g()Lvb2;
+0x0003e4: move-result-object v1
+0x0003e6: invoke-virtual v1, v0, Lvb2;->i(Ljava/lang/String;)V
+0x0003ec: invoke-virtual v1, v12, Lvb2;->i(Ljava/lang/String;)V
+0x0003f2: invoke-virtual v1, Lvb2;->b()Lss0;
+0x0003f8: move-result-object v0
+0x0003fa: invoke-virtual v0, Lss0;->g()Lvb2;
+0x000400: move-result-object v0
+0x000402: iput-object v0, v5, Lad2;->f Lvb2;
+0x000406: invoke-virtual v4, v11, Lss0;->b(Ljava/lang/String;)Ljava/lang/String;
+0x00040c: move-result-object v0
+0x00040e: if-nez v0, +004h
+0x000412: const/4 v4, 0
+0x000414: goto +2h
+0x000416: move-object v4, v0
+0x000418: new-instance v0, Lq82;
+0x00041c: new-instance v1, Lh82;
+0x000420: invoke-direct v1, v2, Lh82;-><init>(Lcm2;)V
+0x000426: move-wide/from16 v2, v18
+0x00042a: invoke-direct v0, v4, v2, v3, v1, Lq82;-><init>(Ljava/lang/String; J Lh82;)V
+0x000430: iput-object v0, v5, Lad2;->g Lhd2;
+0x000434: invoke-virtual v5, Lad2;->a()Lcd2;
+0x00043a: move-result-object v0
+0x00043c: return-object v0
+0x00043e: iget-object v2, v1, Lp82;->a Ll82;
+0x000442: monitor-enter v2
+0x000444: iget-boolean v0, v2, Ll82;->q Z
+0x000448: if-eqz v0, +0b3h
+0x00044c: iget-boolean v0, v2, Ll82;->n Z
+0x000450: if-nez v0, +0a7h
+0x000454: iget-boolean v0, v2, Ll82;->m Z
+0x000458: if-nez v0, +0a3h
+0x00045c: iget-boolean v0, v2, Ll82;->p Z
+0x000460: if-nez v0, +09fh
+0x000464: iget-boolean v0, v2, Ll82;->o Z
+0x000468: if-nez v0, +09bh
+0x00046c: monitor-exit v2
+0x00046e: iget-object v0, v2, Ll82;->i Lfi0;
+0x000472: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000478: invoke-interface v0, Lfi0;->a()Lm82;
+0x00047e: move-result-object v3
+0x000480: iget-object v4, v2, Ll82;->b Lew1;
+0x000484: invoke-virtual v3, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00048a: invoke-virtual v4, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000490: iget v5, v1, Lp82;->g I
+0x000494: iget-object v6, v3, Lm82;->h Lhq3;
+0x000498: iget-object v7, v3, Lm82;->i Lmt0;
+0x00049c: if-eqz v7, +020h
+0x0004a0: new-instance v5, Lnt0;
+0x0004a4: invoke-direct v5, Ljava/lang/Object;-><init>()V
+0x0004aa: iput-object v3, v5, Lnt0;->a Lm82;
+0x0004ae: iput-object v1, v5, Lnt0;->b Lp82;
+0x0004b2: iput-object v7, v5, Lnt0;->c Lmt0;
+0x0004b6: iget-object v3, v4, Lew1;->r Ljava/util/List;
+0x0004ba: sget-object v4, Li62;->h Li62;
+0x0004be: invoke-interface v3, v4, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+0x0004c4: move-result v3
+0x0004c6: if-eqz v3, +003h
+0x0004ca: goto +3h
+0x0004cc: sget-object v4, Li62;->g Li62;
+0x0004d0: iput-object v4, v5, Lnt0;->e Li62;
+0x0004d4: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x0004da: goto +29h
+0x0004dc: iget-object v7, v3, Lm82;->e Ljava/net/Socket;
+0x0004e0: invoke-virtual v7, v5, Ljava/net/Socket;->setSoTimeout(I)V
+0x0004e6: iget-object v7, v6, Lhq3;->d Ljava/lang/Object;
+0x0004ea: check-cast v7, Lh82;
+0x0004ee: iget-object v7, v7, Lh82;->b Lcm2;
+0x0004f2: invoke-interface v7, Lcm2;->f()Lyt2;
+0x0004f8: move-result-object v7
+0x0004fa: int-to-long v8, v5
+0x0004fc: invoke-virtual v7, v8, v9, Lyt2;->g(J)Lyt2;
+0x000502: iget-object v5, v6, Lhq3;->e Ljava/lang/Object;
+0x000506: check-cast v5, Lg82;
+0x00050a: iget-object v5, v5, Lg82;->b Lil2;
+0x00050e: invoke-interface v5, Lil2;->f()Lyt2;
+0x000514: move-result-object v5
+0x000516: iget v7, v1, Lp82;->h I
+0x00051a: int-to-long v7, v7
+0x00051c: invoke-virtual v5, v7, v8, Lyt2;->g(J)Lyt2;
+0x000522: new-instance v5, Ldt0;
+0x000526: invoke-direct v5, v4, v3, v6, Ldt0;-><init>(Lew1; Ldi0; Lhq3;)V
+0x00052c: new-instance v3, Lge0;
+0x000530: invoke-direct v3, Ljava/lang/Object;-><init>()V
+0x000536: iput-object v2, v3, Lge0;->b Ljava/lang/Object;
+0x00053a: iput-object v0, v3, Lge0;->c Ljava/lang/Object;
+0x00053e: iput-object v5, v3, Lge0;->d Ljava/lang/Object;
+0x000542: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x000548: iput-object v3, v2, Ll82;->l Lge0;
+0x00054c: iput-object v3, v2, Ll82;->s Lge0;
+0x000550: monitor-enter v2
+0x000552: const/4 v6, 1
+0x000554: iput-boolean v6, v2, Ll82;->m Z
+0x000558: iput-boolean v6, v2, Ll82;->n Z
+0x00055c: monitor-exit v2
+0x00055e: iget-boolean v0, v2, Ll82;->r Z
+0x000562: if-nez v0, +012h
+0x000566: const v0, 2097149
+0x00056c: const/4 v2, 0
+0x00056e: const/4 v4, 0
+0x000570: invoke-static v1, v2, v3, v4, v0, Lp82;->a(Lp82; I Lge0; Lti; I)Lp82;
+0x000576: move-result-object v0
+0x000578: iget-object v1, v1, Lp82;->e Lti;
+0x00057c: invoke-virtual v0, v1, Lp82;->b(Lti;)Lcd2;
+0x000582: move-result-object v4
+0x000584: goto +7h
+0x000586: const/4 v4, 0
+0x000588: const-string v0, "Canceled"
+0x00058c: invoke-static v0, Lik;->u(Ljava/lang/String;)V
+0x000592: return-object v4
+0x000594: move-exception v0
+0x000596: monitor-exit v2
+0x000598: throw v0
+0x00059a: move-exception v0
+0x00059c: goto +11h
+0x00059e: new-instance v0, Ljava/lang/IllegalStateException;
+0x0005a2: const-string v1, "Check failed."
+0x0005a6: invoke-direct v0, v1, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+0x0005ac: throw v0
+0x0005ae: const-string v0, "released"
+0x0005b2: new-instance v1, Ljava/lang/IllegalStateException;
+0x0005b6: invoke-direct v1, v0, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+0x0005bc: throw v1
+0x0005be: monitor-exit v2
+0x0005c0: throw v0
+0x0005c2: const-string v2, "close"
+0x0005c6: const-string v3, "upgrade"
+0x0005ca: const-string v5, "Connection"
+0x0005ce: iget-object v7, v1, Lp82;->d Lge0;
+0x0005d2: invoke-virtual v7, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x0005d8: iget-object v1, v1, Lp82;->e Lti;
+0x0005dc: iget-object v0, v1, Lti;->e Ljava/lang/Object;
+0x0005e0: check-cast v0, Lic2;
+0x0005e4: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x0005ea: move-result-wide v13
+0x0005ec: iget-object v6, v1, Lti;->h Ljava/lang/Object;
+0x0005f0: check-cast v6, Ljava/lang/String;
+0x0005f4: invoke-static v6, Luw0;->y(Ljava/lang/String;)Z
+0x0005fa: move-result v6
+0x0005fc: if-eqz v6, +006h
+0x000600: if-eqz v0, +004h
+0x000604: const/4 v6, 1
+0x000606: goto +2h
+0x000608: const/4 v6, 0
+0x00060a: iget-object v8, v1, Lti;->d Ljava/lang/Object;
+0x00060e: check-cast v8, Lss0;
+0x000612: invoke-virtual v8, v5, Lss0;->b(Ljava/lang/String;)Ljava/lang/String;
+0x000618: move-result-object v8
+0x00061a: invoke-virtual v3, v8, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+0x000620: move-result v15
+0x000622: iget-object v8, v7, Lge0;->b Ljava/lang/Object;
+0x000626: check-cast v8, Ll82;
+0x00062a: iget-object v8, v8, Ll82;->e Lvh0;
+0x00062e: invoke-virtual v8, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000634: iget-object v8, v7, Lge0;->d Ljava/lang/Object;
+0x000638: check-cast v8, Lei0;
+0x00063c: invoke-interface v8, v1, Lei0;->j(Lti;)V
+0x000642: iget-object v8, v7, Lge0;->b Ljava/lang/Object;
+0x000646: check-cast v8, Ll82;
+0x00064a: iget-object v8, v8, Ll82;->e Lvh0;
+0x00064e: invoke-virtual v8, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000654: if-eqz v6, +0cch
+0x000658: const-string v6, "100-continue"
+0x00065c: const-string v8, "Expect"
+0x000660: iget-object v9, v1, Lti;->d Ljava/lang/Object;
+0x000664: check-cast v9, Lss0;
+0x000668: invoke-virtual v9, v8, Lss0;->b(Ljava/lang/String;)Ljava/lang/String;
+0x00066e: move-result-object v8
+0x000670: invoke-virtual v6, v8, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+0x000676: move-result v6
+0x000678: if-eqz v6, +035h
+0x00067c: iget-object v6, v7, Lge0;->d Ljava/lang/Object;
+0x000680: check-cast v6, Lei0;
+0x000684: invoke-interface v6, Lei0;->f()V
+0x00068a: const/4 v12, 1
+0x00068c: invoke-virtual v7, v12, Lge0;->d(Z)Lad2;
+0x000692: move-result-object v6
+0x000694: iget-object v8, v7, Lge0;->b Ljava/lang/Object;
+0x000698: check-cast v8, Ll82;
+0x00069c: iget-object v8, v8, Ll82;->e Lvh0;
+0x0006a0: invoke-virtual v8, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x0006a6: move-object/from16 v16, v6
+0x0006aa: const/16 v17, 0
+0x0006ae: goto +1fh
+0x0006b0: move-exception v0
+0x0006b2: move/from16 v17, v12
+0x0006b6: move/from16 v18, v17
+0x0006ba: goto/16 +0d7h
+0x0006be: move-exception v0
+0x0006c0: move-object v6, v4
+0x0006c2: goto -8h
+0x0006c4: move-exception v0
+0x0006c6: const/4 v12, 1
+0x0006c8: iget-object v6, v7, Lge0;->b Ljava/lang/Object;
+0x0006cc: check-cast v6, Ll82;
+0x0006d0: iget-object v6, v6, Ll82;->e Lvh0;
+0x0006d4: invoke-virtual v6, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x0006da: invoke-virtual v7, v0, Lge0;->e(Ljava/io/IOException;)V
+0x0006e0: throw v0
+0x0006e2: const/4 v12, 1
+0x0006e4: move-object/from16 v16, v4
+0x0006e8: move/from16 v17, v12
+0x0006ec: if-nez v16, +048h
+0x0006f0: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x0006f6: iget-object v6, v1, Lti;->e Ljava/lang/Object;
+0x0006fa: check-cast v6, Lic2;
+0x0006fe: invoke-virtual v6, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000704: invoke-virtual v6, Lic2;->a()J
+0x00070a: move-result-wide v9
+0x00070c: iget-object v6, v7, Lge0;->b Ljava/lang/Object;
+0x000710: check-cast v6, Ll82;
+0x000714: iget-object v6, v6, Ll82;->e Lvh0;
+0x000718: invoke-virtual v6, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00071e: iget-object v6, v7, Lge0;->d Ljava/lang/Object;
+0x000722: check-cast v6, Lei0;
+0x000726: invoke-interface v6, v1, v9, v10, Lei0;->i(Lti; J)Lil2;
+0x00072c: move-result-object v8
+0x00072e: new-instance v6, Lbi0;
+0x000732: const/4 v11, 0
+0x000734: invoke-direct/range v6 ... v11, Lbi0;-><init>(Lge0; Lil2; J Z)V
+0x00073a: new-instance v8, Lg82;
+0x00073e: invoke-direct v8, Ljava/lang/Object;-><init>()V
+0x000744: iput-object v6, v8, Lg82;->b Lil2;
+0x000748: new-instance v6, Lao;
+0x00074c: invoke-direct v6, Ljava/lang/Object;-><init>()V
+0x000752: iput-object v6, v8, Lg82;->c Lao;
+0x000756: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x00075c: invoke-virtual v0, v8, Lic2;->d(Llo;)V
+0x000762: invoke-virtual v8, Lg82;->close()V
+0x000768: move/from16 v18, v12
+0x00076c: goto +32h
+0x00076e: move-exception v0
+0x000770: move/from16 v18, v12
+0x000774: move-object/from16 v6, v16
+0x000778: goto/16 +078h
+0x00077c: iget-object v0, v7, Lge0;->b Ljava/lang/Object;
+0x000780: move-object v6, v0
+0x000782: check-cast v6, Ll82;
+0x000786: const/4 v10, 0
+0x000788: const/4 v11, 0
+0x00078a: move v8, v12
+0x00078c: const/4 v12, 0
+0x00078e: move v9, v8
+0x000790: const/4 v8, 1
+0x000792: move/from16 v18, v9
+0x000796: const/4 v9, 0
+0x000798: invoke-virtual/range v6 ... v12, Ll82;->f(Lge0; Z Z Z Z Ljava/io/IOException;)Ljava/io/IOException;
+0x00079e: invoke-virtual v7, Lge0;->b()Lm82;
+0x0007a4: move-result-object v0
+0x0007a6: iget-object v0, v0, Lm82;->i Lmt0;
+0x0007aa: if-eqz v0, +005h
+0x0007ae: move/from16 v0, v18
+0x0007b2: goto +2h
+0x0007b4: const/4 v0, 0
+0x0007b6: if-nez v0, +00dh
+0x0007ba: iget-object v0, v7, Lge0;->d Ljava/lang/Object;
+0x0007be: check-cast v0, Lei0;
+0x0007c2: invoke-interface v0, Lei0;->h()Ldi0;
+0x0007c8: move-result-object v0
+0x0007ca: invoke-interface v0, Ldi0;->e()V
+0x0007d0: move-object/from16 v6, v16
+0x0007d4: goto +1eh
+0x0007d6: move-exception v0
+0x0007d8: goto -32h
+0x0007da: move-exception v0
+0x0007dc: goto -36h
+0x0007de: move-exception v0
+0x0007e0: const/16 v18, 1
+0x0007e4: move-object v6, v4
+0x0007e6: move/from16 v17, v18
+0x0007ea: goto +3fh
+0x0007ec: const/16 v18, 1
+0x0007f0: iget-object v0, v7, Lge0;->b Ljava/lang/Object;
+0x0007f4: move-object v6, v0
+0x0007f6: check-cast v6, Ll82;
+0x0007fa: const/4 v10, 0
+0x0007fc: const/4 v11, 0
+0x0007fe: const/4 v12, 0
+0x000800: const/4 v8, 1
+0x000802: const/4 v9, 0
+0x000804: invoke-virtual/range v6 ... v12, Ll82;->f(Lge0; Z Z Z Z Ljava/io/IOException;)Ljava/io/IOException;
+0x00080a: move-object v6, v4
+0x00080c: move/from16 v17, v18
+0x000810: iget-object v0, v7, Lge0;->d Ljava/lang/Object;
+0x000814: check-cast v0, Lei0;
+0x000818: invoke-interface v0, Lei0;->a()V
+0x00081e: move-object v0, v6
+0x000820: move-object v6, v4
+0x000822: goto +30h
+0x000824: move-exception v0
+0x000826: iget-object v8, v7, Lge0;->b Ljava/lang/Object;
+0x00082a: check-cast v8, Ll82;
+0x00082e: iget-object v8, v8, Ll82;->e Lvh0;
+0x000832: invoke-virtual v8, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000838: invoke-virtual v7, v0, Lge0;->e(Ljava/io/IOException;)V
+0x00083e: throw v0
+0x000840: move-exception v0
+0x000842: goto +13h
+0x000844: move-exception v0
+0x000846: goto -31h
+0x000848: move-exception v0
+0x00084a: const/16 v18, 1
+0x00084e: iget-object v6, v7, Lge0;->b Ljava/lang/Object;
+0x000852: check-cast v6, Ll82;
+0x000856: iget-object v6, v6, Ll82;->e Lvh0;
+0x00085a: invoke-virtual v6, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000860: invoke-virtual v7, v0, Lge0;->e(Ljava/io/IOException;)V
+0x000866: throw v0
+0x000868: instance-of v8, v0, Lw00;
+0x00086c: if-nez v8, +162h
+0x000870: iget-boolean v8, v7, Lge0;->a Z
+0x000874: if-eqz v8, +15dh
+0x000878: move-object/from16 v20, v6
+0x00087c: move-object v6, v0
+0x00087e: move-object/from16 v0, v20
+0x000882: if-nez v0, +01bh
+0x000886: const/4 v8, 0
+0x000888: invoke-virtual v7, v8, Lge0;->d(Z)Lad2;
+0x00088e: move-result-object v0
+0x000890: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000896: if-eqz v17, +011h
+0x00089a: iget-object v8, v7, Lge0;->b Ljava/lang/Object;
+0x00089e: check-cast v8, Ll82;
+0x0008a2: iget-object v8, v8, Ll82;->e Lvh0;
+0x0008a6: invoke-virtual v8, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x0008ac: const/16 v17, 0
+0x0008b0: goto +4h
+0x0008b2: move-exception v0
+0x0008b4: goto/16 +136h
+0x0008b8: iput-object v1, v0, Lad2;->a Lti;
+0x0008bc: invoke-virtual v7, Lge0;->b()Lm82;
+0x0008c2: move-result-object v8
+0x0008c4: iget-object v8, v8, Lm82;->f Lis0;
+0x0008c8: iput-object v8, v0, Lad2;->e Lis0;
+0x0008cc: iput-wide v13, v0, Lad2;->l J
+0x0008d0: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x0008d6: move-result-wide v8
+0x0008d8: iput-wide v8, v0, Lad2;->m J
+0x0008dc: invoke-virtual v0, Lad2;->a()Lcd2;
+0x0008e2: move-result-object v0
+0x0008e4: iget v8, v0, Lcd2;->e I
+0x0008e8: const/16 v9, 100
+0x0008ec: if-ne v8, v9, +004h
+0x0008f0: const/4 v9, 0
+0x0008f2: goto +ah
+0x0008f4: const/16 v9, 102
+0x0008f8: if-gt v9, v8, +032h
+0x0008fc: const/16 v9, 200
+0x000900: if-ge v8, v9, +02eh
+0x000904: goto -ah
+0x000906: invoke-virtual v7, v9, Lge0;->d(Z)Lad2;
+0x00090c: move-result-object v0
+0x00090e: invoke-virtual v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000914: if-eqz v17, +00bh
+0x000918: iget-object v8, v7, Lge0;->b Ljava/lang/Object;
+0x00091c: check-cast v8, Ll82;
+0x000920: iget-object v8, v8, Ll82;->e Lvh0;
+0x000924: invoke-virtual v8, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00092a: iput-object v1, v0, Lad2;->a Lti;
+0x00092e: invoke-virtual v7, Lge0;->b()Lm82;
+0x000934: move-result-object v8
+0x000936: iget-object v8, v8, Lm82;->f Lis0;
+0x00093a: iput-object v8, v0, Lad2;->e Lis0;
+0x00093e: iput-wide v13, v0, Lad2;->l J
+0x000942: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000948: move-result-wide v10
+0x00094a: iput-wide v10, v0, Lad2;->m J
+0x00094e: invoke-virtual v0, Lad2;->a()Lcd2;
+0x000954: move-result-object v0
+0x000956: iget v8, v0, Lcd2;->e I
+0x00095a: goto -39h
+0x00095c: const/4 v9, 0
+0x00095e: iget-object v1, v7, Lge0;->b Ljava/lang/Object;
+0x000962: check-cast v1, Ll82;
+0x000966: iget-object v1, v1, Ll82;->e Lvh0;
+0x00096a: invoke-virtual v1, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000970: const/16 v1, 101
+0x000974: if-ne v8, v1, +005h
+0x000978: move/from16 v1, v18
+0x00097c: goto +2h
+0x00097e: move v1, v9
+0x000980: if-eqz v1, +019h
+0x000984: invoke-virtual v7, Lge0;->b()Lm82;
+0x00098a: move-result-object v10
+0x00098c: iget-object v10, v10, Lm82;->i Lmt0;
+0x000990: if-eqz v10, +005h
+0x000994: move/from16 v10, v18
+0x000998: goto +2h
+0x00099a: move v10, v9
+0x00099c: if-nez v10, +003h
+0x0009a0: goto +9h
+0x0009a2: new-instance v0, Ljava/net/ProtocolException;
+0x0009a6: const-string v1, "Unexpected 101 code on HTTP/2 connection"
+0x0009aa: invoke-direct v0, v1, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+0x0009b0: throw v0
+0x0009b2: if-eqz v1, +012h
+0x0009b6: iget-object v1, v0, Lcd2;->g Lss0;
+0x0009ba: invoke-virtual v1, v5, Lss0;->b(Ljava/lang/String;)Ljava/lang/String;
+0x0009c0: move-result-object v1
+0x0009c2: if-nez v1, +003h
+0x0009c6: move-object v1, v4
+0x0009c8: invoke-virtual v3, v1, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+0x0009ce: move-result v1
+0x0009d0: if-eqz v1, +003h
+0x0009d4: goto +3h
+0x0009d6: move/from16 v18, v9
+0x0009da: if-eqz v15, +026h
+0x0009de: if-eqz v18, +024h
+0x0009e2: invoke-virtual v0, Lcd2;->a()Lad2;
+0x0009e8: move-result-object v1
+0x0009ea: new-instance v3, Li13;
+0x0009ee: iget-object v9, v0, Lcd2;->h Lhd2;
+0x0009f2: invoke-virtual v9, Lhd2;->g()Lim1;
+0x0009f8: move-result-object v9
+0x0009fa: iget-object v0, v0, Lcd2;->h Lhd2;
+0x0009fe: invoke-virtual v0, Lhd2;->b()J
+0x000a04: move-result-wide v10
+0x000a06: invoke-direct v3, v9, v10, v11, Li13;-><init>(Lim1; J)V
+0x000a0c: iput-object v3, v1, Lad2;->g Lhd2;
+0x000a10: invoke-virtual v7, Lge0;->f()Lq63;
+0x000a16: move-result-object v0
+0x000a18: iput-object v0, v1, Lad2;->h Lq63;
+0x000a1c: invoke-virtual v1, Lad2;->a()Lcd2;
+0x000a22: move-result-object v0
+0x000a24: goto +16h
+0x000a26: invoke-virtual v7, v0, Lge0;->c(Lcd2;)Lq82;
+0x000a2c: move-result-object v1
+0x000a2e: invoke-virtual v0, Lcd2;->a()Lad2;
+0x000a34: move-result-object v0
+0x000a36: iput-object v1, v0, Lad2;->g Lhd2;
+0x000a3a: new-instance v1, Lfo3;
+0x000a3e: invoke-direct v1, Ljava/lang/Object;-><init>()V
+0x000a44: iput-object v1, v0, Lad2;->o Lav2;
+0x000a48: invoke-virtual v0, Lad2;->a()Lcd2;
+0x000a4e: move-result-object v0
+0x000a50: iget-object v1, v0, Lcd2;->b Lti;
+0x000a54: invoke-virtual v1, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000a5a: iget-object v1, v1, Lti;->d Ljava/lang/Object;
+0x000a5e: check-cast v1, Lss0;
+0x000a62: invoke-virtual v1, v5, Lss0;->b(Ljava/lang/String;)Ljava/lang/String;
+0x000a68: move-result-object v1
+0x000a6a: invoke-virtual v2, v1, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+0x000a70: move-result v1
+0x000a72: if-nez v1, +012h
+0x000a76: iget-object v1, v0, Lcd2;->g Lss0;
+0x000a7a: invoke-virtual v1, v5, Lss0;->b(Ljava/lang/String;)Ljava/lang/String;
+0x000a80: move-result-object v1
+0x000a82: if-nez v1, +003h
+0x000a86: goto +2h
+0x000a88: move-object v4, v1
+0x000a8a: invoke-virtual v2, v4, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+0x000a90: move-result v1
+0x000a92: if-eqz v1, +00dh
+0x000a96: iget-object v1, v7, Lge0;->d Ljava/lang/Object;
+0x000a9a: check-cast v1, Lei0;
+0x000a9e: invoke-interface v1, Lei0;->h()Ldi0;
+0x000aa4: move-result-object v1
+0x000aa6: invoke-interface v1, Ldi0;->e()V
+0x000aac: const/16 v1, 204
+0x000ab0: if-eq v8, v1, +006h
+0x000ab4: const/16 v1, 205
+0x000ab8: if-ne v8, v1, +00eh
+0x000abc: iget-object v1, v0, Lcd2;->h Lhd2;
+0x000ac0: invoke-virtual v1, Lhd2;->b()J
+0x000ac6: move-result-wide v1
+0x000ac8: const-wide/16 v3, 0
+0x000acc: cmp-long v1, v1, v3
+0x000ad0: if-gtz v1, +003h
+0x000ad4: return-object v0
+0x000ad6: new-instance v1, Ljava/net/ProtocolException;
+0x000ada: new-instance v2, Ljava/lang/StringBuilder;
+0x000ade: invoke-direct v2, Ljava/lang/StringBuilder;-><init>()V
+0x000ae4: const-string v3, "HTTP "
+0x000ae8: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000aee: invoke-virtual v2, v8, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+0x000af4: const-string v3, " had non-zero Content-Length: "
+0x000af8: invoke-virtual v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+0x000afe: iget-object v0, v0, Lcd2;->h Lhd2;
+0x000b02: invoke-virtual v0, Lhd2;->b()J
+0x000b08: move-result-wide v3
+0x000b0a: invoke-virtual v2, v3, v4, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+0x000b10: invoke-virtual v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000b16: move-result-object v0
+0x000b18: invoke-direct v1, v0, Ljava/net/ProtocolException;-><init>(Ljava/lang/String;)V
+0x000b1e: throw v1
+0x000b20: if-eqz v6, +006h
+0x000b24: invoke-static v6, v0, Loe2;->k(Ljava/lang/Throwable; Ljava/lang/Throwable;)V
+0x000b2a: throw v6
+0x000b2c: throw v0
+0x000b2e: throw v0
+0x000b30: throw v0
+0x000b32: nop 
+0x000b34: packed-switch-payload 0 1 2 3
+
+CLASS classes.dex Lqi;
+FIELD a Lri3; = None
+FIELD b Lsi; = None
+
+METHOD onRecognizeResult(Ljava/lang/String; Lcom/xiaomi/ai/vision/sdk/model/RecognizeResult;)V flags=public final
+registers=7 inputs=3
+0x000000: invoke-virtual v5, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000006: invoke-virtual v6, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00000c: iget-object v5, v4, Lqi;->a Lri3;
+0x000010: new-instance v0, Loi;
+0x000014: invoke-virtual v6, Lcom/xiaomi/ai/vision/sdk/model/RecognizeResult;->getSrcStr()Ljava/lang/String;
+0x00001a: move-result-object v1
+0x00001c: invoke-virtual v6, Lcom/xiaomi/ai/vision/sdk/model/RecognizeResult;->getSegId()I
+0x000022: move-result v6
+0x000024: invoke-virtual v1, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00002a: invoke-direct v0, Ljava/lang/Object;-><init>()V
+0x000030: iput-object v1, v0, Loi;->a Ljava/lang/String;
+0x000034: iput v6, v0, Loi;->b I
+0x000038: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x00003e: invoke-virtual v5, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000044: iget-object v1, v5, Lri3;->c Ljava/lang/Object;
+0x000048: check-cast v1, Loi;
+0x00004c: const/4 v2, 0
+0x00004e: if-nez v1, +006h
+0x000052: iput-object v0, v5, Lri3;->c Ljava/lang/Object;
+0x000056: move-object v5, v2
+0x000058: goto +ch
+0x00005a: iget v3, v1, Loi;->b I
+0x00005e: if-ne v3, v6, +005h
+0x000062: iput-object v0, v5, Lri3;->c Ljava/lang/Object;
+0x000066: goto -8h
+0x000068: iput-object v0, v5, Lri3;->c Ljava/lang/Object;
+0x00006c: iget-object v5, v1, Loi;->a Ljava/lang/String;
+0x000070: if-eqz v5, +014h
+0x000074: iget-object v4, v4, Lqi;->b Lsi;
+0x000078: iget-object v4, v4, Lsi;->e Ljava/lang/Object;
+0x00007c: check-cast v4, Lop0;
+0x000080: if-eqz v4, +006h
+0x000084: invoke-interface v4, v5, Lop0;->z(Ljava/lang/Object;)Ljava/lang/Object;
+0x00008a: return-void 
+0x00008c: const-string v4, "sentenceCallback"
+0x000090: invoke-static v4, Laz0;->J(Ljava/lang/String;)V
+0x000096: throw v2
+0x000098: return-void 
+
+METHOD onRecognizeStart(Ljava/lang/String;)V flags=public final
+registers=4 inputs=2
+0x000000: invoke-virtual v3, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000006: iget-object v2, v2, Lqi;->b Lsi;
+0x00000a: iput-object v3, v2, Lsi;->a Ljava/lang/String;
+0x00000e: iget-object v0, v2, Lsi;->c Ljava/lang/Object;
+0x000012: check-cast v0, Luj;
+0x000016: new-instance v1, Lpi;
+0x00001a: invoke-direct v1, Ljava/lang/Object;-><init>()V
+0x000020: iput-object v2, v1, Lpi;->a Lsi;
+0x000024: iput-object v3, v1, Lpi;->b Ljava/lang/String;
+0x000028: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x00002e: invoke-interface v0, v1, Luj;->a(Lpi;)V
+0x000034: return-void 
+
+METHOD onRecognizeStop(Ljava/lang/String;)V flags=public final
+registers=2 inputs=2
+0x000000: invoke-virtual v1, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000006: return-void 
+
+CLASS classes.dex Lqq;
+FIELD a J = None
+FIELD b La7; = None
+FIELD c Ljava/util/ArrayList; = None
+FIELD d J = None
+
+METHOD a(Ljava/lang/String;)V flags=public final
+registers=10 inputs=2
+0x000000: invoke-virtual v9, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x000006: iget-object v0, v8, Lqq;->c Ljava/util/ArrayList;
+0x00000a: invoke-virtual v0, v9, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+0x000010: invoke-static Ljava/lang/System;->currentTimeMillis()J
+0x000016: move-result-wide v6
+0x000018: iget-wide v1, v8, Lqq;->d J
+0x00001c: sub-long v1, v6, v1
+0x000020: iget-wide v3, v8, Lqq;->a J
+0x000024: cmp-long v9, v1, v3
+0x000028: if-lez v9, +019h
+0x00002c: iget-object v9, v8, Lqq;->b La7;
+0x000030: invoke-static Ljava/lang/System;->lineSeparator()Ljava/lang/String;
+0x000036: move-result-object v1
+0x000038: invoke-virtual v1, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+0x00003e: const/4 v4, 0
+0x000040: const/16 v5, 62
+0x000044: const/4 v2, 0
+0x000046: const/4 v3, 0
+0x000048: invoke-static/range v0 ... v5, Lzx;->Y(Ljava/lang/Iterable; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Lop0; I)Ljava/lang/String;
+0x00004e: move-result-object v0
+0x000050: invoke-virtual v9, v0, La7;->z(Ljava/lang/Object;)Ljava/lang/Object;
+0x000056: iput-wide v6, v8, Lqq;->d J
+0x00005a: return-void 
+
+CLASS classes.dex Lsi;
+FIELD a Ljava/lang/String; = None
+FIELD b Z = None
+FIELD c Ljava/lang/Object; = None
+FIELD d Ljava/lang/Object; = None
+FIELD e Ljava/lang/Object; = None
+FIELD f Ljava/lang/Object; = None
+FIELD g Ljava/lang/Object; = None
+
+METHOD a(Landroid/content/res/AssetManager; Ljava/lang/String;)Ljava/io/FileInputStream; flags=public
+registers=3 inputs=3
+TRY bytes [0x0,0x10) -> [('Ljava/io/FileNotFoundException;', 18)]
+0x000000: invoke-virtual v1, v2, Landroid/content/res/AssetManager;->openFd(Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;
+0x000006: move-result-object v1
+0x000008: invoke-virtual v1, Landroid/content/res/AssetFileDescriptor;->createInputStream()Ljava/io/FileInputStream;
+0x00000e: move-result-object v0
+0x000010: return-object v0
+0x000012: move-exception v1
+0x000014: invoke-virtual v1, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+0x00001a: move-result-object v1
+0x00001c: if-eqz v1, +011h
+0x000020: const-string v2, "compressed"
+0x000024: invoke-virtual v1, v2, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+0x00002a: move-result v1
+0x00002c: if-eqz v1, +009h
+0x000030: iget-object v0, v0, Lsi;->d Ljava/lang/Object;
+0x000034: check-cast v0, Ln22;
+0x000038: invoke-interface v0, Ln22;->h()V
+0x00003e: const/4 v0, 0
+0x000040: return-object v0
+
+METHOD b()V flags=public
+registers=3 inputs=1
+TRY bytes [0x0,0x12) -> [('catchall', 20)]
+0x000000: iget-object v2, v2, Lsi;->c Ljava/lang/Object;
+0x000004: check-cast v2, Luj;
+0x000008: invoke-interface v2, Luj;->stop()V
+0x00000e: sget-object v2, Lc13;->a Lc13;
+0x000012: goto +6h
+0x000014: move-exception v2
+0x000016: invoke-static v2, Lkk3;->m(Ljava/lang/Throwable;)Lpd2;
+0x00001c: move-result-object v2
+0x00001e: invoke-static v2, Lqd2;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
+0x000024: move-result-object v2
+0x000026: if-eqz v2, +009h
+0x00002a: const-string v0, "Asr"
+0x00002e: const-string v1, "Release audio source failed"
+0x000032: invoke-static v0, v1, v2, Landroid/util/Log;->w(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I
+0x000038: return-void 
+
+METHOD c(I Ljava/io/IOException;)V flags=public
+registers=6 inputs=3
+0x000000: iget-object v0, v3, Lsi;->c Ljava/lang/Object;
+0x000004: check-cast v0, Ljava/util/concurrent/Executor;
+0x000008: new-instance v1, Lsz;
+0x00000c: const/4 v2, 1
+0x00000e: invoke-direct v1, v2, Lsz;-><init>(I)V
+0x000014: iput-object v3, v1, Lsz;->d Ljava/lang/Object;
+0x000018: iput v4, v1, Lsz;->c I
+0x00001c: iput-object v5, v1, Lsz;->e Ljava/lang/Object;
+0x000020: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x000026: invoke-interface v0, v1, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+0x00002c: return-void 
+
+METHOD d(Lop0; Ljava/util/function/Consumer;)V flags=public
+registers=16 inputs=3
+TRY bytes [0x10,0x58) -> [('catchall', 90)]
+0x000000: iget-boolean v0, v13, Lsi;->b Z
+0x000004: if-nez v0, +033h
+0x000008: iput-object v14, v13, Lsi;->e Ljava/lang/Object;
+0x00000c: iput-object v15, v13, Lsi;->f Ljava/lang/Object;
+0x000010: iget-object v14, v13, Lsi;->d Ljava/lang/Object;
+0x000014: move-object v0, v14
+0x000016: check-cast v0, Lcom/xiaomi/ai/vision/sdk/AiCapability;
+0x00001a: const-string v4, "zh-CN"
+0x00001e: const-string v5, "zh-CN"
+0x000022: iget-object v14, v13, Lsi;->g Ljava/lang/Object;
+0x000026: move-object v8, v14
+0x000028: check-cast v8, Lqi;
+0x00002c: new-instance v10, Lri;
+0x000030: invoke-direct v10, Ljava/lang/Object;-><init>()V
+0x000036: iput-object v13, v10, Lri;->a Lsi;
+0x00003a: invoke-static Ljava/lang/invoke/VarHandle;->storeStoreFence()V
+0x000040: const/16 v11, 256
+0x000044: const/4 v12, 0
+0x000046: const/4 v1, 4
+0x000048: const/4 v2, 0
+0x00004a: const/4 v3, 0
+0x00004c: const/4 v6, 0
+0x00004e: const/4 v7, 0
+0x000050: const/4 v9, 0
+0x000052: invoke-static/range v0 ... v12, Lcom/xiaomi/ai/vision/sdk/AiCapability;->startRecognize$default(Lcom/xiaomi/ai/vision/sdk/AiCapability; I I Z Ljava/lang/String; Ljava/lang/String; Z Z Lcom/xiaomi/ai/vision/sdk/callback/SpeechRecognizeCallback; Lcom/xiaomi/ai/vision/sdk/callback/TtsCallback; Lcom/xiaomi/ai/vision/sdk/callback/ErrorCallback; I Ljava/lang/Object;)V
+0x000058: goto +6h
+0x00005a: move-exception v0
+0x00005c: move-object v14, v0
+0x00005e: invoke-static v14, Lkk3;->m(Ljava/lang/Throwable;)Lpd2;
+0x000064: const/4 v14, 1
+0x000066: iput-boolean v14, v13, Lsi;->b Z
+0x00006a: return-void 
+
+METHOD e()V flags=public
+registers=6 inputs=1
+TRY bytes [0x14,0x2e) -> [('catchall', 48)]
+TRY bytes [0x38,0x5a) -> [('catchall', 92)]
+0x000000: iget-boolean v0, v5, Lsi;->b Z
+0x000004: if-nez v0, +006h
+0x000008: invoke-virtual v5, Lsi;->b()V
+0x00000e: return-void 
+0x000010: const/4 v0, 0
+0x000012: const/4 v1, 0
+0x000014: iget-object v2, v5, Lsi;->a Ljava/lang/String;
+0x000018: if-eqz v2, +00eh
+0x00001c: iget-object v3, v5, Lsi;->d Ljava/lang/Object;
+0x000020: check-cast v3, Lcom/xiaomi/ai/vision/sdk/AiCapability;
+0x000024: invoke-virtual v3, v2, Lcom/xiaomi/ai/vision/sdk/AiCapability;->stopRecognize(Ljava/lang/String;)V
+0x00002a: sget-object v2, Lc13;->a Lc13;
+0x00002e: goto +9h
+0x000030: move-exception v2
+0x000032: goto +3h
+0x000034: move-object v2, v1
+0x000036: goto +5h
+0x000038: invoke-static v2, Lkk3;->m(Ljava/lang/Throwable;)Lpd2;
+0x00003e: move-result-object v2
+0x000040: invoke-static v2, Lqd2;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
+0x000046: move-result-object v2
+0x000048: if-eqz v2, +00ch
+0x00004c: const-string v3, "Asr"
+0x000050: const-string v4, "stopRecognize failed"
+0x000054: invoke-static v3, v4, v2, Landroid/util/Log;->w(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I
+0x00005a: goto +3h
+0x00005c: move-exception v2
+0x00005e: goto +9h
+0x000060: invoke-virtual v5, Lsi;->b()V
+0x000066: iput-object v1, v5, Lsi;->a Ljava/lang/String;
+0x00006a: iput-boolean v0, v5, Lsi;->b Z
+0x00006e: return-void 
+0x000070: invoke-virtual v5, Lsi;->b()V
+0x000076: iput-object v1, v5, Lsi;->a Ljava/lang/String;
+0x00007a: iput-boolean v0, v5, Lsi;->b Z
+0x00007e: throw v2
+
+CLASS classes.dex Lt20;
+FIELD a I = None
+
+METHOD <init>(I)V flags=public synthetic constructor
+registers=2 inputs=2
+0x000000: iput v1, v0, Lt20;->a I
+0x000004: invoke-direct v0, Ljava/lang/Object;-><init>()V
+0x00000a: return-void 
+
+METHOD get()Ljava/lang/Object; flags=public final
+registers=3 inputs=1
+0x000000: iget v2, v2, Lt20;->a I
+0x000004: packed-switch v2, +000002ah
+0x00000a: new-instance v2, Lfh2;
+0x00000e: invoke-direct v2, Lfh2;-><init>()V
+0x000014: return-object v2
+0x000016: new-instance v2, Lpq;
+0x00001a: const/4 v0, 3
+0x00001c: invoke-direct v2, v0, Lpq;-><init>(I)V
+0x000022: new-instance v0, Ldw1;
+0x000026: invoke-direct v0, Ldw1;-><init>()V
+0x00002c: iget-object v1, v0, Ldw1;->d Ljava/util/ArrayList;
+0x000030: invoke-virtual v1, v2, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+0x000036: new-instance v2, Lns1;
+0x00003a: invoke-direct v2, Ljava/net/ProxySelector;-><init>()V
+0x000040: iput-object v2, v0, Ldw1;->m Ljava/net/ProxySelector;
+0x000044: new-instance v2, Lew1;
+0x000048: invoke-direct v2, v0, Lew1;-><init>(Ldw1;)V
+0x00004e: return-object v2
+0x000050: sget-object v2, Lep;->f Lep;
+0x000054: return-object v2
+0x000056: nop 
+0x000058: packed-switch-payload 0 1
+
+CLASS classes.dex Lu7;
+FIELD f I = None
+FIELD g Lcom/miui/guardprovider/aiguard/AiGuardService; = None
+FIELD h Ljava/lang/String; = None
+FIELD i I = None
+
+METHOD <init>(Lcom/miui/guardprovider/aiguard/AiGuardService; Ljava/lang/String; I Lj20;)V flags=public constructor
+registers=5 inputs=5
+0x000000: iput-object v1, v0, Lu7;->g Lcom/miui/guardprovider/aiguard/AiGuardService;
+0x000004: iput-object v2, v0, Lu7;->h Ljava/lang/String;
+0x000008: iput v3, v0, Lu7;->i I
+0x00000c: const/4 v1, 2
+0x00000e: invoke-direct v0, v1, v4, Llr2;-><init>(I Lj20;)V
+0x000014: return-void 
+
+METHOD H(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object; flags=public final
+registers=3 inputs=3
+0x000000: check-cast v1, Lg30;
+0x000004: check-cast v2, Lj20;
+0x000008: invoke-virtual v0, v2, v1, Lu7;->k(Lj20; Ljava/lang/Object;)Lj20;
+0x00000e: move-result-object v0
+0x000010: check-cast v0, Lu7;
+0x000014: sget-object v1, Lc13;->a Lc13;
+0x000018: invoke-virtual v0, v1, Lu7;->o(Ljava/lang/Object;)Ljava/lang/Object;
+0x00001e: move-result-object v0
+0x000020: return-object v0
+
+METHOD k(Lj20; Ljava/lang/Object;)Lj20; flags=public final
+registers=5 inputs=3
+0x000000: new-instance v4, Lu7;
+0x000004: iget-object v0, v2, Lu7;->h Ljava/lang/String;
+0x000008: iget v1, v2, Lu7;->i I
+0x00000c: iget-object v2, v2, Lu7;->g Lcom/miui/guardprovider/aiguard/AiGuardService;
+0x000010: invoke-direct v4, v2, v0, v1, v3, Lu7;-><init>(Lcom/miui/guardprovider/aiguard/AiGuardService; Ljava/lang/String; I Lj20;)V
+0x000016: return-object v4
+
+METHOD o(Ljava/lang/Object;)Ljava/lang/Object; flags=public final
+registers=7 inputs=2
+TRY bytes [0x1a,0x20) -> [('Ljava/lang/Exception;', 34)]
+TRY bytes [0x3a,0x5c) -> [('Ljava/lang/Exception;', 34)]
+0x000000: sget-object v0, Lh30;->b Lh30;
+0x000004: iget v1, v5, Lu7;->f I
+0x000008: const-string v2, "AiGuardService"
+0x00000c: const/4 v3, 1
+0x00000e: iget-object v4, v5, Lu7;->g Lcom/miui/guardprovider/aiguard/AiGuardService;
+0x000012: if-eqz v1, +011h
+0x000016: if-ne v1, v3, +008h
+0x00001a: invoke-static v6, Lkk3;->y(Ljava/lang/Object;)V
+0x000020: goto +18h
+0x000022: move-exception v6
+0x000024: goto +1dh
+0x000026: const-string v5, "call to 'resume' before 'invoke' with coroutine"
+0x00002a: invoke-static v5, Lik;->j(Ljava/lang/String;)V
+0x000030: const/4 v5, 0
+0x000032: return-object v5
+0x000034: invoke-static v6, Lkk3;->y(Ljava/lang/Object;)V
+0x00003a: iget-object v6, v5, Lu7;->h Ljava/lang/String;
+0x00003e: iput v3, v5, Lu7;->f I
+0x000042: invoke-virtual v4, v6, v5, Lcom/miui/guardprovider/aiguard/AiGuardService;->d(Ljava/lang/String; Lk20;)Ljava/lang/Object;
+0x000048: move-result-object v6
+0x00004a: if-ne v6, v0, +003h
+0x00004e: return-object v0
+0x000050: check-cast v6, Ljava/lang/Boolean;
+0x000054: invoke-virtual v6, Ljava/lang/Boolean;->booleanValue()Z
+0x00005a: move-result v6
+0x00005c: goto +7h
+0x00005e: const-string v0, "Something wrong occurs"
+0x000062: invoke-static v2, v0, v6, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I
+0x000068: const/4 v6, 0
+0x00006a: new-instance v0, Ljava/lang/StringBuilder;
+0x00006e: const-string v1, "Phone scam detection result:"
+0x000072: invoke-direct v0, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+0x000078: invoke-virtual v0, v6, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+0x00007e: invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+0x000084: move-result-object v0
+0x000086: invoke-static v2, v0, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+0x00008c: const/4 v0, 2
+0x00008e: iget v5, v5, Lu7;->i I
+0x000092: if-eq v5, v0, +01fh
+0x000096: const/4 v0, 3
+0x000098: if-eq v5, v0, +011h
+0x00009c: const/4 v0, 4
+0x00009e: if-eq v5, v0, +003h
+0x0000a2: goto +28h
+0x0000a4: iget-object v5, v4, Lcom/miui/guardprovider/aiguard/AiGuardService;->m Lg7;
+0x0000a8: iget v0, v5, Lg7;->d I
+0x0000ac: add-int/2addr v0, v3
+0x0000ae: iput v0, v5, Lg7;->d I
+0x0000b2: const v5, 536870914
+0x0000b8: goto +15h
+0x0000ba: iget-object v5, v4, Lcom/miui/guardprovider/aiguard/AiGuardService;->m Lg7;
+0x0000be: iget v0, v5, Lg7;->b I
+0x0000c2: add-int/2addr v0, v3
+0x0000c4: iput v0, v5, Lg7;->b I
+0x0000c8: const v5, 536870913
+0x0000ce: goto +ah
+0x0000d0: iget-object v5, v4, Lcom/miui/guardprovider/aiguard/AiGuardService;->m Lg7;
+0x0000d4: iget v0, v5, Lg7;->e I
+0x0000d8: add-int/2addr v0, v3
+0x0000da: iput v0, v5, Lg7;->e I
+0x0000de: const/high16 v5, 1073741824
+0x0000e2: if-eqz v6, +008h
+0x0000e6: invoke-static v4, v5, Lcom/miui/guardprovider/aiguard/AiGuardService;->a(Lcom/miui/guardprovider/aiguard/AiGuardService; I)V
+0x0000ec: invoke-virtual v4, Landroid/app/Service;->stopSelf()V
+0x0000f2: sget-object v5, Lc13;->a Lc13;
+0x0000f6: return-object v5

@@ -1,0 +1,13 @@
+﻿type,name,exported,permission,readPermission,writePermission,process,authorities,intent_actions
+activity,com.mobiletools.systemhelper.Activity.TestActivity,true,com.mobiletools.systemhelper.permission,,,,,com.mobiletools.systemhelper.activity.testactivity
+receiver,com.mobiletools.systemhelper.control.OnBootReceiver,true,com.mobiletools.systemhelper.permission,,,,,android.intent.action.BOOT_COMPLETED | android.intent.action.QUICKBOOT_POWERON
+receiver,com.mobiletools.systemhelper.control.ScheduleRegisterReceiver,,,,,,,
+receiver,com.mobiletools.systemhelper.control.AppInfoRegisterReceiver,,,,,,,
+receiver,com.mobiletools.systemhelper.control.SignalInfoRegisterReceiver,,,,,,,
+receiver,com.mobiletools.systemhelper.control.GetSignalInfoReceiver,,,,,,,
+receiver,com.mobiletools.systemhelper.control.SIMStateReceiver,true,,,,,,android.intent.action.SIM_STATE_CHANGED
+receiver,com.mobiletools.systemhelper.control.ConnectStateReceiver,true,,,,,,android.net.conn.CONNECTIVITY_CHANGE
+service,com.baidu.location.f,,,,,:remote,,
+service,com.mobiletools.systemhelper.service.RegisterHelperService,true,com.mobiletools.systemhelper.permission,,,,,com.mobiletools.systemhelper.service.IRegisterHelperService
+service,com.mobiletools.systemhelper.service.RegisterIntentService,,,,,,,
+service,com.mobiletools.systemhelper.service.RegisterJobService,,android.permission.BIND_JOB_SERVICE,,,,,

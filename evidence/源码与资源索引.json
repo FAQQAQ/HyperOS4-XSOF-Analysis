@@ -1,0 +1,2056 @@
+[
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/a/a/c/a.java",
+    "bytes": 76641,
+    "sha256": "71a5e53c136495fcc97af9fc6b1e7e93dcfcdca5cee3dc3f4229521b88ed208f",
+    "references": [
+      "com.miui.analytics/分析报告.md -> jadx/sources/a/b/a/a/a/c/a.java",
+      "已核验端点与通道.csv:30 -> jadx/sources/a/b/a/a/a/c/a.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/b/a.java",
+    "bytes": 5672,
+    "sha256": "8b259f719b02c7e797e10b7c16610b16dfd8b07c9747e7bba82a01bf3afe3462",
+    "references": [
+      "com.miui.analytics/分析报告.md -> a/b/a/b/a.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/c/c.java",
+    "bytes": 6773,
+    "sha256": "0c243cb539e2f3e40102db0e9fe645c2e183a908816fe0e4aa13f8bda8df4b25",
+    "references": [
+      "com.miui.analytics/分析报告.md -> c/c.java",
+      "动态加载与本地命令.md/Analytics 自更新 -> a/b/a/c/c.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/c/j.java",
+    "bytes": 97789,
+    "sha256": "52fb4a13a7b0cd8216de4f874403ffa84da69c6d08623c7afd4eb9d2291b5f4b",
+    "references": [
+      "com.miui.analytics/分析报告.md -> c/j.java",
+      "动态加载与本地命令.md/Analytics 自更新 -> com.miui.analytics/jadx/sources/a/b/a/c/j.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/c/k.java",
+    "bytes": 10363,
+    "sha256": "a07e79f6e145e71a3782ec2e3cb2ebfbda11526684d1b0468e54fea56f4cc33b",
+    "references": [
+      "com.miui.analytics/分析报告.md -> c/k.java",
+      "动态加载与本地命令.md/Analytics 自更新 -> a/b/a/c/k.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/c/q/b.java",
+    "bytes": 22832,
+    "sha256": "5dcb5a1cabe10365712f25ce383f0206f5bb23f8f8da98b45dc5124c6f45585c",
+    "references": [
+      "com.miui.analytics/分析报告.md -> c/q/b.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/c/s/b.java",
+    "bytes": 5188,
+    "sha256": "c3977c2008d96611b46c8e67051937be4cb76d5bf993f96c5d4f67e7cd55d8a5",
+    "references": [
+      "com.miui.analytics/分析报告.md -> c/s/b.java",
+      "已核验端点与通道.csv:47 -> jadx/sources/a/b/a/c/s/b.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/c/t/e.java",
+    "bytes": 4065,
+    "sha256": "c90ef85d7bf3ea28e3875fb031b04e7d2b44e9f96740eedebdbd67eef279ec7d",
+    "references": [
+      "com.miui.analytics/分析报告.md -> c/t/e.java",
+      "已核验端点与通道.csv:29 -> a/b/a/c/t/e.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/c/u/g.java",
+    "bytes": 9400,
+    "sha256": "de41af18ec4095bb0a19b99aa3b0539693afb13c5fa6ab9ca435a4cad9c55c44",
+    "references": [
+      "com.miui.analytics/分析报告.md -> c/u/g.java",
+      "已核验端点与通道.csv:29 -> jadx/sources/a/b/a/c/u/g.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/c/v/c.java",
+    "bytes": 4129,
+    "sha256": "3353763e14575921011a42c91cfc70a82ff11f21d00b4d11f75f3a3c839ea076",
+    "references": [
+      "com.miui.analytics/分析报告.md -> c/v/c.java",
+      "动态加载与本地命令.md/Analytics 自更新 -> a/b/a/c/v/c.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/c/v/n.java",
+    "bytes": 16471,
+    "sha256": "9f77cc93b0654467e5d3fc540959603a80baf20c258a9b28cde2c7c24df78f70",
+    "references": [
+      "com.miui.analytics/分析报告.md -> c/v/n.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/e/e0/d.java",
+    "bytes": 10565,
+    "sha256": "495816c765ff8a4faa94e6945b8bb803b436877a8c816933ae451eae25c5fcd1",
+    "references": [
+      "com.miui.analytics/分析报告.md -> e/e0/d.java",
+      "已核验端点与通道.csv:36 -> a/b/a/e/e0/d.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/e/f.java",
+    "bytes": 7869,
+    "sha256": "e9efa1fa75e3baf1fbdac60201dc5aebf2ab72f2b36fb50c3d15b3b1404f7fb7",
+    "references": [
+      "com.miui.analytics/分析报告.md -> e/f.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/e/f0/f.java",
+    "bytes": 86808,
+    "sha256": "172797410c11f1d795e643d3a632c6d0acc61ce5e9428c49b7698338025be2a6",
+    "references": [
+      "com.miui.analytics/分析报告.md -> e/f0/f.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/e/f0/o.java",
+    "bytes": 73638,
+    "sha256": "6493d75d48abb664fd2d973916bfbdbfc6b499ed56c2eec0bd64e72588d80a1d",
+    "references": [
+      "com.miui.analytics/分析报告.md -> e/f0/o.java",
+      "已核验端点与通道.csv:43 -> jadx/sources/a/b/a/e/f0/o.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/e/f0/y.java",
+    "bytes": 9746,
+    "sha256": "bc32a17051834937ca007455572d149ba5946922bcacfd31539a8a9716937cc7",
+    "references": [
+      "com.miui.analytics/分析报告.md -> e/f0/y.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/e/f0/z.java",
+    "bytes": 116226,
+    "sha256": "5da0ee67add5e2696bd13f3a4808132c0f10a326d70eb2d9308f8fc84e117cc3",
+    "references": [
+      "com.miui.analytics/分析报告.md -> e/f0/z.java",
+      "已核验端点与通道.csv:28 -> a/b/a/e/f0/z.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/e/g0/e.java",
+    "bytes": 5735,
+    "sha256": "4d3b3e9cd64e2e0c71c2e5e9f61c0baedce1f5ab656f4053462d55f8dfa61660",
+    "references": [
+      "com.miui.analytics/分析报告.md -> e/g0/e.java",
+      "已核验端点与通道.csv:42 -> jadx/sources/a/b/a/e/g0/e.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/e/h0/b.java",
+    "bytes": 130054,
+    "sha256": "b18d53972b33f25e13027436c26650797787d880b9d5707530de621560c8524c",
+    "references": [
+      "com.miui.analytics/分析报告.md -> e/h0/b.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/e/h0/m.java",
+    "bytes": 7031,
+    "sha256": "9e8fd75c34c9359fc28a55155d03fdfda5a716c685efc8d47d1de50cd3e62926",
+    "references": [
+      "com.miui.analytics/分析报告.md -> e/h0/m.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/e/h0/y.java",
+    "bytes": 156255,
+    "sha256": "ac7397a96a467736c1035f62f7a67e80bf957a2b75a00692472225877cbc7350",
+    "references": [
+      "com.miui.analytics/分析报告.md -> e/h0/y.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/e/i0/c.java",
+    "bytes": 17077,
+    "sha256": "f580b870bac66a3603612b2d407eda69eb0666a572084c8b64ba864dfeaef783",
+    "references": [
+      "com.miui.analytics/分析报告.md -> e/i0/c.java",
+      "已核验端点与通道.csv:45 -> jadx/sources/a/b/a/e/i0/c.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/e/i0/j/b.java",
+    "bytes": 33341,
+    "sha256": "50b03d2fd330e4b3e1f537b3bfe9bca0aae969f37d6b66f82fb6e9a7fddffb6d",
+    "references": [
+      "com.miui.analytics/分析报告.md -> e/i0/j/b.java",
+      "已核验端点与通道.csv:45 -> a/b/a/e/i0/j/b.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/e/l0/c.java",
+    "bytes": 42948,
+    "sha256": "0bb5102936d5d8a0478b82c9d3b78dc72f2bb2bacbe5603b738170794cea218f",
+    "references": [
+      "com.miui.analytics/分析报告.md -> e/l0/c.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/e/l0/r.java",
+    "bytes": 15246,
+    "sha256": "9b04887b93644ab84a9235ea39abb316ac46371200ebc93abfcced9cadb9dbdb",
+    "references": [
+      "com.miui.analytics/分析报告.md -> e/l0/r.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/e/y.java",
+    "bytes": 7667,
+    "sha256": "8dbe9aadebc7b8a0cf0adbd6609b5d58e5edafebd2538dd4ccd97c12d7a8898b",
+    "references": [
+      "com.miui.analytics/分析报告.md -> e/y.java",
+      "已核验端点与通道.csv:28 -> jadx/sources/a/b/a/e/y.java",
+      "已核验端点与通道.csv:31 -> a/b/a/e/y.java",
+      "已核验端点与通道.csv:31 -> jadx/sources/a/b/a/e/y.java",
+      "已核验端点与通道.csv:32 -> a/b/a/e/y.java",
+      "已核验端点与通道.csv:32 -> jadx/sources/a/b/a/e/y.java",
+      "已核验端点与通道.csv:33 -> a/b/a/e/y.java",
+      "已核验端点与通道.csv:33 -> jadx/sources/a/b/a/e/y.java",
+      "已核验端点与通道.csv:34 -> a/b/a/e/y.java",
+      "已核验端点与通道.csv:34 -> jadx/sources/a/b/a/e/y.java",
+      "已核验端点与通道.csv:35 -> jadx/sources/a/b/a/e/y.java",
+      "已核验端点与通道.csv:36 -> jadx/sources/a/b/a/e/y.java",
+      "已核验端点与通道.csv:37 -> jadx/sources/a/b/a/e/y.java",
+      "已核验端点与通道.csv:38 -> jadx/sources/a/b/a/e/y.java",
+      "已核验端点与通道.csv:39 -> jadx/sources/a/b/a/e/y.java",
+      "已核验端点与通道.csv:40 -> jadx/sources/a/b/a/e/y.java",
+      "已核验端点与通道.csv:41 -> jadx/sources/a/b/a/e/y.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/g/b.java",
+    "bytes": 17237,
+    "sha256": "7dcc9174033440a7df34c369715e46f8bf298d2847b954485a4556ec0dbef1fc",
+    "references": [
+      "com.miui.analytics/分析报告.md -> jadx/sources/a/b/a/g/b.java",
+      "已核验端点与通道.csv:44 -> jadx/sources/a/b/a/g/b.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/a/b/a/g/e/c.java",
+    "bytes": 13083,
+    "sha256": "75c7e17899fd5c4d73a6287619dda7b1a54e56f69c986bf4715aaecb584d1c10",
+    "references": [
+      "com.miui.analytics/分析报告.md -> jadx/sources/a/b/a/g/e/c.java",
+      "已核验端点与通道.csv:46 -> jadx/sources/a/b/a/g/e/c.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/com/miui/analytics/AnalyticsApp.java",
+    "bytes": 14499,
+    "sha256": "8bb11a9aef798f7e5c19777f6b55e9a4b3000fabb5505063192efc9f1d586f45",
+    "references": [
+      "com.miui.analytics/分析报告.md -> AnalyticsApp.java"
+    ]
+  },
+  {
+    "package": "com.miui.analytics",
+    "path": "com.miui.analytics/jadx/sources/com/miui/analytics/internal/collection/AppenderManager.java",
+    "bytes": 10834,
+    "sha256": "32336b6f3e29eae519f4eefaa484c4ac54d9d245b3f4b2aa21a8033a61653920",
+    "references": [
+      "com.miui.analytics/分析报告.md -> com/miui/analytics/internal/collection/AppenderManager.java",
+      "已核验端点与通道.csv:48 -> jadx/sources/com/miui/analytics/internal/collection/AppenderManager.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/com/avl/engine/antivirus/b/o.java",
+    "bytes": 43871,
+    "sha256": "4608f02843a1de1962048add0190e03fa18da9c7d1ce3fc54d77253562bf22a1",
+    "references": [
+      "动态加载与本地命令.md/GuardProvider 杀毒引擎更新 -> com.miui.guardprovider/jadx/sources/com/avl/engine/antivirus/b/o.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/com/avl/engine/virusdetector/update/AvUpdateProcessor.java",
+    "bytes": 3680,
+    "sha256": "935f4db5eeca95fbb59d130254f3845a5232054ef65ddda1112f9fbfa749906f",
+    "references": [
+      "动态加载与本地命令.md/GuardProvider 杀毒引擎更新 -> AvUpdateProcessor.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/com/miui/guardprovider/GuardApplication.java",
+    "bytes": 7211,
+    "sha256": "17b1f9083d7bf210d2975006625848a4f6469a9356b8fbc2e6a605753eab7b9d",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> class GuardApplication"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/com/miui/guardprovider/GuardProvider.java",
+    "bytes": 23976,
+    "sha256": "9469f4b6f421703a8883000e02ff93f15aaea602daa8de7e986b68a8cb9e5584",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> class GuardProvider"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/com/miui/guardprovider/aiguard/AiGuardService.java",
+    "bytes": 30045,
+    "sha256": "5333fe7553caac7878e68b4abeb346919553cd9ba4dda2f0469670f6e6837946",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> class AiGuardService",
+      "已核验端点与通道.csv:52 -> jadx/sources/com/miui/guardprovider/aiguard/AiGuardService.java",
+      "已核验端点与通道.csv:53 -> jadx/sources/com/miui/guardprovider/aiguard/AiGuardService.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/com/miui/guardprovider/aiguard/AlertActivity.java",
+    "bytes": 12267,
+    "sha256": "a96bff76f1d593e14de9261808c9cc868b73cd49cfb4746a48ae2db1d32bc11c",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> AlertActivity.java",
+      "已核验端点与通道.csv:54 -> jadx/sources/com/miui/guardprovider/aiguard/AlertActivity.java",
+      "已核验端点与通道.csv:55 -> jadx/sources/com/miui/guardprovider/aiguard/AlertActivity.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/com/miui/guardprovider/aiguard/PermissionRequestActivity.java",
+    "bytes": 7488,
+    "sha256": "ee72b20a3bbfb632885ba6b6c8df5334d9b1bbee4b24252159833e43d4cecafa",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> PermissionRequestActivity.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/com/xiaomi/ai/vision/sdk/AiCapability.java",
+    "bytes": 27542,
+    "sha256": "c2bff3cc30a9b87b17aff7c8e3485319a175bfb1ba569cb04f715a5743650704",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> AiCapability.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/com/xiaomi/ai/vision/sdk/AiCore.java",
+    "bytes": 74325,
+    "sha256": "a2d141109c902c9a07bc8fc2f5bf782ac58ee3e51928cbb771e85c47f5d7bc14",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> AiCore.java",
+      "com.miui.guardprovider/分析报告.md -> com/xiaomi/ai/vision/sdk/AiCore.java",
+      "已核验端点与通道.csv:56 -> jadx/sources/com/xiaomi/ai/vision/sdk/AiCore.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/ac0.java",
+    "bytes": 463,
+    "sha256": "2c9d99174d081c0518f6dfcca08bde42ebddaa7ecc5405d00c563e29a34e3de6",
+    "references": [
+      "已核验端点与通道.csv:59 -> defpackage/ac0.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/bx.java",
+    "bytes": 1380,
+    "sha256": "4d165800e98482a183d54762dfdfef914c7da390fcd64ec3ff4c30d634480751",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> bx.java",
+      "已核验端点与通道.csv:50 -> defpackage/bx.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/c7.java",
+    "bytes": 1423,
+    "sha256": "9e7015ea3d3b5ee1867407e13b3cc679624e1fbf8bd86abf438761a2ca33bae2",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> c7.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/d8.java",
+    "bytes": 3809,
+    "sha256": "179853686269f3f74d119aebaef77c20c033cca5ea9f4638579320b42c8b17a8",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> d8.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/e8.java",
+    "bytes": 1633,
+    "sha256": "5fb59820e9106775a8a75dca47f3a68f75bc1e49552d55a1e5b5a8538345d67b",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> e8.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/es.java",
+    "bytes": 3737,
+    "sha256": "0f057c704f4229d7352fbd4fed3a32266401526d9f8db657acb8f116655d846b",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> es.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/g.java",
+    "bytes": 39619,
+    "sha256": "cd7c443669a9926cfde493bf18830ad8086c8cf53f2172ce59b7b13d6a380ca6",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> g.java",
+      "已核验端点与通道.csv:57 -> jadx/sources/defpackage/g.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/h7.java",
+    "bytes": 4548,
+    "sha256": "52e47e67976f8fc1741bf81a627ac29e490a388ad30fef4978afe6a678fca5ae",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> h7.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/ie2.java",
+    "bytes": 5541,
+    "sha256": "611944643cf3ec1b0d190376f2fe03d786066b292a70aba47069a23a63b9960a",
+    "references": [
+      "已核验端点与通道.csv:49 -> jadx/sources/defpackage/ie2.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/j02.java",
+    "bytes": 1118,
+    "sha256": "0dd3b489983300821bb3814ade15febcfea68e94dbc29eedb55044f52faa71e9",
+    "references": [
+      "已核验端点与通道.csv:53 -> defpackage/j02.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/k43.java",
+    "bytes": 1112,
+    "sha256": "ae05229fb635f6610acba4b6ea2d944aa1db9a44a4780ebc3e4c023c62645daa",
+    "references": [
+      "已核验端点与通道.csv:52 -> defpackage/k43.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/k63.java",
+    "bytes": 1863,
+    "sha256": "e49393cb675723e91c305ddb5171a812103c6b862ffd5cb74f7364ac5b599b14",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> k63.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/kl0.java",
+    "bytes": 17204,
+    "sha256": "d6f071b18ee97e8c290c9e59cd378abef19b3986b54513b22a57df7d27aca2a9",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> kl0.java",
+      "已核验端点与通道.csv:50 -> defpackage/kl0.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/l00.java",
+    "bytes": 4541,
+    "sha256": "e965489c2e709281dee12c046fac14126e9c241b3324ddd76083e933a1f41ba2",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> l00.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/ls1.java",
+    "bytes": 14438,
+    "sha256": "94a8807c87642dde481d6de183f2b7be6110dfdcabad9a7620c272ef37c76aed",
+    "references": [
+      "已核验端点与通道.csv:49 -> defpackage/ls1.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/m7.java",
+    "bytes": 2039,
+    "sha256": "c9c51b2ab24a80c2eddc31b6c426a40506d7fe2eee37d4144924e0fad067d7b4",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> m7.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/n53.java",
+    "bytes": 15826,
+    "sha256": "95e6c9c95237a5c63aca317e840f7a8e2b58b8f26d2cafad75d75ec4f8d49031",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> n53.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/n7.java",
+    "bytes": 3410,
+    "sha256": "944c9a41d7a1c67a5189c0667f0b6b5bf8eb47ef2847468088d110cce0c66c83",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> n7.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/ni2.java",
+    "bytes": 40744,
+    "sha256": "b33065cc5a0cab47f28a4e59244ecea128412472559349a4b4fdaabc75d38293",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> ni2.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/oj0.java",
+    "bytes": 342,
+    "sha256": "34e05039b697eefa1e9931633abdc0bf535f5c5071f94bcb242c8b5e6f1046a1",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> oj0.java",
+      "已核验端点与通道.csv:54 -> defpackage/oj0.java",
+      "已核验端点与通道.csv:55 -> defpackage/oj0.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/pi.java",
+    "bytes": 1074,
+    "sha256": "bcb2c5d6aa158e941acac2f0b9a2bd858657aaf4a8e7313c3bf8dcc074f8db57",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> pi.java",
+      "已核验端点与通道.csv:56 -> defpackage/pi.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/pq.java",
+    "bytes": 30757,
+    "sha256": "9b195ec3c45aab6aff2b20836f3eefb2b92ac2622cd57138ac4d4129d61759b6",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> pq.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/q62.java",
+    "bytes": 15554,
+    "sha256": "3dcb9e3ec92efa5b40711d6114f0eae2e32f104dec58472a0a093609cdc7a393",
+    "references": [
+      "已核验端点与通道.csv:59 -> jadx/sources/defpackage/q62.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/qi.java",
+    "bytes": 1899,
+    "sha256": "1d956b2b83fcae294b14b7eb08a015398b86affe8ae353dba5acc4354ce53a52",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> qi.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/qq.java",
+    "bytes": 726,
+    "sha256": "16ea07462624a4733440b524d37e6a75ccdab33394d130d142b1e7bfc8f1e85d",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> qq.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/r7.java",
+    "bytes": 3053,
+    "sha256": "128c0c87a6b7be4f3b4ae8fff2b82a7d0592210b9c260bff3a94a52919a3c5ab",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> r7.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/re3.java",
+    "bytes": 31980,
+    "sha256": "205a9e2009c28b029633e8e8280c235af8a0b95180c55ca926522a9a8ac28033",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> re3.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/ro.java",
+    "bytes": 77965,
+    "sha256": "0b8eaee73a35467acac393285f2214516cc5530ba418d66c3db84399d665a669",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> ro.java",
+      "已核验端点与通道.csv:51 -> jadx/sources/defpackage/ro.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/rs1.java",
+    "bytes": 2107,
+    "sha256": "72bafdf0b63812b1ef2bcf087c8242821d33aa4ca875b59f60135edab2c43141",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> rs1.java",
+      "已核验端点与通道.csv:50 -> jadx/sources/defpackage/rs1.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/sb.java",
+    "bytes": 17425,
+    "sha256": "51cc02d4507101b2cecd38eb86d6100f1eaeab4cf2170370ad6f40cbc116b4c0",
+    "references": [
+      "已核验端点与通道.csv:58 -> jadx/sources/defpackage/sb.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/si.java",
+    "bytes": 2932,
+    "sha256": "3cbdc17511f468df8bfd3a144ba69848fc4bebfbbe66f742fa4716071d6a888e",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> si.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/u23.java",
+    "bytes": 2100,
+    "sha256": "99d7016766179c11edc197c00fc97554524e47500e7776f26266e09dcde030cf",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> u23.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/uj.java",
+    "bytes": 403,
+    "sha256": "58bd6e517b0a1cdc015ad0635ea6302728787767d8ec3f8396c65dda7aeb1b80",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> uj.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/w7.java",
+    "bytes": 6852,
+    "sha256": "754f6707b41e526e29d9e59946dd74974e5c439ccb2215682b5948e27c2c4841",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> w7.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/wu2.java",
+    "bytes": 605,
+    "sha256": "ef34d757191aa72062a380b52d9ddbb934638fc4e61e38d7c57c3b9a4447d7df",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> wu2.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/x7.java",
+    "bytes": 15677,
+    "sha256": "1d43c22f40a0295a5a9db909182e017ba4ad23593e31681db61f7b72b18958c0",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> x7.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/x8.java",
+    "bytes": 3255,
+    "sha256": "749d3fc600dff3495fdcf21d27399f7c16aed5c2c64e5c8e5e2b20983cdca064",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> x8.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/y6.java",
+    "bytes": 2149,
+    "sha256": "ba19f864b1d60d340abf88dd5c0b82330f35c27449a1ae8de517eae0277a7706",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> y6.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/yz1.java",
+    "bytes": 3360,
+    "sha256": "5c020b0a40d48158717e34bc03e35a4d54f512dc7e9b9f00af1675a1d96f95a4",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> yz1.java"
+    ]
+  },
+  {
+    "package": "com.miui.guardprovider",
+    "path": "com.miui.guardprovider/jadx/sources/defpackage/z6.java",
+    "bytes": 37486,
+    "sha256": "bd8f0d109967e39e8a8c900eed130d2d3a2e838cf6bf70cbe1432278ae817c57",
+    "references": [
+      "com.miui.guardprovider/分析报告.md -> z6.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/a5/b.java",
+    "bytes": 5306,
+    "sha256": "d6b1887fcaba61257c38d4f3d2ee0a1fb2591694712767bdc8f491805bd69840",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> a5/b.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/co/a.java",
+    "bytes": 2287,
+    "sha256": "b1cdf44d9b7cde2de5f0681485c7c32fd2c4b81330a84a90b5ed1f147cdc9487",
+    "references": [
+      "已核验的XSOF服务/鉴权/计分链补充"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/analytics/AnalyticsUtil.java",
+    "bytes": 8341,
+    "sha256": "7f3a959f253cb0ceee43cec4a4e4dc3226941910756789b94ab8d1e2348bd3a1",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> com/miui/analytics/AnalyticsUtil.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/antipeeping/v2/ui/PeepProtectionSelectAppsActivity.java",
+    "bytes": 36162,
+    "sha256": "8e9e908d45902adf043cc5d89b1644a258aecc0f647b7f82a537c169c55f99b1",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> class PeepProtectionSelectAppsActivity",
+      "com.miui.securitycenter/分析报告.md -> com/miui/antipeeping/v2/ui/PeepProtectionSelectAppsActivity.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/common/utils/j0.java",
+    "bytes": 9005,
+    "sha256": "eef80e87f60cf8c5725bf6e2a8830e56cf622dd26af6e7021387e55b1cfc232a",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> com/miui/common/utils/j0.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/earthquakewarning/Constants.java",
+    "bytes": 8657,
+    "sha256": "2a6a3da7216e11377a6612e940c8630975f176b735453bebeb4264b2696fdb5c",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> com/miui/earthquakewarning/Constants.java",
+      "已核验端点与通道.csv:13 -> jadx/sources/com/miui/earthquakewarning/Constants.java",
+      "已核验端点与通道.csv:14 -> jadx/sources/com/miui/earthquakewarning/Constants.java",
+      "已核验端点与通道.csv:15 -> jadx/sources/com/miui/earthquakewarning/Constants.java",
+      "已核验端点与通道.csv:17 -> jadx/sources/com/miui/earthquakewarning/Constants.java",
+      "已核验端点与通道.csv:18 -> jadx/sources/com/miui/earthquakewarning/Constants.java",
+      "已核验端点与通道.csv:19 -> jadx/sources/com/miui/earthquakewarning/Constants.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/earthquakewarning/service/EarthquakeMonitorDataManager.java",
+    "bytes": 9920,
+    "sha256": "ef6c458c7401e5b50fe4e998a5d51bc984bb107a83201e552f5bf5df9a1190f7",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> EarthquakeMonitorDataManager.java",
+      "已核验端点与通道.csv:20 -> jadx/sources/com/miui/earthquakewarning/service/EarthquakeMonitorDataManager.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/earthquakewarning/service/EarthquakeMonitorUtils.java",
+    "bytes": 7464,
+    "sha256": "eac7ce9e70dbac2ba792b6eb23ea255923f405dca1a1067867f0eef44c05d7e2",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> EarthquakeMonitorUtils.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/earthquakewarning/service/EarthquakeWarningService.java",
+    "bytes": 16658,
+    "sha256": "df7e8d6b74434b0a7a3ce4d405ee7d64e760aab60ce8bed1a0ee579eac873bdc",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> EarthquakeWarningService.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/earthquakewarning/service/ManageAreaDataTask.java",
+    "bytes": 5684,
+    "sha256": "b32c10afeb7ae9c36e15ab165096c0ef35f95c4e5e47a10232b61bd1c045c333",
+    "references": [
+      "已核验端点与通道.csv:13 -> earthquakewarning/service/*Task.java",
+      "已核验端点与通道.csv:14 -> earthquakewarning/service/*Task.java",
+      "已核验端点与通道.csv:15 -> earthquakewarning/service/*Task.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/earthquakewarning/service/ManageDataTask.java",
+    "bytes": 10642,
+    "sha256": "8a9748c70ad7cf3048d4b7ec178926ec345ca66729c1cb5696255026af5c4cd0",
+    "references": [
+      "已核验端点与通道.csv:13 -> earthquakewarning/service/*Task.java",
+      "已核验端点与通道.csv:14 -> earthquakewarning/service/*Task.java",
+      "已核验端点与通道.csv:15 -> earthquakewarning/service/*Task.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/earthquakewarning/service/ManageSubscribeDataTask.java",
+    "bytes": 5324,
+    "sha256": "ac69ead44451464edb1b62e1797557548a708a4140cf8925ea252e80f2cf3fb2",
+    "references": [
+      "已核验端点与通道.csv:13 -> earthquakewarning/service/*Task.java",
+      "已核验端点与通道.csv:14 -> earthquakewarning/service/*Task.java",
+      "已核验端点与通道.csv:15 -> earthquakewarning/service/*Task.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/earthquakewarning/service/RequestAreaCodeTask.java",
+    "bytes": 7335,
+    "sha256": "8534efa45714d9101fbfd9c6722ba3705d88d3246ee1dd25f6c1b898fc01e602",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> service/RequestAreaCodeTask.java",
+      "已核验端点与通道.csv:12 -> jadx/sources/com/miui/earthquakewarning/service/RequestAreaCodeTask.java",
+      "已核验端点与通道.csv:13 -> earthquakewarning/service/*Task.java",
+      "已核验端点与通道.csv:14 -> earthquakewarning/service/*Task.java",
+      "已核验端点与通道.csv:15 -> earthquakewarning/service/*Task.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/earthquakewarning/service/RequestAreaCodeTaskForNoisyLocation.java",
+    "bytes": 3624,
+    "sha256": "c68567831c436aacc84e7715fe3865a7bfb349c02905aa9ac705b6c842bf52f7",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> RequestAreaCodeTaskForNoisyLocation.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/earthquakewarning/service/RequestSignatureTask.java",
+    "bytes": 4448,
+    "sha256": "6343ddffd850be1c18c25581a4b6139e087faa64c73b3fd1cb9c3bfb43d216e8",
+    "references": [
+      "已核验端点与通道.csv:13 -> earthquakewarning/service/*Task.java",
+      "已核验端点与通道.csv:14 -> earthquakewarning/service/*Task.java",
+      "已核验端点与通道.csv:15 -> earthquakewarning/service/*Task.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/earthquakewarning/service/RequestSupportCityTask.java",
+    "bytes": 3631,
+    "sha256": "f8a537fc59ee7fe0ad901d0afd48eb8feadaff98ab7fe8b756b2b5a6afb37288",
+    "references": [
+      "已核验端点与通道.csv:13 -> earthquakewarning/service/*Task.java",
+      "已核验端点与通道.csv:14 -> earthquakewarning/service/*Task.java",
+      "已核验端点与通道.csv:15 -> earthquakewarning/service/*Task.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/earthquakewarning/service/RequestWarningListTask.java",
+    "bytes": 3549,
+    "sha256": "84fa987f12d6a59e63f36fa69de37da4ba1af5d8513393fde7cd3d525c40c97d",
+    "references": [
+      "已核验端点与通道.csv:13 -> earthquakewarning/service/*Task.java",
+      "已核验端点与通道.csv:14 -> earthquakewarning/service/*Task.java",
+      "已核验端点与通道.csv:15 -> earthquakewarning/service/*Task.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/earthquakewarning/service/RequestWhiteListTask.java",
+    "bytes": 3355,
+    "sha256": "ddf852d5d6c35b65020be50ab35cf994db616a88fcccde01bccef3cd0c5b9489",
+    "references": [
+      "已核验端点与通道.csv:13 -> earthquakewarning/service/*Task.java",
+      "已核验端点与通道.csv:14 -> earthquakewarning/service/*Task.java",
+      "已核验端点与通道.csv:15 -> earthquakewarning/service/*Task.java",
+      "已核验端点与通道.csv:16 -> jadx/sources/com/miui/earthquakewarning/service/RequestWhiteListTask.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/earthquakewarning/service/UpdateAreaCodeManager.java",
+    "bytes": 2238,
+    "sha256": "83b25ad9ba63238f673f20026ca099016401f89a2b0ba1f33de46f228cccd091",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> UpdateAreaCodeManager.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/earthquakewarning/utils/Utils.java",
+    "bytes": 16156,
+    "sha256": "9920d29fc53ce843db9734bf57bfd7f7d3da9106aabb24511c0aa8448f6901a1",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> utils/Utils.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/electricrisk/AiGuardSceneService.java",
+    "bytes": 79053,
+    "sha256": "99437f0294a238e4c69013d43425b72b2b8637c490d6e0161c7af091e2b0c64b",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> jadx/sources/com/miui/electricrisk/AiGuardSceneService.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/electricrisk/AiGuardUtils.java",
+    "bytes": 5905,
+    "sha256": "3232f7e09e51e9215cb33278609e62f4fc9e43a554e0c1c7caa5c818669bb685",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> AiGuardUtils.java",
+      "com.miui.securitycenter/分析报告.md -> jadx/sources/com/miui/electricrisk/AiGuardUtils.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/electricrisk/ElectricProtectPhoneFragment.java",
+    "bytes": 22949,
+    "sha256": "5b5c0d2ca4533b5be9102adac0c2376ea4f885aac35dd5003700ddda0676e877",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> ElectricProtectPhoneFragment.java",
+      "com.miui.securitycenter/分析报告.md -> jadx/sources/com/miui/electricrisk/ElectricProtectPhoneFragment.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/monthreport/b.java",
+    "bytes": 9251,
+    "sha256": "b35c46bc8c4d1a8263b9654ccc3b3535fdec82dc8286008db2eec741bd725bcb",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> com/miui/monthreport/b.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/monthreport/c.java",
+    "bytes": 10313,
+    "sha256": "3cf71b8a6cfbd054410c68d5f8bd31428e6713c1f12ca0c6029a1b5a92e1939f",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> c.java",
+      "已核验端点与通道.csv:26 -> jadx/sources/com/miui/monthreport/c.java",
+      "已核验端点与通道.csv:27 -> jadx/sources/com/miui/monthreport/c.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/nfcaccess/NfcAccessHttpUtil.java",
+    "bytes": 1360,
+    "sha256": "79e6e98693d7ddf64d838c792785e4744d86987f83718f8bde7239ac8ee560c9",
+    "references": [
+      "已核验端点与通道.csv:25 -> jadx/sources/com/miui/nfcaccess/NfcAccessHttpUtil.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/permcenter/install/AdbInstallVerifyActivity.java",
+    "bytes": 9412,
+    "sha256": "f5ba4ff64ec23f6f76a2418b6a4d7d3ca10148c81e43f5bf30082ce410ea61d3",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> class AdbInstallVerifyActivity",
+      "com.miui.securitycenter/分析报告.md -> com/miui/permcenter/install/AdbInstallVerifyActivity.java",
+      "已核验端点与通道.csv:24 -> jadx/sources/com/miui/permcenter/install/AdbInstallVerifyActivity.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/policeassist/EPSManager.java",
+    "bytes": 9552,
+    "sha256": "0ea7396ed5391d76fffd5916658ea13fa8b84e11fe0435bad2d3c8366bd8a820",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> EPSManager.java",
+      "已核验端点与通道.csv:23 -> jadx/sources/com/miui/warningcenter/policeassist/EPSManager.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/policeassist/view/PaLocationFloatingView.java",
+    "bytes": 9158,
+    "sha256": "cc1bb6603b0b998b55ca6036c1d508b590e677558400471c10fd3f17d4299838",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> PaLocationFloatingView.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/riskcontrol/SensitiveWordDetectProvider.java",
+    "bytes": 2628,
+    "sha256": "225b78f9929be987fc86f6eb3f14eaf30b3d86483cd65ca4c1be5e93ab56266d",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> class SensitiveWordDetectProvider"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/securitycenter/Application.java",
+    "bytes": 21741,
+    "sha256": "9ce0dd5b615ac4adccb6098680e1586ca421157561c87eff36f0b20495f6e02e",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> Application.java",
+      "com.miui.securitycenter/分析报告.md -> class Application",
+      "com.miui.securitycenter/分析报告.md -> jadx/sources/com/miui/securitycenter/Application.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/securitycenter/osbot/handler/FraudProtectHandler.java",
+    "bytes": 15038,
+    "sha256": "21ac49d4f2c327c57788682f0bdf1bb556448343844a34070837191901058c91",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> FraudProtectHandler.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/securitycenter/service/CacheService.java",
+    "bytes": 27131,
+    "sha256": "be8d9495db95ac105f60b3767da04f4ae81eb427c6a80b27056ebf0602e292a2",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> CacheService.java",
+      "com.miui.securitycenter/分析报告.md -> com/miui/securitycenter/service/CacheService.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/securityscan/scanner/ScoreManager.java",
+    "bytes": 17643,
+    "sha256": "0dd1d639bfd971b279b1ac74c9ffb81a7f4a11ddf1ff532a92dcdca4402386cb",
+    "references": [
+      "已核验的XSOF服务/鉴权/计分链补充"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/warningcenter/policeassist/PaService.java",
+    "bytes": 25850,
+    "sha256": "be18212ddde42f04d1861915b697e415e2f9166b19de08747166b93e13ff902b",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> PaService.java",
+      "com.miui.securitycenter/分析报告.md -> class PaService"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/miui/warningcenter/policeassist/PaUtils.java",
+    "bytes": 23877,
+    "sha256": "78ec12ffac0eff0e0e87b1af6c2da6d222014f81d88526d4fe453f7fac394ca2",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> class PaUtils",
+      "com.miui.securitycenter/分析报告.md -> com/miui/warningcenter/policeassist/PaUtils.java",
+      "已核验端点与通道.csv:21 -> PaUtils.java",
+      "已核验端点与通道.csv:21 -> jadx/sources/com/miui/warningcenter/policeassist/PaUtils.java",
+      "已核验端点与通道.csv:22 -> jadx/sources/com/miui/warningcenter/policeassist/PaUtils.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/xiaomi/analytics/Analytics.java",
+    "bytes": 9306,
+    "sha256": "844c9cf030c3874829eafa5526704ad90cdc1a73db40d3eeaebcfbbff1a79dcd",
+    "references": [
+      "动态加载与本地命令.md/安全中心内嵌旧 Analytics SDK -> class Analytics"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/xiaomi/security/xsof/MiSafetyDetectService.java",
+    "bytes": 17758,
+    "sha256": "64bce87251a8cad83be022779661941d4987143adce8de7b75a333671779ba0b",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> .../xsof/MiSafetyDetectService.java",
+      "com.miui.securitycenter/分析报告.md -> class MiSafetyDetectService",
+      "已核验的XSOF服务/鉴权/计分链补充"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/xiaomi/security/xsof/base/ScoreConfigBean.java",
+    "bytes": 2801,
+    "sha256": "2e1a9ebc61deb062d1ed25a0e94b061e45d108f223db710dbdc87121a1183744",
+    "references": [
+      "已核验的XSOF服务/鉴权/计分链补充"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/xiaomi/security/xsof/frauddetection/bean/CurrentFraudMetadata.java",
+    "bytes": 10346,
+    "sha256": "7c1b0c84beaebafa6690b32b8a6d240375e56220352df7c0384c82a934c23a1d",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> .../bean/CurrentFraudMetadata.java",
+      "com.miui.securitycenter/分析报告.md -> class CurrentFraudMetadata"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/xiaomi/security/xsof/frauddetection/bean/DurationFraudData.java",
+    "bytes": 31044,
+    "sha256": "0f0fdd9b836b941b991cb322784ae46b964bc2a439959433c793538a1bc95796",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> .../bean/DurationFraudData.java",
+      "com.miui.securitycenter/分析报告.md -> class DurationFraudData"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/xiaomi/security/xsof/frauddetection/bean/FraudDetectionScore.java",
+    "bytes": 4770,
+    "sha256": "7930f7f5afd7221278f86ee5adeef5d3bf44a736ecfa517ba24a6772f93b4306",
+    "references": [
+      "已核验的XSOF服务/鉴权/计分链补充"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/xiaomi/security/xsof/frauddetection/bean/PastFraudData.java",
+    "bytes": 36875,
+    "sha256": "a3a1144ef6e42587f33d49d4493187dd3aad85c570d31162fbb48aa759f1e2e9",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> .../bean/PastFraudData.java",
+      "com.miui.securitycenter/分析报告.md -> class PastFraudData"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/xiaomi/security/xsof/frauddetection/provider/FraudDetectionProvider.java",
+    "bytes": 10584,
+    "sha256": "e6904b9edd8bf0022727cd9b2edcbee2e8c75727615c98f9230ae57724384214",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> .../frauddetection/provider/FraudDetectionProvider.java",
+      "com.miui.securitycenter/分析报告.md -> class FraudDetectionProvider"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/com/xiaomi/security/xsof/frauddetection/service/MiFraudDetectionService.java",
+    "bytes": 31444,
+    "sha256": "1a7346fcf7d12da21ce020e14a5f874d4236a13122d403b51d2da2ca467d4feb",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> class MiFraudDetectionService",
+      "已核验的XSOF服务/鉴权/计分链补充"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/ed/a.java",
+    "bytes": 184,
+    "sha256": "8364a1e4180efba3f6605f81064ec41b0aa10115d3ad8da14d32f54873786917",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> ed/a.java",
+      "已核验端点与通道.csv:8 -> ed/a.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/eo/b.java",
+    "bytes": 1153,
+    "sha256": "0c35f074eac0b6e52a9fffc946d5e4178287a512c8fcef753b79b5a4873f4d5e",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> eo/b.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/ff/f.java",
+    "bytes": 10097,
+    "sha256": "bb17875abbe33c5c64aca4ed7349b197c4fb07c0f2eaf26b841175492f3e8a15",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> ff/f.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/ff/k.java",
+    "bytes": 2060,
+    "sha256": "c13d94c5d27a642d21e14841da470cec658ea2473d2841a3ee082d2b9f06eedc",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> ff/k.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/fo/a.java",
+    "bytes": 3987,
+    "sha256": "e84354c275e5c173042febf71bab42f97e1d7c62c72751986521c1fd58a20798",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> fo/a.java",
+      "已核验的XSOF服务/鉴权/计分链补充",
+      "已核验端点与通道.csv:8 -> jadx/sources/fo/a.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/fo/b.java",
+    "bytes": 178,
+    "sha256": "8fa2a2613c339311f7205ca4e5e244982fd1775d8528a9ab9154c689f384cec9",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> fo/b.java",
+      "已核验的XSOF服务/鉴权/计分链补充",
+      "已核验端点与通道.csv:8 -> fo/b.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/fo/d.java",
+    "bytes": 715,
+    "sha256": "a312cf6577df360e8aa3937504e11688987fee2919f22c777746228b48231aca",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> fo/d.java",
+      "已核验的XSOF服务/鉴权/计分链补充"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/gk/d.java",
+    "bytes": 6565,
+    "sha256": "9f0f7c515412b2c863b8f10711ce7edd016e6cf3c84ea57514fe4bc842a33559",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> gk/d.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/gk/l.java",
+    "bytes": 46935,
+    "sha256": "bf19fbddc7a6725e1d4e0b331e043f15b2fee71186b1b9f01686b0c624f5b89a",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> gk/l.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/ho/b.java",
+    "bytes": 125117,
+    "sha256": "f74006b840db40454daf3f0fb7beff78a24363334e1f2a1b539418928d3aa8ba",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> ho/b.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/jo/a.java",
+    "bytes": 2361,
+    "sha256": "31f28d105eb24f91ab3698a7e51f03e96200ec34ab7f8eafc11fa72b1ba169ac",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> jo/a.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/jo/k.java",
+    "bytes": 64650,
+    "sha256": "1d6d9a9cf17a3297a598d819e51fb2f810baa6c52224513dda851c07eaa8d428",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> jadx/sources/jo/k.java",
+      "com.miui.securitycenter/分析报告.md -> jo/k.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/kl/a.java",
+    "bytes": 4307,
+    "sha256": "58a020dc65105de8f17388325214973d507d7c2372783ebfabc8f826cb5ae9fa",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> kl/a.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/lo/h.java",
+    "bytes": 64793,
+    "sha256": "bc39e0885262fae27510b6826c0b3203aadfdb1a5e8126677d92caace723283c",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> lo/h.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/mi/b.java",
+    "bytes": 24625,
+    "sha256": "75a825faf9f142662536c4ae31da1247b7563952881f0044e89a7e7b4b6c77fd",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> mi/b.java",
+      "已核验端点与通道.csv:9 -> jadx/sources/mi/b.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/no/j.java",
+    "bytes": 14966,
+    "sha256": "a0193e339282ea1940d6b459bc0df9b5e19706abab070f452c79bfbc1d288d8b",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> no/j.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/oj/h.java",
+    "bytes": 2574,
+    "sha256": "e0226310bb57bf4854afa658d443e001c06e2d399fca4bed1e5669432b07d4cc",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> oj/h.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/oo/d.java",
+    "bytes": 4398,
+    "sha256": "8adf835f719c5a6c1d5a72c51155ecc31cdde9cca49f2f993b518294bf0ea21f",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> oo/d.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/qi/a.java",
+    "bytes": 6532,
+    "sha256": "d020dc607fdf15f9f2fed9777ecbdf8ee2a54f5f395f55411bd1d8f5848415d1",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> qi/a.java",
+      "已核验端点与通道.csv:9 -> qi/a.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/qi/c.java",
+    "bytes": 14647,
+    "sha256": "b0157e874d5a331faa7e212676431d3c88f9e0b64bad74f3f8fdddf8947fb500",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> qi/c.java",
+      "已核验端点与通道.csv:10 -> jadx/sources/qi/c.java",
+      "已核验端点与通道.csv:9 -> qi/c.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/qj/a.java",
+    "bytes": 13201,
+    "sha256": "f3b103bf881a28f3c827f1ff233bc8a48daa93e0c8f566cd68148858a73cc8f6",
+    "references": [
+      "动态加载与本地命令.md/安全中心内嵌旧 Analytics SDK -> qj/a.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/rm/d.java",
+    "bytes": 18237,
+    "sha256": "590e7c2e649b800af55cb1ebe79facde559581ca6943bbe483460df600780979",
+    "references": [
+      "动态加载与本地命令.md/安全中心内嵌旧 Analytics SDK -> com.miui.securitycenter/jadx/sources/rm/d.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/td/c.java",
+    "bytes": 251,
+    "sha256": "70cb97b3965d32ee14f41cae1ab1f35fe6affd44e47a5f4d927931330ba19621",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> td/c.java",
+      "已核验端点与通道.csv:26 -> td/c.java",
+      "已核验端点与通道.csv:27 -> td/c.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/tm/b.java",
+    "bytes": 5125,
+    "sha256": "0d3a45bcaeb3fb9c35fa97f84377da08d477b6e61f5403e3a555307ba929683e",
+    "references": [
+      "动态加载与本地命令.md/安全中心内嵌旧 Analytics SDK -> tm/b.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/jadx/sources/z3/k.java",
+    "bytes": 26038,
+    "sha256": "133fdcdaa983bdabb3851031e531c2e16bb01a2b3eec5c199d71f78b88e52b81",
+    "references": [
+      "com.miui.securitycenter/分析报告.md -> z3/k.java",
+      "已核验端点与通道.csv:11 -> jadx/sources/z3/k.java",
+      "已核验端点与通道.csv:11 -> z3/k.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitycenter",
+    "path": "com.miui.securitycenter/raw/assets/score_config.json",
+    "bytes": 2187,
+    "sha256": "a588526b864b20653635ea951c00f59b4224f625077b952c8f1732bb380a6484",
+    "references": [
+      "已核验的XSOF服务/鉴权/计分链补充"
+    ]
+  },
+  {
+    "package": "com.miui.securitymanager",
+    "path": "com.miui.securitymanager/jadx/sources/c1/a.java",
+    "bytes": 11451,
+    "sha256": "cab87b4e878502ad8e7dc1d01a313ef7af60fa2ab0d448b9129ae4fba7bac117",
+    "references": [
+      "com.miui.securitymanager/分析报告.md -> c1/a.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitymanager",
+    "path": "com.miui.securitymanager/jadx/sources/com/miui/securitymain/SCMainEntryActivity.java",
+    "bytes": 920,
+    "sha256": "9ec73d03fa2cb7cfd61d6d29faadcba9b017ab2f5d45a911c831f9531a225878",
+    "references": [
+      "com.miui.securitymanager/分析报告.md -> com/miui/securitymain/SCMainEntryActivity.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitymanager",
+    "path": "com.miui.securitymanager/jadx/sources/com/miui/securitymanager/ShortcutProvider.java",
+    "bytes": 4824,
+    "sha256": "4f24e347e164c0b2d0ec77ee14b6b217800802e3d27a64c2367f5753c2da22f0",
+    "references": [
+      "com.miui.securitymanager/分析报告.md -> ShortcutProvider.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitymanager",
+    "path": "com.miui.securitymanager/jadx/sources/com/miui/securitymanager/ShortcutReceiver.java",
+    "bytes": 1624,
+    "sha256": "db9abccb8f65f50bd9bf35ebf8a56bca5bd7dbab0af83fe399946c5d6f640939",
+    "references": [
+      "com.miui.securitymanager/分析报告.md -> ShortcutReceiver.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitymanager",
+    "path": "com.miui.securitymanager/jadx/sources/e1/a.java",
+    "bytes": 5898,
+    "sha256": "ac05ce93ed4ff1cf34872c73e22a855b0616770aed7416d2ee403a45cbc0cd36",
+    "references": [
+      "com.miui.securitymanager/分析报告.md -> e1/a.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitymanager",
+    "path": "com.miui.securitymanager/jadx/sources/g1/b.java",
+    "bytes": 14972,
+    "sha256": "4013355b1290e0385857ae8f793cb06c8ea57801359970763eecd7b9275149ba",
+    "references": [
+      "com.miui.securitymanager/分析报告.md -> g1/b.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitymanager",
+    "path": "com.miui.securitymanager/jadx/sources/i2/b.java",
+    "bytes": 26353,
+    "sha256": "6afdf1828b41b7a3b31c75651b463d272cb3e12f5b3ab61fce1edb97c6c47c93",
+    "references": [
+      "com.miui.securitymanager/分析报告.md -> i2/b.java"
+    ]
+  },
+  {
+    "package": "com.miui.securitymanager",
+    "path": "com.miui.securitymanager/jadx/sources/s2/a.java",
+    "bytes": 856,
+    "sha256": "d13d146bcd8678bccae8a63f588cdea3b7e4ee343b551f32297f2bc28492bd93",
+    "references": [
+      "com.miui.securitymanager/分析报告.md -> s2/a.java"
+    ]
+  },
+  {
+    "package": "com.mobiletools.systemhelper",
+    "path": "com.mobiletools.systemhelper/jadx/sources/com/mobiletools/systemhelper/Activity/TestActivity.java",
+    "bytes": 1990,
+    "sha256": "2624a7e58b2897b63f03d2e4587d12e363007ecace89c7120010dfad8dc98243",
+    "references": [
+      "com.mobiletools.systemhelper/分析报告.md -> class TestActivity"
+    ]
+  },
+  {
+    "package": "com.mobiletools.systemhelper",
+    "path": "com.mobiletools.systemhelper/jadx/sources/com/mobiletools/systemhelper/control/GetSignalInfoReceiver.java",
+    "bytes": 9536,
+    "sha256": "936b786df76b7d61e179886c5d85591fa66f28b122f96681e326961acbd03c03",
+    "references": [
+      "com.mobiletools.systemhelper/分析报告.md -> class GetSignalInfoReceiver",
+      "com.mobiletools.systemhelper/分析报告.md -> jadx/sources/com/mobiletools/systemhelper/control/GetSignalInfoReceiver.java"
+    ]
+  },
+  {
+    "package": "com.mobiletools.systemhelper",
+    "path": "com.mobiletools.systemhelper/jadx/sources/com/mobiletools/systemhelper/control/OnBootReceiver.java",
+    "bytes": 2139,
+    "sha256": "16c0f9171da8994f0eb44483d831ea58ac1315d03cef6398c9db149f45a448d8",
+    "references": [
+      "com.mobiletools.systemhelper/分析报告.md -> class OnBootReceiver"
+    ]
+  },
+  {
+    "package": "com.mobiletools.systemhelper",
+    "path": "com.mobiletools.systemhelper/jadx/sources/com/mobiletools/systemhelper/service/RegisterHelperService.java",
+    "bytes": 2735,
+    "sha256": "d986a150b80a44c457abe6aeba89e11760885c546ba6efab59b527d5a3f090ac",
+    "references": [
+      "com.mobiletools.systemhelper/分析报告.md -> class RegisterHelperService"
+    ]
+  },
+  {
+    "package": "com.mobiletools.systemhelper",
+    "path": "com.mobiletools.systemhelper/jadx/sources/e1/b.java",
+    "bytes": 61998,
+    "sha256": "8840ec576c2a5ce7b7dac3a3ff884a6dadcf7b2905ad9f70689e75d490391d90",
+    "references": [
+      "com.mobiletools.systemhelper/分析报告.md -> jadx/sources/e1/b.java"
+    ]
+  },
+  {
+    "package": "com.mobiletools.systemhelper",
+    "path": "com.mobiletools.systemhelper/jadx/sources/e1/f.java",
+    "bytes": 9313,
+    "sha256": "93928c43075eac02b2c74753cb1eed1580370354bebff3c4fb0ebad95491d8ff",
+    "references": [
+      "com.mobiletools.systemhelper/分析报告.md -> jadx/sources/e1/f.java"
+    ]
+  },
+  {
+    "package": "com.mobiletools.systemhelper",
+    "path": "com.mobiletools.systemhelper/jadx/sources/e1/g.java",
+    "bytes": 4357,
+    "sha256": "1b23cd4888892172ced8e3d88d0215ac6c55593ba866ff0b9e686518df0e6f3f",
+    "references": [
+      "com.mobiletools.systemhelper/分析报告.md -> e1/g.java",
+      "com.mobiletools.systemhelper/分析报告.md -> jadx/sources/e1/g.java",
+      "已核验端点与通道.csv:2 -> jadx/sources/e1/g.java",
+      "已核验端点与通道.csv:3 -> jadx/sources/e1/g.java"
+    ]
+  },
+  {
+    "package": "com.mobiletools.systemhelper",
+    "path": "com.mobiletools.systemhelper/jadx/sources/f1/a.java",
+    "bytes": 39987,
+    "sha256": "f7f58a975e9b91f5c92156bce358f3033be8ffc6451807d138aa03c6ef600fa3",
+    "references": [
+      "com.mobiletools.systemhelper/分析报告.md -> f1/a.java"
+    ]
+  },
+  {
+    "package": "com.mobiletools.systemhelper",
+    "path": "com.mobiletools.systemhelper/jadx/sources/f1/n.java",
+    "bytes": 3983,
+    "sha256": "fe5d6e5b269e5663b2e7b29e882a7e79c6c45582371bb83b4d39a6ab67045a3d",
+    "references": [
+      "com.mobiletools.systemhelper/分析报告.md -> f1/n.java"
+    ]
+  },
+  {
+    "package": "com.mobiletools.systemhelper",
+    "path": "com.mobiletools.systemhelper/jadx/sources/f1/p.java",
+    "bytes": 16028,
+    "sha256": "6b0835022ec87d4e46ac84f2a22da5345fa5cef1c668f751053451a97e91f76f",
+    "references": [
+      "com.mobiletools.systemhelper/分析报告.md -> f1/p.java",
+      "已核验端点与通道.csv:2 -> f1/p.java"
+    ]
+  },
+  {
+    "package": "com.mobiletools.systemhelper",
+    "path": "com.mobiletools.systemhelper/jadx/sources/g1/b.java",
+    "bytes": 3716,
+    "sha256": "59b61489474b6fc78421483ad8895fc4e0c830c18bef54c4584f2573cfbf516e",
+    "references": [
+      "com.mobiletools.systemhelper/分析报告.md -> g1/b.java"
+    ]
+  },
+  {
+    "package": "com.mobiletools.systemhelper",
+    "path": "com.mobiletools.systemhelper/jadx/sources/g1/c.java",
+    "bytes": 3154,
+    "sha256": "cd9beb234cdfb43580b230c115cd7d0e89ca47a664c8b3e8b78b9c3bb39a7d44",
+    "references": [
+      "com.mobiletools.systemhelper/分析报告.md -> g1/c.java"
+    ]
+  },
+  {
+    "package": "com.mobiletools.systemhelper",
+    "path": "com.mobiletools.systemhelper/jadx/sources/g1/d.java",
+    "bytes": 3210,
+    "sha256": "5273c346edd9fea620a75ccc31d4c5678d1cd1a9f68f0840578c1445b12b49a4",
+    "references": [
+      "已核验端点与通道.csv:2 -> g1/d.java"
+    ]
+  },
+  {
+    "package": "com.mobiletools.systemhelper",
+    "path": "com.mobiletools.systemhelper/jadx/sources/g1/f.java",
+    "bytes": 9401,
+    "sha256": "eea24b165e2917d99ce87fa572738dfa49f9aa12eedca3e8dad153375f45b8d9",
+    "references": [
+      "com.mobiletools.systemhelper/分析报告.md -> g1/f.java"
+    ]
+  },
+  {
+    "package": "com.mobiletools.systemhelper",
+    "path": "com.mobiletools.systemhelper/jadx/sources/g1/j.java",
+    "bytes": 2408,
+    "sha256": "8ba05b1d8b64523cfa25ebaadd6b9f37d447f7f1b5daf4b34d47715fc8005e9c",
+    "references": [
+      "com.mobiletools.systemhelper/分析报告.md -> g1/j.java"
+    ]
+  },
+  {
+    "package": "com.mobiletools.systemhelper",
+    "path": "com.mobiletools.systemhelper/jadx/sources/g1/l.java",
+    "bytes": 11625,
+    "sha256": "46c91731abb315a4d002ceea9499ba98cb06096ae96c3017f532a9cdd9addd91",
+    "references": [
+      "com.mobiletools.systemhelper/分析报告.md -> jadx/sources/g1/l.java"
+    ]
+  },
+  {
+    "package": "com.mobiletools.systemhelper",
+    "path": "com.mobiletools.systemhelper/jadx/sources/g1/n.java",
+    "bytes": 6722,
+    "sha256": "092b0de732b1f88bc58e380e2c5b04374585bf3406019ce2e6951b4c418dc59d",
+    "references": [
+      "com.mobiletools.systemhelper/分析报告.md -> g1/n.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.registration",
+    "path": "com.xiaomi.registration/jadx/sources/com/xiaomi/registration/autoregistration/AutoRegIntentService.java",
+    "bytes": 34595,
+    "sha256": "5e7662e657a3749ac15fda56b8c98e14f046fe56968692d85d95aec869944bf6",
+    "references": [
+      "com.xiaomi.registration/分析报告.md -> AutoRegIntentService.java",
+      "com.xiaomi.registration/分析报告.md -> class AutoRegIntentService",
+      "com.xiaomi.registration/分析报告.md -> jadx/sources/com/xiaomi/registration/autoregistration/AutoRegIntentService.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.registration",
+    "path": "com.xiaomi.registration/jadx/sources/com/xiaomi/registration/autoregistration/AutoRegReceiver.java",
+    "bytes": 11126,
+    "sha256": "963e2e70491eeedbcda4991d219579c22c8da50cfbc16239299506273afe7b4a",
+    "references": [
+      "com.xiaomi.registration/分析报告.md -> class AutoRegReceiver"
+    ]
+  },
+  {
+    "package": "com.xiaomi.registration",
+    "path": "com.xiaomi.registration/jadx/sources/com/xiaomi/registration/autoregistration/RegistrationJobService.java",
+    "bytes": 4048,
+    "sha256": "ff9e7dce186cd51d7e53020b78759d57b8c16d04bf3fa13d61bbec4af22f0d16",
+    "references": [
+      "com.xiaomi.registration/分析报告.md -> class RegistrationJobService"
+    ]
+  },
+  {
+    "package": "com.xiaomi.registration",
+    "path": "com.xiaomi.registration/jadx/sources/com/xiaomi/registration/autoregistration/SmsFilterReceiver.java",
+    "bytes": 7392,
+    "sha256": "dae053f5cf33115cb9dff5b39f3968ee32e71396dbbf137c2943d955c2a58ac2",
+    "references": [
+      "com.xiaomi.registration/分析报告.md -> class SmsFilterReceiver"
+    ]
+  },
+  {
+    "package": "com.xiaomi.registration",
+    "path": "com.xiaomi.registration/jadx/sources/com/xiaomi/registration/utils/DeviceInfoProvider.java",
+    "bytes": 2556,
+    "sha256": "a30f9442c1edae7f2fb96e87ebc5d355df63f9a86d493696688b8b2329bd17bf",
+    "references": [
+      "com.xiaomi.registration/分析报告.md -> class DeviceInfoProvider"
+    ]
+  },
+  {
+    "package": "com.xiaomi.registration",
+    "path": "com.xiaomi.registration/jadx/sources/g/p.java",
+    "bytes": 22703,
+    "sha256": "3264f1f18837d590fc589d0adca38ab72d9e0686973badbf818f31728f752134",
+    "references": [
+      "com.xiaomi.registration/分析报告.md -> jadx/sources/g/p.java",
+      "已核验端点与通道.csv:7 -> jadx/sources/g/p.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.registration",
+    "path": "com.xiaomi.registration/jadx/sources/i1/a.java",
+    "bytes": 1785,
+    "sha256": "923fce2986424dadc98185628f1c6e97d09e538c6b90e861415630774418f358",
+    "references": [
+      "com.xiaomi.registration/分析报告.md -> i1/a.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.registration",
+    "path": "com.xiaomi.registration/jadx/sources/i1/b.java",
+    "bytes": 24419,
+    "sha256": "097e2ae72f05c0f508c66053b9b0f3f55990728afc97a8589cc54af7826d7fcc",
+    "references": [
+      "com.xiaomi.registration/分析报告.md -> i1/b.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.registration",
+    "path": "com.xiaomi.registration/jadx/sources/i1/c.java",
+    "bytes": 30223,
+    "sha256": "98fec2294dddb093d42a189e0bf7069ff3d5ba473561f116267cad0909c56e36",
+    "references": [
+      "com.xiaomi.registration/分析报告.md -> i1/c.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.registration",
+    "path": "com.xiaomi.registration/jadx/sources/i1/i.java",
+    "bytes": 5968,
+    "sha256": "46ce66d65fe0800144d17edb4f1d9b1a6cb56acee945be8045516d9bff80f6bd",
+    "references": [
+      "com.xiaomi.registration/分析报告.md -> jadx/sources/i1/i.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.registration",
+    "path": "com.xiaomi.registration/jadx/sources/i1/j.java",
+    "bytes": 20124,
+    "sha256": "010a3182ef49f41f0b4bc0565fc52c96baeb6a6e76273c760f36fc5a50d76b97",
+    "references": [
+      "com.xiaomi.registration/分析报告.md -> i1/j.java",
+      "已核验端点与通道.csv:4 -> jadx/sources/i1/j.java",
+      "已核验端点与通道.csv:5 -> jadx/sources/i1/j.java",
+      "已核验端点与通道.csv:6 -> jadx/sources/i1/j.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.registration",
+    "path": "com.xiaomi.registration/jadx/sources/i1/m.java",
+    "bytes": 2964,
+    "sha256": "6cc7b8a8379ebb884c554bad78bc29a3bc1731efefe1cfa1073ac0c727895787",
+    "references": [
+      "com.xiaomi.registration/分析报告.md -> i1/m.java",
+      "已核验端点与通道.csv:7 -> i1/m.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.registration",
+    "path": "com.xiaomi.registration/jadx/sources/j1/b.java",
+    "bytes": 24611,
+    "sha256": "4c6de90cee60e87e6ee281364f139e20bac7950a5fb55dfefe95f98df70567d0",
+    "references": [
+      "com.xiaomi.registration/分析报告.md -> j1/b.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.registration",
+    "path": "com.xiaomi.registration/jadx/sources/j1/c.java",
+    "bytes": 7930,
+    "sha256": "d9eae342858eb20559a291c3b875c17a227e19532a0e616739d624cdfd843e13",
+    "references": [
+      "com.xiaomi.registration/分析报告.md -> j1/c.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.registration",
+    "path": "com.xiaomi.registration/jadx/sources/k1/a.java",
+    "bytes": 979,
+    "sha256": "eefbe252fbb05f7aff72b3f2466278d280ca0935366ac6e962f3d39c32390142",
+    "references": [
+      "com.xiaomi.registration/分析报告.md -> k1/a.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/A0/o.java",
+    "bytes": 61796,
+    "sha256": "7655c9bfde3c38747434766a7e9676190508e36f97d7c034799e588acea107b8",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> A0/o.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/G/a.java",
+    "bytes": 3298,
+    "sha256": "4adbc08d02c0304e9fef35427a577bf1c6d21d8365d5df1a63324f4c8916f8f5",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> G/a.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/G/b.java",
+    "bytes": 6188,
+    "sha256": "22232888562d76ad3b4ea356ec35de91b96ba84b3a984f79d4928593a459b3ad",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> G/b.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/M/b.java",
+    "bytes": 13368,
+    "sha256": "7e499ea6b1f8a72e0738bb3e74c658b7692b9c12222c552fd58ab3e9139c108d",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> M/b.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/X0/b.java",
+    "bytes": 3619,
+    "sha256": "e79f4f3e40a8ecc42ee0e7e7952e6cbe9a3b0f363c1c10812c26358cb431f137",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> X0/b.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/androidx/emoji2/text/o.java",
+    "bytes": 14619,
+    "sha256": "bf807496d2c24693a2cd4046b043b2d011c889a6c63a458c488529d6ba3aca07",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> androidx/emoji2/text/o.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/com/ifaa/seccam/IFAASecCamService.java",
+    "bytes": 1608,
+    "sha256": "fb5f10617030c7764d9e737e1bb8703e9e672136be7c26e4e3e51058a4ae01b4",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> com/ifaa/seccam/IFAASecCamService.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/com/ifaa/seccam/c.java",
+    "bytes": 4373,
+    "sha256": "4e23db45a15b7945e6a4f07360fdb2e5b33d7b9aa40775a462da24eb19cda125",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> c.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/com/ifaa/seccam/f.java",
+    "bytes": 9775,
+    "sha256": "ae0fa44a5838272e92c5462a6cb820b5f4a227bde3a2d0f57044e526b444bb76",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> f.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/com/xiaomi/trustservice/IMiTrustService.java",
+    "bytes": 2831,
+    "sha256": "469f833cb034dd72f45b19613ec0c0c20625de2a6eabd04ca33274739389ea04",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> IMiTrustService.java",
+      "com.xiaomi.trustservice/分析报告.md -> class IMiTrustService"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/com/xiaomi/trustservice/common/CommService.java",
+    "bytes": 5723,
+    "sha256": "e70077226c28179a5c9ce4a67145dcbccb9804fd34a8d59fbe1f1d6f7f534ef2",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> common/CommService.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/com/xiaomi/trustservice/face/FaceManagerProxyImpl.java",
+    "bytes": 4033,
+    "sha256": "c93b6552803a86cb85de9d184cd933766ad2f07ea346be7b99230c6f3ec5c873",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> face/FaceManagerProxyImpl.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/com/xiaomi/trustservice/i.java",
+    "bytes": 1260,
+    "sha256": "b84e218e6c00916b7d41bb30e14c9b3ccd26ee8dfbabe05bf9f2959ce6d31f0f",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> i.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/com/xiaomi/trustservice/j.java",
+    "bytes": 2838,
+    "sha256": "63fbe4bc60b027d232715b41db665b6deda0e664fb46275e4f01b7565cfdadc8",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> com/xiaomi/trustservice/j.java",
+      "com.xiaomi.trustservice/分析报告.md -> j.java",
+      "已核验端点与通道.csv:62 -> jadx/sources/com/xiaomi/trustservice/j.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/com/xiaomi/trustservice/ota/SocidProvision.java",
+    "bytes": 4815,
+    "sha256": "c26eb0c8beb257314ed1d773f5259f604ac0ced64b75f26403af5e7f2cc44c5b",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> ota/SocidProvision.java",
+      "已核验端点与通道.csv:61 -> jadx/sources/com/xiaomi/trustservice/ota/SocidProvision.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/com/xiaomi/trustservice/remoteauthservice/k.java",
+    "bytes": 66591,
+    "sha256": "2d57107f986d16093a19910353cdad5334a8c439d8bd5f9d864c9e7397a99513",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> k.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/com/xiaomi/trustservice/remoteauthservice/l.java",
+    "bytes": 14044,
+    "sha256": "4031a985fbe156e13d581e45ae65678726ac6d3ff1e48f313fca629b1196835e",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> remoteauthservice/l.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/com/xiaomi/trustservice/remoteauthservice/m.java",
+    "bytes": 1040,
+    "sha256": "83e1ad49734b71e95d63a4628b06995923561bfe56c8908204594334dcfe102a",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> remoteauthservice/m.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/com/xiaomi/trustservice/remoteauthservice/remoteAuthService.java",
+    "bytes": 5531,
+    "sha256": "1a7f56eada3a8f42ade53de4fe7e330b071327d5041f39ec3f587d8f05436a54",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> remoteauthservice/remoteAuthService.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/com/xiaomi/trustservice/rootpub/PubCertRevise.java",
+    "bytes": 9090,
+    "sha256": "83b173e46726f5438b354be8e1f848989163cdf54b913c23b39446e65e77a996",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> rootpub/PubCertRevise.java",
+      "已核验端点与通道.csv:60 -> jadx/sources/com/xiaomi/trustservice/rootpub/PubCertRevise.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/com/xiaomi/trustservice/secmedia/c.java",
+    "bytes": 1978,
+    "sha256": "ab32c8162fabf1fabdf2023b6749c12152c6bc9997a2cf35dde010744d46859a",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> secmedia/c.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/com/xiaomi/trustservice/secmedia/d.java",
+    "bytes": 7269,
+    "sha256": "27a205892b3193b007d677c24ce493f4f0535cab631be76ec69199c59c870cef",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> secmedia/d.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/com/xiaomi/trustservice/signature/MiTrueDeviceSignatureService.java",
+    "bytes": 4595,
+    "sha256": "310f4dcc2d87512c53252e1af4147f5254dc1a24326296a49cdaaaefcec64222",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> signature/MiTrueDeviceSignatureService.java"
+    ]
+  },
+  {
+    "package": "com.xiaomi.trustservice",
+    "path": "com.xiaomi.trustservice/jadx/sources/com/xiaomi/trustservice/unifiedencryptservice/c.java",
+    "bytes": 5051,
+    "sha256": "a00c5fa39dfcde5ff36c47dee0a44b0989792e70fd8c34d1d38d4ec05a34c3d3",
+    "references": [
+      "com.xiaomi.trustservice/分析报告.md -> unifiedencryptservice/c.java"
+    ]
+  }
+]

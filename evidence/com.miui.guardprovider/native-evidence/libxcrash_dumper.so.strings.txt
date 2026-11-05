@@ -1,0 +1,599 @@
+0x270	/system/bin/linker64
+0x294	Android
+0x2e0	10909125
+0xded	__libc_init
+0xdf9	__cxa_atexit
+0xe06	malloc
+0xe12	strlen
+0xe19	__errno
+0xe21	fopen
+0xe27	fclose
+0xe2e	sscanf
+0xe35	strcmp
+0xe3c	strncmp
+0xe44	strstr
+0xe4b	fgets
+0xe51	__strlen_chk
+0xe5e	vsnprintf
+0xe68	sigaltstack
+0xe74	calloc
+0xe7b	__android_log_print
+0xe8f	sigfillset
+0xe9a	sigaction
+0xea4	syscall
+0xeac	getpid
+0xeb3	gettid
+0xeba	dladdr
+0xec1	dlopen
+0xec8	dlsym
+0xece	dlclose
+0xed6	strtol
+0xedd	close
+0xee3	access
+0xeea	memcmp
+0xef1	write
+0xefc	__open_2
+0xf05	__strncpy_chk2
+0xf14	popen
+0xf1a	pclose
+0xf21	readlink
+0xf2a	strdup
+0xf31	alarm
+0xf3c	__read_chk
+0xf47	_exit
+0xf4d	__vsnprintf_chk
+0xf5d	__vsprintf_chk
+0xf6c	__strcat_chk
+0xf79	fstat
+0xf7f	localtime_r
+0xf90	munmap
+0xf97	strerror
+0xfa0	getpagesize
+0xfac	opendir
+0xfb4	readdir
+0xfbc	closedir
+0xfc5	strtok_r
+0xfce	regcomp
+0xfd6	regexec
+0xfde	ptrace
+0xfe5	waitpid
+0xfed	sysconf
+0xff5	realloc
+0xffd	process_vm_readv
+0x100e	dl_iterate_phdr
+0x1023	fprintf
+0x102b	fflush
+0x1032	abort
+0x1038	memcpy
+0x103f	pthread_rwlock_wrlock
+0x1055	pthread_rwlock_unlock
+0x106b	memset
+0x1072	pthread_rwlock_rdlock
+0x1088	fwrite
+0x108f	memmove
+0x1097	__stack_chk_fail
+0x10a8	libdl.so
+0x10b6	libc.so
+0x10be	liblog.so
+0x10c8	libm.so
+0x282d	CIE version is not 1 or 3
+0x2847	%21s %8s
+0x2851	 Process Limits (From: /proc/PID/limits)
+0x287b	SIGFPE
+0x2882	SIGTRAP
+0x288a	SIGSTKFLT
+0x2894	SI_QUEUE
+0x289d	SI_MESGQ
+0x28a6	/proc/%d/cmdline
+0x28b7	/proc/%d/net/icmp6
+0x28ca	/su/bin/su
+0x28d5	truncated uleb128 expression
+0x28f2	FDE has zero length
+0x2906	Shared
+0x290d	[stack
+0x2914	/dev/ashmem/dalvik-free list large object space
+0x2944	Shared_Clean: %zu kB
+0x2959	_Uaarch64_get_reg
+0x296b	    #%02zu pc %016lx  %s (%s+%lu)
+0x298e	FPE_FLTRES
+0x2999	/system/bin/logcat -b %s -d -v threadtime -t %u %s*:%c
+0x29d0	DWARF: PC is moving backwards
+0x29f1	DW_EH_PE_textrel pointer encoding not supported
+0x2a21	Can't binary search on variable length encoded data.
+0x2a59	.apk mmap
+0x2a63	Other mmap
+0x2a6e	.JITCache
+0x2a78	xcc_signal_crash_register, sigaltstack failed!
+0x2aa7	BUS_MCEERR_AR
+0x2ab5	PTRACE_EVENT_EXIT
+0x2ac7	/proc/%d/net/icmp
+0x2ad9	    %s (BuildId: 
+0x2aeb	native
+0x2af2	evaluateExpression
+0x2b09	CIE ID is not zero
+0x2b1c	(null)
+0x2b25	 Process Summary (From: /proc/PID/smaps)
+0x2b4f	Java Heap:
+0x2b5a	%lx-%lx %*s %*x %*x:%*x %*d%n
+0x2b78	/dev/ashmem/dalvik-non moving space
+0x2b9c	 System Summary (From: /proc/meminfo)
+0x2bc3	.App dex
+0x2bcc	    #%02zu pc %016lx  <anonymous:%16lx>
+0x2bf5	ILL_ILLOPN
+0x2c03	/system/bin/failsafe/su
+0x2c1b	ELF: step FAILED, rel_pc=%lx, step_pc=%lx
+0x2c45	unsupported arm64 register
+0x2c68	ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+0x2ca9	%13s %8zu %8zu %8zu %8zu %8zu %8zu %8zu
+0x2cd2	TOTAL SWAP PSS:
+0x2ce2	.App vdex
+0x2cec	    (number of FDs: %zu)
+0x2d06	/system/usr/we-need-root/su
+0x2d22	DWARF: get CIE failed, offset=%lx
+0x2d47	%s!%s
+0x2d51	%p (*pc=%#08x)
+0x2d60	unknown
+0x2d70	Private_Dirty: %zu kB
+0x2d86	Swap: %zu kB
+0x2d93	.ttf mmap
+0x2d9d	.art mmap
+0x2da7	.NonMoving
+0x2db2	    #%02zu pc %016lx  <unknown>
+0x2dd3	SIGILL
+0x2dda	TRAP_BRKPT
+0x2de5	/system/lib64/libc.so
+0x2dfb	 %016lx
+0x2e0e	Private
+0x2e16	SwapPss
+0x2e1e	Total
+0x2e24	------
+0x2e2b	Code:
+0x2e31	/dev/ashmem
+0x2e3d	SwapPss: %zu kB
+0x2e4d	.CompilerMetadata
+0x2e5f	.Boot art
+0x2e69	Not supported on Android Q (API level 29) and later.
+0x2e9f	/proc/%d/net/unix
+0x2eb1	/data/local/xbin/su
+0x2ec5	CORE: done
+0x2ed0	ELF: step by %s%s %s, step_pc=%lx, load_bias=%lx, finished=%d
+0x2f0e	backtrace:
+0x2f1a	 (offset 0x%lx)
+0x2f2a	 (%s+%zu)
+0x2f34	build id:
+0x2f3f	PROCESS: crashed thread NOT found
+0x2f61	THREAD: waitpid for ptrace ATTACH failed, errno=%d
+0x2f94	%s  %s
+0x2f9c	libunwind: malformed DW_CFA_def_cfa_register DWARF unwind, reg too big
+0x2fe4	libunwind: malformed DW_CFA_offset_extended_sf DWARF unwind, reg too big
+0x302e	Unknown DWARF encoding for search table.
+0x305e	unknown register
+0x306f	Dirty
+0x3075	/dev/ashmem/dalvik-main space
+0x3093	.so mmap
+0x309c	FPE_INTDIV
+0x30a7	PTRACE_EVENT_STOP
+0x30bf	open files:
+0x30cc	/system/bin/su
+0x30e2	pid: %d, tid: %d, name: %s  >>> %s <<<
+0x310a	libunwind: %s - %s
+0x311e	getRegister
+0x312a	truncated sleb128 expression
+0x3152	/dev/ashmem/dalvik-LinearAlloc
+0x3171	/dev/ashmem/dalvik-large object space
+0x3197	/dev/ashmem/libc malloc
+0x31af	.oat mmap
+0x31b9	_Uaarch64_init_local
+0x31ce	TRAP_BRANCH
+0x31da	SI_SIGIO
+0x31e3	  ......
+0x31ed	--------- tail end of log %s (%s)
+0x3210	.eh_frame
+0x321d	/proc/%d/maps
+0x322b	memory map:
+0x3238	 from pid %d, uid %d
+0x324d	DW_EH_PE_funcrel pointer encoding not supported
+0x327d	DW_OP_deref_size with bad size
+0x32a8	    #%02zu pc %016lx  %s
+0x32c2	SEGV_PKUERR
+0x32ce	/proc/%d/comm
+0x32dc	 TCP over IPv4 (From: /proc/PID/net/tcp)
+0x3306	xcd_core_log_pathname: %s
+0x3322	xcrash error debug:
+0x3336	dumper has crashed (signal: %d, code: %d)
+0x3361	ELF: step by sigreturn OK, rel_pc=%lx, finished=0
+0x3393	PROCESS: abort_msg, p = %lx
+0x33b1	libunwind: malformed DW_CFA_offset_extended DWARF unwind, reg too big
+0x33f8	libunwind: malformed DW_CFA_restore_extended DWARF unwind, reg too big
+0x344e	%21s %8zu %21s %8zu
+0x3463	/proc/meminfo
+0x3471	SIGSEGV
+0x3479	BUS_MCEERR_AO
+0x3487	ILL_ILLADR
+0x3496	/proc/%d/net/tcp6
+0x34a8	 UDP over IPv4 (From: /proc/PID/net/udp)
+0x34d2	 ICMP in IPv6 (From: /proc/PID/net/icmp6)
+0x34fd	--pid %d 
+0x3507	DWARF: get LOC failed, step_pc=%lx
+0x352b	PROCESS: create maps failed, errno=%d
+0x3551	libunwind: malformed DW_CFA_undefined DWARF unwind, reg too big
+0x3592	DW_OP_piece not implemented
+0x35b1	Stack:
+0x35b8	TOTAL SWAP:
+0x35c4	[anon:libc_malloc]
+0x35d7	@boot
+0x35dd	/dev/ashmem/dalvik-jit-code-cache
+0x35ff	/dev/ashmem/dalvik-CompilerMetadata
+0x3623	 Process Status (From: /proc/PID/status)
+0x364d	/proc/%d/limits
+0x365d	Other dev
+0x3667	.dex mmap
+0x3671	.Boot vdex
+0x367c	xcc_unwind_clang_callback->return NO_REASON
+0x36a8	SIGABRT
+0x36b2	PTRACE_EVENT_VFORK
+0x36c5	 ICMP in IPv4 (From: /proc/PID/net/icmp)
+0x36ef	/system/bin/.ext/su
+0x3703	DWARF: get FDE failed, step_pc=%lx
+0x3726	DWARF: eval failed, step_pc=%lx
+0x3746	. MD5: 
+0x374e	. %s error: errno = %d, errmsg = %s)
+0x3774	--------
+0x378a	 Process Dalvik Details (From: /proc/PID/smaps)
+0x37bb	[heap]
+0x37c2	/dev/ashmem/CursorWindow
+0x37db	Cursor
+0x37e2	SEGV_MAPERR
+0x37ee	SEGV_BNDERR
+0x37fa	PTRACE_EVENT_CLONE
+0x380d	SI_TKILL
+0x381b	.debug_frame
+0x3828	/dev/
+0x382e	 (load bias 0x%lx)
+0x3841	    TOTAL SIZE: 0x%lxK (%luK)
+0x3861	PROCESS: got %zu regex
+0x3878	    %016lx
+0x3883	OneTrack-XCrash
+0x3893	getULEB128
+0x38ae	/dev/ashmem/dalvik-
+0x38c2	/dev/ashmem/dalvik-alloc space
+0x38e1	Pss: %zu kB
+0x38ed	.Zygote
+0x38f5	xcc_unwind_clang_callback->frame_num: %zu, prev_pc: %lu, prev_sp: %lu
+0x393b	libunwind.so
+0x3948	BUS_OBJERR
+0x3953	FPE_INTOVF
+0x395e	SI_KERNEL
+0x3968	  (number of records: %zu)
+0x3984	xcrash_dumper process start!
+0x39a1	jni crash: (%s)
+0x39b1	%02hhx
+0x39c0	Abort message: '%s'
+0x39d5	    x0  %016lx  x1  %016lx  x2  %016lx  x3  %016lx
+0x3a08	    x4  %016lx  x5  %016lx  x6  %016lx  x7  %016lx
+0x3a3b	    x8  %016lx  x9  %016lx  x10 %016lx  x11 %016lx
+0x3a6e	    x12 %016lx  x13 %016lx  x14 %016lx  x15 %016lx
+0x3aa1	    x16 %016lx  x17 %016lx  x18 %016lx  x19 %016lx
+0x3ad4	    x20 %016lx  x21 %016lx  x22 %016lx  x23 %016lx
+0x3b07	    x24 %016lx  x25 %016lx  x26 %016lx  x27 %016lx
+0x3b3a	    x28 %016lx  x29 %016lx
+0x3b55	    sp  %016lx  lr  %016lx  pc  %016lx
+0x3b7e	libunwind: malformed DW_CFA_register DWARF unwind, reg2 too big
+0x3bbf	getSLEB128
+0x3bd2	_Uaarch64_step
+0x3be1	BUS_ADRALN
+0x3bec	ILL_PRVOPC
+0x3bf7	SYS_SECCOMP
+0x3c03	 (in .gnu_debugdata)
+0x3c18	error reason:
+0x3c27	jni crash
+0x3c33	stack:
+0x3c3b	         ........  ........
+0x3c58	    #%02d  
+0x3c64	setRegister
+0x3c7e	%13s %8s %8s %8s %8s %8s %8s %8s
+0x3ca0	/dev/ashmem/dalvik-zygote space
+0x3cc0	xcc_unwind_clang_record->self.buf_used: %zu
+0x3cec	SIGSYS
+0x3cf3	FPE_FLTOVF
+0x3cfe	PTRACE_EVENT_FORK
+0x3d10	*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+0x3d50	Tombstone maker: 'xCrash 3.1.0'
+0x3d70	Crash type: '%s'
+0x3d81	Start time: '%04d-%02d-%02dT%02d:%02d:%02d.%03ld%c%02ld%02ld'
+0x3dbf	Crash time: '%04d-%02d-%02dT%02d:%02d:%02d.%03ld%c%02ld%02ld'
+0x3dfd	App ID: '%s'
+0x3e0a	App version: '%s'
+0x3e1c	Rooted: '%s'
+0x3e29	API level: '%d'
+0x3e39	OS version: '%s'
+0x3e4a	Kernel version: '%s'
+0x3e5f	ABI list: '%s'
+0x3e6e	Manufacturer: '%s'
+0x3e81	Brand: '%s'
+0x3e8d	Model: '%s'
+0x3e99	Build fingerprint: '%s'
+0x3eb1	ABI: 'arm64'
+0x3ebf	network info:
+0x3ece	/proc/%d/net/udp6
+0x3ee1	backtrace feature id:
+0x3ef9	FRAMES: step, rel_pc=%lx, step_pc=%lx, ELF=%s
+0x3f27	%lx-%lx %4s %lx %*x:%*x %*d%n
+0x3f45	+++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++
+0x3f86	PROCESS: abort_msg, size = %zu
+0x3fa5	memory near %s:
+0x3fb6	libunwind: malformed DW_CFA_def_cfa_sf DWARF unwind, reg too big
+0x3ff8	libunwind: malformed DW_CFA_val_offset DWARF unwind, reg (%lu) out of range
+0x4046	unsupported restore location for float register
+0x4076	 (deleted)
+0x4081	Stack
+0x4087	.jar mmap
+0x4095	BUS_ADRERR
+0x40a0	FPE_FLTDIV
+0x40ab	SI_TIMER
+0x40b4	/proc/%d/fd
+0x40c0	xcrash_dumper->xcd_process_resume_threads
+0x40ea	ashmem/
+0x40f2	PROCESS: abort_msg, pp = %lx
+0x4115	libunwind: malformed DW_CFA_register DWARF unwind, reg too big
+0x4155	getTableEntrySize
+0x416e	/dev/kgsl-3d0
+0x417c	/dev/ashmem/dalvik-data-code-cache
+0x419f	.App art
+0x41a8	SIGBUS
+0x41af	TRAP_TRACE
+0x41ba	TRAP_HWBKPT
+0x41c6	logcat:
+0x41cf	    %016lx-%016lx %c%c%c %*lx %*lx %s%s
+0x41f8	--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+0x4239	dumped threads: %u
+0x4254	memory info:
+0x4262	/boot
+0x4268	ILL_COPROC
+0x4273	events
+0x427a	/system/xbin/su
+0x428a	ELF: step by .debug_frame%s %s, step_pc=%lx, load_bias=%lx, finished=%d
+0x42d2	.note.gnu.build-id
+0x42e5	<unknown>
+0x42ef	. LastModified: %s
+0x4302	signal %d (%s), code %d (%s%s), fault addr %s
+0x4331	libunwind: malformed DW_CFA_GNU_negative_offset_extended DWARF unwind, reg too big
+0x438c	System:
+0x4394	/dev/ashmem/dalvik-indirect ref
+0x43b4	FPE_FLTINV
+0x43c2	system
+0x43c9	/proc/%d/net/tcp
+0x43da	         
+0x43e6	[anon:abort message]
+0x43fb	OneTrack-XCrash-Dumper
+0x4412	UTIL: ptrace error, addr:%lx, errno:%d
+0x443e	/proc/%d/smaps
+0x4452	xcc_unwind_clang_callback->pc: %lu, sp: %lu
+0x447e	SI_ASYNCIO
+0x4489	/data/local/bin/su
+0x449c	. LastModified: %04d-%02d-%02dT%02d:%02d:%02d.%03ld%c%02ld%02ld
+0x44dc	DW_EH_PE_datarel is invalid with a datarelBase of 0
+0x451c	Private Other:
+0x452b	SEGV_ACCERR
+0x4537	ELF: create GNU interface FAILED
+0x4558	FRAMES: all step OK, finished gracefully
+0x4581	total threads (exclude the crashed thread): %zu
+0x45b2	libunwind: malformed DW_CFA_def_cfa DWARF unwind, reg too big
+0x45f1	getEncodedP
+0x4604	FDE is really a CIE
+0x4618	 Process Details (From: /proc/PID/smaps)
+0x4642	.Heap
+0x464d	FPE_FLTSUB
+0x4658	 UDP over IPv6 (From: /proc/PID/net/udp6)
+0x4683	    #%02zu pc %016lx  %s%s%s
+0x46ab	Clean
+0x46b1	FPE_FLTUND
+0x46bc	.eh_frame_hdr
+0x46ca	__abort_message_ptr
+0x46de	DW_OP_fbreg not implemented
+0x46fe	.vdex
+0x4704	Dalvik Heap
+0x4710	.LinearAlloc
+0x471d	xcc_signal_crash_register, sigaltstack success!
+0x474d	ILL_ILLOPC
+0x4758	PTRACE_EVENT_EXEC
+0x476a	PTRACE_EVENT_VFORK_DONE
+0x4782	 UNIX domain (From: /proc/PID/net/unix)
+0x47ab	/sbin/su
+0x47b4	%016lx  %016lx
+0x47c5	unsupported restore location for register
+0x47f6	Shared_Dirty: %zu kB
+0x480b	Gfx dev
+0x4813	.IndirectRef
+0x4820	xcc_unwind_get->bottom
+0x4837	xcc_unwind_clang_callback->self->found_sig_pc: %d
+0x4869	 (%s)
+0x486f	threads matched whitelist: %d
+0x488e	THREAD: ptrace GETREGSET failed, errno=%d
+0x48ba	libunwind: malformed DW_CFA_expression DWARF unwind, reg too big
+0x48fc	DW_EH_PE_aligned pointer encoding not supported
+0x492c	malformed uleb128 expression
+0x4956	.odex
+0x495c	%lx-%lx %*s %*x %*x:%*x %*d
+0x4978	ILL_PRVREG
+0x4983	ILL_BADSTK
+0x498e	/proc/%d/fd/%d
+0x49a2	PROCESS: abort_msg, ppp = %lx
+0x49c2	getSavedFloatRegister
+0x49e5	    #%02zu pc %016lx  %s (%s)
+0x4a09	DWARF: attempt to restore without remember
+0x4a34	FAILED
+0x4a3b	error reason:
+0x4a4b	/system/bin/
+0x4a5c	THREAD: ptrace ATTACH failed, errno=%d
+0x4a8e	Pss(KB)
+0x4a96	Native Heap:
+0x4aad	/proc/%d/status
+0x4abd	Dalvik Other
+0x4aca	SI_USER
+0x4ad2	/data/local/su
+0x4ae1	. FileSize: %ld
+0x4af1	threads ignored by max count limit: %d
+0x4b1c	PROCESS: compile regex OK: %s
+0x4b3a	THREAD: load frames, tid=%d, tname=%s
+0x4b60	unknown pointer encoding
+0x4b79	DWARF opcode not implemented
+0x4b96	getSavedRegister
+0x4bb2	TOTAL
+0x4bb8	%21s %8zu
+0x4bc3	[anon:
+0x4bca	xcc_unwind_clang_record->__aarch64__
+0x4bef	ILL_ILLTRP
+0x4bfa	SI_DETHREAD
+0x4c06	/proc/%d/net/udp
+0x4c17	<anonymous:%16lx>
+0x4c29	FSTAT
+0x4c36	libunwind: malformed DW_CFA_val_offset_sf DWARF unwind, reg too big
+0x4c7b	libunwind: unsupported .eh_frame_hdr version: %u at %lx
+0x4cb7	TOTAL:
+0x4cbe	Private_Clean: %zu kB
+0x4cd4	Native Heap
+0x4ce0	PTRACE_EVENT_SECCOMP
+0x4cf9	    fd %d: %s
+0x4d08	    ......
+0x4d14	xcrash_dumper->after read args, xc_log_debug_enable: %d, xc_common_process_id: %d
+0x4d67	backtrace feature id:
+0x4d85	libunwind: malformed DW_CFA_same_value DWARF unwind, reg too big
+0x4dc7	libunwind: malformed DW_CFA_val_expression DWARF unwind, reg too big
+0x4e15	CIE start does not match
+0x4e37	Ashmem
+0x4e3e	Unknown
+0x4e46	 TCP over IPv6 (From: /proc/PID/net/tcp6)
+0x4e71	/system/sd/xbin/su
+0x4e84	.gnu_debugdata
+0x4e93	PROCESS: load threads failed, errno=%d
+0x4eba	/proc/%d/task
+0x5070	333333
+0x50a5	FFFF&
+0x5244	FiiiRiii
+0x52bd	%)36?
+0x8a6c	+ih8J
+0x8b8c	+ih8J
+0xa1c4	Lii8k
+0xa2d0	Lii8k
+0xa31c	Lii8k
+0xa4c8	+ih8J
+0xa5c4	+ih8J
+0xafc4	Lyixk
+0xb024	Lyixk
+0xbb94	+ih8J
+0xbf23	*cjj8[
+0xbf9b	*cjh8
+0xc047	Rcj{8
+0xc064	cj{8{
+0xc56b	T!i(8
+0xc837	RKyix)
+0xe7e8	+ih8J
+0xe8bc	+i`8J
+0xecd9	jz8_<
+0xfb14	Iki8?
+0xfb43	Tbks8_
+0x10421	#Ay`~
+0x10495	sAy(}
+0x10591	wAy 1@
+0x105ed	{Ay(}
+0x10638	Jkh8)
+0x10f77	T+hj8J
+0x11251	BHk!M
+0x11344	)ih8J
+0x113df	TIi(8
+0x11608	JAN9j
+0x11cec	j!JJ*
+0x1382d	&@yh*
+0x13835	N@9h.
+0x13851	.@yh:
+0x13859	^@9h>
+0x13d54	Lii8k
+0x13de4	+yhxJ
+0x13f33	5(3@y
+0x14120	i2@yJ
+0x142c8	+yhxJ
+0x1492b	Tkki8l
+0x1493c	Ki)8)
+0x14957	TZi)8)
+0x156a0	jki8)
+0x1574f	T*ki8)
+0x1693c	Jii8K
+0x16958	*k,8)
+0x16973	R(k)x
+0x179f1	ih8Ni(8
+0x17ad3	R.ymx
+0x17b33	SkA@y
+0x17c83	RJim8-
+0x17c9b	S1Yqx
+0x17d21	"@y,}
+0x17dd1	Ybx$}
+0x17e51	Ynx1}
+0x17fbb	ROYnx1}
+0x18024	 )@zh
+0x18253	*p{cx
+0x18287	Kt{#x
+0x182e0	t{0xf|
+0x182e7	Sp{nx
+0x18334	t{.xf|
+0x1833b	Sn{px
+0x18388	t{0xt|
+0x1838f	Sf{nx
+0x183dc	f{.xg|
+0x183e3	Sf{qx
+0x18430	f{1xf|
+0x18437	Sq{px
+0x184c3	S\hn8
+0x184d4	p{nxf|
+0x1855f	*q{0x
+0x1857b	Sq{.x
+0x18635	x:xNhp8Nh)8.
+0x18673	Sc{nx
+0x186f3	Sn{gx
+0x1874f	Sc{nx
+0x187ab	Sn{gx
+0x187f8	f{'xp
+0x18863	Sp{qx
+0x188ab	*p{1x0
+0x188b4	Nh)87
+0x1893f	*Q{{x
+0x18987	*Q{;x
+0x18c89	z1x{1
+0x19418	l5E)o-F)
+0x196ab	Jc(\J
+0x196e7	Jc([J
+0x1971b	Jc(HJ
+0x1974f	Jc(FJ
+0x19787	Jc(TJ
+0x19e54	*%@)J
+0x19f88	Lii8k
+0x1a1ac	+ih8J
+0x1a203	TKih8,kh8+k(8l
+0x1a213	KLi(8
+0x1a773	T+kh8Lih8
+0x1a780	Ki(8+k(8
+0x1c590	Linker: LLD 17.0.2
+0x1c5a4	Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
+0x1c65d	.preinit_array
+0x1c66c	.init_array
+0x1c678	.fini_array
+0x1c684	.text
+0x1c68f	.comment
+0x1c698	.note.android.ident
+0x1c6ac	.got.plt
+0x1c6b5	.rela.plt
+0x1c6c4	.dynstr
+0x1c6cc	.eh_frame_hdr
+0x1c6da	.gnu.version_r
+0x1c6e9	.interp
+0x1c6f1	.data.rel.ro
+0x1c6fe	.rela.dyn
+0x1c708	.gnu.version
+0x1c715	.dynsym
+0x1c71d	.gnu.hash
+0x1c727	.eh_frame
+0x1c731	.note.gnu.build-id
+0x1c744	.dynamic
+0x1c74d	.shstrtab
+0x1c757	.rodata
+0x1c75f	.data

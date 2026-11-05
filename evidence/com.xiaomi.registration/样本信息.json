@@ -1,0 +1,33 @@
+{
+  "file": "运营商服务_16.0.5.apk",
+  "package": "com.xiaomi.registration",
+  "size": 2278524,
+  "sha256": "3dac308f0088d3bbfb342a5b9e9096fab0ddf56f737603df282fcf0b698708dd",
+  "version_name": "16.0.5",
+  "version_code": "69",
+  "min_sdk": "33",
+  "target_sdk": "34",
+  "shared_user_id": "android.uid.phone",
+  "signature_schemes": {
+    "v1": true,
+    "v2": true,
+    "v3": true
+  },
+  "label": "运营商服务",
+  "signing_certificates": [
+    {
+      "sha256": "c9009d01ebf9f5d0302bc71b2fe9aa9a47a432bba17308a3111b75d7b2149025",
+      "subject": {
+        "country_name": "CN",
+        "state_or_province_name": "Beijing",
+        "locality_name": "Beijing",
+        "organization_name": "Xiaomi",
+        "organizational_unit_name": "MIUI",
+        "common_name": "MIUI",
+        "email_address": "miui@xiaomi.com"
+      }
+    }
+  ],
+  "report": "reports/com.xiaomi.registration.md",
+  "evidence": "evidence/com.xiaomi.registration"
+}

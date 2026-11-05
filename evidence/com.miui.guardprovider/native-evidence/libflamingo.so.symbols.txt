@@ -1,0 +1,85 @@
+
+raw/lib/arm64-v8a/libflamingo.so:	file format elf64-littleaarch64
+
+DYNAMIC SYMBOL TABLE:
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __cxa_finalize
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __cxa_atexit
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __register_atfork
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       memcpy
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       memmove
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       memcmp
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       close
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       memset
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       malloc
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_getspecific
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_setspecific
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       free
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       dlsym
+0000000000000000      DF *UND*	0000000000000000              __android_log_write
+0000000000000000      DF *UND*	0000000000000000              __android_log_buf_write
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       strlen
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       syscall
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       poll
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       open
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __errno
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       read
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       readlink
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       lseek64
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       unlink
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       ftruncate64
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       write
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       writev
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       strerror_r
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       dl_iterate_phdr
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       fstat
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       mmap
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       munmap
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_attr_destroy
+0000000000000000  w   DF *UND*	0000000000000000 (LIBC)       gettid
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       getenv
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       posix_memalign
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       realloc
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       calloc
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_key_create
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_key_delete
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       clock_gettime
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_attr_init
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_attr_setstacksize
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       sysconf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_create
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       stat
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       abort
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       getcwd
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       sched_getaffinity
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       sched_yield
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       realpath
+0000000000000000  w   DF *UND*	0000000000000000 (LIBC_P)     getrandom
+0000000000000000  w   DF *UND*	0000000000000000 (LIBC)       splice
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       sendfile
+0000000000000000  w   D  *UND*	0000000000000000              copy_file_range
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       prctl
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_detach
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       __system_property_get
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       getauxval
+0000000000000000      DO *UND*	0000000000000000 (LIBC)       __sF
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       fprintf
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       fflush
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_rwlock_wrlock
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_rwlock_unlock
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       pthread_rwlock_rdlock
+0000000000000000      DF *UND*	0000000000000000 (LIBC)       fwrite
+00000000000ef618 g    DF .text	0000000000000024              Java_com_miui_guardprovider_natives_RustSupport_conditionVariables
+00000000000ef668 g    DF .text	0000000000000018              Java_com_miui_guardprovider_natives_RustSupport_dropCancelToken
+00000000000ef680 g    DF .text	0000000000000034              Java_com_miui_guardprovider_natives_RustSupport_dropCollector
+00000000000ef6b4 g    DF .text	000000000000004c              Java_com_miui_guardprovider_natives_RustSupport_dropScanner
+00000000000ef700 g    DF .text	0000000000000108              Java_com_miui_guardprovider_natives_RustSupport_init
+00000000000ef808 g    DF .text	0000000000000018              Java_com_miui_guardprovider_natives_RustSupport_newCancelToken
+00000000000ef844 g    DF .text	0000000000000024              Java_com_miui_guardprovider_natives_RustSupport_newScanner
+00000000000ef63c g    DF .text	000000000000002c              Java_com_miui_guardprovider_natives_RustSupport_dropByteBuffer
+00000000000ef8b8 g    DF .text	000000000000004c              Java_com_miui_guardprovider_natives_RustSupport_scanOne
+00000000000ef914 g    DF .text	0000000000000028              Java_com_miui_guardprovider_natives_RustSupport_validateInput
+00000000000ef5f0 g    DF .text	0000000000000028              Java_com_miui_guardprovider_natives_RustSupport_collect
+00000000000ef820 g    DF .text	0000000000000024              Java_com_miui_guardprovider_natives_RustSupport_newCollector
+00000000000ef868 g    DF .text	0000000000000028              Java_com_miui_guardprovider_natives_RustSupport_parseApk
+00000000000ef890 g    DF .text	0000000000000028              Java_com_miui_guardprovider_natives_RustSupport_read
+00000000000ef904 g    DF .text	0000000000000010              Java_com_miui_guardprovider_natives_RustSupport_setCancelled

@@ -1,0 +1,33 @@
+{
+  "file": "MiTrustService_1.2.260901.apk",
+  "package": "com.xiaomi.trustservice",
+  "size": 6619293,
+  "sha256": "2344a2e8be65fffd3a0f2140527a075e40e865d55e5b615d2407af307305d37f",
+  "version_name": "1.2.260901",
+  "version_code": "12260901",
+  "min_sdk": "31",
+  "target_sdk": "36",
+  "shared_user_id": "android.uid.system",
+  "signature_schemes": {
+    "v1": true,
+    "v2": true,
+    "v3": true
+  },
+  "label": "MiTrustService",
+  "signing_certificates": [
+    {
+      "sha256": "c9009d01ebf9f5d0302bc71b2fe9aa9a47a432bba17308a3111b75d7b2149025",
+      "subject": {
+        "country_name": "CN",
+        "state_or_province_name": "Beijing",
+        "locality_name": "Beijing",
+        "organization_name": "Xiaomi",
+        "organizational_unit_name": "MIUI",
+        "common_name": "MIUI",
+        "email_address": "miui@xiaomi.com"
+      }
+    }
+  ],
+  "report": "reports/com.xiaomi.trustservice.md",
+  "evidence": "evidence/com.xiaomi.trustservice"
+}
